@@ -1,6 +1,6 @@
 local mp_female_boneNames = {
 
-  ["CH_L_Hand"]                            = {bone_index = 301, bone_id = 33869},
+  	["CH_L_Hand"]                            = {bone_index = 301, bone_id = 33869},
 	["CH_R_Hand"]                            = {bone_index = 386, bone_id = 4126},
 	["CP_Back"]                              = {bone_index = 461, bone_id = 36522},
 	["CP_BeltBack"]                          = {bone_index = 560, bone_id = 63753},
