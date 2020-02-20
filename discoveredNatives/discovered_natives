@@ -1,0 +1,67 @@
+---------------------------
+-- Here i will public some currently undiscovered natives. I am lazy bitch, to make commits to existing native bases. If someone have time to commit it there, i appreciate it;)
+---------------------------
+
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+// 0x1902C4CFCC5BE57C   -- CHANGE BODY OR WAIST TYPE
+
+Citizen.InvokeNative(0x1902C4CFCC5BE57C,PlayerPedId(),BODY_TYPE)
+Citizen.InvokeNative(0x1902C4CFCC5BE57C,PlayerPedId(),WAIST_TYPE)
+Citizen.InvokeNative(0xCC8CA3E88256E58F,PlayerPedId(), 0, 1, 1, 1, false);
+
+
+BODY_TYPES:
+    61606861,
+    -1241887289,
+    -369348190,
+    32611963,
+    -20262001,
+    -369348190,
+
+WAIST_TYPES:
+    -2045421226,    -- smallest
+    -1745814259,
+    -325933489,
+    -1065791927,
+    -844699484,
+    -1273449080,
+    927185840,
+    149872391,
+    399015098,
+    -644349862,
+    1745919061,      -- default
+    1004225511,
+    1278600348,
+    502499352,
+    -2093198664,
+    -1837436619,
+    1736416063,
+    2040610690,
+    -1173634986,
+    -867801909,
+    1960266524,        -- biggest
+    
+    
+    
+    -------------------------------------------------------------------
+    -------------------------------------------------------------------
+    -------------------------------------------------------------------
+    
+    //0x314C5465195F3B30    -- _SET_PED_WEARINESS(ped_id,weariness)  -- make reddish eyes 
+weariness from 0.0 to 1.0
+
+
+
+    -------------------------------------------------------------------
+    -------------------------------------------------------------------
+    -------------------------------------------------------------------
+    
+    //0xFB4891BD7578CDC1   -- _IS_PED_COMPONENT_EQUIPPED(ped_id,category_id)
+Citizen.InvokeNative(0xFB4891BD7578CDC1 ,PlayerPedId(), 0x9925C067)  -- for example, check if hat is on.
+
+
+
