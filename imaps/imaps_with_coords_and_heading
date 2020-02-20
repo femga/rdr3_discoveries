@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
----- imap is part of map (can be house, grass, wall, water, ground etc). 
+---- imap is part of map (can be house, grass, wall, water, ground, prop etc). 
 ---- [imap_id] = {coords.x, coords.y, coord.z, heading}
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
