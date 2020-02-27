@@ -305,7 +305,7 @@ local interiors_list = {
 	[73218] = {x=-1393.5012207031,y=1181.4250488281,z=221.63369750977,typeHashId=1869093440,typeHashName="",rpf="mil_mine_cave_04.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
 	[59394] = {x=-1420.4987792969,y=1171.5920410156,z=225.60629272461,typeHashId=-2124562913,typeHashName="",rpf="mil_mine_cave_01.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
 	[33538] = {x=-1440.2355957031,y=1189.5712890625,z=225.40866088867,typeHashId=1872173714,typeHashName="",rpf="mil_mine_cave_02.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
-	[25090] = {x=339.67950439453,y=1505.8784179688,z=180.95112609863,typeHashId=-1601726546,typeHashName="",rpf="old_cptquarter_int.rpf"},		-- UNKNOWN TYPEHASHNAME!!!
+	[25090] = {x=339.67950439453,y=1505.8784179688,z=180.95112609863,typeHashId=-1601726546,typeHashName="",rpf="old_cptquarter_int.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
 	[12034] = {x=-1418.7707519531,y=1197.4487304688,z=224.4430847168,typeHashId=-2119254323,typeHashName="",rpf="mil_mine_cave_03.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
 
 }
