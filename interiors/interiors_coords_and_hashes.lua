@@ -1,4 +1,7 @@
+------------------------------------------------------------------------------
 -- Some interiors need imaps to spawn. Request them before.
+-- [interior_id] = {coord_x,coord_y,coord_z,typehashid,typehashname,rpf_name_with_this_interior},
+------------------------------------------------------------------------------
 
 local interiors_list = {
 
