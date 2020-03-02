@@ -65,3 +65,21 @@ Citizen.InvokeNative(0xFB4891BD7578CDC1 ,PlayerPedId(), 0x9925C067)  -- for exam
 
 
 
+    -------------------------------------------------------------------
+    -------------------------------------------------------------------
+    -------------------------------------------------------------------
+    
+
+//0xFFD54D9FE71B966A  _SET_PED_WOUND_EFFECT(ped, 2, bone_id, float move_wound_up_down, float move_wound_forward_backward,  float move_wound_left_right, float blood_fountain_pressure, float yaw, float blood_fountain_direction, float blood_fountain_pulse)
+            -- make blood fountain from wound
+
+            -- blood_fountain_pressure: visible effect from 0.0 till 20.0
+            -- yaw: visible effect from -3.0 till 3.0
+            -- blood_fountain_direction: 1.0 left side, -1.0 right side
+            -- blood_fountain_pulse: from 0.1 (low) till 1.0 (fast)
+
+            --For example, make blood fountain from your stomach:
+            Citizen.InvokeNative(0xFFD54D9FE71B966A,PlayerPedId(), 2, 14411, 0.0, 0.1,0.0, 0.0,3.0,-1.0, 1.0);
+
+
+
