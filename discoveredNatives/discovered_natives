@@ -81,7 +81,7 @@ Citizen.InvokeNative(0xFB4891BD7578CDC1 ,PlayerPedId(), 0x9925C067)  -- for exam
             --For example, make blood fountain from your stomach:
             Citizen.InvokeNative(0xFFD54D9FE71B966A,PlayerPedId(), 2, 14411, 0.0, 0.1,0.0, 0.0,3.0,-1.0, 1.0);
        
-       
+//0x66B1CB778D911F49 _REMOVE_PED_WOUND_EFFECT(ped, 0.0)    
        
     -------------------------------------------------------------------
     -------------------------------------------------------------------
