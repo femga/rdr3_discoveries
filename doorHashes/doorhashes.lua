@@ -1,8 +1,7 @@
 --------------------------------------------------------------------------------------------------------------
--- Here i will post result of bruteforcing doorhashes. In GTA5 you added doorhashes manually (it was little disadvantage). 
--- But this variant gave you big plus - u could choose name for doorhash as u want. In RDR3 ALL doors have
--- doorhashes bound internally (it seems through imap or ytyp), but now u can`t create your own doorhash (at least
--- native is didnt found). 
+-- In GTA5 you added doorhashes manually (it was little disadvantage). But this variant gave you big plus - u could choose name for
+-- doorhash as u want. In RDR3 nearly ALL doors have doorhashes bound internally by ytyp files. But now u can`t create your own doorhash
+-- (at least native is didnt found). 
 ---------------------------------------------------------------------------------------------------------------
 local doorhashes = {
   {doorhash=-2064847998, modelhash=-460889373,model="p_val_gate2m03x",x=-279.92022705078, y=768.27075195313, z=117.89686584473},
