@@ -180,7 +180,63 @@ var exp = Function.Call<int>((Hash)0x7D6F58F69DA92530, fireCoords.X + 10, fireCo
 Citizen.InvokeNative(0xD80FAF919A2E56EA, [vehicle], [component hash])
 hash list https://pastebin.com/v7TtqTgE
 
-
+-1010941253,    Luggage
+    697798539,        Luggage
+    1642867136,        Luggage
+    -1504084621,    Boxes
+    -121035631,        ??? Can't move
+    1291266059,        Produce barrels
+    1014756160,        ???
+    582515068,        Luggage & barrels, side hung barrel
+    695546590,        Lanterns, not sure about which wagon
+    986026237,        Shine bottles & a box, works well with cart03
+    -195275427,        Cargo under seat
+    903797443,        Bunch of arrows stuck into shit, raided supplies, don't think it's meant for moving wagons
+    589459952,        Luggage & side hung barrel
+    1793592017,        LOTS OF MOONSHINE
+    -509228265,        Moonshine bottles
+    -581069256,        TONS OF MOONSHINE
+    -488847186,        Supply cargo
+    1044628870,        Supply cargo
+    -1577381472,    Logs for LOGWAGON
+    -447665150,        Box cargo
+    1242644044,        More Logs
+    -106866375,        Milk jugs    
+    -1970994897,    TNT
+    -2039290623,    Ship cargo
+    -1938677009,    Ship cargo
+    -1272014121,    Cargo wiht side hung barrel
+    -1742109836,    Large cargo, boxes, barrels and canvases
+    1996806757,        Small luggage cargo
+    1306345203,        Luggage, perfect for UTILLIWAG
+    -81834080,        Same as above
+    -973836254,        Minimal cargo UTILLIWAG
+    -1021554967,    Planks
+    41200892,        More planks
+    -336173860,        Even more planks
+    -323839510,        Cotton(?) bails
+    -276407448,        Camp cargo
+    -1238570474,    Large camp cargo
+    -759553808,        Cargo for living out of wagon?
+    -906226543,        Large camp cargo
+    2121258366,        More camp cargo
+    1490711830,        Boxes
+    -1031124636,    Boxes marked CONFISCATED
+    1476777884,        Looks like this shit belong to a barn
+    1897620770,        More barn shit
+    -1891768214,    Explosives for UTILLIWAG
+    2031331786,        Produce
+    1259608942,        Moving cargo
+    -2103461291,    Protest posters (union)
+    -1174840184,    Bottles o' blood
+    100192451,        Army cargo
+    733112176,        Lanterns
+    -1818274469,    Boxes
+    174891252,        Boxes and bags
+    2053409431,        MP Moonshine cargo
+    1848755277,        General goods
+    -1311425568,    Hot coals?
+    -851220308        ??? Can't move
 
 ------------------------
 ------------------------
