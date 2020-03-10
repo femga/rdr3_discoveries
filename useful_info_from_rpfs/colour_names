@@ -1,528 +1,439 @@
-  <!-- BASIC COLOR PALETTE -->
-  <Col key="COLOR_PURE_WHITE"							value="0xffffffff"	r="255"	g="255"	b="255"	a="255" 	xExportTo="as cpp sc"/>
-  <Col key="COLOR_WHITE"								value="0xffe6e6e6"	r="230"	g="230"	b="230"	a="255" 	xExportTo="as cpp sc"/>
-  <Col key="COLOR_BLACK"								value="0xff000000"	r=  "0"	g=  "0"	b=  "0"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_OFF_BLACK"							value="0xff1a1a1b"	r= "27" g= "26" b= "26" a="255" 	xExportTo="as cpp sc"/>
-  <Col key="COLOR_GREY"								value="0xffa6a8ac"	r="172"	g="168"	b="166"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_GREYLIGHT"							value="0xffd2d3d5"	r="213"	g="211"	b="210"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_GREYMID"							value="0xff9b9b9b"	r="155"	g="155"	b="155"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_GREYDARK"							value="0xff5a5b5d"	r= "93"	g= "91"	b= "90"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_RED"								value="0xff0000cc"	r="204"	g="0"	b="0"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_REDLIGHT"							value="0xff9586f0"	r="240"	g="134"	b="149"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_REDDARK"							value="0xff1d0e7a"	r="122"	g= "14"	b= "29"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_BLUE"								value="0xffd3a856"	r= "86"	g="168"	b="211"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_BLUELIGHT"							value="0xffe9d3aa"	r="170"	g="211"	b="233"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_BLUEDARK"							value="0xff705b32"	r= "50"	g= "91"	b="112"	a="255" 	xExportTo="as cpp sc"/>
-  <Col key="COLOR_YELLOWSTRONG"						value="0xff71eaff"	r="255"	g="234"	b="113"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_YELLOW"								value="0xff90f3fe"	r="254"	g="243"	b="144"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_YELLOWLIGHT"						value="0xffbbf8ff"	r="255"	g="248"	b="187"	a="255"		xExportTo="sc cpp sc"/>
-  <Col key="COLOR_YELLOWVERYLIGHT"					value="0xffeefeff"	r="255"	g="254"	b="238"	a="255"		xExportTo="sc cpp sc"/>
-  <Col key="COLOR_YELLOWDARK"							value="0xff438086"	r="134"	g="128"	b= "67"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_ORANGE"								value="0xff749fff"	r="255"	g="159"	b="116"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_ORANGELIGHT"						value="0xffbacfff"	r="255"	g="207"	b="186"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_ORANGEDARK"							value="0xff3a4f7f"	r="127"	g= "79"	b= "58"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_GREEN"								value="0xff69ab4e"	r= "78"	g="171"	b="105"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_GREENLIGHT"							value="0xffb4d5a6"	r="166"	g="213"	b="180"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_GREENDARK"							value="0xff3b5c2e"	r= "46"	g= "92"	b= "59"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_PURPLE"								value="0xffb769ac"	r="172"	g="105"	b="183"	a="255"		xExportTo="as cpp sc"/>
-  <Col key="COLOR_PURPLELIGHT"						value="0xffdbb4d5"	r="213"	g="180"	b="219"	a="255"		xExportTo=""/>
-  <Col key="COLOR_PURPLEDARK"							value="0xff623b5d"	r= "93"	g= "59"	b= "98"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_PINK"								value="0xffe8b6f4"	r="244"	g="182"	b="232"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_PINKLIGHT"							value="0xfff4dbfa"	r="250"	g="219"	b="244"	a="255"/>
-  <Col key="COLOR_PINKDARK"							value="0xff745b7a"	r="122"	g= "91"	b="116"	a="255"/>
-
-
+    <!-- BASIC COLOR PALETTE -->
+COLOR_PURE_WHITE										          value="0xffffffff"  r="255" g="255" b="255" a="255"   xExportTo="as cpp sc"/>                            
+COLOR_WHITE													          value="0xffe6e6e6" r="230" g="230" b="230" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_BLACK													          value="0xff000000" r=  "0" g=  "0" b=  "0" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_OFF_BLACK											          value="0xff1a1a1b" r= "27" g= "26" b= "26" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_GREY													          value="0xffa6a8ac" r="172" g="168" b="166" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_GREYLIGHT											          value="0xffd2d3d5" r="213" g="211" b="210" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_GREYMID												          value="0xff9b9b9b"  r="155" g="155" b="155" a="255"   xExportTo="cpp sc"/>                            
+COLOR_GREYDARK											          value="0xff5a5b5d" r= "93" g= "91" b= "90" a="255"   xExportTo="cpp sc"/>                           
+COLOR_RED														          value="0xff0000cc"  r="204" g="0" b="0" a="255"   xExportTo="as cpp sc"/>                            
+COLOR_REDLIGHT											          value="0xff9586f0" r="240" g="134" b="149" a="255"   xExportTo="cpp sc"/>                           
+COLOR_REDDARK												          value="0xff1d0e7a"  r="122" g= "14" b= "29" a="255"   xExportTo="as cpp sc"/>                            
+COLOR_BLUE													          value="0xffd3a856" r= "86" g="168" b="211" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_BLUELIGHT											          value="0xffe9d3aa" r="170" g="211" b="233" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_BLUEDARK											          value="0xff705b32" r= "50" g= "91" b="112" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_YELLOWSTRONG									          value="0xff71eaff" r="255" g="234" b="113" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_YELLOW												          value="0xff90f3fe"  r="254" g="243" b="144" a="255"   xExportTo="as cpp sc"/>                            
+COLOR_YELLOWLIGHT										          value="0xffbbf8ff"  r="255" g="248" b="187" a="255"   xExportTo="sc cpp sc"/>                            
+COLOR_YELLOWVERYLIGHT								          value="0xffeefeff"  r="255" g="254" b="238" a="255"   xExportTo="sc cpp sc"/>                            
+COLOR_YELLOWDARK										          value="0xff438086"  r="134" g="128" b= "67" a="255"   xExportTo="cpp sc"/>                            
+COLOR_ORANGE												          value="0xff749fff"  r="255" g="159" b="116" a="255"   xExportTo="as cpp sc"/>                            
+COLOR_ORANGELIGHT										          value="0xffbacfff"  r="255" g="207" b="186" a="255"   xExportTo="as cpp sc"/>                            
+COLOR_ORANGEDARK										          value="0xff3a4f7f"  r="127" g= "79" b= "58" a="255"   xExportTo="cpp sc"/>                            
+COLOR_GREEN													          value="0xff69ab4e" r= "78" g="171" b="105" a="255"   xExportTo="as cpp sc"/>                           
+COLOR_GREENLIGHT										          value="0xffb4d5a6"  r="166" g="213" b="180" a="255"   xExportTo="cpp sc"/>                            
+COLOR_GREENDARK											          value="0xff3b5c2e" r= "46" g= "92" b= "59" a="255"   xExportTo="cpp sc"/>                           
+COLOR_PURPLE												          value="0xffb769ac"  r="172" g="105" b="183" a="255"   xExportTo="as cpp sc"/>                            
+COLOR_PURPLELIGHT										          value="0xffdbb4d5"  r="213" g="180" b="219" a="255"   xExportTo=""/>                            
+COLOR_PURPLEDARK										          value="0xff623b5d"  r= "93" g= "59" b= "98" a="255"   xExportTo="cpp"/>                            
+COLOR_PINK													          value="0xffe8b6f4" r="244" g="182" b="232" a="255"   xExportTo="cpp sc"/>                           
+COLOR_PINKLIGHT											          value="0xfff4dbfa" r="250" g="219" b="244" a="255"/>                           
+COLOR_PINKDARK											          value="0xff745b7a" r="122" g= "91" b="116" a="255"/>         
   <!-- METALLIC COLOR PALETTE -->
-  <Col key="COLOR_IRON"								value="0xff695e60"	r="96"	g="94" b="105" a="255" 		xExportTo="cpp sc"/>
-  <Col key="COLOR_COPPER"								value="0xff8e987a"	r="122"	g="152" b="142" a="255" 	xExportTo="cpp sc"/>
-  <Col key="COLOR_BRONZE"								value="0xff3a4f7f"	xAlias="COLOR_ORANGEDARK" 			xExportTo="cpp sc"/>
-  <Col key="COLOR_SILVER"								value="0xffa6a8ac"	xAlias="COLOR_GREY"					xExportTo="cpp sc"/>
-  <Col key="COLOR_GOLD"								value="0xff04c8f9"	r="249"	g="200" b="4" a="255" 		xExportTo="cpp sc"/>
-  <Col key="COLOR_PLATINUM"							value="0xffe9d3aa"	xAlias="COLOR_BLUELIGHT"		 	xExportTo="cpp sc"/>
-  <Col key="COLOR_CASH_GOLD"							value="0xff04c8f9"	r="249"	g="200" b="4" a="255"		xExportTo="as cpp sc"/>
-
-
-
+COLOR_IRON													          value="0xff695e60" r="96"  g="94" b="105" a="255"    xExportTo="cpp sc"/>
+COLOR_COPPER												          value="0xff8e987a"  r="122" g="152" b="142" a="255"   xExportTo="cpp sc"/>
+COLOR_BRONZE												          value="0xff3a4f7f"  xAlias="COLOR_ORANGEDARK"       xExportTo="cpp sc"/>
+COLOR_SILVER												          value="0xffa6a8ac"  xAlias="COLOR_GREY"         xExportTo="cpp sc"/>
+COLOR_GOLD													          value="0xff04c8f9" r="249" g="200" b="4" a="255"     xExportTo="cpp sc"/>
+COLOR_PLATINUM											          value="0xffe9d3aa" xAlias="COLOR_BLUELIGHT"      xExportTo="cpp sc"/>
+COLOR_CASH_GOLD											          value="0xff04c8f9" r="249" g="200" b="4" a="255"   xExportTo="as cpp sc"/>
   <!-- PLAYERS COLOURS FOR 1v1 GAMES -->	
-  <Col key="COLOR_NET_PLAYER1"						value="0xffd3a856"	xExportTo="cpp sc"	xAlias="COLOR_BLUE"/>
-  <Col key="COLOR_NET_PLAYER2"						value="0xff0000cc"	xExportTo="cpp sc"	xAlias="COLOR_RED"/>
-
-
+COLOR_NET_PLAYER1										          value="0xffd3a856"	xExportTo="cpp sc"	xAlias="COLOR_BLUE"/>
+COLOR_NET_PLAYER2										          value="0xff0000cc"	xExportTo="cpp sc"	xAlias="COLOR_RED"/>
   <!-- PLAYER COLOURS FOR TEAM GAMES -->
-  <Col key="COLOR_NET_PLAYER3"						value="0xffb759af"	r="175"	g="89"	b="183"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER4"						value="0xff749fff"	xExportTo="cpp sc"	xAlias="COLOR_ORANGE"/>
-  <Col key="COLOR_NET_PLAYER5"						value="0xffe5e887"	r="135"	g="232"	b="229"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER6"						value="0xff90f3fe"	xExportTo="cpp sc"	xAlias="COLOR_YELLOW"/>
-  <Col key="COLOR_NET_PLAYER7"						value="0xffd58aff"	r="255"	g="138"	b="213"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER8"						value="0xff6bc14d"	r="77"	g="193"	b="107"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER9"						value="0xffeabca1"	r="161"	g="188"	b="234"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER10"						value="0xff7593b4"	r="180"	g="147"	b="117"	a="255"		xExportTo="cpp sc"/>
-
-
+COLOR_NET_PLAYER3										          value="0xffb759af"	r="175"	g="89"	b="183"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER4										          value="0xff749fff"	xExportTo="cpp sc"	xAlias="COLOR_ORANGE"/>
+COLOR_NET_PLAYER5										          value="0xffe5e887"	r="135"	g="232"	b="229"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER6										          value="0xff90f3fe"	xExportTo="cpp sc"	xAlias="COLOR_YELLOW"/>
+COLOR_NET_PLAYER7										          value="0xffd58aff"	r="255"	g="138"	b="213"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER8										          value="0xff6bc14d"	r="77"	g="193"	b="107"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER9										          value="0xffeabca1"	r="161"	g="188"	b="234"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER10									          value="0xff7593b4"	r="180"	g="147"	b="117"	a="255"		xExportTo="cpp sc"/>
   <!-- SPARE PLAYER COLORS. AS YET UN-USED -->
-  <Col key="COLOR_NET_PLAYER11"						value="0xff60b06d"	r="109"	g="176"	b="96"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER12"						value="0xffa8a300"	r="0"	g="163"	b="168" a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER13"						value="0xffc06200"	r="0"	g="98"	b="192"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER14"						value="0xffc65e69"	r="105"	g= "94"	b="198"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER15"						value="0xff690b7a"	r="122"	g="11"	b="105"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER16"						value="0xff2c1f69"	r="105"	g="31"	b= "44"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER17"						value="0xffa8a8af"	r="175"	g="168"	b="168"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER18"						value="0xff9b8ee8"	r="232"	g="142"	b="155"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER19"						value="0xff5bd6bb"	r="187"	g="214"	b= "91"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER20"						value="0xff567b0c"	r= "12"	g="123"	b= "86"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER21"						value="0xffffc47b"	r="123"	g="196"	b="255"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER22"						value="0xffe63cab"	r="171"	g= "60"	b="230"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER23"						value="0xff0da9ce"	r="206"	g="169"	b= "13"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER24"						value="0xffad6347"	r= "71"	g= "99"	b="173"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER25"						value="0xffb9a62a"	r= "42"	g="166"	b="185"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER26"						value="0xff7d9dba"	r="186"	g="157"	b="125"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER27"						value="0xffffe1c9"	r="201"	g="225"	b="255"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER28"						value="0xff96f0f0"	r="240"	g="240"	b="150"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER29"						value="0xffa18ced"	r="237"	g="140"	b="161"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER30"						value="0xff8a8af9"	r="249"	g="138"	b="138"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER31"						value="0xffa6effc"	r="252"	g="239"	b="166"	a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_NET_PLAYER32"						value="0xfff0f0f0"	r="240"	g="240"	b="240"	a="255"		xExportTo="cpp sc"/>		
-
-
-
-  <!-- SOCIAL CLUB PALETTE -->
-  <Col key="COLOR_SOCIAL_CLUB"						value="0xff17affc"		r="252"	g="175"	b="23"	a="255"		xExportTo="as"/>
-
-
-  <!-- MASTER MENU COLORS -->
-  <Col key="COLOR_MENU_TEXT"							value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MENU_TEXT_DISABLED"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MENU_TEXT_ATTENTION"				value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_MENU_ITEM"							value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MENU_ITEM_DISABLED"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MENU_ITEM_ATTENTION"				value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_MENU_SELECTION"						value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_MENU_BAR"							value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MENU_BAR_ATTENTION"					value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_MENU_BAR_MAXIMUM"					value="0xff5a5b5d"		xExportTo=""	xAlias="COLOR_GREYDARK"/>
-  <Col key="COLOR_MENU_BAR_TRACK"						value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_MENU_BG"							value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
-
-
-  <!-- MASTER HUD COLORS -->
-  <Col key="COLOR_HUD_TEXT"							value="0xffe6e6e6"		xExportTo="as"	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_HUD_TEXT_DISABLED"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_HUD_TEXT_ATTENTION"					value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_HUD_ITEM"							value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_HUD_ITEM_DISABLED"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_HUD_ITEM_ATTENTION"					value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_HUD_BG"								value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
-
-  <!-- HONOR COLORS -->
-  <Col key="COLOR_HONOR_0"						value="0xff311bed"	r="237"	g="27"	b="49"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_1"						value="0xff3c2bd0"	r="208"	g="43"	b="60"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_2"						value="0xff4538b8"	r="184"	g="56"	b="69"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_3"						value="0xff4a3faa"	r="170"	g="63"	b="74"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_4"						value="0xff4e459f"	r="159"	g="69"	b="78"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_5"						value="0xff575189"	r="137"	g="81"	b="87"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_6"						value="0xff5f5d72"	r="114"	g="93"	b="95"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_7"						value="0xff656565"	r="101"	g="101"	b="101"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_8"						value="0xff656565"	r="101"	g="101"	b="101"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_9"						value="0xff757575"	r="117"	g="117"	b="117"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_10"						value="0xff8f8f8f"	r="143"	g="143"	b="143"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_11"						value="0xffa8a8a8"	r="168"	g="168"	b="168"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_12"						value="0xffb4b4b4"	r="180"	g="180"	b="180"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_13"						value="0xffc1c1c1"	r="193"	g="193"	b="193"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_14"						value="0xffdedede"	r="222"	g="222"	b="222"	a="255"		xExportTo="sc"/>
-  <Col key="COLOR_HONOR_15"						value="0xffffffff"	r="255"	g="255"	b="255"	a="255"		xExportTo="sc"/>
-
-
-  <!-- BLIPS & GAME FLOW -->
-  <Col key="COLOR_ENEMY"								value="0xff0000cc"		xExportTo="cpp sc"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_ENEMY_UNALERTED"					value="0xff1d0e7a"		xExportTo="cpp sc"	xAlias="COLOR_REDDARK"/>
-  <Col key="COLOR_NEUTRAL"							value="0xffa6a8ac"		xExportTo="cpp as sc"	xAlias="COLOR_GREY"/>
-  <Col key="COLOR_FRIENDLY"							value="0xffd2d3d5"		xExportTo="cpp sc"		xAlias="COLOR_GREYLIGHT"/>
-  <Col key="COLOR_ATTENTION"							value="0xff0000cc"		xExportTo="cpp sc"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_LOW_PRIORITY"						value="0xff636363"		r="99" g="99" b="99" a="255"		xExportTo="cpp sc"/>
-  <Col key="COLOR_OBJECTIVE"							value="0xff90f3fe"		xExportTo="cpp sc"	xAlias="COLOR_YELLOW"/>
-  <Col key="COLOR_OBJECTIVE_ROUTE"					value="0xff90f3fe"		xExportTo="cpp"			xAlias="COLOR_OBJECTIVE"/>
-  <Col key="COLOR_CONE_UNALERTED"						value="0x82aba2a1"		r="161" g="162" b="171" a="130"		/>
-  <Col key="COLOR_CONE_SPOTTED"						value="0x5c0000cc"		xAlias="COLOR_RED"		xAliasAlpha="36%"/>
-  <Col key="COLOR_WAYPOINT"							value="0xff0000cc"		xExportTo="cpp"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_WITNESS_IDENTIFIED"					value="0xff0000cc"		xExportTo="cpp"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_WITNESS_UNIDENTIFIED"				value="0xff1d0e7a"		xExportTo="cpp"	xAlias="COLOR_REDDARK"/>
-  <Col key="COLOR_WITNESS_INVESTIGATING"				value="0xffd2d3d5"		xExportTo="cpp"	xAlias="COLOR_GREYLIGHT"/>
-  <Col key="COLOR_WITNESS"							value="0xff1d0e7a"		xExportTo="cpp"	xAlias="COLOR_REDDARK"/>
-  <Col key="COLOR_RADAR_CENTER_BLIP"					value="0xffe6e6e6"		xExportTo="cpp"	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_RADAR_STEALTH"						value="0xff5a5b5d"		xExportTo="cpp"	xAlias="COLOR_GREYDARK"/>
-  <Col key="COLOR_RADAR_NORTH"						value="0xffa6a8ac"		xExportTo="cpp"	xAlias="COLOR_NEUTRAL"/>
-  <Col key="COLOR_RADAR_MISSION"						value="0xffe6e6e6"		xExportTo="sc"	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_INACTIVE_MISSION"					value="0xff5a5b5d"		xExportTo="cpp"	xAlias="COLOR_GREYDARK"/>
-  <Col key="COLOR_MAP_OCEAN"							value="0xc14d6070"		r= "112"	g="96"	b="77"	a="193"		xExportTo="cpp"/>
-      <Col key="COLOR_BLIPS_TEXT_BG"						value="0x00000000"		r= "0"	g="0"	b="0"	a="0"		xExportTo="cpp"/>
-  <Col key="COLOR_WANTED_LOCKDOWN" 					value="0xff1d0e7a" 		xExportTo="cpp sc" 	xAlias="COLOR_REDDARK"/> 
-
-
-  <!-- MP SPECIFIC COLORS -->
-  <Col key="COLOR_OTHER_SESSION_PLAYER"				value="0xff61bdd6"		r="214"	g="189"	b= "97"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_WINNING_PLAYER"						value="0xff62cbd3"  	r="211" g="203" b="98" a="255"		xExportTo="sc"/>
-  <Col key="COLOR_FREEMODE_EVENT"						value="0xffaf667b"  	r="123" g="102" b="175" a="255"		xExportTo="sc"/>
-  <Col key="COLOR_MP_SERIES"							value="0xffbacfff"		xExportTo="cpp sc"	xAlias="COLOR_ORANGELIGHT"/>
-  <Col key="COLOR_MP_ADVERSARY"						value="0xffb4d5a6"		xExportTo="cpp sc"	xAlias="COLOR_GREENLIGHT"/>
-  <Col key="COLOR_LOCAL_PLAYER"						value="0xffe6e6e6"		xExportTo="cpp sc"	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_POSSE_ALLY"							value="0xffd3a856"		xExportTo="cpp sc"	xAlias="COLOR_BLUE"/>
-  <Col key="COLOR_POSSE_NEUTRAL"						value="0xff9586f0"		xExportTo="cpp sc"	xAlias="COLOR_REDLIGHT"/>
-  <Col key="COLOR_POSSE_ENEMY"						value="0xff0000cc"		xExportTo="cpp sc"	xAlias="COLOR_ENEMY"/>
-  <Col key="COLOR_CO_OP_PLAYER"						value="0xff705b32"		xExportTo="cpp sc"	xAlias="COLOR_BLUEDARK"/>
-  <Col key="COLOR_MP_OBJECTIVE"						value="0xff90f3fe"		xExportTo="sc"		xAlias="COLOR_OBJECTIVE"/>
-  <Col key="COLOR_MP_OBJECTIVE_NEUTRAL"				value="0xffe6e6e6"		xExportTo="sc"		xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MP_OBJECTIVE_FRIENDLY"				value="0xffd3a856"		xExportTo="sc"		xAlias="COLOR_POSSE_ALLY"/>
-  <Col key="COLOR_MP_OBJECTIVE_ENEMY"					value="0xff0000cc"		xExportTo="sc"		xAlias="COLOR_POSSE_ENEMY"/>
-
-
-  <!-- ABILITY CARDS -->
-  <Col key="ABILITY_CARD_TIER_1"							value="0xff84c172"	r="114"	g="193" b="132" a="255"		xExportTo="as cpp sc"/>
-  <Col key="ABILITY_CARD_TIER_2"							value="0xffc1ab63"	r="99"	g="171" b="193" a="255"		xExportTo="as cpp sc"/>
-  <Col key="ABILITY_CARD_TIER_3"							value="0xffbb7cae"	r="174"	g="124" b="187" a="255"		xExportTo="as cpp sc"/>
-  <Col key="ABILITY_CARD_TIER_4"							value="0xff4bcff9"	r="249"	g="207" b="75" a="255"		xExportTo="as cpp sc"/>
-  <Col key="ABILITY_CARD_TIER_5"							value="0xff7487ec"	r="236"	g="135" b="116" a="255"		xExportTo="as cpp sc"/>
-  <Col key="ABILITY_CARD_TIER_6"							value="0xff5050ad"	r="173"	g="80" b="80" a="255"		xExportTo="as cpp sc"/>
-
-
-  <!-- SHARED COLORS -->
-  <Col key="COLOR_INVENTORY_ITEM_COUNTER_TEXT"		value="0xff000000"		xAlias="COLOR_BLACK"		/>
-  <Col key="COLOR_INVENTORY_ITEM_COUNTER_BG"			value="0xff000000"		xAlias="COLOR_BLACK"		/>
-  <Col key="COLOR_INVENTORY_ITEM_COUNTER_FG"			value="0xffe6e6e6"		xAlias="COLOR_WHITE"		/>
-  <Col key="COLOR_NEW_JOURNAL_ENTRY"					value="0xff90f3fe"		xAlias="COLOR_YELLOW"		/>
-
+COLOR_NET_PLAYER11									          value="0xff60b06d"	r="109"	g="176"	b="96"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER12									          value="0xffa8a300"	r="0"	g="163"	b="168" a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER13									          value="0xffc06200"	r="0"	g="98"	b="192"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER14									          value="0xffc65e69"	r="105"	g= "94"	b="198"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER15									          value="0xff690b7a"	r="122"	g="11"	b="105"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER16									          value="0xff2c1f69"	r="105"	g="31"	b= "44"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER17									          value="0xffa8a8af"	r="175"	g="168"	b="168"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER18									          value="0xff9b8ee8"	r="232"	g="142"	b="155"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER19									          value="0xff5bd6bb"	r="187"	g="214"	b= "91"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER20									          value="0xff567b0c"	r= "12"	g="123"	b= "86"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER21									          value="0xffffc47b"	r="123"	g="196"	b="255"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER22									          value="0xffe63cab"	r="171"	g= "60"	b="230"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER23									          value="0xff0da9ce"	r="206"	g="169"	b= "13"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER24									          value="0xffad6347"	r= "71"	g= "99"	b="173"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER25									          value="0xffb9a62a"	r= "42"	g="166"	b="185"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER26									          value="0xff7d9dba"	r="186"	g="157"	b="125"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER27									          value="0xffffe1c9"	r="201"	g="225"	b="255"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER28									          value="0xff96f0f0"	r="240"	g="240"	b="150"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER29									          value="0xffa18ced"	r="237"	g="140"	b="161"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER30									          value="0xff8a8af9"	r="249"	g="138"	b="138"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER31									          value="0xffa6effc"	r="252"	g="239"	b="166"	a="255"		xExportTo="cpp sc"/>
+COLOR_NET_PLAYER32									          value="0xfff0f0f0"	r="240"	g="240"	b="240"	a="255"		xExportTo="cpp sc"/>		
+  <!-- SOCIAL CLUB PALETTE -->          
+COLOR_SOCIAL_CLUB									            value="0xff17affc"		r="252"	g="175"	b="23"	a="255"		xExportTo="as"/>
+  <!-- MASTER MENU COLORS -->         
+COLOR_MENU_TEXT											          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_MENU_TEXT_DISABLED						          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_MENU_TEXT_ATTENTION						          value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
+COLOR_MENU_ITEM											          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_MENU_ITEM_DISABLED						          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_MENU_ITEM_ATTENTION						          value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
+COLOR_MENU_SELECTION								          value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
+COLOR_MENU_BAR											          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_MENU_BAR_ATTENTION						          value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
+COLOR_MENU_BAR_MAXIMUM							          value="0xff5a5b5d"		xExportTo=""	xAlias="COLOR_GREYDARK"/>
+COLOR_MENU_BAR_TRACK							            value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
+COLOR_MENU_BG											            value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
+  <!-- MASTER HUD COLORS -->          
+COLOR_HUD_TEXT											          value="0xffe6e6e6"		xExportTo="as"	xAlias="COLOR_WHITE"/>
+COLOR_HUD_TEXT_DISABLED							          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_HUD_TEXT_ATTENTION						          value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
+COLOR_HUD_ITEM											          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_HUD_ITEM_DISABLED							          value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
+COLOR_HUD_ITEM_ATTENTION						          value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
+COLOR_HUD_BG												          value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
+  <!-- HONOR COLORS -->         
+COLOR_HONOR_0												          value="0xff311bed"	r="237"	g="27"	b="49"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_1												          value="0xff3c2bd0"	r="208"	g="43"	b="60"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_2												          value="0xff4538b8"	r="184"	g="56"	b="69"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_3												          value="0xff4a3faa"	r="170"	g="63"	b="74"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_4												          value="0xff4e459f"	r="159"	g="69"	b="78"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_5												          value="0xff575189"	r="137"	g="81"	b="87"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_6												          value="0xff5f5d72"	r="114"	g="93"	b="95"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_7												          value="0xff656565"	r="101"	g="101"	b="101"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_8												          value="0xff656565"	r="101"	g="101"	b="101"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_9												          value="0xff757575"	r="117"	g="117"	b="117"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_10											          value="0xff8f8f8f"	r="143"	g="143"	b="143"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_11											          value="0xffa8a8a8"	r="168"	g="168"	b="168"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_12											          value="0xffb4b4b4"	r="180"	g="180"	b="180"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_13											          value="0xffc1c1c1"	r="193"	g="193"	b="193"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_14											          value="0xffdedede"	r="222"	g="222"	b="222"	a="255"		xExportTo="sc"/>
+COLOR_HONOR_15											          value="0xffffffff"	r="255"	g="255"	b="255"	a="255"		xExportTo="sc"/>
+  <!-- BLIPS & GAME FLOW -->          
+COLOR_ENEMY													          value="0xff0000cc"		xExportTo="cpp sc"	xAlias="COLOR_RED"/>
+COLOR_ENEMY_UNALERTED								          value="0xff1d0e7a"		xExportTo="cpp sc"	xAlias="COLOR_REDDARK"/>
+COLOR_NEUTRAL											            value="0xffa6a8ac"		xExportTo="cpp as sc"	xAlias="COLOR_GREY"/>
+COLOR_FRIENDLY											          value="0xffd2d3d5"		xExportTo="cpp sc"		xAlias="COLOR_GREYLIGHT"/>
+COLOR_ATTENTION											          value="0xff0000cc"		xExportTo="cpp sc"	xAlias="COLOR_RED"/>
+COLOR_LOW_PRIORITY									          value="0xff636363"		r="99" g="99" b="99" a="255"		xExportTo="cpp sc"/>
+COLOR_OBJECTIVE											          value="0xff90f3fe"		xExportTo="cpp sc"	xAlias="COLOR_YELLOW"/>
+COLOR_OBJECTIVE_ROUTE								          value="0xff90f3fe"		xExportTo="cpp"			xAlias="COLOR_OBJECTIVE"/>
+COLOR_CONE_UNALERTED								          value="0x82aba2a1"		r="161" g="162" b="171" a="130"		/>
+COLOR_CONE_SPOTTED									          value="0x5c0000cc"		xAlias="COLOR_RED"		xAliasAlpha="36%"/>
+COLOR_WAYPOINT											          value="0xff0000cc"		xExportTo="cpp"	xAlias="COLOR_RED"/>
+COLOR_WITNESS_IDENTIFIED						          value="0xff0000cc"		xExportTo="cpp"	xAlias="COLOR_RED"/>
+COLOR_WITNESS_UNIDENTIFIED					          value="0xff1d0e7a"		xExportTo="cpp"	xAlias="COLOR_REDDARK"/>
+COLOR_WITNESS_INVESTIGATING					          value="0xffd2d3d5"		xExportTo="cpp"	xAlias="COLOR_GREYLIGHT"/>
+COLOR_WITNESS												          value="0xff1d0e7a"		xExportTo="cpp"	xAlias="COLOR_REDDARK"/>
+COLOR_RADAR_CENTER_BLIP							          value="0xffe6e6e6"		xExportTo="cpp"	xAlias="COLOR_WHITE"/>
+COLOR_RADAR_STEALTH									          value="0xff5a5b5d"		xExportTo="cpp"	xAlias="COLOR_GREYDARK"/>
+COLOR_RADAR_NORTH										          value="0xffa6a8ac"		xExportTo="cpp"	xAlias="COLOR_NEUTRAL"/>
+COLOR_RADAR_MISSION									          value="0xffe6e6e6"		xExportTo="sc"	xAlias="COLOR_WHITE"/>
+COLOR_INACTIVE_MISSION							          value="0xff5a5b5d"		xExportTo="cpp"	xAlias="COLOR_GREYDARK"/>
+COLOR_MAP_OCEAN											          value="0xc14d6070"		r= "112"	g="96"	b="77"	a="193"		xExportTo="cpp"/>
+COLOR_BLIPS_TEXT_BG						                value="0x00000000"		r= "0"	g="0"	b="0"	a="0"		xExportTo="cpp"/>
+COLOR_WANTED_LOCKDOWN								          value="0xff1d0e7a" 		xExportTo="cpp sc" 	xAlias="COLOR_REDDARK"/> 
+  <!-- MP SPECIFIC COLORS -->         
+COLOR_OTHER_SESSION_PLAYER					          value="0xff61bdd6"		r="214"	g="189"	b= "97"	a="255"		xExportTo="cpp"/>
+COLOR_WINNING_PLAYER								          value="0xff62cbd3"  	r="211" g="203" b="98" a="255"		xExportTo="sc"/>
+COLOR_FREEMODE_EVENT								          value="0xffaf667b"  	r="123" g="102" b="175" a="255"		xExportTo="sc"/>
+COLOR_MP_SERIES											          value="0xffbacfff"		xExportTo="cpp sc"	xAlias="COLOR_ORANGELIGHT"/>
+COLOR_MP_ADVERSARY									          value="0xffb4d5a6"		xExportTo="cpp sc"	xAlias="COLOR_GREENLIGHT"/>
+COLOR_LOCAL_PLAYER									          value="0xffe6e6e6"		xExportTo="cpp sc"	xAlias="COLOR_WHITE"/>
+COLOR_POSSE_ALLY										          value="0xffd3a856"		xExportTo="cpp sc"	xAlias="COLOR_BLUE"/>
+COLOR_POSSE_NEUTRAL									          value="0xff9586f0"		xExportTo="cpp sc"	xAlias="COLOR_REDLIGHT"/>
+COLOR_POSSE_ENEMY										          value="0xff0000cc"		xExportTo="cpp sc"	xAlias="COLOR_ENEMY"/>
+COLOR_CO_OP_PLAYER									          value="0xff705b32"		xExportTo="cpp sc"	xAlias="COLOR_BLUEDARK"/>
+COLOR_MP_OBJECTIVE									          value="0xff90f3fe"		xExportTo="sc"		xAlias="COLOR_OBJECTIVE"/>
+COLOR_MP_OBJECTIVE_NEUTRAL					          value="0xffe6e6e6"		xExportTo="sc"		xAlias="COLOR_WHITE"/>
+COLOR_MP_OBJECTIVE_FRIENDLY					          value="0xffd3a856"		xExportTo="sc"		xAlias="COLOR_POSSE_ALLY"/>
+COLOR_MP_OBJECTIVE_ENEMY						          value="0xff0000cc"		xExportTo="sc"		xAlias="COLOR_POSSE_ENEMY"/>
+  <!-- ABILITY CARDS -->          
+ABILITY_CARD_TIER_1									          value="0xff84c172"	r="114"	g="193" b="132" a="255"		xExportTo="as cpp sc"/>
+ABILITY_CARD_TIER_2									          value="0xffc1ab63"	r="99"	g="171" b="193" a="255"		xExportTo="as cpp sc"/>
+ABILITY_CARD_TIER_3									          value="0xffbb7cae"	r="174"	g="124" b="187" a="255"		xExportTo="as cpp sc"/>
+ABILITY_CARD_TIER_4									          value="0xff4bcff9"	r="249"	g="207" b="75" a="255"		xExportTo="as cpp sc"/>
+ABILITY_CARD_TIER_5									          value="0xff7487ec"	r="236"	g="135" b="116" a="255"		xExportTo="as cpp sc"/>
+ABILITY_CARD_TIER_6									          value="0xff5050ad"	r="173"	g="80" b="80" a="255"		xExportTo="as cpp sc"/>
+  <!-- SHARED COLORS -->          
+COLOR_INVENTORY_ITEM_COUNTER_TEXT             value="0xff000000"		xAlias="COLOR_BLACK"		/>
+COLOR_INVENTORY_ITEM_COUNTER_BG			          value="0xff000000"		xAlias="COLOR_BLACK"		/>
+COLOR_INVENTORY_ITEM_COUNTER_FG			          value="0xffe6e6e6"		xAlias="COLOR_WHITE"		/>
+COLOR_NEW_JOURNAL_ENTRY							          value="0xff90f3fe"		xAlias="COLOR_YELLOW"		/>
   <!-- Quick Select Menus (MultiWheel)  -->
-  <Col key="COLOR_WHEEL_TEXT"							value="0xffe6e6e6"		xAlias="COLOR_MENU_TEXT"/>
-  <Col key="COLOR_WHEEL_TEXT_DISABLED"				value="0xffe6e6e6"		xAlias="COLOR_MENU_TEXT_DISABLED"/>
-  <Col key="COLOR_WHEEL_TEXT_ATTENTION"				value="0xff0000cc"		xAlias="COLOR_MENU_TEXT_ATTENTION"/>
-  <Col key="COLOR_WHEEL_ITEM_FOCUSED"					value="0xff000000"		xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_WHEEL_ITEM"							value="0xffe6e6e6"		xAlias="COLOR_MENU_ITEM"/>
-  <Col key="COLOR_WHEEL_ITEM_DISABLED"				value="0x80a6a8ac"		xAlias="COLOR_GREY" xAliasAlpha="50%" />
-  <Col key="COLOR_WHEEL_SLOT_SELECTION"				value="0xff0000cc"		xAlias="COLOR_RED"/>
-  <Col key="COLOR_WHEEL_SLOT_SELECTION_NOT_ON_PERSON"	value="0xffa6a8ac"		xAlias="COLOR_GREY"/>
-  <Col key="COLOR_WHEEL_DAMAGE_MODE_AVAILABLE"		value="0xffffffff"		xAlias="COLOR_PURE_WHITE"/>
-  <Col key="COLOR_WHEEL_DAMAGE_MODE_UNAVAILABLE"		value="0xff5a5b5d"		xAlias="COLOR_GREYDARK"/>
-  <Col key="COLOR_WHEEL_SUB_SLOT_ITEM"				value="0xffe6e6e6"		xAlias="COLOR_WHITE"/>
-
-  <Col key="COLOR_WHEEL_BG" 							value="0xff000000"		xAlias="COLOR_MENU_BG"/>
-  <Col key="COLOR_WHEEL_BAR"							value="0xffe6e6e6"		xAlias="COLOR_MENU_BAR"/>
-  <Col key="COLOR_WHEEL_BAR_ATTENTION"				value="0xff0000cc"		xAlias="COLOR_MENU_BAR_ATTENTION"/>
-  <Col key="COLOR_WHEEL_BAR_TRACK"					value="0xff000000"		xAlias="COLOR_MENU_BAR_TRACK"/>		
-
+COLOR_WHEEL_TEXT														  value="0xffe6e6e6"		xAlias="COLOR_MENU_TEXT"/>
+COLOR_WHEEL_TEXT_DISABLED											value="0xffe6e6e6"		xAlias="COLOR_MENU_TEXT_DISABLED"/>
+COLOR_WHEEL_TEXT_ATTENTION									  value="0xff0000cc"		xAlias="COLOR_MENU_TEXT_ATTENTION"/>
+COLOR_WHEEL_ITEM_FOCUSED											value="0xff000000"		xAlias="COLOR_BLACK"/>
+COLOR_WHEEL_ITEM														  value="0xffe6e6e6"		xAlias="COLOR_MENU_ITEM"/>
+COLOR_WHEEL_ITEM_DISABLED											value="0x80a6a8ac"		xAlias="COLOR_GREY" xAliasAlpha="50%" />
+COLOR_WHEEL_SLOT_SELECTION										value="0xff0000cc"		xAlias="COLOR_RED"/>
+COLOR_WHEEL_SLOT_SELECTION_NOT_ON_PERSON			value="0xffa6a8ac"		xAlias="COLOR_GREY"/>
+COLOR_WHEEL_DAMAGE_MODE_AVAILABLE							value="0xffffffff"		xAlias="COLOR_PURE_WHITE"/>
+COLOR_WHEEL_DAMAGE_MODE_UNAVAILABLE						value="0xff5a5b5d"		xAlias="COLOR_GREYDARK"/>
+COLOR_WHEEL_SUB_SLOT_ITEM											value="0xffe6e6e6"		xAlias="COLOR_WHITE"/>
+COLOR_WHEEL_BG														    value="0xff000000"		xAlias="COLOR_MENU_BG"/>
+COLOR_WHEEL_BAR														    value="0xffe6e6e6"		xAlias="COLOR_MENU_BAR"/>
+COLOR_WHEEL_BAR_ATTENTION											value="0xff0000cc"		xAlias="COLOR_MENU_BAR_ATTENTION"/>
+COLOR_WHEEL_BAR_TRACK												  value="0xff000000"		xAlias="COLOR_MENU_BAR_TRACK"/>		
   <!-- IN GAME MENU (SATCHEL MENU, PLAYER MENU, LOBBY MENU, SHOP MENU etc) -->
-  <Col key="COLOR_INGAME_MENU_TEXT"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_TEXT"/>
-  <Col key="COLOR_INGAME_MENU_TEXT_DISABLED"			value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_TEXT_DISABLED"/>
-  <Col key="COLOR_INGAME_MENU_TEXT_ATTENTION"			value="0xff0000cc"		xExportTo=""	xAlias="COLOR_MENU_TEXT_ATTENTION"/>
-  <Col key="COLOR_INGAME_MENU_ITEM"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_ITEM"/>
-  <Col key="COLOR_INGAME_MENU_ITEM_DISABLED"			value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_ITEM_DISABLED"/>
-  <Col key="COLOR_INGAME_MENU_SELECTION"				value="0xff0000cc"		xExportTo=""	xAlias="COLOR_MENU_SELECTION"/>
-  <Col key="COLOR_INGAME_MENU_BAR"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_BAR"/>
-  <Col key="COLOR_INGAME_MENU_BAR_ATTENTION"			value="0xff0000cc"		xExportTo=""	xAlias="COLOR_MENU_BAR_ATTENTION"/>
-  <Col key="COLOR_INGAME_MENU_BAR_TRACK"				value="0xff000000"		xExportTo=""	xAlias="COLOR_MENU_BAR_TRACK"/>
-  <Col key="COLOR_INGAME_MENU_BG"						value="0xff000000"		xExportTo=""	xAlias="COLOR_MENU_BG"/>
-
-
+COLOR_INGAME_MENU_TEXT								        value="0xffe6e6e6"    xExportTo=""  xAlias="COLOR_MENU_TEXT"/>
+COLOR_INGAME_MENU_TEXT_DISABLED				        value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_TEXT_DISABLED"/>
+COLOR_INGAME_MENU_TEXT_ATTENTION			        value="0xff0000cc"   xExportTo=""  xAlias="COLOR_MENU_TEXT_ATTENTION"/>
+COLOR_INGAME_MENU_ITEM								        value="0xffe6e6e6"    xExportTo=""  xAlias="COLOR_MENU_ITEM"/>
+COLOR_INGAME_MENU_ITEM_DISABLED				        value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_ITEM_DISABLED"/>
+COLOR_INGAME_MENU_SELECTION						        value="0xff0000cc"   xExportTo=""  xAlias="COLOR_MENU_SELECTION"/>
+COLOR_INGAME_MENU_BAR									        value="0xffe6e6e6"    xExportTo=""  xAlias="COLOR_MENU_BAR"/>
+COLOR_INGAME_MENU_BAR_ATTENTION				        value="0xff0000cc"   xExportTo=""  xAlias="COLOR_MENU_BAR_ATTENTION"/>
+COLOR_INGAME_MENU_BAR_TRACK						        value="0xff000000"   xExportTo=""  xAlias="COLOR_MENU_BAR_TRACK"/>
+COLOR_INGAME_MENU_BG									        value="0xff000000"   xExportTo=""  xAlias="COLOR_MENU_BG"/>
   <!-- PAUSE MENU -->
-  <Col key="COLOR_PAUSE_MENU_TEXT"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_TEXT"/>
-  <Col key="COLOR_PAUSE_MENU_TEXT_DISABLED"			value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_TEXT_DISABLED"/>
-  <Col key="COLOR_PAUSE_MENU_TEXT_ATTENTION"			value="0xff0000cc"		xExportTo=""	xAlias="COLOR_MENU_TEXT_ATTENTION"/>
-  <Col key="COLOR_PAUSE_MENU_ITEM"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_ITEM"/>
-  <Col key="COLOR_PAUSE_MENU_ITEM_DISABLED"			value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_ITEM_DISABLED"/>
-  <Col key="COLOR_PAUSE_MENU_SELECTION"				value="0xff0000cc"		xExportTo=""	xAlias="COLOR_MENU_SELECTION"/>
-  <Col key="COLOR_PAUSE_MENU_BAR"						value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_BAR"/>
-  <Col key="COLOR_PAUSE_MENU_BAR_ATTENTION"			value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_BAR"/>
-  <Col key="COLOR_PAUSE_MENU_BAR_TRACK"				value="0xff000000"		xExportTo=""	xAlias="COLOR_MENU_BAR_TRACK"/>
-  <Col key="COLOR_PAUSE_MENU_BG"						value="0xff000000"		xExportTo=""	xAlias="COLOR_MENU_BG"/>
-  <Col key="COLOR_PAUSE_NAV_TEXT"						value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_PAUSE_NAV_TEXT_DISABLED"			value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_PAUSE_NAV_TEXT_SELECTED"			value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_PAUSE_NAV_BG"						value="0xff0000cc"		xExportTo=""	xAlias="COLOR_RED"/>
-
-
-  <!-- ALERT -->
-  <Col key="COLOR_ALERT_TEXT"							value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_TEXT"/>
-  <Col key="COLOR_ALERT_TEXT_DISABLED"				value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_MENU_TEXT_DISABLED"/>
-  <Col key="COLOR_ALERT_TEXT_ATTENTION"				value="0xff0000cc"		xExportTo=""	xAlias="COLOR_MENU_TEXT_ATTENTION"/>
-  <Col key="COLOR_ALERT_BG"							value="0xff000000"		xExportTo=""	xAlias="COLOR_MENU_BG"/>
-
-
-
-
-
-  <!-- AMMO -->
-  <Col key="COLOR_AMMO_GUN"							value="0xffe6e6e6"		xExportTo="as"	xAlias="COLOR_HUD_TEXT"/>
-  <Col key="COLOR_AMMO_GUN_OUT"						value="0xff0000cc"		xExportTo="as"	xAlias="COLOR_ATTENTION"/>
-  <Col key="COLOR_AMMO_SUPPLY"						value="0xffa6a8ac"		xExportTo="as"	xAlias="COLOR_GREY"/>
-  <Col key="COLOR_AMMO_SUPPLY_OUT"					value="0xff0000cc"		xExportTo="as"	xAlias="COLOR_ATTENTION"/>
-
-
-  <!-- CASH -->
-  <Col key="COLOR_CASH"								value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_CASH_DECREASE"						value="0xff0000cc"		xExportTo=""	xAlias="COLOR_ATTENTION"/>
-
-
-  <!-- SUBTITLES -->
-  <Col key="COLOR_SUBTITLE_TEXT_1"					value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_HUD_TEXT"/>
-  <Col key="COLOR_SUBTITLE_TEXT_2"					value="0xffbacfff"		xExportTo=""	xAlias="COLOR_ORANGELIGHT"/>
-  <Col key="COLOR_SUBTITLE_TEXT_3"					value="0xffd2d3d5"		xExportTo=""	xAlias="COLOR_GREYLIGHT"/>
-  <Col key="COLOR_SUBTITLE_TEXT_4"					value="0xffbbf8ff"		xExportTo=""	xAlias="COLOR_YELLOWLIGHT"/>
-  <Col key="COLOR_SUBTITLE_SPEAKER"					value="0xff5a5b5d"		xExportTo=""	xAlias="COLOR_GREYDARK"/>		
-  <Col key="COLOR_SUBTITLE_BG"						value="0xff000000"		xExportTo=""	xAlias="COLOR_HUD_BG"/>
-
-  <!-- OBJECTIVES -->
-  <Col key="COLOR_OBJECTIVE_TEXT"						value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>
-
-  <!-- RPG COLORS  -->
-  <Col key="COLOR_RPG_SPECIAL_1"						value="0xff71eaff"	xExportTo="cpp sc"	xAlias="COLOR_YELLOWSTRONG"/>
-  <Col key="COLOR_RPG_SPECIAL_2"						value="0xff90f3fe"	xExportTo="cpp sc"	xAlias="COLOR_YELLOW"/>
-  <Col key="COLOR_RPG_SPECIAL_3"						value="0xffbbf8ff"	xExportTo="cpp sc"	xAlias="COLOR_YELLOWLIGHT"/>
-
-  <!-- INSTRUCTIONAL BUTTONS -->
-  <Col key="COLOR_BUTTON_TEXT"						value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_HUD_TEXT"/>
-  <Col key="COLOR_BUTTON_TEXT_DISABLED"				value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_HUD_TEXT_DISABLED"/>
-  <Col key="COLOR_BUTTON_TEXT_ATTENTION"				value="0xff0000cc"		xExportTo=""	xAlias="COLOR_HUD_TEXT_ATTENTION"/>
-  <Col key="COLOR_BUTTON_ITEM"						value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_HUD_ITEM"/>
-  <Col key="COLOR_BUTTON_ITEM_DISABLED"				value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_HUD_ITEM_DISABLED"/>
-  <Col key="COLOR_BUTTON_ITEM_ATTENTION"				value="0xff0000cc"		xExportTo=""	xAlias="COLOR_HUD_ITEM_ATTENTION"/>
-
-
-  <!-- HEALTH / STATUS BARS -->
-  <Col key="COLOR_HEALTH_FILL"						value="0xffe6e6e6"		xExportTo="cpp"	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_HEALTH_TRACK"						value="0xff000000"		xExportTo="cpp"	xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_HEALTH_FILL_LOW"					value="0xff0000cc"		xExportTo="cpp"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_HEALTH_TRACK_LOW"					value="0xff1d0e7a"		xExportTo="cpp"	xAlias="COLOR_REDDARK"/>
-  <Col key="COLOR_DEAD_EYE_FILL"						value="0xff0000cc"		xExportTo="cpp"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_DEAD_EYE_TRACK"						value="0xff000000"		xExportTo="cpp"	xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_STAMINA_FILL"						value="0xffd2d3d5"		xExportTo="cpp"	xAlias="COLOR_GREYLIGHT"/>
-  <Col key="COLOR_STAMINA_TRACK"						value="0xff000000"		xExportTo="cpp"	xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_HORSE_AGITATION_TRACK"				value="0xff010068"		r="104"	g="0"	b="1"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_HORSE_AGITATION_FILL"				value="0xff321bed"		r="237"	g="27"	b="50"	a="255"		xExportTo="cpp"/>
-
-
-  <!-- PLATFORMS -->
-  <Col key="COLOR_PLATFORM_1"							value="0xff7b370b"		r= "11"	g= "55"	b="123"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_PLATFORM_2"							value="0xff3ec892"		r="146"	g="200"	b= "62"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_PLATFORM_3"							value="0xff1c99ea"		r="234"	g="153"	b= "28"	a="255"/>
-
-
-  <!-- REPLAY EDITOR -->
-  <Col key="COLOR_REPLAY_BLACK"						value="0xff000000"		xExportTo="as"			xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_REPLAY_WHITE"						value="0xfff0f0f0"		r="240"	g="240"	b="240"	a="255"		xExportTo="as cpp"/>
-  <Col key="COLOR_REPLAY_GREEN"						value="0xff72cc72"		r="114"	g="204"	b="114"	a="255"		xExportTo="as cpp"/>
-  <Col key="COLOR_REPLAY_ORANGE"						value="0xff5585ff"		r="255"	g="133"	b="85"	a="255"		xExportTo="as cpp"/>
-  <Col key="COLOR_REPLAY_RED"							value="0xff3232e0"		r="224"	g="50"	b="50"	a="255"		xExportTo="as cpp"/>
-  <Col key="COLOR_REPLAY_BLUE"						value="0xffe5b65d"		r="93"	g="182"	b="229"	a="255"		xExportTo="as cpp"/>
-  <Col key="COLOR_REPLAY_GREY"						value="0xff9b9b9b"		r="155"	g="155"	b="155"	a="255"		xExportTo="as cpp"/>
-  <Col key="COLOR_REPLAY_PURPLE"						value="0xffe26684"		r="132"	g="102"	b="226"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_YELLOW"						value="0xff50c8f0"		r="240"	g="200"	b="80"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_YELLOW_DARK"					value="0xff296b7e"		r="126"	g="107"	b="41"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_YELLOW_LIGHT"				value="0xffa9ebfe"		r="254"	g="235"	b="169"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_VIDEO"				value="0xffe0a635"		r="53"	g="166"	b="224"	a="255"		xExportTo="as cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_AUDIO"				value="0xff9d4fa2"		r="162"	g="79"	b="157"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_AUDIO_FADEOUT"		value="0xff39223b"		r="59"	g="34"	b="57"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_TEXT"				value="0xff8dc068"		r="104"	g="192"	b="141"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_TEXT_FADEOUT"		value="0xff354429"		r="41"	g="68"	b="53"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_SCORE"				value="0xff01a0f0"		r="240"	g="160"	b="1"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_SCORE_FADEOUT"		value="0xff0a3a52"		r="82"	g="58"	b="10"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_AMBIENT"			value="0xff50c8f0"		r="240"	g="200"	b="80"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_AMBIENT_FADEOUT"	value="0xff224650"		r="80"	g="70"	b="34"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_AMBIENT_DARK"		value="0xff5585ff"		r="255"	g="133"	b="85"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_AMBIENT_LIGHT"		value="0xffaac2ff"		r="255"	g="194"	b="170"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_TIMELINE_AMBIENT_MID"		value="0xff5585ff"		r="255"	g="133"	b="85"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_SOCIAL_CLUB"					value="0xff1c99ea"		r="234"	g="153"	b="28"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_REPLAY_INGAME_BG"					value="0xba000000"		r="0"	g="0"	b="0"	a="186"		xExportTo="as"/>
-
-
+COLOR_PAUSE_MENU_TEXT								          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_TEXT"/>
+COLOR_PAUSE_MENU_TEXT_DISABLED			          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_TEXT_DISABLED"/>
+COLOR_PAUSE_MENU_TEXT_ATTENTION			          value="0xff0000cc"    xExportTo=""  xAlias="COLOR_MENU_TEXT_ATTENTION"/>
+COLOR_PAUSE_MENU_ITEM								          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_ITEM"/>
+COLOR_PAUSE_MENU_ITEM_DISABLED			          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_ITEM_DISABLED"/>
+COLOR_PAUSE_MENU_SELECTION					          value="0xff0000cc"   xExportTo=""  xAlias="COLOR_MENU_SELECTION"/>
+COLOR_PAUSE_MENU_BAR								          value="0xffe6e6e6"    xExportTo=""  xAlias="COLOR_MENU_BAR"/>
+COLOR_PAUSE_MENU_BAR_ATTENTION			          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_BAR"/>
+COLOR_PAUSE_MENU_BAR_TRACK					          value="0xff000000"   xExportTo=""  xAlias="COLOR_MENU_BAR_TRACK"/>
+COLOR_PAUSE_MENU_BG									          value="0xff000000"    xExportTo=""  xAlias="COLOR_MENU_BG"/>
+COLOR_PAUSE_NAV_TEXT								          value="0xff000000"    xExportTo=""  xAlias="COLOR_BLACK"/>
+COLOR_PAUSE_NAV_TEXT_DISABLED				          value="0xff000000"   xExportTo=""  xAlias="COLOR_BLACK"/>
+COLOR_PAUSE_NAV_TEXT_SELECTED				          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_WHITE"/>
+COLOR_PAUSE_NAV_BG									          value="0xff0000cc"   xExportTo=""  xAlias="COLOR_RED"/>
+  <!-- ALERT -->           
+COLOR_ALERT_TEXT										          value="0xffe6e6e6"    xExportTo=""  xAlias="COLOR_MENU_TEXT"/>
+COLOR_ALERT_TEXT_DISABLED						          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_MENU_TEXT_DISABLED"/>
+COLOR_ALERT_TEXT_ATTENTION					          value="0xff0000cc"   xExportTo=""  xAlias="COLOR_MENU_TEXT_ATTENTION"/>
+COLOR_ALERT_BG											          value="0xff000000"   xExportTo=""  xAlias="COLOR_MENU_BG"/>
+  <!-- AMMO -->          
+COLOR_AMMO_GUN											          value="0xffe6e6e6"   xExportTo="as"  xAlias="COLOR_HUD_TEXT"/>
+COLOR_AMMO_GUN_OUT									          value="0xff0000cc"   xExportTo="as"  xAlias="COLOR_ATTENTION"/>
+COLOR_AMMO_SUPPLY										          value="0xffa6a8ac"   xExportTo="as"  xAlias="COLOR_GREY"/>
+COLOR_AMMO_SUPPLY_OUT								          value="0xff0000cc"   xExportTo="as"  xAlias="COLOR_ATTENTION"/>
+  <!-- CASH -->          
+COLOR_CASH													          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_WHITE"/>
+COLOR_CASH_DECREASE									          value="0xff0000cc"    xExportTo=""  xAlias="COLOR_ATTENTION"/>
+  <!-- SUBTITLES -->           
+COLOR_SUBTITLE_TEXT_1								          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_HUD_TEXT"/>
+COLOR_SUBTITLE_TEXT_2								          value="0xffbacfff"   xExportTo=""  xAlias="COLOR_ORANGELIGHT"/>
+COLOR_SUBTITLE_TEXT_3								          value="0xffd2d3d5"   xExportTo=""  xAlias="COLOR_GREYLIGHT"/>
+COLOR_SUBTITLE_TEXT_4								          value="0xffbbf8ff"   xExportTo=""  xAlias="COLOR_YELLOWLIGHT"/>
+COLOR_SUBTITLE_SPEAKER							          value="0xff5a5b5d"   xExportTo=""  xAlias="COLOR_GREYDARK"/>   
+COLOR_SUBTITLE_BG										          value="0xff000000"   xExportTo=""  xAlias="COLOR_HUD_BG"/>
+  <!-- OBJECTIVES -->          
+COLOR_OBJECTIVE_TEXT								          value="0xffe6e6e6"    xExportTo=""  xAlias="COLOR_WHITE"/>
+  <!-- RPG COLORS  -->           
+COLOR_RPG_SPECIAL_1									          value="0xff71eaff"  xExportTo="cpp sc"  xAlias="COLOR_YELLOWSTRONG"/>
+COLOR_RPG_SPECIAL_2									          value="0xff90f3fe"  xExportTo="cpp sc"  xAlias="COLOR_YELLOW"/>
+COLOR_RPG_SPECIAL_3									          value="0xffbbf8ff"  xExportTo="cpp sc"  xAlias="COLOR_YELLOWLIGHT"/>
+  <!-- INSTRUCTIONAL BUTTONS -->           
+COLOR_BUTTON_TEXT										          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_HUD_TEXT"/>
+COLOR_BUTTON_TEXT_DISABLED					          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_HUD_TEXT_DISABLED"/>
+COLOR_BUTTON_TEXT_ATTENTION					          value="0xff0000cc"    xExportTo=""  xAlias="COLOR_HUD_TEXT_ATTENTION"/>
+COLOR_BUTTON_ITEM										          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_HUD_ITEM"/>
+COLOR_BUTTON_ITEM_DISABLED					          value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_HUD_ITEM_DISABLED"/>
+COLOR_BUTTON_ITEM_ATTENTION					          value="0xff0000cc"    xExportTo=""  xAlias="COLOR_HUD_ITEM_ATTENTION"/>
+  <!-- HEALTH / STATUS BARS -->          
+COLOR_HEALTH_FILL										          value="0xffe6e6e6"   xExportTo="cpp" xAlias="COLOR_WHITE"/>
+COLOR_HEALTH_TRACK									          value="0xff000000"   xExportTo="cpp" xAlias="COLOR_BLACK"/>
+COLOR_HEALTH_FILL_LOW								          value="0xff0000cc"   xExportTo="cpp" xAlias="COLOR_RED"/>
+COLOR_HEALTH_TRACK_LOW							          value="0xff1d0e7a"   xExportTo="cpp" xAlias="COLOR_REDDARK"/>
+COLOR_DEAD_EYE_FILL									          value="0xff0000cc"    xExportTo="cpp" xAlias="COLOR_RED"/>
+COLOR_DEAD_EYE_TRACK								          value="0xff000000"    xExportTo="cpp" xAlias="COLOR_BLACK"/>
+COLOR_STAMINA_FILL									          value="0xffd2d3d5"   xExportTo="cpp" xAlias="COLOR_GREYLIGHT"/>
+COLOR_STAMINA_TRACK									          value="0xff000000"    xExportTo="cpp" xAlias="COLOR_BLACK"/>
+COLOR_HORSE_AGITATION_TRACK					          value="0xff010068"    r="104" g="0" b="1" a="255"   xExportTo="cpp"/>
+COLOR_HORSE_AGITATION_FILL					          value="0xff321bed"   r="237" g="27"  b="50"  a="255"   xExportTo="cpp"/>
+  <!-- PLATFORMS -->           
+COLOR_PLATFORM_1										          value="0xff7b370b"    r= "11" g= "55" b="123" a="255"   xExportTo="cpp"/>
+COLOR_PLATFORM_2										          value="0xff3ec892"    r="146" g="200" b= "62" a="255"   xExportTo="cpp"/>
+COLOR_PLATFORM_3										          value="0xff1c99ea"    r="234" g="153" b= "28" a="255"/>
+  <!-- REPLAY EDITOR -->           
+COLOR_REPLAY_BLACK									          value="0xff000000"   xExportTo="as"      xAlias="COLOR_BLACK"/>
+COLOR_REPLAY_WHITE									          value="0xfff0f0f0"   r="240" g="240" b="240" a="255"   xExportTo="as cpp"/>
+COLOR_REPLAY_GREEN									          value="0xff72cc72"   r="114" g="204" b="114" a="255"   xExportTo="as cpp"/>
+COLOR_REPLAY_ORANGE									          value="0xff5585ff"    r="255" g="133" b="85"  a="255"   xExportTo="as cpp"/>
+COLOR_REPLAY_RED										          value="0xff3232e0"    r="224" g="50"  b="50"  a="255"   xExportTo="as cpp"/>
+COLOR_REPLAY_BLUE										          value="0xffe5b65d"   r="93"  g="182" b="229" a="255"   xExportTo="as cpp"/>
+COLOR_REPLAY_GREY										          value="0xff9b9b9b"   r="155" g="155" b="155" a="255"   xExportTo="as cpp"/>
+COLOR_REPLAY_PURPLE									          value="0xffe26684"    r="132" g="102" b="226" a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_YELLOW									          value="0xff50c8f0"    r="240" g="200" b="80"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_YELLOW_DARK											value="0xff296b7e"		r="126"	g="107"	b="41"	a="255"		xExportTo="cpp"/>
+COLOR_REPLAY_YELLOW_LIGHT											value="0xffa9ebfe"		r="254"	g="235"	b="169"	a="255"		xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_VIDEO										value="0xffe0a635"   r="53"  g="166" b="224" a="255"   xExportTo="as cpp"/>
+COLOR_REPLAY_TIMELINE_AUDIO										value="0xff9d4fa2"   r="162" g="79"  b="157" a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_AUDIO_FADEOUT						value="0xff39223b"   r="59"  g="34"  b="57"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_TEXT										value="0xff8dc068"    r="104" g="192" b="141" a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_TEXT_FADEOUT						value="0xff354429"    r="41"  g="68"  b="53"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_SCORE										value="0xff01a0f0"   r="240" g="160" b="1" a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_SCORE_FADEOUT						value="0xff0a3a52"   r="82"  g="58"  b="10"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_AMBIENT									value="0xff50c8f0"    r="240" g="200" b="80"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_AMBIENT_FADEOUT					value="0xff224650"    r="80"  g="70"  b="34"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_AMBIENT_DARK						value="0xff5585ff"    r="255" g="133" b="85"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_AMBIENT_LIGHT						value="0xffaac2ff"   r="255" g="194" b="170" a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_TIMELINE_AMBIENT_MID							value="0xff5585ff"    r="255" g="133" b="85"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_SOCIAL_CLUB											value="0xff1c99ea"   r="234" g="153" b="28"  a="255"   xExportTo="cpp"/>
+COLOR_REPLAY_INGAME_BG												value="0xba000000"    r="0" g="0" b="0" a="186"   xExportTo="as"/>
   <!-- LOADING SCREEN -->
-  <Col key="COLOR_LOADING_SCREEN_PROGRESS_BAR_FILL"	value="0xffa6a8ac"		xExportTo="as" 	xAlias="COLOR_NEUTRAL"/>
-  <Col key="COLOR_LOADING_SCREEN_PROGRESS_BAR_TRACK"	value="0xff372e38"		r="56"	g="46"	b= "55"	a="255" xExportTo="as"	/>
-  <Col key="COLOR_LOADING_SCREEN_TIP_TEXT"		value="0xff6b7174"		r="116"	g="113"	b= "107" a="255" xExportTo="as cpp"/>
-
-
+COLOR_LOADING_SCREEN_PROGRESS_BAR_FILL				value="0xffa6a8ac"    xExportTo="as"  xAlias="COLOR_NEUTRAL"/>
+COLOR_LOADING_SCREEN_PROGRESS_BAR_TRACK				value="0xff372e38"   r="56"  g="46"  b= "55" a="255" xExportTo="as"  />
+COLOR_LOADING_SCREEN_TIP_TEXT									value="0xff6b7174"    r="116" g="113" b= "107" a="255" xExportTo="as cpp"/>
   <!-- RETICLE -->
-  <Col key="COLOR_RETICLE_NOT_READY"					value="0x59696969"		r="105"	g="105"	b="105"	a= "89"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_NEARLY_READY"				value="0xeaffffff"		r="255"	g="255"	b="255"	a="234"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_READY"						value="0xff2d10f2"		r="242"	g="16"	b="45"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_DEFAULT"					value="0xffe1e1e1"		r="225"	g="225"	b="225"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_FRIENDLY"					value="0xff2d10f2"		r="242"	g="16"	b="45"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_BUDDY"						value="0xffe1e1e1"		r="225"	g="225"	b="225"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_DEAD"						value="0xff9b9b9b"		r="155"	g="155"	b="155"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_ENEMY"						value="0xff2d10f2"		r="242"	g="16"	b="45"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_WORLD_NOT_COCKED"			value="0x4d9b9b9b"		r="155"	g="155"	b="155"	a= "77"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_WORLD_COCKED"				value="0x80ffffff"		r="255"	g="255"	b="255"	a="128"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_TARGET_NOT_COCKED"			value="0x4d9b9b9b"		r="155"	g="155"	b="155"	a= "77"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_TARGET_COCKED_INACCURATE"	value="0xffffffff"		r="255"	g="255"	b="255"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_TARGET_COCKED_ACCURATE"		value="0xff2d10f2"		r="242"	g="16"	b="45"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_DEADEYE_TARGET"						value="0xff0000cc"		xExportTo="cpp"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_RETICLE_WEAPON_NOT_COCKED"			value="0xffcdcdcd"		r="205"	g="205"	b="205"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_RETICLE_CRITICAL_HIT"				value="0xff1d0e7a"		xExportTo="as" xAlias="COLOR_REDDARK"/>
-  <Col key="COLOR_RETICLE_PERFECT_KILL"				value="0xff04c8f9"		xExportTo="as" xAlias="COLOR_GOLD"/>
-
-
+COLOR_RETICLE_NOT_READY												value="0x59696969"   r="105" g="105" b="105" a= "89"   xExportTo="as"/>
+COLOR_RETICLE_NEARLY_READY										value="0xeaffffff"    r="255" g="255" b="255" a="234"   xExportTo="as"/>
+COLOR_RETICLE_READY														value="0xff2d10f2"   r="242" g="16"  b="45"  a="255"   xExportTo="as"/>
+COLOR_RETICLE_DEFAULT													value="0xffe1e1e1"    r="225" g="225" b="225" a="255"   xExportTo="as"/>
+COLOR_RETICLE_FRIENDLY												value="0xff2d10f2"    r="242" g="16"  b="45"  a="255"   xExportTo="as"/>
+COLOR_RETICLE_BUDDY														value="0xffe1e1e1"   r="225" g="225" b="225" a="255"   xExportTo="as"/>
+COLOR_RETICLE_DEAD														value="0xff9b9b9b"    r="155" g="155" b="155" a="255"   xExportTo="as"/>
+COLOR_RETICLE_ENEMY														value="0xff2d10f2"   r="242" g="16"  b="45"  a="255"   xExportTo="as"/>
+COLOR_RETICLE_WORLD_NOT_COCKED								value="0x4d9b9b9b"    r="155" g="155" b="155" a= "77"   xExportTo="as"/>
+COLOR_RETICLE_WORLD_COCKED										value="0x80ffffff"    r="255" g="255" b="255" a="128"   xExportTo="as"/>
+COLOR_RETICLE_TARGET_NOT_COCKED								value="0x4d9b9b9b"   r="155" g="155" b="155" a= "77"   xExportTo="as"/>
+COLOR_RETICLE_TARGET_COCKED_INACCURATE				value="0xffffffff"    r="255" g="255" b="255" a="255"   xExportTo="as"/>
+COLOR_RETICLE_TARGET_COCKED_ACCURATE					value="0xff2d10f2"   r="242" g="16"  b="45"  a="255"   xExportTo="as"/>
+COLOR_DEADEYE_TARGET													value="0xff0000cc"   xExportTo="cpp" xAlias="COLOR_RED"/>
+COLOR_RETICLE_WEAPON_NOT_COCKED								value="0xffcdcdcd"   r="205" g="205" b="205" a="255"   xExportTo="as"/>
+COLOR_RETICLE_CRITICAL_HIT										value="0xff1d0e7a"    xExportTo="as" xAlias="COLOR_REDDARK"/>
+COLOR_RETICLE_PERFECT_KILL										value="0xff04c8f9"    xExportTo="as" xAlias="COLOR_GOLD"/>
   <!-- ITEM VIEWER  -->
-  <Col key="COLOR_CATALOG_BLACK_INK"					value="0xff000000"	r="0"	g="0"	b="0"	a="255" 		xExportTo="as cpp sc"/>
-
+COLOR_CATALOG_BLACK_INK												value="0xff000000" r="0" g="0" b="0" a="255"     xExportTo="as cpp sc"/>
   <!-- STATUS ICONS  -->
-  <Col key="COLOR_PLAYER_STATUS_NEUTRAL"			    value="0xffa6a8ac"		xExportTo=""	xAlias="COLOR_NEUTRAL"/>	
-  <Col key="COLOR_PLAYER_STATUS_POSITIVE"			    value="0xffe6e6e6"		xExportTo=""	xAlias="COLOR_WHITE"/>	
-  <Col key="COLOR_PLAYER_STATUS_NEGATIVE"			    value="0xff0000cc"		xExportTo="as"	xAlias="COLOR_RED"/>	
-  <Col key="COLOR_PLAYER_STATUS_OVERPOWERED"			value="0xff20cff2"		r="242"	g="207"	b="32"	a="255"		xExportTo=""/>
-  <Col key="COLOR_RPG_STAT_BACKGROUND"				value="0xb3000000"		xExportTo=""	xAlias="COLOR_BLACK" xAliasAlpha="70%"/>
-
+COLOR_PLAYER_STATUS_NEUTRAL										value="0xffa6a8ac"   xExportTo=""  xAlias="COLOR_NEUTRAL"/>  
+COLOR_PLAYER_STATUS_POSITIVE									value="0xffe6e6e6"   xExportTo=""  xAlias="COLOR_WHITE"/>  
+COLOR_PLAYER_STATUS_NEGATIVE									value="0xff0000cc"   xExportTo="as"  xAlias="COLOR_RED"/>  
+COLOR_PLAYER_STATUS_OVERPOWERED								value="0xff20cff2"   r="242" g="207" b="32"  a="255"   xExportTo=""/>
+COLOR_RPG_STAT_BACKGROUND											value="0xb3000000"    xExportTo=""  xAlias="COLOR_BLACK" xAliasAlpha="70%"/>
   <!-- WANTED -->
-  <Col key="WANTED_BG_ACTIVE" 						value="0xff0000cc" 		xExportTo="cpp sc" 	xAlias="COLOR_RED"/> 
-  <Col key="WANTED_BG_NON_ACTIVE" 					value="0xff1d0e7a" 		xExportTo="cpp sc" 	xAlias="COLOR_REDDARK"/> 
-  <Col key="WANTED_STAR_ACTIVE" 						value="0xffe6e6e6" 		xExportTo="cpp sc" 	xAlias="COLOR_WHITE"/>
-  <Col key="WANTED_STAR_NON_ACTIVE" 					value="0xff0000cc" 		xExportTo="cpp sc" 	xAlias="COLOR_RED"/> 
-  <Col key="WANTED_STAR_BG"							value="0xff000000" 		xExportTo="cpp sc" 	xAlias="COLOR_BLACK"/>
-
+WANTED_BG_ACTIVE														  value="0xff0000cc" 		xExportTo="cpp sc" 	xAlias="COLOR_RED"/> 
+WANTED_BG_NON_ACTIVE													value="0xff1d0e7a" 		xExportTo="cpp sc" 	xAlias="COLOR_REDDARK"/> 
+WANTED_STAR_ACTIVE														value="0xffe6e6e6" 		xExportTo="cpp sc" 	xAlias="COLOR_WHITE"/>
+WANTED_STAR_NON_ACTIVE												value="0xff0000cc" 		xExportTo="cpp sc" 	xAlias="COLOR_RED"/> 
+WANTED_STAR_BG														    value="0xff000000" 		xExportTo="cpp sc" 	xAlias="COLOR_BLACK"/>
   <!-- SOCIAL CLUB FEED -->
-  <Col key="COLOR_SOCIAL_CLUB_FEED_ROCKSTAR"				value="0xff17affc"		xExportTo="cpp"		xAlias="COLOR_SOCIAL_CLUB"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_WHITE"					value="0xffffffff"		xExportTo="cpp"		xAlias="COLOR_PURE_WHITE"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_SUCCESS"				value="0xff97970e"		r="14"	g="151"	b="151"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_DANGER"				value="0xff484ab9"		r="185"	g="74"	b="72"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_HIGHLIGHT"				value="0xff8e4b00"		r="0"	g="75"	b="142"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_0"	value="0xff0f1214"		r="20"	g="18"	b="15"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_1"	value="0xff2b2e2f"		r="47"	g="46"	b="43"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_2"	value="0xff46494b"		r="75"	g="73"	b="70"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_3"	value="0xff626466"		r="102"	g="100"	b="98"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_4"	value="0xff999c9e"		r="158"	g="156"	b="153"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_5"	value="0xffd5d8da"		r="218"	g="216"	b="213"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_6"	value="0xffeceff0"		r="240"	g="239"	b="236"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_7"	value="0xfff6f9fa"		r="250"	g="249"	b="246"	a="255"		xExportTo="cpp"/>
-
+COLOR_SOCIAL_CLUB_FEED_ROCKSTAR								value="0xff17affc"   xExportTo="cpp"   xAlias="COLOR_SOCIAL_CLUB"/>
+COLOR_SOCIAL_CLUB_FEED_WHITE									value="0xffffffff"   xExportTo="cpp"   xAlias="COLOR_PURE_WHITE"/>
+COLOR_SOCIAL_CLUB_FEED_SUCCESS								value="0xff97970e"    r="14"  g="151" b="151" a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_DANGER									value="0xff484ab9"    r="185" g="74"  b="72"  a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_HIGHLIGHT							value="0xff8e4b00"   r="0" g="75"  b="142" a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_0		value="0xff0f1214"   r="20"  g="18"  b="15"  a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_1		value="0xff2b2e2f"   r="47"  g="46"  b="43"  a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_2		value="0xff46494b"   r="75"  g="73"  b="70"  a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_3		value="0xff626466"   r="102" g="100" b="98"  a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_4		value="0xff999c9e"   r="158" g="156" b="153" a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_5		value="0xffd5d8da"   r="218" g="216" b="213" a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_6		value="0xffeceff0"   r="240" g="239" b="236" a="255"   xExportTo="cpp"/>
+COLOR_SOCIAL_CLUB_FEED_GREY_DARK_TO_LIGHT_7		value="0xfff6f9fa"   r="250" g="249" b="246" a="255"   xExportTo="cpp"/>
     <!-- OPENING CREDITS -->
-    <Col key="COLOR_INTRO_CREDIT_TEXT"          value="0xff0000cc"    xExportTo=""   xAlias="COLOR_RED"/>
-    <Col key="COLOR_INTRO_CREDIT_SHADOW"          value="0xff000000"    xExportTo=""   xAlias="COLOR_BLACK"/>
-
+  COLOR_INTRO_CREDIT_TEXT											value="0xff0000cc"    xExportTo=""   xAlias="COLOR_RED"/>
+  COLOR_INTRO_CREDIT_SHADOW										value="0xff000000"    xExportTo=""   xAlias="COLOR_BLACK"/>
 <!-- 
 ==================================================================================
-
     PHASE OUT ALL OF THESE COLOURS
-
 ==================================================================================
 -->
-  <Col key="COLOR_STAR"								value="0xff69ab4e"										xExportTo="as sc"	xAlias="COLOR_GREEN"/>
-
-  <Col key="COLOR_METER_FILL_DEFAULT"					value="0xffe6e6e6"					xExportTo="cpp"	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_METER_TRACK_DEFAULT"				value="0xff5a5b5d"					xExportTo="cpp"	xAlias="COLOR_GREYDARK" />
-  <Col key="COLOR_METER_DISABLED_DEFAULT"				value="0xbf000000"					xExportTo="cpp"	xAlias="COLOR_BLACK" xAliasAlpha="75%"/>
-  <Col key="COLOR_METER_GAP_DEFAULT"					value="0xbf000000"					xExportTo="cpp"	xAlias="COLOR_BLACK" xAliasAlpha="75%"/>
-  <Col key="COLOR_METER_ACTIVE_DEFAULT"				value="0xff0000cc"					xExportTo="cpp"	xAlias="COLOR_RED" />
-
-  <Col key="COLOR_TEXT_OUTLINE"						value="0x54000000"										xExportTo=""	xAlias="COLOR_BLACK" xAliasAlpha="33%"/>
-  <Col key="COLOR_HUD_FILL"							value="0xffe6e6e6"								 		xExportTo=""	xAlias="COLOR_WHITE"/>
-
-  <Col key="COLOR_HUD_TRACK"							value="0x80000000"								 		xExportTo=""	xAlias="COLOR_BLACK" xAliasAlpha="50%"/>
-  <Col key="COLOR_HUD_TRACK_GAP"						value="0xbf000000"								 		xExportTo=""	xAlias="COLOR_BLACK" xAliasAlpha="75%"/>
-
-
-  <Col key="COLOR_HUD_TEXT_BOLD"						value="0xffe6e6e6"										xExportTo=""	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_WANTED"								value="0xff0000cc"										xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_HUNTED"								value="0xff0000cc"										xExportTo=""	xAlias="COLOR_RED"/>
-
-  <Col key="COLOR_MP_HUD_HIGH_PRIORITY"				value="0xbf0000cc"										xExportTo=""	xAlias="COLOR_RED" xAliasAlpha="75%"/>
-
-  <Col key="COLOR_RADAR_AIRBAR"						value="0xffe9d3aa"										xExportTo=""	xAlias="COLOR_BLUELIGHT"/>
-  <Col key="COLOR_RADAR_STAMINA"						value="0xffd3a856"										xExportTo=""	xAlias="COLOR_BLUE"/>
-  <Col key="COLOR_RADAR_DEAD_EYE"						value="0xff749fff"										xExportTo=""	xAlias="COLOR_ORANGE"/>
-  <Col key="COLOR_RADAR_HEALTH"						value="0xff0000cc"										xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_RADAR_DAMAGE"						value="0xff0000cc"										xExportTo=""	xAlias="COLOR_RED"/>
-  <Col key="COLOR_RADAR_POLICE_LOOKING"				value="0xff1d0e7a"														xAlias="COLOR_REDDARK"/>
-  <Col key="COLOR_RADAR_POLICE_RED"					value="0xff0000cc"										xExportTo="cpp"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_RADAR_POLICE_BLUE"					value="0xffd3a856"										xExportTo="cpp"	xAlias="COLOR_BLUE"/>
-
-  <Col key="COLOR_RADAR_MISSION_OBJECT"				value="0xffffffff"										xExportTo="cpp"	xAlias="COLOR_PURE_WHITE"/>
-  <Col key="COLOR_RADAR_PICKUP"						value="0xffffffff"										xExportTo="cpp"	xAlias="COLOR_PURE_WHITE"/>
-  <Col key="COLOR_RADAR_WAYPOINT_BG"					value="0x80ffffff"	r="255"	g="255"	b="255"	a="128"/>
-  <Col key="COLOR_RADAR_BRUSH_BG"						value="0x26000000"								 		xExportTo="cpp"	xAlias="COLOR_INGAME_BG" xAliasAlpha="15%"/>
-  <Col key="COLOR_RADAR_BRUSH_WANTED_BG"				value="0x400000cc"								 		xExportTo="cpp"	xAlias="COLOR_RED" xAliasAlpha="25%"/>
-
-  <Col key="COLOR_RADAR_PERCEPTION_CONE"  			value="0x5c705b32"										xExportTo="cpp" xAlias="COLOR_BLUEDARK" xAliasAlpha="36%"/>
-  <Col key="COLOR_RADAR_AREA_LEGEND"					value="0xffffffff"	r="255" g="255" b="255" a="255"		xExportTo="cpp"/>
-
-  <Col key="COLOR_FREEMODE"							value="0xff90f3fe"										xExportTo="cpp as"	xAlias="COLOR_YELLOW"/>
-
-  <Col key="COLOR_MENU_STATE_DEFAULT"					value="0xffe6e6e6"										xExportTo="as"	xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MENU_STATE_SELECTED"				value="0xff0000cc"										xExportTo="as"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_MENU_STATE_DISABLED"	 			value="0x80e6e6e6"										xExportTo=""	xAlias="COLOR_WHITE" xAliasAlpha="50%"/>
-  <Col key="COLOR_MENU_DISABLED_COMPONENT" 			value="0x80ffffff"														xAlias="COLOR_PURE_WHITE" xAliasAlpha="50%"/>
-  <Col key="COLOR_MENU_LIST_ITEM_TEXT"	 			value="0xffe6e6e6"														xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_MENU_BACKGROUND"					value="0xff000000"										xExportTo=""	xAlias="COLOR_BLACK"/>
-  <Col key="COLOR_MENU_TIP_LABEL"						value="0xff0000cc"										xExportTo=""	xAlias="COLOR_RED"/>
-
-  <Col key="COLOR_SIMPLEBLIP_DEFAULT"					value="0xffffffff"										xExportTo="cpp"	xAlias="COLOR_PURE_WHITE"/>
-  <Col key="COLOR_MENU_BLUE"							value="0xffd3a856"										xExportTo="cpp"	xAlias="COLOR_BLUE"/>
-  <Col key="COLOR_MENU_GREY_LIGHT"					value="0xffd2d3d5"										xExportTo="cpp"	xAlias="COLOR_GREYLIGHT"/>
-  <Col key="COLOR_MENU_BLUE_EXTRA_DARK"				value="0xff705b32"										xExportTo="cpp"	xAlias="COLOR_BLUEDARK"/>
-  <Col key="COLOR_MENU_YELLOW"						value="0xff90f3fe"										xExportTo="cpp"	xAlias="COLOR_YELLOW"/>
-  <Col key="COLOR_MENU_GREEN"							value="0xff69ab4e"										xExportTo="cpp"	xAlias="COLOR_GREEN"/>
-  <Col key="COLOR_MENU_GREY"							value="0xffa6a8ac"										xExportTo="cpp as"	xAlias="COLOR_GREY"/>
-  <Col key="COLOR_MENU_GREY_DARK"						value="0xff5a5b5d"										xExportTo="cpp"	xAlias="COLOR_GREYDARK"/>
-  <Col key="COLOR_MENU_HIGHLIGHT"						value="0xff0000cc"															xAlias="COLOR_RED"/>
-  <Col key="COLOR_MENU_STANDARD"						value="0xffd2d3d5"										xExportTo="cpp"	xAlias="COLOR_GREYLIGHT"/>
-  <Col key="COLOR_MENU_DIMMED"						value="0x80d2d3d5"										xExportTo="as"	xAlias="COLOR_GREYLIGHT" xAliasAlpha="50%"/>
-  <Col key="COLOR_MENU_EXTRA_DIMMED"					value="0x40d2d3d5"										xExportTo="cpp"	xAlias="COLOR_GREYLIGHT" xAliasAlpha="25%"/>
-  <Col key="COLOR_BRIEF_TITLE"						value="0xff5a5b5d"										xExportTo="cpp"	xAlias="COLOR_GREYDARK"/>
-  <Col key="COLOR_MID_GREY_MP"						value="0xffa6a8ac"										xExportTo=""	xAlias="COLOR_GREY"/>
-
-  <Col key="COLOR_MP_SHIELD"							value="0xccffffff"										xAlias="COLOR_PURE_WHITE"	xAliasAlpha="80%"/>
-
-  <Col key="COLOR_GANG1"								value="0xff99641d"	r= "29"	g="100"	b="153"	a="255"/>
-  <Col key="COLOR_GANG2"								value="0xff0f74d6"	r="214"	g="116"	b= "15"	a="255"/>
-  <Col key="COLOR_GANG3"								value="0xff8e7d87"	r="135"	g="125"	b="142"	a="255"/>
-  <Col key="COLOR_GANG4"								value="0xffb977e5"	r="229"	g="119"	b="185"	a="255"/>
-
-  <Col key="COLOR_SAME_CREW"							value="0xffe6e6e6"															xAlias="COLOR_WHITE"/>
-  <Col key="COLOR_PAUSE_BG"							value="0x80000000"	r=  "0"	g=  "0"	b=  "0"	a="128"		xExportTo="cpp as"/>
-
-  <Col key="COLOR_DAMAGE"								value="0xff0000cc"										xExportTo="as"	xAlias="COLOR_RED"/>
-
-  <Col key="COLOR_PM_MITEM_HIGHLIGHT"					value="0xff749fff"										xExportTo="as"	xAlias="COLOR_ORANGE"/>
-  <Col key="COLOR_SCRIPT_VARIABLE"					value="0xff000000"	r=  "0"	g=  "0"	b=  "0"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_YOGA"								value="0xffccf76d"	r="109"	g="247"	b="204"	a="255"/>
-  <Col key="COLOR_TENNIS"								value="0xff2265f1"	r="241"	g="101"	b= "34"	a="255"/>
-  <Col key="COLOR_GOLF"								value="0xff61bdd6"	r="214"	g="189"	b= "97"	a="255"/>
-  <Col key="COLOR_LEAD_STUDIO"						value="0xffb64779"	r="121"	g= "71"	b="182"	a="255"		xExportTo="as"/>
-
-  <Col key="COLOR_PLATFORM_BLUE"						value="0xff7b370b"	r= "11"	g= "55"	b="123"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_PLATFORM_GREEN"						value="0xff3ec892"	r="146"	g="200"	b= "62"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_PLATFORM_GREY"						value="0xff1c99ea"	r="234"	g="153"	b= "28"	a="255"/>
-  <Col key="COLOR_FACEBOOK_BLUE"						value="0xff945942"	r= "66"	g= "89"	b="148"	a="255"		xExportTo="as"/>
-  <Col key="COLOR_INGAME_BG"							value="0xa3000000"	r=  "0"	g=  "0"	b=  "0"	a="163"		xExportTo="as"/>
-
-  <Col key="COLOR_GANG_WAYPOINT"						value="0xffd3a856"										xExportTo="cpp"	xAlias="COLOR_BLUE"/>
-  <Col key="COLOR_PAUSEMAP_TINT"						value="0xff000000"	r=  "0"	g=  "0"	b=  "0"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_PAUSEMAP_TINT_HALF"					value="0xff000000"	r=  "0"	g=  "0"	b=  "0"	a="255"		xExportTo="cpp"/>
-  <Col key="COLOR_PAUSE_DESELECT"						value="0x7f646464"	r="100"	g="100"	b="100"	a="127"		xExportTo="cpp as"/>
-
-  <Col key="COLOR_RADAR_WRONG_TOD"					value="0xff636363"														xAlias="COLOR_LOW_PRIORITY"/>
-  <Col key="COLOR_RADAR_UNDISCOVERED"					value="0x9990f3fe"														xAlias="COLOR_OBJECTIVE" xAliasAlpha="60%"/>
-
-  <Col key="COLOR_PM_WEAPONS_PURCHASABLE"				value="0xff90f3fe"										xExportTo="as"	xAlias="COLOR_YELLOW"/>
-  <Col key="COLOR_PM_WEAPONS_LOCKED"					value="0xffa6a8ac"										xExportTo="as"	xAlias="COLOR_GREY"/>
-
-  <Col key="COLOR_PAUSE_SINGLEPLAYER"					value="0xff0000cc"										xExportTo="cpp"	xAlias="COLOR_RED"/>
-  <Col key="COLOR_CONTROLLER_LIGHT_IDLE"				value="0xff1d0e7a"										xExportTo="cpp"	xAlias="COLOR_REDDARK"/>
-
-  <Col key="COLOR_BUTTON_RDOWN"						value="0xffd3a856"										xExportTo="as" 	xAlias="COLOR_BLUE"		platform="ps4"		/> <!-- Cross -->
-  <Col key="COLOR_BUTTON_RLEFT"						value="0xffb769ac"										xExportTo="as" 	xAlias="COLOR_PURPLE"	platform="ps4"		/> <!-- Square -->
-  <Col key="COLOR_BUTTON_RUP"			   				value="0xff69ab4e"										xExportTo="as" 	xAlias="COLOR_GREEN"	platform="ps4"		/> <!-- Triangle -->
-  <Col key="COLOR_BUTTON_RDOWN"						value="0xff69ab4e"										xExportTo="as" 	xAlias="COLOR_GREEN"	platform="xbox1|pc|ios|android"/> <!-- A -->
-  <Col key="COLOR_BUTTON_RLEFT"						value="0xffd3a856"										xExportTo="as" 	xAlias="COLOR_BLUE"		platform="xbox1|pc|ios|android"/> <!-- X -->
-  <Col key="COLOR_BUTTON_RUP"			    			value="0xff90f3fe"										xExportTo="as" 	xAlias="COLOR_YELLOW"	platform="xbox1|pc|ios|android"/> <!-- Y -->
-  <Col key="COLOR_BUTTON_RRIGHT"						value="0xff0000cc"										xExportTo="as"	xAlias="COLOR_RED"/> <!-- both XB1 and PS4 have a red B/O button-->
-
-  <Col key="COLOR_TOAST_NOTIF_BG"			       		value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
-
+COLOR_STAR														        value="0xff69ab4e"                    xExportTo="as sc" xAlias="COLOR_GREEN"/>
+COLOR_METER_FILL_DEFAULT							        value="0xffe6e6e6"          xExportTo="cpp" xAlias="COLOR_WHITE"/>
+COLOR_METER_TRACK_DEFAULT							        value="0xff5a5b5d"          xExportTo="cpp" xAlias="COLOR_GREYDARK" />
+COLOR_METER_DISABLED_DEFAULT					        value="0xbf000000"          xExportTo="cpp" xAlias="COLOR_BLACK" xAliasAlpha="75%"/>
+COLOR_METER_GAP_DEFAULT								        value="0xbf000000"          xExportTo="cpp" xAlias="COLOR_BLACK" xAliasAlpha="75%"/>
+COLOR_METER_ACTIVE_DEFAULT						        value="0xff0000cc"          xExportTo="cpp" xAlias="COLOR_RED" />
+COLOR_TEXT_OUTLINE										        value="0x54000000"                    xExportTo=""  xAlias="COLOR_BLACK" xAliasAlpha="33%"/>
+COLOR_HUD_FILL												        value="0xffe6e6e6"                    xExportTo=""  xAlias="COLOR_WHITE"/>
+COLOR_HUD_TRACK												        value="0x80000000"                    xExportTo=""  xAlias="COLOR_BLACK" xAliasAlpha="50%"/>
+COLOR_HUD_TRACK_GAP										        value="0xbf000000"                    xExportTo=""  xAlias="COLOR_BLACK" xAliasAlpha="75%"/>
+COLOR_HUD_TEXT_BOLD										        value="0xffe6e6e6"                    xExportTo=""  xAlias="COLOR_WHITE"/>
+COLOR_WANTED													        value="0xff0000cc"                    xExportTo=""  xAlias="COLOR_RED"/>
+COLOR_HUNTED													        value="0xff0000cc"                    xExportTo=""  xAlias="COLOR_RED"/>
+COLOR_MP_HUD_HIGH_PRIORITY						        value="0xbf0000cc"                    xExportTo=""  xAlias="COLOR_RED" xAliasAlpha="75%"/>
+COLOR_RADAR_AIRBAR										        value="0xffe9d3aa"                    xExportTo=""  xAlias="COLOR_BLUELIGHT"/>
+COLOR_RADAR_STAMINA										        value="0xffd3a856"                    xExportTo=""  xAlias="COLOR_BLUE"/>
+COLOR_RADAR_DEAD_EYE									        value="0xff749fff"                    xExportTo=""  xAlias="COLOR_ORANGE"/>
+COLOR_RADAR_HEALTH										        value="0xff0000cc"                    xExportTo=""  xAlias="COLOR_RED"/>
+COLOR_RADAR_DAMAGE										        value="0xff0000cc"                    xExportTo=""  xAlias="COLOR_RED"/>
+COLOR_RADAR_POLICE_LOOKING						        value="0xff1d0e7a"                            xAlias="COLOR_REDDARK"/>
+COLOR_RADAR_POLICE_RED								        value="0xff0000cc"                    xExportTo="cpp" xAlias="COLOR_RED"/>
+COLOR_RADAR_POLICE_BLUE								        value="0xffd3a856"                    xExportTo="cpp" xAlias="COLOR_BLUE"/>
+COLOR_RADAR_MISSION_OBJECT						        value="0xffffffff"                    xExportTo="cpp" xAlias="COLOR_PURE_WHITE"/>
+COLOR_RADAR_PICKUP										        value="0xffffffff"                    xExportTo="cpp" xAlias="COLOR_PURE_WHITE"/>
+COLOR_RADAR_WAYPOINT_BG								        value="0x80ffffff"  r="255" g="255" b="255" a="128"/>
+COLOR_RADAR_BRUSH_BG									        value="0x26000000"                    xExportTo="cpp" xAlias="COLOR_INGAME_BG" xAliasAlpha="15%"/>
+COLOR_RADAR_BRUSH_WANTED_BG						        value="0x400000cc"                    xExportTo="cpp" xAlias="COLOR_RED" xAliasAlpha="25%"/>
+COLOR_RADAR_PERCEPTION_CONE						        value="0x5c705b32"                    xExportTo="cpp" xAlias="COLOR_BLUEDARK" xAliasAlpha="36%"/>
+COLOR_RADAR_AREA_LEGEND								        value="0xffffffff"  r="255" g="255" b="255" a="255"   xExportTo="cpp"/>
+COLOR_FREEMODE												        value="0xff90f3fe"                    xExportTo="cpp as"  xAlias="COLOR_YELLOW"/>
+COLOR_MENU_STATE_DEFAULT							        value="0xffe6e6e6"                    xExportTo="as"  xAlias="COLOR_WHITE"/>
+COLOR_MENU_STATE_SELECTED							        value="0xff0000cc"                    xExportTo="as"  xAlias="COLOR_RED"/>
+COLOR_MENU_STATE_DISABLED							        value="0x80e6e6e6"                    xExportTo=""  xAlias="COLOR_WHITE" xAliasAlpha="50%"/>
+COLOR_MENU_DISABLED_COMPONENT					        value="0x80ffffff"                            xAlias="COLOR_PURE_WHITE" xAliasAlpha="50%"/>
+COLOR_MENU_LIST_ITEM_TEXT							        value="0xffe6e6e6"                            xAlias="COLOR_WHITE"/>
+COLOR_MENU_BACKGROUND									        value="0xff000000"                    xExportTo=""  xAlias="COLOR_BLACK"/>
+COLOR_MENU_TIP_LABEL									        value="0xff0000cc"                    xExportTo=""  xAlias="COLOR_RED"/>
+COLOR_SIMPLEBLIP_DEFAULT							        value="0xffffffff"                    xExportTo="cpp" xAlias="COLOR_PURE_WHITE"/>
+COLOR_MENU_BLUE												        value="0xffd3a856"                    xExportTo="cpp" xAlias="COLOR_BLUE"/>
+COLOR_MENU_GREY_LIGHT									        value="0xffd2d3d5"                    xExportTo="cpp" xAlias="COLOR_GREYLIGHT"/>
+COLOR_MENU_BLUE_EXTRA_DARK						        value="0xff705b32"                    xExportTo="cpp" xAlias="COLOR_BLUEDARK"/>
+COLOR_MENU_YELLOW											        value="0xff90f3fe"                    xExportTo="cpp" xAlias="COLOR_YELLOW"/>
+COLOR_MENU_GREEN											        value="0xff69ab4e"                    xExportTo="cpp" xAlias="COLOR_GREEN"/>
+COLOR_MENU_GREY												        value="0xffa6a8ac"                    xExportTo="cpp as"  xAlias="COLOR_GREY"/>
+COLOR_MENU_GREY_DARK									        value="0xff5a5b5d"                    xExportTo="cpp" xAlias="COLOR_GREYDARK"/>
+COLOR_MENU_HIGHLIGHT									        value="0xff0000cc"                              xAlias="COLOR_RED"/>
+COLOR_MENU_STANDARD										        value="0xffd2d3d5"                    xExportTo="cpp" xAlias="COLOR_GREYLIGHT"/>
+COLOR_MENU_DIMMED											        value="0x80d2d3d5"                    xExportTo="as"  xAlias="COLOR_GREYLIGHT" xAliasAlpha="50%"/>
+COLOR_MENU_EXTRA_DIMMED								        value="0x40d2d3d5"                    xExportTo="cpp" xAlias="COLOR_GREYLIGHT" xAliasAlpha="25%"/>
+COLOR_BRIEF_TITLE											        value="0xff5a5b5d"                    xExportTo="cpp" xAlias="COLOR_GREYDARK"/>
+COLOR_MID_GREY_MP											        value="0xffa6a8ac"                    xExportTo=""  xAlias="COLOR_GREY"/>
+COLOR_MP_SHIELD												        value="0xccffffff"                    xAlias="COLOR_PURE_WHITE" xAliasAlpha="80%"/>
+COLOR_GANG1														        value="0xff99641d"	r= "29"	g="100"	b="153"	a="255"/>
+COLOR_GANG2														        value="0xff0f74d6"	r="214"	g="116"	b= "15"	a="255"/>
+COLOR_GANG3														        value="0xff8e7d87"	r="135"	g="125"	b="142"	a="255"/>
+COLOR_GANG4														        value="0xffb977e5"	r="229"	g="119"	b="185"	a="255"/>
+COLOR_SAME_CREW														    value="0xffe6e6e6"															xAlias="COLOR_WHITE"/>
+COLOR_PAUSE_BG														    value="0x80000000"	r=  "0"	g=  "0"	b=  "0"	a="128"		xExportTo="cpp as"/>
+COLOR_DAMAGE														      value="0xff0000cc"										xExportTo="as"	xAlias="COLOR_RED"/>
+COLOR_PM_MITEM_HIGHLIGHT											value="0xff749fff"										xExportTo="as"	xAlias="COLOR_ORANGE"/>
+COLOR_SCRIPT_VARIABLE													value="0xff000000"	r=  "0"	g=  "0"	b=  "0"	a="255"		xExportTo="cpp"/>
+COLOR_YOGA														        value="0xffccf76d"	r="109"	g="247"	b="204"	a="255"/>
+COLOR_TENNIS														      value="0xff2265f1"	r="241"	g="101"	b= "34"	a="255"/>
+COLOR_GOLF														        value="0xff61bdd6"	r="214"	g="189"	b= "97"	a="255"/>
+COLOR_LEAD_STUDIO														  value="0xffb64779"	r="121"	g= "71"	b="182"	a="255"		xExportTo="as"/>
+COLOR_PLATFORM_BLUE														value="0xff7b370b"	r= "11"	g= "55"	b="123"	a="255"		xExportTo="cpp"/>
+COLOR_PLATFORM_GREEN													value="0xff3ec892"	r="146"	g="200"	b= "62"	a="255"		xExportTo="cpp"/>
+COLOR_PLATFORM_GREY														value="0xff1c99ea"	r="234"	g="153"	b= "28"	a="255"/>
+COLOR_FACEBOOK_BLUE														value="0xff945942"	r= "66"	g= "89"	b="148"	a="255"		xExportTo="as"/>
+COLOR_INGAME_BG														    value="0xa3000000"	r=  "0"	g=  "0"	b=  "0"	a="163"		xExportTo="as"/>
+COLOR_GANG_WAYPOINT														value="0xffd3a856"										xExportTo="cpp"	xAlias="COLOR_BLUE"/>
+COLOR_PAUSEMAP_TINT														value="0xff000000"	r=  "0"	g=  "0"	b=  "0"	a="255"		xExportTo="cpp"/>
+COLOR_PAUSEMAP_TINT_HALF											value="0xff000000"	r=  "0"	g=  "0"	b=  "0"	a="255"		xExportTo="cpp"/>
+COLOR_PAUSE_DESELECT												  value="0x7f646464"	r="100"	g="100"	b="100"	a="127"		xExportTo="cpp as"/>
+COLOR_RADAR_WRONG_TOD													value="0xff636363"														xAlias="COLOR_LOW_PRIORITY"/>
+COLOR_RADAR_UNDISCOVERED											value="0x9990f3fe"														xAlias="COLOR_OBJECTIVE" xAliasAlpha="60%"/>
+COLOR_PM_WEAPONS_PURCHASABLE									value="0xff90f3fe"										xExportTo="as"	xAlias="COLOR_YELLOW"/>
+COLOR_PM_WEAPONS_LOCKED												value="0xffa6a8ac"										xExportTo="as"	xAlias="COLOR_GREY"/>
+COLOR_PAUSE_SINGLEPLAYER											value="0xff0000cc"										xExportTo="cpp"	xAlias="COLOR_RED"/>
+COLOR_CONTROLLER_LIGHT_IDLE										value="0xff1d0e7a"										xExportTo="cpp"	xAlias="COLOR_REDDARK"/>
+COLOR_BUTTON_RDOWN														value="0xffd3a856"										xExportTo="as" 	xAlias="COLOR_BLUE"		platform="ps4"		/> <!-- Cross -->
+COLOR_BUTTON_RLEFT														value="0xffb769ac"										xExportTo="as" 	xAlias="COLOR_PURPLE"	platform="ps4"		/> <!-- Square -->
+COLOR_BUTTON_RUP														  value="0xff69ab4e"										xExportTo="as" 	xAlias="COLOR_GREEN"	platform="ps4"		/> <!-- Triangle -->
+COLOR_BUTTON_RDOWN														value="0xff69ab4e"										xExportTo="as" 	xAlias="COLOR_GREEN"	platform="xbox1|pc|ios|android"/> <!-- A -->
+COLOR_BUTTON_RLEFT														value="0xffd3a856"										xExportTo="as" 	xAlias="COLOR_BLUE"		platform="xbox1|pc|ios|android"/> <!-- X -->
+COLOR_BUTTON_RUP														  value="0xff90f3fe"										xExportTo="as" 	xAlias="COLOR_YELLOW"	platform="xbox1|pc|ios|android"/> <!-- Y -->
+COLOR_BUTTON_RRIGHT														value="0xff0000cc"										xExportTo="as"	xAlias="COLOR_RED"/> <!-- both XB1 and PS4 have a red B/O button-->
+COLOR_TOAST_NOTIF_BG													value="0xff000000"		xExportTo=""	xAlias="COLOR_BLACK"/>
   <!--
-  <Col key="COLOR_CATALOG_BLUE_INK"					value="0xff39407F"	r="57"	g="64"	b="127"	a="255" 		xExportTo="as cpp sc"/>
-  <Col key="COLOR_CATALOG_GREEN_INK"					value="0xff3E7F65"	r="62"	g="127"	b="101"	a="255" 		xExportTo="as cpp sc"/>
-  <Col key="COLOR_CATALOG_RED_INK"					value="0xff991323"	r="153"	g="19"	b="35"	a="255" 		xExportTo="as cpp sc"/>
+COLOR_CATALOG_BLUE_INK												value="0xff39407F"	r="57"	g="64"	b="127"	a="255" 		xExportTo="as cpp sc"/>
+COLOR_CATALOG_GREEN_INK											  value="0xff3E7F65"	r="62"	g="127"	b="101"	a="255" 		xExportTo="as cpp sc"/>
+COLOR_CATALOG_RED_INK												  value="0xff991323"	r="153"	g="19"	b="35"	a="255" 		xExportTo="as cpp sc"/>
   -->	
 
 
 
-</Colors>
 
 <ShortCodes>
   <Code key="e">COLOR_ENEMY</Code>
