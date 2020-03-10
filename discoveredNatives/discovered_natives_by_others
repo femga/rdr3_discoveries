@@ -3,6 +3,103 @@
 -- But dont want this natives were gone in discord archives. If someone will make commits to his base (or others), i appreciate it.
 
 
+
+
+
+
+
+
+------------------------
+------------------------
+------------------------
+0x923583741DC87BCE
+0x89F5E7ADECCCB49C
+these set a stance/walking style for peds
+in my testing, after using any of the "injured_" ones, I had to use arthur_healthy to remove them.
+ 
+typical usage in rockstar scripts
+Citizen.InvokeNative(0x923583741DC87BCE, PlayerPedId(), "default")
+Citizen.InvokeNative(0x89F5E7ADECCCB49C, PlayerPedId(), "dehydrated_unarmed")
+ 
+--[[
+0x923583741DC87BCE = {
+    "default",
+    "gold_panner",
+    "lone_prisoner",
+    "lost_Man",
+    "rally",
+    "default_female",
+    "murfree",
+    "angry_female",
+    "primate",
+    "old_female",
+    "algie",
+    "waiter",
+    "lilly_millet",
+    "casual",
+    "john_marston",
+    "guard_lantern",
+    "free_slave_01",
+    "free_slave_02",
+    "war_veteran",
+    "arthur_healthy"
+}
+ 
+0x89F5E7ADECCCB49C = {
+    "depressed",
+    "spool",
+    "stealth",
+    "panic",
+    "intimidate",
+    "brace",
+    "angry",
+    "normal_basic_idle",
+    "default",
+    "action",
+    "nervous",
+    "injured_left_leg"
+    "injured_general",
+    "injured_right_leg",
+    "directional_nervous"
+    "scared",
+    "very_drunk",
+    "default_brave",
+    "injured_left_arm",
+    "injured_right_arm",
+    "default_nervous",
+    "agitated",
+    "normal",
+    "chain_gang_legs",
+    "sad",
+    "cry",
+    "injured_torso",
+    "lost_man_normal",
+    "cautious",
+    "piss_pot_b",
+    "piss_pot_a",
+    "combat",
+    "rally_sad",
+    "intimidated_on_feet",
+    "intimidated_on_feet_reaction",
+    "shocked",
+    "searching_high_energy_indirect",
+    "searching_low_energy_indirect",
+    "cower_known",
+    "slightly drunk",
+    "chain_gang_catchup",
+    "chain_gang_normal",
+    "dehydrated_unarmed",
+    "bucking_high",
+    "carry_pitchfork",
+    "moderate_drunk",
+    "normal_town",
+    "incombat_low_intensity_longarm",
+    "incombat_zero_intensity",
+    "marston_cautious",
+    "snow"
+}
+--]]
+
 ------------------------
 ------------------------
 ------------------------
