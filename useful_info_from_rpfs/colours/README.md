@@ -1,2 +1,21 @@
-`COLOR_PURE_WHITE` - ![#ff0fff](https://placehold.it/15/ff0fff/000000?text=+) 
-`COLOR_WHITE` - ![#e6e6e6](https://placehold.it/15/e6e6e6/000000?text=+) 
+<table>
+        <tbody>
+        	<tr>
+        		<td>
+        			`COLOR_PURE_WHITE`
+        		</td>
+        		<td>
+        			![#ff0fff](https://placehold.it/15/ff0fff/000000?text=+) 
+        		</td>
+        	</tr>
+        	<tr>
+				<td>
+					`COLOR_WHITE`
+					
+				</td>
+				<td>
+					![#e6e6e6](https://placehold.it/15/e6e6e6/000000?text=+) 
+				</td>
+			</tr>
+		</tbody>
+</table>
