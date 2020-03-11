@@ -1,5 +1,6 @@
+# SHORT CODES 
  
- Shortcodes. Example of using:
+ Example of using:
  "I am a great magician! Your clothes are ~r~red!" 
          
 
@@ -42,7 +43,7 @@ t7  -  COLOR_NET_PLAYER9
 t8  -  COLOR_NET_PLAYER10
 
 
-	
+# FULL CODES	
 
 
 COLOR_PURE_WHITE											![#ffffff](https://placehold.it/15/ffffff/000000?text=+) <br/><br/> 
