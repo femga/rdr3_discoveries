@@ -3,25 +3,44 @@
  "I am a great magician! Your clothes are ~r~red!" 
          
 
-e   -  COLOR_ENEMY\n
+e   -  COLOR_ENEMY
+
 f   -  COLOR_FRIENDLY
+
 p   -  COLOR_RADAR_PICKUP
+
 o   -  COLOR_OBJECTIVE
+
 q   -  COLOR_PURE_WHITE
+
 d   -  COLOR_ORANGE
+
 m   -  COLOR_MID_GREY_MP
+
 t   -  COLOR_MENU_GREY
+
 v   -  COLOR_SCRIPT_VARIABLE
+
 u   -  COLOR_SCRIPT_VARIABLE2
+
 pa  -  COLOR_POSSE_ALLY
+
 t1  -  COLOR_NET_PLAYER3
+
 t2  -  COLOR_NET_PLAYER4
+
 t3  -  COLOR_NET_PLAYER5
+
 t4  -  COLOR_NET_PLAYER6
+
 t5  -  COLOR_NET_PLAYER7
+
 t6  -  COLOR_NET_PLAYER8
+
 t7  -  COLOR_NET_PLAYER9
+
 t8  -  COLOR_NET_PLAYER10
+
 
 	
 
