@@ -1,24 +1,30 @@
-<ShortCodes>
-		<Code key="e">COLOR_ENEMY</Code>
-		<Code key="f">COLOR_FRIENDLY</Code>
-		<Code key="p">COLOR_RADAR_PICKUP</Code>
-		<Code key="o">COLOR_OBJECTIVE</Code>
-		<Code key="q">COLOR_PURE_WHITE</Code>
-		<Code key="d">COLOR_ORANGE</Code>
-		<Code key="m">COLOR_MID_GREY_MP</Code>
-		<Code key="t">COLOR_MENU_GREY</Code>
-		<Code key="v">COLOR_SCRIPT_VARIABLE</Code>
-		<Code key="u">COLOR_SCRIPT_VARIABLE2</Code>
-    <Code key="pa">COLOR_POSSE_ALLY</Code>
-		<Code key="t1">COLOR_NET_PLAYER3</Code>
-		<Code key="t2">COLOR_NET_PLAYER4</Code>
-		<Code key="t3">COLOR_NET_PLAYER5</Code>
-		<Code key="t4">COLOR_NET_PLAYER6</Code>
-		<Code key="t5">COLOR_NET_PLAYER7</Code>
-		<Code key="t6">COLOR_NET_PLAYER8</Code>
-		<Code key="t7">COLOR_NET_PLAYER9</Code>
-		<Code key="t8">COLOR_NET_PLAYER10</Code>
-</ShortCodes>
+ 
+ Shortcodes. Example of using:
+ "I am a great magician! Your clothes are ~r~red!" 
+         
+
+e   -  COLOR_ENEMY
+f   -  COLOR_FRIENDLY
+p   -  COLOR_RADAR_PICKUP
+o   -  COLOR_OBJECTIVE
+q   -  COLOR_PURE_WHITE
+d   -  COLOR_ORANGE
+m   -  COLOR_MID_GREY_MP
+t   -  COLOR_MENU_GREY
+v   -  COLOR_SCRIPT_VARIABLE
+u   -  COLOR_SCRIPT_VARIABLE2
+pa  -  COLOR_POSSE_ALLY
+t1  -  COLOR_NET_PLAYER3
+t2  -  COLOR_NET_PLAYER4
+t3  -  COLOR_NET_PLAYER5
+t4  -  COLOR_NET_PLAYER6
+t5  -  COLOR_NET_PLAYER7
+t6  -  COLOR_NET_PLAYER8
+t7  -  COLOR_NET_PLAYER9
+t8  -  COLOR_NET_PLAYER10
+
+	
+
 
 COLOR_PURE_WHITE											![#ffffff](https://placehold.it/15/ffffff/000000?text=+) <br/><br/> 
 COLOR_WHITE												  ![#e6e6e6](https://placehold.it/15/e6e6e6/000000?text=+) <br/><br/> 
