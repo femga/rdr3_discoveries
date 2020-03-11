@@ -3,7 +3,7 @@
  "I am a great magician! Your clothes are ~r~red!" 
          
 
-e   -  COLOR_ENEMY
+e   -  COLOR_ENEMY\n
 f   -  COLOR_FRIENDLY
 p   -  COLOR_RADAR_PICKUP
 o   -  COLOR_OBJECTIVE
