@@ -1,7 +1,7 @@
 ## SHORT CODES 
  
  Example of using:
- "I am a great magician! Your clothes are ~r~red!" 
+ ```"I am a great magician! Your clothes are ~r~red!"```
          
 
 e   -  COLOR_ENEMY
