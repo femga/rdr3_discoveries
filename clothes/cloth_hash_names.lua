@@ -41,7 +41,7 @@
 --  		"coats_closed"       	hex unsigned: 0x662AC34    	dec unsigned: 107129908   	dec signed: 107129908
 --  		"ponchos"            	hex unsigned: 0xAF14310B   	dec unsigned: 2937336075  	dec signed: -1357631221
 --  		"armor"              	hex unsigned: 0x72E6EF74   	dec unsigned: 1927737204  	dec signed: 1927737204
---  		"eyewear"            	hex unsigned: 0x5E47CA6    	dec unsigned: 98860198  	  dec signed: 98860198
+--  		"eyewear"            	hex unsigned: 0x5E47CA6    	dec unsigned: 98860198  	dec signed: 98860198
 --  		"gloves"             	hex unsigned: 0xEABE0032   	dec unsigned: 3938320434  	dec signed: -356646862
 --  		"talisman_belt"      	hex unsigned: 0x1AECF7DC   	dec unsigned: 451737564   	dec signed: 451737564
 --  		"ammo_pistols"       	hex unsigned: 0x3F1F01E5   	dec unsigned: 1058996709  	dec signed: 1058996709
