@@ -1,4 +1,4 @@
-<h3>Texture dictionary hashname \ hash: </h3><h2>BLIPS \  -437533031</h2> ![#ffffff](https://placehold.it/15/ffffff/000000?text=+)
+<h3>Texture dictionary hashname \ hash: </h3><h2>BLIPS \  -437533031</h2>
 
 
 <table>
