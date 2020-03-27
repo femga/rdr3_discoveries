@@ -1,3 +1,6 @@
+<div class="text-white bg-blue mb-2">
+  .text-white on .bg-blue
+</div>
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>BLIPS (-437533031)</h2>
 
