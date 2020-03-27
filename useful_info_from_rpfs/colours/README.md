@@ -47,6 +47,7 @@ t8  -  COLOR_NET_PLAYER10
 
 Color hashname | Color example 
 ------------ | ---------------- 
+ | | 
 COLOR_PURE_WHITE										|	![#ffffff](https://placehold.it/15/ffffff/000000?text=+)
  | | 
 COLOR_WHITE												|  ![#e6e6e6](https://placehold.it/15/e6e6e6/000000?text=+)
