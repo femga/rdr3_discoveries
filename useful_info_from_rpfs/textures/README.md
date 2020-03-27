@@ -1,4 +1,4 @@
-<h3>Texture dictionary hashname | hash: </h3><h2>BLIPS | -437533031</h2>
+<h3>Texture dictionary hashname | hash: BLIPS | -437533031</h3>
 
 Texture name | Texture hashname | Texture example
 ------------ | ---------------- | ---------------
