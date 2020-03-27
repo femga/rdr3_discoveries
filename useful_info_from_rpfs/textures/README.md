@@ -2,7 +2,7 @@
 <h2>BLIPS (-437533031)</h2>
 
 
-Texture name | Texture hashname | Texture example
+Texture hashname | Texture hash | Texture example
 ------------ | ---------------- | ---------------
  |  | 
 blip_ambient_bounty_hunter_higher | -535302224 | ![blip_ambient_bounty_hunter_higher](http://femga.com/images/samples/blips/blip_ambient_bounty_hunter_higher.png)
