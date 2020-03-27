@@ -8,7 +8,7 @@ local function DrawTexture(textureStreamed,textureName,x, y, width, height,rotat
     end
 end
 Citizen.CreateThread(function()
-    while true do
+    	while true do
         Citizen.Wait(0)
 		DrawTexture("inventory_items", "_placeholder", 0.5, 0.5, 0.051, 0.051, 0.0, 0, 0, 0, 240, false);
 	end
