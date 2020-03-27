@@ -1,7 +1,4 @@
-<h3>Texture dictionary hashname (hash):</h3>
-<h2>INVENTORY_ITEMS (-546782298)</h2>
-
-Example of using:  
+## Example of using:  
 ```lua
 local function DrawTexture(textureStreamed,textureName,x, y, width, height,rotation,r, g, b, a, p11)
     if not HasStreamedTextureDictLoaded(textureStreamed) then
@@ -17,6 +14,9 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
+
+<h3>Texture dictionary hashname (hash):</h3>
+<h2>INVENTORY_ITEMS (-546782298)</h2>
 
 Texture hashname | Texture hash | Texture example
 ------------ | ---------------- | ---------------
