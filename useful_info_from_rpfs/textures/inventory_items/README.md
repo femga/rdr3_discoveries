@@ -11,7 +11,7 @@ Citizen.CreateThread(function()
     while true do
     	Citizen.Wait(0)
 	DrawTexture("inventory_items", "_placeholder", 0.5, 0.5, 0.051, 0.051, 0.0, 0, 0, 0, 240, false);
-	end
+end
 end)
 ```
 
