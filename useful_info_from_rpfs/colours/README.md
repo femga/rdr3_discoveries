@@ -46,7 +46,7 @@ t8  -  COLOR_NET_PLAYER10
 ## FULL CODES	
 
 
-COLOR_PURE_WHITE											![#ffffff](https://placehold.it/15/ffffff/000000?text=+) <br/><br/> 
+COLOR_PURE_WHITE											![#ffffff](https://placehold.it/15/ffffff/000000?text=+) ![blip_ambient_bounty_hunter_higher](http://femga.com/images/samples/blips/blip_ambient_bounty_hunter_higher.png)</td><br/><br/> 
 COLOR_WHITE												  ![#e6e6e6](https://placehold.it/15/e6e6e6/000000?text=+) <br/><br/> 
 COLOR_BLACK												  ![#000000](https://placehold.it/15/000000/000000?text=+) <br/><br/> 
 COLOR_OFF_BLACK												![#1b1a1a](https://placehold.it/15/1b1a1a/000000?text=+) <br/><br/> 
