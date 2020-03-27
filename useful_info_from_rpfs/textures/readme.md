@@ -1,4 +1,4 @@
-<h3>Texture dictionary hashname \ hash: </h3><h2>BLIPS \  -437533031</h2>
+<h3>Texture dictionary hashname \ hash: </h3><h2>BLIPS \  -437533031</h2> ![blip_ambient_bounty_hunter_higher](http://femga.com/images/samples/blips/blip_ambient_bounty_hunter_higher.png)
 
 
 <table>
