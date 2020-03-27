@@ -13,12 +13,12 @@
 <tr>
 <td>blip_ambient_bounty_hunter_higher</td>
 <td align="center">-535302224</td>
-<td align="center"><g-emoji class="g-emoji" fallback-src="http://femga.com/images/samples/blips/blip_ambient_bounty_hunter_higher.png">x</g-emoji></td>
+<td align="center">![](http://femga.com/images/samples/blips/blip_ambient_bounty_hunter_higher.png)</td>
 </tr>
 <tr>
 <td>blip_ambient_bounty_hunter</td>
 <td align="center">-861219276</td>
-<td align="center"><g-emoji class="g-emoji" fallback-src="http://femga.com/images/samples/blips/blip_ambient_bounty_hunter.png">x</g-emoji></td>
+<td align="center">![](http://femga.com/images/samples/blips/blip_ambient_bounty_hunter.png)</td>
 </tr>
 </tbody>
 </table>
