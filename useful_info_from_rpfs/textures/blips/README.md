@@ -1,3 +1,15 @@
+## Example of using:  
+```lua
+local function addBlipForCoords(blipname,bliphash,coords)
+	local blip = Citizen.InvokeNative(0x554D9D53F696D002,1664425300, coords[1], coords[2], coords[3]) 
+	SetBlipSprite(blip,bliphash,true)
+	SetBlipScale(blip,0.2)
+	Citizen.InvokeNative(0x9CB1A1623062F402, blip, blipname)
+end
+
+addBlipForCoords("STABLE",GetHashKey("BLIP_AMBIENT_HORSE"),{2508.1557617188,-1450.2551269531,44.610553741455})	
+```
+
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>BLIPS (-437533031)</h2>
 
