@@ -15,6 +15,9 @@ Citizen.CreateThread(function()
 end)
 ```
  
+
+
+
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>INVENTORY_ITEMS (-546782298)</h2>
 
@@ -1628,6 +1631,8 @@ weapon_volatile_fire_bottle | -242048431 | ![weapon_volatile_fire_bottle](http:/
  |  | 
 
 
+
+
 <h2>multiwheel_weapons (608649065)</h2>
 
 Texture hashname | Texture hash | Texture example
@@ -1776,6 +1781,8 @@ weapon_thrown_tomahawk | -1511427369 | ![weapon_thrown_tomahawk](http://femga.co
  |  | 
 weapon_unarmed | -1569615261 | ![weapon_unarmed](http://femga.com/images/samples/ui_textures/multiwheel_weapons/weapon_unarmed.png)
  |  | 
+
+
 
 
  <h2>satchel_textures (-1353431871)</h2>
@@ -2436,4 +2443,3 @@ satchel_nav_valuables | -2043887681 | ![satchel_nav_valuables](http://femga.com/
  |  | 
 
 
- 

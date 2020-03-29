@@ -15,6 +15,8 @@ Citizen.CreateThread(function()
 end)
 ```
  
+
+
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>feeds (-1226148542)</h2>
 
@@ -24,6 +26,8 @@ help_text_bg | 1580589762 | ![help_text_bg](http://femga.com/images/samples/ui_t
  |  | 
 toast_bg | -1189225417 | ![toast_bg](http://femga.com/images/samples/ui_textures/feeds/toast_bg.png)
  |  | 
+
+
 
 
 <h2>generic_textures (590634476)</h2>
@@ -121,6 +125,9 @@ toast_notification_1a | 68950799 | ![toast_notification_1a](http://femga.com/ima
 weapon_stats_bar | 1034039156 | ![weapon_stats_bar](http://femga.com/images/samples/ui_textures/generic_textures/weapon_stats_bar.png)
  |  | 
 
+
+
+
  <h2>honor_display (-395363134)</h2>
 
 Texture hashname | Texture hash | Texture example
@@ -135,6 +142,9 @@ honor_bg | 1234691973 | ![honor_bg](http://femga.com/images/samples/ui_textures/
  |  | 
 honor_good | -1187839095 | ![honor_good](http://femga.com/images/samples/ui_textures/honor_display/honor_good.png)
  |  | 
+
+
+
 
  <h2>menu_textures (1210712530)</h2>
 
@@ -266,6 +276,7 @@ weapon_stats_bar | 1034039156 | ![weapon_stats_bar](http://femga.com/images/samp
  |  | 
 weapon_stats_bar_mask | -979354429 | ![weapon_stats_bar_mask](http://femga.com/images/samples/ui_textures/menu_textures/weapon_stats_bar_mask.png)
  |  | 
+
 
 
 

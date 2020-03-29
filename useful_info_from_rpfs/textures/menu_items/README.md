@@ -15,6 +15,9 @@ Citizen.CreateThread(function()
 end)
 ```
  
+
+
+
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>itemtype_textures (-109457791)</h2>
 
@@ -92,6 +95,8 @@ transaction_trim | -336846241 | ![transaction_trim](http://femga.com/images/samp
  |  | 
 transaction_xp | 1088654639 | ![transaction_xp](http://femga.com/images/samples/ui_textures/itemtype_textures/transaction_xp.png)
  |  | 
+
+
 
 
  <h2>shaving_menu (1053464672)</h2>
@@ -198,6 +203,8 @@ sideburns | -2026763132 | ![sideburns](http://femga.com/images/samples/ui_textur
  |  | 
 sideburns_dundeary | 671619952 | ![sideburns_dundeary](http://femga.com/images/samples/ui_textures/shaving_menu/sideburns_dundeary.png)
  |  | 
+
+
 
 
  <h2>swatches_gunsmith (-1441063855)</h2>
@@ -419,4 +426,3 @@ wrap_tint_swatch_8 | 1119136136 | ![wrap_tint_swatch_8](http://femga.com/images/
 wrap_tint_swatch_9 | 854788613 | ![wrap_tint_swatch_9](http://femga.com/images/samples/ui_textures/swatches_gunsmith/wrap_tint_swatch_9.png)
  |  | 
 
- 
