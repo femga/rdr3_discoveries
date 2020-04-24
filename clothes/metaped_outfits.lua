@@ -1,3 +1,13 @@
+--------------------------------------------------------------------------------
+-- Example of use:
+--
+--	local metaped_outfit = Citizen.InvokeNative(0x13154A76CE0CF9AB,GetHashKey("a_c_alligator_01"),0xDE852F17) -- RequestMetapedOutfit 
+--	Citizen.Wait(200)
+--	Citizen.InvokeNative(0x74F512E29CB717E2,metaped_outfit,a_c_alligator_01_ped_id ,true,false) 			  -- ApplyPedMetapedOutfit
+--
+--------------------------------------------------------------------------------
+
+
 local metaped_outfits = {
 	["a_c_alligator_01"] = {
 	    {0x5F46BA8E},
