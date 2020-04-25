@@ -317,7 +317,7 @@ local is_overlay_change_active = false
 -- palette_color_primary:       from 0 till 254
 -- palette_color_secondary:     from 0 till 254
 -- palette_color_tertiary:      from 0 till 254
--- var:                         0, for "eyeliners" from 0 till 16, for "shadows" from 0 till 5, for "lipsticks" from 0 till 7,
+-- var:                         0, for "eyeliners" from 0 till 15, for "shadows" from 0 till 5, for "lipsticks" from 0 till 7,
 -- opacity:                     from 0.0 till 1.0
 
 
@@ -393,7 +393,7 @@ end)
 -- arg[1] name:                        name of overlay
 -- arg[2] visibility:                  0 or 1
 -- arg[3] tx_id:                       from 1 till maximum of id for current ovelay (watch table "overlays_info". for example "hair" have maximum 4 ids)
--- arg[4] var:                         0, for "eyeliners" from 0 till 16, for "shadows" from 0 till 5, for "lipsticks" from 0 till 7,
+-- arg[4] var:                         0, for "eyeliners" from 0 till 15, for "shadows" from 0 till 5, for "lipsticks" from 0 till 7,
 -- arg[5] opacity:                     from 0.0 till 1.0
 -- arg[6] palette_id:                  from 1 till 25
 -- arg[7] palette_color_primary:       from 0 till 254
@@ -427,8 +427,8 @@ end)
 -- /ov eyebrows 1 15
 -- Apply 12th type of scars:
 -- /ov scars 1 12
--- Apply 16th variant of eyeliners with purple color from palette 6:
--- /ov eyeliners 1 1 16 1.0 6
+-- Apply 15th variant of eyeliners with purple color from palette 6:
+-- /ov eyeliners 1 1 15 1.0 6
 -- Apply 4rd variant of shadows with primary white color and tertiary orange color from palette 22:
 -- /ov shadows 1 1 4 1.0 22 1 0 123
 -- Remove shadows:
