@@ -297,7 +297,6 @@ local overlay_all_layers = {
 
 local textureId = -1
 local overlay_opacity = 1.0
-local is_first_texture_created=false
 local is_overlay_change_active = false
 
 
