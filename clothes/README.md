@@ -5,25 +5,26 @@ To apply overlays use example script from file "change_overlays_script.lua". It 
 ![overlays](https://i.imgur.com/INGYjfI.png)
 
 ## NAMES OF OVERLAYS:
-
-"eyebrows"
-"scars"
-"eyeliners"
-"lipsticks"
-"acne"
-"shadows"
-"beardstabble"
-"paintedmasks"
-"ageing"
-"blush"
-"complex"
-"disc"
-"foundation"
-"freckles"
-"grime"
-"hair"
-"moles"
-"spots"
+```
+eyebrows
+scars
+eyeliners
+lipsticks
+acne
+shadows
+beardstabble
+paintedmasks
+ageing
+blush
+complex
+disc
+foundation
+freckles
+grime
+hair
+moles
+spots
+```
 
 ## EXAMPLES: 
 Apply default color to lipsticks:
