@@ -42,9 +42,9 @@ Apply 12th type of scars:
 /ov scars 1 12
 ```
 
-Apply 16th variant of eyeliners with purple color from palette 6:
+Apply 15th variant of eyeliners with purple color from palette 6:
 ```
-/ov eyeliners 1 1 16 1.0 6
+/ov eyeliners 1 1 15 1.0 6
 ```
 
 Apply 4rd variant of shadows with primary white color and tertiary orange color from palette 22:
@@ -75,7 +75,7 @@ It is recommended to bind function toggleOverlayChange to your menu to ease thin
 -- palette_color_primary:       from 0 till 254
 -- palette_color_secondary:     from 0 till 254
 -- palette_color_tertiary:      from 0 till 254
--- var:                         0, for "eyeliners" from 0 till 16, for "shadows" from 0 till 5, for "lipsticks" from 0 till 7,
+-- var:                         0, for "eyeliners" from 0 till 15, for "shadows" from 0 till 5, for "lipsticks" from 0 till 7,
 -- opacity:                     from 0.0 till 1.0
 
  function toggleOverlayChange(name,visibility,tx_id,tx_normal,tx_material,tx_color_type,tx_opacity,tx_unk,palette_id,palette_color_primary,palette_color_secondary,palette_color_tertiary,var,opacity)
