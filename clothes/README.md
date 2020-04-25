@@ -1,6 +1,6 @@
 ## OVERLAYS
 
-To apply overlays use example script from file ```change_overlays_script.lua```. It uses commands to change overlays. Dont forget to change overlays table to default state, when change your ped model.
+To apply overlays use example script from file ```change_overlays_script.lua```. It uses commands to change overlays. Dont forget to change overlays table to default state, when change your ped model. By default script uses white textures for skin, to keep skin colour for black or indian peds use according albedo hashes for head textures from file ```cloth_drawable_albedo_normal_material_TEMPORARY.lua```.
 
 ![overlays](https://i.imgur.com/INGYjfI.png)
 
