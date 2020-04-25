@@ -1,6 +1,6 @@
 ## OVERLAYS
 
-To apply overlays use example script from file "change_overlays_script.lua". It uses commands to change overlays. Dont forget to change overlays table to default state, when change your ped model.
+To apply overlays use example script from file ```change_overlays_script.lua```. It uses commands to change overlays. Dont forget to change overlays table to default state, when change your ped model.
 
 ![overlays](https://i.imgur.com/INGYjfI.png)
 
