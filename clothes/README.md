@@ -28,22 +28,34 @@ spots
 
 ## EXAMPLES: 
 Apply default color to lipsticks:
-```/ov lipsticks 1```
+```
+/ov lipsticks 1
+```
 
 Apply 15th type of eyebrows:
-```/ov eyebrows 1 15```
+```
+/ov eyebrows 1 15
+```
 
 Apply 12th type of scars:
-```/ov scars 1 12```
+```
+/ov scars 1 12
+```
 
 Apply 16th variant of eyeliners with purple color from palette 6:
-```/ov eyeliners 1 1 16 1.0 6```
+```
+/ov eyeliners 1 1 16 1.0 6
+```
 
 Apply 4rd variant of shadows with primary white color and tertiary orange color from palette 22:
-```/ov shadows 1 1 4 1.0 22 1 0 123```
+```
+/ov shadows 1 1 4 1.0 22 1 0 123
+```
 
 Remove shadows:
-```/ov shadows 0```
+```
+/ov shadows 0
+```
 
 
 ## FUNCTION  "toggleOverlayChange"
