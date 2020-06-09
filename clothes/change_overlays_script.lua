@@ -377,7 +377,9 @@ Citizen.CreateThread(function()
                     Citizen.InvokeNative(0x6C76BC24F8BB709A,textureId,overlay_id, v.opacity); -- apply overlay opacity
                 end
             end
-            Citizen.Wait(100)
+            while not Citizen.InvokeNative(0x31DC8D3F216D8509,textureId) do  -- wait till texture fully loaded
+                Citizen.Wait(0)
+            end
             Citizen.InvokeNative(0x0B46E25761519058,ped,`heads`,textureId)  -- apply texture to current component in category "heads"
             Citizen.InvokeNative(0x92DAABA2C1C10B0E,textureId)      -- update texture
             Citizen.InvokeNative(0xCC8CA3E88256E58F,ped, 0, 1, 1, 1, false);  -- refresh ped components
