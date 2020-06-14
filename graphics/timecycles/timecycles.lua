@@ -1,9 +1,9 @@
 --  SET TIMECYCLE:
--- 			Citizen.InvokeNative(0xFA08722A5EA82DA7,timecycle_modifier)   -- SET_TIMECYCLE_MODIFIER
--- 			Citizen.InvokeNative(0xFDB74C9CC54C3F37,1.0)			      -- SET_TIMECYCLE_MODIFIER_STRENGTHs
+-- 			Citizen.InvokeNative(0xFA08722A5EA82DA7,timecycle_modifier)   	-- SET_TIMECYCLE_MODIFIER
+-- 			Citizen.InvokeNative(0xFDB74C9CC54C3F37,1.0)			-- SET_TIMECYCLE_MODIFIER_STRENGTHs
 --	 
 --  REMOVE TIMECYCLE:               
---			Citizen.InvokeNative(0x0E3F4AF2D63491FB) 					  -- CLEAR_TIMECYCLE_MODIFIER
+--			Citizen.InvokeNative(0x0E3F4AF2D63491FB) 			 -- CLEAR_TIMECYCLE_MODIFIER
 
 
 local timecycles = {
