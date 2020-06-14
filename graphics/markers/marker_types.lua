@@ -3,7 +3,7 @@
 --     while true do
 --         Citizen.Wait(0) 
 --  		local coords = GetEntityCoords(PlayerPedId(),true,true)
---  		Citizen.InvokeNative(0x2A32FAA57B937173,0x94FDAE17,coords.x,coords.y + 2.0,coords.z+1.0,0,0,0,0,0,0,1.0,1.0,1.0,250,250,100,250,false,false,false,true)
+--  		Citizen.InvokeNative(0x2A32FAA57B937173,0x94FDAE17,coords.x,coords.y + 2.0,coords.z+1.0,0,0,0,0,0,0,1.0,1.0,1.0,250,250,100,250,0, 0, 2, 0, 0, 0, 0)
 --  	end
 -- end)
 
