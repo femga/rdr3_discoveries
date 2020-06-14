@@ -2,7 +2,7 @@
 
 local weapons = {
 
-	{`weapon_melee_hatchet_meleeonly`,`group_melee`,},                                  -- {0x076D4FAB,0xD49321D4,},
+    {`weapon_melee_hatchet_meleeonly`,`group_melee`,},                                  -- {0x076D4FAB,0xD49321D4,},
     {`weapon_melee_knife_miner`,`group_melee`,},                                        -- {0x0C45B2DE,0xD49321D4,},
     {`weapon_melee_knife_jawbone`,`group_melee`,},                                      -- {0x1086D041,0xD49321D4,},
     {`weapon_melee_knife_vampire`,`group_melee`,},                                      -- {0x14D3F94D,0xD49321D4,},
