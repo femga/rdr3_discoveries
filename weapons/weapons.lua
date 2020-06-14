@@ -25,7 +25,7 @@ local weapons = {
     {`weapon_melee_knife_micah`,`group_melee`,},                                        -- {0xE9245D38,0xD49321D4,},
     {`weapon_melee_broken_sword`,`group_melee`,},                                       -- {0xF79190B4,0xD49321D4,},
     {`weapon_melee_knife_javier`,`group_melee`,},                                       -- {0xFA66468E,0xD49321D4,},
-    {`weapon_moonshinejug`,`group_petrolcan`,},                                         -- {0xAED4C64C,0x5F1BE07C,},
+    -- {`weapon_moonshinejug`,`group_petrolcan`,},                                         -- {0xAED4C64C,0x5F1BE07C,},  -- MOONSHINE DLC
     {`weapon_pistol_volcanic`,`group_pistol`,},                                         -- {0x020D13FF,0x18D5FA97,},
     {`weapon_pistol_mauser_drunk`,`group_pistol`,},                                     -- {0x4AAE5FFA,0x18D5FA97,},
     {`weapon_pistol_m1899`,`group_pistol`,},                                            -- {0x5B78B8DD,0x18D5FA97,},
