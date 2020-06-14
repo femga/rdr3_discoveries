@@ -1,5 +1,4 @@
 -- TO SHOW MARKER (FOR EXAMPLE):
---
 -- Citizen.CreateThread(function()
 --     while true do
 --         Citizen.Wait(0) 
@@ -31,7 +30,7 @@ local markers = {
 	0xE03A92AE,   --modelName  	p_canoepole01x
 	0x751F27D6,   --modelName  	p_buoy01x
 	0x8C5F9CEE,   --modelName  	0xD9F7183F
-
+	
 	0x51C90974,   --modelName 	UNKNOWN
 	0xCCA89E07,   --modelName  	UNKNOWN
 	0x39747C45,   --modelName	UNKNOWN
