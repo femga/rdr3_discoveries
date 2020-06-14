@@ -1,7 +1,7 @@
 --	TO PLAY ANIMPOSTFX EFFECT:
 --   	AnimpostfxPlay("PauseMenuIn")
 --
---  TO REMOVE ANIMPOSTFX EFFECT:
+--  	TO REMOVE ANIMPOSTFX EFFECT:
 --    	AnimpostfxStop("PauseMenuIn")
 
 
