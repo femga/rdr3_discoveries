@@ -1,10 +1,9 @@
 -- TO SHOW MARKER (FOR EXAMPLE):
---
 -- Citizen.CreateThread(function()
 --     while true do
 --         Citizen.Wait(0) 
 --  		local coords = GetEntityCoords(PlayerPedId(),true,true)
---  		Citizen.InvokeNative(0x2A32FAA57B937173,0x94FDAE17,coords.x,coords.y + 2.0,coords.z+1.0,0,0,0,0,0,0,1.0,1.0,1.0,250,250,100,250,false,false,false,true)
+--  		Citizen.InvokeNative(0x2A32FAA57B937173,0x94FDAE17,coords.x,coords.y + 2.0,coords.z+1.0,0,0,0,0,0,0,1.0,1.0,1.0,250,250,100,250,0, 0, 2, 0, 0, 0, 0)
 --  	end
 -- end)
 
@@ -31,7 +30,7 @@ local markers = {
 	0xE03A92AE,   --modelName  	p_canoepole01x
 	0x751F27D6,   --modelName  	p_buoy01x
 	0x8C5F9CEE,   --modelName  	0xD9F7183F
-
+	
 	0x51C90974,   --modelName 	UNKNOWN
 	0xCCA89E07,   --modelName  	UNKNOWN
 	0x39747C45,   --modelName	UNKNOWN
