@@ -146,7 +146,7 @@ local events = {
 	0x834F764A,    -- unknonw hash name
 	0x92BF8ECE,    -- unknonw hash name
 	0xFD5137A4,    -- unknonw hash name
-	0x7FDA4C5A,    -- unknonw hash name    
+	0x7FDA4C5A,    -- unknonw hash name    killing ped 
 	0x6D3625B6,    -- unknonw hash name
 	0x15101E7B,    -- unknonw hash name
 	0x98D68310,    -- unknonw hash name
