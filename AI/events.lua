@@ -121,51 +121,51 @@ local events = {
 	282773725,  		-- 0x10DAC8DD -- EVENT_WON_APPROACH_ELECTION                   
 
 		------ unknown hashnames:
-	218595333,  		-- 0x0D078005,    -- unknonw hash name
-	1352063587,  		-- 0x5096DA63,    -- unknonw hash name    opening\closing item
-	-1651585854, 		-- 0x9D8ECCC2,    -- unknonw hash name
-	-1231347001, 		-- 0xB69B22C7,    -- unknonw hash name
-	1553659161,  		-- 0x5C9AF519,    -- unknonw hash name
-	239947537,  		-- 0x0E4D4F11,    -- unknonw hash name
-	1924269094,  		-- 0x72B20426,    -- unknonw hash name
-	1327216456,  		-- 0x4F1BB748,    -- unknonw hash name    whistle
-	-1509407906, 		-- 0xA608435E,    -- unknonw hash name
-	2099179610,  		-- 0x7D1EF05A,    -- unknonw hash name    has lootable nearby
-	-1985279805, 		-- 0x89AB08C3,    -- unknonw hash name
-	1208357138,  		-- 0x48061112,    -- unknonw hash name    picking up\putting down ped
-	-369170747,  		-- 0xE9FEE6C5,    -- unknonw hash name
-	1505348054,  		-- 0x59B9C9D6,    -- unknonw hash name
-	-1315570756, 		-- 0xB195FBBC,    -- unknonw hash name
-	-687266558,  		-- 0xD7092502,    -- unknonw hash name    holding animal
-	-1863021589, 		-- 0x90F48BEB,    -- unknonw hash name
-	1376140891,  		-- 0x52063E5B,    -- unknonw hash name    put into pocket
-	-178091376,  		-- 0xF5628A90,    -- unknonw hash name
-	-843555838,  		-- 0xCDB85C02,    -- unknonw hash name
-	163683216,  		-- 0x09C19B90,    -- unknonw hash name
-	1081092949,  		-- 0x40702B55,    -- unknonw hash name
-	-2091944374, 		-- 0x834F764A,    -- unknonw hash name
-	-1832939826, 		-- 0x92BF8ECE,    -- unknonw hash name
-	-45008988,  		-- 0xFD5137A4,    -- unknonw hash name
-	2145012826,  		-- 0x7FDA4C5A,    -- unknonw hash name    killing ped 
-	1832265142,  		-- 0x6D3625B6,    -- unknonw hash name
-	353377915,  		-- 0x15101E7B,    -- unknonw hash name
-	-1730772208, 		-- 0x98D68310,    -- unknonw hash name
-	-507840394,  		-- 0xE1BAF876,    -- unknonw hash name
-	-857756425,  		-- 0xCCDFACF7,    -- unknonw hash name
-	-456923784,  		-- 0xE4C3E578,    -- unknonw hash name
-	2030961287,  		-- 0x790E0287,    -- unknonw hash name
-	1355399116,  		-- 0x50C9BFCC,    -- unknonw hash name
-	-1511724297, 		-- 0xA5E4EAF7,    -- unknonw hash name
-	-346212524,  		-- 0xEB5D3754,    -- unknonw hash name
-	1976253964,  		-- 0x75CB3E0C,    -- unknonw hash name
-	1741908893,  		-- 0x67D36B9D,    -- unknonw hash name
-	-1373301352, 		-- 0xAE251598,    -- unknonw hash name
-	1794914733,  		-- 0x6AFC39AD,    -- unknonw hash name
-	1784289253,  		-- 0x6A5A17E5,    -- unknonw hash name
-	-1065733433, 		-- 0xC07A32C7,    -- unknonw hash name
-	-1682387274, 		-- 0x9BB8CEB6,    -- unknonw hash name
-	-1267317510, 		-- 0xB47644FA,    -- unknonw hash name
-	-454144443,  		-- 0xE4EE4E45,    -- unknonw hash name
-	-1688530399, 		-- 0x9B5B1221,    -- unknonw hash name
-	1694142010,  		-- 0x64FA8E3A,    -- unknonw hash name
+	218595333,  		-- 0x0D078005,    -- unknown hashname
+	1352063587,  		-- 0x5096DA63,    -- unknown hashname    opening\closing item
+	-1651585854, 		-- 0x9D8ECCC2,    -- unknown hashname
+	-1231347001, 		-- 0xB69B22C7,    -- unknown hashname
+	1553659161,  		-- 0x5C9AF519,    -- unknown hashname
+	239947537,  		-- 0x0E4D4F11,    -- unknown hashname
+	1924269094,  		-- 0x72B20426,    -- unknown hashname
+	1327216456,  		-- 0x4F1BB748,    -- unknown hashname    whistle
+	-1509407906, 		-- 0xA608435E,    -- unknown hashname
+	2099179610,  		-- 0x7D1EF05A,    -- unknown hashname    has lootable nearby
+	-1985279805, 		-- 0x89AB08C3,    -- unknown hashname
+	1208357138,  		-- 0x48061112,    -- unknown hashname    picking up\putting down ped
+	-369170747,  		-- 0xE9FEE6C5,    -- unknown hashname
+	1505348054,  		-- 0x59B9C9D6,    -- unknown hashname
+	-1315570756, 		-- 0xB195FBBC,    -- unknown hashname
+	-687266558,  		-- 0xD7092502,    -- unknown hashname    holding animal
+	-1863021589, 		-- 0x90F48BEB,    -- unknown hashname
+	1376140891,  		-- 0x52063E5B,    -- unknown hashname    put into pocket
+	-178091376,  		-- 0xF5628A90,    -- unknown hashname
+	-843555838,  		-- 0xCDB85C02,    -- unknown hashname
+	163683216,  		-- 0x09C19B90,    -- unknown hashname
+	1081092949,  		-- 0x40702B55,    -- unknown hashname
+	-2091944374, 		-- 0x834F764A,    -- unknown hashname
+	-1832939826, 		-- 0x92BF8ECE,    -- unknown hashname
+	-45008988,  		-- 0xFD5137A4,    -- unknown hashname
+	2145012826,  		-- 0x7FDA4C5A,    -- unknown hashname    killing ped 
+	1832265142,  		-- 0x6D3625B6,    -- unknown hashname
+	353377915,  		-- 0x15101E7B,    -- unknown hashname
+	-1730772208, 		-- 0x98D68310,    -- unknown hashname
+	-507840394,  		-- 0xE1BAF876,    -- unknown hashname
+	-857756425,  		-- 0xCCDFACF7,    -- unknown hashname
+	-456923784,  		-- 0xE4C3E578,    -- unknown hashname
+	2030961287,  		-- 0x790E0287,    -- unknown hashname
+	1355399116,  		-- 0x50C9BFCC,    -- unknown hashname
+	-1511724297, 		-- 0xA5E4EAF7,    -- unknown hashname
+	-346212524,  		-- 0xEB5D3754,    -- unknown hashname
+	1976253964,  		-- 0x75CB3E0C,    -- unknown hashname
+	1741908893,  		-- 0x67D36B9D,    -- unknown hashname
+	-1373301352, 		-- 0xAE251598,    -- unknown hashname
+	1794914733,  		-- 0x6AFC39AD,    -- unknown hashname
+	1784289253,  		-- 0x6A5A17E5,    -- unknown hashname
+	-1065733433, 		-- 0xC07A32C7,    -- unknown hashname
+	-1682387274, 		-- 0x9BB8CEB6,    -- unknown hashname
+	-1267317510, 		-- 0xB47644FA,    -- unknown hashname
+	-454144443,  		-- 0xE4EE4E45,    -- unknown hashname
+	-1688530399, 		-- 0x9B5B1221,    -- unknown hashname
+	1694142010,  		-- 0x64FA8E3A,    -- unknown hashname
 }
