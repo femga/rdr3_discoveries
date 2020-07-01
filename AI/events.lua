@@ -119,15 +119,20 @@ local events = {
 	-2130219717,		-- 0x81076D3B -- EVENT_WITHIN_GUN_COMBAT_AREA                
 	-960741963, 		-- 0xC6BC3DB5 -- EVENT_WITHIN_LAW_RESPONSE_AREA               
 	282773725,  		-- 0x10DAC8DD -- EVENT_WON_APPROACH_ELECTION                   
+	-1231347001, 		-- 0xB69B22C7 -- EVENT_VEHICLE_DESTROYED
+	1924269094,  		-- 0x72B20426 -- EVENT_CRIME_CONFIRMED
+	-1863021589, 		-- 0x90F48BEB -- EVENT_VEHICLE_CREATED
+	2145012826,  		-- 0x7FDA4C5A -- EVENT_ENTITY_DESTROYED	
+	-507840394,  		-- 0xE1BAF876 -- EVENT_NETWORK_SCRIPT_EVENT
+	1741908893,  		-- 0x67D36B9D -- EVENT_NETWORK_AWARD_CLAIMED
+	141007368,			-- 0x08679A08 -- EVENT_NETWORK_LOOT_CLAIMED
 
 		------ unknown hashnames:
 	218595333,  		-- 0x0D078005,    -- unknown hashname
 	1352063587,  		-- 0x5096DA63,    -- unknown hashname    opening\closing item
 	-1651585854, 		-- 0x9D8ECCC2,    -- unknown hashname
-	-1231347001, 		-- 0xB69B22C7,    -- unknown hashname
 	1553659161,  		-- 0x5C9AF519,    -- unknown hashname
 	239947537,  		-- 0x0E4D4F11,    -- unknown hashname
-	1924269094,  		-- 0x72B20426,    -- unknown hashname
 	1327216456,  		-- 0x4F1BB748,    -- unknown hashname    whistle
 	-1509407906, 		-- 0xA608435E,    -- unknown hashname
 	2099179610,  		-- 0x7D1EF05A,    -- unknown hashname    has lootable nearby
@@ -137,7 +142,6 @@ local events = {
 	1505348054,  		-- 0x59B9C9D6,    -- unknown hashname
 	-1315570756, 		-- 0xB195FBBC,    -- unknown hashname
 	-687266558,  		-- 0xD7092502,    -- unknown hashname    holding animal
-	-1863021589, 		-- 0x90F48BEB,    -- unknown hashname
 	1376140891,  		-- 0x52063E5B,    -- unknown hashname    put into pocket
 	-178091376,  		-- 0xF5628A90,    -- unknown hashname
 	-843555838,  		-- 0xCDB85C02,    -- unknown hashname
@@ -146,11 +150,9 @@ local events = {
 	-2091944374, 		-- 0x834F764A,    -- unknown hashname
 	-1832939826, 		-- 0x92BF8ECE,    -- unknown hashname
 	-45008988,  		-- 0xFD5137A4,    -- unknown hashname
-	2145012826,  		-- 0x7FDA4C5A,    -- unknown hashname    killing ped 
 	1832265142,  		-- 0x6D3625B6,    -- unknown hashname
 	353377915,  		-- 0x15101E7B,    -- unknown hashname
 	-1730772208, 		-- 0x98D68310,    -- unknown hashname
-	-507840394,  		-- 0xE1BAF876,    -- unknown hashname
 	-857756425,  		-- 0xCCDFACF7,    -- unknown hashname
 	-456923784,  		-- 0xE4C3E578,    -- unknown hashname
 	2030961287,  		-- 0x790E0287,    -- unknown hashname
@@ -158,7 +160,6 @@ local events = {
 	-1511724297, 		-- 0xA5E4EAF7,    -- unknown hashname
 	-346212524,  		-- 0xEB5D3754,    -- unknown hashname
 	1976253964,  		-- 0x75CB3E0C,    -- unknown hashname
-	1741908893,  		-- 0x67D36B9D,    -- unknown hashname
 	-1373301352, 		-- 0xAE251598,    -- unknown hashname
 	1794914733,  		-- 0x6AFC39AD,    -- unknown hashname
 	1784289253,  		-- 0x6A5A17E5,    -- unknown hashname
