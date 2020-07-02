@@ -157,7 +157,7 @@ local events = {
 	-456923784,  		-- 0xE4C3E578,    -- unknown hashname
 	2030961287,  		-- 0x790E0287,    -- unknown hashname
 	1355399116,  		-- 0x50C9BFCC,    -- unknown hashname
-	-1511724297, 		-- 0xA5E4EAF7,    -- unknown hashname
+	-1511724297, 		-- 0xA5E4EAF7,    -- unknown hashname   putting item to satchel
 	-346212524,  		-- 0xEB5D3754,    -- unknown hashname
 	1976253964,  		-- 0x75CB3E0C,    -- unknown hashname
 	-1373301352, 		-- 0xAE251598,    -- unknown hashname
