@@ -138,7 +138,7 @@ local events = {
 	2099179610,  		-- 0x7D1EF05A,    -- unknown hashname    has lootable nearby
 	-1985279805, 		-- 0x89AB08C3,    -- unknown hashname
 	1208357138,  		-- 0x48061112,    -- unknown hashname    picking up\putting down ped
-	-369170747,  		-- 0xE9FEE6C5,    -- unknown hashname
+	-369170747,  		-- 0xE9FEE6C5,    -- unknown hashname	 put [hat] on head
 	1505348054,  		-- 0x59B9C9D6,    -- unknown hashname
 	-1315570756, 		-- 0xB195FBBC,    -- unknown hashname
 	-687266558,  		-- 0xD7092502,    -- unknown hashname    holding animal
