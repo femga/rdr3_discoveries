@@ -169,7 +169,7 @@ local events = {
 	413931470,			-- 0x18AC17CE	-- unknown hashname																					
 	-1360035949,		-- 0xAEEF7F93	-- unknown hashname																						
 	1113682948,			-- 0x42617404	-- unknown hashname																					
-	1794914733,			-- 0x6AFC39AD	-- unknown hashname																					
+	1794914733,			-- 0x6AFC39AD	-- unknown hashname 	ped is hogtied																			
 	2045969979,			-- 0x79F3063B	-- unknown hashname																					
 	-439157431,			-- 0xE5D2FD49	-- unknown hashname																					
 	1165534493,			-- 0x4578A51D	-- unknown hashname																					
