@@ -1,6 +1,6 @@
 local vehicles = {
-
-	[0xC8EF11A0] = "armoredCar01x",               --  dec hash: -923856480                                                                 
+	
+    [0xC8EF11A0] = "armoredCar01x",               --  dec hash: -923856480                                                                 
     [0x22C976E4] = "armoredCar03x",               --  dec hash: 583628516                                                                  
     [0x276DFE5E] = "ArmySupplyWagon",             --  dec hash: 661519966                                                                  
     [0x876E6EB7] = "boatsteam02x",                --  dec hash: -2022805833                                                              
