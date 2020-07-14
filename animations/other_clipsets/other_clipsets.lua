@@ -1495,7 +1495,322 @@ local other_clipsets = {
 		"aim_med_r90",
 	},
 
+	["veh_horseback@horse@standard@seat_rear@left@enter@land@ped@saddle@male@get_on@from_walk"] = {
+		"get_on_to_idle",
+	},
 
+	["mech_weapons_shortarms@base@weapon_f@sawedoff_str"] = {
+		"oh_reload_end",
+		"oh_reload_loop",
+		"oh_reload_start",
+		"oh_reload_start_leftforward",
+	},
+
+	["mech_cover@reloads@shortarms@base@low@right@righthand@no_lean_lemat"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@volcanic_str"] = {
+		"oh_reload_end",
+		"oh_reload_loop",
+		"oh_reload_start",
+	},
+
+	["mech_weapons_special@loco@mp@female@crouch@lantern@walk"] = {
+		"move",
+	},
+
+	["mech_weapons_special@loco@mp@female@crouch@lantern@run"] = {
+		"move",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@doubleaction_lefthand"] = {
+		"cock",
+		"cock_end",
+		"cock_start",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@volcanic_long_barrel_str"] = {
+		"oh_reload_end",
+		"oh_reload_loop",
+		"oh_reload_start",
+	},
+
+	["mech_cover@reloads@shortarms@base@high@left@righthand@no_lean_schofield"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@doubleaction_str"] = {
+		"oh_reload_end",
+		"oh_reload_end_spin",
+		"oh_reload_loop",
+		"oh_reload_start",
+		"oh_reload_start_spin",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@sawedoff"] = {
+		"aim_recoil",
+		"aim_recoil_back_trigger",
+		"cock_end",
+		"cock_start",
+		"recoil",
+		"recoil_back_trigger",
+	},
+
+	["mech_cover@reloads@shortarms@base@low@fwd@righthand@no_lean_lemat"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_special@lantern@crouch@base@sweep_f"] = {
+		"aim_med_0",
+		"aim_med_l180",
+		"aim_med_l90",
+		"aim_med_r180",
+		"aim_med_r90",
+	},
+
+	["mech_weapons_dual@base@weapon_f@cattleman_str@left"] = {
+		"oh_reload_end",
+		"oh_reload_end_spin",
+		"oh_reload_loop",
+		"oh_reload_start",
+		"oh_reload_start_spin",
+	},
+
+	["mech_weapons_longarms@base@weapon_f@carbine_lefthand"] = {
+		"aim_grip_back",
+		"aim_grip_fwd",
+		"aim_grip_mid",
+		"aim_recoil",
+		"cock_end",
+		"cock_start",
+		"recoil",
+	},
+
+	["veh_horseback@horse@standard@seat_rear@left@enter@land@ped@saddle@male@get_on@from_run"] = {
+		"get_on_to_idle",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@volcanic"] = {
+		"aim_recoil",
+		"cock_end",
+		"cock_start",
+		"recoil",
+		"recoil_quick",
+	},
+
+	["mech_weapons_shortarms@hip@base@weapon_f@volcanic"] = {
+		"aim_recoil",
+		"cock_end",
+		"cock_start",
+		"recoil",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@semiauto_lefthand"] = {
+		"aim_recoil",
+		"recoil",
+	},
+
+	["veh_horseback@horse@standard@seat_rear@right@enter@land@ped@saddle@male@get_on@from_run"] = {
+		"get_on_to_idle",
+	},
+
+	["mech_weapons_special@lantern@base@sweep_f@intro@sweep"] = {
+		"aim_0",
+		"aim_l180",
+		"aim_l90",
+		"aim_r180",
+		"aim_r90",
+	},
+
+	["mech_weapons_special@loco@mp@female@normal@lantern@idle"] = {
+		"idle",
+		"idle_water",
+	},
+
+	["mech_cover@reloads@shortarms@base@high@right@righthand@no_lean_lemat"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_dual@base@weapon_f@cattleman_str@right"] = {
+		"oh_reload_end",
+		"oh_reload_end_spin",
+		"oh_reload_loop",
+		"oh_reload_start",
+		"oh_reload_start_spin",
+	},
+
+	["mech_weapons_special@lantern@base@sweep_f@outro"] = {
+		"aim_med_0_outro",
+		"aim_med_l90_outro",
+		"aim_med_r90_outro",
+	},
+
+	["mech_cover@reloads@shortarms@base@high@left@righthand@no_lean_lemat"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_special@loco@mp@female@normal@lantern@run"] = {
+		"move",
+		"move_water",
+	},
+
+	["mech_weapons_special@lantern@base@sweep_f"] = {
+		"aim_med_0",
+		"aim_med_l180",
+		"aim_med_l90",
+		"aim_med_r180",
+		"aim_med_r90",
+	},
+
+	["mech_cover@reloads@shortarms@base@low@fwd_right@righthand@no_lean_lemat"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_special@lantern@crouch@base@sweep_f@outro@sweep"] = {
+		"aim_med_0_outro",
+		"aim_med_l90_outro",
+		"aim_med_r90_outro",
+	},
+
+	["mech_weapons_special@loco@mp@female@normal@lantern@sprint"] = {
+		"move",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@schofield_str"] = {
+		"oh_reload_end",
+		"oh_reload_end_spin",
+		"oh_reload_loop",
+		"oh_reload_start",
+		"oh_reload_start_spin",
+	},
+
+	["mech_weapons_longarms@base@weapon_f@carbine"] = {
+		"aim_grip_back",
+		"aim_grip_fwd",
+		"aim_grip_mid",
+		"aim_recoil",
+		"cock_end",
+		"cock_start",
+		"recoil",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@doubleaction"] = {
+		"cock",
+		"cock_end",
+		"cock_start",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@mauser_str"] = {
+		"oh_reload_end",
+		"oh_reload_start",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@volcanic_lefthand"] = {
+		"aim_recoil",
+		"cock_end",
+		"cock_start",
+		"recoil",
+		"recoil_quick",
+	},
+
+	["mech_cover@reloads@shortarms@base@low@left@righthand@no_lean_lemat"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@semiauto_str"] = {
+		"oh_reload_end",
+		"oh_reload_start",
+	},
+
+	["mech_weapons_shortarms@hip@base@weapon_f@semiauto"] = {
+		"aim_recoil",
+		"recoil",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@semiauto"] = {
+		"aim_recoil",
+		"recoil",
+	},
+
+	["mech_weapons_shortarms@hip@base@weapon_f@sawedoff"] = {
+		"aim_recoil",
+		"aim_recoil_back_trigger",
+		"recoil",
+		"recoil_back_trigger",
+	},
+
+	["mech_weapons_special@lantern@crouch@base@sweep_f@intro@sweep"] = {
+		"aim_0",
+		"aim_l180",
+		"aim_l90",
+		"aim_r180",
+		"aim_r90",
+	},
+
+	["mech_weapons_longarms@base@weapon_f@carbine_str"] = {
+		"oh_reload_end",
+		"oh_reload_loop",
+		"oh_reload_start",
+	},
+
+	["mech_cover@reloads@shortarms@base@low@fwd_left@righthand@no_lean_lemat"] = {
+		"intro",
+		"loop",
+		"outro",
+	},
+
+	["mech_weapons_shortarms@base@weapon_f@sawedoff_lefthand"] = {
+		"aim_recoil",
+		"aim_recoil_back_trigger",
+		"recoil",
+		"recoil_back_trigger",
+	},
+
+	["mech_weapons_special@loco@mp@female@crouch@lantern@idle"] = {
+		"idle",
+	},
+
+	["mech_weapons_special@lantern@base@hit_reacts@high_bow@a"] = {
+		"arm_left_front_upper_and_lower",
+		"arm_right_front_upper_and_lower",
+		"leg_left_rear_upper",
+		"leg_left_upper_front_and_side",
+		"leg_right_front_upper_and_side",
+		"leg_right_rear_upper",
+		"torso_back_lower",
+		"torso_front_upper_and_lower",
+	},
+
+	["mech_weapons_special@loco@mp@female@normal@lantern@walk"] = {
+		"move",
+		"move_water",
+	},
+
+	["veh_horseback@horse@standard@seat_rear@right@enter@land@ped@saddle@male@get_on@from_walk"] = {
+		"get_on_to_idle",
+	},
+
+	["mech_weapons_longarms@hip@base@weapon_f@carbine"] = {
+		"aim_recoil",
+		"cock_end",
+		"cock_start",
+		"recoil",
+	},	
 
 
 
@@ -1504,8 +1819,19 @@ local other_clipsets = {
 	-------------------------------------------------------------------------------------------------------------------------------------------
 
 
-
-
+	--["ai_combat@aim_intro@cowboy@crouch@surprised@holsterbase@1h"] = {
+	--	"right_45",
+	--},
+	--["mech_cover@reloads@shortarms@base@high@left@righthand@no_lean_navy"] = {
+	--	"intro",
+	--	"loop",
+	--	"outro",
+	--},
+	--["mech_cover@reloads@shortarms@base@high@right@righthand@no_lean_navy"] = {
+	--	"intro",
+	--	"loop",
+	--	"outro",
+	--},
 	--["amb_rest_sit@prop_human_seat_chair@porch@male_b@trans@b_trans_a"] = {						
 	--	"b_trans_a",
 	--},
