@@ -1013,6 +1013,488 @@ local other_clipsets = {
 		"breakout_quick_backleft",
 	},
 
+	["mech_loco_f@type@mp@normal@unarmed@run"] = {
+		"move",
+		"start_back_left_-135",
+		"start_back_left_-180",
+		"start_back_right_135",
+		"start_back_right_180",
+		"start_fwd_-0",
+		"start_fwd_-45",
+		"start_fwd_0",
+		"start_fwd_45",
+		"start_left_-135",
+		"start_left_-45",
+		"start_right_135",
+		"start_right_45",
+		"stop_back_left_lf_-135",
+		"stop_back_left_lf_-180",
+		"stop_back_left_rf_-135",
+		"stop_back_left_rf_-180",
+		"stop_back_right_lf_135",
+		"stop_back_right_lf_180",
+		"stop_back_right_rf_135",
+		"stop_back_right_rf_180",
+		"stop_fwd_lf_-45",
+		"stop_fwd_lf_45",
+		"stop_fwd_rf_-45",
+		"stop_fwd_rf_45",
+		"stop_left_lf_-135",
+		"stop_left_lf_-45",
+		"stop_left_rf_-135",
+		"stop_left_rf_-45",
+		"stop_right_lf_135",
+		"stop_right_lf_45",
+		"stop_right_rf_135",
+		"stop_right_rf_45",
+		"turn_l1",
+		"turn_l2",
+		"turn_r1",
+		"turn_r2",
+	},
+
+	["mech_weapons_special@bolas@base@swing@sweep@w"] = {
+		"aim_med_0",
+	},
+
+	["mech_grapple@unarmed@_male@_ambient@_healthy@back@_base"] = {
+		"defend_att",
+		"defend_vic",
+		"deflect_att",
+		"deflect_vic",
+		"enter_back_att",
+		"enter_back_cam",
+		"enter_back_intimidation_att",
+		"enter_back_intimidation_vic",
+		"enter_back_vic",
+		"enter_far_back_att",
+		"enter_far_back_vic",
+		"enter_front_att",
+		"enter_front_vic",
+		"enter_left_att",
+		"enter_left_vic",
+		"enter_med_back_att",
+		"enter_med_back_vic",
+		"enter_mid_left_att",
+		"enter_mid_left_vic",
+		"enter_mid_right_att",
+		"enter_mid_right_vic",
+		"enter_right_att",
+		"enter_right_vic",
+		"exit_front_att",
+		"exit_front_vic",
+		"fail_att",
+		"fail_vic",
+	},
+
+	["mech_weapons_special@bolas@base@trans@swing_to_ready"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_dual@lantern@base@hit_reacts@high_bow@a"] = {
+		"arm_left_front_upper_and_lower_lantern",
+		"arm_right_front_upper_and_lower_lantern",
+		"leg_left_rear_upper_lantern",
+		"leg_left_upper_front_and_side_lantern",
+		"leg_right_front_upper_and_side_lantern",
+		"leg_right_rear_upper_lantern",
+		"torso_back_lower_lantern",
+		"torso_front_upper_and_lower_lantern",
+	},
+
+	["mech_grapple@unarmed@_male@_ambient@_healthy@back@loco@victim"] = {
+		"idle",
+		"idle_turn_180l",
+		"idle_turn_180r",
+		"idle_turn_45l",
+		"idle_turn_45r",
+		"idle_turn_90l",
+		"idle_turn_90r",
+		"walk_bwd",
+		"walk_bwd_left",
+		"walk_bwd_right",
+		"walk_bwd_start",
+		"walk_bwd_stop",
+		"walk_fwd",
+		"walk_fwd_left",
+		"walk_fwd_right",
+		"walk_fwd_start",
+		"walk_fwd_stop",
+	},
+
+	["mech_weapons_dual@lantern@crouch@base@sweep_f@outro@sweep"] = {
+		"aim_med_0_outro",
+		"aim_med_l90_outro",
+		"aim_med_r90_outro",
+	},
+
+	["mech_weapons_special@loco@mp@male@normal@bolas@w@run"] = {
+		"run",
+	},
+
+	["mech_weapons_dual@lantern@trans@base_to_iron_f"] = {
+		"aim_transition_0",
+	},
+
+	["mech_weapons_special@bolas@base@ready@release@w"] = {
+		"release_fb_bwd_-135",
+		"release_fb_bwd_135",
+		"release_fb_fwd_-45",
+		"release_fb_fwd_45",
+		"release_fb_left_-135",
+		"release_fb_left_-45",
+		"release_fb_right_135",
+		"release_fb_right_45",
+		"release_med_0",
+	},
+
+	["mech_loco_f@type@mp@normal@unarmed@walk"] = {
+		"move",
+		"start_back_left_-135",
+		"start_back_left_-180",
+		"start_back_right_135",
+		"start_back_right_180",
+		"start_fwd_-0",
+		"start_fwd_-45",
+		"start_fwd_0",
+		"start_fwd_45",
+		"start_left_-135",
+		"start_left_-45",
+		"start_right_135",
+		"start_right_45",
+		"stop_back_left_lf_-135",
+		"stop_back_left_lf_-180",
+		"stop_back_left_rf_-135",
+		"stop_back_left_rf_-180",
+		"stop_back_right_lf_135",
+		"stop_back_right_lf_180",
+		"stop_back_right_rf_135",
+		"stop_back_right_rf_180",
+		"stop_fwd_lf_-45",
+		"stop_fwd_lf_45",
+		"stop_fwd_rf_-45",
+		"stop_fwd_rf_45",
+		"stop_left_lf_-135",
+		"stop_left_lf_-45",
+		"stop_left_rf_-135",
+		"stop_left_rf_-45",
+		"stop_right_lf_135",
+		"stop_right_lf_45",
+		"stop_right_rf_135",
+		"stop_right_rf_45",
+		"turn_l1",
+		"turn_l2",
+		"turn_r1",
+		"turn_r2",
+	},
+
+	["mech_loco_f@type@mp@normal@unarmed@walk_fast"] = {
+		"move",
+		"turn_l1",
+		"turn_l2",
+		"turn_r1",
+		"turn_r2",
+	},
+
+	["mech_weapons_dual@lantern@base@sweep_iron_sight_f"] = {
+		"aim_med_0",
+	},
+
+	["mech_weapons_dual@lantern@trans@carry_to_iron_f"] = {
+		"aim_transition_0",
+	},
+
+	["mech_weapons_shortarms@base@hit_reacts@high_bow@a"] = {
+		"arm_left_front_upper_and_lower",
+		"arm_right_front_upper_and_lower",
+		"leg_left_rear_upper",
+		"leg_left_upper_front_and_side",
+		"leg_right_front_upper_and_side",
+		"leg_right_rear_upper",
+		"torso_back_lower",
+		"torso_front_upper_and_lower",
+	},
+
+	["mech_weapons_dual@lantern@base@sweep_f@intro@sweep"] = {
+		"aim_0",
+		"aim_l180",
+		"aim_l90",
+		"aim_r180",
+		"aim_r90",
+	},
+
+	["mech_weapons_special@bolas@base@trans@ready_to_swing@w"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_special@loco@mp@male@crouch@bolas@w@idle"] = {
+		"idle",
+	},
+
+	["mech_weapons_special@bolas@base@trans@swing_to_ready@w"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_special@bolas@base@swing@release@w"] = {
+		"release_fb_bwd_-135",
+		"release_fb_bwd_135",
+		"release_fb_fwd_-45",
+		"release_fb_fwd_45",
+		"release_fb_left_-135",
+		"release_fb_left_-45",
+		"release_fb_right_135",
+		"release_fb_right_45",
+		"release_med_0",
+	},
+
+	["mech_loco_f@type@mp@normal@unarmed@sprint"] = {
+		"move",
+		"turn_l1",
+		"turn_l2",
+		"turn_r1",
+		"turn_r2",
+	},
+
+	["mech_grapple@unarmed@_male@_ambient@_healthy@back@loco@attacker"] = {
+		"idle",
+		"idle_turn_180l",
+		"idle_turn_180r",
+		"idle_turn_45l",
+		"idle_turn_45r",
+		"idle_turn_90l",
+		"idle_turn_90r",
+		"walk_bwd",
+		"walk_bwd_left",
+		"walk_bwd_right",
+		"walk_bwd_start",
+		"walk_bwd_stop",
+		"walk_fwd",
+		"walk_fwd_left",
+		"walk_fwd_right",
+		"walk_fwd_start",
+		"walk_fwd_stop",
+	},
+
+	["mech_weapons_special@bolas@base@ready@release"] = {
+		"release_fb_bwd_-135",
+		"release_fb_bwd_135",
+		"release_fb_fwd_-45",
+		"release_fb_fwd_45",
+		"release_fb_left_-135",
+		"release_fb_left_-45",
+		"release_fb_right_135",
+		"release_fb_right_45",
+		"release_med_0",
+	},
+
+	["mech_weapons_special@loco@mp@male@normal@bolas@w@sprint"] = {
+		"sprint",
+	},
+
+	["mech_weapons_dual@lantern@base@sweep_f"] = {
+		"aim_med_0",
+		"aim_med_l180",
+		"aim_med_l90",
+		"aim_med_r180",
+		"aim_med_r90",
+	},
+
+	["mech_weapons_dual@lantern@trans@iron_to_base_f"] = {
+		"aim_transition_0",
+	},
+
+	["mech_weapons_special@bolas@base@ready@sweep@intro@sweep@w"] = {
+		"aim_0",
+		"aim_l180",
+		"aim_l90",
+		"aim_r180",
+		"aim_r90",
+	},
+
+	["mech_weapons_special@bolas@base@ready@sweep@w"] = {
+		"aim_med_0",
+		"aim_med_l90",
+		"aim_med_r90",
+	},
+
+	["mech_weapons_dual@lantern@trans@base_to_carry_f"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_dual@lantern@crouch@base@trans@ready_to_sweep_f@low"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_longarms@base@hit_reacts@high_bow@a"] = {
+		"arm_left_front_upper_and_lower",
+		"arm_right_front_upper_and_lower",
+		"leg_left_rear_upper",
+		"leg_left_upper_front_and_side",
+		"leg_right_front_upper_and_side",
+		"leg_right_rear_upper",
+		"torso_back_lower",
+		"torso_front_upper_and_lower",
+	},
+
+	["mech_weapons_dual@lantern@crouch@base@trans@ready_to_sweep_f@high"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_special@loco@mp@male@crouch@bolas@w@walk"] = {
+		"walk",
+	},
+
+	["mech_weapons_special@bolas@base@swing@release"] = {
+		"release_fb_bwd_-135",
+		"release_fb_bwd_135",
+		"release_fb_fwd_-45",
+		"release_fb_fwd_45",
+		"release_fb_left_-135",
+		"release_fb_left_-45",
+		"release_fb_right_135",
+		"release_fb_right_45",
+		"release_med_0",
+	},
+
+	["mech_weapons_dual@lantern@crouch@base@sweep_f@intro@sweep"] = {
+		"aim_0",
+		"aim_l180",
+		"aim_l90",
+		"aim_r180",
+		"aim_r90",
+	},
+
+	["mech_weapons_dual@lantern@crouch@base@trans@sweep_to_ready_f@low"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_special@bolas@base@airborne@w"] = {
+		"collide",
+		"in_air",
+		"unwrap",
+		"wrap",
+	},
+
+	["mech_loco_f@type@mp@normal@unarmed@run_slow"] = {
+		"move",
+		"turn_l1",
+		"turn_l2",
+		"turn_r1",
+		"turn_r2",
+	},
+
+	["mech_weapons_special@bolas@base@ready@sweep@intro@sweep"] = {
+		"aim_0",
+		"aim_l180",
+		"aim_l90",
+		"aim_r180",
+		"aim_r90",
+	},
+
+	["mech_weapons_dual@lantern@carry@base@sweep_f"] = {
+		"aim_med_0",
+		"aim_med_l90",
+		"aim_med_r90",
+	},
+
+	["mech_weapons_special@loco@mp@male@normal@bolas@w@walk"] = {
+		"walk",
+	},
+
+	["mech_loco_f@type@mp@normal@unarmed@walk_slow"] = {
+		"move",
+		"turn_l1",
+		"turn_l2",
+		"turn_r1",
+		"turn_r2",
+	},
+
+	["mech_weapons_dual@lantern@trans@carry_to_base_f"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_loco_f@type@mp@normal@unarmed@run_fast"] = {
+		"move",
+		"turn_l1",
+		"turn_l2",
+		"turn_r1",
+		"turn_r2",
+	},
+
+	["mech_loco_f@type@mp@normal@unarmed@idle"] = {
+		"idle",
+		"idle_turn_back_left_-135",
+		"idle_turn_back_left_-180",
+		"idle_turn_back_right_135",
+		"idle_turn_back_right_180",
+		"idle_turn_fwd_-0",
+		"idle_turn_fwd_-45",
+		"idle_turn_fwd_0",
+		"idle_turn_fwd_45",
+		"idle_turn_left_-135",
+		"idle_turn_left_-45",
+		"idle_turn_right_135",
+		"idle_turn_right_45",
+	},
+
+	["mech_weapons_special@loco@mp@male@crouch@bolas@w@run"] = {
+		"run",
+	},
+
+	["mech_weapons_dual@lantern@base@sweep_f@outro@sweep"] = {
+		"aim_med_0_outro",
+		"aim_med_l90_outro",
+		"aim_med_r90_outro",
+	},
+
+	["mech_weapons_dual@lantern@trans@iron_to_carry_f"] = {
+		"aim_transition_0",
+	},
+
+	["mech_weapons_dual@lantern@crouch@base@trans@sweep_to_ready_f@high"] = {
+		"aim_transition_0",
+		"aim_transition_l90",
+		"aim_transition_r90",
+	},
+
+	["mech_weapons_special@bolas@base@ready@sweep"] = {
+		"aim_med_0",
+		"aim_med_l90",
+		"aim_med_r90",
+	},
+
+	["mech_weapons_special@loco@mp@male@normal@bolas@w@idle"] = {
+		"idle",
+	},
+
+	["mech_weapons_dual@lantern@base@sweep_additives@block@aim@sweep"] = {
+		"block",
+	},
+
+	["mech_weapons_dual@lantern@crouch@base@sweep_f"] = {
+		"aim_med_0",
+		"aim_med_l180",
+		"aim_med_l90",
+		"aim_med_r180",
+		"aim_med_r90",
+	},
+
 
 
 
@@ -4338,6 +4820,143 @@ local other_clipsets = {
 	--},
 	--["amb_camp@world_human_wash_dishes@table@left@female_a@grab_dish@base@grabdish_trans_washplate"] = {						
 	--	"grabdish_trans_washplate",
+	--},
+
+	--["mech_weapons_dual@lantern@crouch_carry@base@trans@ready_to_sweep_f@high"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_dual@lantern@crouch@base@sweep_iron_sight"] = {
+	--	"aim_med_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_carry_f"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_base"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_special@moonshine_small@crouch@base@sweep"] = {
+	--	"aim_med_0",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@crouch_fire_to_crouch_base"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@crouch@base@sweep_iron_sight_f"] = {
+	--	"aim_med_0",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@crouch_base_to_crouch_fire@w"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@fire_to_base@w"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_special@moonshine_small@crouch@base@weapon@w"] = {
+	--	"fire",
+	--	"fire_intro",
+	--	"fire_outro",
+	--	"fire_shake",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@fire_to_base"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_carry"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@base_to_fire"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_base"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_iron"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_iron_f"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_carry"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@crouch_carry@base@trans@sweep_to_ready_f@high"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@crouch_fire_to_crouch_base@w"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@crouch_carry@base@sweep"] = {
+	--	"aim_med_0",
+	--	"aim_med_l90",
+	--	"aim_med_r90",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_iron"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_iron_f"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_base_f"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_dual@lantern@crouch_carry@base@trans@sweep_to_ready@high"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_dual@lantern@crouch_carry@base@sweep_f"] = {
+	--	"aim_med_0",
+	--	"aim_med_l90",
+	--	"aim_med_r90",
+	--},
+	--["mech_weapons_dual@lantern@crouch_carry@base@trans@ready_to_sweep@high"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_base_f"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@crouch_base_to_crouch_fire"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_special@moonshine_small@base@weapon"] = {
+	--	"fire",
+	--	"fire_intro",
+	--	"fire_outro",
+	--	"fire_shake",
+	--},
+	--["mech_weapons_special@moonshine_small@trans@base_to_fire@w"] = {
+	--	"aim_transition_0",
+	--},
+	--["mech_weapons_special@moonshine_small@crouch@base@weapon"] = {
+	--	"fire",
+	--	"fire_intro",
+	--	"fire_outro",
+	--	"fire_shake",
+	--},
+	--["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_carry_f"] = {
+	--	"aim_transition_0",
+	--	"aim_transition_l90",
+	--	"aim_transition_r90",
+	--},
+	--["mech_weapons_special@moonshine_small@base@weapon@w"] = {
+	--	"fire",
+	--	"fire_intro",
+	--	"fire_outro",
+	--	"fire_shake",
+	--},
+	--["mech_weapons_special@moonshine_small@base@sweep"] = {
+	--	"aim_med_0",
+	--	"aim_med_l90",
+	--	"aim_med_r90",
 	--},
 
 }
