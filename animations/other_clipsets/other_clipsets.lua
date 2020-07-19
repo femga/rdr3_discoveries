@@ -5285,5 +5285,676 @@ local other_clipsets = {
 	--	"aim_med_r90",
 	--},
 
+	--["mech_pickup@plant@hb_sage@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_pickup@plant@burdock@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_pickup@plant@orchid_plant_enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["loot_predator_eat_buck_right"] = {
+	--	"base_r_predator",
+	--},
+
+	--["mech_skin@small@walking_enters"] = {
+	--	"intro_walking_n_facing_in_rf",
+	--	"intro_walking_nw_facing_in_lf",
+	--	"intro_walking_se_facing_in_rf",
+	--	"intro_walking_ne_facing_in_lf",
+	--	"intro_walking_n_facing_in_lf",
+	--	"intro_walking_sw_facing_in_lf",
+	--	"intro_walking_w_facing_in_lf",
+	--	"intro_walking_e_facing_in_lf",
+	--	"intro_walking_nw_facing_in_rf",
+	--	"intro_walking_e_facing_in_rf",
+	--	"intro_walking_w_facing_in_rf",
+	--	"intro_walking_s_facing_in_lf",
+	--	"intro_walking_ne_facing_in_rf",
+	--	"intro_walking_se_facing_in_lf",
+	--	"intro_walking_s_facing_in_rf",
+	--},
+
+	--["loot_predator_adjust_buck_left"] = {
+	--	"prey_fixup_l_predator",
+	--},
+
+	--["mech_skin@wolf_m@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@loot@base@pick_waist_l"] = {
+	--	"pick_waist_l",
+	--},
+
+	--["mech_skin@deer@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@quick@medium@crouch@knife@enters"] = {
+	--	"enter_high",
+	--	"enter_low",
+	--	"enter_mid",
+	--},
+
+	--["mech_skin@buffalo@field_dress@rside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@transitions@facedown_to_loot"] = {
+	--	"facedown_to_loot",
+	--},
+
+	--["loot_predator_enter_deer_left"] = {
+	--	"enter_l_predator",
+	--},
+
+	--["mech_skin@panther@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@buck@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@pig@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@small@nm_adjust"] = {
+	--	"nm_nudge",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_chest_r"] = {
+	--	"pick_chest_r",
+	--},
+
+	--["mech_skin@goat@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@beaver@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@small@pluck_loop_camera_cut"] = {
+	--	"pluck_loop_quick",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@loot@base@pick_waist_r"] = {
+	--	"pick_waist_r",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@transitions@lt_to_loot"] = {
+	--	"lt_to_loot",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@loot@base@pick_waist_r"] = {
+	--	"pick_waist_r",
+	--},
+
+	--["mech_skin@fox@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@transitions@back_to_loot"] = {
+	--	"back_to_loot",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@loot@base@pick_neck"] = {
+	--	"pick_neck",
+	--},
+
+	--["loot_predator_enter_buck_left"] = {
+	--	"enter_l_predator",
+	--},
+
+	--["mech_skin@snapping_turtle@field_dress@belly_down_adjust"] = {
+	--	"enter_belly_down",
+	--},
+
+	--["mech_skin@sheep@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_ears"] = {
+	--	"pick_ears",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_neck"] = {
+	--	"pick_neck",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@loot@base@nothing"] = {
+	--	"nothing",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_b_waist"] = {
+	--	"pick_b_waist",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_waist_l"] = {
+	--	"pick_waist_l",
+	--},
+
+	--["mech_skin@small@pluck_enter"] = {
+	--	"pluck_loop_quick_enter",
+	--},
+
+	--["clipset@mech_revive@revive_smell"] = {
+	--	"revive_smell",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@loot@base@pick_waist_l"] = {
+	--	"pick_waist_l",
+	--},
+
+	--["mech_skin@small@skin_loop_camera_cut"] = {
+	--	"skin_loop_quick",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@loot@base@pick_chest_r"] = {
+	--	"pick_chest_r",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@loot@base@pick_ears"] = {
+	--	"pick_ears",
+	--},
+
+	--["mech_skin@pronghorn@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_chest_r"] = {
+	--	"pick_chest_r",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_b_waist"] = {
+	--	"pick_b_waist",
+	--},
+
+	--["loot_predator_adjust_buck_right"] = {
+	--	"prey_fixup_r_predator",
+	--},
+
+	--["mech_pickup@plant@tobacco@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["loot_predator_adjust_deer_right"] = {
+	--	"prey_fixup_r_predator",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_ears"] = {
+	--	"pick_ears",
+	--},
+
+	--["loot_predator_adjust_deer_left"] = {
+	--	"prey_fixup_l_predator",
+	--},
+
+	--["clipset@mech_pickup@plant@orchid_tree_enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@loot@base@pick_ears"] = {
+	--	"pick_ears",
+	--},
+
+	--["long_loot_link_right_letter_actions"] = {
+	--	"action_r_player",
+	--},
+
+	--["mech_skin@moose@field_dress@rside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@loot@base@pick_waist_r"] = {
+	--	"pick_waist_r",
+	--},
+
+	--["mech_skin@snapping_turtle@field_dress@belly_up_adjust"] = {
+	--	"enter_belly_up",
+	--},
+
+	--["mech_pickup@plant@yarrow@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_lh"] = {
+	--	"pick_lh",
+	--},
+
+	--["mech_skin@cougar@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@loot@base@pick_ears"] = {
+	--	"pick_ears",
+	--},
+
+	--["mech_skin@quick@medium@base@enters"] = {
+	--	"enter_high",
+	--	"enter_low",
+	--	"enter_mid",
+	--},
+
+	--["loot_predator_eat_deer_right"] = {
+	--	"base_r_predator",
+	--},
+
+	--["mech_skin@javelina@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@loot@base@pick_waist_l"] = {
+	--	"pick_waist_l",
+	--},
+
+	--["mech_skin@bighornram@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["loot_predator_eat_buck_left"] = {
+	--	"base_l_predator",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@transitions@back_to_loot"] = {
+	--	"back_to_loot",
+	--},
+
+	--["mech_skin@boar@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@small@stn_enters"] = {
+	--	"stn_enter",
+	--},
+
+	--["mech_skin@coyote@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@elk@field_dress@lside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_skin@bear@field_dress@rside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_rh"] = {
+	--	"pick_rh",
+	--},
+
+	--["mech_skin@sheep@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["clipset@mech_carry_ped@enters@idle"] = {
+	--	"-45_rf",
+	--	"0_lf",
+	--	"0_close_rf",
+	--	"-135_lf",
+	--	"0_close_lf",
+	--	"0_rf",
+	--	"-90_lf",
+	--	"45_rf",
+	--	"180_close_lf",
+	--	"180_lf",
+	--	"135_lf",
+	--	"90_rf",
+	--	"-135_rf",
+	--	"90_lf",
+	--	"45_lf",
+	--	"180_rf",
+	--	"-45_lf",
+	--	"-90_rf",
+	--	"135_rf",
+	--	"180_close_rf",
+	--},
+
+	--["mech_skin@buck@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@loot@base@pick_b_waist"] = {
+	--	"pick_b_waist",
+	--},
+
+	--["clipset@mech_pickup@loot@horse_saddlebags@dead@lt@back@base"] = {
+	--	"base",
+	--},
+
+	--["clipset@mech_revive@revive_horse_smell"] = {
+	--	"revive_horse_smell_crouch",
+	--	"revive_horse_smell",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@loot@base@pick_b_waist"] = {
+	--	"pick_b_waist",
+	--},
+
+	--["mech_skin@bighornram@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@wolf_s@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["clipset@mech_pickup@loot@horse_saddlebags@dead@rt@front@base"] = {
+	--	"base",
+	--},
+
+	--["mech_pickup@plant@mushrooms@ramshead_eat@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_skin@javelina@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@panther@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@small@pluck_loop"] = {
+	--	"pluck_loop_quick",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@transitions@rt_to_loot"] = {
+	--	"rt_to_loot",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@loot@base@nothing"] = {
+	--	"nothing",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_waist_l"] = {
+	--	"pick_waist_l",
+	--},
+
+	--["mech_skin@cow@field_dress@rside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_skin@fish_sturgeon@field_dress@adjust_rt"] = {
+	--	"enter_right_side",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@loot@base@pick_chest_r"] = {
+	--	"pick_chest_r",
+	--},
+
+	--["loot_predator_eat_deer_left"] = {
+	--	"base_l_predator",
+	--},
+
+	--["mech_skin@ox@field_dress@rside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_skin@wolf_s@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@quick@medium@base@slash"] = {
+	--	"slash_mid",
+	--	"slash_high",
+	--	"slash_low",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@loot@base@pick_b_waist"] = {
+	--	"pick_b_waist",
+	--},
+
+	--["clipset@mech_pickup@loot@horse_saddlebags@dead@lt@back@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@loot@base@pick_chest_r"] = {
+	--	"pick_chest_r",
+	--},
+
+	--["mech_skin@pig@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@small@skin_loop"] = {
+	--	"skin_loop_quick",
+	--},
+
+	--["mech_skin@cougar@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_waist_r"] = {
+	--	"pick_waist_r",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@transitions@facedown_to_loot"] = {
+	--	"facedown_to_loot",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_lh"] = {
+	--	"pick_lh",
+	--},
+
+	--["clipset@mech_pickup@loot@horse_saddlebags@dead@lt@front@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_pickup@plant@mushrooms@generic_eat@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_skin@bear_black@field_dress@lside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_skin@bear_black@field_dress@rside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["clipset@mech_pickup@loot@horse_saddlebags@dead@rt@back@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_skin@goat@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@transitions@lt_to_loot"] = {
+	--	"lt_to_loot",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@transitions@facedown_armsdown_to_loot"] = {
+	--	"facedown_armsdown_to_loot",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_down@loot@base@nothing"] = {
+	--	"nothing",
+	--},
+
+	--["clipset@mech_patdown@parent@enter"] = {
+	--	"enter_plyr",
+	--	"idle_plyr",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_chest_l"] = {
+	--	"pick_chest_l",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_up@loot@base@pick_waist_r"] = {
+	--	"pick_waist_r",
+	--},
+
+	--["mech_skin@beaver@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@buffalo@field_dress@lside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_skin@moose@field_dress@lside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_skin@pronghorn@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@quick@medium@base@knife@enters"] = {
+	--	"enter_high",
+	--	"enter_low",
+	--	"enter_mid",
+	--},
+
+	--["mech_skin@cow@field_dress@lside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_pickup@plant@mushrooms@ramshead_eat@base"] = {
+	--	"base",
+	--},
+
+	--["mech_skin@ox@field_dress@lside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_pickup@plant@gold_currant@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_skin@elk@field_dress@rside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_skin@wolf_m@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@wolf_l@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@deer@field_dress@rside_adjust"] = {
+	--	"enter_side_rt",
+	--},
+
+	--["mech_skin@fish_sturgeon@field_dress@adjust_lt"] = {
+	--	"enter_left_side",
+	--},
+
+	--["clipset@mech_pickup@loot_body@face_down@loot@base@pick_rh"] = {
+	--	"pick_rh",
+	--},
+
+	--["clipset@mech_pickup@plant@berries_enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_skin@coyote@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["clipset@mech_pickup@loot@horse_saddlebags@dead@rt@back@base"] = {
+	--	"base",
+	--},
+
+	--["clipset@mech_pickup@loot@horse_saddlebags@dead@lt@front@base"] = {
+	--	"base",
+	--},
+
+	--["mech_pickup@saddle_bundle@horse_satchel@stow@rt_enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_skin@wolf_l@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_pickup@plant@mushrooms@ramshead@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["long_loot_link_left_letter_actions"] = {
+	--	"action_l_player",
+	--},
+
+	--["mech_skin@bear@field_dress@lside_adjust"] = {
+	--	"skin_stab",
+	--},
+
+	--["mech_pickup@plant@mushrooms@generic@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["clipset@mech_pickup@loot_body@dead_hogtie_face_up@loot@base@pick_chest_l"] = {
+	--	"pick_chest_l",
+	--},
+
+	--["mech_skin@boar@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["clipset@mech_pickup@gator_eggs_enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_pickup@plant@violet_sd@enters"] = {
+	--	"enter_lf",
+	--	"enter_rf",
+	--},
+
+	--["mech_skin@fox@field_dress@lside_adjust"] = {
+	--	"enter_side_lt",
+	--},
+
+	--["mech_skin@quick@medium@crouch@enters"] = {
+	--	"enter_high",
+	--	"enter_low",
+	--	"enter_mid",
+	--},
+
+	--["clipset@mech_pickup@loot_body@hogtie_face_down@loot@base@pick_neck"] = {
+	--	"pick_neck",
+	--},
+
+	--["loot_predator_enter_buck_right"] = {
+	--	"enter_r_predator",
+	--},
+
+	--["mech_pickup@saddle_bundle@horse_satchel@stow@rt_base"] = {
+	--	"base",
+	--},
+
+	--["loot_predator_enter_deer_right"] = {
+	--	"enter_r_predator",
+	--},
+
 }
 
