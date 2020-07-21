@@ -34,10 +34,10 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 29	| set prevent ped falling animation | 
 73	| set prevent ped melee attack | 
 93	| unknown yet, but using weapons breaks movement | 
-139	| set prevent ped stamina refill | is_stamina_refilling
+139	| set prevent ped stamina refill | is stamina refilling
 157	|  | is laying on the ground
 180	| set ped don't have collision | 
-185	| set npcs don't antagonize ped (but attack if provoked by his attack) 
+185	| set NPCs don't antagonize ped (but attack if provoked by his attack) 
 196	| set prevent pick up objects,searching drawers and saddlebags, entering horses and vehicles, prevent camera changing | 
 203	| set prevent drop carriable entities | 
 218	|  | is opening doors
@@ -46,5 +46,5 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 248	| set invert look controls | 
 293	| set hide radial reticle | 
 311	|  | is aiming 
-312	|  | is attackin
+312	|  | is attacking
 332	|  | is switching weapon
