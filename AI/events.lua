@@ -233,7 +233,7 @@ local events = {
 	1652530845,			-- 0x627F9E9D	-- unknown hashname																					
 	-569301261,			-- 0xDE1126F3	-- unknown hashname	bullet hits entity																					
 	-1246119244,			-- 0xB5B9BAB4	-- unknown hashname																						
-	-1985279805,			-- 0x89AB08C3	-- unknown hashname																						
+	-1985279805,			-- 0x89AB08C3	-- unknown hashname	trying to calm horse																						
 	1327216456,			-- 0x4F1BB748	-- unknown hashname	whistle																			
 	1473676746,			-- 0x57D685CA	-- unknown hashname																					
 	218595333,			-- 0x0D078005	-- unknown hashname																					
