@@ -34,7 +34,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 29	| set prevent ped falling animation | 
 73	| set prevent ped melee attack | 
 93	| unknown yet, but using weapons breaks movement | 
-139	| set prevent ped stamina refill | is stamina refilling
+139	| set prevent ped stamina refill | is trying melee attack ??
 157	|  | is laying on the ground
 180	| set ped don't have collision | 
 185	| set NPCs don't antagonize ped (but attack if provoked by his attack) 
