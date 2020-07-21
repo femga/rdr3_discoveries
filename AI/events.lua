@@ -186,17 +186,17 @@ local events = {
 	1197193638,			-- 0x475BB9A6	-- unknown hashname																					
 	-1288743481,			-- 0xB32F55C7	-- unknown hashname																						
 	-1538469261,			-- 0xA44CD273	-- unknown hashname																						
-	-687266558,			-- 0xD7092502	-- unknown hashname    holding animal																				
+	-687266558,			-- 0xD7092502	-- unknown hashname    	holding animal																				
 	1082572570,			-- 0x4086BF1A	-- unknown hashname																					
 	-1241852893,			-- 0xB5FAD423	-- unknown hashname																						
 	867155253,			-- 0x33AFBD35	-- unknown hashname																					
 	1811873798,			-- 0x6BFF0006	-- unknown hashname																					
-	-1816722641,			-- 0x93B7032F	-- unknown hashname																						
+	-1816722641,			-- 0x93B7032F	-- unknown hashname	ped was dismissed after brawl																						
 	313219550,			-- 0x12AB59DE	-- unknown hashname																					
-	1387172233,			-- 0x52AE9189	-- unknown hashname   emote wheel is ready to open																					
-	-178091376,			-- 0xF5628A90	-- unknown hashname   picking up arrow																					
+	1387172233,			-- 0x52AE9189	-- unknown hashname   	emote wheel is ready to open																					
+	-178091376,			-- 0xF5628A90	-- unknown hashname   	picking up arrow																					
 	-1312424871,			-- 0xB1C5FC59	-- unknown hashname																						
-	-369170747,			-- 0xE9FEE6C5	-- unknown hashname   put [hat] on head																		
+	-369170747,			-- 0xE9FEE6C5	-- unknown hashname   	put [hat] on head																		
 	-1286831256,			-- 0xB34C8368	-- unknown hashname																						
 	498393689,			-- 0x1DB4E259	-- unknown hashname																					
 	2030961287,			-- 0x790E0287	-- unknown hashname																					
