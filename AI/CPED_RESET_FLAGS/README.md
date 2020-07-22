@@ -15,7 +15,7 @@ end)
 Citizen.CreateThread(function()
   while true do
     Citizen.Wait(0)
-    Citizen.InvokeNative(0xAF9E59B1B1FBF2A0,PlayerPedId(),332)   -- GetPedResetFlag, flag 332 - check is ped switching weapons
+    print("is ped switching weapons: " ..tostring(Citizen.InvokeNative(0xAF9E59B1B1FBF2A0,PlayerPedId(),332)))   -- GetPedResetFlag, flag 332 - check is ped switching weapons
   end
 end)
 ```
@@ -53,6 +53,6 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 293	| set hide radial reticle | 
 311	|  | is aiming 
 312	|  | is attacking
-332	|  | is switching weapon
+332	|  | is switching weapons
 358 |  | is ped jumping/in the air??
 359 |  | is ped jumping/in the air??
