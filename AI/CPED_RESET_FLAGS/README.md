@@ -32,19 +32,27 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 25	| set NPCs don't attack ped (provoked NPCs run away instead of attacking him) | 
 27	| set prevent ped weapon shooting | 
 29	| set prevent ped falling animation | 
+41  |  | is ped driving vehicle
 73	| set prevent ped melee attack | 
 93	| unknown yet, but using weapons breaks movement | 
+100 |  | is ped entering melee combat ??
+124 |  | is ped shuffling vehicle seat
 139	| set prevent ped stamina refill | is trying melee attack ??
 157	|  | is laying on the ground
 180	| set ped don't have collision | 
 185	| set NPCs don't antagonize ped (but attack if provoked by his attack) 
 196	| set prevent pick up objects,searching drawers and saddlebags, entering horses and vehicles, prevent camera changing | 
 203	| set prevent drop carriable entities | 
+206 |  | is ped jumping/in the air??
+207 |  | is ped jumping/in the air??
 218	|  | is opening doors
 225	| set any regdoll infinite | is ped in ragdoll
+236 |  | is ped hitching horse
 239	| set prevent aim (with right mouse button) | 
 248	| set invert look controls | 
 293	| set hide radial reticle | 
 311	|  | is aiming 
 312	|  | is attacking
 332	|  | is switching weapon
+358 |  | is ped jumping/in the air??
+359 |  | is ped jumping/in the air??
