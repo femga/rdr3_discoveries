@@ -24,6 +24,7 @@ end)
 
 FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 ----------- | ----------------- | ---------------------
+0 | | is ped in first person view, staying or slowly moving or crouching
 1	| | is ped climbing
 2	| set prevent ped jumping | 
 6	| set ped stamina infinite | 
@@ -35,14 +36,15 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 41  |  | is ped driving vehicle
 73	| set prevent ped melee attack | 
 93	| unknown yet, but using weapons breaks movement | 
-100 |  | is ped entering melee combat ??
+100 |  | is ped running melee combat action
 124 |  | is ped shuffling vehicle seat
 139	| set prevent ped stamina refill | is trying melee attack ??
-157	|  | is laying on the ground
+157	|  | is ped in ragdoll with pistol or revolver
 180	| set ped don't have collision | 
 185	| set NPCs don't antagonize ped (but attack if provoked by his attack) 
 196	| set prevent pick up objects,searching drawers and saddlebags, entering horses and vehicles, prevent camera changing | 
 203	| set prevent drop carriable entities | 
+204 | set ped can run into steep slope | 
 206 |  | is ped jumping/in the air??
 207 |  | is ped jumping/in the air??
 218	|  | is opening doors
@@ -54,5 +56,6 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 311	|  | is aiming 
 312	|  | is attacking
 332	|  | is switching weapons
+344 | ped run slowly when aiming with pistol or revolver ?? |
 358 |  | is ped jumping/in the air??
 359 |  | is ped jumping/in the air??
