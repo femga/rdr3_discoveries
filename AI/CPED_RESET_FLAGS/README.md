@@ -24,7 +24,7 @@ end)
 
 FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 ----------- | ----------------- | ---------------------
-0 | | is ped in first person view, staying or slowly moving or crouching
+0 | | is ped in first person view, staying or slowly moving or crouching ??
 1	| | is ped climbing
 2	| set prevent ped jumping | 
 6	| set ped stamina infinite | 
