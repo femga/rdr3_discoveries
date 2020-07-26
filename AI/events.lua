@@ -197,9 +197,9 @@ local events = {
 	-178091376,			-- 0xF5628A90	-- unknown hashname   	picking up arrow																					
 	-1312424871,			-- 0xB1C5FC59	-- unknown hashname																						
 	-369170747,			-- 0xE9FEE6C5	-- unknown hashname   	put [hat] on head																		
-	-1286831256,			-- 0xB34C8368	-- unknown hashname																						
+	-1286831256,			-- 0xB34C8368	-- unknown hashname	hat flew off																						
 	498393689,			-- 0x1DB4E259	-- unknown hashname																					
-	2030961287,			-- 0x790E0287	-- unknown hashname																					
+	2030961287,			-- 0x790E0287	-- unknown hashname	attacking with strong melee hit (with weapon or unarmed)																					
 	-84591983,			-- 0xFAF53A91	-- unknown hashname																					
 	1176209503,			-- 0x461B885F	-- unknown hashname																					
 	-1682387274,			-- 0x9BB8CEB6	-- unknown hashname																						
