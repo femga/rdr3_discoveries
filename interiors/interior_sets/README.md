@@ -798,3 +798,4 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 9986 | 390184799 | dow_house_int | intgroup_downes_after_move
 9986 | 390184799 | dow_house_int | intgroup_downes_before_move
 9986 | 390184799 | dow_house_int | intgroup_downes_pulp_novel
+
