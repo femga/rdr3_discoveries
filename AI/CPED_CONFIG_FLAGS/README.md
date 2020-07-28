@@ -11,7 +11,7 @@ To set Config Ped Flags u dont need to call it every frame (unlike CPed Reset Fl
 <h2>Some known Config Ped Flags.</h2>
 
 FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedConfigFlag Result | Set to TRUE by default
------------ | ----------------- | ---------------------
+----------- | ----------------- | --------------------- | --------------------- | ---------------------
 3 |  |  |  | **yes**
 5 |  |  |  | **yes**
 11 | prevent using first person view | cancel this config |  | no
