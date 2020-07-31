@@ -43,6 +43,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 156 |  | is ped leaving cover position
 157	|  | is ped in ragdoll with pistol or revolver
 180	| set ped don't have collision | 
+181 |  | is ped using scenario with musical intrument ??
 185	| set NPCs don't antagonize ped (but attack if provoked by his attack) 
 196	| set prevent pick up objects,searching drawers and saddlebags, entering horses and vehicles, prevent camera changing | 
 203	| set prevent drop carriable entities | 
