@@ -10,39 +10,40 @@ To set Config Ped Flags u dont need to call it every frame (unlike CPed Reset Fl
 
 <h2>Some known Config Ped Flags.</h2>
 
-FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedConfigFlag Result | Set to TRUE by default
+FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedConfigFlag Result | Default Value
 ----------- | ----------------- | --------------------- | --------------------- | ---------------------
-3 |  |  |  | **yes**
-5 |  |  |  | **yes**
-11 | prevent using first person view | cancel this config |  | no
-13 | always switch to scope, when using rifles | cancel this config |  | no
-14 |  |  |  | **yes**
-23 |  |  |  | **yes**
-24 |  |  |  | **yes**
-35 |  |  |  | **yes**
-45 |  |  |  | **yes**
-80 |  |  |  | **yes**
-90 |  |  |  | **yes**
-99 |  |  |  | **yes**
-103 |  |  |  | **yes**
-109 |  |  |  | **yes**
-164 | prevent ped using melee weapon | cancel this config |  | no
-167 | mount last used horse (dont work, if ped didnt use any horse yet) | cancel this task, but only when mounting is fully completed |  | no
-192 | NPCs cant attack ped | cancel this config |  | no
-218 | prevent pick up thrown weapon (arrows, hatchets etc) | cancel this config |  | no
-249 | prevent using weapon wheel | cancel this config |  | no
-252 |  |  |  | **yes**
-254 | full immunity vs melee and range attack | cancel this config |  | no
-255 |  |  |  | **yes**
-256 |  |  |  | **yes**
-264 |  |  |  | **yes**
-265 |  |  |  | **yes**
-267 |  |  |  | **yes**
-270 |  |  |  | **yes**
-278 |  |  |  | **yes**
-291 |  |  |  | **yes**
-378 |  |  |  | **yes**
-380 |  |  |  | **yes**
-409 | position third person camera below default settings | cancel this config |  | no
-511 | prevent using scope while moving | cancel this config |  | no
+3 |  |  |  | **true**
+5 |  |  |  | **true**
+7 | prevent lock on peds | cancel this config |  | false
+11 | prevent using first person view | cancel this config |  | false
+13 | always switch to scope, when using rifles | cancel this config |  | false
+14 |  |  |  | **true**
+23 |  |  |  | **true**
+24 |  |  |  | **true**
+35 |  |  |  | **true**
+45 |  |  |  | **true**
+80 |  |  |  | **true**
+90 |  |  |  | **true**
+99 |  |  |  | **true**
+103 |  |  |  | **true**
+109 |  |  |  | **true**
+164 | prevent ped using melee weapon | cancel this config |  | false
+167 | mount last used horse (dont work, if ped didnt use any horse yet) | cancel this task, but only when mounting is fully completed |  | false
+192 | NPCs cant attack ped | cancel this config |  | false
+218 | prevent pick up thrown weapon (arrows, hatchets etc) | cancel this config |  | false
+249 | prevent using weapon wheel | cancel this config |  | false
+252 |  |  |  | **true**
+254 | full immunity vs melee and range attack | cancel this config |  | false
+255 |  |  |  | **true**
+256 |  |  |  | **true**
+264 |  |  |  | **true**
+265 |  |  |  | **true**
+267 |  |  |  | **true**
+270 |  |  |  | **true**
+278 |  |  |  | **true**
+291 |  |  |  | **true**
+378 |  |  |  | **true**
+380 |  |  |  | **true**
+409 | position third person camera below default settings | cancel this config |  | false
+511 | prevent using scope while moving | cancel this config |  | false
 
