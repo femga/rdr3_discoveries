@@ -46,8 +46,8 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 11778 | -937663888 | tum_gunsmith_int | _s_inv_xpres_revammo01x_group
 11778 | -937663888 | tum_gunsmith_int | _s_inv_xpres_rifleammo01x_group
 11778 | -937663888 | tum_gunsmith_int | tum_gunsmith_int_rentsign
-12034 | -2119254323 |  | mil_cave_lights_03
-12034 | -2119254323 |  | mil_mine_cave03_cheat01
+12034 | -2119254323 | mil_mine_cave_int3 | mil_cave_lights_03
+12034 | -2119254323 | mil_mine_cave_int3 | mil_mine_cave03_cheat01
 12290 | 1809394080 | val_bank_int_main | val_bank_front_windows
 12290 | 1809394080 | val_bank_int_main | val_bank_int_curtainsclosed
 12290 | 1809394080 | val_bank_int_main | val_bank_int_curtainsopen
@@ -330,7 +330,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 3074 | 13960694 | new_grocery_int | _s_inv_whiskey01x_group
 32514 | -2104861777 | pai_house_int | loansharking_chair_col
 32514 | -2104861777 | pai_house_int | pai_intgroup_lootables
-33538 | 1872173714 |  | mil_cave_lights_02
+33538 | 1872173714 | mil_mine_cave_int2 | mil_cave_lights_02
 34050 | 1281507364 | val_res_a_int | val_res_a_int_peepcurtain
 34306 | 1129175760 | bra_tre_house_int | br_tre_house_cheat01
 34562 | -1866150230 | new_pharmacy_int | _s_candybag01x_red_group
@@ -609,7 +609,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 58882 | -2091111721 | van_exoticgoods_int | _s_inv_whiskey01x_group
 59138 | 768224943 | bea_01_int | bea_cave_int_platform
 59138 | 768224943 | bea_01_int | bea_cave_int_platformburned
-59394 | -2124562913 |  | mil_cave_lights_01
+59394 | -2124562913 | mil_mine_cave_int1 | mil_cave_lights_01
 59650 | 905970398 | adl_barn_int | adl_exit_blocker
 59650 | 905970398 | adl_barn_int | adl_stall_blocker
 59906 | -1140178786 | val_magiclantern_int | val_magiclantern_intgroup_closed
@@ -760,7 +760,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 72706 | 506340962 | bra_mansion_int | bra_mansion_dining_groups
 72706 | 506340962 | bra_mansion_int | bra_mansion_windowsbreakable
 72706 | 506340962 | bra_mansion_int | bra_mansion_windowsstatic
-73218 | 1869093440 |  | mil_cave_lights_04
+73218 | 1869093440 | mil_mine_cave_int4 | mil_cave_lights_04
 73730 | 933851390 | shack_sk2_int | sk2_painting_high_moral
 73730 | 933851390 | shack_sk2_int | sk2_painting_low_moral
 73730 | 933851390 | shack_sk2_int | sk2_painting_set_01
