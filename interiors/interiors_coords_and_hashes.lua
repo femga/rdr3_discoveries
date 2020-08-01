@@ -302,13 +302,14 @@ local interiors_list = {
 	[76033] = {x=-572.78009033203,y=-5926.986328125,z=75.550514221191,typeHashId=-2058311230,typeHashName="mp005_mp_collector_lobby_int",rpf="mp_collector_lobby_int.rpf"},
 	[76545] = {x=2734.7485351563,y=-1117.3830566406,z=37.40047454834,typeHashId=-1342756225,typeHashName="mp005_mp_new_photo_posse_int",rpf="mp_new_photo_posse_int.rpf"},
 	[76289] = {x=-572.78009033203,y=-6038.1411132813,z=75.550514221191,typeHashId=1843350190,typeHashName="mp005_mp_reward_lobby_int",rpf="mp_reward_lobby_int.rpf"},
-	[76801] = {x=-572.78009033203,y=-5958.9375,z=75.550514221191,typeHashId=151614302,typeHashName="mp005_mp_trader_lobby_int",rpf="mp_trader_lobby_int.rpf"},
-
+	[76801] = {x=-572.78009033203,y=-5958.9375,z=75.550514221191,typeHashId=151614302,typeHashName="mp005_mp_trader_lobby_int",rpf="mp_trader_lobby_int.rpf"},	
+	[73218] = {x=-1393.5012207031,y=1181.4250488281,z=221.63369750977,typeHashId=1869093440,typeHashName="mil_mine_cave_int4",rpf="mil_mine_cave_04.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
+	[59394] = {x=-1420.4987792969,y=1171.5920410156,z=225.60629272461,typeHashId=-2124562913,typeHashName="mil_mine_cave_int1",rpf="mil_mine_cave_01.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
+	[33538] = {x=-1440.2355957031,y=1189.5712890625,z=225.40866088867,typeHashId=1872173714,typeHashName="mil_mine_cave_int2",rpf="mil_mine_cave_02.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
+	[12034] = {x=-1418.7707519531,y=1197.4487304688,z=224.4430847168,typeHashId=-2119254323,typeHashName="mil_mine_cave_int3",rpf="mil_mine_cave_03.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
+	
 	-- UNKNOWN TYPEHASHNAME(!!!):
-	[73218] = {x=-1393.5012207031,y=1181.4250488281,z=221.63369750977,typeHashId=1869093440,typeHashName="",rpf="mil_mine_cave_04.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
-	[59394] = {x=-1420.4987792969,y=1171.5920410156,z=225.60629272461,typeHashId=-2124562913,typeHashName="",rpf="mil_mine_cave_01.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
-	[33538] = {x=-1440.2355957031,y=1189.5712890625,z=225.40866088867,typeHashId=1872173714,typeHashName="",rpf="mil_mine_cave_02.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
-	[25090] = {x=339.67950439453,y=1505.8784179688,z=180.95112609863,typeHashId=-1601726546,typeHashName="",rpf="old_cptquarter_int.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
-	[12034] = {x=-1418.7707519531,y=1197.4487304688,z=224.4430847168,typeHashId=-2119254323,typeHashName="",rpf="mil_mine_cave_03.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
 
+	[25090] = {x=339.67950439453,y=1505.8784179688,z=180.95112609863,typeHashId=-1601726546,typeHashName="",rpf="old_cptquarter_int.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
+	
 }
