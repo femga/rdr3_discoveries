@@ -27,7 +27,6 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 45 |  |  |  | **true**
 80 |  |  |  | **true**
 90 |  |  |  | **true**
-
 99 |  |  |  | **true**
 103 |  |  |  | **true**
 109 |  |  |  | **true**
