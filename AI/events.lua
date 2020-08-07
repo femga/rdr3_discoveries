@@ -218,7 +218,7 @@ local events = {
 	526946626	,	-- 0x1F689142	-- unknown hashname																					
 	-1511724297	,	-- 0xA5E4EAF7	-- unknown hashname		putting item to satchel																						
 	1376140891	,	-- 0x52063E5B	-- unknown hashname		put into pocket																					
-	-1509407906	,	-- 0xA608435E	-- unknown hashname																						
+	-1509407906	,	-- 0xA608435E	-- unknown hashname 	dead wild animal is near ped																						
 	1640116056	,	-- 0x61C22F58	-- unknown hashname																					
 	-968272321	,	-- 0xC649563F	-- unknown hashname																					
 	-462231716	,	-- 0xE472E75C	-- unknown hashname																					
@@ -245,7 +245,7 @@ local events = {
 	2099179610	,	-- 0x7D1EF05A	-- unknown hashname    	has lootable nearby																			
 	-582361627	,	-- 0xDD49DDE5	-- unknown hashname																					
 	1553659161	,	-- 0x5C9AF519	-- unknown hashname																					
-	1784289253	,	-- 0x6A5A17E5	-- unknown hashname																					
+	1784289253	,	-- 0x6A5A17E5	-- unknown hashname		wild animal is agonizing near																				
 	1655597605	,	-- 0x62AE6A25	-- unknown hashname																					
 	1272433714	,	-- 0x4BD7CC32	-- unknown hashname																					
 	1351025667	,	-- 0x50870403	-- unknown hashname																					
