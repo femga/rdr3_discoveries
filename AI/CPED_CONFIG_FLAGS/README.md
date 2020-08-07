@@ -30,7 +30,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 99 |  |  |  | **true**
 103 |  |  |  | **true**
 109 |  |  |  | **true**
-164 | prevent ped using melee weapon | cancel this config |  | false
+164 | prevent ped strong hit with knife ?? | cancel this config |  | false
 167 | mount last used horse (dont work, if ped didnt use any horse yet) | cancel this task, but only when mounting is fully completed |  | false
 192 | NPCs cant attack ped | cancel this config |  | false
 218 | prevent pick up thrown weapon (arrows, hatchets etc) | cancel this config |  | false
@@ -50,7 +50,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 352 | together with 533: after few steps of stairs (up or down), ped turns back (dont effect vertical ladders) | cancel this config |  | false
 378 |  |  |  | **true**
 380 |  |  |  | **true**
-405 | prevent using melee weapons (knifes, hatchets, swords etc) | cancel this config |  | false
+405 | cant use melee weapons (knifes, hatchets, swords etc) vs non-attacking NPCs created by engine ?? | cancel this config |  | false
 408 | dont show knife onscreen, while in first person | cancel this config |  | false
 409 | position third person camera below default settings | cancel this config |  | false
 511 | prevent using scope while moving | cancel this config |  | false
