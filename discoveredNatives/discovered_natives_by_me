@@ -9,6 +9,35 @@
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 
+To change mp walkstyle:
+
+// 0xCB9401F918CB0F75
+void N_0xCB9401F918CB0F75(Ped ped, char* walkstyleName, BOOL enable, Any p3)
+/*
+List of walkstyleNames:
+    "MP_Style_Default"
+    "MP_Style_Casual"
+    "MP_Style_Crazy"
+    "MP_Style_Flamboyant"
+    "MP_Style_Gunslinger"
+    "MP_Style_Refined"
+    "MP_Style_SilentType"
+    "MP_Style_Greenhorn"
+    "MP_Style_Veteran"
+    "MP_Style_EasyRider"
+
+Apply walkstyle:
+Citizen.InvokeNative(0xCB9401F918CB0F75, PlayerPedId(), "MP_Style_EasyRider",true,-1)
+
+Before applying other walkstyles, dont forget to remove existing one:
+Citizen.InvokeNative(0xCB9401F918CB0F75,PlayerPedId(), "MP_Style_EasyRider", 0, -1);
+*/
+
+
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
 // 0xA0BC8FAED8CFEB3C
 BOOL _HAS_PED_COMPONENT_LOADED(Ped ped)
 
