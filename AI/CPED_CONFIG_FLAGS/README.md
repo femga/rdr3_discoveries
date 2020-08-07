@@ -10,7 +10,7 @@ To set Config Ped Flags u dont need to call it every frame (unlike CPed Reset Fl
 
 <h2>Some known Config Ped Flags.</h2>
 
-FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedConfigFlag Result | Default Value
+FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedConfigFlag(ped,flagid,true) Result | Default Value
 ----------- | ----------------- | --------------------- | --------------------- | ---------------------
 3 |  |  |  | **true**
 5 |  |  |  | **true**
@@ -18,7 +18,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 10 | prevent using first person view ?? | cancel this config |  | false
 11 | prevent using first person view ?? | cancel this config |  | false
 13 | always switch to scope, when using rifles | cancel this config |  | false
-14 |  |  |  | **true**
+14 |  |  | can ped free moving (not ragdoll and not covering) | **true**
 23 |  |  |  | **true**
 24 |  |  |  | **true**
 26 | cant initiate brawl with strong hit ?? | cancel this config |  | false
@@ -45,6 +45,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 270 |  |  |  | **true**
 278 |  |  |  | **true**
 291 |  |  |  | **true**
+292 |  |  | is ped using scenario | **true**
 334 | prevent quick holster and unholster (with tab button) | cancel this config |  | false
 335 | prevent holster weapon (with tab button). Dont effect to "twirl" holster (with double tab) | cancel this config |  | false
 352 | together with 533: after few steps of stairs (up or down), ped turns back (dont effect vertical ladders) | cancel this config |  | false
