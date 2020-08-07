@@ -35,6 +35,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 29	| set prevent ped falling animation | 
 41  |  | is ped driving vehicle
 73	| set prevent ped melee attack | 
+88	|  | NPC grabbed player ped ??
 93	| unknown yet, but using weapons breaks movement | 
 100 |  | is ped running melee combat action
 124 |  | is ped shuffling vehicle seat
