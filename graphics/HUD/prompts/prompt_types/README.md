@@ -13,9 +13,9 @@ Citizen.CreateThread(function()
 end)
 ```
 
-<h2>Some known Default Prompt Ids.</h2>
+<h2>Some known Default Prompt Types.</h2>
 
-Prompt Type Id | Prompt Names | Default QWERTY Button
+Prompt Type | Prompt Names | Default QWERTY Button
 ----------- | ----------------- | -------------
 1 | eat almonds | R
 1 | pour coffee | R
