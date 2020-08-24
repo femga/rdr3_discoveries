@@ -11,7 +11,7 @@ end)
 
 ```
 
-<h3>Mouse cursors:</h3>
+
 <h2>Cursor sprites</h2>
 
 
