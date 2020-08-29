@@ -10422,4 +10422,49 @@ local vehicle_bones = {
 		["static_prop"] = {bone_index = 11},
 	},
 
+
+
+
+
+    -----------------------------------------------------------------------------------------------------------------------
+    ------------------------------------- Vehicle_bones from game version 1207.80 till 1311.12 ----------------------------
+    -----------------------------------------------------------------------------------------------------------------------
+
+	["tugboat3"] = {				-- hex: 0x6422679D      dec: 1679976349
+
+		["bodyshell"] = {bone_index = 7},
+		["chassis_dummy"] = {bone_index = 32},
+		["chassis_lowlod"] = {bone_index = 3},
+		["door_dside_f"] = {bone_index = 10},
+		["exhaust"] = {bone_index = 4},
+		["handle_dside_f"] = {bone_index = 11},
+		["misc_b"] = {bone_index = 12},
+		["seat_dside_f"] = {bone_index = 1},
+		["seat_pside_f"] = {bone_index = 2},
+		["ship_telegraph"] = {bone_index = 9},
+		["static_prop"] = {bone_index = 28},
+		["steam"] = {bone_index = 6},
+		["steering_wheel"] = {bone_index = 8},
+		["trigger"] = {bone_index = 30},
+		["whistle"] = {bone_index = 31},
+		["whistle_rope"] = {bone_index = 29},
+		["whistle_trigger"] = {bone_index = 5},
+		["window_lf"] = {bone_index = 16},
+		["window_lm1"] = {bone_index = 17},
+		["window_lm2"] = {bone_index = 18},
+		["window_lm3"] = {bone_index = 19},
+		["window_lm4"] = {bone_index = 20},
+		["window_lr"] = {bone_index = 21},
+		["window_rf"] = {bone_index = 22},
+		["window_rm1"] = {bone_index = 23},
+		["window_rm2"] = {bone_index = 24},
+		["window_rm3"] = {bone_index = 25},
+		["window_rm4"] = {bone_index = 26},
+		["window_rr"] = {bone_index = 27},
+		["windscreen_l"] = {bone_index = 14},
+		["windscreen_r"] = {bone_index = 13},
+		["windscreen_rear"] = {bone_index = 15},
+	},
+
+
 }
