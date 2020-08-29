@@ -1,6 +1,6 @@
 ## Controls
 
-Some controls in REDM works only since certain RDR2 versions. Now default game version for REDM is 1207.80 (patch from 02 december 2019). Upcoming game version for REDM is 1311.12 (patch from 28 july 2020).
+Some controls in REDM works only since certain RDR2 versions. Current default game version for REDM is 1207.80 (patch from 02 december 2019). Upcoming game version for REDM is 1311.12 (patch from 28 july 2020).
 
 ## Known controls
 
@@ -44,11 +44,11 @@ Hash|HashName|Default QWERTY|Since Game Version ...
 0x9959A6F0|INPUT_LOOK_BEHIND|C|1207.80
 0xA6C67243|INPUT_CINEMATIC_CAM_CHANGE_SHOT|C|***1311.12***
 0xD8CF0C95|INPUT_CREATOR_RS|C|***1311.12***
-0x811F4A1A|INPUT_SECONDARY_SPECIAL_ABILITY_SECONDARY|CAPS LOCK|1207.80
-0xCEE12B50|INPUT_SPECIAL_ABILITY|CAPS LOCK|1207.80
 0xCAE9B017|INPUT_VEH_LOOK_BEHIND|C (when driving vehicle) |1207.80
 0xA6C67243|INPUT_CINEMATIC_CAM_CHANGE_SHOT|C (when in cinematic mode camera)|1207.80
 0xD8CF0C95|INPUT_CREATOR_RS|C (when in cinematic mode camera)|1207.80
+0x811F4A1A|INPUT_SECONDARY_SPECIAL_ABILITY_SECONDARY|CAPS LOCK|1207.80
+0xCEE12B50|INPUT_SPECIAL_ABILITY|CAPS LOCK|1207.80
 0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|D|1207.80
 0x4D8FB4C1|INPUT_MOVE_LR|D|1207.80
 0xB4E465B4|INPUT_MOVE_RIGHT_ONLY|D|1207.80
