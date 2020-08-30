@@ -24,8 +24,7 @@ local weapons = {
     {`weapon_melee_knife`,`group_melee`,},                                              -- {0xDB21AC8C,0xD49321D4,},
     {`weapon_melee_knife_micah`,`group_melee`,},                                        -- {0xE9245D38,0xD49321D4,},
     {`weapon_melee_broken_sword`,`group_melee`,},                                       -- {0xF79190B4,0xD49321D4,},
-    {`weapon_melee_knife_javier`,`group_melee`,},                                       -- {0xFA66468E,0xD49321D4,},
-    -- {`weapon_moonshinejug`,`group_petrolcan`,},                                         -- {0xAED4C64C,0x5F1BE07C,},  -- MOONSHINE DLC
+    {`weapon_melee_knife_javier`,`group_melee`,},                                       -- {0xFA66468E,0xD49321D4,}, 
     {`weapon_pistol_volcanic`,`group_pistol`,},                                         -- {0x020D13FF,0x18D5FA97,},
     {`weapon_pistol_mauser_drunk`,`group_pistol`,},                                     -- {0x4AAE5FFA,0x18D5FA97,},
     {`weapon_pistol_m1899`,`group_pistol`,},                                            -- {0x5B78B8DD,0x18D5FA97,},
@@ -131,4 +130,24 @@ local weapons = {
     -- {`weapon_explosion`,``,},                                                           -- {0x2024F4E8,0x00000000,},
     -- {`weapon_rammed_by_car`,``,},                                                       -- {0x07FC7D7A,0x00000000,},
     -- {`weapon_run_over_by_car`,``,},                                                     -- {0xA36D413E,0x00000000,},
+
+
+
+
+    -----------------------------------------------------------------------------------------------------------------------
+    -------------------------------------  Weapons from game version 1207.80 till 1311.12 ---------------------------------
+    -----------------------------------------------------------------------------------------------------------------------
+
+    {`weapon_kit_camera_advanced`,0xC715F939,},                
+    {`weapon_melee_machete_horror`,`group_melee`,},                
+    {`weapon_bow_improved`,`group_bow`,},                  
+    {`weapon_rifle_elephant`,`group_rifle`,},                  
+    {`weapon_revolver_navy`,`group_revolver`,},                
+    {`weapon_lasso_reinforced`,`group_lasso`,},                
+    {`weapon_kit_binoculars_improved`,0xC715F939,},                
+    {`weapon_melee_knife_trader`,`group_melee`,},                  
+    {`weapon_melee_machete_collector`,`group_melee`,},                 
+    {`weapon_moonshinejug_mp`,`group_petrolcan`,},                 
+    {`weapon_thrown_bolas`,`group_thrown`,},                   
+    {`weapon_thrown_poisonbottle`,`group_thrown`,},                
 }
