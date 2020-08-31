@@ -20,7 +20,7 @@
 <h2>Some known zones types and names.</h2>
 
 ZoneTypeId | ZoneTypeName | ZoneTypeNameHash | ZoneName | ZoneNameHash hex | ZoneNameHash dec 
------------ | ----------------- | --------------------- | --------------------- | ---------------------
+----------- | ----------------- | --------------------- | --------------------- | --------------------- | ---------
 0 | STATE | 0x77A848C7 | Ambarino | 0xF2D2E4A4 | -221059932
 0 | STATE | 0x77A848C7 | Lemoyne | 0x00A55D60 | 10837344
 0 | STATE | 0x77A848C7 | NewAustin | 0x79E6A26B | 2045157995
