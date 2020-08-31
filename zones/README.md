@@ -9,7 +9,8 @@
 	local x,y,z =  table.unpack(GetEntityCoords(PlayerPedId()))
 
 	-- Find ZoneName of type "District" at current coords. Returns false if nothing of this type was found:
-  	local current_district = Citizen.InvokeNative(0x43AD8FC02B429D33 ,x,y,z,10)
+	local ZoneTypeId = 10
+  	local current_district = Citizen.InvokeNative(0x43AD8FC02B429D33 ,x,y,z,ZoneTypeId)
   	if current_district then
   	  print("Current district is "..tostring(current_district)) 	  
   	end
