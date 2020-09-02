@@ -28,8 +28,7 @@ end)
 
 
 Minimap object name | Minimap object hash
-
-
+------------ | ----------------
 abe_farmhouse_int | 0xB96DF42A
 adl_barn_int | 0x360002DE
 adl_cabin01_int | 0x1506D5A2
