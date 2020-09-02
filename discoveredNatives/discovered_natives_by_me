@@ -4,6 +4,18 @@
 
 
 
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+
+// 0x1392105DA88BBFFB
+void _PLACE_MINIMAP_OBJECT(minimap_object_hash, float x, float y, rotation, 0)
+list of minimap objects here:
+https://github.com/femga/rdr3_discoveries/tree/master/graphics/minimap/minimapObjects
+
+
+// 0xE057FEA9A22EB3EE
+void _REMOVE_MINIMAP_OBJECT(minimap_object_hash)
 
 -------------------------------------------------------------------
 -------------------------------------------------------------------
