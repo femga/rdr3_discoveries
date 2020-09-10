@@ -324,5 +324,5 @@ local interiors_list = {
 	[78337] = {x=-2774.65625,y=-3046.2746582031,z=-9.70361328125,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"}
 	[78593] = {x=1629.7342529297,y=828.16253662109,z=123.93880462646,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"}
 	[79105] = {x=-1864.5424804688,y=-1727.5080566406,z=88.252014160156,typeHashId=-1406656258,typeHashName="mp007_moonshine01_int",rpf=""}
-	[78849] = {x=-1815.1479492188,y=-370.2919921875,z=314.0,typeHashId=21835795,typeHashName="",rpf=""}
+	[78849] = {x=-1815.1479492188,y=-370.2919921875,z=314.0,typeHashId=21835795,typeHashName="mp007_str_whore_cs_int",rpf=""}
 }
