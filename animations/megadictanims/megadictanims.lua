@@ -2712,6 +2712,8 @@ local megadictanims = {
   "exit_back_att",
   "enter_mount_att",
   "exit_front_vic",
+  "enter_mount_struggle_att",
+  "enter_mount_struggle_vic",
  },
 
  ["mech_weapons_special@bow@base@trans@drawn_to_action_exhausted@w"] = {
@@ -7682,6 +7684,8 @@ local megadictanims = {
   "exit_front_vic",
   "enter_mount_att",
   "exit_back_att",
+  "enter_mount_struggle_att",
+  "enter_mount_struggle_vic",
  },
 
  ["creatures_mammal@bear@normal@gallop_slow@slope@down"] = {
@@ -11404,6 +11408,9 @@ local megadictanims = {
   "recoil_oh",
   "recoil",
   "fire_recoil",
+  "aim_grip_back",
+  "aim_grip_fwd",
+  "aim_grip_mid",
  },
 
  ["amb_rest_sit@prop_human_seat_chair@read@newspaper@male_b@react_look@exit@generic"] = {
@@ -33176,6 +33183,8 @@ local megadictanims = {
   "exit_back_att",
   "enter_mount_att",
   "exit_front_vic",
+  "enter_mount_struggle_att",
+  "enter_mount_struggle_vic",
  },
 
  ["mech_grapple@bow@_male@_ambient@_healthy@mounted@loco@victim"] = {
@@ -33234,6 +33243,8 @@ local megadictanims = {
   "exit_front_vic",
   "enter_mount_att_weapon",
   "exit_back_att",
+  "enter_mount_struggle_att",
+  "enter_mount_struggle_vic",
  },
 
  ["creatures_mammal@sheep@normal@walk_fast@slope@down"] = {
@@ -36550,6 +36561,7 @@ local megadictanims = {
 
  ["veh_cart_large@standard@front@fr@enter@from@land@normal@get_in@male"] = {
   "get_in_to_seat",
+  "get_in_to_seat_dside_ik",
  },
 
  ["veh_horseback@horse@standard@seat_rider@rear@enter@land@ped@saddle@male@align@unoccupied"] = {
@@ -85250,6 +85262,8 @@ local megadictanims = {
   "deflect_att",
   "deflect_vic",
   "fail_att",
+  "struggle_att",
+  "struggle_vic",
  },
 
  ["veh_coach@small@rear@leftside@rl@enter@from@land@jack@get_in@alive@male"] = {
@@ -95369,6 +95383,9 @@ local megadictanims = {
   "w_recoil",
   "w_fire",
   "recoil_oh",
+  "aim_grip_back",
+  "aim_grip_fwd",
+  "aim_grip_mid",
  },
 
  ["amb_rest_lean@world_human_lean_fence_fwd_check_out_livestock@male_e@stand_enter"] = {
@@ -116268,5 +116285,1364 @@ local megadictanims = {
  ["creatures_mammal@horse@agitated_med@idle@variation@fidget_03@slope@down"] = {
   "idle",
  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  -----------------------------------------------------------------------------------------------------------------------
+  ---------------------------------  Megadictanims from game version 1207.80 till 1311.12 -------------------------------
+  -----------------------------------------------------------------------------------------------------------------------
+
+
+
+  ["mech_weapons_dual@base@weapon@lemat_str@right@revolver"] = {
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop_revolver",
+   "w_oh_reload_loop_shotgun",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@lemat_lefthand@shotgun"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@mortar@harriet@react_look@enter@low"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_mortar",
+   "react_look_backright_enter",
+   "react_look_backright_enter_mortar",
+   "react_look_front_enter",
+   "react_look_front_enter_mortar",
+   "react_look_left_enter",
+   "react_look_left_enter_mortar",
+   "react_look_right_enter",
+   "react_look_right_enter_mortar",
+  },
+
+  ["mech_weapons_special@moonshine_small@base@sweep"] = {
+   "aim_med_0",
+   "aim_med_l90",
+   "aim_med_r90",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon_f@lemat"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+  },
+
+  ["mech_weapons_longarms@base@weapon_f@elephant_str"] = {
+   "oh_reload_end",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_leftforward",
+  },
+
+  ["mech_cover@reloads@arthur@dual_shortarms@base@low@fwd_right@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@crouch_base_to_crouch_fire_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon@lemat@revolver"] = {
+   "pin_switch",
+   "recoil_oh",
+   "w_cock_end",
+   "w_cock_start",
+   "w_pin_switch",
+   "w_recoil",
+  },
+
+  ["mech_weapons_longarms@base@weapon@elephant_lefthand"] = {
+   "cock_end",
+   "cock_start",
+   "recoil_oh",
+   "step_back",
+  },
+
+  ["mech_weapons_special@moonshine_small@crouch@base@weapon@w"] = {
+   "fire",
+   "fire_intro",
+   "fire_outro",
+   "fire_shake",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@base"] = {
+   "base",
+   "base_book",
+  },
+
+  ["mech_weapons_dual@base@weapon_f@navy_str@left"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@mortar@harriet@react_look@enter@med"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_mortar",
+   "react_look_backright_enter",
+   "react_look_backright_enter_mortar",
+   "react_look_front_enter",
+   "react_look_front_enter_mortar",
+   "react_look_left_enter",
+   "react_look_left_enter_mortar",
+   "react_look_right_enter",
+   "react_look_right_enter_mortar",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_iron_f"] = {
+   "aim_transition_0",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@mortar@harriet@react_look@loop@generic"] = {
+   "react_look_backleft_loop",
+   "react_look_backleft_loop_mortar",
+   "react_look_backright_loop",
+   "react_look_backright_loop_mortar",
+   "react_look_front_loop",
+   "react_look_front_loop_mortar",
+   "react_look_left_loop",
+   "react_look_left_loop_mortar",
+   "react_look_right_loop",
+   "react_look_right_loop_mortar",
+  },
+
+  ["mech_weapons_dual@base@weapon@lemat_str@right"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["mech_weapons_longarms@hip@base@weapon@elephant"] = {
+   "cock_end",
+   "cock_start",
+   "recoil_oh",
+   "step_back",
+  },
+
+  ["mech_cover@reloads@arthur@dual_shortarms@base@high@right@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@stepback01"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@slope_max@down"] = {
+   "idle",
+   "idle_intro",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@stepback01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_cart_large@cart05@front@fl@exit@to@land@jack@from@transition@get_out@alive@male"] = {
+   "bejacked_abort",
+   "bejacked_loop",
+   "bejacked_success",
+   "jack_intro_long_high",
+   "jack_intro_long_high_45",
+   "jack_intro_long_low",
+   "jack_intro_long_low_45",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@mortar@harriet@react_look@enter@high"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_mortar",
+   "react_look_backright_enter",
+   "react_look_backright_enter_mortar",
+   "react_look_front_enter",
+   "react_look_front_enter_mortar",
+   "react_look_left_enter",
+   "react_look_left_enter_mortar",
+   "react_look_right_enter",
+   "react_look_right_enter_mortar",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon@lemat@shotgun"] = {
+   "pin_switch",
+   "recoil_oh",
+   "w_cock_end",
+   "w_cock_start",
+   "w_pin_switch",
+   "w_recoil",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat@shotgun"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+   "recoil_oh",
+   "w_cock_end",
+   "w_cock_start",
+   "w_cock_start_quick",
+   "w_pin_switch",
+   "w_pin_switch_cocked",
+   "w_recoil",
+   "w_recoil_quick",
+  },
+
+  ["mech_weapons_longarms@base@weapon_f@elephant"] = {
+   "cock_end",
+   "cock_start",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@medicine@harriet@react_look@enter@med"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_medicine",
+   "react_look_backleft_enter_mortar",
+   "react_look_backright_enter",
+   "react_look_backright_enter_medicine",
+   "react_look_backright_enter_mortar",
+   "react_look_front_enter",
+   "react_look_front_enter_medicine",
+   "react_look_front_enter_mortar",
+   "react_look_left_enter",
+   "react_look_left_enter_medicine",
+   "react_look_left_enter_mortar",
+   "react_look_right_enter",
+   "react_look_right_enter_medicine",
+   "react_look_right_enter_mortar",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@mortar@harriet@react_look@exit@relieved"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_mortar",
+   "react_look_backright_exit",
+   "react_look_backright_exit_mortar",
+   "react_look_front_exit",
+   "react_look_front_exit_mortar",
+   "react_look_left_exit",
+   "react_look_left_exit_mortar",
+   "react_look_right_exit",
+   "react_look_right_exit_mortar",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@react_look@loop@generic"] = {
+   "react_look_backleft_loop",
+   "react_look_backleft_loop_book",
+   "react_look_backright_loop",
+   "react_look_backright_loop_book",
+   "react_look_front_loop",
+   "react_look_front_loop_book",
+   "react_look_left_loop",
+   "react_look_left_loop_book",
+   "react_look_right_loop",
+   "react_look_right_loop_book",
+  },
+
+  ["mech_weapons_dual@base@weapon@lemat_str@left"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@react_look@exit@generic"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_book",
+   "react_look_backright_exit",
+   "react_look_backright_exit_book",
+   "react_look_front_exit",
+   "react_look_front_exit_book",
+   "react_look_left_exit",
+   "react_look_left_exit_book",
+   "react_look_right_exit",
+   "react_look_right_exit_book",
+  },
+
+  ["mech_weapons_longarms@hip@base@weapon@evans"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+   "recoil_oh",
+   "w_cock_end",
+   "w_cock_start",
+   "w_recoil",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@react_look@exit@dismissive"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_mortar",
+   "react_look_backleft_exit_pouch",
+   "react_look_backright_exit",
+   "react_look_backright_exit_mortar",
+   "react_look_backright_exit_pouch",
+   "react_look_front_exit",
+   "react_look_front_exit_mortar",
+   "react_look_front_exit_pouch",
+   "react_look_left_exit",
+   "react_look_left_exit_mortar",
+   "react_look_left_exit_pouch",
+   "react_look_right_exit",
+   "react_look_right_exit_mortar",
+   "react_look_right_exit_pouch",
+  },
+
+  ["mech_weapons_special@moonshine_small@crouch@base@weapon"] = {
+   "fire",
+   "fire_intro",
+   "fire_outro",
+   "fire_shake",
+  },
+
+  ["mech_weapons_special@moonshine_small@base@sweep_f"] = {
+   "aim_med_0",
+  },
+
+  ["mech_weapons_special@moonshine_small@crouch@base@weapon_f"] = {
+   "fire",
+   "fire_intro",
+   "fire_outro",
+  },
+
+  ["veh_cart_large@cart05@front@fl@enter@from@transition@normal@get_in@male"] = {
+   "get_on_0_long",
+   "get_on_0_short",
+   "get_on_45_long",
+   "get_on_45_short",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@react_look@enter@high"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_book",
+   "react_look_backright_enter",
+   "react_look_backright_enter_book",
+   "react_look_front_enter",
+   "react_look_front_enter_book",
+   "react_look_left_enter",
+   "react_look_left_enter_book",
+   "react_look_right_enter",
+   "react_look_right_enter_book",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_base_f"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_weapons_dual@lantern@crouch_carry@base@trans@ready_to_sweep_f@high"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_weapons_longarms@base@weapon@evans"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+   "recoil_oh",
+   "w_cock_end",
+   "w_cock_start",
+   "w_recoil",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@footscratch02"] = {
+   "idle",
+  },
+
+  ["mech_weapons_dual@base@weapon_f@navy_str@right"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@fire_to_base@w"] = {
+   "aim_transition_0",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@react_look@enter@med"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_mortar",
+   "react_look_backleft_enter_pouch",
+   "react_look_backright_enter",
+   "react_look_backright_enter_mortar",
+   "react_look_backright_enter_pouch",
+   "react_look_front_enter",
+   "react_look_front_enter_mortar",
+   "react_look_front_enter_pouch",
+   "react_look_left_enter",
+   "react_look_left_enter_mortar",
+   "react_look_left_enter_pouch",
+   "react_look_right_enter",
+   "react_look_right_enter_mortar",
+   "react_look_right_enter_pouch",
+  },
+
+  ["mech_weapons_dual@base@weapon_f@lemat_str@right"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["mech_weapons_special@moonshine_small@crouch@base@sweep"] = {
+   "aim_med_0",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@base_to_fire_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_lefthand"] = {
+   "cock_end",
+   "cock_start",
+   "cock_start_quick",
+   "recoil",
+   "recoil_quick",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_lefthand@shotgun"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+   "recoil_oh",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_base_f"] = {
+   "aim_transition_0",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakemedium02"] = {
+   "idle",
+  },
+
+  ["mech_weapons_longarms@base@weapon@elephant"] = {
+   "cock_end",
+   "cock_start",
+   "recoil_oh",
+   "step_back",
+   "w_cock_end",
+   "w_cock_end_left_rightforward",
+   "w_cock_end_right_leftback",
+   "w_cock_end_right_leftforward",
+   "w_cock_start",
+   "w_cock_start_left_rightback",
+   "w_cock_start_left_rightforward",
+   "w_cock_start_right_leftback",
+   "w_cock_start_right_leftforward",
+   "w_recoil",
+   "w_recoil_back_trigger",
+   "w_recoil_left_rightforward",
+   "w_recoil_right_leftback",
+   "w_recoil_right_leftforward",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@react_look@exit@relieved"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_mortar",
+   "react_look_backleft_exit_pouch",
+   "react_look_backright_exit",
+   "react_look_backright_exit_mortar",
+   "react_look_backright_exit_pouch",
+   "react_look_front_exit",
+   "react_look_front_exit_mortar",
+   "react_look_front_exit_pouch",
+   "react_look_left_exit",
+   "react_look_left_exit_mortar",
+   "react_look_left_exit_pouch",
+   "react_look_right_exit",
+   "react_look_right_exit_mortar",
+   "react_look_right_exit_pouch",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@medicine@harriet@react_look@enter@low"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_medicine",
+   "react_look_backleft_enter_mortar",
+   "react_look_backright_enter",
+   "react_look_backright_enter_medicine",
+   "react_look_backright_enter_mortar",
+   "react_look_front_enter",
+   "react_look_front_enter_medicine",
+   "react_look_front_enter_mortar",
+   "react_look_left_enter",
+   "react_look_left_enter_medicine",
+   "react_look_left_enter_mortar",
+   "react_look_right_enter",
+   "react_look_right_enter_medicine",
+   "react_look_right_enter_mortar",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@react_look@enter@low"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_book",
+   "react_look_backright_enter",
+   "react_look_backright_enter_book",
+   "react_look_front_enter",
+   "react_look_front_enter_book",
+   "react_look_left_enter",
+   "react_look_left_enter_book",
+   "react_look_right_enter",
+   "react_look_right_enter_book",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@lemat_lefthand"] = {
+   "cock_end",
+   "cock_start",
+   "cock_start_quick",
+   "recoil",
+   "recoil_quick",
+  },
+
+  ["mech_weapons_longarms@crouch_hip@base@weapon@elephant"] = {
+   "step_back",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakelarge01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_cart_large@cart05@front@fl@exit@to@land@jack@from@transition@get_out@dead@male"] = {
+   "bejacked_abort",
+   "bejacked_loop",
+   "bejacked_success",
+   "jack_intro_long_high",
+   "jack_intro_long_low",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@footscratch02@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_dual@base@weapon_f@lemat_str@left"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@lemat_lefthand@revolver"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_carry"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_base"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon@lemat"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon_f@lemat@shotgun"] = {
+   "pin_switch",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_iron_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_longarms@hip@base@weapon_f@elephant"] = {
+   "cock_end",
+   "cock_start",
+  },
+
+  ["mech_weapons_dual@base@weapon@navy_str@left"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_str_gesture@left"] = {
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+  },
+
+  ["mech_weapons_longarms@base@weapon_f@evans"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+  },
+
+  ["mech_weapons_dual@lantern@crouch@base@sweep_iron_sight_f"] = {
+   "aim_med_0",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_carry_f"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_cover@reloads@shortarms@base@high@right@righthand@no_lean_navy"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@crouch_fire_to_crouch_base_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_dual@lantern@crouch_carry@base@sweep"] = {
+   "aim_med_0",
+   "aim_med_l90",
+   "aim_med_r90",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakemedium01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@moonshine_small@base@weapon"] = {
+   "fire",
+   "fire_intro",
+   "fire_outro",
+   "fire_shake",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@react_look@active_look"] = {
+   "active_look_front",
+   "active_look_front_book",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat"] = {
+   "cock_end",
+   "cock_start",
+   "cock_start_quick",
+   "recoil",
+   "recoil_quick",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@crouch_fire_to_crouch_base@w"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_special@moonshine_small@crouch@base@sweep_f"] = {
+   "aim_med_0",
+  },
+
+  ["mech_weapons_longarms@hip@base@weapon_f@evans"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@medicine@harriet@react_look@exit@relieved"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_medicine",
+   "react_look_backleft_exit_mortar",
+   "react_look_backright_exit",
+   "react_look_backright_exit_medicine",
+   "react_look_backright_exit_mortar",
+   "react_look_front_exit",
+   "react_look_front_exit_medicine",
+   "react_look_front_exit_mortar",
+   "react_look_left_exit",
+   "react_look_left_exit_medicine",
+   "react_look_left_exit_mortar",
+   "react_look_right_exit",
+   "react_look_right_exit_medicine",
+   "react_look_right_exit_mortar",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@medicine@harriet@react_look@loop@generic"] = {
+   "react_look_backleft_loop",
+   "react_look_backleft_loop_medicine",
+   "react_look_backleft_loop_mortar",
+   "react_look_backright_loop",
+   "react_look_backright_loop_medicine",
+   "react_look_backright_loop_mortar",
+   "react_look_front_loop",
+   "react_look_front_loop_medicine",
+   "react_look_front_loop_mortar",
+   "react_look_left_loop",
+   "react_look_left_loop_medicine",
+   "react_look_left_loop_mortar",
+   "react_look_right_loop",
+   "react_look_right_loop_medicine",
+   "react_look_right_loop_mortar",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@stand_enter_withprop"] = {
+   "enter_front_lf",
+   "enter_front_lf_mortar",
+   "enter_front_lf_pouch",
+   "enter_front_rf",
+   "enter_front_rf_mortar",
+   "enter_front_rf_pouch",
+   "enter_left_lf",
+   "enter_left_lf_mortar",
+   "enter_left_lf_pouch",
+   "enter_left_rf",
+   "enter_left_rf_mortar",
+   "enter_left_rf_pouch",
+   "enter_right_lf",
+   "enter_right_lf_mortar",
+   "enter_right_lf_pouch",
+   "enter_right_rf",
+   "enter_right_rf_mortar",
+   "enter_right_rf_pouch",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_str_gesture@right"] = {
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+  },
+
+  ["mech_weapons_longarms@base@weapon_f@elephant_lefthand"] = {
+   "cock_end",
+   "cock_start",
+  },
+
+  ["mech_weapons_dual@lantern@crouch_carry@base@trans@sweep_to_ready@high"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_weapons_longarms@base@weapon_f@evans_lefthand"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+  },
+
+  ["mech_weapons_dual@base@weapon@lemat_str@left@revolver"] = {
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop_revolver",
+   "w_oh_reload_loop_shotgun",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_str@shotgun"] = {
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop_revolver",
+   "w_oh_reload_loop_shotgun",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@react_look@enter@med"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_book",
+   "react_look_backright_enter",
+   "react_look_backright_enter_book",
+   "react_look_front_enter",
+   "react_look_front_enter_book",
+   "react_look_left_enter",
+   "react_look_left_enter_book",
+   "react_look_right_enter",
+   "react_look_right_enter_book",
+  },
+
+  ["mech_weapons_dual@lantern@crouch_carry@base@trans@sweep_to_ready_f@high"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@lemat_str"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@medicine@harriet@react_look@exit@dismissive"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_medicine",
+   "react_look_backleft_exit_mortar",
+   "react_look_backright_exit",
+   "react_look_backright_exit_medicine",
+   "react_look_backright_exit_mortar",
+   "react_look_front_exit",
+   "react_look_front_exit_medicine",
+   "react_look_front_exit_mortar",
+   "react_look_left_exit",
+   "react_look_left_exit_medicine",
+   "react_look_left_exit_mortar",
+   "react_look_right_exit",
+   "react_look_right_exit_medicine",
+   "react_look_right_exit_mortar",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakelarge01@slope@up"] = {
+   "idle",
+  },
+
+  ["amb_rest_sit@prop_human_seat_chair@sketching@harriet@stand_enter_withprop"] = {
+   "enter_front_lf",
+   "enter_front_lf_book",
+   "enter_front_rf",
+   "enter_front_rf_book",
+   "enter_left_lf",
+   "enter_left_lf_book",
+   "enter_left_rf",
+   "enter_left_rf_book",
+   "enter_right_lf",
+   "enter_right_lf_book",
+   "enter_right_rf",
+   "enter_right_rf_book",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat@revolver"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+   "recoil_oh",
+   "w_cock_end",
+   "w_cock_start",
+   "w_cock_start_quick",
+   "w_pin_switch",
+   "w_pin_switch_cocked",
+   "w_recoil",
+   "w_recoil_quick",
+  },
+
+  ["mech_weapons_longarms@base@weapon@evans_lefthand"] = {
+   "cock_end",
+   "cock_start",
+   "recoil",
+   "recoil_oh",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@footscratch02@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@lemat@shotgun"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+  },
+
+  ["mech_weapons_longarms@crouch@base@weapon@elephant"] = {
+   "step_back",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@lemat@revolver"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+  },
+
+  ["mech_weapons_dual@lantern@crouch_carry@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l90",
+   "aim_med_r90",
+  },
+
+  ["veh_cart_large@cart05@front@fr@enter@from@transition@jack@dead@male"] = {
+   "jack_abort",
+   "jack_intro_long_high",
+   "jack_intro_long_low",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+   "jack_loop",
+   "jack_success",
+   "jack_success_no_get_in",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@react_look@loop@generic"] = {
+   "react_look_backleft_loop",
+   "react_look_backleft_loop_mortar",
+   "react_look_backleft_loop_pouch",
+   "react_look_backright_loop",
+   "react_look_backright_loop_mortar",
+   "react_look_backright_loop_pouch",
+   "react_look_front_loop",
+   "react_look_front_loop_mortar",
+   "react_look_front_loop_pouch",
+   "react_look_left_loop",
+   "react_look_left_loop_mortar",
+   "react_look_left_loop_pouch",
+   "react_look_right_loop",
+   "react_look_right_loop_mortar",
+   "react_look_right_loop_pouch",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@react_look@exit@generic"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_mortar",
+   "react_look_backleft_exit_pouch",
+   "react_look_backright_exit",
+   "react_look_backright_exit_mortar",
+   "react_look_backright_exit_pouch",
+   "react_look_front_exit",
+   "react_look_front_exit_mortar",
+   "react_look_front_exit_pouch",
+   "react_look_left_exit",
+   "react_look_left_exit_mortar",
+   "react_look_left_exit_pouch",
+   "react_look_right_exit",
+   "react_look_right_exit_mortar",
+   "react_look_right_exit_pouch",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@medicine@harriet@react_look@enter@high"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_medicine",
+   "react_look_backleft_enter_mortar",
+   "react_look_backright_enter",
+   "react_look_backright_enter_medicine",
+   "react_look_backright_enter_mortar",
+   "react_look_front_enter",
+   "react_look_front_enter_medicine",
+   "react_look_front_enter_mortar",
+   "react_look_left_enter",
+   "react_look_left_enter_medicine",
+   "react_look_left_enter_mortar",
+   "react_look_right_enter",
+   "react_look_right_enter_medicine",
+   "react_look_right_enter_mortar",
+  },
+
+  ["mech_weapons_special@moonshine_small@base@weapon@w"] = {
+   "fire",
+   "fire_intro",
+   "fire_outro",
+   "fire_shake",
+  },
+
+  ["mech_weapons_special@moonshine_small@base@weapon_f"] = {
+   "fire",
+   "fire_intro",
+   "fire_outro",
+   "fire_shake",
+  },
+
+  ["mech_weapons_dual@base@weapon@lemat_str@right@shotgun"] = {
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop_revolver",
+   "w_oh_reload_loop_shotgun",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@base_to_fire"] = {
+   "aim_transition_0",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@mortar@harriet@react_look@exit@generic"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_mortar",
+   "react_look_backright_exit",
+   "react_look_backright_exit_mortar",
+   "react_look_front_exit",
+   "react_look_front_exit_mortar",
+   "react_look_left_exit",
+   "react_look_left_exit_mortar",
+   "react_look_right_exit",
+   "react_look_right_exit_mortar",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@base_to_fire@w"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@crouch_base_to_crouch_fire"] = {
+   "aim_transition_0",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@react_look@enter@low"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_mortar",
+   "react_look_backleft_enter_pouch",
+   "react_look_backright_enter",
+   "react_look_backright_enter_mortar",
+   "react_look_backright_enter_pouch",
+   "react_look_front_enter",
+   "react_look_front_enter_mortar",
+   "react_look_front_enter_pouch",
+   "react_look_left_enter",
+   "react_look_left_enter_mortar",
+   "react_look_left_enter_pouch",
+   "react_look_right_enter",
+   "react_look_right_enter_mortar",
+   "react_look_right_enter_pouch",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@fire_to_base_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_str"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop_revolver",
+   "oh_reload_loop_shotgun",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@slope_max@up"] = {
+   "idle",
+   "idle_intro",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakemedium02@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_iron"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_dual@lantern@crouch@base@sweep_iron_sight"] = {
+   "aim_med_0",
+  },
+
+  ["veh_cart_large@cart05@front@fl@enter@from@transition@jack@alive@male"] = {
+   "jack_abort",
+   "jack_intro_long_high",
+   "jack_intro_long_high_45",
+   "jack_intro_long_low",
+   "jack_intro_long_low_45",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+   "jack_loop",
+   "jack_success",
+   "jack_success_no_get_in",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_iron"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@crouch_base_to_crouch_fire@w"] = {
+   "aim_transition_0",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@footscratch01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_cart_large@cart05@front@fr@enter@from@transition@jack@alive@male"] = {
+   "jack_abort",
+   "jack_intro_long_high",
+   "jack_intro_long_high_45",
+   "jack_intro_long_low",
+   "jack_intro_long_low_45",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+   "jack_loop",
+   "jack_success",
+   "jack_success_no_get_in",
+  },
+
+  ["veh_cart_large@cart05@front@fr@enter@from@transition@normal@get_in@male"] = {
+   "get_on_0_long",
+   "get_on_0_short",
+   "get_on_45_long",
+   "get_on_45_short",
+  },
+
+  ["veh_cart_large@cart05@front@fr@exit@to@land@jack@from@transition@get_out@alive@male"] = {
+   "bejacked_abort",
+   "bejacked_loop",
+   "bejacked_success",
+   "jack_intro_long_high",
+   "jack_intro_long_high_45",
+   "jack_intro_long_low",
+   "jack_intro_long_low_45",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@mortar@harriet@react_look@exit@dismissive"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_mortar",
+   "react_look_backright_exit",
+   "react_look_backright_exit_mortar",
+   "react_look_front_exit",
+   "react_look_front_exit_mortar",
+   "react_look_left_exit",
+   "react_look_left_exit_mortar",
+   "react_look_right_exit",
+   "react_look_right_exit_mortar",
+  },
+
+  ["veh_cart_large@cart05@front@fr@exit@to@land@jack@from@transition@get_out@dead@male"] = {
+   "bejacked_abort",
+   "bejacked_loop",
+   "bejacked_success",
+   "jack_intro_long_high",
+   "jack_intro_long_low",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+  },
+
+  ["mech_weapons_longarms@base@weapon_f@evans_str"] = {
+   "oh_reload_end",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "w_oh_reload_end",
+   "w_oh_reload_loop",
+   "w_oh_reload_start",
+  },
+
+  ["veh_cart_large@cart05@front@fl@enter@from@transition@jack@dead@male"] = {
+   "jack_abort",
+   "jack_intro_long_high",
+   "jack_intro_long_low",
+   "jack_intro_short_high",
+   "jack_intro_short_low",
+   "jack_loop",
+   "jack_success",
+   "jack_success_no_get_in",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@base"] = {
+   "base",
+   "base_active_look",
+   "base_mortar",
+   "base_pouch",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@lemat"] = {
+   "cock_end",
+   "cock_start",
+   "cock_start_quick",
+   "recoil",
+   "recoil_quick",
+  },
+
+  ["mech_weapons_longarms@crouch@base@weapon@elephant_lefthand"] = {
+   "step_back",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@stepback01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon_f@lemat@revolver"] = {
+   "pin_switch",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@footscratch01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakemedium01@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@fire_to_base"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_carry_to_crouch_base"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_base_to_crouch_carry"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_cover@reloads@shortarms@base@high@left@righthand@no_lean_navy"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["mech_weapons_dual@lantern@crouch_carry@base@trans@ready_to_sweep@high"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_str@revolver"] = {
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop_revolver",
+   "w_oh_reload_loop_shotgun",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakelarge01"] = {
+   "idle",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@pouch@harriet@react_look@enter@high"] = {
+   "react_look_backleft_enter",
+   "react_look_backleft_enter_mortar",
+   "react_look_backleft_enter_pouch",
+   "react_look_backright_enter",
+   "react_look_backright_enter_mortar",
+   "react_look_backright_enter_pouch",
+   "react_look_front_enter",
+   "react_look_front_enter_mortar",
+   "react_look_front_enter_pouch",
+   "react_look_left_enter",
+   "react_look_left_enter_mortar",
+   "react_look_left_enter_pouch",
+   "react_look_right_enter",
+   "react_look_right_enter_mortar",
+   "react_look_right_enter_pouch",
+  },
+
+  ["mech_weapons_dual@base@weapon@lemat_str@left@shotgun"] = {
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop_revolver",
+   "w_oh_reload_loop_shotgun",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["mech_cover@reloads@arthur@dual_shortarms@base@low@fwd@no_lean_navy"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["amb_work@prop_human_seat_chair@mortar_pestle@medicine@harriet@react_look@exit@generic"] = {
+   "react_look_backleft_exit",
+   "react_look_backleft_exit_medicine",
+   "react_look_backleft_exit_mortar",
+   "react_look_backright_exit",
+   "react_look_backright_exit_medicine",
+   "react_look_backright_exit_mortar",
+   "react_look_front_exit",
+   "react_look_front_exit_medicine",
+   "react_look_front_exit_mortar",
+   "react_look_left_exit",
+   "react_look_left_exit_medicine",
+   "react_look_left_exit_mortar",
+   "react_look_right_exit",
+   "react_look_right_exit_medicine",
+   "react_look_right_exit_mortar",
+  },
+
+  ["mech_weapons_dual@base@weapon@navy_str@right"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+   "w_oh_reload_end",
+   "w_oh_reload_end_spin",
+   "w_oh_reload_loop",
+   "w_oh_reload_start",
+   "w_oh_reload_start_spin",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@lemat_lefthand@revolver"] = {
+   "pin_switch",
+   "pin_switch_cocked",
+   "recoil_oh",
+  },
+
+  ["mech_cover@reloads@arthur@dual_shortarms@base@low@left@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["mech_weapons_longarms@base@weapon@elephant_str"] = {
+   "oh_reload_end",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_leftforward",
+   "w_oh_reload_end",
+   "w_oh_reload_end_cock_both",
+   "w_oh_reload_end_cock_left_rightback",
+   "w_oh_reload_end_cock_right_leftback",
+   "w_oh_reload_end_cock_right_leftforward",
+   "w_oh_reload_loop",
+   "w_oh_reload_start",
+   "w_oh_reload_start_leftforward",
+   "w_oh_reload_start_rightforward",
+  },
+
+  ["mech_weapons_dual@lantern@trans@crouch_iron_to_crouch_carry_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_cover@reloads@arthur@dual_shortarms@base@low@fwd@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakemedium01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_longarms@base@weapon@evans_str"] = {
+   "oh_reload_end",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "w_oh_reload_end",
+   "w_oh_reload_loop",
+   "w_oh_reload_start",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@footscratch01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@moonshine_small@trans@crouch_fire_to_crouch_base"] = {
+   "aim_transition_0",
+  },
+
+  ["veh_horseback@seat_rear@male@normal@idle@variation@shakemedium02@slope@up"] = {
+   "idle",
+  },
+
 
 }
