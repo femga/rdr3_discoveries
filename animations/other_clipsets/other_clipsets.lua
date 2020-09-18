@@ -564,6 +564,21 @@ local other_clipsets = {
 
 	["mech_skin@panther@mercy_kill"] = {
 		"kill",
+		"kill_face",
+		"kill_panther",
+		"kill_panther_face",
+		"to_pickup",
+		"to_pickup_face",
+		"to_pickup_panther",
+		"to_pickup_panther_face",
+		"to_skin",
+		"to_skin_face",
+		"to_skin_panther",
+		"to_skin_panther_face",
+		"to_stand",
+		"to_stand_face",
+		"to_stand_panther",
+		"to_stand_panther_face",
 	},
 
 	["ai_react@breakouts@gen_male@ground@laying@on_rside@drunk@slow"] = {
