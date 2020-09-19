@@ -317,12 +317,12 @@ local interiors_list = {
 	------------------------------------------  Interiors from game version 1207.80 till 1311.12 --------------------------
 	-----------------------------------------------------------------------------------------------------------------------
 	
-	[77313] = {x=1789.1730957031,y=-817.29760742188,z=191.59609985352,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"}
-	[77569] = {x=-1090.7846679688,y=711.73596191406,z=83.230895996094,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"}
-	[77825] = {x=-1864.5423583984,y=-1727.5068359375,z=88.252014160156,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"}
-	[78081] = {x=-614.0,y=528.0,z=93.990127563477,typeHashId=107103913,typeHashName="mp006_luc_house_int",rpf="mp006_luc_house_int.rpf"}
-	[78337] = {x=-2774.65625,y=-3046.2746582031,z=-9.70361328125,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"}
-	[78593] = {x=1629.7342529297,y=828.16253662109,z=123.93880462646,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"}
-	[79105] = {x=-1864.5424804688,y=-1727.5080566406,z=88.252014160156,typeHashId=-1406656258,typeHashName="mp007_moonshine01_int",rpf=""}
-	[78849] = {x=-1815.1479492188,y=-370.2919921875,z=314.0,typeHashId=21835795,typeHashName="mp007_str_whore_cs_int",rpf=""}
+	[77313] = {x=1789.1730957031,y=-817.29760742188,z=191.59609985352,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},
+	[77569] = {x=-1090.7846679688,y=711.73596191406,z=83.230895996094,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},
+	[77825] = {x=-1864.5423583984,y=-1727.5068359375,z=88.252014160156,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},
+	[78081] = {x=-614.0,y=528.0,z=93.990127563477,typeHashId=107103913,typeHashName="mp006_luc_house_int",rpf="mp006_luc_house_int.rpf"},
+	[78337] = {x=-2774.65625,y=-3046.2746582031,z=-9.70361328125,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},
+	[78593] = {x=1629.7342529297,y=828.16253662109,z=123.93880462646,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},
+	[79105] = {x=-1864.5424804688,y=-1727.5080566406,z=88.252014160156,typeHashId=-1406656258,typeHashName="mp007_moonshine01_int",rpf=""},
+	[78849] = {x=-1815.1479492188,y=-370.2919921875,z=314.0,typeHashId=21835795,typeHashName="mp007_str_whore_cs_int",rpf=""},
 }
