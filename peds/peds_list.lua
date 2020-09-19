@@ -1824,6 +1824,42 @@ local peds_list = {
 	{0x3DA8002A,"mp_u_m_m_animalpoacher_07",1,},
 	{0x7001E4DD,"mp_u_m_m_animalpoacher_08",1,},
 	{0x624BC971,"mp_u_m_m_animalpoacher_09",1,},
+	{0xB25E4617,"mp_g_f_m_armyoffear_01",20,},
+	{0x19382FFC,"mp_g_m_m_armyoffear_01",30,},
+
+
+
+	-- PEDS WITH UNKNOWN HASHNAMES:
+
+	{0xF9A5F380,"0xF9A5F380",1,},				-- unknown hashname !!!
+	{0x7B379BDB,"0x7B379BDB",1,},				-- unknown hashname !!!
+	{0x9AB66E43,"0x9AB66E43",1,},				-- unknown hashname !!!
+	{0x7AA6DA17,"0x7AA6DA17",1,},				-- unknown hashname !!!
+	{0x6C51917A,"0x6C51917A",1,},				-- unknown hashname !!!
+	{0x71E6D0A6,"0x71E6D0A6",1,},				-- unknown hashname !!!
+	{0x58E9D4F4,"0x58E9D4F4",1,},				-- unknown hashname !!!
+	{0x846A2728,"0x846A2728",1,},				-- unknown hashname !!!
+	{0x48F23D48,"0x48F23D48",6,},				-- unknown hashname !!!
+	{0x482F6E79,"0x482F6E79",4,},				-- unknown hashname !!!
+	{0x3E92A95D,"0x3E92A95D",1,},				-- unknown hashname !!!
+	{0x02A89468,"0x02A89468",1,},				-- unknown hashname !!!
+	{0xDF5BF78D,"0xDF5BF78D",1,},				-- unknown hashname !!!
+	{0xDB15D94E,"0xDB15D94E",1,},				-- unknown hashname !!!
+	{0x2CDF85F7,"0x2CDF85F7",1,},				-- unknown hashname !!!
+	{0xEE7487F0,"0xEE7487F0",1,},				-- unknown hashname !!!
+	{0xCF9DD811,"0xCF9DD811",1,},				-- unknown hashname !!!
+	{0x2BE8BC9C,"0x2BE8BC9C",1,},				-- unknown hashname !!!
+	{0xA48BB5F3,"0xA48BB5F3",1,},				-- unknown hashname !!!
+	{0xD2D2D2D4,"0xD2D2D2D4",2,},				-- unknown hashname !!!
+	{0x0B979763,"0x0B979763",1,},				-- unknown hashname !!!
+	{0x0D3CBD9B,"0x0D3CBD9B",1,},				-- unknown hashname !!!
+	{0x29465719,"0x29465719",2,},				-- unknown hashname !!!
+	{0xBAFD3C1A,"0xBAFD3C1A",20,},				-- unknown hashname !!!
+	{0xEFDC82DB,"0xEFDC82DB",1,},				-- unknown hashname !!!
+	{0xB9629EFC,"0xB9629EFC",1,},				-- unknown hashname !!!
+	{0x2EA769DD,"0x2EA769DD",1,},				-- unknown hashname !!!
+	{0x9A755448,"0x9A755448",1,},				-- unknown hashname !!!
+	{0x89F8CCC8,"0x89F8CCC8",1,},				-- unknown hashname !!!
 
 											
 }
