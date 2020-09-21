@@ -1826,40 +1826,34 @@ local peds_list = {
 	{0x624BC971,"mp_u_m_m_animalpoacher_09",1,},
 	{0xB25E4617,"mp_g_f_m_armyoffear_01",20,},
 	{0x19382FFC,"mp_g_m_m_armyoffear_01",30,},
-
-
-
-	-- PEDS WITH UNKNOWN HASHNAMES:
-
-	{0xF9A5F380,"0xF9A5F380",1,},				-- unknown hashname !!!
-	{0x7B379BDB,"0x7B379BDB",1,},				-- unknown hashname !!!
-	{0x9AB66E43,"0x9AB66E43",1,},				-- unknown hashname !!!
-	{0x7AA6DA17,"0x7AA6DA17",1,},				-- unknown hashname !!!
-	{0x6C51917A,"0x6C51917A",1,},				-- unknown hashname !!!
-	{0x71E6D0A6,"0x71E6D0A6",1,},				-- unknown hashname !!!
-	{0x58E9D4F4,"0x58E9D4F4",1,},				-- unknown hashname !!!
-	{0x846A2728,"0x846A2728",1,},				-- unknown hashname !!!
-	{0x48F23D48,"0x48F23D48",6,},				-- unknown hashname !!!
-	{0x482F6E79,"0x482F6E79",4,},				-- unknown hashname !!!
-	{0x3E92A95D,"0x3E92A95D",1,},				-- unknown hashname !!!
-	{0x02A89468,"0x02A89468",1,},				-- unknown hashname !!!
-	{0xDF5BF78D,"0xDF5BF78D",1,},				-- unknown hashname !!!
-	{0xDB15D94E,"0xDB15D94E",1,},				-- unknown hashname !!!
-	{0x2CDF85F7,"0x2CDF85F7",1,},				-- unknown hashname !!!
-	{0xEE7487F0,"0xEE7487F0",1,},				-- unknown hashname !!!
-	{0xCF9DD811,"0xCF9DD811",1,},				-- unknown hashname !!!
-	{0x2BE8BC9C,"0x2BE8BC9C",1,},				-- unknown hashname !!!
-	{0xA48BB5F3,"0xA48BB5F3",1,},				-- unknown hashname !!!
-	{0xD2D2D2D4,"0xD2D2D2D4",2,},				-- unknown hashname !!!
-	{0x0B979763,"0x0B979763",1,},				-- unknown hashname !!!
-	{0x0D3CBD9B,"0x0D3CBD9B",1,},				-- unknown hashname !!!
-	{0x29465719,"0x29465719",2,},				-- unknown hashname !!!
-	{0xBAFD3C1A,"0xBAFD3C1A",20,},				-- unknown hashname !!!
-	{0xEFDC82DB,"0xEFDC82DB",1,},				-- unknown hashname !!!
-	{0xB9629EFC,"0xB9629EFC",1,},				-- unknown hashname !!!
-	{0x2EA769DD,"0x2EA769DD",1,},				-- unknown hashname !!!
-	{0x9A755448,"0x9A755448",1,},				-- unknown hashname !!!
-	{0x89F8CCC8,"0x89F8CCC8",1,},				-- unknown hashname !!!
-
-											
+	{0x9A755448,"cs_mp_bessie_adair",1,},
+	{0x29465719,"mp_a_c_chicken_01",2,},
+	{0x2EA769DD,"mp_a_c_deer_01",1,},
+	{0xBAFD3C1A,"mp_a_m_m_saloonband_males_01",20,},
+	{0x482F6E79,"mp_re_slumpedhunter_females_01",4,},
+	{0x48F23D48,"mp_re_slumpedhunter_males_01",6,},
+	{0xD2D2D2D4,"mp_re_suspendedhunter_males_01",2,},
+	{0xEE7487F0,"mp_u_f_m_nat_traveler_01",1,},
+	{0x71E6D0A6,"mp_u_f_m_nat_worker_01",1,},
+	{0xA48BB5F3,"mp_u_f_m_nat_worker_02",1,},
+	{0x846A2728,"mp_u_f_m_saloonpianist_01",1,},
+	{0xCF9DD811,"mp_u_m_m_dyingpoacher_01",1,},
+	{0xDF5BF78D,"mp_u_m_m_dyingpoacher_02",1,},
+	{0x6C51917A,"mp_u_m_m_dyingpoacher_03",1,},
+	{0x89F8CCC8,"mp_u_m_m_dyingpoacher_04",1,},
+	{0x9AB66E43,"mp_u_m_m_dyingpoacher_05",1,},
+	{0x0B979763,"mp_u_m_m_lawcamp_lawman_01",1,},
+	{0xF9A5F380,"mp_u_m_m_lawcamp_lawman_02",1,},
+	{0x7B379BDB,"mp_u_m_m_lawcamp_leadofficer_01",1,},
+	{0x58E9D4F4,"mp_u_m_m_nat_farmer_01",1,},
+	{0xDB15D94E,"mp_u_m_m_nat_farmer_02",1,},
+	{0x0D3CBD9B,"mp_u_m_m_nat_farmer_03",1,},
+	{0xEFDC82DB,"mp_u_m_m_nat_farmer_04",1,},
+	{0x2CDF85F7,"mp_u_m_m_nat_photographer_01",1,},
+	{0x3E92A95D,"mp_u_m_m_nat_photographer_02",1,},
+	{0x2BE8BC9C,"mp_u_m_m_nat_rancher_01",1,},
+	{0x7AA6DA17,"mp_u_m_m_nat_rancher_02",1,},
+	{0x02A89468,"mp_u_m_m_nat_townfolk_01",1,},
+	{0xB9629EFC,"mp_u_m_m_strwelcomecenter_02",1,},
+										
 }
