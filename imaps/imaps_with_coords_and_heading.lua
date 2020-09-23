@@ -7610,6 +7610,48 @@ local all_imaps_list = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	-----------------------------------------------------------------------------------------------------------------------
 	------------------------------------------  IMAPS from game version 1207.80 till 1311.12 ------------------------------
 	-----------------------------------------------------------------------------------------------------------------------
@@ -7683,4 +7725,433 @@ local all_imaps_list = {
 	[0x38CA9A2F] = {hashname="",dec_hash=952801839,x=-272.50262451172,y=805.19458007812,z=120.15645599366,h=1.1486251354218},
 	[0x3925DB9F] = {hashname="",dec_hash=958782367,x=1635.2432861328,y=815.3472290039,z=143.98086547852,h=1.5123705863952},
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	-----------------------------------------------------------------------------------------------------------------------
+	-------------------------------------------------  IMAPS with wrong coords --------------------------------------------
+	-----------------------------------------------------------------------------------------------------------------------
+
+
+	-- [0x2398296B] = {hashname="a_12_placement",dec_hash=597174635,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDA7FAF8B] = {hashname="a_13_placement",dec_hash=-629166197,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xBE04C6D7] = {hashname="abcd_11_14_ha",dec_hash=-1106983209,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC66CBDBE] = {hashname="abcd_3_6_ha",dec_hash=-965952066,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xADB92DC7] = {hashname="abcd_92_95_ha",dec_hash=-1380373049,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x013ECDAF] = {hashname="abcd_96_99_ha",dec_hash=20893103,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x14EC916D] = {hashname="adl_02_",dec_hash=351048045,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA2FEE462] = {hashname="agu_01_vfx",dec_hash=-1560353694,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x51C8548C] = {hashname="amb_camps_bay_00",dec_hash=1372083340,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x54FA7253] = {hashname="amb_camps_blu_00",dec_hash=1425699411,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x85DEC674] = {hashname="amb_camps_cho_00",dec_hash=-2048997772,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x7B635B56] = {hashname="amb_camps_cml_00",dec_hash=2070109014,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCC8439C2] = {hashname="amb_camps_gap_00",dec_hash=-863749694,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x0AAA987B] = {hashname="amb_camps_grt_00",dec_hash=178952315,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5DE0AEFC] = {hashname="amb_camps_grz_00",dec_hash=1575005948,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD81CE68D] = {hashname="amb_camps_hen_00",dec_hash=-669194611,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x145FB376] = {hashname="amb_camps_hrt_00",dec_hash=341816182,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x152CD9C0] = {hashname="amb_camps_pun_00",dec_hash=355260864,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x952694E4] = {hashname="amb_camps_rio_00",dec_hash=-1792633628,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB9779DBE] = {hashname="amb_camps_scm_00",dec_hash=-1183343170,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE2675E2C] = {hashname="ann_01_vfx",dec_hash=-496542164,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDB28D8AA] = {hashname="ann_houseboat",dec_hash=-618080086,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1E2895CC] = {hashname="area01_supplements",dec_hash=505976268,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x440B547F] = {hashname="area02_supplements",dec_hash=1141593215,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCAFCCF91] = {hashname="area03_supplements",dec_hash=-889401455,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x699A6BC3] = {hashname="area04_supp",dec_hash=1771727811,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3DF3A01F] = {hashname="area04_supplements",dec_hash=1039376415,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAB636084] = {hashname="arm_01_vfx",dec_hash=-1419550588,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x98D3F346] = {hashname="a_roads_01_",dec_hash=-1730940090,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4EC8A055] = {hashname="b_11_placement",dec_hash=1321771093,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC3CFF505] = {hashname="b_12_placement_a",dec_hash=-1009781499,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2E4FCA0B] = {hashname="b_12_placement_b",dec_hash=776981003,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x60A0AEAC] = {hashname="b_12_placement_c",dec_hash=1621143212,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4AEA8340] = {hashname="b_12_placement_d",dec_hash=1256883008,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x9475B8EA] = {hashname="b_12_placement",dec_hash=-1804224278,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x0D02B534] = {hashname="b_13_placement",dec_hash=218281268,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF45F57B9] = {hashname="b_14_placement",dec_hash=-195078215,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD5AAD3E5] = {hashname="bla_01_vfx",dec_hash=-710224923,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE6344E0A] = {hashname="bra_vfx",dec_hash=-432779766,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xBDD02F44] = {hashname="c_11_placement",dec_hash=-1110429884,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x47738550] = {hashname="c_13_placement",dec_hash=1198753104,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x71E71710] = {hashname="carni_nbd_01",dec_hash=1910970128,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAC3DD8F3] = {hashname="cas_e_01",dec_hash=-1405232909,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x549C17AF] = {hashname="cen_e_01_",dec_hash=1419515823,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x61332C0A] = {hashname="cle_car_01_",dec_hash=1630743562,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xABEE36CC] = {hashname="dce_area01_supp",dec_hash=-1410451764,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x0B1448AB] = {hashname="dce_area02_supp",dec_hash=185878699,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB055D857] = {hashname="dce_area03_supp",dec_hash=-1336551337,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE9E0F214] = {hashname="dce_area04_supp",dec_hash=-371133932,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8597E89C] = {hashname="dis_gua_00",dec_hash=-2053642084,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEDEB13B3] = {hashname="dis_pun_00",dec_hash=-303361101,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x205B9C46] = {hashname="dis_tal_00",dec_hash=542874694,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8C3923CD] = {hashname="f_03_placement",dec_hash=-1942412339,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8EA11B10] = {hashname="fghi_11_14_ha",dec_hash=-1902044400,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEBEFA698] = {hashname="fghi_15_18_ha",dec_hash=-336615784,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x27356474] = {hashname="fghi_3_6_ha",dec_hash=657810548,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x56360365] = {hashname="fghi_7_10_ha",dec_hash=1446380389,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x91CEFB49] = {hashname="ftr_e_02",dec_hash=-1848706231,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x24C1212B] = {hashname="ftr_e_03",dec_hash=616636715,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5DECF19A] = {hashname="ftr_e_tepee",dec_hash=1575809434,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6118C75F] = {hashname="g_06_placement",dec_hash=1629013855,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE3CBE33D] = {hashname="g_07_placement",dec_hash=-473177283,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAA7203C3] = {hashname="g_08_placement",dec_hash=-1435368509,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x851C5627] = {hashname="g_10_placement",dec_hash=-2061740505,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1FFD192B] = {hashname="g_11_placement",dec_hash=536680747,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF8975413] = {hashname="g_12_placement",dec_hash=-124300269,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5A605B71] = {hashname="g_13_placement",dec_hash=1516264305,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x88F100B4] = {hashname="g_14_placement",dec_hash=-1997471564,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x147943E3] = {hashname="gap_rd_sgn",dec_hash=343491555,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD938D7E3] = {hashname="gre_pla_rd_sgn_",dec_hash=-650586141,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCAEA2624] = {hashname="guama_boat",dec_hash=-890624476,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x97F70515] = {hashname="gua_out_a_01_placement",dec_hash=-1745418987,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x173C348D] = {hashname="gua_out_a_02_placement",dec_hash=389821581,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x50F06643] = {hashname="gua_out_a_03_placement",dec_hash=1357932099,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x393E633F] = {hashname="gua_out_b_01_placement",dec_hash=960389951,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x152C54A1] = {hashname="gua_out_b_02_placement",dec_hash=355226785,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5676317C] = {hashname="gua_out_b_03_placement",dec_hash=1450586492,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4BEAECF7] = {hashname="gua_out_c_01_placement",dec_hash=1273687287,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5DC6368A] = {hashname="gua_out_c_02_placement",dec_hash=1573271178,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x785EDAA9] = {hashname="gua_out_c_03_placement",dec_hash=2019482281,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8D18515F] = {hashname="h_05_placement",dec_hash=-1927786145,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x375BCAF4] = {hashname="h_06_placement",dec_hash=928762612,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x73840F37] = {hashname="h_06_placement_vfx",dec_hash=1938034487,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x30641209] = {hashname="h_07_placement",dec_hash=811864585,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x219949E5] = {hashname="h_08_placement",dec_hash=563694053,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC70BCAA4] = {hashname="h_09_placement",dec_hash=-955528540,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB5F89C73] = {hashname="h_10_placement",dec_hash=-1241998221,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x7C866661] = {hashname="h_11_placement",dec_hash=2089182817,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x33CDB768] = {hashname="h_13_placement",dec_hash=869119848,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA86CACAC] = {hashname="h_14_placement",dec_hash=-1469272916,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4B6718C3] = {hashname="h_15_placement",dec_hash=1265047747,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEC9AEC45] = {hashname="h_16_placement",dec_hash=-325391291,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2103A3A7] = {hashname="hen_rd_sgn",dec_hash=553886631,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEBBF2BC9] = {hashname="hor_01_",dec_hash=-339792951,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD6642D70] = {hashname="i_05_placement",dec_hash=-698077840,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC268DED9] = {hashname="i_07_placement",dec_hash=-1033314599,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6FF8B483] = {hashname="i_07_placement_vfx",dec_hash=1878570115,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAB354458] = {hashname="i_08_placement",dec_hash=-1422572456,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC833C9DB] = {hashname="i_08_placement_vfx",dec_hash=-936130085,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x19C01F41] = {hashname="i_09_placement",dec_hash=432021313,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x74B4310C] = {hashname="i_10_placement",dec_hash=1957966092,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5E56C568] = {hashname="i_11_placement",dec_hash=1582744936,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE6B28A23] = {hashname="i_12_placement",dec_hash=-424506845,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x7D011B8A] = {hashname="i_13_placement",dec_hash=2097224586,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFF739BDA] = {hashname="i_14_placement",dec_hash=-9200678,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x96DBC69E] = {hashname="i_15_placement",dec_hash=-1763981666,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2716038B] = {hashname="i_16_placement",dec_hash=655754123,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x08077BFB] = {hashname="i_17_placement",dec_hash=134708219,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2B64B4E4] = {hashname="j_05_placement",dec_hash=728020196,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x02EF5E52] = {hashname="j_06_placement",dec_hash=49241682,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x75BDDA28] = {hashname="j_07_placement",dec_hash=1975376424,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6DAAD1A2] = {hashname="j_07_placement_vfx",dec_hash=1839911330,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5FD4CB3B] = {hashname="j_08_placement",dec_hash=1607781179,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCDC703CC] = {hashname="j_09_placement",dec_hash=-842595380,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC50A19B0] = {hashname="j_09_placement_vfx",dec_hash=-989193808,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC6899F4F] = {hashname="j_10_placement",dec_hash=-964059313,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDDEE6676] = {hashname="j_11_placement",dec_hash=-571578762,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x7AD23F83] = {hashname="j_12_placement",dec_hash=2060599171,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2802AF8E] = {hashname="j_13_placement",dec_hash=671264654,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x74F263D3] = {hashname="j_14_placement",dec_hash=1962042323,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC3B1D567] = {hashname="j_15_placement",dec_hash=-1011755673,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x9BF11FBB] = {hashname="j_16_placement",dec_hash=-1678696517,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEF543835] = {hashname="j_17_placement",dec_hash=-279693259,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3904074D] = {hashname="jklm_11_14_ha",dec_hash=956565325,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x71EB60F3] = {hashname="jklm_15_18_ha",dec_hash=1911251187,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE69DFD4F] = {hashname="jklm_3_6_ha",dec_hash=-425853617,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE87B7235] = {hashname="jklm_7_10_ha",dec_hash=-394563019,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEB95502E] = {hashname="k_04_placement",dec_hash=-342536146,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x30A2FDAC] = {hashname="k_05_placement",dec_hash=815988140,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF2202897] = {hashname="k_06_placement",dec_hash=-232773481,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x9952AF01] = {hashname="k_07_placement",dec_hash=-1722634495,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x01944E8F] = {hashname="k_07_placement_vfx",dec_hash=26496655,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF2425063] = {hashname="k_08_placement",dec_hash=-230535069,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA6C87B5A] = {hashname="k_08_placement_vfx",dec_hash=-1496810662,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x18913042] = {hashname="k_09_placement",dec_hash=412168258,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x9DED89DE] = {hashname="k_09_placement_vfx",dec_hash=-1645377058,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC18DC1DA] = {hashname="k_10_placement",dec_hash=-1047674406,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xED4C27C2] = {hashname="k_11_placement",dec_hash=-313776190,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE88F8AAB] = {hashname="k_12_placement",dec_hash=-393246037,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4671E6DA] = {hashname="k_13_placement",dec_hash=1181869786,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x9E5B0E16] = {hashname="k_14_placement",dec_hash=-1638199786,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDEAB83B4] = {hashname="k_15_placement",dec_hash=-559184972,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDBDB1D52] = {hashname="k_16_placement",dec_hash=-606397102,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x0B4227DE] = {hashname="l_04_placement",dec_hash=188884958,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE8D814FF] = {hashname="l_05_placement",dec_hash=-388492033,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1E29DD5A] = {hashname="l_06_placement",dec_hash=506060122,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCC783AC5] = {hashname="l_07_placement",dec_hash=-864535867,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x42A29D45] = {hashname="l_08_placement",dec_hash=1117953349,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x09DCAA30] = {hashname="l_09_a_placement",dec_hash=165456432,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4DEA9D5A] = {hashname="l_09_b_placement",dec_hash=1307221338,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD50623E7] = {hashname="l_09_c_placement",dec_hash=-721017881,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1CD91B6F] = {hashname="l_09_d_placement",dec_hash=483990383,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE50A6B13] = {hashname="l_09_e_placement",dec_hash=-452302061,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x60D20C41] = {hashname="l_09_ftr",dec_hash=1624378433,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF10119C2] = {hashname="l_09_placement",dec_hash=-251586110,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE4E9D60A] = {hashname="l_10_placement",dec_hash=-454437366,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD89F4BCA] = {hashname="l_11_placement",dec_hash=-660649014,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x20F11253] = {hashname="l_12_placement",dec_hash=552669779,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFCA9ECB8] = {hashname="l_13_placement",dec_hash=-55972680,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD669F787] = {hashname="l_14_placement",dec_hash=-697698425,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x851A951B] = {hashname="l_15_placement",dec_hash=-2061855461,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x69DE3E88] = {hashname="m_0405_prong_swaps",dec_hash=1776172680,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x89CBB700] = {hashname="m_0405_prong_swaps_placement",dec_hash=-1983138048,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x75BBDD38] = {hashname="m_04_placement",dec_hash=1975246136,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDC4DF226] = {hashname="m_05_placement",dec_hash=-598871514,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4CBAC2A3] = {hashname="m_06_esswap",dec_hash=1287307939,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x65CB8FC4] = {hashname="m_06_placement",dec_hash=1707839428,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCCF0938A] = {hashname="m_07_placement",dec_hash=-856648822,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAC94F37E] = {hashname="m_07_placement_vfx",dec_hash=-1399524482,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2E96D735] = {hashname="m_08_placement",dec_hash=781637429,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x412A1CFF] = {hashname="m_09_placement",dec_hash=1093278975,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x856FB87A] = {hashname="m_10_placement",dec_hash=-2056275846,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEAD6C947] = {hashname="m_11_placement",dec_hash=-355022521,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF8258E82] = {hashname="m_12_placement",dec_hash=-131756414,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8E67EADC] = {hashname="m_13_esswap",dec_hash=-1905792292,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5C05E555] = {hashname="m_13_placement",dec_hash=1543890261,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA7DBB26F] = {hashname="m_14_placement",dec_hash=-1478774161,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFED001A2] = {hashname="m_15_placement",dec_hash=-19922526,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2721025D] = {hashname="m_16_placement",dec_hash=656474717,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xBAC7D2A2] = {hashname="m_17_placement",dec_hash=-1161309534,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2DF06B6C] = {hashname="mp001_gap_01_",dec_hash=770730860,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCD88D880] = {hashname="mp001_sis_01_",dec_hash=-846669696,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xBCC3145D] = {hashname="mp001_the_01",dec_hash=-1128065955,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFE822D14] = {hashname="mp003_ambcamps_featured01",dec_hash=-25023212,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x48A88F07] = {hashname="mp003_area01_supp",dec_hash=1219006215,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4F3AD188] = {hashname="mp003_area02_supp",dec_hash=1329254792,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x927C437E] = {hashname="mp003_area03_supp",dec_hash=-1837350018,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF8E95357] = {hashname="mp003_area04_supp",dec_hash=-118926505,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF884D38B] = {hashname="mp004_ambcamps_campdefend01",dec_hash=-125512821,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x994BB2D6] = {hashname="mp004_ambcamps_coop01",dec_hash=-1723092266,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC321A0AA] = {hashname="mp004_area01_supp",dec_hash=-1021206358,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB02090FC] = {hashname="mp004_area02_supp",dec_hash=-1340043012,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x39D36B0C] = {hashname="mp004_area03_supp",dec_hash=970156812,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCF22A3A1] = {hashname="mp004_area04_supp",dec_hash=-819813471,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5C4920EA] = {hashname="mp005_area01_supp",dec_hash=1548296426,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x53E53306] = {hashname="mp005_area03_supp",dec_hash=1407529734,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE587E92F] = {hashname="mp005_area04_supp",dec_hash=-444077777,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6465DB25] = {hashname="mp005_mp_lobby_05",dec_hash=1684396837,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8C348C7B] = {hashname="mp005_mp_lobby_05_placement",dec_hash=-1942713221,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3E831CE8] = {hashname="mp006_area01_supp",dec_hash=1048780008,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3FB033BD] = {hashname="mp006_area02_supp",dec_hash=1068512189,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x25EADC90] = {hashname="mp006_area04_supp",dec_hash=636148880,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x33E13B63] = {hashname="mp007_area02_supp",dec_hash=870398819,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x851EDC4A] = {hashname="mp007_area04_supp",dec_hash=-2061575094,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC07E1711] = {hashname="n_04_placement",dec_hash=-1065478383,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDE97ACDD] = {hashname="n_05_placement",dec_hash=-560485155,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4A353E3D] = {hashname="n_06_placement",dec_hash=1245003325,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x91E389BD] = {hashname="n_07_placement",dec_hash=-1847359043,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4CD29FC5] = {hashname="n_08_placement",dec_hash=1288871877,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1243AC38] = {hashname="n_09_placement",dec_hash=306424888,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x95770CFE] = {hashname="n_10_placement",dec_hash=-1787360002,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8FEF1A09] = {hashname="n_11_placement",dec_hash=-1880155639,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA56DAAF3] = {hashname="n_12_placement",dec_hash=-1519539469,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x83A7A2F4] = {hashname="n_13_placement",dec_hash=-2086165772,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x607AF1F2] = {hashname="n_14_placement",dec_hash=1618670066,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5D718C2F] = {hashname="n_15_placement",dec_hash=1567722543,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6A4B0943] = {hashname="n_16_placement",dec_hash=1783302467,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAAAC349A] = {hashname="n_17_placement",dec_hash=-1431554918,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x34584D1D] = {hashname="nat_camp_01",dec_hash=878202141,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA43F5FF1] = {hashname="new_area_ha",dec_hash=-1539350543,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDE7A8F57] = {hashname="new_com_01_vfx",dec_hash=-562393257,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x06636B76] = {hashname="new_frn_01_vfx",dec_hash=107178870,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x116B710B] = {hashname="new_gar_01_vfx",dec_hash=292253963,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8D4B745A] = {hashname="new_mrk_01_vfx",dec_hash=-1924434854,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD525D958] = {hashname="new_pie_01_vfx",dec_hash=-718939816,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x621C1C6E] = {hashname="new_slm_01_vfx",dec_hash=1646009454,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4820B71B] = {hashname="new_wrh_01_vfx",dec_hash=1210103579,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6D8BB551] = {hashname="nopq_11_14_ha",dec_hash=1837872465,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x587AA2F3] = {hashname="nopq_15_18_ha",dec_hash=1484432115,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEF90DF8A] = {hashname="nopq_3_6_ha",dec_hash=-275718262,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC8F777B9] = {hashname="nopq_7_10_ha",dec_hash=-923306055,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5CC8399A] = {hashname="nopq_92_95_ha",dec_hash=1556625818,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x37C0C9A4] = {hashname="nopq_96_99_ha",dec_hash=935381412,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE8CD4842] = {hashname="o_04_placement",dec_hash=-389199806,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCAE4F238] = {hashname="o_05_placement",dec_hash=-890965448,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5B4DD2AA] = {hashname="o_06_placement",dec_hash=1531826858,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5ED7ADEC] = {hashname="o_07_placement",dec_hash=1591193068,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x7A1D69CF] = {hashname="o_08_placement",dec_hash=2048747983,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB9B10D99] = {hashname="o_09_placement",dec_hash=-1179578983,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x366D6410] = {hashname="o_10_placement",dec_hash=913138704,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x85D4E19D] = {hashname="o_11_placement",dec_hash=-2049646179,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x097B1C1A] = {hashname="o_12_placement",dec_hash=159063066,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x34BCEA75] = {hashname="o_13_placement",dec_hash=884796021,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2EA0ABAD] = {hashname="o_14_placement",dec_hash=782281645,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xED068302] = {hashname="o_14_placement_vfx",dec_hash=-318340350,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD431BAA1] = {hashname="o_15_placement",dec_hash=-734938463,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3E83FA9C] = {hashname="p_03_placement",dec_hash=1048836764,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8ED38EDC] = {hashname="p_04_placement",dec_hash=-1898737956,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x22BC7100] = {hashname="p_05_placement",dec_hash=582775040,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1676AEF2] = {hashname="p_06_placement_beechers",dec_hash=376876786,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1239BA16] = {hashname="p_06_placement",dec_hash=305773078,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF9632565] = {hashname="p_06_terrain_swap",dec_hash=-110942875,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE0695E94] = {hashname="p_07_placement",dec_hash=-529965420,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x11A6D530] = {hashname="p_08_ftr",dec_hash=296146224,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAD20DA2E] = {hashname="p_08_placement",dec_hash=-1390355922,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x624FE356] = {hashname="p_11_cle_swaps",dec_hash=1649402710,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD0A64D78] = {hashname="p_11_placement",dec_hash=-794407560,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAB484524] = {hashname="p_11_veg",dec_hash=-1421327068,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE52EE33D] = {hashname="p_12_ftr",dec_hash=-449912003,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x69BBDEF6] = {hashname="p_12_placement",dec_hash=1773919990,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x33A40245] = {hashname="p_12_veg",dec_hash=866386501,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x086B5DD5] = {hashname="p_13_ftr",dec_hash=141254101,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEB365D9F] = {hashname="p_13_placement",dec_hash=-348758625,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x65FD8BBB] = {hashname="p_13_placement_vfx",dec_hash=1711115195,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC821E9C8] = {hashname="p_13_veg",dec_hash=-937301560,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x82695048] = {hashname="p_14_gar_02_placement",dec_hash=-2107027384,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x87AD2310] = {hashname="p_14_gar_03_placement",dec_hash=-2018696432,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x9E581796] = {hashname="p_14_gar_04_placement",dec_hash=-1638393962,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x422F61A6] = {hashname="p_14_gar_05_placement",dec_hash=1110401446,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8E56F4CE] = {hashname="p_14_gar_06_placement",dec_hash=-1906903858,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD7F83190] = {hashname="p_14_gar_07_placement",dec_hash=-671600240,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEF913D68] = {hashname="p_14_gar_08_placement",dec_hash=-275694232,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD739F538] = {hashname="p_14_gar_bron_placement",dec_hash=-684067528,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x731D34B5] = {hashname="p_14_gar_gala_placement",dec_hash=1931293877,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x7B065DB8] = {hashname="p_14_placement",dec_hash=2064014776,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA6C62D89] = {hashname="p_14_trn_placement",dec_hash=-1496961655,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x02C3A26A] = {hashname="p_15_com_placement",dec_hash=46375530,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE41069D4] = {hashname="p_15_frn_placement",dec_hash=-468686380,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB692E8E9] = {hashname="p_15_gar_01_placement",dec_hash=-1231886103,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD29898B2] = {hashname="p_15_gar_02_placement",dec_hash=-761751374,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x73FB69C8] = {hashname="p_15_gar_placement",dec_hash=1945856456,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6D681743] = {hashname="p_15_mrk_placement",dec_hash=1835538243,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x14AE4F58] = {hashname="p_15_pie_placement",dec_hash=346967896,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD0B95132] = {hashname="p_15_placement",dec_hash=-793161422,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x64EF3FFA] = {hashname="p_15_slm_placement",dec_hash=1693401082,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1452FB3D] = {hashname="p_15_wrh_placement",dec_hash=340982589,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1749C110] = {hashname="q_03_placement",dec_hash=390709520,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD94ED286] = {hashname="q_04_placement",dec_hash=-649145722,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6C25536A] = {hashname="q_05_placement",dec_hash=1814385514,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x0CB4EEEB] = {hashname="q_06_placement",dec_hash=213184235,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8A60A74A] = {hashname="q_07_placement",dec_hash=-1973377206,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x023EBC09] = {hashname="q_08_placement",dec_hash=37665801,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEF934862] = {hashname="q_11_placement",dec_hash=-275560350,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2995CEF9] = {hashname="q_11_veg",dec_hash=697683705,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5F10668E] = {hashname="q_12_placement",dec_hash=1594910350,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x491FD795] = {hashname="q_12_swap",dec_hash=1226823573,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8838D9EE] = {hashname="q_12_veg",dec_hash=-2009540114,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x0CFBD481] = {hashname="q_13_placement",dec_hash=217830529,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x63919309] = {hashname="q_14_placement",dec_hash=1670484745,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4A7F669D] = {hashname="q_98_placement",dec_hash=1249863325,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x399366AA] = {hashname="q_99_placement",dec_hash=965961386,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x02329191] = {hashname="r_11_placement",dec_hash=36868497,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4302B8C1] = {hashname="r_12_placement",dec_hash=1124251841,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD3E31B30] = {hashname="r_13_placement",dec_hash=-740091088,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB46AFAC9] = {hashname="r_95_placement",dec_hash=-1268057399,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA2604BB7] = {hashname="reg_gri_00",dec_hash=-1570747465,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2D178FB9] = {hashname="reg_hen_00",dec_hash=756518841,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8F2ECFB1] = {hashname="rho_01_vfx",dec_hash=-1892757583,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5BED133A] = {hashname="roa_rd_sgn_",dec_hash=1542263610,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF29819B8] = {hashname="rstu_11_14_ha",dec_hash=-224912968,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x61A41CD8] = {hashname="rstu_15_18_ha",dec_hash=1638145240,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x31B2560D] = {hashname="rstu_3_6_ha",dec_hash=833771021,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x8D8F41A4] = {hashname="rstu_7_10_ha",dec_hash=-1919991388,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x143B6FBD] = {hashname="rstu_92_95_ha",dec_hash=339439549,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFF65ECA5] = {hashname="rstu_96_99_ha",dec_hash=-10097499,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x86538353] = {hashname="s_95_placement",dec_hash=-2041347245,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x820F12CA] = {hashname="shack_mmm",dec_hash=-2112941366,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCCD4586B] = {hashname="shack_urr",dec_hash=-858498965,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDAE8CA03] = {hashname="sti_01_",dec_hash=-622278141,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC1F038C9] = {hashname="str_01_vfx",dec_hash=-1041221431,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x722FB9DD] = {hashname="t_17_placement",dec_hash=1915730397,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x9211F3C8] = {hashname="t_18_placement",dec_hash=-1844317240,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE57FC3FF] = {hashname="t_92_placement",dec_hash=-444611585,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xA0AB0C47] = {hashname="t_93_placement",dec_hash=-1599402937,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF4712084] = {hashname="t_94_placement",dec_hash=-193912700,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF9A0A6D5] = {hashname="t_95_placement",dec_hash=-106912043,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x40D34A03] = {hashname="the_04",dec_hash=1087588867,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB24689A1] = {hashname="tum_01_vfx",dec_hash=-1304000095,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFEE4E644] = {hashname="u_05_ftr",dec_hash=-18553276,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x00870CFB] = {hashname="u_07_placement",dec_hash=8850683,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4F08A739] = {hashname="u_17_placement",dec_hash=1325967161,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1D48CC8A] = {hashname="u_17_placement_vfx",dec_hash=491310218,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEAFCA143] = {hashname="u_18_placement",dec_hash=-352542397,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x10462B5B] = {hashname="u_92_placement",dec_hash=273034075,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFC9A1933] = {hashname="u_93_placement",dec_hash=-57009869,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xE25730BF] = {hashname="u_94_placement",dec_hash=-497602369,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xDB3A8315] = {hashname="u_95_placement",dec_hash=-616922347,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB30AF804] = {hashname="v_13_placement",dec_hash=-1291126780,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x2F514CD4] = {hashname="v_14_placement",dec_hash=793857236,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x34565025] = {hashname="v_92_placement",dec_hash=878071845,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xCA8781CC] = {hashname="v_93_placement",dec_hash=-897089076,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xF9E102F0] = {hashname="v_94_placement",dec_hash=-102694160,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x58436498] = {hashname="v_95_placement",dec_hash=1480811672,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x54E47BBA] = {hashname="val_vfx",dec_hash=1424260026,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x016B1170] = {hashname="van_01_vfx",dec_hash=23794032,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x035DDF21] = {hashname="vwxy_11_14_ha",dec_hash=56483617,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC13DA6E6] = {hashname="vwxy_3_6_ha",dec_hash=-1052924186,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEBE4F077] = {hashname="vwxy_7_10_ha",dec_hash=-337317769,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x45463684] = {hashname="vwxy_92_95_ha",dec_hash=1162229380,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD7DF6D49] = {hashname="vwxy_92_95_occ",dec_hash=-673223351,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x7A3F32E3] = {hashname="vwxy_96_99_ha",dec_hash=2050962147,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x13145DB5] = {hashname="w_13_placement",dec_hash=320101813,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB37CB94F] = {hashname="w_14_placement",dec_hash=-1283671729,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB13FA84F] = {hashname="wag_01_",dec_hash=-1321228209,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5B05862A] = {hashname="wild_03",dec_hash=1527088682,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x4A6FE4FF] = {hashname="wild_04",dec_hash=1248847103,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3E947BC1] = {hashname="win_01_",dec_hash=1049918401,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x48350054] = {hashname="win1_intro",dec_hash=1211433044,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC8B637B0] = {hashname="win1_intro_placement",dec_hash=-927582288,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD06A357D] = {hashname="win_snow",dec_hash=-798345859,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x83B190C2] = {hashname="x_13_placement",dec_hash=-2085515070,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x03B8EEA6] = {hashname="x_14_placement",dec_hash=62451366,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x88AC953E] = {hashname="y_12_placement",dec_hash=-2001955522,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xB295AB7F] = {hashname="y_13_placement",dec_hash=-1298814081,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3D6CF8CD] = {hashname="",dec_hash=1030551757,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAA8E217D] = {hashname="",dec_hash=-1433525891,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x559736F9] = {hashname="",dec_hash=1435973369,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xAA4A4C30] = {hashname="",dec_hash=-1437971408,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x58319373] = {hashname="",dec_hash=1479644019,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x5C9A67D4] = {hashname="",dec_hash=1553622996,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x60A740ED] = {hashname="",dec_hash=1621573869,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x6280A641] = {hashname="",dec_hash=1652598337,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x713FFE47] = {hashname="",dec_hash=1900019271,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x0E04B29B] = {hashname="",dec_hash=235188891,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEF2BF83B] = {hashname="",dec_hash=-282331077,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEC7BEDBD] = {hashname="",dec_hash=-327422531,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xEAA9BA9F] = {hashname="",dec_hash=-357975393,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x1774F074] = {hashname="",dec_hash=393539700,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x283F66FC] = {hashname="",dec_hash=675243772,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD5CF503F] = {hashname="",dec_hash=-707833793,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xFB9516E2] = {hashname="",dec_hash=-74115358,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xD095505A] = {hashname="",dec_hash=-795520934,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x329ED455] = {hashname="",dec_hash=849269845,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0xC9A4A973] = {hashname="",dec_hash=-911955597,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	-- [0x3AD3533F] = {hashname="",dec_hash=986927935,x=-1.0,y=-1.0,z=-1.0,h=0.0},
+	
 }
