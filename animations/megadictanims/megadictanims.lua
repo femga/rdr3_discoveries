@@ -11927,6 +11927,7 @@ local megadictanims = {
 
  ["veh_horseback@seat_rear@female@right@normal@canter@slope@down"] = {
   "move",
+  "settle_fwd_0",
  },
 
  ["amb_camp@world_camp_jack_es_bucket_pour@male_a@react_look@enter@high"] = {
@@ -24934,6 +24935,8 @@ local megadictanims = {
   "exit_front_att",
   "enter_left_vic",
   "enter_front_att",
+  "struggle_att",
+  "struggle_vic",
  },
 
  ["mech_weapons_shortarms@trans@iron_to_base"] = {
@@ -33018,6 +33021,8 @@ local megadictanims = {
   "enter_right_att",
   "enter_right_vic",
   "enter_front_att",
+  "struggle_att",
+  "struggle_vic",
  },
 
  ["creatures_mammal@bearblack@normal@trot_slow"] = {
@@ -33081,6 +33086,8 @@ local megadictanims = {
   "exit_front_att",
   "enter_far_front_vic",
   "enter_right_att",
+  "struggle_att",
+  "struggle_vic",
  },
 
  ["amb_work@world_human_farmer_rake@male_a@base"] = {
@@ -87679,6 +87686,11 @@ local megadictanims = {
   "ready_loop_225l",
   "ready_loop_0",
   "ready_loop_90r",
+  "loop_0",
+  "loop_225l",
+  "loop_225r",
+  "loop_90l",
+  "loop_90r",
  },
 
  ["veh_horseback@seat_saddle@character@arthur@fidget@normal@walk@1h"] = {
@@ -104820,6 +104832,7 @@ local megadictanims = {
 
  ["veh_horseback@seat_rear@female@right@normal@canter@slope@up"] = {
   "move",
+  "settle_fwd_0",
  },
 
  ["mech_strafe@ambient@1h@pistol@stop"] = {
@@ -113546,6 +113559,10 @@ local megadictanims = {
   "exit_front_vic",
   "facedown_enter_backleft_vic",
   "facedown_enter_front_vic",
+  "struggle_att",
+  "struggle_vic",
+  "trans_mount_to_lasso_att",
+  "trans_mount_to_lasso_vic",
  },
 
  ["amb_rest@world_human_passed_out_floor@male_a@react_look@enter@low"] = {
@@ -117644,5 +117661,2187 @@ local megadictanims = {
    "idle",
   },
 
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_right@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
 
+  ["mech_weapons_special@loco@mp@female@normal@lantern@walk"] = {
+   "move",
+   "move_water",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallsteps01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@lh_sweep"] = {
+   "aim_0",
+   "aim_180l",
+   "aim_90l",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@aim_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_dual@lantern@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["mech_weapons_special@binoculars@crouch_carry@base@sweep"] = {
+   "aim_med_0",
+  },
+
+  ["mech_weapons_special@loco@mp@male@crouch@metaldetector@idle"] = {
+   "idle_active",
+  },
+
+  ["mech_weapons_special@binoculars@trans@base_to_carry_f"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallrearsstepping01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@run_slow"] = {
+   "move",
+   "turn_l1",
+   "turn_l2",
+   "turn_r1",
+   "turn_r2",
+  },
+
+  ["mech_weapons_dual@lantern@crouch@base@sweep_f@outro@sweep"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@trans@kneelfirecraft@female_a"] = {
+   "kneelfirecraft_trans_kneelfirecraftcup_consume",
+   "kneelfirecraft_trans_kneelfirecraftcup_stow",
+   "kneelfirecraft_trans_kneelpostfirecraft",
+   "kneelfirecraftactive_trans_kneelfirecraftcup_consume",
+   "kneelfirecraftactive_trans_kneelfirecraftcup_stow",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakemedium01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@doubleaction_str"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallrear01"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_03"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@lantern@base@sweep_f@intro@sweep"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["mech_weapons_special@binoculars@base@sweep_f@w"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakelarge01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@jump01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@transitions@rh_sweep_to_in_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakemedium02"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_right@sweep_carry"] = {
+   "aim_0",
+   "aim_225l",
+   "aim_225r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@jumpstomp01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_04@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@stepback01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@bolas@base@trans@swing_to_ready@w"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stomp01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_05@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_dual@loco@mp@female@normal@metal_detector@idle"] = {
+   "idle_active",
+   "idle_water_active",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallrearsstepping01@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@bolas@base@swing@release@w"] = {
+   "release_fb_bwd_-135",
+   "release_fb_bwd_135",
+   "release_fb_fwd_-45",
+   "release_fb_fwd_45",
+   "release_fb_left_-135",
+   "release_fb_left_-45",
+   "release_fb_right_135",
+   "release_fb_right_45",
+   "release_med_0",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@walk@slope_max@down"] = {
+   "settle_fwd_0",
+   "start_move_0",
+  },
+
+  ["mech_weapons_special@loco@mp@male@crouch@bolas@w@walk"] = {
+   "walk",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallsteps01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_left@transitions@ready_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@binoculars@base@sweep_f@intro@sweep"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["mech_weapons_special@loco@mp@male@normal@metaldetector@walk"] = {
+   "walk_active",
+   "walk_water_active",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@sweep_ready"] = {
+   "loop_0",
+   "loop_135l",
+   "loop_135r",
+   "loop_90l",
+   "loop_90r",
+  },
+
+  ["mech_weapons_dual@lantern@trans@carry_to_base_f"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearup02"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@transitions@rh_sweep_to_in_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallrearsstepping01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@aim_to_out_sweep_rh"] = {
+   "aim_transition_0",
+   "aim_transition_180r",
+   "aim_transition_90r",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@run_fast"] = {
+   "move",
+   "turn_l1",
+   "turn_l2",
+   "turn_r1",
+   "turn_r2",
+  },
+
+  ["mech_weapons_special@loco@mp@male@crouch@bolas@w@run"] = {
+   "run",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kicksrears01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@loco@mp@female@normal@metal_detector@idle"] = {
+   "idle_active",
+   "idle_intro_active",
+   "idle_water_active",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@rearkick01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_right@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_dual@loco@mp@female@crouch@metal_detector@idle"] = {
+   "idle_active",
+  },
+
+  ["veh_coach@small@rear@rightside@common@enter@from@land@normal@align@door@walk@male"] = {
+   "walk_-45_lf_to_get_in",
+   "walk_-45_rf_to_get_in",
+   "walk_-90_lf_to_get_in",
+   "walk_-90_rf_to_get_in",
+   "walk_0_lf_to_get_in",
+   "walk_0_rf_to_get_in",
+   "walk_45_lf_to_get_in",
+   "walk_45_rf_to_get_in",
+   "walk_90_lf_to_get_in",
+   "walk_90_rf_to_get_in",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@sweep_carry"] = {
+   "aim_0",
+   "aim_135l",
+   "aim_135r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["mech_weapons_special@loco@mp@female@normal@lantern@sprint"] = {
+   "move",
+  },
+
+  ["mech_weapons_special@binoculars@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@footscratch02@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_left@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@loco@mp@male@normal@bolas@w@walk"] = {
+   "walk",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@rearkick01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearup01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@binoculars@trans@crouch_carry_to_crouch_base_f"] = {
+   "aim_transition_0",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@walk@slope_max@up"] = {
+   "settle_fwd_0",
+   "start_move_0",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@slope_max@up"] = {
+   "idle",
+   "idle_intro",
+  },
+
+  ["veh_coach@small@rear@leftside@common@enter@from@land@normal@align@door@walk@male"] = {
+   "walk_-45_lf_to_get_in",
+   "walk_-45_rf_to_get_in",
+   "walk_-90_lf_to_get_in",
+   "walk_-90_rf_to_get_in",
+   "walk_0_lf_to_get_in",
+   "walk_0_rf_to_get_in",
+   "walk_45_lf_to_get_in",
+   "walk_45_rf_to_get_in",
+   "walk_90_lf_to_get_in",
+   "walk_90_rf_to_get_in",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@binoculars@crouch@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@longstepping01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kicksrears01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@lantern@base@sweep_f@outro"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@sweep_ready"] = {
+   "loop_0",
+   "loop_135l",
+   "loop_135r",
+   "loop_90l",
+   "loop_90r",
+  },
+
+  ["mech_weapons_special@loco@mp@female@normal@lantern@idle"] = {
+   "idle",
+   "idle_water",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@lh_sweep"] = {
+   "aim_0",
+   "aim_180r",
+   "aim_90r",
+  },
+
+  ["mech_weapons_dual@lantern@base@sweep_f@intro@sweep"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@sawedoff_str"] = {
+   "oh_reload_end",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_leftforward",
+  },
+
+  ["mech_weapons_special@bolas@base@ready@sweep@w"] = {
+   "aim_med_0",
+   "aim_med_l90",
+   "aim_med_r90",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_left@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_01"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stepup02"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@semiauto"] = {
+   "aim_recoil",
+   "recoil",
+  },
+
+  ["mech_weapons_dual@lantern@trans@base_to_iron_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@kneelpostfirecraft@female_a@base"] = {
+   "base",
+   "base_mug",
+  },
+
+  ["mech_cover@reloads@shortarms@base@low@left@righthand@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@transitions@rh_sweep_to_in_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@binoculars@crouch@base@sweep_f@w"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stomp01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_dual@lantern@carry@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l90",
+   "aim_med_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepsandkicks02"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_left@sweep_carry"] = {
+   "aim_0",
+   "aim_225l",
+   "aim_225r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["mech_weapons_special@binoculars@crouch@base@sweep_f@intro@sweep@w"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["mech_weapons_dual@lantern@base@sweep_additives@block@aim@sweep"] = {
+   "block",
+  },
+
+  ["mech_weapons_dual@loco@mp@female@normal@metal_detector@walk"] = {
+   "walk_active",
+   "walk_water_active",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@run"] = {
+   "move",
+   "start_back_left_-135",
+   "start_back_left_-180",
+   "start_back_right_135",
+   "start_back_right_180",
+   "start_fwd_-0",
+   "start_fwd_-45",
+   "start_fwd_0",
+   "start_fwd_45",
+   "start_left_-135",
+   "start_left_-45",
+   "start_right_135",
+   "start_right_45",
+   "stop_back_left_lf_-135",
+   "stop_back_left_lf_-180",
+   "stop_back_left_rf_-135",
+   "stop_back_left_rf_-180",
+   "stop_back_right_lf_135",
+   "stop_back_right_lf_180",
+   "stop_back_right_rf_135",
+   "stop_back_right_rf_180",
+   "stop_fwd_lf_-45",
+   "stop_fwd_lf_45",
+   "stop_fwd_rf_-45",
+   "stop_fwd_rf_45",
+   "stop_left_lf_-135",
+   "stop_left_lf_-45",
+   "stop_left_rf_-135",
+   "stop_left_rf_-45",
+   "stop_right_lf_135",
+   "stop_right_lf_45",
+   "stop_right_rf_135",
+   "stop_right_rf_45",
+   "turn_l1",
+   "turn_l2",
+   "turn_r1",
+   "turn_r2",
+  },
+
+  ["mech_cover@reloads@shortarms@base@high@left@righthand@no_lean_schofield"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["mech_weapons_special@loco@mp@female@normal@lantern@run"] = {
+   "move",
+   "move_water",
+  },
+
+  ["veh_coach@small@rear@leftside@common@enter@from@land@normal@align@door@run@male"] = {
+   "run_-45_lf_to_get_in",
+   "run_-45_rf_to_get_in",
+   "run_-90_lf_to_get_in",
+   "run_-90_rf_to_get_in",
+   "run_0_lf_to_get_in",
+   "run_0_rf_to_get_in",
+   "run_45_lf_to_get_in",
+   "run_45_rf_to_get_in",
+   "run_90_lf_to_get_in",
+   "run_90_rf_to_get_in",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@transitions@rh_sweep_to_lh_sweep"] = {
+   "aim_0",
+   "aim_180l",
+   "aim_90l",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepsandkicks02@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@sawedoff"] = {
+   "aim_recoil",
+   "aim_recoil_back_trigger",
+   "cock_end",
+   "cock_start",
+   "recoil",
+   "recoil_back_trigger",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepsandkicks02@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@ready_to_out_sweep_lh"] = {
+   "aim_transition_0",
+   "aim_transition_180l",
+   "aim_transition_90l",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@sidekick01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@binoculars@carry@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["mech_weapons_dual@lantern@trans@iron_to_base_f"] = {
+   "aim_transition_0",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_left@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakelarge01"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_02@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_cover@reloads@shortarms@base@high@left@righthand@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["mech_weapons_special@bolas@base@ready@sweep@intro@sweep"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@footscratch02"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@ready_to_out_sweep_rh"] = {
+   "aim_transition_0",
+   "aim_transition_180r",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearstomp01@slope@down"] = {
+   "idle",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@kneelfirecraft@female_a@active@exit"] = {
+   "exit",
+   "exit_mug",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_02"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@volcanic"] = {
+   "aim_recoil",
+   "cock_end",
+   "cock_start",
+   "recoil",
+   "recoil_quick",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@aim_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon_f@sawedoff"] = {
+   "aim_recoil",
+   "aim_recoil_back_trigger",
+   "recoil",
+   "recoil_back_trigger",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@semiauto_str"] = {
+   "oh_reload_end",
+   "oh_reload_start",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakelarge01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@canter@slope_max@up"] = {
+   "move",
+   "settle_fwd_0",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_right@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@binoculars@trans@crouch_base_to_crouch_carry"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_special@binoculars@crouch_carry@base@sweep_f"] = {
+   "aim_med_0",
+  },
+
+  ["mech_weapons_special@loco@mp@male@normal@bolas@w@sprint"] = {
+   "sprint",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@aim_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_cover@reloads@shortarms@base@low@fwd_left@righthand@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_dual@lantern@trans@base_to_carry_f"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@longstepping01"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kicksmallbuck01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@bolas@base@trans@swing_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["mech_weapons_special@bolas@base@ready@release@w"] = {
+   "release_fb_bwd_-135",
+   "release_fb_bwd_135",
+   "release_fb_fwd_-45",
+   "release_fb_fwd_45",
+   "release_fb_left_-135",
+   "release_fb_left_-45",
+   "release_fb_right_135",
+   "release_fb_right_45",
+   "release_med_0",
+  },
+
+  ["veh_wagon@warwagon@rear@turret@rr@enter@alive"] = {
+   "jack_abort",
+   "jack_intro",
+   "jack_loop",
+   "jack_success",
+   "jack_success_no_get_in",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@aim_to_out_sweep_rh"] = {
+   "aim_transition_0",
+   "aim_transition_180l",
+   "aim_transition_90l",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_right@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@sawedoff_lefthand"] = {
+   "aim_recoil",
+   "aim_recoil_back_trigger",
+   "recoil",
+   "recoil_back_trigger",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepping01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@loco@mp@male@normal@bolas@w@run"] = {
+   "run",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@doubleaction_lefthand"] = {
+   "cock",
+   "cock_end",
+   "cock_start",
+  },
+
+  ["mech_weapons_special@loco@mp@female@crouch@lantern@idle"] = {
+   "idle",
+  },
+
+  ["mech_weapons_longarms@base@hit_reacts@high_bow@a"] = {
+   "arm_left_front_upper_and_lower",
+   "arm_right_front_upper_and_lower",
+   "leg_left_rear_upper",
+   "leg_left_upper_front_and_side",
+   "leg_right_front_upper_and_side",
+   "leg_right_rear_upper",
+   "torso_back_lower",
+   "torso_front_upper_and_lower",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallsteps01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@jump01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_left@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_right@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stepup02@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepsandkicks01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearjump02"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@m1899_lefthand"] = {
+   "aim_recoil",
+   "recoil",
+   "recoil_oh",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@carry_to_out_sweep_rh"] = {
+   "aim_transition_0",
+   "aim_transition_180r",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@carry_to_out_sweep_lh"] = {
+   "aim_transition_0",
+   "aim_transition_180r",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepstepkickstep01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@transitions@rh_sweep_to_lh_sweep"] = {
+   "aim_0",
+   "aim_180r",
+   "aim_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stepup01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@transitions@sweep_rh_to_in_aim"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_shortarms@base@hit_reacts@high_bow@a"] = {
+   "arm_left_front_upper_and_lower",
+   "arm_right_front_upper_and_lower",
+   "leg_left_rear_upper",
+   "leg_left_upper_front_and_side",
+   "leg_right_front_upper_and_side",
+   "leg_right_rear_upper",
+   "torso_back_lower",
+   "torso_front_upper_and_lower",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@volcanic_str"] = {
+   "oh_reload_end",
+   "oh_reload_loop",
+   "oh_reload_start",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@walk_slow"] = {
+   "move",
+   "turn_l1",
+   "turn_l2",
+   "turn_r1",
+   "turn_r2",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@ready_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_dual@loco@mp@male@crouch@metal_detector@idle"] = {
+   "idle_active",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@footscratch01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@binoculars@base@sweep_f@outro@sweep"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@transitions@lh_sweep_to_in_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@m1899"] = {
+   "aim_recoil",
+   "recoil",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakemedium02@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@stepback01"] = {
+   "idle",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@kneelfirecraft@female_a@active@enter"] = {
+   "enter",
+   "enter_mug",
+  },
+
+  ["mech_weapons_special@binoculars@crouch@base@sweep_f@outro@sweep"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@volcanic_lefthand"] = {
+   "aim_recoil",
+   "cock_end",
+   "cock_start",
+   "recoil",
+   "recoil_quick",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@volcanic_long_barrel_str"] = {
+   "oh_reload_end",
+   "oh_reload_loop",
+   "oh_reload_start",
+  },
+
+  ["mech_cover@reloads@shortarms@base@low@fwd@righthand@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearup01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_right@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@loco@mp@male@normal@bolas@w@idle"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@loco@mp@female@crouch@metal_detector@idle"] = {
+   "idle_active",
+  },
+
+  ["mech_weapons_dual@lantern@crouch@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@carry_to_out_sweep_lh"] = {
+   "aim_transition_0",
+   "aim_transition_180l",
+   "aim_transition_90l",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon_f@semiauto"] = {
+   "aim_recoil",
+   "recoil",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kickkickrear01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@sweep"] = {
+   "aim_0",
+   "aim_135l",
+   "aim_135r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["veh_coach@small@rear@rightside@common@enter@from@land@normal@align@door@run@male"] = {
+   "run_-45_lf_to_get_in",
+   "run_-45_rf_to_get_in",
+   "run_-90_lf_to_get_in",
+   "run_-90_rf_to_get_in",
+   "run_0_lf_to_get_in",
+   "run_0_rf_to_get_in",
+   "run_45_lf_to_get_in",
+   "run_45_rf_to_get_in",
+   "run_90_lf_to_get_in",
+   "run_90_rf_to_get_in",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_right@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_05"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@transitions@rh_sweep_to_in_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@jumpstomp01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kickkickrear01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_06@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@doubleaction"] = {
+   "cock",
+   "cock_end",
+   "cock_start",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@semiauto_lefthand"] = {
+   "aim_recoil",
+   "recoil",
+  },
+
+  ["mech_weapons_special@bolas@base@ready@release"] = {
+   "release_fb_bwd_-135",
+   "release_fb_bwd_135",
+   "release_fb_fwd_-45",
+   "release_fb_fwd_45",
+   "release_fb_left_-135",
+   "release_fb_left_-45",
+   "release_fb_right_135",
+   "release_fb_right_45",
+   "release_med_0",
+  },
+
+  ["mech_weapons_special@bolas@base@trans@ready_to_swing@w"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_right@sweep_carry"] = {
+   "aim_0",
+   "aim_225l",
+   "aim_225r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["mech_cover@reloads@shortarms@base@low@right@righthand@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@rh_sweep"] = {
+   "aim_0",
+   "aim_180r",
+   "aim_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearstomp01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_left@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_03@slope@up"] = {
+   "idle",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@trans@kneelfirecraftcup@female_a"] = {
+   "kneelfirecraftcup_trans_kneel1",
+   "kneelfirecraftcup_trans_kneelfirecraft",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@ready_to_out_sweep_lh"] = {
+   "aim_transition_0",
+   "aim_transition_180r",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@aim_to_out_sweep_lh"] = {
+   "aim_transition_0",
+   "aim_transition_180l",
+   "aim_transition_90l",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stepup01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_04"] = {
+   "idle",
+  },
+
+  ["veh_wagon@warwagon@rear@turret@rl@enter@alive"] = {
+   "jack_abort",
+   "jack_intro",
+   "jack_loop",
+   "jack_success",
+   "jack_success_no_get_in",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@carry_to_out_sweep_rh"] = {
+   "aim_transition_0",
+   "aim_transition_180l",
+   "aim_transition_90l",
+  },
+
+  ["mech_weapons_special@loco@mp@female@normal@metal_detector@walk"] = {
+   "walk_active",
+   "walk_water_active",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallrear01@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@binoculars@base@sweep_f@intro@sweep@w"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearkick01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_right@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_left@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@kneelfirecraftcup@female_a@base"] = {
+   "base",
+   "base_mug",
+  },
+
+  ["mech_cover@reloads@shortarms@base@low@fwd_right@righthand@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepstepkickstep01@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@binoculars@crouch@base@sweep_f@intro@sweep"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@rearkick01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_right@sweep_carry"] = {
+   "aim_0",
+   "aim_225l",
+   "aim_225r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@sidekick01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@bolas@base@airborne@w"] = {
+   "collide",
+   "in_air",
+   "unwrap",
+   "wrap",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepstepkickstep01"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kicksmallbuck01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@sprint"] = {
+   "move",
+   "turn_l1",
+   "turn_l2",
+   "turn_r1",
+   "turn_r2",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@walk"] = {
+   "move",
+   "start_back_left_-135",
+   "start_back_left_-180",
+   "start_back_right_135",
+   "start_back_right_180",
+   "start_fwd_-0",
+   "start_fwd_-45",
+   "start_fwd_0",
+   "start_fwd_45",
+   "start_left_-135",
+   "start_left_-45",
+   "start_right_135",
+   "start_right_45",
+   "stop_back_left_lf_-135",
+   "stop_back_left_lf_-180",
+   "stop_back_left_rf_-135",
+   "stop_back_left_rf_-180",
+   "stop_back_right_lf_135",
+   "stop_back_right_lf_180",
+   "stop_back_right_rf_135",
+   "stop_back_right_rf_180",
+   "stop_fwd_lf_-45",
+   "stop_fwd_lf_45",
+   "stop_fwd_rf_-45",
+   "stop_fwd_rf_45",
+   "stop_left_lf_-135",
+   "stop_left_lf_-45",
+   "stop_left_rf_-135",
+   "stop_left_rf_-45",
+   "stop_right_lf_135",
+   "stop_right_lf_45",
+   "stop_right_rf_135",
+   "stop_right_rf_45",
+   "turn_l1",
+   "turn_l2",
+   "turn_r1",
+   "turn_r2",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearjump01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@bolas@base@ready@sweep"] = {
+   "aim_med_0",
+   "aim_med_l90",
+   "aim_med_r90",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon@m1899"] = {
+   "aim_recoil",
+   "recoil",
+   "recoil_oh",
+   "w_recoil",
+  },
+
+  ["mech_weapons_special@lantern@crouch@base@sweep_f@outro@sweep"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@kneelfirecraft@female_a@active@base"] = {
+   "base",
+   "base_mug",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_04@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@idle_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_right@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_left@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@sweep_carry"] = {
+   "aim_0",
+   "aim_225l",
+   "aim_225r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@longstepping01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepsandkicks01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_left@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepping01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_right@transitions@carry_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@footscratch01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@sweep_carry"] = {
+   "aim_0",
+   "aim_135l",
+   "aim_135r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@transitions@lh_sweep_to_in_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearkick01@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@binoculars@base@sweep_f@outro@sweep@w"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["mech_weapons_special@loco@mp@male@normal@metaldetector@idle"] = {
+   "idle_active",
+   "idle_intro_active",
+   "idle_water_active",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stepup02@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_dual@lantern@base@sweep_f@outro@sweep"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["mech_weapons_dual@lantern@crouch@base@sweep_f@intro@sweep"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["mech_weapons_dual@lantern@trans@carry_to_iron_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_dual@lantern@trans@iron_to_carry_f"] = {
+   "aim_transition_0",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@rh_sweep"] = {
+   "aim_0",
+   "aim_180l",
+   "aim_90l",
+  },
+
+  ["mech_weapons_dual@loco@mp@male@crouch@metal_detector@walk"] = {
+   "walk_active",
+  },
+
+  ["mech_weapons_dual@loco@mp@male@normal@metal_detector@walk"] = {
+   "walk_active",
+   "walk_water_active",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearstomp01"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_right@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kickkickrear01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@lantern@crouch@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepping01"] = {
+   "idle",
+  },
+
+  ["mech_weapons_dual@loco@mp@male@normal@metal_detector@idle"] = {
+   "idle_active",
+   "idle_water_active",
+  },
+
+  ["mech_weapons_special@loco@mp@male@crouch@metaldetector@walk"] = {
+   "walk_active",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@m1899"] = {
+   "aim_recoil",
+   "recoil",
+   "recoil_oh",
+   "w_recoil",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@footscratch02@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@m1899_lefthand"] = {
+   "aim_recoil",
+   "recoil",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_left@sweep_carry"] = {
+   "aim_0",
+   "aim_225l",
+   "aim_225r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearup02@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon_f@m1899"] = {
+   "aim_recoil",
+   "recoil",
+  },
+
+  ["mech_weapons_shortarms@hip@base@weapon_f@volcanic"] = {
+   "aim_recoil",
+   "cock_end",
+   "cock_start",
+   "recoil",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@transitions@lh_sweep_to_in_aim"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@binoculars@crouch@base@sweep_f@outro@sweep@w"] = {
+   "aim_med_0_outro",
+   "aim_med_l90_outro",
+   "aim_med_r90_outro",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_03@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@binoculars@trans@crouch_carry_to_crouch_base"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_special@bolas@base@ready@sweep@intro@sweep@w"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["mech_weapons_special@bolas@base@swing@release"] = {
+   "release_fb_bwd_-135",
+   "release_fb_bwd_135",
+   "release_fb_fwd_-45",
+   "release_fb_fwd_45",
+   "release_fb_left_-135",
+   "release_fb_left_-45",
+   "release_fb_right_135",
+   "release_fb_right_45",
+   "release_med_0",
+  },
+
+  ["mech_weapons_special@bolas@base@swing@sweep@w"] = {
+   "aim_med_0",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_06"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@mauser_str"] = {
+   "oh_reload_end",
+   "oh_reload_start",
+  },
+
+  ["mech_weapons_special@lantern@base@sweep_f"] = {
+   "aim_med_0",
+   "aim_med_l180",
+   "aim_med_l90",
+   "aim_med_r180",
+   "aim_med_r90",
+  },
+
+  ["mech_weapons_special@loco@mp@female@crouch@lantern@walk"] = {
+   "move",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@transitions@lh_sweep_to_in_ready"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@loco@mp@female@crouch@lantern@run"] = {
+   "move",
+  },
+
+  ["mech_weapons_special@loco@mp@female@crouch@metal_detector@walk"] = {
+   "walk_active",
+  },
+
+  ["mech_weapons_special@loco@mp@male@crouch@bolas@w@idle"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@schofield_str"] = {
+   "oh_reload_end",
+   "oh_reload_end_spin",
+   "oh_reload_loop",
+   "oh_reload_start",
+   "oh_reload_start_spin",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@carry_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@canter@slope_max@down"] = {
+   "move",
+   "settle_fwd_0",
+  },
+
+  ["mech_weapons_dual@lantern@base@sweep_iron_sight_f"] = {
+   "aim_med_0",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@ready_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_dual@loco@mp@female@crouch@metal_detector@walk"] = {
+   "walk_active",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearup01"] = {
+   "idle",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@trans@kneelpostfirecraft@female_a"] = {
+   "kneelpostfirecraft_trans_kneelfirecraftcup_consume",
+   "kneelpostfirecraft_trans_kneelfirecraftcup_stow",
+   "kneepostlfirecraft_trans_kneel1",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@stepsandkicks01"] = {
+   "idle",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@idle"] = {
+   "idle",
+   "idle_turn_back_left_-135",
+   "idle_turn_back_left_-180",
+   "idle_turn_back_right_135",
+   "idle_turn_back_right_180",
+   "idle_turn_fwd_-0",
+   "idle_turn_fwd_-45",
+   "idle_turn_fwd_0",
+   "idle_turn_fwd_45",
+   "idle_turn_left_-135",
+   "idle_turn_left_-45",
+   "idle_turn_right_135",
+   "idle_turn_right_45",
+  },
+
+  ["mech_weapons_special@binoculars@trans@carry_to_base_f"] = {
+   "aim_transition_0",
+   "aim_transition_l90",
+   "aim_transition_r90",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@front_right@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@mid_left@transitions@aim_to_ready"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mp_amb_player@world_player_dynamic_kneel_ground@kneelfirecraft@female_a@base"] = {
+   "base",
+   "base_mug",
+  },
+
+  ["mech_cover@reloads@shortarms@base@high@right@righthand@no_lean_lemat"] = {
+   "intro",
+   "loop",
+   "outro",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@ready_to_out_sweep_rh"] = {
+   "aim_transition_0",
+   "aim_transition_180l",
+   "aim_transition_90l",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@transitions@lh_sweep_to_in_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@out@transitions@lh_sweep_to_rh_sweep"] = {
+   "aim_0",
+   "aim_180l",
+   "aim_90l",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@jump01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@out@transitions@lh_sweep_to_rh_sweep"] = {
+   "aim_0",
+   "aim_180r",
+   "aim_90r",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_left@in@transitions@ready_to_aim"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@transitions@aim_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_135l",
+   "aim_transition_135r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["mech_weapons_special@binoculars@trans@crouch_base_to_crouch_carry_f"] = {
+   "aim_transition_0",
+  },
+
+  ["mech_weapons_dual@lantern@base@hit_reacts@high_bow@a"] = {
+   "arm_left_front_upper_and_lower_lantern",
+   "arm_right_front_upper_and_lower_lantern",
+   "leg_left_rear_upper_lantern",
+   "leg_left_upper_front_and_side_lantern",
+   "leg_right_front_upper_and_side_lantern",
+   "leg_right_rear_upper_lantern",
+   "torso_back_lower_lantern",
+   "torso_front_upper_and_lower_lantern",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakemedium01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearup02@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@slope_max@down"] = {
+   "idle",
+   "idle_intro",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@sidekick01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearjump01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearjump02@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearkick01"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stepup01@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@stomp01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_02@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_05@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_med@idle@variation@fidget_06@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@footscratch01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakemedium01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@shakemedium02@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@normal@idle@variation@stepback01@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_special@lantern@crouch@base@sweep_f@intro@sweep"] = {
+   "aim_0",
+   "aim_l180",
+   "aim_l90",
+   "aim_r180",
+   "aim_r90",
+  },
+
+  ["veh_driveby@aim@coach@interior@shortarms@base@rear_right@in@sweep"] = {
+   "aim_0",
+   "aim_135l",
+   "aim_135r",
+   "aim_90l",
+   "aim_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@smallrear01@slope@up"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon@m1899_str"] = {
+   "oh_reload_end",
+   "oh_reload_start",
+   "w_oh_reload_end",
+   "w_oh_reload_start",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@ready_to_idle"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@jumpstomp01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kicksmallbuck01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_driveby@aim@coach@exterior@shortarms@base@rear_left@transitions@ready_to_carry"] = {
+   "aim_transition_0",
+   "aim_transition_225l",
+   "aim_transition_225r",
+   "aim_transition_90l",
+   "aim_transition_90r",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated@idle@variation@kicksrears01@slope@down"] = {
+   "idle",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearjump02@slope@up"] = {
+   "idle",
+  },
+
+  ["veh_wagon@warwagon@rear@turret@rl@exit@alive"] = {
+   "bejacked_abort",
+   "bejacked_intro",
+   "bejacked_loop",
+   "bejacked_success",
+   "bejacked_success_no_get_in",
+  },
+
+  ["veh_wagon@warwagon@rear@turret@rr@exit@alive"] = {
+   "bejacked_abort",
+   "bejacked_intro",
+   "bejacked_loop",
+   "bejacked_success",
+   "bejacked_success_no_get_in",
+  },
+
+  ["veh_horseback@seat_rear@female@right@agitated_high@idle@variation@rearjump01@slope@down"] = {
+   "idle",
+  },
+
+  ["mech_weapons_shortarms@base@weapon_f@m1899_str"] = {
+   "oh_reload_end",
+   "oh_reload_start",
+  },
+
+  ["mech_weapons_special@lantern@base@hit_reacts@high_bow@a"] = {
+   "arm_left_front_upper_and_lower",
+   "arm_right_front_upper_and_lower",
+   "leg_left_rear_upper",
+   "leg_left_upper_front_and_side",
+   "leg_right_front_upper_and_side",
+   "leg_right_rear_upper",
+   "torso_back_lower",
+   "torso_front_upper_and_lower",
+  },
+
+  ["mech_loco_f@type@mp@normal@unarmed@walk_fast"] = {
+   "move",
+   "turn_l1",
+   "turn_l2",
+   "turn_r1",
+   "turn_r2",
+  },
+
+  ["mech_grapple@unarmed@_male@_ambient@_healthy@back@_base"] = {
+   "defend_att",
+   "defend_vic",
+   "deflect_att",
+   "deflect_vic",
+   "enter_back_att",
+   "enter_back_cam",
+   "enter_back_intimidation_att",
+   "enter_back_intimidation_vic",
+   "enter_back_vic",
+   "enter_far_back_att",
+   "enter_far_back_vic",
+   "enter_front_att",
+   "enter_front_vic",
+   "enter_left_att",
+   "enter_left_vic",
+   "enter_med_back_att",
+   "enter_med_back_vic",
+   "enter_mid_left_att",
+   "enter_mid_left_vic",
+   "enter_mid_right_att",
+   "enter_mid_right_vic",
+   "enter_right_att",
+   "enter_right_vic",
+   "exit_front_att",
+   "exit_front_vic",
+   "fail_att",
+   "fail_vic",
+  },
+
+  ["mech_grapple@unarmed@_male@_ambient@_healthy@back@loco@attacker"] = {
+   "idle",
+   "idle_turn_180l",
+   "idle_turn_180r",
+   "idle_turn_45l",
+   "idle_turn_45r",
+   "idle_turn_90l",
+   "idle_turn_90r",
+   "walk_bwd",
+   "walk_bwd_left",
+   "walk_bwd_right",
+   "walk_bwd_start",
+   "walk_bwd_stop",
+   "walk_fwd",
+   "walk_fwd_left",
+   "walk_fwd_right",
+   "walk_fwd_start",
+   "walk_fwd_stop",
+  },
+
+  ["mech_grapple@unarmed@_male@_ambient@_healthy@back@loco@victim"] = {
+   "idle",
+   "idle_turn_180l",
+   "idle_turn_180r",
+   "idle_turn_45l",
+   "idle_turn_45r",
+   "idle_turn_90l",
+   "idle_turn_90r",
+   "walk_bwd",
+   "walk_bwd_left",
+   "walk_bwd_right",
+   "walk_bwd_start",
+   "walk_bwd_stop",
+   "walk_fwd",
+   "walk_fwd_left",
+   "walk_fwd_right",
+   "walk_fwd_start",
+   "walk_fwd_stop",
+  },
 }
