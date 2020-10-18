@@ -30,7 +30,8 @@ end
 ## Function arguments:
 
 function play_ambient_speech_from_entity(entity_id,sound_ref_string,sound_name_string,speech_params_string,speech_line)
- | 
+
+argument |  description
 ------------ | ---------------- 
 ENTITY_ID | ped id
 SOUND_REF_STRING | audio bank dictionary
@@ -43,7 +44,7 @@ function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_name_str
 
 ## Example of using audio banks for ambient speech (PLAY_AMBIENT_SPEECH1 and PLAY_AMBIENT_SPEECH_AT_COORDS):
 
-```
+```lua
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
 ----------------- 			DATAVIEW FUNCTIONS					-------------
