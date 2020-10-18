@@ -53,7 +53,7 @@ By default, you can use only one soundset_name at a time (can't play the same so
 ## Example of using sound_ids (play the same sound_name simultaneously):
 
 
-```
+```lua
 local is_soundset_playing = false
 local soundset_ref = "RNATV2_Sounds"
 local soundset_name =  "Alarm"
