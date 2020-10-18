@@ -4,7 +4,7 @@ Some frontend_soundset_refs need according audio banks loaded! Usually name of a
 
 ## Example of playing frontend soundsets:
 
-```
+```lua
 
 local is_frontend_sound_playing = false
 local frontend_soundset_ref = "Player_Core_Empty_Sounds"
