@@ -6,7 +6,7 @@ Some soundset_names have many variants. Natives PLAY_SOUND_FROM_POSITION and PLA
 
 ## Example of playing single sound from position or from entity):
 
-```
+```lua
 local is_soundset_playing = false
 local soundset_ref = "RNATV2_Sounds"
 local soundset_name =  "Alarm"
