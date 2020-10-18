@@ -29,20 +29,16 @@ end
 ```
 ## Function arguments:
 
-```
-	function play_ambient_speech_from_entity(entity_id,sound_ref_string,sound_name_string,speech_params_string,speech_line)
-			ENTITY_ID - ped id
-			SOUND_REF_STRING - audio bank dictionary
-			SOUND_NAME_STRING - name of sound from audio bank dictionary. Name should not contain last doubles. For example, audio bank dictionary 
-								"0132_G_M_M_UNICRIMINALS_01_BLACK_01" contains seven names from GIDDY_UP_ESCALATED_01 till GIDDY_UP_ESCALATED_07. But 
-								sound_name_string for all of them is "GIDDY_UP_ESCALATED".
-			SPEECH_PARAMS_STRING - speech params string from table. Some params dont work. Use "speech_params_force" if u dont care.
-			SPEECH_LINE - whats line to play (for GIDDY_UP_ESCALATED it is from 1 till 7). 0 - play random line.
+function play_ambient_speech_from_entity(entity_id,sound_ref_string,sound_name_string,speech_params_string,speech_line)
+ | 
+------------ | ---------------- 
+ENTITY_ID | ped id
+SOUND_REF_STRING | audio bank dictionary
+SOUND_NAME_STRING | name of sound from audio bank dictionary. Name should not contain last doubles. For example, audio bank dictionary "0132_G_M_M_UNICRIMINALS_01_BLACK_01" contains seven names from GIDDY_UP_ESCALATED_01 till GIDDY_UP_ESCALATED_07. But sound_name_string for all of them is "GIDDY_UP_ESCALATED".
+SPEECH_PARAMS_STRING | speech params string from table. Some params dont work. Use "speech_params_force" if u dont care
+SPEECH_LINE | whats line to play (for GIDDY_UP_ESCALATED it is from 1 till 7). 0 - play random line.
 
-
-	function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_name_string,speech_line)
-			same arguments and coords x,y,z for sound positon.
-```
+function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_name_string,speech_line) have same arguments and coords x,y,z for sound positon.
 
 
 ## Example of using audio banks for ambient speech (PLAY_AMBIENT_SPEECH1 and PLAY_AMBIENT_SPEECH_AT_COORDS):
@@ -50,10 +46,10 @@ end
 ```
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
------------------ 								DATAVIEW FUNCTIONS								-------------
------------------																				-------------
------------------ BIG THNKS to gottfriedleibniz for this DataView in LUA.						-------------
------------------ https://gist.github.com/gottfriedleibniz/8ff6e4f38f97dd43354a60f8494eedff		-------------
+----------------- 			DATAVIEW FUNCTIONS					-------------
+-----------------										-------------
+----------------- 		BIG THNKS to gottfriedleibniz for this DataView in LUA.		-------------
+----------------- https://gist.github.com/gottfriedleibniz/8ff6e4f38f97dd43354a60f8494eedff	-------------
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------
 
@@ -199,15 +195,15 @@ end
 				    end
 				end
 
--------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
------------------ 																 				-------------
------------------							END OF DATAVIEW FUNCTIONS							-------------
------------------ 																				-------------
--------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+----------------- 										------------
+-----------------		END OF DATAVIEW FUNCTIONS					------------
+----------------- 										------------
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
 
 
 local function play_ambient_speech_from_entity(entity_id,sound_ref_string,sound_name_string,speech_params_string,speech_line)
