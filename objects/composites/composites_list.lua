@@ -110,6 +110,7 @@ local composite_list = {
 	"COMPOSITE_LOOTABLE_ORCHID_DRAGONS_DEF",                                      -- 0x6083EBAD
 	"COMPOSITE_LOOTABLE_ORCHID_GHOST_DEF",                                        -- 0xE71B4B16
 	"COMPOSITE_LOOTABLE_ORCHID_LADY_NIGHT_DEF",                                   -- 0x528A26DA
+	"COMPOSITE_LOOTABLE_ORCHID_LADY_SLIPPER_DEF",                                 -- 0x1234C200
 	"COMPOSITE_LOOTABLE_ORCHID_MOCCASIN_DEF",                                     -- 0x40A3D479
 	"COMPOSITE_LOOTABLE_ORCHID_NIGHT_SCENTED_DEF",                                -- 0xD28A216B
 	"COMPOSITE_LOOTABLE_ORCHID_QUEENS_DEF",                                       -- 0xB33CCE55
@@ -145,7 +146,7 @@ local composite_list = {
 	"COMPOSITE_LOOTABLE_WISTERIA_DEF",                                            -- 0xD46AB32E
 	"COMPOSITE_LOOTABLE_YARROW_DEF",                                              -- 0x17C723C8
 	"COMPOSITE_LOOTABLE_YARROW_INTERACTABLE_DEF",                                 -- 0x09D36B58
-	"COMPOSITE_LOOTABLE_ORCHID_LADY_SLIPPER_DEF",                                 -- 0x1234C200
+
 
 	--  -- ???????	"LOOTABLE_COMPOSITE_ENTITY_DEF", 							  -- 0x875F0853 
 
