@@ -1,4 +1,4 @@
-##COMPOSITES
+## COMPOSITES
 
 Composites are scenarios for herb pickup.
 
