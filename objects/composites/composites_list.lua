@@ -55,22 +55,6 @@
 
 local composite_list = {
 
-	"COMPOSITE_LOOTABLE_ORCHID_LADY_SLIPPER_DEF",                                 -- 0x1234C200
-	"COMPOSITE_LOOTABLE_ORCHID_RAT_TAIL_DEF",                                     -- 0x2C2C6F30
-	"COMPOSITE_LOOTABLE_ORCHID_SPIDER_DEF",                                       -- 0x77CDB9AC
-	"COMPOSITE_LOOTABLE_ORCHID_DRAGONS_DEF",                                      -- 0x6083EBAD
-	"COMPOSITE_LOOTABLE_ORCHID_NIGHT_SCENTED_DEF",                                -- 0xD28A216B
-	"COMPOSITE_LOOTABLE_GATOR_EGG_3_DEF",                                         -- 0x2074D44F
-	"COMPOSITE_LOOTABLE_ORCHID_CIGAR_DEF",                                        -- 0x2729F09C
-	"COMPOSITE_LOOTABLE_ORCHID_LADY_NIGHT_DEF",                                   -- 0x528A26DA
-	"COMPOSITE_LOOTABLE_ORCHID_ACUNA_STAR_DEF",                                   -- 0xB67F7FEA
-	"COMPOSITE_LOOTABLE_ORCHID_CLAM_SHELL_DEF",                                   -- 0xC0304A5E
-	"COMPOSITE_LOOTABLE_ORCHID_SPARROWS_DEF",                                     -- 0xCCA325A8
-	"COMPOSITE_LOOTABLE_ORCHID_GHOST_DEF",                                        -- 0xE71B4B16
-	"COMPOSITE_LOOTABLE_GATOR_EGG_5_DEF",                                         -- 0xD7DBB4BC
-	"COMPOSITE_LOOTABLE_ORCHID_QUEENS_DEF",                                       -- 0xB33CCE55
-	"COMPOSITE_LOOTABLE_GATOR_EGG_4_DEF",                                         -- 0x5B2ACD7C
-	"COMPOSITE_LOOTABLE_ORCHID_MOCCASIN_DEF",                                     -- 0x40A3D479
 	"COMPOSITE_LOOTABLE_AGARITA_DEF",                                             -- 0x35835260
 	"COMPOSITE_LOOTABLE_ALASKAN_GINSENG_ROOT_DEF",                                -- 0x791CB060
 	"COMPOSITE_LOOTABLE_ALASKAN_GINSENG_ROOT_INTERACTABLE_DEF",                   -- 0x4BBD7A93
@@ -82,6 +66,7 @@ local composite_list = {
 	"COMPOSITE_LOOTABLE_BLACK_BERRY_DEF",                                         -- 0x218ACC70
 	"COMPOSITE_LOOTABLE_BLACK_CURRANT_DEF",                                       -- 0x8A7249DF
 	"COMPOSITE_LOOTABLE_BLACK_CURRANT_INTERACTABLE_DEF",                          -- 0x49CC6EF0
+	"COMPOSITE_LOOTABLE_BLOOD_FLOWER_DEF",                                        -- 0x1387B755
 	"COMPOSITE_LOOTABLE_BLOODFLOWER_DEF",                                         -- 0x0325F1BB
 	"COMPOSITE_LOOTABLE_BLOODFLOWER_INTERACTABLE_DEF",                            -- 0x970EA858
 	"COMPOSITE_LOOTABLE_BURDOCK_ROOT_DEF",                                        -- 0xB12DCCFC
@@ -96,12 +81,17 @@ local composite_list = {
 	"COMPOSITE_LOOTABLE_CREEKPLUM_DEF",                                           -- 0x694E84DD
 	"COMPOSITE_LOOTABLE_CREEPING_THYME_DEF",                                      -- 0x58F87EA3
 	"COMPOSITE_LOOTABLE_CREEPING_THYME_INTERACTABLE_DEF",                         -- 0x833B2760
+	"COMPOSITE_LOOTABLE_CROWS_GARLIC_DEF",                                        -- 0x44139EB1
+	"COMPOSITE_LOOTABLE_CROWS_GARLIC_INTERACTABLE_DEF",                           -- 0x1425F481
 	"COMPOSITE_LOOTABLE_DESERT_SAGE_DEF",                                         -- 0x934CDF53
 	"COMPOSITE_LOOTABLE_DESERT_SAGE_INTERACTABLE_DEF",                            -- 0xBA236245
 	"COMPOSITE_LOOTABLE_DUCK_EGG_5_DEF",                                          -- 0x1B14741F
 	"COMPOSITE_LOOTABLE_ENGLISH_MACE_DEF",                                        -- 0x131DAC12
 	"COMPOSITE_LOOTABLE_ENGLISH_MACE_INTERACTABLE_DEF",                           -- 0xDDC5EC05
 	"COMPOSITE_LOOTABLE_EVERGREEN_HUCKLEBERRY_DEF",                               -- 0xCFA5E0D2
+	"COMPOSITE_LOOTABLE_GATOR_EGG_3_DEF",                                         -- 0x2074D44F
+	"COMPOSITE_LOOTABLE_GATOR_EGG_4_DEF",                                         -- 0x5B2ACD7C
+	"COMPOSITE_LOOTABLE_GATOR_EGG_5_DEF",                                         -- 0xD7DBB4BC
 	"COMPOSITE_LOOTABLE_GOLDEN_CURRANT_DEF",                                      -- 0xC8B01F47
 	"COMPOSITE_LOOTABLE_GOLDEN_CURRANT_INTERACTABLE_DEF",                         -- 0xE05690E4
 	"COMPOSITE_LOOTABLE_GOOSE_EGG_4_DEF",                                         -- 0xA9F3EBD1
@@ -114,6 +104,18 @@ local composite_list = {
 	"COMPOSITE_LOOTABLE_MILKWEED_INTERACTABLE_DEF",                               -- 0xC94AB682
 	"COMPOSITE_LOOTABLE_OLEANDER_SAGE_DEF",                                       -- 0xAB009D3B
 	"COMPOSITE_LOOTABLE_OLEANDER_SAGE_INTERACTABLE_DEF",                          -- 0xBCC134F0
+	"COMPOSITE_LOOTABLE_ORCHID_ACUNA_STAR_DEF",                                   -- 0xB67F7FEA
+	"COMPOSITE_LOOTABLE_ORCHID_CIGAR_DEF",                                        -- 0x2729F09C
+	"COMPOSITE_LOOTABLE_ORCHID_CLAM_SHELL_DEF",                                   -- 0xC0304A5E
+	"COMPOSITE_LOOTABLE_ORCHID_DRAGONS_DEF",                                      -- 0x6083EBAD
+	"COMPOSITE_LOOTABLE_ORCHID_GHOST_DEF",                                        -- 0xE71B4B16
+	"COMPOSITE_LOOTABLE_ORCHID_LADY_NIGHT_DEF",                                   -- 0x528A26DA
+	"COMPOSITE_LOOTABLE_ORCHID_MOCCASIN_DEF",                                     -- 0x40A3D479
+	"COMPOSITE_LOOTABLE_ORCHID_NIGHT_SCENTED_DEF",                                -- 0xD28A216B
+	"COMPOSITE_LOOTABLE_ORCHID_QUEENS_DEF",                                       -- 0xB33CCE55
+	"COMPOSITE_LOOTABLE_ORCHID_RAT_TAIL_DEF",                                     -- 0x2C2C6F30
+	"COMPOSITE_LOOTABLE_ORCHID_SPARROWS_DEF",                                     -- 0xCCA325A8
+	"COMPOSITE_LOOTABLE_ORCHID_SPIDER_DEF",                                       -- 0x77CDB9AC
 	"COMPOSITE_LOOTABLE_ORCHID_VANILLA_DEF",                                      -- 0x40DF2FB0
 	"COMPOSITE_LOOTABLE_ORCHID_VANILLA_INTERACTABLE_DEF",                         -- 0x3AF0E5A7
 	"COMPOSITE_LOOTABLE_OREGANO_DEF",                                             -- 0x52902D4F
@@ -125,6 +127,7 @@ local composite_list = {
 	"COMPOSITE_LOOTABLE_RED_RASPBERRY_DEF",                                       -- 0x1B68A274
 	"COMPOSITE_LOOTABLE_RED_SAGE_DEF",                                            -- 0xD3D1E587
 	"COMPOSITE_LOOTABLE_RED_SAGE_INTERACTABLE_DEF",                               -- 0x33C35ED9
+	"COMPOSITE_LOOTABLE_SALTBUSH_DEF",                                            -- 0xC5333EEE
 	"COMPOSITE_LOOTABLE_TEXAS_BONNET_DEF",                                        -- 0x86A0FBB0
 	"COMPOSITE_LOOTABLE_TEXAS_BONNET_INTERACTABLE_DEF",                           -- 0x9A009D1B
 	"COMPOSITE_LOOTABLE_VIOLET_SNOWDROP_DEF",                                     -- 0x1F3E2AA9
@@ -142,10 +145,7 @@ local composite_list = {
 	"COMPOSITE_LOOTABLE_WISTERIA_DEF",                                            -- 0xD46AB32E
 	"COMPOSITE_LOOTABLE_YARROW_DEF",                                              -- 0x17C723C8
 	"COMPOSITE_LOOTABLE_YARROW_INTERACTABLE_DEF",                                 -- 0x09D36B58
-	"COMPOSITE_LOOTABLE_BLOOD_FLOWER_DEF",                                        -- 0x1387B755
-	"COMPOSITE_LOOTABLE_CROWS_GARLIC_DEF",                                        -- 0x44139EB1
-	"COMPOSITE_LOOTABLE_CROWS_GARLIC_INTERACTABLE_DEF",                           -- 0x1425F481
-	"COMPOSITE_LOOTABLE_SALTBUSH_DEF",                                            -- 0xC5333EEE
+	"COMPOSITE_LOOTABLE_ORCHID_LADY_SLIPPER_DEF",                                 -- 0x1234C200
 
 	--  -- ???????	"LOOTABLE_COMPOSITE_ENTITY_DEF", 							  -- 0x875F0853 
 
