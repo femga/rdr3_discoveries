@@ -677,8 +677,7 @@ local peds_list = {
 	{0x892944C5,"cs_mp_bountyhunter",1,},												
 	{0x9F7769F3,"cs_mp_camp_cook",3,},												
 	{0xEADDA26C,"cs_mp_cliff",1,},												
-	{0x1DD24709,"cs_mp_cripps",25,},												
-	{0x1DD24709,"cs_mp_cripps_b",1,},												
+	{0x1DD24709,"cs_mp_cripps",25,},																							
 	{0x2CDA4B15,"cs_mp_grace_lancing",1,},												
 	{0x893E6E25,"cs_mp_hans",1,},												
 	{0xDAB77DF1,"cs_mp_henchman",3,},												
@@ -1855,5 +1854,67 @@ local peds_list = {
 	{0x7AA6DA17,"mp_u_m_m_nat_rancher_02",1,},
 	{0x02A89468,"mp_u_m_m_nat_townfolk_01",1,},
 	{0xB9629EFC,"mp_u_m_m_strwelcomecenter_02",1,},
-										
+	
+
+
+
+
+
+    -----------------------------------------------------------------------------------------------------------------------
+    ------------------------------------  Peds from game version 1311.12 till 1355.18   -----------------------------------
+    -----------------------------------------------------------------------------------------------------------------------
+
+
+	{0x52AC7C75,"a_c_horse_missourifoxtrotter_blacktovero",1,},
+	{0x1E31107B,"a_c_horse_missourifoxtrotter_blueroan",1,},
+	{0x797EDE19,"a_c_horse_missourifoxtrotter_buckskinbrindle",1,},
+	{0x5F5BC124,"a_c_horse_missourifoxtrotter_dapplegrey",1,},
+	{0x707C8EBE,"a_c_horse_mustang_blackovero",2,},
+	{0x62121AEC,"a_c_horse_mustang_buckskin",2,},
+	{0x44D40E4A,"a_c_horse_mustang_chestnuttovero",2,},
+	{0x0471D5D2,"a_c_horse_mustang_reddunovero",2,},
+	{0x88828382,"a_c_horse_turkoman_black",1,},
+	{0x29AD5E2F,"a_c_horse_turkoman_chestnut",1,},
+	{0x5A4153F2,"a_c_horse_turkoman_grey",1,},
+	{0x2A0483C6,"a_c_horse_turkoman_perlino",1,},
+	{0xF7831C85,"mp_fm_bounty_caged_males_01",2,},
+	{0x3F85E344,"mp_fm_bounty_ct_corpses_01",2,},
+	{0x85885C97,"mp_fm_bounty_hideout_males_01",1,},
+	{0x696D66E4,"mp_fm_bounty_horde_males_01",5,},
+	{0x813F5ED3,"mp_fm_bounty_infiltration_males_01",2,},
+	{0xF6458169,"MP_FM_BOUNTYTARGET_MALES_DLC008_01",53,},
+	{0xC1FD6394,"mp_fm_knownbounty_guards_01",1,},
+	{0xA97E2D65,"mp_fm_knownbounty_informants_males_01",7,},
+	{0x32C42256,"mp_fm_multitrack_victims_males_01",2,},
+	{0x4957CFEF,"mp_fm_stakeout_corpses_males_01",2,},
+	{0x24497ABF,"mp_fm_stakeout_poker_males_01",2,},
+	{0xA5F85792,"mp_fm_stakeout_target_males_01",6,},
+	{0x1E14106E,"mp_fm_track_prospector_01",1,},
+	{0xC8A1EC4C,"mp_fm_track_sd_lawman_01",1,},
+	{0xAA6CE21D,"mp_fm_track_targets_males_01",3,},
+	{0x83CA7BB6,"MP_G_F_M_CULTGUARDS_01",16,},
+	{0xC882A3EE,"mp_g_f_m_cultmembers_01",13,},
+	{0xD0DFAE8C,"MP_G_M_M_CULTGUARDS_01",27,},
+	{0xAE40CCCC,"mp_g_m_m_cultmembers_01",22,},
+	{0x8C5F7BCC,"MP_U_F_M_CULTPRIEST_01",1,},
+	{0x5A5EA2DF,"MP_U_F_M_LEGENDARYBOUNTY_03",5,},
+	{0xBF0B11F0,"MP_U_M_M_CULTPRIEST_01",3,},
+	{0x9A9164E1,"MP_U_M_M_LEGENDARYBOUNTY_08",3,},
+	{0x872A3E13,"MP_U_M_M_LEGENDARYBOUNTY_09",1,},
+	{0x9ACE7910,"0x9ACE7910",5,},	-- unknown yet hashnames
+	{0xBA59A221,"0xBA59A221",1,},	-- unknown yet hashnames
+	{0xD9162F29,"0xD9162F29",1,},	-- unknown yet hashnames
+	{0x96CEA293,"0x96CEA293",3,},	-- unknown yet hashnames
+	{0xC161E8A4,"0xC161E8A4",1,},	-- unknown yet hashnames
+	{0xA8BEA305,"0xA8BEA305",7,},	-- unknown yet hashnames
+	{0x11952F60,"0x11952F60",1,},	-- unknown yet hashnames
+	{0xEDF51277,"0xEDF51277",7,},	-- unknown yet hashnames
+	{0x7F1377B7,"0x7F1377B7",2,},	-- unknown yet hashnames
+	{0xF99F0909,"0xF99F0909",1,},	-- unknown yet hashnames
+	{0x76D0DAE4,"0x76D0DAE4",1,},	-- unknown yet hashnames
+	{0x2D22E67B,"0x2D22E67B",1,},	-- unknown yet hashnames
+	{0x878040F4,"0x878040F4",21,},	-- unknown yet hashnames
+	{0xFFE38BFD,"0xFFE38BFD",1,},	-- unknown yet hashnames
+	{0xE733264E,"0xE733264E",6,},	-- unknown yet hashnames
+	{0x9C1EBED9,"0x9C1EBED9",4,},	-- unknown yet hashnames
 }
