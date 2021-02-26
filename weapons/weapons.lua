@@ -163,3 +163,4 @@ local weapons = {
     {`weapon_thrown_bolas_intertwined`,`group_thrown`,},
 
 }
+
