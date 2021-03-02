@@ -37,6 +37,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 164 | prevent ped strong hit with knife ?? | cancel this config |  | false
 167 | mount last used horse (dont work, if ped didnt use any horse yet) | cancel this task, but only when mounting is fully completed |  | false
 192 | NPCs cant attack ped | cancel this config |  | false
+207 | set horse ped's feet on fire | cancel this config | | false
 218 | prevent pick up thrown weapon (arrows, hatchets etc) | cancel this config |  | false
 249 | prevent using weapon wheel | cancel this config |  | false
 252 |  |  |  | **true**
@@ -56,6 +57,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 332 |  |  | is ped trying to reach scenario point ?? | **true**
 334 | prevent quick holster and unholster (with tab button) | cancel this config |  | false
 335 | prevent holster weapon (with tab button). Dont effect to "twirl" holster (with double tab) | cancel this config |  | false
+336 | set injured walk | cancel this config | | false
 352 | together with 533: after few steps of stairs (up or down), ped turns back (dont effect vertical ladders) | cancel this config |  | false
 378 |  |  |  | **true**
 380 |  |  |  | **true**
