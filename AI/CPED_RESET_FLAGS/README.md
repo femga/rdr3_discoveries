@@ -26,7 +26,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 ----------- | ----------------- | ---------------------
 0 | | is ped in first person view, staying or slowly moving or crouching ??
 1	| | is ped ascending ??
-2	| set prevent ped jumping | 
+2	| Jumping disabled this frame... | 
 6	| set ped stamina infinite | 
 8	| set ped non stop shooting | 
 10	| set ped movement as first person (strafe, backward move) | 
@@ -38,6 +38,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 88	|  | NPC grabbed player ped ??
 93	| unknown yet, but using weapons breaks movement | 
 100 |  | is ped running melee combat action
+119 | Revive instead of bleeding out this frame... | 
 124 |  | is ped shuffling vehicle seat
 139	| set prevent ped stamina refill | is trying melee attack ??
 155 |  | is ped seeking cover position
@@ -47,6 +48,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 181 |  | is ped using scenario with musical intrument ??
 185	| set NPCs don't antagonize ped (but attack if provoked by his attack) 
 196	| set prevent pick up objects,searching drawers and saddlebags, entering horses and vehicles, prevent camera changing | 
+200 | Eagle Eye is allowed in vehicles this frame... | 
 203	| set prevent drop carriable entities | 
 204 | set ped can run into steep slope | 
 206 |  | is ped jumping/in the air??
@@ -55,7 +57,8 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 225	| set any regdoll infinite | is ped in ragdoll
 236 |  | is ped hitching horse
 239	| set prevent aim (with right mouse button) | 
-248	| set invert look controls | 
+248	| Confusion is active this frame... | 
+277	| Combat Diving disabled this frame... | 
 293	| set hide radial reticle | 
 311	|  | is aiming 
 312	|  | is attacking
