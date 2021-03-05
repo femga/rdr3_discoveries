@@ -150,236 +150,239 @@ local events = {
 	-1155600422	,	-- 0xBB1EEFDA	-- EVENT_SEEN_TERRIFIED_PED																						
 	-2031131186	,	-- 0x86EF65CE	-- EVENT_MOUNT_DAMAGED_BY_PLAYER																						
 	1501535693	,	-- 0x597F9DCD	-- EVENT_NEARBY_AMBIENT_THREAT	
+	-2129179673	,	-- 0x81174BE7	-- EVENT_CALM_HORSE																					
+	-1961481354	,	-- 0x8B162B76	-- EVENT_CALL_FOR_COVER																					
+	2012933482	,	-- 0x77FAED6A	-- EVENT_CAR_UNDRIVEABLE																					
+	182250203	,	-- 0x0ADCEADB	-- EVENT_CLIMB_LADDER_ON_ROUTE																			
+	1586716140	,	-- 0x5E935DEC	-- EVENT_CLIMB_NAVMESH_ON_ROUTE																				
+	413931470	,	-- 0x18AC17CE	-- EVENT_COMBAT_TAUNT																				
+	1113682948	,	-- 0x42617404	-- EVENT_ENTITY_DISARMED																					
+	1794914733	,	-- 0x6AFC39AD	-- EVENT_ENTITY_HOGTIED																			
+	2045969979	,	-- 0x79F3063B	-- EVENT_FLUSH_TASKS																			
+	-439157431	,	-- 0xE5D2FD49	-- EVENT_CLEAR_PED_TASKS																				
+	1165534493	,	-- 0x4578A51D	-- EVENT_HEADSHOT_BLOCKED_BY_HAT																			
+	353377915	,	-- 0x15101E7B	-- EVENT_HOGTIED_ENTITY_PICKED_UP																					
+	-240786091	,	-- 0xF1A5E555	-- EVENT_HITCHING_POST																				
+	-1651585854	,	-- 0x9D8ECCC2	-- EVENT_HITCH_ANIMAL																				
+	-2122443649	,	-- 0x817E147F	-- EVENT_CATCH_ITEM																				
+	769834622	,	-- 0x2DE2BE7E	-- EVENT_LOCKED_DOOR																			
+	936374126	,	-- 0x37CFEF6E	-- EVENT_PEER_WINDOW																				
+	1197193638	,	-- 0x475BB9A6	-- EVENT_PED_TO_CHASE																				
+	-1288743481	,	-- 0xB32F55C7	-- EVENT_PED_TO_FLEE																						
+	-1538469261	,	-- 0xA44CD273	-- EVENT_PERSCHAR_PED_SPAWNED																				
+	-687266558	,	-- 0xD7092502	-- EVENT_PICKUP_CARRIABLE																				
+	1082572570	,	-- 0x4086BF1A	-- EVENT_PLACE_CARRIABLE_ONTO_PARENT																				
+	-1241852893	,	-- 0xB5FAD423	-- EVENT_CARRIABLE_VEHICLE_STOW_START																				
+	867155253	,	-- 0x33AFBD35	-- EVENT_CARRIABLE_VEHICLE_STOW_COMPLETE																			
+	1811873798	,	-- 0x6BFF0006	-- EVENT_PLAYER_ANTAGONIZED_PED																			
+	-1816722641	,	-- 0x93B7032F	-- EVENT_PLAYER_ESCALATED_PED																					
+	313219550	,	-- 0x12AB59DE	-- EVENT_PLAYER_GREETED_PED																			
+	-178091376	,	-- 0xF5628A90	-- EVENT_PLAYER_COLLECTED_AMBIENT_PICKUP																		
+	-1312424871	,	-- 0xB1C5FC59	-- EVENT_PLAYER_STRIPPED_WEAPON																				
+	-369170747	,	-- 0xE9FEE6C5	-- EVENT_PLAYER_HAT_EQUIPPED																	
+	-1286831256	,	-- 0xB34C8368	-- EVENT_PLAYER_HAT_KNOCKED_OFF																					
+	498393689	,	-- 0x1DB4E259	-- EVENT_PLAYER_HAT_REMOVED_AT_SHOP																	
+	2030961287	,	-- 0x790E0287	-- EVENT_PED_HAT_KNOCKED_OFF																				
+	-84591983	,	-- 0xFAF53A91	-- EVENT_PLAYER_LOCK_ON_TARGET																		
+	1176209503	,	-- 0x461B885F	-- EVENT_PLAYER_LOOK_FOCUS																		
+	-1682387274	,	-- 0x9BB8CEB6	-- EVENT_PLAYER_MOUNT_WILD_HORSE																			
+	415022413	,	-- 0x18BCBD4D	-- EVENT_PLAYER_SIM_UPDATE																		
+	832287042	,	-- 0x319BB142	-- EVENT_PLAYER_ROBBED_PED																			
+	-1024103845	,	-- 0xC2F56A5B	-- EVENT_REACTION_COMBAT_VICTORY																			
+	-378297983	,	-- 0xE973A181	-- EVENT_REACTION_INVESTIGATE_DEAD_PED																				
+	671637744	,	-- 0x280860F0	-- EVENT_REACTION_INVESTIGATE_THREAT																	
+	1198436399	,	-- 0x476EB02F	-- EVENT_SHOUT_BLOCKING_LOS																	
+	-751866762	,	-- 0xD32F6C76	-- EVENT_STATIC_COUNT_REACHED_MAX																	
+	-2052708993	,	-- 0x85A6257F	-- EVENT_SWITCH_2_NM_TASK																			
+	2034746601	,	-- 0x7947C4E9	-- EVENT_SCENARIO_FORCE_ACTION																			
+	-818205375	,	-- 0xCF3B2D41	-- EVENT_STAT_VALUE_CHANGED																
+	-60262143	,	-- 0xFC687901	-- EVENT_TRANSITION_TO_HOGTIED																
+	526946626	,	-- 0x1F689142	-- EVENT_GET_UP																
+	-1511724297	,	-- 0xA5E4EAF7	-- EVENT_LOOT																						
+	1376140891	,	-- 0x52063E5B	-- EVENT_LOOT_COMPLETE																			
+	-1509407906	,	-- 0xA608435E	-- EVENT_LOOT_VALIDATION_FAIL																						
+	1640116056	,	-- 0x61C22F58	-- EVENT_LOOT_PLANT_START																
+	-968272321	,	-- 0xC649563F	-- EVENT_MOUNT_REACTION																
+	-462231716	,	-- 0xE472E75C	-- EVENT_SADDLE_TRANSFER																
+	1208357138	,	-- 0x48061112	-- EVENT_CARRIABLE_UPDATE_CARRY_STATE																	
+	1081092949	,	-- 0x40702B55	-- EVENT_INVENTORY_ITEM_PICKED_UP														
+	1505348054	,	-- 0x59B9C9D6	-- EVENT_INVENTORY_ITEM_REMOVED														
+	1417095237	,	-- 0x54772845	-- EVENT_BUCKED_OFF																					
+	1638298852	,	-- 0x61A674E4	-- EVENT_MOUNT_OVERSPURRED																			
+	71122427	,	-- 0x043D3DFB	-- EVENT_START_CONVERSATION																
+	1652530845	,	-- 0x627F9E9D	-- EVENT_STOP_CONVERSATION																
+	-569301261	,	-- 0xDE1126F3	-- EVENT_MISS_INTENDED_TARGET																				
+	-1246119244	,	-- 0xB5B9BAB4	-- EVENT_PED_ANIMAL_INTERACTION																				
+	-1985279805	,	-- 0x89AB08C3	-- EVENT_CALM_PED																					
+	1327216456	,	-- 0x4F1BB748	-- EVENT_PED_WHISTLE															
+	1473676746	,	-- 0x57D685CA	-- EVENT_PLAYER_DEBUG_TELEPORTED															
+	218595333	,	-- 0x0D078005	-- EVENT_HORSE_BROKEN																
+	-895552461	,	-- 0xCA9EF433	-- EVENT_PICKUP_SPAWNED																	
+	-1936963085	,	-- 0x8C8C49F3	-- EVENT_DEBUG_SETUP_CUTSCENE_WORLD_STATE																		
+	-1373728085	,	-- 0xAE1E92AB	-- EVENT_WAIT_FOR_INTERACTION																	
+	-617453104	,	-- 0xDB3269D0	-- EVENT_CHALLENGE_REWARD																					
+	-2091944374	,	-- 0x834F764A	-- EVENT_CALCULATE_LOOT																	
+	-1730772208	,	-- 0x98D68310	-- EVENT_OBJECT_INTERACTION															
+	1352063587	,	-- 0x5096DA63	-- EVENT_CONTAINER_INTERACTION																				
+	2099179610	,	-- 0x7D1EF05A	-- EVENT_ITEM_PROMPT_INFO_REQUEST																	
+	-582361627	,	-- 0xDD49DDE5	-- EVENT_CARRIABLE_PROMPT_INFO_REQUEST														
+	1553659161	,	-- 0x5C9AF519	-- EVENT_REVIVE_ENTITY														
+	1784289253	,	-- 0x6A5A17E5	-- EVENT_TRIGGERED_ANIMAL_WRITHE																		
+	1655597605	,	-- 0x62AE6A25	-- EVENT_PLAYER_HORSE_AGITATED_BY_ANIMAL								
+	1351025667	,	-- 0x50870403	-- EVENT_CHALLENGE_GOAL_COMPLETE															
+	1669410864	,	-- 0x63813030	-- EVENT_CHALLENGE_GOAL_UPDATE														
+	-1482146560	,	-- 0xA7A83D00	-- EVENT_NETWORK_PLAYER_JOIN_SESSION																			
+	1697477512	,	-- 0x652D7388	-- EVENT_NETWORK_PLAYER_LEFT_SESSION															
+	-2001102517	,	-- 0x88B9994B	-- EVENT_NETWORK_PLAYER_JOIN_SCRIPT															
+	-437497832	,	-- 0xE5EC5018	-- EVENT_NETWORK_PLAYER_LEFT_SCRIPT															
+	-857756425	,	-- 0xCCDFACF7	-- EVENT_NETWORK_SESSION_MERGE_START																
+	-2119801478	,	-- 0x81A6657A	-- EVENT_NETWORK_SESSION_MERGE_END					
+	1434205464	,	-- 0x557C3D18	-- EVENT_NETWORK_PLAYER_SPAWN														
+	-454144443	,	-- 0xE4EE4E45	-- EVENT_NETWORK_PLAYER_COLLECTED_PICKUP													
+	1274067014	,	-- 0x4BF0B846	-- EVENT_NETWORK_PLAYER_COLLECTED_PORTABLE_PICKUP														
+	-843924932	,	-- 0xCDB2BA3C	-- EVENT_NETWORK_PLAYER_DROPPED_PORTABLE_PICKUP														
+	1121131740	,	-- 0x42D31CDC	-- EVENT_NETWORK_EXTENDED_INVITE														
+	1793200955	,	-- 0x6AE2133B	-- EVENT_NETWORK_PED_DISARMED													
+	1342634267	,	-- 0x5006F91B	-- EVENT_NETWORK_PED_HAT_SHOT_OFF													
+	1626145032	,	-- 0x60ED0108	-- EVENT_NETWORK_PLAYER_MISSED_SHOT														
+	1355399116	,	-- 0x50C9BFCC	-- EVENT_NETWORK_PLAYER_SIGNED_OFFLINE																			
+	-1373301352	,	-- 0xAE251598	-- EVENT_NETWORK_PLAYER_SIGNED_ONLINE															
+	163683216	,	-- 0x09C19B90	-- EVENT_NETWORK_SIGN_IN_STATE_CHANGED													
+	239947537	,	-- 0x0E4D4F11	-- EVENT_NETWORK_SIGN_IN_START_NEW_GAME														
+	-1688530399	,	-- 0x9B5B1221	-- EVENT_NETWORK_NETWORK_ROS_CHANGED															
+	-526667468	,	-- 0xE09BB134	-- EVENT_NETWORK_BAIL_DECISION_PENDING													
+	701022886	,	-- 0x29C8C2A6	-- EVENT_NETWORK_BAIL_DECISION_MADE									
+	-467733578	,	-- 0xE41EF3B6	-- EVENT_NETWORK_HOST_MIGRATION														
+	995882143	,	-- 0x3B5BF49F	-- EVENT_NETWORK_IS_VOLUME_EMPTY_RESULT													
+	557673123	,	-- 0x213D6AA3	-- EVENT_NETWORK_CHEAT_TRIGGERED													
+	-1315570756	,	-- 0xB195FBBC	-- EVENT_NETWORK_DAMAGE_ENTITY															
+	676208328	,	-- 0x284E1EC8	-- EVENT_NETWORK_INCAPACITATED_ENTITY													
+	-111015184	,	-- 0xF9620AF0	-- EVENT_NETWORK_KNOCKEDOUT_ENTITY														
+	-1171710795	,	-- 0xBA291CB5	-- EVENT_NETWORK_REVIVED_ENTITY														
+	2143094135	,	-- 0x7FBD0577	-- EVENT_NETWORK_PLAYER_ARREST													
+	1660856426	,	-- 0x62FEA86A	-- EVENT_NETWORK_TIMED_EXPLOSION														
+	1373658008	,	-- 0x51E05B98	-- EVENT_NETWORK_PRIMARY_CREW_CHANGED													
+	-1315453179	,	-- 0xB197C705	-- EVENT_NETWORK_CREW_JOINED														
+	1194448728	,	-- 0x4731D758	-- EVENT_NETWORK_CREW_LEFT															
+	1028782110	,	-- 0x3D51F81E	-- EVENT_NETWORK_CREW_INVITE_RECEIVED					
+	1234888675	,	-- 0x499AE7E3	-- EVENT_NETWORK_CREW_CREATION													
+	2114586158	,	-- 0x7E0A062E	-- EVENT_NETWORK_CREW_DISBANDED														
+	1068922597	,	-- 0x3FB676E5	-- EVENT_VOICE_SESSION_STARTED														
+	-231390325	,	-- 0xF235438B	-- EVENT_VOICE_SESSION_ENDED														
+	295704064	,	-- 0x11A01600	-- EVENT_VOICE_CONNECTION_REQUESTED													
+	980298223	,	-- 0x3A6E29EF	-- EVENT_VOICE_CONNECTION_RESPONSE													
+	-1905067041	,	-- 0x8E72FBDF	-- EVENT_VOICE_CONNECTION_TERMINATED														
+	904763044	,	-- 0x35ED96A4	-- EVENT_CLOUD_FILE_RESPONSE															
+	1385704366	,	-- 0x52982BAE	-- EVENT_NETWORK_PICKUP_RESPAWNED													
+	1415355908	,	-- 0x545C9E04	-- EVENT_NETWORK_PRESENCE_STAT_UPDATE													
+	2108920557	,	-- 0x7DB392ED	-- EVENT_NETWORK_INBOX_MSGS_RCVD														
+	-1485628607	,	-- 0xA7731B41	-- EVENT_NETWORK_ATTEMPT_HOST_MIGRATION														
+	545528824	,	-- 0x20841BF8	-- EVENT_NETWORK_INCREMENT_STAT														
+	1658389497	,	-- 0x62D903F9	-- EVENT_NETWORK_SESSION_EVENT														
+	753021595	,	-- 0x2CE2329B	-- EVENT_NETWORK_CREW_KICKED													
+	-725272239	,	-- 0xD4C53951	-- EVENT_NETWORK_ROCKSTAR_INVITE_RECEIVED													
+	543140406	,	-- 0x205FAA36	-- EVENT_NETWORK_ROCKSTAR_INVITE_REMOVED														
+	-2095977185	,	-- 0x8311ED1F	-- EVENT_NETWORK_PLATFORM_INVITE_ACCEPTED															
+	904577075	,	-- 0x35EAC033	-- EVENT_NETWORK_INVITE_RESULT														
+	809652668	,	-- 0x304251BC	-- EVENT_NETWORK_INVITE_RESPONSE														
+	516249386	,	-- 0x1EC5572A	-- EVENT_NETWORK_JOIN_REQUEST_TIMED_OUT														
+	1860341470	,	-- 0x6EE28EDE	-- EVENT_NETWORK_INVITE_UNAVAILABLE															
+	1827342969	,	-- 0x6CEB0A79	-- EVENT_NETWORK_CASH_TRANSACTION_LOG														
+	-1308368394	,	-- 0xB203E1F6	-- EVENT_NETWORK_CREW_RANK_CHANGE															
+	1832265142	,	-- 0x6D3625B6	-- EVENT_NETWORK_VEHICLE_UNDRIVABLE														
+	1890598297	,	-- 0x70B03D99	-- EVENT_NETWORK_PRESENCE_TRIGGER													
+	-1002640900	,	-- 0xC43CE9FC	-- EVENT_NETWORK_PRESENCE_EMAIL															
+	-1325700282	,	-- 0xB0FB6B46	-- EVENT_NETWORK_SPECTATE_LOCAL															
+	-684883982	,	-- 0xD72D7FF2	-- EVENT_NETWORK_CLOUD_EVENT												
+	1731288223	,	-- 0x67315C9F	-- EVENT_NETWORK_CASHINVENTORY_TRANSACTION													
+	446963576	,	-- 0x1AA41F78	-- EVENT_NETWORK_CASHINVENTORY_DELETE_CHAR													
+	-1500256914	,	-- 0xA693E56E	-- EVENT_NETWORK_PERMISSION_CHECK_RESULT														
+	587071841	,	-- 0x22FE0161	-- EVENT_NETWORK_APP_LAUNCHED														
+	1027163239	,	-- 0x3D394467	-- EVENT_NETWORK_ONLINE_PERMISSIONS_UPDATED															
+	-1832939826	,	-- 0x92BF8ECE	-- EVENT_NETWORK_SYSTEM_SERVICE_EVENT															
+	1629782592	,	-- 0x61248240	-- EVENT_NETWORK_REQUEST_DELAY														
+	586277309	,	-- 0x22F1E1BD	-- EVENT_NETWORK_SOCIAL_CLUB_ACCOUNT_LINKED													
+	-880791236	,	-- 0xCB80313C	-- EVENT_NETWORK_SCADMIN_PLAYER_UPDATED													
+	-642309294	,	-- 0xD9B72352	-- EVENT_NETWORK_SCADMIN_RECEIVED_CASH															
+	-2100213574	,	-- 0x82D148BA	-- EVENT_NETWORK_CREW_INVITE_REQUEST_RECEIVED														
+	-97516606	,	-- 0xFA3003C2	-- EVENT_NETWORK_LASSO_ATTACH													
+	-2117667982	,	-- 0x81C6F372	-- EVENT_NETWORK_LASSO_DETACH														
+	-1065733433	,	-- 0xC07A32C7	-- EVENT_NETWORK_HOGTIE_BEGIN																
+	-919500771	,	-- 0xC931881D	-- EVENT_NETWORK_HOGTIE_END															
+	-1471622011	,	-- 0xA848D485	-- EVENT_NETWORK_DRAG_PED															
+	1727082765	,	-- 0x66F1310D	-- EVENT_NETWORK_DROP_PED																			
+	-648745775	,	-- 0xD954ECD1	-- EVENT_NETWORK_GANG														
+	678947301	,	-- 0x2877E9E5	-- EVENT_NETWORK_GANG_WAYPOINT_CHANGED															
+	2013393302	,	-- 0x7801F196	-- EVENT_NETWORK_BULLET_IMPACTED_MULTIPLE_PEDS													
+	-885048077	,	-- 0xCB3F3CF3	-- EVENT_NETWORK_VEHICLE_LOOTED													
+	-1126217932	,	-- 0xBCDF4734	-- EVENT_NETWORK_MINIGAME_REQUEST_COMPLETE																
+	1694142010	,	-- 0x64FA8E3A	-- EVENT_NETWORK_BOUNTY_REQUEST_COMPLETE														
+	212329117	,	-- 0x0CA7E29D	-- EVENT_NETWORK_FRIENDS_LIST_UPDATED														
+	-716406075	,	-- 0xD54C82C5	-- EVENT_NETWORK_FRIEND_STATUS_UPDATED													
+	-634062504	,	-- 0xDA34F958	-- EVENT_NETWORK_SC_FEED_POST_NOTIFICATION														
+	453501714	,	-- 0x1B07E312	-- EVENT_NETWORK_HUB_UPDATE													
+	1559647390	,	-- 0x5CF6549E	-- EVENT_NETWORK_PICKUP_COLLECTION_FAILED														
+	1725992066	,	-- 0x66E08C82	-- EVENT_NETWORK_DEBUG_TOGGLE_MP													
+	-2036121834	,	-- 0x86A33F16	-- EVENT_NETWORK_PROJECTILE_ATTACHED																	
+	2058130545	,	-- 0x7AAC9471	-- EVENT_NETWORK_PROJECTILE_NO_DAMAGE_IMPACT													
+	-231935285	,	-- 0xF22CF2CB	-- EVENT_NETWORK_POSSE_CREATED													
+	1268264445	,	-- 0x4B982DFD	-- EVENT_NETWORK_POSSE_JOINED															
+	-308071988	,	-- 0xEDA331CC	-- EVENT_NETWORK_POSSE_LEFT															
+	-421353837	,	-- 0xE6E2A693	-- EVENT_NETWORK_POSSE_DISBANDED														
+	2058084749	,	-- 0x7AABE18D	-- EVENT_NETWORK_POSSE_KICKED														
+	-1749240836	,	-- 0x97BCB3FC	-- EVENT_NETWORK_POSSE_DATA_OR_MEMBERSHIP_CHANGED																
+	415576404	,	-- 0x18C53154	-- EVENT_NETWORK_POSSE_DATA_CHANGED													
+	1830788491	,	-- 0x6D1F9D8B	-- EVENT_NETWORK_POSSE_MEMBER_JOINED														
+	1047667690	,	-- 0x3E7223EA	-- EVENT_NETWORK_POSSE_MEMBER_LEFT													
+	-1692828063	,	-- 0x9B197E61	-- EVENT_NETWORK_POSSE_MEMBER_DISBANDED															
+	176872144	,	-- 0x0A8ADAD0	-- EVENT_NETWORK_POSSE_MEMBER_KICKED														
+	-1578459229	,	-- 0xA1EA9FA3	-- EVENT_NETWORK_POSSE_MEMBER_SET_ACTIVE															
+	23105215	,	-- 0x01608EBF	-- EVENT_NETWORK_POSSE_LEADER_SET_ACTIVE													
+	237247060	,	-- 0x0E241A54	-- EVENT_NETWORK_POSSE_PRESENCE_REQUEST_COMPLETE																
+	-1513138189	,	-- 0xA5CF57F3	-- EVENT_NETWORK_POSSE_STATS_READ_COMPLETE														
+	797969925	,	-- 0x2F900E05	-- EVENT_NETWORK_POSSE_EX_INACTIVE_DISBANDED													
+	-2020006491	,	-- 0x879925A5	-- EVENT_NETWORK_POSSE_EX_ADMIN_DISBANDED														
+	-45008988	,	-- 0xFD5137A4	-- EVENT_SCENARIO_ADD_PED													
+	-456923784	,	-- 0xE4C3E578	-- EVENT_SCENARIO_REMOVE_PED													
+	-496141780	,	-- 0xE26D7A2C	-- EVENT_SCENARIO_RELEASE_BUTTON													
+	-843555838	,	-- 0xCDB85C02	-- EVENT_SCENARIO_DESTROY_PROP													
+	-1267317510	,	-- 0xB47644FA	-- EVENT_UI_QUICK_ITEM_USED												
+	-346212524	,	-- 0xEB5D3754	-- EVENT_UI_ITEM_INSPECT_ACTIONED													
+	-930155091	,	-- 0xC88EF5AD	-- EVENT_NETWORK_CASHINVENTORY_NOTIFICATION														
+	-921472336	,	-- 0xC91372B0	-- EVENT_ERRORS_UNKNOWN_ERROR															
+	-992702923	,	-- 0xC4D48E35	-- EVENT_ERRORS_ARRAY_OVERFLOW														
+	397004310	,	-- 0x17A9CE16	-- EVENT_ERRORS_INSTRUCTION_LIMIT														
+	2004694700	,	-- 0x777D36AC	-- EVENT_ERRORS_STACK_OVERFLOW													
+	-1009774763	,	-- 0xC3D00F55	-- EVENT_ERRORS_GLOBAL_BLOCK_INACCESSIBLE														
+	1028822748	,	-- 0x3D5296DC	-- EVENT_ERRORS_GLOBAL_BLOCK_NOT_RESIDENT
+
+
+
 
 	-- UNKNOWN HASHNAMES
-
+	
 	-2073820292	,	-- 0x8464037C	-- unknown hashname																						
 	1225420150	,	-- 0x490A6D76	-- unknown hashname																					
 	-551147061	,	-- 0xDF2629CB	-- unknown hashname																					
 	-1922859932	,	-- 0x8D637C64	-- unknown hashname																						
 	1379175797	,	-- 0x52348D75	-- unknown hashname																					
-	-2129179673	,	-- 0x81174BE7	-- unknown hashname																						
 	-278948100	,	-- 0xEF5F96FC	-- unknown hashname																					
-	-1961481354	,	-- 0x8B162B76	-- unknown hashname																						
-	2012933482	,	-- 0x77FAED6A	-- unknown hashname																					
-	182250203	,	-- 0x0ADCEADB	-- unknown hashname																					
-	1586716140	,	-- 0x5E935DEC	-- unknown hashname																					
-	413931470	,	-- 0x18AC17CE	-- unknown hashname																					
 	-1360035949	,	-- 0xAEEF7F93	-- unknown hashname																						
-	1113682948	,	-- 0x42617404	-- unknown hashname																					
-	1794914733	,	-- 0x6AFC39AD	-- unknown hashname 	ped is hogtied																			
-	2045969979	,	-- 0x79F3063B	-- unknown hashname																					
-	-439157431	,	-- 0xE5D2FD49	-- unknown hashname																					
-	1165534493	,	-- 0x4578A51D	-- unknown hashname																					
 	-268474898	,	-- 0xEFFF65EE	-- unknown hashname																					
-	353377915	,	-- 0x15101E7B	-- unknown hashname																					
 	-1571092257	,	-- 0xA25B08DF	-- unknown hashname																						
 	579261718	,	-- 0x2286D516	-- unknown hashname																					
-	-240786091	,	-- 0xF1A5E555	-- unknown hashname																					
-	-1651585854	,	-- 0x9D8ECCC2	-- unknown hashname		some horse near was scared																				
-	-2122443649	,	-- 0x817E147F	-- unknown hashname																						
-	769834622	,	-- 0x2DE2BE7E	-- unknown hashname																					
-	936374126	,	-- 0x37CFEF6E	-- unknown hashname																					
 	276199831	,	-- 0x10767997	-- unknown hashname																					
-	1197193638	,	-- 0x475BB9A6	-- unknown hashname																					
-	-1288743481	,	-- 0xB32F55C7	-- unknown hashname																						
-	-1538469261	,	-- 0xA44CD273	-- unknown hashname																						
-	-687266558	,	-- 0xD7092502	-- unknown hashname    	holding animal																				
-	1082572570	,	-- 0x4086BF1A	-- unknown hashname																					
-	-1241852893	,	-- 0xB5FAD423	-- unknown hashname																						
-	867155253	,	-- 0x33AFBD35	-- unknown hashname																					
-	1811873798	,	-- 0x6BFF0006	-- unknown hashname																					
-	-1816722641	,	-- 0x93B7032F	-- unknown hashname		ped was dismissed after brawl																						
-	313219550	,	-- 0x12AB59DE	-- unknown hashname																					
 	1387172233	,	-- 0x52AE9189	-- unknown hashname   	emote wheel is ready to open																					
-	-178091376	,	-- 0xF5628A90	-- unknown hashname   	picking up arrows, hatchets																				
-	-1312424871	,	-- 0xB1C5FC59	-- unknown hashname																						
-	-369170747	,	-- 0xE9FEE6C5	-- unknown hashname   	put [hat] on head																		
-	-1286831256	,	-- 0xB34C8368	-- unknown hashname		hat flew off																						
-	498393689	,	-- 0x1DB4E259	-- unknown hashname																					
-	2030961287	,	-- 0x790E0287	-- unknown hashname		attacking with strong melee hit (with weapon or unarmed)																					
-	-84591983	,	-- 0xFAF53A91	-- unknown hashname																					
-	1176209503	,	-- 0x461B885F	-- unknown hashname																					
-	-1682387274	,	-- 0x9BB8CEB6	-- unknown hashname																						
-	415022413	,	-- 0x18BCBD4D	-- unknown hashname																					
-	832287042	,	-- 0x319BB142	-- unknown hashname																					
-	-1024103845	,	-- 0xC2F56A5B	-- unknown hashname																						
-	-378297983	,	-- 0xE973A181	-- unknown hashname																					
-	671637744	,	-- 0x280860F0	-- unknown hashname																					
 	-580522687	,	-- 0xDD65ED41	-- unknown hashname																					
 	882658719	,	-- 0x349C4D9F	-- unknown hashname																					
-	1198436399	,	-- 0x476EB02F	-- unknown hashname																					
-	-751866762	,	-- 0xD32F6C76	-- unknown hashname																					
-	-2052708993	,	-- 0x85A6257F	-- unknown hashname																						
 	282773725	,	-- 0x10DAC8DD	-- unknown hashname																					
-	2034746601	,	-- 0x7947C4E9	-- unknown hashname																					
-	-818205375	,	-- 0xCF3B2D41	-- unknown hashname																					
-	-60262143	,	-- 0xFC687901	-- unknown hashname																					
-	526946626	,	-- 0x1F689142	-- unknown hashname																					
-	-1511724297	,	-- 0xA5E4EAF7	-- unknown hashname		putting item to satchel																						
-	1376140891	,	-- 0x52063E5B	-- unknown hashname		put into pocket																					
-	-1509407906	,	-- 0xA608435E	-- unknown hashname 	dead wild animal is near ped																						
-	1640116056	,	-- 0x61C22F58	-- unknown hashname																					
-	-968272321	,	-- 0xC649563F	-- unknown hashname																					
-	-462231716	,	-- 0xE472E75C	-- unknown hashname																					
-	1208357138	,	-- 0x48061112	-- unknown hashname    	picking up\putting down ped																			
-	1081092949	,	-- 0x40702B55	-- unknown hashname																					
-	1505348054	,	-- 0x59B9C9D6	-- unknown hashname																					
-	1417095237	,	-- 0x54772845	-- unknown hashname 	some horse near threw off the rider																					
-	1638298852	,	-- 0x61A674E4	-- unknown hashname		some horse near is angry																			
-	71122427	,	-- 0x043D3DFB	-- unknown hashname																					
-	1652530845	,	-- 0x627F9E9D	-- unknown hashname																					
-	-569301261	,	-- 0xDE1126F3	-- unknown hashname		bullet hits entity																					
-	-1246119244	,	-- 0xB5B9BAB4	-- unknown hashname 	patting horse																						
-	-1985279805	,	-- 0x89AB08C3	-- unknown hashname		trying to calm horse																						
-	1327216456	,	-- 0x4F1BB748	-- unknown hashname		whistle																			
-	1473676746	,	-- 0x57D685CA	-- unknown hashname																					
-	218595333	,	-- 0x0D078005	-- unknown hashname																					
-	-895552461	,	-- 0xCA9EF433	-- unknown hashname																					
-	-1936963085	,	-- 0x8C8C49F3	-- unknown hashname																						
-	-1373728085	,	-- 0xAE1E92AB	-- unknown hashname																						
-	-617453104	,	-- 0xDB3269D0	-- unknown hashname		player ped is spawned ???																					
-	-2091944374	,	-- 0x834F764A	-- unknown hashname																						
-	-1730772208	,	-- 0x98D68310	-- unknown hashname																						
-	1352063587	,	-- 0x5096DA63	-- unknown hashname    	opening\closing item																					
-	2099179610	,	-- 0x7D1EF05A	-- unknown hashname    	has lootable nearby																			
-	-582361627	,	-- 0xDD49DDE5	-- unknown hashname																					
-	1553659161	,	-- 0x5C9AF519	-- unknown hashname																					
-	1784289253	,	-- 0x6A5A17E5	-- unknown hashname		wild animal is agonizing near																				
-	1655597605	,	-- 0x62AE6A25	-- unknown hashname																					
 	1272433714	,	-- 0x4BD7CC32	-- unknown hashname																					
-	1351025667	,	-- 0x50870403	-- unknown hashname																					
-	1669410864	,	-- 0x63813030	-- unknown hashname																					
-	-1482146560	,	-- 0xA7A83D00	-- unknown hashname																						
-	1697477512	,	-- 0x652D7388	-- unknown hashname																					
-	-2001102517	,	-- 0x88B9994B	-- unknown hashname																						
-	-437497832	,	-- 0xE5EC5018	-- unknown hashname																					
-	-857756425	,	-- 0xCCDFACF7	-- unknown hashname																					
-	-2119801478	,	-- 0x81A6657A	-- unknown hashname																						
-	1434205464	,	-- 0x557C3D18	-- unknown hashname																					
-	-454144443	,	-- 0xE4EE4E45	-- unknown hashname																					
-	1274067014	,	-- 0x4BF0B846	-- unknown hashname																					
-	-843924932	,	-- 0xCDB2BA3C	-- unknown hashname																					
-	1121131740	,	-- 0x42D31CDC	-- unknown hashname																					
-	1793200955	,	-- 0x6AE2133B	-- unknown hashname																					
-	1342634267	,	-- 0x5006F91B	-- unknown hashname																					
-	1626145032	,	-- 0x60ED0108	-- unknown hashname																					
-	1355399116	,	-- 0x50C9BFCC	-- unknown hashname																					
-	-1373301352	,	-- 0xAE251598	-- unknown hashname																						
-	163683216	,	-- 0x09C19B90	-- unknown hashname																					
-	239947537	,	-- 0x0E4D4F11	-- unknown hashname																					
-	-1688530399	,	-- 0x9B5B1221	-- unknown hashname																						
-	-526667468	,	-- 0xE09BB134	-- unknown hashname																					
-	701022886	,	-- 0x29C8C2A6	-- unknown hashname																					
-	-467733578	,	-- 0xE41EF3B6	-- unknown hashname																					
-	995882143	,	-- 0x3B5BF49F	-- unknown hashname																					
-	557673123	,	-- 0x213D6AA3	-- unknown hashname																					
-	-1315570756	,	-- 0xB195FBBC	-- unknown hashname																						
-	676208328	,	-- 0x284E1EC8	-- unknown hashname																					
-	-111015184	,	-- 0xF9620AF0	-- unknown hashname																					
-	-1171710795	,	-- 0xBA291CB5	-- unknown hashname																						
-	2143094135	,	-- 0x7FBD0577	-- unknown hashname																					
-	1660856426	,	-- 0x62FEA86A	-- unknown hashname																					
-	1373658008	,	-- 0x51E05B98	-- unknown hashname																					
-	-1315453179	,	-- 0xB197C705	-- unknown hashname																						
-	1194448728	,	-- 0x4731D758	-- unknown hashname																					
-	1028782110	,	-- 0x3D51F81E	-- unknown hashname																					
-	1234888675	,	-- 0x499AE7E3	-- unknown hashname																					
-	2114586158	,	-- 0x7E0A062E	-- unknown hashname																					
-	1068922597	,	-- 0x3FB676E5	-- unknown hashname																					
-	-231390325	,	-- 0xF235438B	-- unknown hashname																					
-	295704064	,	-- 0x11A01600	-- unknown hashname																					
-	980298223	,	-- 0x3A6E29EF	-- unknown hashname																					
-	-1905067041	,	-- 0x8E72FBDF	-- unknown hashname																						
-	904763044	,	-- 0x35ED96A4	-- unknown hashname																					
-	1385704366	,	-- 0x52982BAE	-- unknown hashname																					
-	1415355908	,	-- 0x545C9E04	-- unknown hashname																					
-	2108920557	,	-- 0x7DB392ED	-- unknown hashname																					
-	-1485628607	,	-- 0xA7731B41	-- unknown hashname																						
-	545528824	,	-- 0x20841BF8	-- unknown hashname																					
-	1658389497	,	-- 0x62D903F9	-- unknown hashname																					
-	753021595	,	-- 0x2CE2329B	-- unknown hashname																					
-	-725272239	,	-- 0xD4C53951	-- unknown hashname																					
-	543140406	,	-- 0x205FAA36	-- unknown hashname																					
-	-2095977185	,	-- 0x8311ED1F	-- unknown hashname																						
-	904577075	,	-- 0x35EAC033	-- unknown hashname																					
-	809652668	,	-- 0x304251BC	-- unknown hashname																					
-	516249386	,	-- 0x1EC5572A	-- unknown hashname																					
-	1860341470	,	-- 0x6EE28EDE	-- unknown hashname																					
-	1827342969	,	-- 0x6CEB0A79	-- unknown hashname																					
-	-1308368394	,	-- 0xB203E1F6	-- unknown hashname																						
-	1832265142	,	-- 0x6D3625B6	-- unknown hashname																					
-	1890598297	,	-- 0x70B03D99	-- unknown hashname																					
-	-1002640900	,	-- 0xC43CE9FC	-- unknown hashname																						
-	-1325700282	,	-- 0xB0FB6B46	-- unknown hashname																						
-	-684883982	,	-- 0xD72D7FF2	-- unknown hashname																					
-	1731288223	,	-- 0x67315C9F	-- unknown hashname																					
-	446963576	,	-- 0x1AA41F78	-- unknown hashname																					
-	-1500256914	,	-- 0xA693E56E	-- unknown hashname																						
-	587071841	,	-- 0x22FE0161	-- unknown hashname																					
-	1027163239	,	-- 0x3D394467	-- unknown hashname																					
-	-1832939826	,	-- 0x92BF8ECE	-- unknown hashname																						
-	1629782592	,	-- 0x61248240	-- unknown hashname																					
-	586277309	,	-- 0x22F1E1BD	-- unknown hashname																					
-	-880791236	,	-- 0xCB80313C	-- unknown hashname																					
-	-642309294	,	-- 0xD9B72352	-- unknown hashname																					
-	-2100213574	,	-- 0x82D148BA	-- unknown hashname																						
-	-97516606	,	-- 0xFA3003C2	-- unknown hashname																					
-	-2117667982	,	-- 0x81C6F372	-- unknown hashname																						
-	-1065733433	,	-- 0xC07A32C7	-- unknown hashname																						
-	-919500771	,	-- 0xC931881D	-- unknown hashname																					
-	-1471622011	,	-- 0xA848D485	-- unknown hashname																						
-	1727082765	,	-- 0x66F1310D	-- unknown hashname																					
-	-648745775	,	-- 0xD954ECD1	-- unknown hashname																					
-	678947301	,	-- 0x2877E9E5	-- unknown hashname																					
-	2013393302	,	-- 0x7801F196	-- unknown hashname																					
-	-885048077	,	-- 0xCB3F3CF3	-- unknown hashname																					
-	-1126217932	,	-- 0xBCDF4734	-- unknown hashname																						
-	1694142010	,	-- 0x64FA8E3A	-- unknown hashname																					
-	212329117	,	-- 0x0CA7E29D	-- unknown hashname																					
-	-716406075	,	-- 0xD54C82C5	-- unknown hashname																					
-	-634062504	,	-- 0xDA34F958	-- unknown hashname																					
-	453501714	,	-- 0x1B07E312	-- unknown hashname																					
-	1559647390	,	-- 0x5CF6549E	-- unknown hashname																					
-	1725992066	,	-- 0x66E08C82	-- unknown hashname																					
-	-2036121834	,	-- 0x86A33F16	-- unknown hashname																						
-	2058130545	,	-- 0x7AAC9471	-- unknown hashname																					
-	-231935285	,	-- 0xF22CF2CB	-- unknown hashname																					
-	1268264445	,	-- 0x4B982DFD	-- unknown hashname																					
-	-308071988	,	-- 0xEDA331CC	-- unknown hashname																					
-	-421353837	,	-- 0xE6E2A693	-- unknown hashname																					
-	2058084749	,	-- 0x7AABE18D	-- unknown hashname																					
-	-1749240836	,	-- 0x97BCB3FC	-- unknown hashname																						
-	415576404	,	-- 0x18C53154	-- unknown hashname																					
-	1830788491	,	-- 0x6D1F9D8B	-- unknown hashname																					
-	1047667690	,	-- 0x3E7223EA	-- unknown hashname																					
-	-1692828063	,	-- 0x9B197E61	-- unknown hashname																						
-	176872144	,	-- 0x0A8ADAD0	-- unknown hashname																					
-	-1578459229	,	-- 0xA1EA9FA3	-- unknown hashname																						
-	23105215	,	-- 0x01608EBF	-- unknown hashname																					
-	237247060	,	-- 0x0E241A54	-- unknown hashname																					
-	-1513138189	,	-- 0xA5CF57F3	-- unknown hashname																						
-	797969925	,	-- 0x2F900E05	-- unknown hashname																					
-	-2020006491	,	-- 0x879925A5	-- unknown hashname																						
-	-45008988	,	-- 0xFD5137A4	-- unknown hashname																					
-	-456923784	,	-- 0xE4C3E578	-- unknown hashname																					
-	-496141780	,	-- 0xE26D7A2C	-- unknown hashname																					
-	-843555838	,	-- 0xCDB85C02	-- unknown hashname																					
-	-1267317510	,	-- 0xB47644FA	-- unknown hashname																						
-	-346212524	,	-- 0xEB5D3754	-- unknown hashname																					
 	1774626881	,	-- 0x69C6A841	-- unknown hashname																					
 	-226258011	,	-- 0xF28393A5	-- unknown hashname																					
 	-2083270374	,	-- 0x83D3D11A	-- unknown hashname																						
 	-1506433747	,	-- 0xA635A52D	-- unknown hashname																						
 	-1370814283	,	-- 0xAE4B08B5	-- unknown hashname																						
-	-930155091	,	-- 0xC88EF5AD	-- unknown hashname																					
 	1378654347	,	-- 0x522C988B	-- unknown hashname																					
 	1150469382	,	-- 0x4492C506	-- unknown hashname																					
-	-921472336	,	-- 0xC91372B0	-- unknown hashname																					
-	-992702923	,	-- 0xC4D48E35	-- unknown hashname																					
-	397004310	,	-- 0x17A9CE16	-- unknown hashname																					
-	2004694700	,	-- 0x777D36AC	-- unknown hashname																					
-	-1009774763	,	-- 0xC3D00F55	-- unknown hashname																						
-	1028822748	,	-- 0x3D5296DC	-- unknown hashname	
 
 }
