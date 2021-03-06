@@ -1,6 +1,6 @@
 ## Controls
 
-Some controls in REDM works only since certain RDR2 versions. Current default game version for REDM is 1207.80 (patch from 02 december 2019). Upcoming game version for REDM is 1311.12 (patch from 28 july 2020).
+Some controls in REDM works only since certain RDR2 versions.
 
 ## Known controls
 
