@@ -21,7 +21,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 12 |  |  | PCF_IsAimingGun | false
 13 | always switch to scope, when using rifles | cancel this config |  | false
 14 |  |  | can ped free moving (not ragdoll and not covering) | **true**
-20 | prevent ped to quick switch weapon (with TAB button) |  | false
+20 | prevent ped to quick switch weapon (with TAB button) |  |  | false
 21 | this ped will be killed by any strong hit (with flag 456 will be knocked out) |  |  | false
 23 |  |  |  | **true**
 24 |  |  |  | **true**
