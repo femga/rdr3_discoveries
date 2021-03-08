@@ -22,6 +22,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 13 | always switch to scope, when using rifles | cancel this config |  | false
 14 |  |  | can ped free moving (not ragdoll and not covering) | **true**
 20 | prevent ped to quick switch weapon (with TAB button) |  | false
+21 | this ped will be killed by any strong hit (with flag 456 will be knocked out) |  |  | false
 23 |  |  |  | **true**
 24 |  |  |  | **true**
 26 | cant initiate brawl with strong hit ?? | cancel this config |  | false
@@ -75,6 +76,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 297 | PCF_ForceInteractionLockonOnTargetPed |  |  | false
 304 |  |  | (for horse) was horse mounted by player ?? | false
 305 | PCF_DisableHeadGore |  |  | false
+311 | ped will not shoot props if they miss their target |  |  | false
 312 | PCF_DisableHorseGunshotFleeResponse |  |  | false
 319 | PCF_EnableAsVehicleTransitionDestination |  |  | false
 332 |  |  | is ped trying to reach scenario point ?? | **true**
@@ -84,6 +86,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 337 | PCF_DontExitVehicleIfNoDraftAnimals |  |  | false
 340 | PCF_DisableAllMeleeTakedowns |  |  | false
 352 | together with 533: after few steps of stairs (up or down), ped turns back (dont effect vertical ladders) | cancel this config |  | false
+361 | Ignore ped weapon degradation for damage ?? |  |  | false 
 366 | PCF_DisableVehicleTransitions |  |  | false
 370 | PCF_DisableDeadEyeTagging |  |  | false
 373 | PCF_AllowSlipstream |  |  | false
@@ -102,6 +105,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 445 | PCF_DisableDoorBarge |  |  | false
 448 | PCF_TreatAsMissionPopTypeForSpeech |  |  | false
 451 | PCF_HorseDontEvaluateRiderForDamageChecks |  |  | false
+456 | ped will be knocked out instead of death (if it possible) |  |  | false
 467 | PCF_DisableHonorModifiers |  |  | false
 471 |  |  | is ped placing animal on back of horse ?? | false
 511 | prevent using scope while moving | cancel this config |  | false
@@ -118,6 +122,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 575 | PCF_DisableGuardAI |  |  | false
 580 |  |  | PCF_IsTranquilized | false
 582 | PCF_AllowStudyInMP |  |  | false
+593 | Eagle Eye Skill dont unlock at rank |  |  | false 
 595 | PCF_AllowAutoSwitchToProjectiles |  |  | false
 599 | PCF_DisableScenarioWarpWeaponDestruction |  |  | false
 600 | PCF_SkipOwnershipCheckForHorseToEquipWeapons |  |  | false
