@@ -32,6 +32,4 @@ FlagId | RAGDOLL BLOCKING FLAG Action Result
 131072 | unknown yet
 262144 | unknown yet
 524288 | unknown yet
-1048576 | unknown yet
-2097152 | unknown yet
-4194304 | unknown yet
+
