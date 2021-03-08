@@ -48,13 +48,18 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 167 | PCF_ShouldBeOnMount (mount last used horse; dont work, if ped didnt use any horse yet) | cancel this task, but only when mounting is fully completed |  | false
 169 | PCF_DisableGrappleByPlayer |  |  | false
 170 | disable grapple, animal attack by AI ?? |  |  | false
+174 | (for horse) disable evasive step for player horse |  |  | false
 177 |  |  | (for horse) is horse mounted by rider | false
 178 | PCF_AllowNonTempExceptionEvents |  |  | false
+182 | setting ped not to cop blip since friendly |  |  | false
 192 | NPCs cant attack ped | cancel this config |  | false
 194 | PCF_ShouldPedFollowersIgnoreWaypointMBR |  |  | false
 207 | PCF_FlamingHoovesActive |  |  | false
 211 | PCF_GiveAmbientDefaultTaskIfMissionPed |  |  | false
+214 | (for horse) Setting personal mount to not be mountable by ai |  |  | false
+217 | supress shocking events |  |  | false
 218 | prevent pick up thrown weapon (arrows, hatchets etc) | cancel this config |  | false
+227 | Setting ped as valid for vehicle seat stow ?? |  |  | false
 246 | PCF_ForcePedLoadCover |  |  | false
 249 | prevent using weapon wheel | cancel this config |  | false
 250 |  |  | is ped burning ?? | false
@@ -76,6 +81,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 297 | PCF_ForceInteractionLockonOnTargetPed |  |  | false
 304 |  |  | (for horse) was horse mounted by player ?? | false
 305 | PCF_DisableHeadGore |  |  | false
+306 | disable body parts gore |  |  | false
 311 | ped will not shoot props if they miss their target |  |  | false
 312 | PCF_DisableHorseGunshotFleeResponse |  |  | false
 319 | PCF_EnableAsVehicleTransitionDestination |  |  | false
@@ -86,7 +92,8 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 337 | PCF_DontExitVehicleIfNoDraftAnimals |  |  | false
 340 | PCF_DisableAllMeleeTakedowns |  |  | false
 352 | together with 533: after few steps of stairs (up or down), ped turns back (dont effect vertical ladders) | cancel this config |  | false
-361 | Ignore ped weapon degradation for damage ?? |  |  | false 
+361 | setting to ignore weapon degradation |  |  | false 
+364 | setting block instant death volumes for zone ?? |  |  | false
 366 | PCF_DisableVehicleTransitions |  |  | false
 370 | PCF_DisableDeadEyeTagging |  |  | false
 373 | PCF_AllowSlipstream |  |  | false
@@ -101,6 +108,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 419 | PCF_BlockMountHorsePrompt |  |  | false
 421 | PCF_AllowDoorBargingUnderCombat |  |  | false
 437 | PCF_DisableWeatherConditionPerceptionChecks |  |  | false
+442 | disable flee interaction |  |  | false
 444 | disable flee horse by player ?? |  |  | false
 445 | PCF_DisableDoorBarge |  |  | false
 448 | PCF_TreatAsMissionPopTypeForSpeech |  |  | false
@@ -111,17 +119,20 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 511 | prevent using scope while moving | cancel this config |  | false
 533 | after climbing stairs, ped turns left or right (dont effect vertical ladders) | cancel this config |  | false
 540 | PCF_FollowLeaderRunToEnterTransport |  |  | false
+545 | DontCreateCombatBlip |  |  | false
 547 | disable lock on players |  |  | false
 550 | PCF_DisableAndBreakAimLockOntoThisPed |  |  | false
 556 | full lockon immunity |  |  | false
 560 | PCF_EnableMountCoverForPedInMP |  |  | false
 561 | PCF_EnableHorseCollectPlantInteractionInMP |  |  | false
+565 | (for horse) Setting ped as valid for vehicle seat stow |  |  | false
 566 | PCF_EnableSpecialActionBranches |  |  | false
 567 | PCF_DisableHorseShunting |  |  | false
 569 | PCF_CanBeAttackedByFriendlyPed |  |  | false
 575 | PCF_DisableGuardAI |  |  | false
 580 |  |  | PCF_IsTranquilized | false
 582 | PCF_AllowStudyInMP |  |  | false
+592 | Disabling full body hit reacts |  |  | false
 593 | Eagle Eye Skill dont unlock at rank |  |  | false 
 595 | PCF_AllowAutoSwitchToProjectiles |  |  | false
 599 | PCF_DisableScenarioWarpWeaponDestruction |  |  | false
