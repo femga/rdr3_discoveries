@@ -34,6 +34,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 27	| set prevent ped weapon shooting | 
 29	| set prevent ped falling animation | 
 41  |  | is ped driving vehicle
+51  | PRF_PreventGoingIntoStillInVehicleState | 
 73	| set prevent ped melee attack | 
 88	|  | NPC grabbed player ped ??
 93	| unknown yet, but using weapons breaks movement | 
@@ -41,6 +42,7 @@ FlagId | SetPedResetFlag Result | GetPedResetFlag Result
 119 | Revive instead of bleeding out this frame... | 
 124 |  | is ped shuffling vehicle seat
 129 | PRF_DisableDynamicPlayerScenarios | 
+134 | PRF_CannotBeTargetedByAnimals | 
 139	| set prevent ped stamina refill | is trying melee attack ??
 155 |  | is ped seeking cover position
 156 |  | is ped leaving cover position
