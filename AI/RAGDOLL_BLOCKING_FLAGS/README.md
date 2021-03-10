@@ -25,11 +25,11 @@ FlagId | RAGDOLL BLOCKING FLAG Action Result
 1024 | unknown yet
 2048 | unknown yet
 4096 | unknown yet
-8192 | unknown yet
-16384 | unknown yet
-32768 | unknown yet
+8192 | RBF_PLAYER_BUMP
+16384 | RBF_PLAYER_RAGDOLL_BUMP
+32768 | RBF_PED_RAGDOLL_BUMP
 65536 | unknown yet
 131072 | unknown yet
-262144 | unknown yet
+262144 | RBF_HORSE_BUMP
 524288 | unknown yet
 
