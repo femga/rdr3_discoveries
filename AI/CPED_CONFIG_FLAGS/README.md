@@ -20,17 +20,19 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 10 | prevent using first person view ?? | cancel this config |  | false
 11 | PCF_Knockedout |  |  | false
 12 |  |  | PCF_IsAimingGun | false
-13 | always switch to scope, when using rifles | cancel this config |  | false
+13 | PCF_ForcedAim |  |  | false
 14 |  |  | can ped free moving (not ragdoll and not covering) | **true**
 20 | prevent ped to quick switch weapon (with TAB button) |  |  | false
 21 | this ped will be killed by any strong hit (with flag 456 will be knocked out) |  |  | false
 23 |  |  |  | **true**
 24 |  |  |  | **true**
-26 | cant initiate brawl with strong hit ?? | cancel this config |  | false
+26 | PCF_DisableMelee | cancel this config |  | false
 35 |  |  |  | **true**
 40 | PCF_CanAttackFriendly |  |  | false
 43 | PCF_DisableLadderClimbing | cancel this config |  | false
 45 |  |  |  | **true**
+51 | PCF_CanBeArrested |  |  | false
+62 | PCF_IsInCustody |  |  | false
 71 |  |  | was ped shoot from firearms at least once | false
 80 |  |  |  | **true**
 90 |  |  |  | **true**
@@ -71,6 +73,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 254 | full immunity vs melee and range attack | cancel this config |  | false
 255 |  |  |  | **true**
 256 |  |  |  | **true**
+260 | PCF_IsScuba |  |  | false
 263 | PCF_NoCriticalHits |  |  | false
 264 | PCF_UpperBodyDamageAnimsOnly |  |  | **true**
 265 | disable drowning |  |  | **true**
