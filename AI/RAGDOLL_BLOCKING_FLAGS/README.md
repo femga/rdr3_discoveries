@@ -11,25 +11,25 @@
 
 FlagId | RAGDOLL BLOCKING FLAG Action Result
 ----------- | -------------------------- 
-0 | unknown yet
+0 | 
 1 | RBF_BULLET_IMPACT
-2 | unknown yet
-4 | unknown yet
-8 | unknown yet
+2 | RBF_VEHICLE_IMPACT
+4 | RBF_FIRE
+8 | RBF_ELECTROCUTION
 16 | RBF_PLAYER_IMPACT
-32 | unknown yet
-64 | unknown yet
-128 | unknown yet
-256 | unknown yet
-512 | immediately get up when ragdolled (without animation)
-1024 | unknown yet
-2048 | unknown yet
-4096 | unknown yet
+32 | RBF_EXPLOSION
+64 | RBF_IMPACT_OBJECT
+128 | RBF_MELEE
+256 | RBF_RUBBER_BULLET
+512 | RBF_FALLING
+1024 | RBF_WATER_JET
+2048 | RBF_DROWNING
+4096 | 
 8192 | RBF_PLAYER_BUMP
 16384 | RBF_PLAYER_RAGDOLL_BUMP
 32768 | RBF_PED_RAGDOLL_BUMP
-65536 | unknown yet
-131072 | unknown yet
+65536 | RBF_VEHICLE_GRAB
+131072 | RBF_SMOKE_GRENADE
 262144 | RBF_HORSE_BUMP
-524288 | unknown yet
+524288 | 
 
