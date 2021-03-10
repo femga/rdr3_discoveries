@@ -323,8 +323,7 @@ local events = {
 	453501714	,	-- 0x1B07E312	-- EVENT_NETWORK_HUB_UPDATE													
 	1559647390	,	-- 0x5CF6549E	-- EVENT_NETWORK_PICKUP_COLLECTION_FAILED														
 	1725992066	,	-- 0x66E08C82	-- EVENT_NETWORK_DEBUG_TOGGLE_MP													
-	-2036121834	,	-- 0x86A33F16	-- EVENT_NETWORK_PROJECTILE_ATTACHED																	
-	2058130545	,	-- 0x7AAC9471	-- EVENT_NETWORK_PROJECTILE_NO_DAMAGE_IMPACT													
+	-2036121834	,	-- 0x86A33F16	-- EVENT_NETWORK_PROJECTILE_ATTACHED																														
 	-231935285	,	-- 0xF22CF2CB	-- EVENT_NETWORK_POSSE_CREATED													
 	1268264445	,	-- 0x4B982DFD	-- EVENT_NETWORK_POSSE_JOINED															
 	-308071988	,	-- 0xEDA331CC	-- EVENT_NETWORK_POSSE_LEFT															
@@ -355,34 +354,26 @@ local events = {
 	2004694700	,	-- 0x777D36AC	-- EVENT_ERRORS_STACK_OVERFLOW													
 	-1009774763	,	-- 0xC3D00F55	-- EVENT_ERRORS_GLOBAL_BLOCK_INACCESSIBLE														
 	1028822748	,	-- 0x3D5296DC	-- EVENT_ERRORS_GLOBAL_BLOCK_NOT_RESIDENT
-
-
-
-
-	-- UNKNOWN HASHNAMES
-	
-	-2073820292	,	-- 0x8464037C	-- unknown hashname																						
-	1225420150	,	-- 0x490A6D76	-- unknown hashname																					
-	-551147061	,	-- 0xDF2629CB	-- unknown hashname																					
-	-1922859932	,	-- 0x8D637C64	-- unknown hashname																						
-	1379175797	,	-- 0x52348D75	-- unknown hashname																					
-	-278948100	,	-- 0xEF5F96FC	-- unknown hashname																					
-	-1360035949	,	-- 0xAEEF7F93	-- unknown hashname																						
-	-268474898	,	-- 0xEFFF65EE	-- unknown hashname																					
-	-1571092257	,	-- 0xA25B08DF	-- unknown hashname																						
-	579261718	,	-- 0x2286D516	-- unknown hashname																					
-	276199831	,	-- 0x10767997	-- unknown hashname																					
-	1387172233	,	-- 0x52AE9189	-- unknown hashname   	emote wheel is ready to open																					
-	-580522687	,	-- 0xDD65ED41	-- unknown hashname																					
-	882658719	,	-- 0x349C4D9F	-- unknown hashname																					
-	282773725	,	-- 0x10DAC8DD	-- unknown hashname																					
-	1272433714	,	-- 0x4BD7CC32	-- unknown hashname																					
-	1774626881	,	-- 0x69C6A841	-- unknown hashname																					
-	-226258011	,	-- 0xF28393A5	-- unknown hashname																					
-	-2083270374	,	-- 0x83D3D11A	-- unknown hashname																						
-	-1506433747	,	-- 0xA635A52D	-- unknown hashname																						
-	-1370814283	,	-- 0xAE4B08B5	-- unknown hashname																						
-	1378654347	,	-- 0x522C988B	-- unknown hashname																					
-	1150469382	,	-- 0x4492C506	-- unknown hashname																					
-
+	-2073820292	,	-- 0x8464037C	-- EVENT_INTERACTION																						
+	1225420150	,	-- 0x490A6D76	-- EVENT_INTERACTION_ACTION																				
+	-551147061	,	-- 0xDF2629CB	-- EVENT_REACTION_ANALYSIS_ACTION																					
+	-1922859932	,	-- 0x8D637C64	-- EVENT_ANIMAL_RESPONDED_TO_THREAT																						
+	1379175797	,	-- 0x52348D75	-- EVENT_ANIMAL_TAMING_CALLOUT																					
+	-278948100	,	-- 0xEF5F96FC	-- EVENT_CALL_FOR_BACKUP																					
+	-1360035949	,	-- 0xAEEF7F93	-- EVENT_DEATH																						
+	-268474898	,	-- 0xEFFF65EE	-- EVENT_HELP_AMBIENT_FRIEND																					
+	-1571092257	,	-- 0xA25B08DF	-- EVENT_LASSO_DETACHED																						
+	579261718	,	-- 0x2286D516	-- EVENT_BOLAS_HIT																					
+	276199831	,	-- 0x10767997	-- EVENT_PED_ON_VEHICLE_ROOF																					
+	1387172233	,	-- 0x52AE9189	-- EVENT_PLAYER_PROMPT_TRIGGERED																																								
+	882658719	,	-- 0x349C4D9F	-- EVENT_RIDER_DISMOUNTED																				
+	282773725	,	-- 0x10DAC8DD	-- EVENT_WON_APPROACH_ELECTION																					
+	1272433714	,	-- 0x4BD7CC32	-- EVENT_OWNED_ENTITY_INTERACTION
+	-1130756835	,	-- 0xBC9A051D	-- EVENT_DAILY_CHALLENGE_STREAK_COMPLETED
+	-1034120588	,   -- 0xC25C9274 	-- EVENT_HELP_TEXT_REQUEST
+	-745090075	,	-- 0xD396D3E5	-- EVENT_IMPENDING_SAMPLE_PROMPT
+	2058130545	,	-- 0x7AAC9471	-- EVENT_NETWORK_PROJECTILE_NO_DAMAGE_IMPACT
+	1699948728	,	-- 0x655328B8	-- EVENT_NETWORK_NOMINATED_GET_UPCOMING_CONTENT_RESPONSE
+	1588672286	,	-- 0x5EB1371E	-- EVENT_NETWORK_NOMINATED_GO_TO_NEXT_CONTENT_RESPONSE
+																	
 }
