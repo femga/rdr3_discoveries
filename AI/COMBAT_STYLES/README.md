@@ -1,6 +1,6 @@
 ## COMBAT STYLES
 
-Combat style is a "profile" applying different parameters to ped as animations, tactical analysis settings, allowed or blocked [combat mods](#-CombatStyle-Mods), combat flags, aimLogic, combat speed, combat modifiers etc.
+Combat style is a "profile" applying different parameters to ped as animations, tactical analysis settings, allowed or blocked [combat mods](#combatstyle-mods), combat flags, aimLogic, combat speed, combat modifiers etc.
 
 All parameters for each combat style are contained in the META file combatstyles.meta. Combatstyles.meta consists of four big sections: styles, mods, aimLogicControllers and speedControllers. 
 
