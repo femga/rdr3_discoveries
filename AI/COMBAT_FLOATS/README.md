@@ -82,5 +82,5 @@ Combat Float id | Changing Combat Float result
 66 | DistanceToConsiderDismount
 67 | DistanceToConsiderDismountInWilderness
 68 | CoverMaxConsecutiveFlinchesAmount
-69 | 
+69 | Setting min time to target player after they respawn ???
 70 | 
