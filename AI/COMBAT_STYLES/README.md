@@ -1,7 +1,12 @@
-## Some COMBAT STYLES
+## COMBAT STYLES
 
+Combat style is a "profile" applying different parameters to ped as animations, tactical analysis settings, allowed or blocked [combat mods](#-CombatStyle-Mods), combat flags, aimLogic, combat speed, combat modifiers etc.
 
-## Example
+All parameters for each combat style are contained in the META file combatstyles.meta. Combatstyles.meta consists of four big sections: styles, mods, aimLogicControllers and speedControllers. 
+
+CombatStyle Mods are little tweaks to combat style. They can be stacked. If they change same parameter, the last one overwrites the previous one. Some styles block certain or even all combat mods (allowed mods = none). 
+
+## Example to apply Combat Style
 
 ```lua
 	-- 0x8ACC0506743A8A5C 
@@ -19,6 +24,23 @@
 
 	Citizen.InvokeNative(0x78815FC52832B690, NPC_ped_id, 1) -- clear previous applied combat style for ped
 ```
+
+## Example to apply CombatStyle Mod
+
+```lua
+	-- 0x8B1E8E35A6E814EA 
+	-- _APPLY_COMBAT_STYLE_MOD(Ped ped, Hash combatStyleModHash, float duration)  
+	-- duration in seconds, -1.0 = forever.
+
+	Citizen.InvokeNative(0x8B1E8E35A6E814EA, NPC_ped_id, GetHashKey("AlwaysMiss"), 240.0)  -- apply CombatStyle Mod "AlwaysMiss" for 240 seconds. Ped will miss every shot.  
+
+
+	-- Native to cancel combat mod is not known yet. Can be cancelled by tricky way: applying combat style with all blocked combat mods: 
+	
+	Citizen.InvokeNative(0x8ACC0506743A8A5C, NPC_ped_id, GetHashKey("Script_CalmAimPostCombat_Low"), 1, 240.0)  -- apply combatstyle "Script_CalmAimPostCombat_Low" for 240 seconds to block all combat mods.
+	Citizen.InvokeNative(0x78815FC52832B690, NPC_ped_id, 1) -- clear previous applied combat style "Script_CalmAimPostCombat_Low" for ped
+```
+
 
 <h2>List of Combat Styles.</h2>
 
@@ -151,3 +173,93 @@
 	Mounted_Charge
 	OnAMovingTrain
 	SeekCover_KeepDistanceFromTarget
+
+
+## CombatStyle Mods
+
+<h2>List of Combat Mods.</h2>
+
+	Companion_Bill
+	Companion_Charles
+	Companion_Dutch
+	Companion_Hosea
+	Companion_Javier
+	Companion_John
+	Companion_Karen
+	Companion_Micah
+	Companion_Misc
+	Companion_Sadie
+	Companion_Rescue
+	Gang_DelLobos
+	Gang_Laramie
+	Gang_Lemoyne
+	Gang_NightFolk
+	Gang_Murfree
+	Gang_ODriscoll
+	Gang_Skinner
+	CombatStartNoThreat
+	ModBlockEnterExitTrain
+	ModPreferChaseTarget
+	HorseDismountAimingLow
+	Ambushed_Turn
+	Ambushed_Run
+	Ambushed_Strafe
+	Ambushed_StrafeAway
+	Ambushed_RunAway
+	PostAdvanceMod
+	MP_WaveBasedCombat
+	TacticalAdvance_Mod_Fussar2
+	TacticalAdvance_Mod_Gang1
+	CoverFire
+	ExposedCover
+	ExposedCover_DirectThreat
+	GetUpClose
+	CloseAttackWindow
+	PostInteraction_AggressiveFire
+	PostInteraction_GuardFire
+	InvestigatorChallenge_CombatStart
+	FriendlyShotNearby
+	UnderFireMedium
+	UnderFireHigh
+	DefensiveLeader
+	LastEnemyIsDeadPlayer
+	HoldFire
+	BreacherSetupMod
+	HoldFireAndHoldStill
+	HoldStill
+	DoorBreacher
+	DoorBreacherShootDoor
+	LackofHostility
+	LeaderInDanger
+	ChaseTarget
+	PostChaseTarget
+	SniperMod
+	DamagedRecently
+	CloseCoverAllowUnprotected
+	MeleeApproach
+	UnprotectedCover
+	Script_HoldFire
+	AlwaysMiss
+	HighAccuracy
+	LowAccuracy
+	PostDisarm
+	NoTackling
+	NoHipFire
+	EnableSurpriseTackling
+	BlockOpenDoorsInCover
+	TransportDriveBy
+	TransportRideAndFire
+	TransportRideAndFireExtended
+	PreferThrowing
+	PreferHitting
+	MountedPostCharge
+	MountedChaseTowardsTrain
+	DisableFiringWithoutLOS
+	MountedCombat_RangedRevolver
+	MountedCombat_RangedShotgun
+	MountedCombat_RangedRifle
+	MountedCombat_RangedRevolver_City
+	MountedCombat_RangedShotgun_City
+	MountedCombat_RangedRifle_City
+	ModCombatSprint
+	DefendMovingTrain
