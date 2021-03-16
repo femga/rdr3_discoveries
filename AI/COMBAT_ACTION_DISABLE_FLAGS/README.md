@@ -10,8 +10,8 @@ Citizen.InvokeNative(0xB8DE69D9473B7593,PlayerPedId(),6)  -- _DISABLE_COMBAT_ACT
 Citizen.InvokeNative(0xB346C85D49CC998E,PlayerPedId(),1)  -- _IS_COMBAT_ACTION_AGAINST_OTHERS_ENABLED - check if this ped can grapple other peds.
 Citizen.InvokeNative(0x949B2F9ED2917F5D,PlayerPedId(),4)  -- _ENABLE_COMBAT_ACTION_AGAINST_OTHERS - allow this ped kicking other peds.
 
-Citizen.InvokeNative(0xB8DE69D9473B7593,NPC_ped_id,6)  -- _DISABLE_COMBAT_ACTION_AGAINST_THIS_PED - this ped cant be choked by other peds now.
-Citizen.InvokeNative(0x02AA2096FE00F3E1,NPC_ped_id,2)  -- _IS_COMBAT_ACTION_AGAINST_THIS_PED_ENABLED - check if this ped can be attacked by other peds.
+Citizen.InvokeNative(0xC163DAC52AC975D3,NPC_ped_id,6)  -- _DISABLE_COMBAT_ACTION_AGAINST_THIS_PED - this ped cant be choked by other peds now.
+Citizen.InvokeNative(0x02AA2096FE00F3E1,NPC_ped_id,1)  -- _IS_COMBAT_ACTION_AGAINST_THIS_PED_ENABLED - check if this ped can be grappled by other peds.
 ```
 
 <h2>Combat Action Disable Flags</h2>
