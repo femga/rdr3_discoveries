@@ -12,7 +12,7 @@
 <h2>Some known Blackboard Values.</h2>
 
 Blackboard type | Blackboard section | Blackboard name | Blackboard range (or variants)
------------ | -------------------------- 
+----------- | -------------------------- |---------- | -------
 float | script | Cautious | from 0.1 till 1.0
 float | script | Stealth | from 0.1 till 1.0
 float | script | Bewildered | from 0.3 till 1.0
