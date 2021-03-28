@@ -16,7 +16,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 4 | PCF_HasBounty |  |  | false
 5 |  |  |  | **true**
 6 | PCF_DontInfluenceWantedLevel |  |  | false
-7 | prevent lock on peds | cancel this config |  | false
+7 | PCF_DisableLockonToRandomPeds |  |  | false
 10 | prevent using first person view ?? | cancel this config |  | false
 11 | PCF_Knockedout |  |  | false
 12 |  |  | PCF_IsAimingGun | false
@@ -33,6 +33,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 45 |  |  |  | **true**
 51 | PCF_CanBeArrested |  |  | false
 62 | PCF_IsInCustody |  |  | false
+65 | PCF_PreventAutoShuffleToDriversSeat |  |  | false
 71 |  |  | was ped shoot from firearms at least once | false
 80 |  |  |  | **true**
 90 |  |  |  | **true**
@@ -66,6 +67,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 217 | supress shocking events |  |  | false
 218 | prevent pick up thrown weapon (arrows, hatchets etc) | cancel this config |  | false
 227 | Setting ped as valid for vehicle seat stow ?? |  |  | false
+233 | PCF_PedIsEnemyToPlayer |  |  | false
 246 | PCF_ForcePedLoadCover |  |  | false
 249 | PCF_BlockWeaponSwitching |  |  | false
 250 |  |  | is ped burning ?? | false
@@ -73,13 +75,15 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 254 | full immunity vs melee and range attack | cancel this config |  | false
 255 |  |  |  | **true**
 256 |  |  |  | **true**
+259 | PCF_CanAmbientHeadtrack |  |  | false
 260 | PCF_IsScuba |  |  | false
 263 | PCF_NoCriticalHits |  |  | false
 264 | PCF_UpperBodyDamageAnimsOnly |  |  | **true**
 265 | disable drowning |  |  | **true**
 267 |  |  |  | **true**
 270 |  |  |  | **true**
-278 |  |  |  | **true**
+273 | PCF_NeverEverTargetThisPed |  |  | false
+278 | PCF_ClearRadarBlipOnDeath |  |  | **true**
 280 | PCF_DontEnterLeadersVehicle |  |  | false
 286 |  |  | is ped patting horse | false
 287 | PCF_AllowMissionDriverlessDraftAnimalResponse |  |  | false
@@ -87,6 +91,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 292 |  |  | is ped using scenario | **true**
 294 | PCF_DisableDriverlessDraftAnimalResponse |  |  | false
 297 | PCF_ForceInteractionLockonOnTargetPed |  |  | false
+301 | PCF_DisableInteractionLockonOnTargetPed |  |  | false
 304 |  |  | (for horse) was horse mounted by player ?? | false
 305 | PCF_DisableHeadGore |  |  | false
 306 | disable body parts gore |  |  | false
@@ -145,7 +150,8 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 522 | PCF_DontFleeFromDroppedAnimals |  |  | false
 533 | after climbing stairs, ped turns left or right (dont effect vertical ladders) | cancel this config |  | false
 540 | PCF_FollowLeaderRunToEnterTransport |  |  | false
-545 | DontCreateCombatBlip |  |  | false
+545 | dont create combat blip |  |  | false
+546 | PCF_IgnoreOwnershipForHorseFeedAndBrush |  |  | false
 547 | disable lock on players |  |  | false
 550 | PCF_DisableAndBreakAimLockOntoThisPed |  |  | false
 556 | full lockon immunity |  |  | false
