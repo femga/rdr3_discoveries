@@ -1,6 +1,6 @@
 ## Some Blackboard Values
 
-	Blackboard bools, floats and strings subdivided to 6 sections: "all", "animation", "any", "code", "global" and "script". Some "script" blackboards change ped motion. The purpose of other blackboards needs more inquiry. 
+Blackboard bools, floats and strings subdivided to 6 sections: "all", "animation", "any", "code", "global" and "script". Some "script" blackboards change ped motion. The purpose of other blackboards needs more inquiry. 
 
 ## Example
 
