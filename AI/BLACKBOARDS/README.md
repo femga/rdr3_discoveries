@@ -1,6 +1,6 @@
 ## Some Blackboard Values
 
-	Blackboard bools, floats and strings subdivided to 6 sections: "all", "animation", "any", "code", "global" and "script".
+	Blackboard bools, floats and strings subdivided to 6 sections: "all", "animation", "any", "code", "global" and "script". Some "script" blackboards change ped motion. The purpose of other blackboards needs more inquiry. 
 
 ## Example
 
@@ -80,3 +80,58 @@ bool | script | SpawnMissionIntro |
 bool | script | Urgent_Look_Back | 
 bool | script | Urgent_Look_Left | 
 bool | script | UrgentGlances | 
+bool | code | BlockInjuredLoco |
+bool | code | DoAFidget |
+bool | code | DoBulletFlinch |
+bool | code | DoLowStarts |
+bool | code | EagleEye |
+bool | code | FoliageActive |
+bool | code | frontpassenger |
+bool | code | HandsOnBelt |
+bool | code | Handsup |
+bool | code | HorseLeadingActive |
+bool | code | InCombat |
+bool | code | IsAiming |
+bool | code | IsAimingMounted |
+bool | code | IsClimbExit |
+bool | code | IsDoingItemInteraction |
+bool | code | IsEnteringCover |
+bool | code | IsFocusTarget |
+bool | code | IsInInterior |
+bool | code | isInspecting |
+bool | code | IsLanding |
+bool | code | isLowStaminaCoreActive |
+bool | code | IsOnFire |
+bool | code | IsPlayer |
+bool | code | OnFootIntimidate |
+bool | code | onStairs |
+bool | code | passenger |
+bool | code | PedIsWearingHat |
+bool | code | Rider |
+bool | code | RiderAiming |
+bool | code | RiderBlockIdleVariations |
+bool | code | RiderDoWhip |
+bool | code | RiderIntensityHigh |
+bool | code | RideSideSaddled |
+bool | code | Spooked |
+bool | code | Tracking |
+float | code | SurfaceIncline | from -3.2 till 3.14
+float | code | Agitation | from 0.1 till 1.0
+float | code | BulletFlinchDirection | from -3.2 till 3.14
+float | code | cautious | from 0.1 till 1.0
+float | code | ClimbHeight | from 0.75 till 3.5
+float | code | Drunkness | from 0.1 till 1.0
+float | code | Fatigue | from 0.1 till 1.0
+float | code | Fear | from 0.1 till 1.0
+float | code | FireDistance | from 0.1 till 4.5
+float | code | FoliageHeight | from 0.3 till 10.0
+float | code | Injury | from 0.001 till 1.0
+float | code | ShuntAngle | from -3.1425 till 3.1425
+float | code | ShuntForce | from 0.05 till 1.0
+float | code | Soak | from 0.1 till 1.0
+float | code | Strain | from 0.1 till 1.0
+float | code | Temperature | from -50.0 till 1000.0
+float | code | Unruliness | from 0.1 till 1.01
+float | code | WaterDepth | from 0.1 till 2.0
+float | code | WindSpeed | from 1.0 till 100.0
+
