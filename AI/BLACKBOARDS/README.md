@@ -13,12 +13,12 @@ Visible changes can only be seen with few "script" blackboards. It seems Rocksta
 
 	-- SET_PED_BLACKBOARD_BOOL (visible changes only for "script" blackboards)
 	-- last parameter is duration (in frames, -1 = forever)
-	Citizen.InvokeNative(0xCB9401F918CB0F75, PlayerPedId(), "NarrowLedge", true, 1000)  -- apply "narrow" walkstyle for 10 seconds
+	Citizen.InvokeNative(0xCB9401F918CB0F75, PlayerPedId(), "NarrowLedge", true, 1000)  -- apply "narrow" walkstyle for 1000 frames (~10 seconds)
 
 
 	-- SET_PED_BLACKBOARD_STRING (visible changes only for "script" blackboards)
 	-- last parameter is duration (in frames, -1 = forever)
-	Citizen.InvokeNative(0xA762C9D6CF165E0D, PlayerPedId(), "BodyPartChained", "Legs", 5000)
+	Citizen.InvokeNative(0xA762C9D6CF165E0D, PlayerPedId(), "BodyPartChained", "Legs", 5000)  -- apply "legschained" walkstyle for 5000 frames (~50 seconds)
 
 ```
 
