@@ -7,44 +7,41 @@ Be careful, you must use right eventDataSize to get event data (check table belo
 
 ```lua
 Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0) 
+	while true do
+		Citizen.Wait(0) 
 
-        local size = GetNumberOfEvents(0)   -- get number of events for event group SCRIPT_EVENT_QUEUE_AI (0)
-        if size > 0 then 
-            for i = 0, size - 1 do
+		local size = GetNumberOfEvents(0)   -- get number of events for event group SCRIPT_EVENT_QUEUE_AI (0)
+		if size > 0 then 
+			for i = 0, size - 1 do
 
-                local eventAtIndex = GetEventAtIndex(0, i)
+				local eventAtIndex = GetEventAtIndex(0, i)
 
-              	if eventAtIndex == 1208357138 then   -- if eventAtIndex == GetHashKey("EVENT_CARRIABLE_UPDATE_CARRY_STATE")
+				if eventAtIndex == 1208357138 then   -- if eventAtIndex == GetHashKey("EVENT_CARRIABLE_UPDATE_CARRY_STATE")
 
-              		local eventDataSize = 5  -- for EVENT_CARRIABLE_UPDATE_CARRY_STATE data size is 5
+					local eventDataSize = 5  -- for EVENT_CARRIABLE_UPDATE_CARRY_STATE data size is 5
 
-          			local eventDataStruct = DataView.ArrayBuffer(128)
-					eventDataStruct:SetInt32(0 ,0)		 	-- 0 offcet for 0 element of eventData	
-					eventDataStruct:SetInt32(8 ,0)    	  	-- 8 offcet for 1 element of eventData		
-					eventDataStruct:SetInt32(16 ,0)			-- 16 offcet for 2 element of eventData	
-					eventDataStruct:SetInt32(24 ,0)			-- 24 offcet for 3 element of eventData	
-					eventDataStruct:SetInt32(32,0)    		-- 32 offcet for 4 element of eventData		
-															-- etc +8 offcet for each next element (if data size is bigger then 5)
+					local eventDataStruct = DataView.ArrayBuffer(128) -- buffer must be 8*eventDataSize or bigger
+					eventDataStruct:SetInt32(0 ,0)		 	-- 0 offset for 0 element of eventData	
+					eventDataStruct:SetInt32(8 ,0)    	  	-- 8 offset for 1 element of eventData		
+					eventDataStruct:SetInt32(16 ,0)			-- 16 offset for 2 element of eventData	
+					eventDataStruct:SetInt32(24 ,0)			-- 24 offset for 3 element of eventData	
+					eventDataStruct:SetInt32(32,0)    		-- 32 offset for 4 element of eventData		
+					-- etc +8 offset for each next element (if data size is bigger then 5)
 
-					
 					local is_data_exists = Citizen.InvokeNative(0x57EC5FA4D4D6AFCA,0,i,eventDataStruct:Buffer(),eventDataSize)	-- GET_EVENT_DATA
 
 					if is_data_exists then
+						print("0: CarriableEntityId: "..eventDataStruct:GetInt32(0))
+						print("1: PerpitratorEntityId: "..eventDataStruct:GetInt32(8))
+						print("2: CarrierEntityId: "..eventDataStruct:GetInt32(16))
+						print("3: IsOnHorse: "..eventDataStruct:GetInt32(24))
+						print("4: IsOnGround: "..eventDataStruct:GetInt32(32))
+					end
 
-						print("CarriableEntityId: "..eventDataStruct:GetInt32(0))
-						print("PerpitratorEntityId: "..eventDataStruct:GetInt32(8))
-						print("CarrierEntityId: "..eventDataStruct:GetInt32(16))
-						print("IsOnHorse: "..eventDataStruct:GetInt32(24))
-						print("IsOnGround: "..eventDataStruct:GetInt32(32))
-
-	                end
-	                
-              	end
-            end
-        end
-    end
+				end
+			end
+		end
+	end
 end)
 ```
 
@@ -53,21 +50,57 @@ end)
 Event Hashname | Event Data Size | Known Event Data Elements
 ----------- | -------------------------- |----------
 EVENT_BUCKED_OFF | 3 | 0 - rider id<br> 1 - mount id<br> 2 - unknown
+EVENT_CALCULATE_LOOT | 26 | 0 - unknown<br> 1 - unknown<br> 2 - inventory item hash<br> 3 - consumable action hash<br> 4 - unknown<br> 5 - unknown<br> 6 - unknown<br> 7 - unknown<br> 8 - unknown<br> 9 - unknown<br> 10 - unknown<br> 11 - unknown<br> 12 - unknown<br> 13 - unknown<br> 14 - unknown<br> 15 - unknown<br> 16 - unknown<br> 17 - unknown<br> 18 - unknown<br> 19 - unknown<br> 20 - unknown<br> 21 - unknown<br> 22 - unknown<br> 23 - looter entity id<br> 24 - looted entity id<br> 25 - unknown 
+EVENT_CALM_PED | 4 | 0 - rider ped id<br> 1 - mount ped id<br> 2 - unknown<br> 3 - unknown
 EVENT_CARRIABLE_UPDATE_CARRY_STATE | 5 | 0 - CarriableEntityId<br> 1 - PerpitratorEntityId<br> 2 - CarrierEntityId<br> 3 - IsOnHorse<br> 4 - IsOnGround
 EVENT_CHALLENGE_GOAL_COMPLETE | 1 | 0 - challenge goal hash
+EVENT_CHALLENGE_GOAL_UPDATE | 1 | 0 - challenge goal hash
 EVENT_CHALLENGE_REWARD | 3 | 0 - challenge reward hash<br> 1 - unknown<br> 2 - unknown
 EVENT_ENTITY_DAMAGED | 9 | 0 - damaged entity id<br> 1 - object (or ped id) that caused damage to the entity <br> 2 - weaponHash that damaged the entity<br> 3 - ammo hash that damaged the entity<br> 4 - unknown<br> 5 - unknown<br> 6 - unknown<br> 7 - unknown<br> 8 - unknown
 EVENT_ENTITY_DESTROYED | 9 | 0 - destroyed entity id<br> 1 - object (or ped id) that caused damage to the entity<br> 2 - weaponHash that damaged the entity <br> 3 - ammo hash that damaged the entity<br> 4 - unknown<br> 5 - unknown<br> 6 - unknown<br> 7 - unknown<br> 8 - unknown
 EVENT_ENTITY_EXPLOSION | 6 | 0 - ped id who did explosion<br> 1 - unknown<br> 2 - weaponhash<br> 3 - unknown<br> 4 - unknown<br> 5 - unknown
+EVENT_ENTITY_HOGTIED | 3 | 0 - hogtied entity id<br> 1 - hogtier ped id<br> 2 - unknown
+EVENT_HITCH_ANIMAL | 4 | 0 - rider ped id<br> 1 - mount ped id<br> 2 - unknown<br> 3 - unknown
+EVENT_IMPENDING_SAMPLE_PROMPT | 2 | 0 - unknown<br> 1 - inventory item hash
 EVENT_INVENTORY_ITEM_PICKED_UP | 5 | 0 - consumable item hash<br> 1 - picked up entity model <br> 2 - unknown<br> 3 - unknown<br> 4 - picked up entity id 
-EVENT_OBJECT_INTERACTION | 10 | 0 - ped id<br> 1 - interaction entity id <br> 2 - consumable item hash<br> 3 - unknown<br> 4 - unknown<br> 5 - unknown<br>6 - unknown<br> 7 - unknown<br> 8 - unknown<br> 9 - unknown
-EVENT_PED_CREATED | 1 | 0 - ped id that was created
-EVENT_PED_DESTROYED | 1 | 0 - unknown
-EVENT_PICKUP_CARRIABLE | 4 | 0 - carrier ped id<br> 1 - carriable entity id<br> 2 - unknown<br> 3 - unknown
+EVENT_ITEM_PROMPT_INFO_REQUEST | 2 | 0 - entity id, requesting prompt info<br> 1 - consumable item hash
+EVENT_LOOT | 36 | 0 - unknown<br> 1 - unknown<br> 2 - inventory item hash<br> 3 - unknown<br> 4 - unknown<br> 5 - unknown<br> 6 - unknown<br> 7 - unknown<br> 8 - unknown<br> 9 - unknown<br> 10 - unknown<br> 11 - unknown<br> 12 - unknown<br> 13 - unknown<br> 14 - unknown<br> 15 - unknown<br> 16 - unknown<br> 17 - unknown<br> 18 - unknown<br> 19 - unknown<br> 20 - unknown<br> 21 - unknown<br> 22 - weaponhash<br> 23 - unknown<br> 24 - unknown<br> 25 - unknown<br> 26 - LooterId<br> 27 - LootedId<br> 28 - Looted entity model<br> 29 - LootedCompositeHashid<br> 30 - unknown<br> 31 - unknown<br> 32 - unknown<br> 33 - unknown<br> 34 - unknown<br> 35 - unknown  
+EVENT_LOOT_COMPLETE | 3 | 0 - looterId<br> 1 - Looted entity id<br> 2 - isLootSuccess
+EVENT_LOOT_PLANT_START | 36 | 0 - NumGivenRewards<br> 1 - unknown<br> 2 - unknown<br> 3 - unknown<br> 4 - unknown<br> 5 - unknown<br> 6 - unknown<br> 7 - unknown<br> 8 - unknown<br> 9 - unknown<br> 10 - unknown<br> 11 - unknown<br> 12 - unknown<br> 13 - unknown<br> 14 - unknown<br> 15 - unknown<br> 16 - unknown<br> 17 - unknown<br> 18 - unknown<br> 19 - unknown<br> 20 - unknown<br> 21 - unknown<br> 22 - unknown<br> 23 - OriginalTargetSpawnLocation<br> 24 - unknown<br> 25 - unknown<br> 26 - LooterId<br> 27 - LootedId<br> 28 - unknown<br> 29 - LootedCompositeHashId<br> 30 - LootedPedStatHashName<br> 31 - LootedEntityWasAnimal<br> 32 - LootedEntityWasBird<br> 33 - unknown<br> 34 - LootingBehaviorType<br> 35 - unknown  
+EVENT_LOOT_VALIDATION_FAIL | 2 | 0 - fail reason id<br> 1 - unknown
 EVENT_MISS_INTENDED_TARGET | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash
 EVENT_MOUNT_OVERSPURRED | 6 | 0 - rider id<br> 1 - mount id<br> 2 - unknown<br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - unknown 
+EVENT_NETWORK_AWARD_CLAIMED | 12 | 0 - request id<br> 1 - unknown<br> 2 - unknown<br> 3 - unknown<br> 4 - unknown<br> 5 - result code<br> 6 - unknown<br> 7 - award transaction status<br> 8 - unknown<br> 9 - unknown<br> 10 - unknown<br> 11 - unknown
+EVENT_NETWORK_CASHINVENTORY_TRANSACTION | 6 | 0 - transaction id<br> 1 - unknown<br> 2 - failed<br> 3 - result code<br> 4 - items amount<br> 5 - action hash
+EVENT_NETWORK_LOOT_CLAIMED | 9 | 0 - request id<br> 1 - unknown<br> 2 - unknown<br> 3 - unknown<br> 4 - unknown<br> 5 - result code<br> 6 - unknown<br> 7 - status<br> 8 - unknown 
+EVENT_NETWORK_SESSION_MERGE_END | 1 | 0 - session message id
+EVENT_NETWORK_SESSION_MERGE_START | 1 | 0 - session message id
+EVENT_OBJECT_INTERACTION | 10 | 0 - ped id<br> 1 - interaction entity id <br> 2 - consumable item hash<br> 3 - unknown<br> 4 - unknown<br> 5 - unknown<br>6 - unknown<br> 7 - unknown<br> 8 - unknown<br> 9 - unknown
+EVENT_PED_ANIMAL_INTERACTION | 3 | 0 - ped id<br> 1 - animal ped id<br> 2 - interaction type hash
+EVENT_PED_CREATED | 1 | 0 - ped id that was created
+EVENT_PED_DESTROYED | 1 | 0 - unknown
+EVENT_PED_HAT_KNOCKED_OFF | 2 | 0 - ped id<br> 1 - hat entity id
+EVENT_PICKUP_CARRIABLE | 4 | 0 - carrier ped id<br> 1 - carriable entity id<br> 2 - unknown<br> 3 - unknown
+EVENT_PLACE_CARRIABLE_ONTO_PARENT | 6 | 0 - perpitrator entity id <br> 1 - carriable entity id<br> 2 - carrier id(parent id)<br> 3 - unknown<br> 4 - unknown<br> 5 - unknown
+EVENT_PLAYER_COLLECTED_AMBIENT_PICKUP | 8 | 0 - pickup name hash<br> 1 - unknown<br> 2 - unknown<br> 3 - pickup model hash<br> 4 - unknown<br> 5 - unknown<br> 6 - unknown<br> 7 - inventory item hash
+EVENT_PLAYER_ESCALATED_PED | 2 | 0 - player ped id<br> 1 - escalated ped id
+EVENT_PLAYER_HAT_EQUIPPED | 10 | 0 - player ped id<br> 1 - hat entity id<br> 2 - hat drawble hash<br> 3 - hat albedo hash<br> 4 - hat normal hash<br> 5 - hat material hash<br> 6 - hat palette hash<br> 7 - hat tint1<br> 8 - hat tint2<br> 9 - hat tint3 
+EVENT_PLAYER_HAT_KNOCKED_OFF | 5 | 0 - player ped id<br> 1 - ped id who threw off player hat<br> 2 - hat entity id<br> 3 - unknown<br> 4 - unknown
+EVENT_RAN_OVER_PED | 2 | 0 - unknown<br> 1 - ped id that was ran over
+EVENT_SCENARIO_ADD_PED | 2 | 0 - iScriptUID<br> 1 - unknown
+EVENT_SCENARIO_DESTROY_PROP | 2 | 0 - iScriptUID<br> 1 - unknown
+EVENT_SCENARIO_REMOVE_PED | 2 | 0 - iScriptUID<br> 1 - unknown
+EVENT_SHOCKING_ITEM_STOLEN | 3 | 0 - ped id<br> 1 - ped id<br> 2 - carriable entity id
 EVENT_SHOT_FIRED_BULLET_IMPACT | 1 | 0 - entity id that bullet hit
 EVENT_SHOT_FIRED_WHIZZED_BY | 1 | 0 - entity id that was shot
+EVENT_TRIGGERED_ANIMAL_WRITHE | 2 | 0 - animal ped id<br> 1 - ped id who damaged animal
 EVENT_VEHICLE_CREATED | 1 | 0 - vehicle id that was created
 EVENT_VEHICLE_DESTROYED | 1 | 0 - unknown
+
+
+
+
+
+
+
 
