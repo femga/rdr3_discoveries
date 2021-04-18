@@ -49,12 +49,13 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 155 | PCF_EnableCompanionAIAnalysis |  |  | false
 156 | PCF_EnableCompanionAISupport |  |  | false
 158 | PCF_RequestStealthMovement |  |  | false
-161 |  |  | is ped whistling | false
+161 | PCF_IsWhistling |  |  | false
 164 | prevent ped strong hit with knife ?? | cancel this config |  | false
 167 | PCF_ShouldBeOnMount (mount last used horse; dont work, if ped didnt use any horse yet) | cancel this task, but only when mounting is fully completed |  | false
 169 | PCF_DisableGrappleByPlayer |  |  | false
 170 | disable grapple, animal attack by AI ?? |  |  | false
 174 | (for horse) PCF_DisableEvasiveStep |  |  | false
+175 | PCF_SwappingReins |  |  | false
 177 |  |  | (for horse) is horse mounted by rider | false
 178 | PCF_AllowNonTempExceptionEvents |  |  | false
 182 | setting ped not to cop blip since friendly |  |  | false
@@ -65,7 +66,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 214 | (for horse) Setting personal mount to not be mountable by ai |  |  | false
 216 | PCF_DontConfrontCriminal |  |  | false
 217 | supress shocking events |  |  | false
-218 | prevent pick up thrown weapon (arrows, hatchets etc) | cancel this config |  | false
+218 | PCF_DisablePickups |  |  | false
 227 | Setting ped as valid for vehicle seat stow ?? |  |  | false
 233 | PCF_PedIsEnemyToPlayer |  |  | false
 246 | PCF_ForcePedLoadCover |  |  | false
@@ -94,12 +95,13 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 301 | PCF_DisableInteractionLockonOnTargetPed |  |  | false
 304 |  |  | (for horse) was horse mounted by player ?? | false
 305 | PCF_DisableHeadGore |  |  | false
-306 | disable body parts gore |  |  | false
+306 | PCF_DisableLimbGore |  |  | false
 307 | PCF_DisableMountSpawning |  |  | false
 311 | ped will not shoot props if they miss their target |  |  | false
 312 | PCF_DisableHorseGunshotFleeResponse |  |  | false
 313 | PCF_DontFindTransportToFollowLeader |  |  | false
 314 | PCF_ForceHogtieOfUnconciousPedToCarryAround |  |  | false
+318 | PCF_PreventScavengers |  |  | false
 319 | PCF_EnableAsVehicleTransitionDestination |  |  | false
 332 |  |  | is ped trying to reach scenario point ?? | **true**
 334 | prevent quick holster and unholster (with tab button) | cancel this config |  | false
@@ -150,7 +152,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 522 | PCF_DontFleeFromDroppedAnimals |  |  | false
 533 | after climbing stairs, ped turns left or right (dont effect vertical ladders) | cancel this config |  | false
 540 | PCF_FollowLeaderRunToEnterTransport |  |  | false
-545 | dont create combat blip |  |  | false
+545 | PCF_DontCreateCombatBlip |  |  | false
 546 | PCF_IgnoreOwnershipForHorseFeedAndBrush |  |  | false
 547 | disable lock on players |  |  | false
 550 | PCF_DisableAndBreakAimLockOntoThisPed |  |  | false
