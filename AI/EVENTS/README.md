@@ -71,14 +71,14 @@ EVENT_ITEM_PROMPT_INFO_REQUEST | 2 | 0 - entity id, requesting prompt info<br> 1
 EVENT_LOOT | 36 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - inventory item hash<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - weaponhash<br> 23 - <em>unknown</em><br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - Looted entity model<br> 29 - LootedCompositeHashid<br> 30 - <em>unknown</em><br> 31 - <em>unknown</em><br> 32 - <em>unknown</em><br> 33 - <em>unknown</em><br> 34 - <em>unknown</em><br> 35 - <em>unknown</em>  
 EVENT_LOOT_COMPLETE | 3 | 0 - looterId<br> 1 - Looted entity id<br> 2 - isLootSuccess
 EVENT_LOOT_PLANT_START | 36 | 0 - NumGivenRewards<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - OriginalTargetSpawnLocation<br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - <em>unknown</em><br> 29 - LootedCompositeHashId<br> 30 - LootedPedStatHashName<br> 31 - LootedEntityWasAnimal<br> 32 - LootedEntityWasBird<br> 33 - <em>unknown</em><br> 34 - LootingBehaviorType<br> 35 - <em>unknown</em>  
-EVENT_LOOT_VALIDATION_FAIL | 2 | 0 - fail reason id ( [list](#EVENT_LOOT_VALIDATION_FAIL:-fail-reason-ids) )<br> 1 - looted_entity
+EVENT_LOOT_VALIDATION_FAIL | 2 | 0 - fail reason id ( [list](#event_loot_validation_fail-fail-reason-ids) )<br> 1 - looted_entity
 EVENT_MISS_INTENDED_TARGET | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash
 EVENT_MOUNT_OVERSPURRED | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em><br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - <em>unknown</em> 
 EVENT_NETWORK_AWARD_CLAIMED | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - <em>unknown</em><br> 7 - award transaction status<br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
 EVENT_NETWORK_CASHINVENTORY_TRANSACTION | 6 | 0 - transaction id<br> 1 - <em>unknown</em><br> 2 - failed<br> 3 - result code<br> 4 - items amount<br> 5 - action hash
 EVENT_NETWORK_LOOT_CLAIMED | 9 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - <em>unknown</em><br> 7 - status<br> 8 - <em>unknown</em> 
-EVENT_NETWORK_SESSION_MERGE_END | 1 | 0 - session message id ( [list](#EVENT_NETWORK_SESSION_MERGE_END:-message-ids) )
-EVENT_NETWORK_SESSION_MERGE_START | 1 | 0 - session message id ( [list](#EVENT_NETWORK_SESSION_MERGE_START:-message-ids) )
+EVENT_NETWORK_SESSION_MERGE_END | 1 | 0 - session message id ( [list](#event_network_session_merge_end-message-ids) )
+EVENT_NETWORK_SESSION_MERGE_START | 1 | 0 - session message id ( [list](#event_network_session_merge_start-message-ids) )
 EVENT_OBJECT_INTERACTION | 10 | 0 - ped id<br> 1 - interaction entity id <br> 2 - consumable item hash<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br>6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em>
 EVENT_PED_ANIMAL_INTERACTION | 3 | 0 - ped id<br> 1 - animal ped id<br> 2 - interaction type hash
 EVENT_PED_CREATED | 1 | 0 - ped id that was created
@@ -125,6 +125,8 @@ ID | Value
 
 ### EVENT_NETWORK_SESSION_MERGE_END: message ids
 
+ID | Value
+----------- | -------------------------- 
 0 | MR_Unknown
 1 | MR_Proximity
 2 | MR_Region
@@ -137,6 +139,8 @@ ID | Value
 
 ### EVENT_NETWORK_SESSION_MERGE_START: message ids
 
+ID | Value
+----------- | -------------------------- 
 0 | MR_Unknown
 1 | MR_Proximity
 2 | MR_Region
