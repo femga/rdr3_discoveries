@@ -68,7 +68,7 @@ EVENT_ENTITY_DESTROYED | 0 | 9 | 0 - destroyed entity id<br> 1 - object (or ped 
 EVENT_ENTITY_EXPLOSION | 0 | 6 | 0 - ped id who did explosion<br> 1 - <em>unknown</em><br> 2 - weaponhash( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em>
 EVENT_ENTITY_HOGTIED | 0 | 3 | 0 - hogtied entity id<br> 1 - hogtier ped id<br> 2 - <em>unknown</em>
 EVENT_HEADSHOT_BLOCKED_BY_HAT | 0 | 2 | 0 - Victim entity id<br> 1 - Inflictor entity id
-EVENT_HELP_TEXT_REQUEST | 0 | 4 |  0 - <em>unknown</em> 1 - tutorial flag hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/tutorial_flags.lua) )<br> 2 - <em>unknown</em><br> 3 - inventory item hash
+EVENT_HELP_TEXT_REQUEST | 0 | 4 |  0 - <em>unknown</em><br> 1 - tutorial flag hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/tutorial_flags.lua) )<br> 2 - <em>unknown</em><br> 3 - inventory item hash
 EVENT_HITCH_ANIMAL | 0 | 4 | 0 - rider ped id<br> 1 - mount ped id<br> 2 - isAnimalHitched<br> 3 - hitching type id
 EVENT_HOGTIED_ENTITY_PICKED_UP | 0 | 2 | 0 - hogtied ped id<br> 1 - carrier ped id
 EVENT_HORSE_BROKEN | 0 | 3 | 0 - rider ped id<br> 1 - broken horse ped id<br> 2 - HorseBrokenEventTypeId ( [list](#horse-broken-event-type-ids) )
@@ -85,7 +85,7 @@ EVENT_MOUNT_OVERSPURRED | 0 | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unkn
 EVENT_NETWORK_AWARD_CLAIMED | 1 | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - awarded xp amount<br> 7 - awarded rank amount<br> 8 - awarded cash amount<br> 9 - awarded gold amount<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
 EVENT_NETWORK_CASHINVENTORY_TRANSACTION | 1 | 6 | 0 - transaction id<br> 1 - <em>unknown</em><br> 2 - failed<br> 3 - result code<br> 4 - items amount<br> 5 - action hash
 EVENT_NETWORK_LOOT_CLAIMED | 1 | 9 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - <em>unknown</em><br> 7 - status<br> 8 - <em>unknown</em> 
-EVENT_NETWORK_MINIGAME_REQUEST_COMPLETE | 1 | 6 | 0 - seatRequestData0<br> 1 - seatRequestData1<br> 2 - seatRequestData2<br> 3 - seatRequestData3<br> 4 - isSuccess<br> 5 - MinigameErrorCodeHash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/minigame_error_codes.lua )
+EVENT_NETWORK_MINIGAME_REQUEST_COMPLETE | 1 | 6 | 0 - seatRequestData0<br> 1 - seatRequestData1<br> 2 - seatRequestData2<br> 3 - seatRequestData3<br> 4 - isSuccess<br> 5 - MinigameErrorCodeHash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/minigame_error_codes.lua ) )
 EVENT_NETWORK_SESSION_MERGE_END | 1 | 1 | 0 - session message id ( [list](#event_network_session_merge_end-message-ids) )
 EVENT_NETWORK_SESSION_MERGE_START | 1 | 1 | 0 - session message id ( [list](#event_network_session_merge_start-message-ids) )
 EVENT_OBJECT_INTERACTION | 0 | 10 | 0 - ped id<br> 1 - interaction entity id <br> 2 - inventory item hash<br> 3 - inventory item quantity<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br>6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - scenario point id<br> 9 - <em>unknown</em>
@@ -93,7 +93,7 @@ EVENT_PED_ANIMAL_INTERACTION | 0 | 3 | 0 - ped id<br> 1 - animal ped id<br> 2 - 
 EVENT_PED_CREATED | 0 | 1 | 0 - ped id that was created
 EVENT_PED_DESTROYED | 0 | 1 | 0 - <em>unknown</em> (??? destroyed ped id)
 EVENT_PED_HAT_KNOCKED_OFF | 0 | 2 | 0 - ped id<br> 1 - hat entity id
-EVENT_PED_WHISTLE | 0 | 2 | 0 - whistler ped id<br> 1 - whistle type ( [whistle types](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/aud_ped_whistle_types.lua) )
+EVENT_PED_WHISTLE | 0 | 2 | 0 - whistler ped id<br> 1 - whistle type ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/aud_ped_whistle_types.lua) )
 EVENT_PICKUP_CARRIABLE | 0 | 4 | 0 - carrier ped id<br> 1 - carriable entity id<br> 2 - isPickupDoneFromParent<br> 3 - carrier mount ped id (parent id)
 EVENT_PLACE_CARRIABLE_ONTO_PARENT | 0 | 6 | 0 - perpitrator entity id <br> 1 - carriable entity id<br> 2 - carrier id(parent id)<br> 3 - <em>unknown</em><br> 4 - isCarriedEntityAPelt<br> 5 - inventory item hash
 EVENT_PLAYER_COLLECTED_AMBIENT_PICKUP | 0 | 8 | 0 - pickup name hash<br> 1 - <em>unknown</em> (??? pickup entity id)<br> 2 - player id<br> 3 - pickup model hash<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - collected inventory item quantity<br> 7 - inventory item hash
