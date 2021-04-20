@@ -47,62 +47,75 @@ end)
 
 <h2>Some Events Data.</h2>
 
-Event Hashname | Event Data Size | Known Event Data Elements
------------ | -------------------------- |----------
-EVENT_BUCKED_OFF | 3 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em>
-EVENT_CALCULATE_LOOT | 26 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - inventory item hash<br> 3 - consumable action hash<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - looter entity id<br> 24 - looted entity id<br> 25 - <em>unknown</em> 
-EVENT_CALM_PED | 4 | 0 - rider ped id<br> 1 - mount ped id<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em>
-EVENT_CARRIABLE_UPDATE_CARRY_STATE | 5 | 0 - CarriableEntityId<br> 1 - PerpitratorEntityId<br> 2 - CarrierEntityId<br> 3 - IsOnHorse<br> 4 - IsOnGround
-EVENT_CHALLENGE_GOAL_COMPLETE | 1 | 0 - challenge goal hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/challenge_goals.lua) )
-EVENT_CHALLENGE_GOAL_UPDATE | 1 | 0 - challenge goal hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/challenge_goals.lua) )
-EVENT_CHALLENGE_REWARD | 3 | 0 - challenge reward hash<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em>
-EVENT_CONTAINER_INTERACTION | 4 | 0 - searcher ped id<br> 1 - searched entity id<br> 2 - <em>unknown</em><br> 3 - isContainerClosed after interaction
-EVENT_CRIME_CONFIRMED | 3 | 0 - crime type hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/crime_types.lua) )<br> 1 - criminal ped id<br> 2 - witness
-EVENT_ENTITY_BROKEN | 9 | 0 - broken entity id<br> 1 - <em>unknown</em> <br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
-EVENT_ENTITY_DAMAGED | 9 | 0 - damaged entity id<br> 1 - object (or ped id) that caused damage to the entity <br> 2 - weaponHash that damaged the entity<br> 3 - ammo hash that damaged the entity<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
-EVENT_ENTITY_DESTROYED | 9 | 0 - destroyed entity id<br> 1 - object (or ped id) that caused damage to the entity<br> 2 - weaponHash that damaged the entity <br> 3 - ammo hash that damaged the entity<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
-EVENT_ENTITY_EXPLOSION | 6 | 0 - ped id who did explosion<br> 1 - <em>unknown</em><br> 2 - weaponhash<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em>
-EVENT_ENTITY_HOGTIED | 3 | 0 - hogtied entity id<br> 1 - hogtier ped id<br> 2 - <em>unknown</em>
-EVENT_HITCH_ANIMAL | 4 | 0 - rider ped id<br> 1 - mount ped id<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em>
-EVENT_HORSE_BROKEN | 3 | 0 - rider ped id<br> 1 - broken horse ped id<br> 2 - <em>unknown</em>
-EVENT_IMPENDING_SAMPLE_PROMPT | 2 | 0 - <em>unknown</em><br> 1 - inventory item hash
-EVENT_INVENTORY_ITEM_PICKED_UP | 5 | 0 - consumable item hash<br> 1 - picked up entity model <br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - picked up entity id 
-EVENT_ITEM_PROMPT_INFO_REQUEST | 2 | 0 - entity id, requesting prompt info<br> 1 - consumable item hash
-EVENT_LOOT | 36 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - inventory item hash<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - weaponhash<br> 23 - <em>unknown</em><br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - Looted entity model<br> 29 - LootedCompositeHashid<br> 30 - <em>unknown</em><br> 31 - <em>unknown</em><br> 32 - <em>unknown</em><br> 33 - <em>unknown</em><br> 34 - <em>unknown</em><br> 35 - <em>unknown</em>  
-EVENT_LOOT_COMPLETE | 3 | 0 - looterId<br> 1 - Looted entity id<br> 2 - isLootSuccess
-EVENT_LOOT_PLANT_START | 36 | 0 - NumGivenRewards<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - OriginalTargetSpawnLocation<br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - <em>unknown</em><br> 29 - LootedCompositeHashId<br> 30 - LootedPedStatHashName<br> 31 - LootedEntityWasAnimal<br> 32 - LootedEntityWasBird<br> 33 - <em>unknown</em><br> 34 - LootingBehaviorType<br> 35 - <em>unknown</em>  
-EVENT_LOOT_VALIDATION_FAIL | 2 | 0 - fail reason id ( [list](#event_loot_validation_fail-fail-reason-ids) )<br> 1 - looted_entity
-EVENT_MISS_INTENDED_TARGET | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash
-EVENT_MOUNT_OVERSPURRED | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em><br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - <em>unknown</em> 
-EVENT_NETWORK_AWARD_CLAIMED | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - <em>unknown</em><br> 7 - award transaction status<br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
-EVENT_NETWORK_CASHINVENTORY_TRANSACTION | 6 | 0 - transaction id<br> 1 - <em>unknown</em><br> 2 - failed<br> 3 - result code<br> 4 - items amount<br> 5 - action hash
-EVENT_NETWORK_LOOT_CLAIMED | 9 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - <em>unknown</em><br> 7 - status<br> 8 - <em>unknown</em> 
-EVENT_NETWORK_SESSION_MERGE_END | 1 | 0 - session message id ( [list](#event_network_session_merge_end-message-ids) )
-EVENT_NETWORK_SESSION_MERGE_START | 1 | 0 - session message id ( [list](#event_network_session_merge_start-message-ids) )
-EVENT_OBJECT_INTERACTION | 10 | 0 - ped id<br> 1 - interaction entity id <br> 2 - consumable item hash<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br>6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em>
-EVENT_PED_ANIMAL_INTERACTION | 3 | 0 - ped id<br> 1 - animal ped id<br> 2 - interaction type hash
-EVENT_PED_CREATED | 1 | 0 - ped id that was created
-EVENT_PED_DESTROYED | 1 | 0 - <em>unknown</em>
-EVENT_PED_HAT_KNOCKED_OFF | 2 | 0 - ped id<br> 1 - hat entity id
-EVENT_PED_WHISTLE | 2 | 0 - whistler ped id<br> 1 - whistle type ( [whistle types](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/aud_ped_whistle_types.lua) )
-EVENT_PICKUP_CARRIABLE | 4 | 0 - carrier ped id<br> 1 - carriable entity id<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em>
-EVENT_PLACE_CARRIABLE_ONTO_PARENT | 6 | 0 - perpitrator entity id <br> 1 - carriable entity id<br> 2 - carrier id(parent id)<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em>
-EVENT_PLAYER_COLLECTED_AMBIENT_PICKUP | 8 | 0 - pickup name hash<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - pickup model hash<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - inventory item hash
-EVENT_PLAYER_ESCALATED_PED | 2 | 0 - player ped id<br> 1 - escalated ped id
-EVENT_PLAYER_HAT_EQUIPPED | 10 | 0 - player ped id<br> 1 - hat entity id<br> 2 - hat drawble hash<br> 3 - hat albedo hash<br> 4 - hat normal hash<br> 5 - hat material hash<br> 6 - hat palette hash<br> 7 - hat tint1<br> 8 - hat tint2<br> 9 - hat tint3 
-EVENT_PLAYER_HAT_KNOCKED_OFF | 5 | 0 - player ped id<br> 1 - ped id who threw off player hat<br> 2 - hat entity id<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em>
-EVENT_PLAYER_MOUNT_WILD_HORSE | 1 | 0 - wild horse ped id
-EVENT_RAN_OVER_PED | 2 | 0 - <em>unknown</em><br> 1 - ped id that was ran over
-EVENT_SCENARIO_ADD_PED | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
-EVENT_SCENARIO_DESTROY_PROP | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
-EVENT_SCENARIO_REMOVE_PED | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
-EVENT_SHOCKING_ITEM_STOLEN | 3 | 0 - ped id<br> 1 - ped id<br> 2 - carriable entity id
-EVENT_SHOT_FIRED_BULLET_IMPACT | 1 | 0 - entity id that bullet hit
-EVENT_SHOT_FIRED_WHIZZED_BY | 1 | 0 - entity id that was shot
-EVENT_STAT_VALUE_CHANGED | 2 | 0 - stat value type hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/stat_values.lua) )<br> 1 - unknown
-EVENT_TRIGGERED_ANIMAL_WRITHE | 2 | 0 - animal ped id<br> 1 - ped id who damaged animal
-EVENT_VEHICLE_CREATED | 1 | 0 - vehicle id that was created
-EVENT_VEHICLE_DESTROYED | 1 | 0 - <em>unknown</em>
+Event Hashname | Event Group | Event Data Size | Known Event Data Elements
+----------- | ------------- | -------------------------- | ----------
+EVENT_BUCKED_OFF | 0 | 3 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em>
+EVENT_CALCULATE_LOOT | 0 | 26 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - inventory item hash<br> 3 - consumable action hash<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - looter entity id<br> 24 - looted entity id<br> 25 - <em>unknown</em> 
+EVENT_CALM_PED | 0 | 4 | 0 - calmer ped id<br> 1 - mount ped id<br> 2 - CalmTypeId ( [list](#calm-type-ids) )<br> 3 - isFullyCalmed
+EVENT_CARRIABLE_UPDATE_CARRY_STATE | 0 | 5 | 0 - CarriableEntityId<br> 1 - PerpitratorEntityId<br> 2 - CarrierEntityId<br> 3 - IsOnHorse<br> 4 - IsOnGround
+EVENT_CARRIABLE_PROMPT_INFO_REQUEST | 0 | 6 | 0 - CarriableEntityId<br> 1 - carry action id ( [list](#carry-action-ids) )<br> 2 - <em>unknown</em><br> 3 - vehicle entity id (parent id)<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em>
+EVENT_CARRIABLE_VEHICLE_STOW_START | 0 | 5 | 0 - <em>unknown</em><br> 1 - carriable entity id<br> 2 - vehicle entity id<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em>
+EVENT_CARRIABLE_VEHICLE_STOW_COMPLETE | 0 | 3 | 0 - <em>unknown</em><br> 1 - vehicle entity id<br> 2 - isItemToAddCancelled
+EVENT_CHALLENGE_GOAL_COMPLETE | 0 | 1 | 0 - challenge goal hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/challenge_goals.lua) )
+EVENT_CHALLENGE_GOAL_UPDATE | 0 | 1 | 0 - challenge goal hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/challenge_goals.lua) )
+EVENT_CHALLENGE_REWARD | 0 | 3 | 0 - challenge reward hash<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em>
+EVENT_CONTAINER_INTERACTION | 0 | 4 | 0 - searcher ped id<br> 1 - searched entity id<br> 2 - <em>unknown</em><br> 3 - isContainerClosed after interaction
+EVENT_CRIME_CONFIRMED | 0 | 3 | 0 - crime type hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/crime_types.lua) )<br> 1 - criminal ped id<br> 2 - witness
+EVENT_DAILY_CHALLENGE_STREAK_COMPLETED | 0 | 1 | 0 - <em>unknown</em> (??? isDailyChallengeStreakCompleted)
+EVENT_ENTITY_BROKEN | 0 | 9 | 0 - broken entity id<br> 1 - <em>unknown</em> <br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
+EVENT_ENTITY_DAMAGED | 0 | 9 | 0 - damaged entity id<br> 1 - object (or ped id) that caused damage to the entity <br> 2 - weaponHash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - ammo hash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
+EVENT_ENTITY_DESTROYED | 0 | 9 | 0 - destroyed entity id<br> 1 - object (or ped id) that caused damage to the entity<br> 2 - weaponHash that damaged the entity  ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - ammo hash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
+EVENT_ENTITY_EXPLOSION | 0 | 6 | 0 - ped id who did explosion<br> 1 - <em>unknown</em><br> 2 - weaponhash( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em>
+EVENT_ENTITY_HOGTIED | 0 | 3 | 0 - hogtied entity id<br> 1 - hogtier ped id<br> 2 - <em>unknown</em>
+EVENT_HEADSHOT_BLOCKED_BY_HAT | 0 | 2 | 0 - Victim entity id<br> 1 - Inflictor entity id
+EVENT_HELP_TEXT_REQUEST | 0 | 4 |  0 - <em>unknown</em> 1 - tutorial flag hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/tutorial_flags.lua) )<br> 2 - <em>unknown</em><br> 3 - inventory item hash
+EVENT_HITCH_ANIMAL | 0 | 4 | 0 - rider ped id<br> 1 - mount ped id<br> 2 - isAnimalHitched<br> 3 - hitching type id
+EVENT_HOGTIED_ENTITY_PICKED_UP | 0 | 2 | 0 - hogtied ped id<br> 1 - carrier ped id
+EVENT_HORSE_BROKEN | 0 | 3 | 0 - rider ped id<br> 1 - broken horse ped id<br> 2 - HorseBrokenEventTypeId ( [list](#horse-broken-event-type-ids) )
+EVENT_IMPENDING_SAMPLE_PROMPT | 0 | 2 | 0 - <em>unknown</em><br> 1 - inventory item hash
+EVENT_INVENTORY_ITEM_PICKED_UP | 0 | 5 | 0 - inventory item hash<br> 1 - picked up entity model <br> 2 - isItemWasUsed<br> 3 - isItemWasBought<br> 4 - picked up entity id 
+EVENT_INVENTORY_ITEM_REMOVED | 0 | 1 | 0 - inventory item hash
+EVENT_ITEM_PROMPT_INFO_REQUEST | 0 | 2 | 0 - entity id, requesting prompt info<br> 1 - inventory item hash
+EVENT_LOOT | 0 | 36 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - inventory item hash<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - weaponhash( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 23 - <em>unknown</em><br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - Looted entity model<br> 29 - LootedCompositeHashid<br> 30 - <em>unknown</em><br> 31 - <em>unknown</em><br> 32 - <em>unknown</em><br> 33 - <em>unknown</em><br> 34 - <em>unknown</em><br> 35 - <em>unknown</em>  
+EVENT_LOOT_COMPLETE | 0 | 3 | 0 - looterId<br> 1 - Looted entity id<br> 2 - isLootSuccess
+EVENT_LOOT_PLANT_START | 0 | 36 | 0 - NumGivenRewards<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - OriginalTargetSpawnLocation<br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - <em>unknown</em><br> 29 - LootedCompositeHashId<br> 30 - LootedPedStatHashName<br> 31 - LootedEntityWasAnimal<br> 32 - LootedEntityWasBird<br> 33 - <em>unknown</em><br> 34 - LootingBehaviorType<br> 35 - <em>unknown</em>  
+EVENT_LOOT_VALIDATION_FAIL | 0 | 2 | 0 - fail reason id ( [list](#event_loot_validation_fail-fail-reason-ids) )<br> 1 - looted_entity
+EVENT_MISS_INTENDED_TARGET | 0 | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
+EVENT_MOUNT_OVERSPURRED | 0 | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em><br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - <em>unknown</em> 
+EVENT_NETWORK_AWARD_CLAIMED | 1 | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - awarded xp amount<br> 7 - awarded rank amount<br> 8 - awarded cash amount<br> 9 - awarded gold amount<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
+EVENT_NETWORK_CASHINVENTORY_TRANSACTION | 1 | 6 | 0 - transaction id<br> 1 - <em>unknown</em><br> 2 - failed<br> 3 - result code<br> 4 - items amount<br> 5 - action hash
+EVENT_NETWORK_LOOT_CLAIMED | 1 | 9 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - <em>unknown</em><br> 7 - status<br> 8 - <em>unknown</em> 
+EVENT_NETWORK_MINIGAME_REQUEST_COMPLETE | 1 | 6 | 0 - seatRequestData0<br> 1 - seatRequestData1<br> 2 - seatRequestData2<br> 3 - seatRequestData3<br> 4 - isSuccess<br> 5 - MinigameErrorCodeHash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/minigame_error_codes.lua )
+EVENT_NETWORK_SESSION_MERGE_END | 1 | 1 | 0 - session message id ( [list](#event_network_session_merge_end-message-ids) )
+EVENT_NETWORK_SESSION_MERGE_START | 1 | 1 | 0 - session message id ( [list](#event_network_session_merge_start-message-ids) )
+EVENT_OBJECT_INTERACTION | 0 | 10 | 0 - ped id<br> 1 - interaction entity id <br> 2 - inventory item hash<br> 3 - inventory item quantity<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br>6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - scenario point id<br> 9 - <em>unknown</em>
+EVENT_PED_ANIMAL_INTERACTION | 0 | 3 | 0 - ped id<br> 1 - animal ped id<br> 2 - interaction type hash
+EVENT_PED_CREATED | 0 | 1 | 0 - ped id that was created
+EVENT_PED_DESTROYED | 0 | 1 | 0 - <em>unknown</em> (??? destroyed ped id)
+EVENT_PED_HAT_KNOCKED_OFF | 0 | 2 | 0 - ped id<br> 1 - hat entity id
+EVENT_PED_WHISTLE | 0 | 2 | 0 - whistler ped id<br> 1 - whistle type ( [whistle types](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/aud_ped_whistle_types.lua) )
+EVENT_PICKUP_CARRIABLE | 0 | 4 | 0 - carrier ped id<br> 1 - carriable entity id<br> 2 - isPickupDoneFromParent<br> 3 - carrier mount ped id (parent id)
+EVENT_PLACE_CARRIABLE_ONTO_PARENT | 0 | 6 | 0 - perpitrator entity id <br> 1 - carriable entity id<br> 2 - carrier id(parent id)<br> 3 - <em>unknown</em><br> 4 - isCarriedEntityAPelt<br> 5 - inventory item hash
+EVENT_PLAYER_COLLECTED_AMBIENT_PICKUP | 0 | 8 | 0 - pickup name hash<br> 1 - <em>unknown</em> (??? pickup entity id)<br> 2 - player id<br> 3 - pickup model hash<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - collected inventory item quantity<br> 7 - inventory item hash
+EVENT_PLAYER_ESCALATED_PED | 0 | 2 | 0 - player ped id<br> 1 - escalated ped id
+EVENT_PLAYER_HAT_EQUIPPED | 0 | 10 | 0 - player ped id<br> 1 - hat entity id<br> 2 - hat drawble hash<br> 3 - hat albedo hash<br> 4 - hat normal hash<br> 5 - hat material hash<br> 6 - hat palette hash<br> 7 - hat tint1<br> 8 - hat tint2<br> 9 - hat tint3 
+EVENT_PLAYER_HAT_KNOCKED_OFF | 0 | 5 | 0 - player ped id<br> 1 - ped id who threw off player hat<br> 2 - hat entity id<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em>
+EVENT_PLAYER_MOUNT_WILD_HORSE | 0 | 1 | 0 - wild horse ped id
+EVENT_PLAYER_PROMPT_TRIGGERED | 0 | 10 | 0 - prompt type id ( [list](#prompt-type-ids) )<br> 1 - <em>unknown</em><br> 2 - target entity id<br> 3 - <em>unknown</em> (??? discovered inventory item)<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - discoverable entity type id ( [list](#discoverable-entity-type-ids) )<br> 8 - <em>unknown</em><br> 9 - kit_emote_action hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/animations/kit_emotes_list.lua) )
+EVENT_RAN_OVER_PED | 0 | 2 | 0 - <em>unknown</em><br> 1 - ped id that was ran over
+EVENT_REVIVE_ENTITY | 0 | 3 | 0 - VictimEntityId<br> 1 - reviver ped id<br> 2 - used inventory item hash
+EVENT_SCENARIO_ADD_PED | 0 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
+EVENT_SCENARIO_DESTROY_PROP | 0 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
+EVENT_SCENARIO_REMOVE_PED | 0 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
+EVENT_SHOCKING_ITEM_STOLEN | 0 | 3 | 0 - ped id<br> 1 - ped id<br> 2 - carriable entity id
+EVENT_SHOT_FIRED_BULLET_IMPACT | 0 | 1 | 0 - entity id that bullet hit
+EVENT_SHOT_FIRED_WHIZZED_BY | 0 | 1 | 0 - entity id that was shot
+EVENT_STAT_VALUE_CHANGED | 0 | 2 | 0 - stat value type hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/stat_values.lua) )<br> 1 - unknown
+EVENT_TRIGGERED_ANIMAL_WRITHE | 0 | 2 | 0 - animal ped id<br> 1 - ped id who damaged animal
+EVENT_UI_ITEM_INSPECT_ACTIONED | 0 | 6 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em> (??? FitsSlot hash)<br> 5 - <em>unknown</em>
+EVENT_UI_QUICK_ITEM_USED | 0 | 6 |  0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em> (??? FitsSlot hash)<br> 5 - entity id, item was used for
+EVENT_VEHICLE_CREATED | 0 | 1 | 0 - vehicle id that was created
+EVENT_VEHICLE_DESTROYED | 0 | 1 | 0 - <em>unknown</em> (??? destroyed vehicle id)
 
 
 
@@ -148,3 +161,136 @@ ID | Value
 4 | MR_Invite
 5 | MR_EnterSession
 7 | MR_Count
+
+
+
+
+### Prompt type ids
+
+ID | Value
+----------- | -------------------------- 
+0 | PP_SCENARIO
+1 | PP_MOUNT
+2 | PP_VEHICLE
+3 | PP_GREET
+4 | PP_INSULT
+5 | PP_HORSEINTERACT
+6 | PP_HORSETRANSFER
+7 | PP_ROB
+8 | PP_DRAW_WEAPON
+9 | PP_INTERACTION_LOCKON
+10 | PP_HORSEDETACH
+11 | PP_HORSELEADING
+12 | PP_USE_DPS
+13 | PP_SURRENDER_FOR_ARREST
+14 | PP_SURRENDER_REACH_WEAPON
+15 | PP_DUEL
+16 | PP_INTERJECT_POS
+17 | PP_INTERJECT_NEG
+18 | PP_STOP_VEHICLE
+19 | PP_ROB_POS
+20 | PP_ROB_NEG
+21 | PP_STOP_WITNESS
+22 | PP_HORSE_INSULT
+23 | PP_DPS_AUTO_SIT
+24 | PP_CROUCH
+25 | PP_REQUEST_RIDE
+26 | PP_CALL_ANIMAL
+27 | PP_HORSE_CALM
+28 | PP_HORSE_ITEMS
+29 | PP_HORSE_CALLOUT
+30 | PP_STUDY
+31 | PP_HORSE_FOLLOW
+32 | PP_HORSE_STAY
+33 | PP_HORSE_FLEE
+34 | PP_TRACK_ANIMAL
+35 | PP_TARGET_INFO
+36 | PP_RELOAD_WEAPON
+37 | PP_EMOTE_TAUNT
+38 | PP_EMOTE_GREET
+39 | PP_EMOTE_REACT
+40 | PP_EMOTE_ACTION
+41 | PP_EMOTE_FLOURISH
+42 | PP_LEAVE_DPS
+43 | PP_ILO_MELEE
+44 | PP_HORSE_CARE
+45 | PP_HORSE_WEAPONS_HOLD
+46 | PP_HORSE_WEAPONS
+47 | PP_HORSE_PROXIMITY_INTERACT
+48 | PP_TRANSPORT_TRANSITION
+49 | PP_HORSE_BRUSH
+50 | PP_HORSE_FEED
+51 | PP_INTERACTION_LOCKON_GROUP
+52 | PP_ANIMAL_INTERACT
+53 | PP_MELEE_STEALTH_KILL
+54 | PP_SADDLE_WEAPONS_HOLD
+55 | PP_EMOTE_WHEEL
+56 | PP_TOGGLE_SCOPE
+57 | PP_SWITCH_FIRING_MODE
+58 | PP_EMOTE_GROUP_LINK
+59 | PP_EMOTE_GROUP_LINK_BACK
+60 | PP_EMOTE_TWIRL_GUN_HOLD
+61 | PP_EMOTE_TWIRL_GUN_VAR_A
+62 | PP_EMOTE_TWIRL_GUN_VAR_B
+63 | PP_EMOTE_TWIRL_GUN_VAR_C
+64 | PP_EMOTE_TWIRL_GUN_VAR_D
+65 | PP_SURRENDER_BREAK_OUT
+66 | PP_EMOTE_DANCE_FLOOR
+
+
+
+
+
+### Discoverable entity type ids
+
+ID | Value
+----------- | -------------------------- 
+0 | DISCOVERABLE_CHARACTERS
+1 | DISCOVERABLE_ANIMALS
+2 | DISCOVERABLE_PLANTS
+3 | DISCOVERABLE_MISC
+
+
+
+
+### Horse broken event type ids
+
+ID | Value
+----------- | -------------------------- 
+0 | HBET_STARTED
+1 | HBET_FAILED
+2 | HBET_SUCCESS
+3 | HBET_CANCELLED
+
+
+
+
+### Calm type ids
+
+ID | Value
+----------- | -------------------------- 
+0 | CT_CALM
+1 | CT_SHORT_PAT
+2 | CT_SHORT_PAT_START
+3 | CT_LONG_PAT
+4 | CT_LONG_PAT_START
+5 | CT_VERBAL_AFFIRMATION_ONLY
+
+
+### Carry action ids
+
+ID | Value
+----------- | -------------------------- 
+-1 | CARRY_ACTION_TYPE_ANY
+0 | CARRY_ACTION_TYPE_HOGTIE
+1 | CARRY_ACTION_TYPE_DEAD
+2 | CARRY_ACTION_TYPE_CARRIABLE
+3 | CARRY_ACTION_TYPE_CUT_FREE
+4 | CARRY_ACTION_TYPE_PICKUP_FROM_GROUND
+5 | CARRY_ACTION_TYPE_PICKUP_FROM_MOUNT
+6 | CARRY_ACTION_TYPE_PLACE_ON_GROUND
+7 | CARRY_ACTION_TYPE_PLACE_ON_MOUNT
+8 | CARRY_ACTION_TYPE_PLACE_ON_VEHICLE
+9 | CARRY_ACTION_TYPE_MERCY_KILL
+10 | CARRY_ACTION_TYPE_PICKUP_WHILE_SWIMMING
+
