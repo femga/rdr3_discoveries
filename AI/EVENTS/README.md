@@ -80,14 +80,50 @@ EVENT_LOOT | 0 | 36 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - inve
 EVENT_LOOT_COMPLETE | 0 | 3 | 0 - looterId<br> 1 - Looted entity id<br> 2 - isLootSuccess
 EVENT_LOOT_PLANT_START | 0 | 36 | 0 - NumGivenRewards<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - OriginalTargetSpawnLocation<br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - <em>unknown</em><br> 29 - LootedCompositeHashId<br> 30 - LootedPedStatHashName<br> 31 - LootedEntityWasAnimal<br> 32 - LootedEntityWasBird<br> 33 - <em>unknown</em><br> 34 - LootingBehaviorType<br> 35 - <em>unknown</em>  
 EVENT_LOOT_VALIDATION_FAIL | 0 | 2 | 0 - fail reason id ( [list](#event_loot_validation_fail-fail-reason-ids) )<br> 1 - looted_entity
-EVENT_MISS_INTENDED_TARGET | 0 | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
+EVENT_MISS_INTENDED_TARGET | 0 | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
 EVENT_MOUNT_OVERSPURRED | 0 | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em><br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - <em>unknown</em> 
 EVENT_NETWORK_AWARD_CLAIMED | 1 | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - awarded xp amount<br> 7 - awarded rank amount<br> 8 - awarded cash amount<br> 9 - awarded gold amount<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
+EVENT_NETWORK_BOUNTY_REQUEST_COMPLETE | 1 | 7 | 0 - <em>unknown</em> (??? request id)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - Result code<br> 5 - Total Value<br> 6 - Pay Off Value
+EVENT_NETWORK_BULLET_IMPACTED_MULTIPLE_PEDS | 1 | 4 | 0 - shooter ped id<br> 1 - NumImpacted<br> 2 - NumKilled<br> 3 - NumIncapacitated
 EVENT_NETWORK_CASHINVENTORY_TRANSACTION | 1 | 6 | 0 - transaction id<br> 1 - <em>unknown</em><br> 2 - failed<br> 3 - result code<br> 4 - items amount<br> 5 - action hash
+EVENT_NETWORK_DAMAGE_ENTITY | 1 | 32 | 0 - damaged entity id<br> 1 - killer entity id<br> 2 - Damage<br> 3 - isVictimDestroyed<br> 4 - isVictimIncapacitated<br> 5 - WeaponUsed hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 6 - AmmoUsed hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 7 - InstigatedWeaponUsed<br> 8 - VictimSpeed<br> 9 - DamagerSpeed<br> 10 - IsResponsibleForCollision<br> 11 - IsHeadShot<br> 12 - IsWithMeleeWeapon<br> 13 - IsVictimExecuted<br> 14 - VictimBledOut<br> 15 - DamagerWasScopedIn<br> 16 - DamagerSpecialAbilityActive<br> 17 - VictimHogtied<br> 18 - VictimMounted<br> 19 - VictimInVehicle<br> 20 - VictimInCover<br> 21 - DamagerShotLastBullet<br> 22 - VictimKilledByStealth<br> 23 - VictimKilledByTakedown<br> 24 - VictimKnockedOut<br> 25 - isVictimTranquilized<br> 26 - VictimKilledByStandardMelee<br> 27 - VictimMissionEntity<br> 28 - VictimFleeing<br> 29 - VictimInCombat<br> 30 - <em>unknown</em><br> 31 - IsSuicide
+EVENT_NETWORK_GANG | 1 | 18 | 0 - <em>unknown</em> (??? GangId)<br> 1 - GangEventType id  ( [list](#gangeventtype-ids) )<br> 2 - sender network GamerHandle<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em> (??? remote player name)<br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em>
+EVENT_NETWORK_GANG_WAYPOINT_CHANGED | 1 | 3 | 0 - Gang Waypoint Changing type id ( [list](#gang-waypoint-changing-type-ids) )<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em>
+EVENT_NETWORK_HOGTIE_BEGIN | 1 | 2 | 0 - VictimEntityId<br> 1 - PerpitratorEntityId
+EVENT_NETWORK_HOGTIE_END | 1 | 2 | 0 - VictimEntityId<br> 1 - PerpitratorEntityId
+EVENT_NETWORK_HUB_UPDATE | 1 | 1 | 0 - updateHash
+EVENT_NETWORK_INCAPACITATED_ENTITY | 1 | 4 | 0 - VictimEntityId<br> 1 - Damager entity id<br> 2 - WeaponUsed hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - Damage
+EVENT_NETWORK_LASSO_ATTACH | 1 | 2 | 0 - VictimEntityId<br> 1 - PerpitratorEntityId
+EVENT_NETWORK_LASSO_DETACH | 1 | 2 | 0 - VictimEntityId<br> 1 - PerpitratorEntityId
 EVENT_NETWORK_LOOT_CLAIMED | 1 | 9 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - <em>unknown</em><br> 7 - status<br> 8 - <em>unknown</em> 
 EVENT_NETWORK_MINIGAME_REQUEST_COMPLETE | 1 | 6 | 0 - seatRequestData0<br> 1 - seatRequestData1<br> 2 - seatRequestData2<br> 3 - seatRequestData3<br> 4 - isSuccess<br> 5 - MinigameErrorCodeHash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/minigame_error_codes.lua ) )
+EVENT_NETWORK_PED_DISARMED | 1 | 3 | 0 - VictimEntityId<br> 1 - DamagerEntityId<br> 2 - UsedWeapon hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
+EVENT_NETWORK_PED_HAT_SHOT_OFF | 1 | 3 | 0 - VictimEntityId<br> 1 - DamagerEntityId<br> 2 - UsedWeapon hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
+EVENT_NETWORK_PERMISSION_CHECK_RESULT | 1 | 2 | 0 - <em>unknown</em> (??? PermissionsRequestID)<br> 1 - <em>unknown</em> (??? check result)
+EVENT_NETWORK_PLAYER_JOIN_SCRIPT | 1 | 41 | 0 - <em>unknown</em> (??? joining PlayerName)<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - <em>unknown</em><br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - <em>unknown</em><br> 27 - <em>unknown</em><br> 28 - <em>unknown</em><br> 29 - <em>unknown</em><br> 30 - <em>unknown</em><br> 31 - <em>unknown</em><br> 32 - <em>unknown</em><br> 33 - <em>unknown</em><br> 34 - <em>unknown</em><br> 35 - <em>unknown</em><br> 36 - <em>unknown</em><br> 37 - <em>unknown</em><br> 38 - <em>unknown</em><br> 39 - <em>unknown</em><br> 40 - participant id
+EVENT_NETWORK_PLAYER_LEFT_SCRIPT | 1 | 41 | 0 - <em>unknown</em> (??? leaving PlayerName)<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - <em>unknown</em><br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - <em>unknown</em><br> 27 - <em>unknown</em><br> 28 - <em>unknown</em><br> 29 - <em>unknown</em><br> 30 - <em>unknown</em><br> 31 - <em>unknown</em><br> 32 - <em>unknown</em><br> 33 - <em>unknown</em><br> 34 - <em>unknown</em><br> 35 - <em>unknown</em><br> 36 - <em>unknown</em><br> 37 - <em>unknown</em><br> 38 - <em>unknown</em><br> 39 - <em>unknown</em><br> 40 - participant id
+EVENT_NETWORK_PLAYER_JOIN_SESSION | 1 | 10 | 0 - <em>unknown</em> (??? player name)<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - player id<br> 9 - <em>unknown</em>
+EVENT_NETWORK_PLAYER_LEFT_SESSION | 1 | 10 | 0 - <em>unknown</em> (??? player name)<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - player id<br> 9 - <em>unknown</em>
+EVENT_NETWORK_PLAYER_MISSED_SHOT | 1 | 9 | 0 - shooter id<br> 1 - UsedWeapon hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
+EVENT_NETWORK_POSSE_CREATED | 1 | 10 | 0 - isSuccess<br> 1 - posse id<br> 2 - <em>unknown</em> (??? posse name)<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em>
+EVENT_NETWORK_POSSE_DATA_CHANGED | 1 | 2 | 0 - <em>unknown</em><br> 1 - <em>unknown</em>
+EVENT_NETWORK_POSSE_DISBANDED | 1 | 2 | 0 - isSuccess<br> 1 - posse id
+EVENT_NETWORK_POSSE_EX_ADMIN_DISBANDED | 1 | 9 | 0 - <em>unknown</em><br> 1 - <em>unknown</em> (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
+EVENT_NETWORK_POSSE_EX_INACTIVE_DISBANDED | 1 | 10 | 0 - <em>unknown</em><br> 1 - <em>unknown</em> (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em>
+EVENT_NETWORK_POSSE_JOINED | 1 | 2 | 0 - isSuccess<br> 1 - posse id
+EVENT_NETWORK_POSSE_LEADER_SET_ACTIVE | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
+EVENT_NETWORK_POSSE_LEFT | 1 | 1 | 0 - posse id
+EVENT_NETWORK_POSSE_MEMBER_DISBANDED | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
+EVENT_NETWORK_POSSE_MEMBER_JOINED | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
+EVENT_NETWORK_POSSE_MEMBER_KICKED | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
+EVENT_NETWORK_POSSE_MEMBER_LEFT | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
+EVENT_NETWORK_POSSE_MEMBER_SET_ACTIVE | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
+EVENT_NETWORK_PROJECTILE_NO_DAMAGE_IMPACT | 1 | 2 | 0 - ped id<br> 1 - AmmoUsed hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )
+EVENT_NETWORK_REVIVED_ENTITY | 1 | 2 | 0 - Victim entity id<br> 1 - Reviver entity id
+EVENT_NETWORK_SESSION_EVENT | 1 | 10 | 0  - <em>unknown</em> (??? session event type)<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em>
 EVENT_NETWORK_SESSION_MERGE_END | 1 | 1 | 0 - session message id ( [list](#event_network_session_merge_end-message-ids) )
 EVENT_NETWORK_SESSION_MERGE_START | 1 | 1 | 0 - session message id ( [list](#event_network_session_merge_start-message-ids) )
+EVENT_NETWORK_VEHICLE_UNDRIVABLE | 1 | 3 | 0 - vehicle entity id<br> 1 - Damager entity id<br> 2 - <em>unknown</em>
 EVENT_OBJECT_INTERACTION | 0 | 10 | 0 - ped id<br> 1 - interaction entity id <br> 2 - inventory item hash<br> 3 - inventory item quantity<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br>6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - scenario point id<br> 9 - <em>unknown</em>
 EVENT_PED_ANIMAL_INTERACTION | 0 | 3 | 0 - ped id<br> 1 - animal ped id<br> 2 - interaction type hash
 EVENT_PED_CREATED | 0 | 1 | 0 - ped id that was created
@@ -293,4 +329,36 @@ ID | Value
 8 | CARRY_ACTION_TYPE_PLACE_ON_VEHICLE
 9 | CARRY_ACTION_TYPE_MERCY_KILL
 10 | CARRY_ACTION_TYPE_PICKUP_WHILE_SWIMMING
+
+
+
+### Gang Waypoint Changing type id
+
+ID | Value
+----------- | -------------------------- 
+0 | LEADER_ADDED_WAYPOINT
+1 | LEADER_MOVED_WAYPOINT
+2 | LEADER_REMOVED_WAYPOINT
+
+
+### GangEventType ids
+
+ID | Value
+----------- | -------------------------- 
+0 | GANG_EVENT_NETWORK_INVALID
+1 | GANG_EVENT_NETWORK_INVITED
+2 | GANG_EVENT_NETWORK_JOIN_COMPLETED
+3 | GANG_EVENT_NETWORK_JOIN_FAILED
+4 | GANG_EVENT_NETWORK_KICKED
+5 | GANG_EVENT_NETWORK_LEADER_DESIGNATED
+6 | GANG_EVENT_NETWORK_PLAYER_JOINED_GANG
+7 | GANG_EVENT_NETWORK_PLAYER_LEFT_GANG
+8 | GANG_EVENT_NETWORK_GANG_CREATED
+9 | GANG_EVENT_NETWORK_GANG_DISBANDED
+10 | GANG_EVENT_NETWORK_LEADER_LEFT_GANG
+11 | GANG_EVENT_NETWORK_SETTINGS_CHANGED
+12 | GANG_EVENT_NETWORK_INVITE_CANCELLED
+13 | GANG_EVENT_NETWORK_LEADER_REQUESTED_SESSION_SEPARATELY
+
+
 
