@@ -332,7 +332,7 @@ ID | Value
 
 
 
-### Gang Waypoint Changing type id
+### Gang Waypoint Changing type ids
 
 ID | Value
 ----------- | -------------------------- 
