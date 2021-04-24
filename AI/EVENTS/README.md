@@ -10,7 +10,7 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(0) 
 
-		local size = GetNumberOfEvents(0)   -- get number of events for event group SCRIPT_EVENT_QUEUE_AI (0)
+		local size = GetNumberOfEvents(0)   -- get number of events for EVENT GROUP 0 (SCRIPT_EVENT_QUEUE_AI). Check table below.
 		if size > 0 then 
 			for i = 0, size - 1 do
 
@@ -18,7 +18,7 @@ Citizen.CreateThread(function()
 
 				if eventAtIndex == 1208357138 then   -- if eventAtIndex == GetHashKey("EVENT_CARRIABLE_UPDATE_CARRY_STATE")
 
-					local eventDataSize = 5  -- for EVENT_CARRIABLE_UPDATE_CARRY_STATE data size is 5
+					local eventDataSize = 5  -- for EVENT_CARRIABLE_UPDATE_CARRY_STATE data size is 5. Check table below.
 
 					local eventDataStruct = DataView.ArrayBuffer(128) -- buffer must be 8*eventDataSize or bigger
 					eventDataStruct:SetInt32(0 ,0)		 	-- 8*0 offset for 0 element of eventData	
@@ -82,10 +82,17 @@ EVENT_LOOT_PLANT_START | 0 | 36 | 0 - NumGivenRewards<br> 1 - <em>unknown</em><b
 EVENT_LOOT_VALIDATION_FAIL | 0 | 2 | 0 - fail reason id ( [list](#event_loot_validation_fail-fail-reason-ids) )<br> 1 - looted_entity
 EVENT_MISS_INTENDED_TARGET | 0 | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
 EVENT_MOUNT_OVERSPURRED | 0 | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em><br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - <em>unknown</em> 
-EVENT_NETWORK_AWARD_CLAIMED | 1 | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - result code<br> 6 - awarded xp amount<br> 7 - awarded rank amount<br> 8 - awarded cash amount<br> 9 - awarded gold amount<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
+EVENT_NETWORK_AWARD_CLAIMED | 1 | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - is award has reached max claims<br> 5 - result code ( [list](#award-claimed-result-codes) )<br> 6 - awarded xp amount<br> 7 - awarded rank amount<br> 8 - awarded cash amount<br> 9 - awarded gold amount<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
 EVENT_NETWORK_BOUNTY_REQUEST_COMPLETE | 1 | 7 | 0 - <em>unknown</em> (??? request id)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - Result code<br> 5 - Total Value<br> 6 - Pay Off Value
 EVENT_NETWORK_BULLET_IMPACTED_MULTIPLE_PEDS | 1 | 4 | 0 - shooter ped id<br> 1 - NumImpacted<br> 2 - NumKilled<br> 3 - NumIncapacitated
 EVENT_NETWORK_CASHINVENTORY_TRANSACTION | 1 | 6 | 0 - transaction id<br> 1 - <em>unknown</em><br> 2 - failed<br> 3 - result code<br> 4 - items amount<br> 5 - action hash
+EVENT_NETWORK_CREW_CREATION | 1 | 10 | 0 - isCreationSuccessful<br> 1 - crew id<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em>
+EVENT_NETWORK_CREW_DISBANDED | 1 | 2 | 0 - isDisbandingSuccessful<br> 1 - <em>unknown</em>
+EVENT_NETWORK_CREW_INVITE_RECEIVED | 1 | 11 | 0 - id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - hasMessage
+EVENT_NETWORK_CREW_JOINED | 1 | 2 | 0 - <em>unknown</em><br> 1 - <em>unknown</em>
+EVENT_NETWORK_CREW_KICKED | 1 | 2 | 0 - crew id<br> 1 - primary
+EVENT_NETWORK_CREW_LEFT | 1 | 2 | 0 - left crew id<br> 1 - <em>unknown</em>
+EVENT_NETWORK_CREW_RANK_CHANGE | 1 | 7 | 0 - crew id<br> 1 - rank order<br> 2 - promotion<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em> 
 EVENT_NETWORK_DAMAGE_ENTITY | 1 | 32 | 0 - damaged entity id<br> 1 - killer entity id<br> 2 - Damage<br> 3 - isVictimDestroyed<br> 4 - isVictimIncapacitated<br> 5 - WeaponUsed hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 6 - AmmoUsed hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 7 - InstigatedWeaponUsed<br> 8 - VictimSpeed<br> 9 - DamagerSpeed<br> 10 - IsResponsibleForCollision<br> 11 - IsHeadShot<br> 12 - IsWithMeleeWeapon<br> 13 - IsVictimExecuted<br> 14 - VictimBledOut<br> 15 - DamagerWasScopedIn<br> 16 - DamagerSpecialAbilityActive<br> 17 - VictimHogtied<br> 18 - VictimMounted<br> 19 - VictimInVehicle<br> 20 - VictimInCover<br> 21 - DamagerShotLastBullet<br> 22 - VictimKilledByStealth<br> 23 - VictimKilledByTakedown<br> 24 - VictimKnockedOut<br> 25 - isVictimTranquilized<br> 26 - VictimKilledByStandardMelee<br> 27 - VictimMissionEntity<br> 28 - VictimFleeing<br> 29 - VictimInCombat<br> 30 - <em>unknown</em><br> 31 - IsSuicide
 EVENT_NETWORK_GANG | 1 | 18 | 0 - <em>unknown</em> (??? GangId)<br> 1 - GangEventType id  ( [list](#gangeventtype-ids) )<br> 2 - sender network GamerHandle<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em> (??? remote player name)<br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em>
 EVENT_NETWORK_GANG_WAYPOINT_CHANGED | 1 | 3 | 0 - Gang Waypoint Changing type id ( [list](#gang-waypoint-changing-type-ids) )<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em>
@@ -361,4 +368,11 @@ ID | Value
 13 | GANG_EVENT_NETWORK_LEADER_REQUESTED_SESSION_SEPARATELY
 
 
+### Award Claimed Result Codes
+
+ID | Value
+----------- | -------------------------- 
+-1 | CRRC_ERROR
+0 | CRRC_SUCCESS
+1 | CRRC_MAX_CLAIM
 
