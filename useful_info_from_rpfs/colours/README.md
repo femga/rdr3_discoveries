@@ -1,6 +1,6 @@
-### Some colors
+## Some colors
 
-## Example
+### Example
 
 ```lua
 Citizen.CreateThread(function()
@@ -17,7 +17,7 @@ Citizen.CreateThread(function()
 end)
 ```
 
-## SHORT CODES 
+### SHORT CODES 
  
  Example of using:
  ```"I am a great magician! Your clothes are ~e~red!"```
@@ -62,7 +62,7 @@ t7  -  COLOR_NET_PLAYER9
 t8  -  COLOR_NET_PLAYER10
 
 
-## FULL CODES	
+### FULL CODES	
 
 Color hashnames | Color examples 
 ------------ | ---------------- 
