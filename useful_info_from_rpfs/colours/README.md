@@ -47,8 +47,6 @@ t8  -  COLOR_NET_PLAYER10
 
 Color hashnames | Color examples 
 ------------ | ---------------- 
-heelo | burtd 
---------- | ---------- 
 COLOR_PURE_WHITE<br>COLOR_WHITE<br>COLOR_BLACK<br>COLOR_OFF_BLACK<br>COLOR_GREY | ![screen_1.png](http://femga.com/images/samples/screenshots/screen_1.png)
 COLOR_GREYLIGHT<br>COLOR_GREYMID<br>COLOR_GREYDARK<br>COLOR_RED<br>COLOR_REDLIGHT | ![screen_2.png](http://femga.com/images/samples/screenshots/screen_2.png)
 COLOR_REDDARK<br>COLOR_BLUE<br>COLOR_BLUELIGHT<br>COLOR_BLUEDARK<br>COLOR_YELLOWSTRONG | ![screen_3.png](http://femga.com/images/samples/screenshots/screen_3.png)
