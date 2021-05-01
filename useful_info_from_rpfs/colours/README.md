@@ -1,3 +1,22 @@
+### Some colors
+
+## Example
+
+```lua
+Citizen.CreateThread(function()
+  	while true do
+      	Citizen.Wait(0)
+
+		local color_text = "This color is ~COLOR_REDLIGHT~COLOR_REDLIGHT"
+		Citizen.InvokeNative(0xd79334a4bb99bad1, Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", color_text, Citizen.ResultAsLong()), 0.1, 0.4)
+		
+		local color_text = "These colors are ~pa~COLOR_POSSE_ALLY ~COLOR_WHITE~, COLOR_WHITE and ~COLOR_REPLAY_GREEN~COLOR_REPLAY_GREEN"
+		Citizen.InvokeNative(0xd79334a4bb99bad1, Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", color_text, Citizen.ResultAsLong()), 0.1, 0.5)
+
+	end
+end)
+```
+
 ## SHORT CODES 
  
  Example of using:
