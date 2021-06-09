@@ -1,4 +1,5 @@
 --------------------------------------------------------------------------------
+-- Any lanterns can be attached to any vehicle, but offsets may not match if model is wrong.
 
 -- [vehicle_model] = {vehicle_lantern_propset},
 
