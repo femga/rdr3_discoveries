@@ -1,11 +1,12 @@
 --------------------------------------------------------------------------------
+
 -- Any lanterns can be attached to any vehicle, but offsets may not match if model is wrong.
 
 -- [vehicle_model] = {vehicle_lantern_propset},
 
 -- Example of use:
 -- ... create some vehicle wagonPrison01x
--- Citizen.InvokeNative(0xC0F0417A90402742, vehicle_wagonPrison01x_id, GetHashKey(pg_veh_wagonPrison01x_lanterns01)) -- _ADD_VEHICLE_LANTERN_PROPSETS 
+-- Citizen.InvokeNative(0xC0F0417A90402742, vehicle_wagonPrison01x_id, GetHashKey("pg_veh_wagonPrison01x_lanterns01")) -- _ADD_VEHICLE_LANTERN_PROPSETS 
 -- Citizen.InvokeNative(0xE31C0CB1C3186D40, vehicle_wagonPrison01x_id)  -- _REMOVE_ALL_VEHICLE_LANTERN_PROPSETS
 
 --------------------------------------------------------------------------------
