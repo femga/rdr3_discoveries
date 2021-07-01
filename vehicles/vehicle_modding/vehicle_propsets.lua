@@ -6,9 +6,12 @@
 
 -- Example of use:
 -- ... create some vehicle Huntercart01
--- Citizen.InvokeNative(0xC0F0417A90402742, vehicle_Huntercart01_id, GetHashKey("pg_mp005_huntingWagonTarp01")) -- _ADD_VEHICLE_PROPSETS 
+-- Citizen.InvokeNative(0x75F90E4051CC084C, vehicle_Huntercart01_id, GetHashKey("pg_mp005_huntingWagonTarp01")) -- _ADD_VEHICLE_PROPSETS 
 -- Citizen.InvokeNative(0x31F343383F19C987, vehicle_Huntercart01_id, 0.5, 1)  -- _SET_VEHICLE_TARP_HEIGHT
--- Citizen.InvokeNative(0xC0F0417A90402742, vehicle_Huntercart01_id, 0)  -- _REMOVE_ALL_VEHICLE_PROPSETS
+-- Citizen.InvokeNative(0x75F90E4051CC084C, vehicle_Huntercart01_id, 0)  -- _REMOVE_ALL_VEHICLE_PROPSETS
+
+-- Citizen.InvokeNative(0x7264F9CA87A9830B, vehicle_Huntercart01_id)  -- _IS_VEHICLE_PROPSET_LOADED
+-- Citizen.InvokeNative(0xD798DF5DB67B1659, vehicle_Huntercart01_id)  -- _IS_VEHICLE_PROPSET_APPLIED
 
 --------------------------------------------------------------------------------
 
