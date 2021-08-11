@@ -60,108 +60,58 @@ end)
 
  <h2>shaving_menu (1053464672)</h2>
 
-| Texture hashname           | Texture hash | Texture example                                                                                                        |
-| -------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------- |
-| beard_chin                 | -775000190   | ![beard_chin](http://femga.com/images/samples/ui_textures/shaving_menu/beard_chin.png)                                 |
-|                            |
-| beard_chin_split           | 604312203    | ![beard_chin_split](http://femga.com/images/samples/ui_textures/shaving_menu/beard_chin_split.png)                     |
-|                            |
-| beard_chin_thin            | 1460663664   | ![beard_chin_thin](http://femga.com/images/samples/ui_textures/shaving_menu/beard_chin_thin.png)                       |
-|                            |
-| beard_full                 | 591881093    | ![beard_full](http://femga.com/images/samples/ui_textures/shaving_menu/beard_full.png)                                 |
-|                            |
-| clean_shaven               | 539306761    | ![clean_shaven](http://femga.com/images/samples/ui_textures/shaving_menu/clean_shaven.png)                             |
-|                            |
-| clothing_item_hair_bald    | 642397982    | ![clothing_item_hair_bald](http://femga.com/images/samples/ui_textures/shaving_menu/clothing_item_hair_bald.png)       |
-|                            |
-| facial_basic               | -961457353   | ![facial_basic](http://femga.com/images/samples/ui_textures/shaving_menu/facial_basic.png)                             |
-|                            |
-| facial_chin                | -352492365   | ![facial_chin](http://femga.com/images/samples/ui_textures/shaving_menu/facial_chin.png)                               |
-|                            |
-| facial_chin_style_002      | -595576664   | ![facial_chin_style_002](http://femga.com/images/samples/ui_textures/shaving_menu/facial_chin_style_002.png)           |
-|                            |
-| facial_handle_bar          | 107434671    | ![facial_handle_bar](http://femga.com/images/samples/ui_textures/shaving_menu/facial_handle_bar.png)                   |
-|                            |
-| facial_moustache           | 585102165    | ![facial_moustache](http://femga.com/images/samples/ui_textures/shaving_menu/facial_moustache.png)                     |
-|                            |
-| facial_pencil              | -1371748393  | ![facial_pencil](http://femga.com/images/samples/ui_textures/shaving_menu/facial_pencil.png)                           |
-|                            |
-| facial_sideburns           | -1723894568  | ![facial_sideburns](http://femga.com/images/samples/ui_textures/shaving_menu/facial_sideburns.png)                     |
-|                            |
-| facial_sideburns_style_001 | -201196873   | ![facial_sideburns_style_001](http://femga.com/images/samples/ui_textures/shaving_menu/facial_sideburns_style_001.png) |
-|                            |
-| hair_buzzed                | -2014877713  | ![hair_buzzed](http://femga.com/images/samples/ui_textures/shaving_menu/hair_buzzed.png)                               |
-|                            |
-| hair_part_left             | -859004972   | ![hair_part_left](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_left.png)                         |
-|                            |
-| hair_part_left_fade        | -1156061678  | ![hair_part_left_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_left_fade.png)               |
-|                            |
-| hair_part_middle           | 135514739    | ![hair_part_middle](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_middle.png)                     |
-|                            |
-| hair_part_middle_fade      | -2076746868  | ![hair_part_middle_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_middle_fade.png)           |
-|                            |
-| hair_part_right            | -1954640114  | ![hair_part_right](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_right.png)                       |
-|                            |
-| hair_part_right_fade       | 247499006    | ![hair_part_right_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_right_fade.png)             |
-|                            |
-| hair_swept_back            | 565151240    | ![hair_swept_back](http://femga.com/images/samples/ui_textures/shaving_menu/hair_swept_back.png)                       |
-|                            |
-| hair_swept_back_fade       | -135161649   | ![hair_swept_back_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_swept_back_fade.png)             |
-|                            |
-| moustache                  | -892112121   | ![moustache](http://femga.com/images/samples/ui_textures/shaving_menu/moustache.png)                                   |
-|                            |
-| moustache_handle_bar       | -597213917   | ![moustache_handle_bar](http://femga.com/images/samples/ui_textures/shaving_menu/moustache_handle_bar.png)             |
-|                            |
-| moustache_pencil           | -502637776   | ![moustache_pencil](http://femga.com/images/samples/ui_textures/shaving_menu/moustache_pencil.png)                     |
-|                            |
-| preset_1                   | 1597248769   | ![preset_1](http://femga.com/images/samples/ui_textures/shaving_menu/preset_1.png)                                     |
-|                            |
-| preset_10                  | -74668466    | ![preset_10](http://femga.com/images/samples/ui_textures/shaving_menu/preset_10.png)                                   |
-|                            |
-| preset_11                  | 164250313    | ![preset_11](http://femga.com/images/samples/ui_textures/shaving_menu/preset_11.png)                                   |
-|                            |
-| preset_13                  | -360643529   | ![preset_13](http://femga.com/images/samples/ui_textures/shaving_menu/preset_13.png)                                   |
-|                            |
-| preset_14                  | -1621463549  | ![preset_14](http://femga.com/images/samples/ui_textures/shaving_menu/preset_14.png)                                   |
-|                            |
-| preset_15                  | -1454013963  | ![preset_15](http://femga.com/images/samples/ui_textures/shaving_menu/preset_15.png)                                   |
-|                            |
-| preset_17                  | -1929787070  | ![preset_17](http://femga.com/images/samples/ui_textures/shaving_menu/preset_17.png)                                   |
-|                            |
-| preset_18                  | 1373917976   | ![preset_18](http://femga.com/images/samples/ui_textures/shaving_menu/preset_18.png)                                   |
-|                            |
-| preset_19                  | 1680603047   | ![preset_19](http://femga.com/images/samples/ui_textures/shaving_menu/preset_19.png)                                   |
-|                            |
-| preset_2                   | -1190868827  | ![preset_2](http://femga.com/images/samples/ui_textures/shaving_menu/preset_2.png)                                     |
-|                            |
-| preset_20                  | -1164761708  | ![preset_20](http://femga.com/images/samples/ui_textures/shaving_menu/preset_20.png)                                   |
-|                            |
-| preset_21                  | -1428322775  | ![preset_21](http://femga.com/images/samples/ui_textures/shaving_menu/preset_21.png)                                   |
-|                            |
-| preset_22                  | -571642808   | ![preset_22](http://femga.com/images/samples/ui_textures/shaving_menu/preset_22.png)                                   |
-|                            |
-| preset_23                  | -916765916   | ![preset_23](http://femga.com/images/samples/ui_textures/shaving_menu/preset_23.png)                                   |
-|                            |
-| preset_3                   | -1411240352  | ![preset_3](http://femga.com/images/samples/ui_textures/shaving_menu/preset_3.png)                                     |
-|                            |
-| preset_4                   | -1784610338  | ![preset_4](http://femga.com/images/samples/ui_textures/shaving_menu/preset_4.png)                                     |
-|                            |
-| preset_5                   | -926717926   | ![preset_5](http://femga.com/images/samples/ui_textures/shaving_menu/preset_5.png)                                     |
-|                            |
-| preset_6                   | -1146958375  | ![preset_6](http://femga.com/images/samples/ui_textures/shaving_menu/preset_6.png)                                     |
-|                            |
-| preset_7                   | -1472420083  | ![preset_7](http://femga.com/images/samples/ui_textures/shaving_menu/preset_7.png)                                     |
-|                            |
-| preset_8                   | -1762196350  | ![preset_8](http://femga.com/images/samples/ui_textures/shaving_menu/preset_8.png)                                     |
-|                            |
-| preset_9                   | 300481124    | ![preset_9](http://femga.com/images/samples/ui_textures/shaving_menu/preset_9.png)                                     |
-|                            |
-| scissors                   | 1974958719   | ![scissors](http://femga.com/images/samples/ui_textures/shaving_menu/scissors.png)                                     |
-|                            |
-| sideburns                  | -2026763132  | ![sideburns](http://femga.com/images/samples/ui_textures/shaving_menu/sideburns.png)                                   |
-|                            |
-| sideburns_dundeary         | 671619952    | ![sideburns_dundeary](http://femga.com/images/samples/ui_textures/shaving_menu/sideburns_dundeary.png)                 |
-|                            |
+| Texture hashname           | Texture hash | Texture example                                                                                                        | Download Image                                                                                                                                                                                |
+| -------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| beard_chin                 | -775000190   | ![beard_chin](http://femga.com/images/samples/ui_textures/shaving_menu/beard_chin.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/beard_chin.png'>Download</a>                 |
+| beard_chin_split           | 604312203    | ![beard_chin_split](http://femga.com/images/samples/ui_textures/shaving_menu/beard_chin_split.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/beard_chin_split.png'>Download</a>           |
+| beard_chin_thin            | 1460663664   | ![beard_chin_thin](http://femga.com/images/samples/ui_textures/shaving_menu/beard_chin_thin.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/beard_chin_thin.png'>Download</a>            |
+| beard_full                 | 591881093    | ![beard_full](http://femga.com/images/samples/ui_textures/shaving_menu/beard_full.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/beard_full.png'>Download</a>                 |
+| clean_shaven               | 539306761    | ![clean_shaven](http://femga.com/images/samples/ui_textures/shaving_menu/clean_shaven.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/clean_shaven.png'>Download</a>               |
+| clothing_item_hair_bald    | 642397982    | ![clothing_item_hair_bald](http://femga.com/images/samples/ui_textures/shaving_menu/clothing_item_hair_bald.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/clothing_item_hair_bald.png'>Download</a>    |
+| facial_basic               | -961457353   | ![facial_basic](http://femga.com/images/samples/ui_textures/shaving_menu/facial_basic.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_basic.png'>Download</a>               |
+| facial_chin                | -352492365   | ![facial_chin](http://femga.com/images/samples/ui_textures/shaving_menu/facial_chin.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_chin.png'>Download</a>                |
+| facial_chin_style_002      | -595576664   | ![facial_chin_style_002](http://femga.com/images/samples/ui_textures/shaving_menu/facial_chin_style_002.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_chin_style_002.png'>Download</a>      |
+| facial_handle_bar          | 107434671    | ![facial_handle_bar](http://femga.com/images/samples/ui_textures/shaving_menu/facial_handle_bar.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_handle_bar.png'>Download</a>          |
+| facial_moustache           | 585102165    | ![facial_moustache](http://femga.com/images/samples/ui_textures/shaving_menu/facial_moustache.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_moustache.png'>Download</a>           |
+| facial_pencil              | -1371748393  | ![facial_pencil](http://femga.com/images/samples/ui_textures/shaving_menu/facial_pencil.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_pencil.png'>Download</a>              |
+| facial_sideburns           | -1723894568  | ![facial_sideburns](http://femga.com/images/samples/ui_textures/shaving_menu/facial_sideburns.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_sideburns.png'>Download</a>           |
+| facial_sideburns_style_001 | -201196873   | ![facial_sideburns_style_001](http://femga.com/images/samples/ui_textures/shaving_menu/facial_sideburns_style_001.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/facial_sideburns_style_001.png'>Download</a> |
+| hair_buzzed                | -2014877713  | ![hair_buzzed](http://femga.com/images/samples/ui_textures/shaving_menu/hair_buzzed.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_buzzed.png'>Download</a>                |
+| hair_part_left             | -859004972   | ![hair_part_left](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_left.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_part_left.png'>Download</a>             |
+| hair_part_left_fade        | -1156061678  | ![hair_part_left_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_left_fade.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_part_left_fade.png'>Download</a>        |
+| hair_part_middle           | 135514739    | ![hair_part_middle](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_middle.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_part_middle.png'>Download</a>           |
+| hair_part_middle_fade      | -2076746868  | ![hair_part_middle_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_middle_fade.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_part_middle_fade.png'>Download</a>      |
+| hair_part_right            | -1954640114  | ![hair_part_right](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_right.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_part_right.png'>Download</a>            |
+| hair_part_right_fade       | 247499006    | ![hair_part_right_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_part_right_fade.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_part_right_fade.png'>Download</a>       |
+| hair_swept_back            | 565151240    | ![hair_swept_back](http://femga.com/images/samples/ui_textures/shaving_menu/hair_swept_back.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_swept_back.png'>Download</a>            |
+| hair_swept_back_fade       | -135161649   | ![hair_swept_back_fade](http://femga.com/images/samples/ui_textures/shaving_menu/hair_swept_back_fade.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/hair_swept_back_fade.png'>Download</a>       |
+| moustache                  | -892112121   | ![moustache](http://femga.com/images/samples/ui_textures/shaving_menu/moustache.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/moustache.png'>Download</a>                  |
+| moustache_handle_bar       | -597213917   | ![moustache_handle_bar](http://femga.com/images/samples/ui_textures/shaving_menu/moustache_handle_bar.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/moustache_handle_bar.png'>Download</a>       |
+| moustache_pencil           | -502637776   | ![moustache_pencil](http://femga.com/images/samples/ui_textures/shaving_menu/moustache_pencil.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/moustache_pencil.png'>Download</a>           |
+| preset_1                   | 1597248769   | ![preset_1](http://femga.com/images/samples/ui_textures/shaving_menu/preset_1.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_1.png'>Download</a>                   |
+| preset_10                  | -74668466    | ![preset_10](http://femga.com/images/samples/ui_textures/shaving_menu/preset_10.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_10.png'>Download</a>                  |
+| preset_11                  | 164250313    | ![preset_11](http://femga.com/images/samples/ui_textures/shaving_menu/preset_11.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_11.png'>Download</a>                  |
+| preset_13                  | -360643529   | ![preset_13](http://femga.com/images/samples/ui_textures/shaving_menu/preset_13.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_13.png'>Download</a>                  |
+| preset_14                  | -1621463549  | ![preset_14](http://femga.com/images/samples/ui_textures/shaving_menu/preset_14.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_14.png'>Download</a>                  |
+| preset_15                  | -1454013963  | ![preset_15](http://femga.com/images/samples/ui_textures/shaving_menu/preset_15.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_15.png'>Download</a>                  |
+| preset_17                  | -1929787070  | ![preset_17](http://femga.com/images/samples/ui_textures/shaving_menu/preset_17.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_17.png'>Download</a>                  |
+| preset_18                  | 1373917976   | ![preset_18](http://femga.com/images/samples/ui_textures/shaving_menu/preset_18.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_18.png'>Download</a>                  |
+| preset_19                  | 1680603047   | ![preset_19](http://femga.com/images/samples/ui_textures/shaving_menu/preset_19.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_19.png'>Download</a>                  |
+| preset_2                   | -1190868827  | ![preset_2](http://femga.com/images/samples/ui_textures/shaving_menu/preset_2.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_2.png'>Download</a>                   |
+| preset_20                  | -1164761708  | ![preset_20](http://femga.com/images/samples/ui_textures/shaving_menu/preset_20.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_20.png'>Download</a>                  |
+| preset_21                  | -1428322775  | ![preset_21](http://femga.com/images/samples/ui_textures/shaving_menu/preset_21.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_21.png'>Download</a>                  |
+| preset_22                  | -571642808   | ![preset_22](http://femga.com/images/samples/ui_textures/shaving_menu/preset_22.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_22.png'>Download</a>                  |
+| preset_23                  | -916765916   | ![preset_23](http://femga.com/images/samples/ui_textures/shaving_menu/preset_23.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_23.png'>Download</a>                  |
+| preset_3                   | -1411240352  | ![preset_3](http://femga.com/images/samples/ui_textures/shaving_menu/preset_3.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_3.png'>Download</a>                   |
+| preset_4                   | -1784610338  | ![preset_4](http://femga.com/images/samples/ui_textures/shaving_menu/preset_4.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_4.png'>Download</a>                   |
+| preset_5                   | -926717926   | ![preset_5](http://femga.com/images/samples/ui_textures/shaving_menu/preset_5.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_5.png'>Download</a>                   |
+| preset_6                   | -1146958375  | ![preset_6](http://femga.com/images/samples/ui_textures/shaving_menu/preset_6.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_6.png'>Download</a>                   |
+| preset_7                   | -1472420083  | ![preset_7](http://femga.com/images/samples/ui_textures/shaving_menu/preset_7.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_7.png'>Download</a>                   |
+| preset_8                   | -1762196350  | ![preset_8](http://femga.com/images/samples/ui_textures/shaving_menu/preset_8.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_8.png'>Download</a>                   |
+| preset_9                   | 300481124    | ![preset_9](http://femga.com/images/samples/ui_textures/shaving_menu/preset_9.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/preset_9.png'>Download</a>                   |
+| scissors                   | 1974958719   | ![scissors](http://femga.com/images/samples/ui_textures/shaving_menu/scissors.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/scissors.png'>Download</a>                   |
+| sideburns                  | -2026763132  | ![sideburns](http://femga.com/images/samples/ui_textures/shaving_menu/sideburns.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/sideburns.png'>Download</a>                  |
+| sideburns_dundeary         | 671619952    | ![sideburns_dundeary](http://femga.com/images/samples/ui_textures/shaving_menu/sideburns_dundeary.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/menu_items/images/shaving_menu/sideburns_dundeary.png'>Download</a>         |
 
  <h2>swatches_gunsmith (-1441063855)</h2>
 
