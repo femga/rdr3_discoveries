@@ -2,6 +2,20 @@
 
 ```lua
 local function addBlipForCoords(blipname,bliphash,coords)
+	--blipHash  = {
+	--	142522696, -not work
+	--	1664425300,
+	--	1673015813,
+	--	-186344087,
+	--	1299840260,
+	--	-2086635932,
+	--	1877557666, --Red color timer blips (5 sec)
+	--	408396114, --Yellow Blip
+	--	-1180414027,
+	--	-108658760,
+	--	618936128, -- Purple Color
+	--	`BLIP_STYLE_PICKUP`
+	--}
 	local blip = Citizen.InvokeNative(0x554D9D53F696D002,1664425300, coords[1], coords[2], coords[3])
 	SetBlipSprite(blip,bliphash,true)
 	SetBlipScale(blip,0.2)
