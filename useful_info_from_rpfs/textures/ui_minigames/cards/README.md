@@ -1,4 +1,5 @@
-## Example of using:  
+## Example of using:
+
 ```lua
 local function DrawTexture(textureStreamed,textureName,x, y, width, height,rotation,r, g, b, a, p11)
     if not HasStreamedTextureDictLoaded(textureStreamed) then
@@ -10,1036 +11,531 @@ end
 Citizen.CreateThread(function()
     while true do
     	Citizen.Wait(0)
-		DrawTexture("generic_textures", "inkroller_1a", 0.5, 0.5, 0.251, 0.251, 0.0, 0, 0, 0, 240, false);
+		DrawTexture("card_set_1", "back", 0.5, 0.5, 0.251, 0.251, 0.0, 0, 0, 0, 240, false);
 	end
 end)
 ```
- 
-
 
 <h3>Texture dictionary hashname (hash):</h3>
 
-<h2>card_set_2 (-1403954569)</h2>
-
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_7.png)
- |  |
-
-
-
-
 <h2>card_set_1 (-695324944)</h2>
 
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_7.png)
- |  |
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_1/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_1/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_1/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_1/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_1/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_1/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_1/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_1/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_1/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_1/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_1/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_1/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_1/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_1/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_1/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_1/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_1/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_1/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_1/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_1/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_1/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_1/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_1/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_1/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_1/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_1/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_1/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_1/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_1/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_1/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_1/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_1/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_1/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_1/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_1/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_1/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_1/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_1/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_1/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_1/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_1/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_1/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_1/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_1/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_1/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_1/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_1/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_1/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_1/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_1/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_1/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_1/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_1/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_1/.png'>Download</a> |
 
+<h2>card_set_2 (-1403954569)</h2>
 
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_2/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_2/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_2/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_2/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_2/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_2/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_2/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_2/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_2/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_2/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_2/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_2/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_2/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_2/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_2/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_2/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_2/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_2/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_2/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_2/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_2/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_2/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_2/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_2/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_2/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_2/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_2/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_2/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_2/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_2/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_2/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_2/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_2/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_2/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_2/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_2/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_2/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_2/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_2/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_2/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_2/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_2/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_2/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_2/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_2/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_2/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_2/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_2/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_2/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_2/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_2/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_2/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_2/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_2/.png'>Download</a> |
 
+<h2>card_set_3  (-1173195271)</h2>
 
-<h2>card_set_9 (682513207)</h2>
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_3/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_3/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_3/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_3/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_3/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_3/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_3/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_3/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_3/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_3/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_3/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_3/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_3/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_3/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_3/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_3/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_3/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_3/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_3/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_3/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_3/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_3/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_3/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_3/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_3/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_3/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_3/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_3/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_3/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_3/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_3/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_3/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_3/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_3/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_3/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_3/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_3/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_3/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_3/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_3/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_3/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_3/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_3/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_3/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_3/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_3/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_3/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_3/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_3/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_3/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_3/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_3/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_3/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_3/.png'>Download</a> |
 
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_7.png)
- |  |
+<h2>card_set_4  (1875796338)</h2>
 
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_4/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_4/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_4/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_4/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_4/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_4/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_4/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_4/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_4/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_4/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_4/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_4/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_4/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_4/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_4/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_4/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_4/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_4/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_4/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_4/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_4/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_4/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_4/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_4/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_4/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_4/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_4/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_4/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_4/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_4/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_4/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_4/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_4/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_4/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_4/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_4/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_4/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_4/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_4/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_4/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_4/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_4/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_4/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_4/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_4/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_4/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_4/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_4/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_4/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_4/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_4/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_4/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_4/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_4/.png'>Download</a> |
 
+<h2>card_set_5  (-1651983130)</h2>
 
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_5/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_5/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_5/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_5/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_5/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_5/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_5/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_5/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_5/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_5/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_5/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_5/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_5/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_5/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_5/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_5/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_5/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_5/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_5/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_5/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_5/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_5/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_5/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_5/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_5/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_5/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_5/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_5/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_5/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_5/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_5/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_5/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_5/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_5/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_5/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_5/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_5/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_5/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_5/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_5/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_5/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_5/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_5/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_5/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_5/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_5/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_5/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_5/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_5/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_5/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_5/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_5/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_5/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_5/.png'>Download</a> |
 
-<h2>card_set_8 (459880621)</h2>
+<h2>card_set_6  (938340790)</h2>
 
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_7.png)
- |  |
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_6/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_6/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_6/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_6/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_6/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_6/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_6/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_6/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_6/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_6/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_6/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_6/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_6/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_6/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_6/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_6/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_6/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_6/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_6/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_6/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_6/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_6/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_6/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_6/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_6/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_6/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_6/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_6/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_6/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_6/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_6/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_6/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_6/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_6/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_6/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_6/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_6/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_6/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_6/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_6/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_6/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_6/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_6/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_6/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_6/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_6/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_6/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_6/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_6/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_6/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_6/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_6/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_6/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_6/.png'>Download</a> |
 
+<h2>card_set_7  (1158941698)</h2>
 
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_7/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_7/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_7/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_7/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_7/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_7/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_7/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_7/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_7/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_7/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_7/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_7/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_7/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_7/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_7/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_7/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_7/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_7/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_7/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_7/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_7/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_7/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_7/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_7/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_7/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_7/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_7/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_7/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_7/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_7/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_7/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_7/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_7/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_7/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_7/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_7/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_7/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_7/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_7/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_7/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_7/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_7/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_7/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_7/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_7/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_7/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_7/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_7/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_7/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_7/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_7/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_7/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_7/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_7/.png'>Download</a> |
 
+<h2>card_set_8  (459880621)</h2>
 
-<h2>card_set_4 (1875796338)</h2>
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_8/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_8/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_8/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_8/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_8/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_8/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_8/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_8/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_8/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_8/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_8/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_8/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_8/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_8/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_8/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_8/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_8/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_8/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_8/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_8/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_8/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_8/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_8/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_8/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_8/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_8/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_8/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_8/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_8/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_8/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_8/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_8/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_8/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_8/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_8/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_8/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_8/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_8/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_8/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_8/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_8/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_8/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_8/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_8/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_8/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_8/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_8/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_8/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_8/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_8/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_8/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_8/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_8/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_8/.png'>Download</a> |
 
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_7.png)
- |  |
+<h2>card_set_9  (682513207)</h2>
 
-
-
-
-<h2>card_set_5 (-1651983130)</h2>
-
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_7.png)
- |  |
-
-
-
-
-<h2>card_set_6 (938340790)</h2>
-
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_7.png)
- |  |
-
-
-
-
-<h2>card_set_3 (-1173195271)</h2>
-
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_7.png)
- |  |
-
-
-
-<h2>card_set_7 (1158941698)</h2>
-
-Texture hashname | Texture hash | Texture example
------------- | ---------------- | ---------------
-spades_4 | -652305684 | ![spades_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_4.png)
- |  |
-clubs_10 | 181192003 | ![clubs_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_10.png)
- |  |
-spades_10 | -688474420 | ![spades_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_10.png)
- |  |
-clubs_9 | 1804151899 | ![clubs_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_9.png)
- |  |
-spades_5 | 566537267 | ![spades_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_5.png)
- |  |
-hearts_8 | -1267303959 | ![hearts_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_8.png)
- |  |
-diamonds_10 | -67534240 | ![diamonds_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_10.png)
- |  |
-hearts_10 | -1236274559 | ![hearts_10](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_10.png)
- |  |
-hearts_9 | -1036085891 | ![hearts_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_9.png)
- |  |
-diamonds_6 | 160143133 | ![diamonds_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_6.png)
- |  |
-hearts_j | 1072730319 | ![hearts_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_j.png)
- |  |
-hearts_q | -866932421 | ![hearts_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_q.png)
- |  |
-hearts_k | 822342298 | ![hearts_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_k.png)
- |  |
-diamonds_7 | -759879311 | ![diamonds_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_7.png)
- |  |
-hearts_a | 495471607 | ![hearts_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_a.png)
- |  |
-spades_j | -2046036780 | ![spades_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_j.png)
- |  |
-clubs_3 | -1641180701 | ![clubs_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_3.png)
- |  |
-diamonds_q | 450771414 | ![diamonds_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_q.png)
- |  |
-clubs_8 | 1932999667 | ![clubs_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_8.png)
- |  |
-diamonds_a | -6192287 | ![diamonds_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_a.png)
- |  |
-spades_q | -1842606824 | ![spades_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_q.png)
- |  |
-diamonds_k | -184160730 | ![diamonds_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_k.png)
- |  |
-hearts_4 | 1809115303 | ![hearts_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_4.png)
- |  |
-clubs_q | -286379221 | ![clubs_q](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_q.png)
- |  |
-spades_8 | -1121590529 | ![spades_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_8.png)
- |  |
-diamonds_3 | -1985407142 | ![diamonds_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_3.png)
- |  |
-spades_9 | -1880389493 | ![spades_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_9.png)
- |  |
-clubs_2 | -750453743 | ![clubs_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_2.png)
- |  |
-hearts_3 | 1589071468 | ![hearts_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_3.png)
- |  |
-clubs_j | 2043431141 | ![clubs_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_j.png)
- |  |
-diamonds_5 | 936997816 | ![diamonds_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_5.png)
- |  |
-back | 927041140 | ![back](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/back.png)
- |  |
-clubs_7 | -2022808479 | ![clubs_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_7.png)
- |  |
-clubs_a | 302512466 | ![clubs_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_a.png)
- |  |
-hearts_2 | 1097864158 | ![hearts_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_2.png)
- |  |
-spades_6 | 734904389 | ![spades_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_6.png)
- |  |
-spades_k | 1122004606 | ![spades_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_k.png)
- |  |
-spades_a | 943085858 | ![spades_a](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_a.png)
- |  |
-clubs_6 | 1985921602 | ![clubs_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_6.png)
- |  |
-hearts_6 | -2009620116 | ![hearts_6](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_6.png)
- |  |
-hearts_5 | 2064844579 | ![hearts_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_5.png)
- |  |
-diamonds_j | 2135032480 | ![diamonds_j](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_j.png)
- |  |
-diamonds_2 | -1065483005 | ![diamonds_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_2.png)
- |  |
-clubs_4 | -1343015570 | ![clubs_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_4.png)
- |  |
-diamonds_9 | 2068085389 | ![diamonds_9](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_9.png)
- |  |
-diamonds_4 | -1687209242 | ![diamonds_4](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_4.png)
- |  |
-clubs_k | 744762902 | ![clubs_k](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_k.png)
- |  |
-diamonds_8 | 604982308 | ![diamonds_8](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/diamonds_8.png)
- |  |
-clubs_5 | 749219542 | ![clubs_5](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/clubs_5.png)
- |  |
-spades_2 | 1791671870 | ![spades_2](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_2.png)
- |  |
-hearts_7 | -1517364198 | ![hearts_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/hearts_7.png)
- |  |
-spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_3.png)
- |  |
-spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_7.png)
- |  |
-
-
-
+| Texture hashname | Texture hash | Texture example                                   | Download Image                                                                                                                                                             |
+| ---------------- | ------------ | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| back             | 927041140    | ![back](images/card_set_9/back.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_10         | 181192003    | ![clubs_10](images/card_set_9/clubs_10.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_2          | -750453743   | ![clubs_2](images/card_set_9/clubs_2.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_3          | -1641180701  | ![clubs_3](images/card_set_9/clubs_3.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_4          | -1343015570  | ![clubs_4](images/card_set_9/clubs_4.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_5          | 749219542    | ![clubs_5](images/card_set_9/clubs_5.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_6          | 1985921602   | ![clubs_6](images/card_set_9/clubs_6.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_7          | -2022808479  | ![clubs_7](images/card_set_9/clubs_7.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_8          | 1932999667   | ![clubs_8](images/card_set_9/clubs_8.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_9          | 1804151899   | ![clubs_9](images/card_set_9/clubs_9.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_a          | 302512466    | ![clubs_a](images/card_set_9/clubs_a.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_j          | 2043431141   | ![clubs_j](images/card_set_9/clubs_j.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_k          | 744762902    | ![clubs_k](images/card_set_9/clubs_k.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| clubs_q          | -286379221   | ![clubs_q](images/card_set_9/clubs_q.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_10      | -67534240    | ![diamonds_10](images/card_set_9/diamonds_10.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_2       | -1065483005  | ![diamonds_2](images/card_set_9/diamonds_2.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_3       | -1985407142  | ![diamonds_3](images/card_set_9/diamonds_3.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_4       | -1687209242  | ![diamonds_4](images/card_set_9/diamonds_4.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_5       | 936997816    | ![diamonds_5](images/card_set_9/diamonds_5.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_6       | 160143133    | ![diamonds_6](images/card_set_9/diamonds_6.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_7       | -759879311   | ![diamonds_7](images/card_set_9/diamonds_7.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_8       | 604982308    | ![diamonds_8](images/card_set_9/diamonds_8.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_9       | 2068085389   | ![diamonds_9](images/card_set_9/diamonds_9.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_a       | -6192287     | ![diamonds_a](images/card_set_9/diamonds_a.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_j       | 2135032480   | ![diamonds_j](images/card_set_9/diamonds_j.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_k       | -184160730   | ![diamonds_k](images/card_set_9/diamonds_k.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| diamonds_q       | 450771414    | ![diamonds_q](images/card_set_9/diamonds_q.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_10        | -1236274559  | ![hearts_10](images/card_set_9/hearts_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_2         | 1097864158   | ![hearts_2](images/card_set_9/hearts_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_3         | 1589071468   | ![hearts_3](images/card_set_9/hearts_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_4         | 1809115303   | ![hearts_4](images/card_set_9/hearts_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_5         | 2064844579   | ![hearts_5](images/card_set_9/hearts_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_6         | -2009620116  | ![hearts_6](images/card_set_9/hearts_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_7         | -1517364198  | ![hearts_7](images/card_set_9/hearts_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_8         | -1267303959  | ![hearts_8](images/card_set_9/hearts_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_9         | -1036085891  | ![hearts_9](images/card_set_9/hearts_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_a         | 495471607    | ![hearts_a](images/card_set_9/hearts_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_j         | 1072730319   | ![hearts_j](images/card_set_9/hearts_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_k         | 822342298    | ![hearts_k](images/card_set_9/hearts_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| hearts_q         | -866932421   | ![hearts_q](images/card_set_9/hearts_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_10        | -688474420   | ![spades_10](images/card_set_9/spades_10.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_2         | 1791671870   | ![spades_2](images/card_set_9/spades_2.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_3         | 1049716172   | ![spades_3](images/card_set_9/spades_3.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_4         | -652305684   | ![spades_4](images/card_set_9/spades_4.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_5         | 566537267    | ![spades_5](images/card_set_9/spades_5.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_6         | 734904389    | ![spades_6](images/card_set_9/spades_6.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_7         | -1400094260  | ![spades_7](images/card_set_9/spades_7.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_8         | -1121590529  | ![spades_8](images/card_set_9/spades_8.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_9         | -1880389493  | ![spades_9](images/card_set_9/spades_9.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_a         | 943085858    | ![spades_a](images/card_set_9/spades_a.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_j         | -2046036780  | ![spades_j](images/card_set_9/spades_j.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_k         | 1122004606   | ![spades_k](images/card_set_9/spades_k.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
+| spades_q         | -1842606824  | ![spades_q](images/card_set_9/spades_q.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_minigames/cards/images/card_set_9/.png'>Download</a> |
