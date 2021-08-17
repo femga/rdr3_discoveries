@@ -16,6 +16,9 @@ Citizen.CreateThread(function()
 end)
 ```
 
+<a href='part1.md'>Part - 1</a>  
+<a href='part2.md'>Part - 2</a>
+
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>inventory_items_mp (-)</h2>
 
