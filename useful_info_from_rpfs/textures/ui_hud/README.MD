@@ -16,5 +16,5 @@ Citizen.CreateThread(function()
 end)
 ```
 
-<a href='part1.md'>Part - 1</a>  
-<a href='part2.md'>Part - 2</a>
+<a href='part1'>Part - 1</a>  
+<a href='part2'>Part - 2</a>
