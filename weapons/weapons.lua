@@ -162,5 +162,15 @@ local weapons = {
     {`weapon_thrown_bolas_ironspiked`,`group_thrown`,},
     {`weapon_thrown_bolas_intertwined`,`group_thrown`,},
 
+
+
+    -----------------------------------------------------------------------------------------------------------------------
+    -------------------------------------  Weapons from game version 1355.18 till 1436.26 ---------------------------------
+    -----------------------------------------------------------------------------------------------------------------------
+    {`weapon_melee_knife_horror`,`group_melee`,},
+    {`weapon_melee_knife_rustic`,`group_melee`,},
+    {`weapon_melee_lantern_halloween`,`group_held`,},
+
+
 }
 

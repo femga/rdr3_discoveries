@@ -20442,9 +20442,39 @@ local object_list = {
     [-1414911204]       = "y_08_slod2"                                                  , -- hex_hash: 0xABAA2B1C -- unknown | unknown
     [1664631220]        = "y_09_slod2"                                                  , -- hex_hash: 0x633841B4 -- unknown | unknown
     [574609666]         = "y_10_slod2"                                                  , -- hex_hash: 0x223FD902 -- unknown | unknown
-
-
-
+    [-1869645693]       = "mp009_p_mp_ammobigmiscchest01x"                              , -- hex_hash: 0x908F7883 -- unknown | unknown
+    [927621626]         = "mp009_p_mp_ammobigmiscchest02x"                              , -- hex_hash: 0x374A61FA -- unknown | unknown
+    [878724214]         = "mp009_p_mp_ammobigmiscchest03x"                              , -- hex_hash: 0x34604476 -- unknown | unknown
+    [-1526225737]       = "mp009_p_mp_ammobigmiscchest04x"                              , -- hex_hash: 0xA507A4B7 -- unknown | unknown
+    [1880030317]        = "mp009_p_mp_ammochest01x"                                     , -- hex_hash: 0x700EFC6D -- unknown | unknown
+    [1262827118]        = "mp009_p_mp_chestornate01x"                                   , -- hex_hash: 0x4B45366E -- unknown | unknown
+    [942276127]         = "mp009_p_mp_chestornate01x_int"                               , -- hex_hash: 0x3829FE1F -- unknown | unknown
+    [-1995418575]       = "mp009_p_mp_door01x"                                          , -- hex_hash: 0x89105431 -- unknown | unknown
+    [2054041048]        = "mp009_p_mp_flask01x"                                         , -- hex_hash: 0x7A6E2DD8 -- unknown | unknown
+    [-473935726]        = "mp009_p_mp_fort_modular_01x"                                 , -- hex_hash: 0xE3C05092 -- unknown | unknown
+    [-1442309771]       = "mp009_p_mp_jewelemerald_display01x"                          , -- hex_hash: 0xAA081975 -- unknown | unknown
+    [652208624]         = "mp009_p_mp_jewelemerald01x"                                  , -- hex_hash: 0x26DFE9F0 -- unknown | unknown
+    [492689444]         = "mp009_p_mp_jewelemerald02x"                                  , -- hex_hash: 0x1D5DD824 -- unknown | unknown
+    [-1783067842]       = "mp009_p_mp_jewelruby_display01x"                             , -- hex_hash: 0x95B88B3E -- unknown | unknown
+    [-126345204]        = "mp009_p_mp_jewelruby01x"                                     , -- hex_hash: 0xF878200C -- unknown | unknown
+    [1075362768]        = "mp009_p_mp_jewelruby02x"                                     , -- hex_hash: 0x4018BBD0 -- unknown | unknown
+    [-2060483897]       = "mp009_p_mp_jewelsapphire_display01x"                         , -- hex_hash: 0x852F82C7 -- unknown | unknown
+    [-402756609]        = "mp009_p_mp_jewelsapphire01x"                                 , -- hex_hash: 0xE7FE6BFF -- unknown | unknown
+    [369509642]         = "mp009_p_mp_jewelsapphire02x"                                 , -- hex_hash: 0x1606450A -- unknown | unknown
+    [-423760496]        = "mp009_p_mp_key01x"                                           , -- hex_hash: 0xE6BDED90 -- unknown | unknown
+    [-663989691]        = "mp009_p_mp_key02x"                                           , -- hex_hash: 0xD86C5245 -- unknown | unknown
+    [828065498]         = "mp009_p_mp_pedestaldisplay_glass01x"                         , -- hex_hash: 0x315B46DA -- unknown | unknown
+    [-714481779]        = "mp009_p_mp_pedestaldisplay01x"                               , -- hex_hash: 0xD569DF8D -- unknown | unknown
+    [897901247]         = "mp009_p_mp_podium01x"                                        , -- hex_hash: 0x3584E2BF -- unknown | unknown
+    [-325059753]        = "mp009_p_mp_stool01x"                                         , -- hex_hash: 0xEC9FFB57 -- unknown | unknown
+    [-1071279487]       = "mp009_p_mp_veh_capitalitheft01x"                             , -- hex_hash: 0xC0259281 -- unknown | unknown
+    [708924595]         = "mp009_p_mp_veh_mailservice01x"                               , -- hex_hash: 0x2A4154B3 -- unknown | unknown
+    [278032185]         = "mp009_p_mp_washbasinset01x"                                  , -- hex_hash: 0x10926F39 -- unknown | unknown
+    [-493764407]        = "mp009_p_mp009_cratetable01x"                                 , -- hex_hash: 0xE291C0C9 -- unknown | unknown
+    [919786250]         = "mp009_p_revolver_cattleman_cut"                              , -- hex_hash: 0x36D2D30A -- unknown | unknown
+    [-2058527672]       = "mp009_s_interact_lanternskull01x"                            , -- hex_hash: 0x854D5C48 -- unknown | unknown
+    [-1584338]          = "mp009_s_mp_medicinebox01x"                                   , -- hex_hash: 0xFFE7D32E -- unknown | unknown
+    [-550148180]        = "mp009_s_mp_pickup_jewelrybag01x"                             , -- hex_hash: 0xDF3567AC -- unknown | unknown
 
 
 
