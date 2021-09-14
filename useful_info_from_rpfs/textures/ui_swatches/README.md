@@ -1,5 +1,4 @@
-## Example of using:
-
+## Example of using:  
 ```lua
 local function DrawTexture(textureStreamed,textureName,x, y, width, height,rotation,r, g, b, a, p11)
     if not HasStreamedTextureDictLoaded(textureStreamed) then
@@ -11,145 +10,136 @@ end
 Citizen.CreateThread(function()
     while true do
     	Citizen.Wait(0)
-		DrawTexture("ui_swatches", "uisw_canvas_000", 0.5, 0.5, 0.251, 0.251, 0.0, 0, 0, 0, 240, false);
+		DrawTexture("generic_textures", "inkroller_1a", 0.5, 0.5, 0.251, 0.251, 0.0, 0, 0, 0, 240, false);
 	end
 end)
 ```
+ 
+
 
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>ui_swatches (-191519043)</h2>
 
-| Texture hashname              | Texture hash | Texture example                                                                        | Download Image                                                                                                                                                                                     |
-| ----------------------------- | ------------ | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| uisw_canvas_000               | 1458438352   | ![uisw_canvas_000](images/ui_swatches/uisw_canvas_000.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_000.png'>Download</a>               |
-| uisw_canvas_ck000             | 1052156246   | ![uisw_canvas_ck000](images/ui_swatches/uisw_canvas_ck000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_ck000.png'>Download</a>             |
-| uisw_canvas_ck001             | 1837498100   | ![uisw_canvas_ck001](images/ui_swatches/uisw_canvas_ck001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_ck001.png'>Download</a>             |
-| uisw_canvas_ck002             | 590604881    | ![uisw_canvas_ck002](images/ui_swatches/uisw_canvas_ck002.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_ck002.png'>Download</a>             |
-| uisw_canvas_ck003             | 301057997    | ![uisw_canvas_ck003](images/ui_swatches/uisw_canvas_ck003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_ck003.png'>Download</a>             |
-| uisw_canvas_sv000             | -429698485   | ![uisw_canvas_sv000](images/ui_swatches/uisw_canvas_sv000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_sv000.png'>Download</a>             |
-| uisw_canvas_sv001             | -136841932   | ![uisw_canvas_sv001](images/ui_swatches/uisw_canvas_sv001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_sv001.png'>Download</a>             |
-| uisw_canvas_sv003             | -730976671   | ![uisw_canvas_sv003](images/ui_swatches/uisw_canvas_sv003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_canvas_sv003.png'>Download</a>             |
-| uisw_cotton_000               | 2049179388   | ![uisw_cotton_000](images/ui_swatches/uisw_cotton_000.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_000.png'>Download</a>               |
-| uisw_cotton_ck000             | -2123634861  | ![uisw_cotton_ck000](images/ui_swatches/uisw_cotton_ck000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_ck000.png'>Download</a>             |
-| uisw_cotton_ck001             | 702494771    | ![uisw_cotton_ck001](images/ui_swatches/uisw_cotton_ck001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_ck001.png'>Download</a>             |
-| uisw_cotton_ck002             | 471112862    | ![uisw_cotton_ck002](images/ui_swatches/uisw_cotton_ck002.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_ck002.png'>Download</a>             |
-| uisw_cotton_ck003             | 1180430636   | ![uisw_cotton_ck003](images/ui_swatches/uisw_cotton_ck003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_ck003.png'>Download</a>             |
-| uisw_cotton_pd000             | 104900511    | ![uisw_cotton_pd000](images/ui_swatches/uisw_cotton_pd000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_pd000.png'>Download</a>             |
-| uisw_cotton_pt000             | 2146053187   | ![uisw_cotton_pt000](images/ui_swatches/uisw_cotton_pt000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_pt000.png'>Download</a>             |
-| uisw_cotton_pt001             | 1323059752   | ![uisw_cotton_pt001](images/ui_swatches/uisw_cotton_pt001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_pt001.png'>Download</a>             |
-| uisw_cotton_pt002             | 1702066006   | ![uisw_cotton_pt002](images/ui_swatches/uisw_cotton_pt002.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_pt002.png'>Download</a>             |
-| uisw_cotton_pt003             | 878744881    | ![uisw_cotton_pt003](images/ui_swatches/uisw_cotton_pt003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_pt003.png'>Download</a>             |
-| uisw_cotton_pt004             | 1117663660   | ![uisw_cotton_pt004](images/ui_swatches/uisw_cotton_pt004.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_pt004.png'>Download</a>             |
-| uisw_cotton_sv000             | 635701943    | ![uisw_cotton_sv000](images/ui_swatches/uisw_cotton_sv000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_sv000.png'>Download</a>             |
-| uisw_cotton_sv001             | 339273569    | ![uisw_cotton_sv001](images/ui_swatches/uisw_cotton_sv001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_sv001.png'>Download</a>             |
-| uisw_cotton_sv003             | -2129739509  | ![uisw_cotton_sv003](images/ui_swatches/uisw_cotton_sv003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_cotton_sv003.png'>Download</a>             |
-| uisw_denim_000                | 1624788690   | ![uisw_denim_000](images/ui_swatches/uisw_denim_000.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_000.png'>Download</a>                |
-| uisw_denim_ck000              | -458020220   | ![uisw_denim_ck000](images/ui_swatches/uisw_denim_ck000.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_ck000.png'>Download</a>              |
-| uisw_denim_ck001              | -146223185   | ![uisw_denim_ck001](images/ui_swatches/uisw_denim_ck001.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_ck001.png'>Download</a>              |
-| uisw_denim_ck002              | -87173451    | ![uisw_denim_ck002](images/ui_swatches/uisw_denim_ck002.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_ck002.png'>Download</a>              |
-| uisw_denim_ck003              | 209779227    | ![uisw_denim_ck003](images/ui_swatches/uisw_denim_ck003.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_ck003.png'>Download</a>              |
-| uisw_denim_sv000              | -703720800   | ![uisw_denim_sv000](images/ui_swatches/uisw_denim_sv000.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_sv000.png'>Download</a>              |
-| uisw_denim_sv001              | 758268163    | ![uisw_denim_sv001](images/ui_swatches/uisw_denim_sv001.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_sv001.png'>Download</a>              |
-| uisw_denim_sv003              | 465542686    | ![uisw_denim_sv003](images/ui_swatches/uisw_denim_sv003.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_denim_sv003.png'>Download</a>              |
-| uisw_flat_ck000               | 1793385910   | ![uisw_flat_ck000](images/ui_swatches/uisw_flat_ck000.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_flat_ck000.png'>Download</a>               |
-| uisw_horse_000                | 1223202389   | ![uisw_horse_000](images/ui_swatches/uisw_horse_000.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_000.png'>Download</a>                |
-| uisw_horse_cotton_new000      | -952586304   | ![uisw_horse_cotton_new000](images/ui_swatches/uisw_horse_cotton_new000.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_new000.png'>Download</a>      |
-| uisw_horse_cotton_pt001       | -1017130533  | ![uisw_horse_cotton_pt001](images/ui_swatches/uisw_horse_cotton_pt001.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt001.png'>Download</a>       |
-| uisw_horse_cotton_pt002       | -1732477807  | ![uisw_horse_cotton_pt002](images/ui_swatches/uisw_horse_cotton_pt002.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt002.png'>Download</a>       |
-| uisw_horse_cotton_pt003       | 1727895828   | ![uisw_horse_cotton_pt003](images/ui_swatches/uisw_horse_cotton_pt003.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt003.png'>Download</a>       |
-| uisw_horse_cotton_pt004       | 86365542     | ![uisw_horse_cotton_pt004](images/ui_swatches/uisw_horse_cotton_pt004.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt004.png'>Download</a>       |
-| uisw_horse_cotton_pt005       | 325612011    | ![uisw_horse_cotton_pt005](images/ui_swatches/uisw_horse_cotton_pt005.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt005.png'>Download</a>       |
-| uisw_horse_cotton_pt006       | -1670708238  | ![uisw_horse_cotton_pt006](images/ui_swatches/uisw_horse_cotton_pt006.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt006.png'>Download</a>       |
-| uisw_horse_cotton_pt007       | -1231538100  | ![uisw_horse_cotton_pt007](images/ui_swatches/uisw_horse_cotton_pt007.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt007.png'>Download</a>       |
-| uisw_horse_cotton_pt008       | 1340599021   | ![uisw_horse_cotton_pt008](images/ui_swatches/uisw_horse_cotton_pt008.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt008.png'>Download</a>       |
-| uisw_horse_cotton_pt009       | 506300281    | ![uisw_horse_cotton_pt009](images/ui_swatches/uisw_horse_cotton_pt009.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt009.png'>Download</a>       |
-| uisw_horse_cotton_pt010       | 65163775     | ![uisw_horse_cotton_pt010](images/ui_swatches/uisw_horse_cotton_pt010.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt010.png'>Download</a>       |
-| uisw_horse_cotton_pt011       | 291794179    | ![uisw_horse_cotton_pt011](images/ui_swatches/uisw_horse_cotton_pt011.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt011.png'>Download</a>       |
-| uisw_horse_cotton_pt012       | -1503881483  | ![uisw_horse_cotton_pt012](images/ui_swatches/uisw_horse_cotton_pt012.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_pt012.png'>Download</a>       |
-| uisw_horse_cotton_used000     | -1269143707  | ![uisw_horse_cotton_used000](images/ui_swatches/uisw_horse_cotton_used000.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_cotton_used000.png'>Download</a>     |
-| uisw_horse_hair_000           | 2012564403   | ![uisw_horse_hair_000](images/ui_swatches/uisw_horse_hair_000.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_hair_000.png'>Download</a>           |
-| uisw_horse_hair_001           | -2004685618  | ![uisw_horse_hair_001](images/ui_swatches/uisw_horse_hair_001.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_hair_001.png'>Download</a>           |
-| uisw_horse_leather_new000     | 2081404945   | ![uisw_horse_leather_new000](images/ui_swatches/uisw_horse_leather_new000.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_leather_new000.png'>Download</a>     |
-| uisw_horse_leather_used000    | -572148064   | ![uisw_horse_leather_used000](images/ui_swatches/uisw_horse_leather_used000.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_leather_used000.png'>Download</a>    |
-| uisw_horse_metal_000          | 1185401359   | ![uisw_horse_metal_000](images/ui_swatches/uisw_horse_metal_000.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_metal_000.png'>Download</a>          |
-| uisw_horse_trapperblanket_001 | 1262476316   | ![uisw_horse_trapperblanket_001](images/ui_swatches/uisw_horse_trapperblanket_001.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_trapperblanket_001.png'>Download</a> |
-| uisw_horse_trapperblanket_002 | 1444475342   | ![uisw_horse_trapperblanket_002](images/ui_swatches/uisw_horse_trapperblanket_002.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_trapperblanket_002.png'>Download</a> |
-| uisw_horse_trapperblanket_003 | -288775379   | ![uisw_horse_trapperblanket_003](images/ui_swatches/uisw_horse_trapperblanket_003.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_trapperblanket_003.png'>Download</a> |
-| uisw_horse_trapperblanket_004 | 1502771389   | ![uisw_horse_trapperblanket_004](images/ui_swatches/uisw_horse_trapperblanket_004.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_trapperblanket_004.png'>Download</a> |
-| uisw_horse_trapperblanket_005 | 309226102    | ![uisw_horse_trapperblanket_005](images/ui_swatches/uisw_horse_trapperblanket_005.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_horse_trapperblanket_005.png'>Download</a> |
-| uisw_leather_000              | -485941338   | ![uisw_leather_000](images/ui_swatches/uisw_leather_000.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_leather_000.png'>Download</a>              |
-| uisw_leather_pt000            | -1553297925  | ![uisw_leather_pt000](images/ui_swatches/uisw_leather_pt000.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_leather_pt000.png'>Download</a>            |
-| uisw_leather_pt001            | -1282396602  | ![uisw_leather_pt001](images/ui_swatches/uisw_leather_pt001.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_leather_pt001.png'>Download</a>            |
-| uisw_leather_pt002            | -99796161    | ![uisw_leather_pt002](images/ui_swatches/uisw_leather_pt002.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/ui_swatches//uisw_leather_pt002.png'>Download</a>            |
 
-<h2>0x189C5DA4  (--)</h2>
-
-| Texture hashname              | Texture hash | Texture example                                                                       | Download Image                                                                                                                                                                                   |
-| ----------------------------- | ------------ | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| uisw_canvas_000               | 1458438352   | ![uisw_canvas_000](images/0x189C5DA4/uisw_canvas_000.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_000.png'>Download</a>               |
-| uisw_canvas_ck000             | 1052156246   | ![uisw_canvas_ck000](images/0x189C5DA4/uisw_canvas_ck000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_ck000.png'>Download</a>             |
-| uisw_canvas_ck001             | 1837498100   | ![uisw_canvas_ck001](images/0x189C5DA4/uisw_canvas_ck001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_ck001.png'>Download</a>             |
-| uisw_canvas_ck002             | 590604881    | ![uisw_canvas_ck002](images/0x189C5DA4/uisw_canvas_ck002.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_ck002.png'>Download</a>             |
-| uisw_canvas_ck003             | 301057997    | ![uisw_canvas_ck003](images/0x189C5DA4/uisw_canvas_ck003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_ck003.png'>Download</a>             |
-| uisw_canvas_sv000             | -429698485   | ![uisw_canvas_sv000](images/0x189C5DA4/uisw_canvas_sv000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_sv000.png'>Download</a>             |
-| uisw_canvas_sv001             | -136841932   | ![uisw_canvas_sv001](images/0x189C5DA4/uisw_canvas_sv001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_sv001.png'>Download</a>             |
-| uisw_canvas_sv003             | -730976671   | ![uisw_canvas_sv003](images/0x189C5DA4/uisw_canvas_sv003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_canvas_sv003.png'>Download</a>             |
-| uisw_cotton_000               | 2049179388   | ![uisw_cotton_000](images/0x189C5DA4/uisw_cotton_000.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_000.png'>Download</a>               |
-| uisw_cotton_ck000             | -2123634861  | ![uisw_cotton_ck000](images/0x189C5DA4/uisw_cotton_ck000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_ck000.png'>Download</a>             |
-| uisw_cotton_ck001             | 702494771    | ![uisw_cotton_ck001](images/0x189C5DA4/uisw_cotton_ck001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_ck001.png'>Download</a>             |
-| uisw_cotton_ck002             | 471112862    | ![uisw_cotton_ck002](images/0x189C5DA4/uisw_cotton_ck002.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_ck002.png'>Download</a>             |
-| uisw_cotton_ck003             | 1180430636   | ![uisw_cotton_ck003](images/0x189C5DA4/uisw_cotton_ck003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_ck003.png'>Download</a>             |
-| uisw_cotton_pd000             | 104900511    | ![uisw_cotton_pd000](images/0x189C5DA4/uisw_cotton_pd000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_pd000.png'>Download</a>             |
-| uisw_cotton_pt000             | 2146053187   | ![uisw_cotton_pt000](images/0x189C5DA4/uisw_cotton_pt000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_pt000.png'>Download</a>             |
-| uisw_cotton_pt001             | 1323059752   | ![uisw_cotton_pt001](images/0x189C5DA4/uisw_cotton_pt001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_pt001.png'>Download</a>             |
-| uisw_cotton_pt002             | 1702066006   | ![uisw_cotton_pt002](images/0x189C5DA4/uisw_cotton_pt002.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_pt002.png'>Download</a>             |
-| uisw_cotton_pt003             | 878744881    | ![uisw_cotton_pt003](images/0x189C5DA4/uisw_cotton_pt003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_pt003.png'>Download</a>             |
-| uisw_cotton_pt004             | 1117663660   | ![uisw_cotton_pt004](images/0x189C5DA4/uisw_cotton_pt004.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_pt004.png'>Download</a>             |
-| uisw_cotton_sv000             | 635701943    | ![uisw_cotton_sv000](images/0x189C5DA4/uisw_cotton_sv000.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_sv000.png'>Download</a>             |
-| uisw_cotton_sv001             | 339273569    | ![uisw_cotton_sv001](images/0x189C5DA4/uisw_cotton_sv001.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_sv001.png'>Download</a>             |
-| uisw_cotton_sv003             | -2129739509  | ![uisw_cotton_sv003](images/0x189C5DA4/uisw_cotton_sv003.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_cotton_sv003.png'>Download</a>             |
-| uisw_denim_000                | 1624788690   | ![uisw_denim_000](images/0x189C5DA4/uisw_denim_000.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_000.png'>Download</a>                |
-| uisw_denim_ck000              | -458020220   | ![uisw_denim_ck000](images/0x189C5DA4/uisw_denim_ck000.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_ck000.png'>Download</a>              |
-| uisw_denim_ck001              | -146223185   | ![uisw_denim_ck001](images/0x189C5DA4/uisw_denim_ck001.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_ck001.png'>Download</a>              |
-| uisw_denim_ck002              | -87173451    | ![uisw_denim_ck002](images/0x189C5DA4/uisw_denim_ck002.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_ck002.png'>Download</a>              |
-| uisw_denim_ck003              | 209779227    | ![uisw_denim_ck003](images/0x189C5DA4/uisw_denim_ck003.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_ck003.png'>Download</a>              |
-| uisw_denim_sv000              | -703720800   | ![uisw_denim_sv000](images/0x189C5DA4/uisw_denim_sv000.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_sv000.png'>Download</a>              |
-| uisw_denim_sv001              | 758268163    | ![uisw_denim_sv001](images/0x189C5DA4/uisw_denim_sv001.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_sv001.png'>Download</a>              |
-| uisw_denim_sv003              | 465542686    | ![uisw_denim_sv003](images/0x189C5DA4/uisw_denim_sv003.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_denim_sv003.png'>Download</a>              |
-| uisw_flat_ck000               | 1793385910   | ![uisw_flat_ck000](images/0x189C5DA4/uisw_flat_ck000.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_flat_ck000.png'>Download</a>               |
-| uisw_horse_000                | 1223202389   | ![uisw_horse_000](images/0x189C5DA4/uisw_horse_000.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_000.png'>Download</a>                |
-| uisw_horse_cotton_new000      | -952586304   | ![uisw_horse_cotton_new000](images/0x189C5DA4/uisw_horse_cotton_new000.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_new000.png'>Download</a>      |
-| uisw_horse_cotton_pt001       | -1017130533  | ![uisw_horse_cotton_pt001](images/0x189C5DA4/uisw_horse_cotton_pt001.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt001.png'>Download</a>       |
-| uisw_horse_cotton_pt002       | -1732477807  | ![uisw_horse_cotton_pt002](images/0x189C5DA4/uisw_horse_cotton_pt002.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt002.png'>Download</a>       |
-| uisw_horse_cotton_pt003       | 1727895828   | ![uisw_horse_cotton_pt003](images/0x189C5DA4/uisw_horse_cotton_pt003.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt003.png'>Download</a>       |
-| uisw_horse_cotton_pt004       | 86365542     | ![uisw_horse_cotton_pt004](images/0x189C5DA4/uisw_horse_cotton_pt004.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt004.png'>Download</a>       |
-| uisw_horse_cotton_pt005       | 325612011    | ![uisw_horse_cotton_pt005](images/0x189C5DA4/uisw_horse_cotton_pt005.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt005.png'>Download</a>       |
-| uisw_horse_cotton_pt006       | -1670708238  | ![uisw_horse_cotton_pt006](images/0x189C5DA4/uisw_horse_cotton_pt006.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt006.png'>Download</a>       |
-| uisw_horse_cotton_pt007       | -1231538100  | ![uisw_horse_cotton_pt007](images/0x189C5DA4/uisw_horse_cotton_pt007.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt007.png'>Download</a>       |
-| uisw_horse_cotton_pt008       | 1340599021   | ![uisw_horse_cotton_pt008](images/0x189C5DA4/uisw_horse_cotton_pt008.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt008.png'>Download</a>       |
-| uisw_horse_cotton_pt009       | 506300281    | ![uisw_horse_cotton_pt009](images/0x189C5DA4/uisw_horse_cotton_pt009.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt009.png'>Download</a>       |
-| uisw_horse_cotton_pt010       | 65163775     | ![uisw_horse_cotton_pt010](images/0x189C5DA4/uisw_horse_cotton_pt010.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt010.png'>Download</a>       |
-| uisw_horse_cotton_pt011       | 291794179    | ![uisw_horse_cotton_pt011](images/0x189C5DA4/uisw_horse_cotton_pt011.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt011.png'>Download</a>       |
-| uisw_horse_cotton_pt012       | -1503881483  | ![uisw_horse_cotton_pt012](images/0x189C5DA4/uisw_horse_cotton_pt012.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_pt012.png'>Download</a>       |
-| uisw_horse_cotton_used000     | -1269143707  | ![uisw_horse_cotton_used000](images/0x189C5DA4/uisw_horse_cotton_used000.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_cotton_used000.png'>Download</a>     |
-| uisw_horse_hair_000           | 2012564403   | ![uisw_horse_hair_000](images/0x189C5DA4/uisw_horse_hair_000.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_hair_000.png'>Download</a>           |
-| uisw_horse_hair_001           | -2004685618  | ![uisw_horse_hair_001](images/0x189C5DA4/uisw_horse_hair_001.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_hair_001.png'>Download</a>           |
-| uisw_horse_hair_002           |              | ![uisw_horse_hair_002](images/0x189C5DA4/uisw_horse_hair_002.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_hair_002.png'>Download</a>           |
-| uisw_horse_hair_003           |              | ![uisw_horse_hair_003](images/0x189C5DA4/uisw_horse_hair_003.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_hair_003.png'>Download</a>           |
-| uisw_horse_hair_004           |              | ![uisw_horse_hair_004](images/0x189C5DA4/uisw_horse_hair_004.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_hair_004.png'>Download</a>           |
-| uisw_horse_leather_new000     | 2081404945   | ![uisw_horse_leather_new000](images/0x189C5DA4/uisw_horse_leather_new000.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_leather_new000.png'>Download</a>     |
-| uisw_horse_leather_used000    | -572148064   | ![uisw_horse_leather_used000](images/0x189C5DA4/uisw_horse_leather_used000.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_leather_used000.png'>Download</a>    |
-| uisw_horse_mask_hm000         |              | ![uisw_horse_mask_hm000](images/0x189C5DA4/uisw_horse_mask_hm000.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_mask_hm000.png'>Download</a>         |
-| uisw_horse_mask_hm001         |              | ![uisw_horse_mask_hm001](images/0x189C5DA4/uisw_horse_mask_hm001.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_mask_hm001.png'>Download</a>         |
-| uisw_horse_mask_hm002         |              | ![uisw_horse_mask_hm002](images/0x189C5DA4/uisw_horse_mask_hm002.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_mask_hm002.png'>Download</a>         |
-| uisw_horse_metal_000          | 1185401359   | ![uisw_horse_metal_000](images/0x189C5DA4/uisw_horse_metal_000.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_metal_000.png'>Download</a>          |
-| uisw_horse_trapperblanket_001 | 1262476316   | ![uisw_horse_trapperblanket_001](images/0x189C5DA4/uisw_horse_trapperblanket_001.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_trapperblanket_001.png'>Download</a> |
-| uisw_horse_trapperblanket_002 | 1444475342   | ![uisw_horse_trapperblanket_002](images/0x189C5DA4/uisw_horse_trapperblanket_002.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_trapperblanket_002.png'>Download</a> |
-| uisw_horse_trapperblanket_003 | -288775379   | ![uisw_horse_trapperblanket_003](images/0x189C5DA4/uisw_horse_trapperblanket_003.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_trapperblanket_003.png'>Download</a> |
-| uisw_horse_trapperblanket_004 | 1502771389   | ![uisw_horse_trapperblanket_004](images/0x189C5DA4/uisw_horse_trapperblanket_004.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_trapperblanket_004.png'>Download</a> |
-| uisw_horse_trapperblanket_005 | 309226102    | ![uisw_horse_trapperblanket_005](images/0x189C5DA4/uisw_horse_trapperblanket_005.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_horse_trapperblanket_005.png'>Download</a> |
-| uisw_leather_000              | -485941338   | ![uisw_leather_000](images/0x189C5DA4/uisw_leather_000.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_leather_000.png'>Download</a>              |
-| uisw_leather_cow_000          |              | ![uisw_leather_cow_000](images/0x189C5DA4/uisw_leather_cow_000.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_leather_cow_000.png'>Download</a>          |
-| uisw_leather_pt000            | -1553297925  | ![uisw_leather_pt000](images/0x189C5DA4/uisw_leather_pt000.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_leather_pt000.png'>Download</a>            |
-| uisw_leather_pt001            | -1282396602  | ![uisw_leather_pt001](images/0x189C5DA4/uisw_leather_pt001.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_leather_pt001.png'>Download</a>            |
-| uisw_leather_pt002            | -99796161    | ![uisw_leather_pt002](images/0x189C5DA4/uisw_leather_pt002.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_swatches/images/0x189C5DA4/uisw_leather_pt002.png'>Download</a>            |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+uisw_canvas_000 | 1458438352 | ![uisw_canvas_000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_000.png)
+ |  |
+uisw_canvas_ck000 | 1052156246 | ![uisw_canvas_ck000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_ck000.png)
+ |  |
+uisw_canvas_ck001 | 1837498100 | ![uisw_canvas_ck001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_ck001.png)
+ |  |
+uisw_canvas_ck002 | 590604881 | ![uisw_canvas_ck002](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_ck002.png)
+ |  |
+uisw_canvas_ck003 | 301057997 | ![uisw_canvas_ck003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_ck003.png)
+ |  |
+uisw_canvas_sv000 | -429698485 | ![uisw_canvas_sv000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_sv000.png)
+ |  |
+uisw_canvas_sv001 | -136841932 | ![uisw_canvas_sv001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_sv001.png)
+ |  |
+uisw_canvas_sv003 | -730976671 | ![uisw_canvas_sv003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_canvas_sv003.png)
+ |  |
+uisw_cotton_000 | 2049179388 | ![uisw_cotton_000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_000.png)
+ |  |
+uisw_cotton_ck000 | -2123634861 | ![uisw_cotton_ck000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_ck000.png)
+ |  |
+uisw_cotton_ck001 | 702494771 | ![uisw_cotton_ck001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_ck001.png)
+ |  |
+uisw_cotton_ck002 | 471112862 | ![uisw_cotton_ck002](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_ck002.png)
+ |  |
+uisw_cotton_ck003 | 1180430636 | ![uisw_cotton_ck003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_ck003.png)
+ |  |
+uisw_cotton_pd000 | 104900511 | ![uisw_cotton_pd000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_pd000.png)
+ |  |
+uisw_cotton_pt000 | 2146053187 | ![uisw_cotton_pt000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_pt000.png)
+ |  |
+uisw_cotton_pt001 | 1323059752 | ![uisw_cotton_pt001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_pt001.png)
+ |  |
+uisw_cotton_pt002 | 1702066006 | ![uisw_cotton_pt002](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_pt002.png)
+ |  |
+uisw_cotton_pt003 | 878744881 | ![uisw_cotton_pt003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_pt003.png)
+ |  |
+uisw_cotton_pt004 | 1117663660 | ![uisw_cotton_pt004](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_pt004.png)
+ |  |
+uisw_cotton_sv000 | 635701943 | ![uisw_cotton_sv000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_sv000.png)
+ |  |
+uisw_cotton_sv001 | 339273569 | ![uisw_cotton_sv001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_sv001.png)
+ |  |
+uisw_cotton_sv003 | -2129739509 | ![uisw_cotton_sv003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_cotton_sv003.png)
+ |  |
+uisw_denim_000 | 1624788690 | ![uisw_denim_000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_000.png)
+ |  |
+uisw_denim_ck000 | -458020220 | ![uisw_denim_ck000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_ck000.png)
+ |  |
+uisw_denim_ck001 | -146223185 | ![uisw_denim_ck001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_ck001.png)
+ |  |
+uisw_denim_ck002 | -87173451 | ![uisw_denim_ck002](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_ck002.png)
+ |  |
+uisw_denim_ck003 | 209779227 | ![uisw_denim_ck003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_ck003.png)
+ |  |
+uisw_denim_sv000 | -703720800 | ![uisw_denim_sv000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_sv000.png)
+ |  |
+uisw_denim_sv001 | 758268163 | ![uisw_denim_sv001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_sv001.png)
+ |  |
+uisw_denim_sv003 | 465542686 | ![uisw_denim_sv003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_denim_sv003.png)
+ |  |
+uisw_flat_ck000 | 1793385910 | ![uisw_flat_ck000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_flat_ck000.png)
+ |  |
+uisw_horse_000 | 1223202389 | ![uisw_horse_000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_000.png)
+ |  |
+uisw_horse_cotton_new000 | -952586304 | ![uisw_horse_cotton_new000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_new000.png)
+ |  |
+uisw_horse_cotton_pt001 | -1017130533 | ![uisw_horse_cotton_pt001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt001.png)
+ |  |
+uisw_horse_cotton_pt002 | -1732477807 | ![uisw_horse_cotton_pt002](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt002.png)
+ |  |
+uisw_horse_cotton_pt003 | 1727895828 | ![uisw_horse_cotton_pt003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt003.png)
+ |  |
+uisw_horse_cotton_pt004 | 86365542 | ![uisw_horse_cotton_pt004](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt004.png)
+ |  |
+uisw_horse_cotton_pt005 | 325612011 | ![uisw_horse_cotton_pt005](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt005.png)
+ |  |
+uisw_horse_cotton_pt006 | -1670708238 | ![uisw_horse_cotton_pt006](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt006.png)
+ |  |
+uisw_horse_cotton_pt007 | -1231538100 | ![uisw_horse_cotton_pt007](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt007.png)
+ |  |
+uisw_horse_cotton_pt008 | 1340599021 | ![uisw_horse_cotton_pt008](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt008.png)
+ |  |
+uisw_horse_cotton_pt009 | 506300281 | ![uisw_horse_cotton_pt009](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt009.png)
+ |  |
+uisw_horse_cotton_pt010 | 65163775 | ![uisw_horse_cotton_pt010](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt010.png)
+ |  |
+uisw_horse_cotton_pt011 | 291794179 | ![uisw_horse_cotton_pt011](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt011.png)
+ |  |
+uisw_horse_cotton_pt012 | -1503881483 | ![uisw_horse_cotton_pt012](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_pt012.png)
+ |  |
+uisw_horse_cotton_used000 | -1269143707 | ![uisw_horse_cotton_used000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_cotton_used000.png)
+ |  |
+uisw_horse_hair_000 | 2012564403 | ![uisw_horse_hair_000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_hair_000.png)
+ |  |
+uisw_horse_hair_001 | -2004685618 | ![uisw_horse_hair_001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_hair_001.png)
+ |  |
+uisw_horse_leather_new000 | 2081404945 | ![uisw_horse_leather_new000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_leather_new000.png)
+ |  |
+uisw_horse_leather_used000 | -572148064 | ![uisw_horse_leather_used000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_leather_used000.png)
+ |  |
+uisw_horse_metal_000 | 1185401359 | ![uisw_horse_metal_000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_metal_000.png)
+ |  |
+uisw_horse_trapperblanket_001 | 1262476316 | ![uisw_horse_trapperblanket_001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_trapperblanket_001.png)
+ |  |
+uisw_horse_trapperblanket_002 | 1444475342 | ![uisw_horse_trapperblanket_002](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_trapperblanket_002.png)
+ |  |
+uisw_horse_trapperblanket_003 | -288775379 | ![uisw_horse_trapperblanket_003](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_trapperblanket_003.png)
+ |  |
+uisw_horse_trapperblanket_004 | 1502771389 | ![uisw_horse_trapperblanket_004](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_trapperblanket_004.png)
+ |  |
+uisw_horse_trapperblanket_005 | 309226102 | ![uisw_horse_trapperblanket_005](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_horse_trapperblanket_005.png)
+ |  |
+uisw_leather_000 | -485941338 | ![uisw_leather_000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_leather_000.png)
+ |  |
+uisw_leather_pt000 | -1553297925 | ![uisw_leather_pt000](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_leather_pt000.png)
+ |  |
+uisw_leather_pt001 | -1282396602 | ![uisw_leather_pt001](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_leather_pt001.png)
+ |  |
+uisw_leather_pt002 | -99796161 | ![uisw_leather_pt002](http://femga.com/images/samples/ui_textures/ui_swatches/uisw_leather_pt002.png)
+ |  |

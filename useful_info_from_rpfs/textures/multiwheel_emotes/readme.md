@@ -20,149 +20,277 @@ end)
 
 <h2>multiwheel_emotes (0x1676B491)</h2>
 
-| Texture hashname                       | Texture hash | Texture example                                                                                                 | Download Image                                                                                                                                                                                                        |
-| -------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| emote_action_air_banjo_1               | -            | ![emote_action_air_banjo_1](images/multiwheel_emotes/emote_action_air_banjo_1.png)                              | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_air_banjo_1.png'>Download</a>               |
-| emote_action_beckon_1                  | 0x174C00B0   | ![emote_action_beckon_1](images//multiwheel_emotes/emote_action_beckon_1.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_beckon_1.png'>Download</a>                  |
-| emote_action_biting_gold_coin_1        | 0x4B751D74   | ![emote_action_biting_gold_coin_1](images//multiwheel_emotes/emote_action_biting_gold_coin_1.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_biting_gold_coin_1.png'>Download</a>        |
-| emote_action_blow_kiss                 | 0xB35BF312   | ![emote_action_blow_kiss](images//multiwheel_emotes/emote_action_blow_kiss.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_blow_kiss.png'>Download</a>                 |
-| emote_action_boast                     | 0x573834E1   | ![emote_action_boast](images//multiwheel_emotes/emote_action_boast.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_boast.png'>Download</a>                     |
-| emote_action_check_pocket_watch_1      | 0x6CB4E26A   | ![emote_action_check_pocket_watch_1](images//multiwheel_emotes/emote_action_check_pocket_watch_1.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_check_pocket_watch_1.png'>Download</a>      |
-| emote_action_coin_flip                 | 0xACCCE53F   | ![emote_action_coin_flip](images//multiwheel_emotes/emote_action_coin_flip.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_coin_flip.png'>Download</a>                 |
-| emote_action_drinking_cowboy_1         | 0x73B9A72B   | ![emote_action_drinking_cowboy_1](images//multiwheel_emotes/emote_action_drinking_cowboy_1.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_drinking_cowboy_1.png'>Download</a>         |
-| emote_action_drinking_drifter_1        | 0x8558D581   | ![emote_action_drinking_drifter_1](images//multiwheel_emotes/emote_action_drinking_drifter_1.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_drinking_drifter_1.png'>Download</a>        |
-| emote_action_drinking_secret_1         | 0x658D5DAA   | ![emote_action_drinking_secret_1](images//multiwheel_emotes/emote_action_drinking_secret_1.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_drinking_secret_1.png'>Download</a>         |
-| emote_action_fist_pump                 | 0x95B50B29   | ![emote_action_fist_pump](images//multiwheel_emotes/emote_action_fist_pump.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_fist_pump.png'>Download</a>                 |
-| emote_action_flex                      | 0xDD94AC70   | ![emote_action_flex](images//multiwheel_emotes/emote_action_flex.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_flex.png'>Download</a>                      |
-| emote_action_follow_me                 | 0x0D689F81   | ![emote_action_follow_me](images//multiwheel_emotes/emote_action_follow_me.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_follow_me.png'>Download</a>                 |
-| emote_action_hissyfit                  | 0x63903CFA   | ![emote_action_hissyfit](images//multiwheel_emotes/emote_action_hissyfit.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_hissyfit.png'>Download</a>                  |
-| emote_action_howl                      | 0xB5176486   | ![emote_action_howl](images//multiwheel_emotes/emote_action_howl.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_howl.png'>Download</a>                      |
-| emote_action_hypnosis_pocket_watch_1   | 0x67BF2E85   | ![emote_action_hypnosis_pocket_watch_1](images//multiwheel_emotes/emote_action_hypnosis_pocket_watch_1.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_hypnosis_pocket_watch_1.png'>Download</a>   |
-| emote_action_idea_1                    | 0x89EB5492   | ![emote_action_idea_1](images//multiwheel_emotes/emote_action_idea_1.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_idea_1.png'>Download</a>                    |
-| emote_action_lets_go                   | 0x7F43BAF6   | ![emote_action_lets_go](images//multiwheel_emotes/emote_action_lets_go.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_lets_go.png'>Download</a>                   |
-| emote_action_listen_1                  | 0x494B1F72   | ![emote_action_listen_1](images//multiwheel_emotes/emote_action_listen_1.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_listen_1.png'>Download</a>                  |
-| emote_action_look_yonder               | 0x276A631B   | ![emote_action_look_yonder](images//multiwheel_emotes/emote_action_look_yonder.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_look_yonder.png'>Download</a>               |
-| emote_action_newthreads                | 0x16D56761   | ![emote_action_newthreads](images//multiwheel_emotes/emote_action_newthreads.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_newthreads.png'>Download</a>                |
-| emote_action_nod_shuffle               | 0x012B021A   | ![emote_action_nod_shuffle](images//multiwheel_emotes/emote_action_nod_shuffle.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_nod_shuffle.png'>Download</a>               |
-| emote_action_point                     | 0x94E72124   | ![emote_action_point](images//multiwheel_emotes/emote_action_point.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_point.png'>Download</a>                     |
-| emote_action_posse_up                  | 0x737B4918   | ![emote_action_posse_up](images//multiwheel_emotes/emote_action_posse_up.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_posse_up.png'>Download</a>                  |
-| emote_action_prayer_1                  | 0xE5E96168   | ![emote_action_prayer_1](images//multiwheel_emotes/emote_action_prayer_1.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_prayer_1.png'>Download</a>                  |
-| emote_action_rock_paper_scissors_1     | 0x753E45E6   | ![emote_action_rock_paper_scissors_1](images//multiwheel_emotes/emote_action_rock_paper_scissors_1.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_rock_paper_scissors_1.png'>Download</a>     |
-| emote_action_scheme                    | 0xC0BFEB68   | ![emote_action_scheme](images//multiwheel_emotes/emote_action_scheme.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_scheme.png'>Download</a>                    |
-| emote_action_skyward_shooting          | 0x342C72F0   | ![emote_action_skyward_shooting](images//multiwheel_emotes/emote_action_skyward_shooting.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_skyward_shooting.png'>Download</a>          |
-| emote_action_smoke_cigar               | 0x2F4AD8D3   | ![emote_action_smoke_cigar](images//multiwheel_emotes/emote_action_smoke_cigar.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_smoke_cigar.png'>Download</a>               |
-| emote_action_smoke_cigar_cocky_1       | 0x5190161A   | ![emote_action_smoke_cigar_cocky_1](images//multiwheel_emotes/emote_action_smoke_cigar_cocky_1.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_smoke_cigar_cocky_1.png'>Download</a>       |
-| emote_action_smoke_cigar_drifter_1     | 0x0C19F5AA   | ![emote_action_smoke_cigar_drifter_1](images//multiwheel_emotes/emote_action_smoke_cigar_drifter_1.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_smoke_cigar_drifter_1.png'>Download</a>     |
-| emote_action_smoke_cigarette           | 0x7473C782   | ![emote_action_smoke_cigarette](images//multiwheel_emotes/emote_action_smoke_cigarette.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_smoke_cigarette.png'>Download</a>           |
-| emote_action_smoke_cigarette_classy_1  | 0xE3FA309C   | ![emote_action_smoke_cigarette_classy_1](images//multiwheel_emotes/emote_action_smoke_cigarette_classy_1.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_smoke_cigarette_classy_1.png'>Download</a>  |
-| emote_action_smoke_cigarette_drifter_1 | 0x4860240D   | ![emote_action_smoke_cigarette_drifter_1](images//multiwheel_emotes/emote_action_smoke_cigarette_drifter_1.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_smoke_cigarette_drifter_1.png'>Download</a> |
-| emote_action_smoke_pipe_1              | 0x9E7A4A4E   | ![emote_action_smoke_pipe_1](images//multiwheel_emotes/emote_action_smoke_pipe_1.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_smoke_pipe_1.png'>Download</a>              |
-| emote_action_snot_rocket_1             | -            | ![emote_action_snot_rocket_1](images/multiwheel_emotes/emote_action_snot_rocket_1.png)                          | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_snot_rocket_1.png'>Download</a>             |
-| emote_action_spin_and_aim_1            | 0x621B3CDB   | ![emote_action_spin_and_aim_1](images//multiwheel_emotes/emote_action_spin_and_aim_1.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_spin_and_aim_1.png'>Download</a>            |
-| emote_action_spit                      | 0x09D36AD0   | ![emote_action_spit](images//multiwheel_emotes/emote_action_spit.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_spit.png'>Download</a>                      |
-| emote_action_spooky_1                  | 0x566D10C4   | ![emote_action_spooky_1](images//multiwheel_emotes/emote_action_spooky_1.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_spooky_1.png'>Download</a>                  |
-| emote_action_stop_here                 | 0xA546239E   | ![emote_action_stop_here](images//multiwheel_emotes/emote_action_stop_here.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_stop_here.png'>Download</a>                 |
-| emote_action_take_notes_1              | 0x1481113A   | ![emote_action_take_notes_1](images//multiwheel_emotes/emote_action_take_notes_1.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_action_take_notes_1.png'>Download</a>              |
-| emote_boo_hoo                          | 0xC7B2AD4F   | ![emote_boo_hoo](images//multiwheel_emotes/emote_boo_hoo.png)                                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_boo_hoo.png'>Download</a>                          |
-| emote_bow                              | 0xDB637C9C   | ![emote_bow](images//multiwheel_emotes/emote_bow.png)                                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_bow.png'>Download</a>                              |
-| emote_buttercup                        | 0x20F645D7   | ![emote_buttercup](images//multiwheel_emotes/emote_buttercup.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_buttercup.png'>Download</a>                        |
-| emote_clap                             | 0xEAAA06A9   | ![emote_clap](images//multiwheel_emotes/emote_clap.png)                                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_clap.png'>Download</a>                             |
-| emote_cower                            | 0x35314B3B   | ![emote_cower](images//multiwheel_emotes/emote_cower.png)                                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_cower.png'>Download</a>                            |
-| emote_dance                            | 0xDF34EAE6   | ![emote_dance](images//multiwheel_emotes/emote_dance.png)                                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance.png'>Download</a>                            |
-| emote_dance_awkward_a                  | 0xE4FB3BA4   | ![emote_dance_awkward_a](images//multiwheel_emotes/emote_dance_awkward_a.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_awkward_a.png'>Download</a>                  |
-| emote_dance_carefree_a                 | 0xC35738BA   | ![emote_dance_carefree_a](images//multiwheel_emotes/emote_dance_carefree_a.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_carefree_a.png'>Download</a>                 |
-| emote_dance_carefree_b                 | 0x942B5A5F   | ![emote_dance_carefree_b](images//multiwheel_emotes/emote_dance_carefree_b.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_carefree_b.png'>Download</a>                 |
-| emote_dance_confident_a                | 0x806AF44F   | ![emote_dance_confident_a](images//multiwheel_emotes/emote_dance_confident_a.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_confident_a.png'>Download</a>                |
-| emote_dance_confident_b                | 0x6E9450A2   | ![emote_dance_confident_b](images//multiwheel_emotes/emote_dance_confident_b.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_confident_b.png'>Download</a>                |
-| emote_dance_drunk_a                    | 0xAEDF888A   | ![emote_dance_drunk_a](images//multiwheel_emotes/emote_dance_drunk_a.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_drunk_a.png'>Download</a>                    |
-| emote_dance_drunk_b                    | 0xDFF76AB9   | ![emote_dance_drunk_b](images//multiwheel_emotes/emote_dance_drunk_b.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_drunk_b.png'>Download</a>                    |
-| emote_dance_formal_a                   | 0x82C750E6   | ![emote_dance_formal_a](images//multiwheel_emotes/emote_dance_formal_a.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_formal_a.png'>Download</a>                   |
-| emote_dance_graceful_a                 | 0x7B8888AD   | ![emote_dance_graceful_a](images//multiwheel_emotes/emote_dance_graceful_a.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_graceful_a.png'>Download</a>                 |
-| emote_dance_old_a                      | 0x1DD214A3   | ![emote_dance_old_a](images//multiwheel_emotes/emote_dance_old_a.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_old_a.png'>Download</a>                      |
-| emote_dance_wild_a                     | 0x7DC4F271   | ![emote_dance_wild_a](images//multiwheel_emotes/emote_dance_wild_a.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_wild_a.png'>Download</a>                     |
-| emote_dance_wild_b                     | 0xB8A16829   | ![emote_dance_wild_b](images//multiwheel_emotes/emote_dance_wild_b.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_dance_wild_b.png'>Download</a>                     |
-| emote_disapprove                       | 0xE3733BD0   | ![emote_disapprove](images//multiwheel_emotes/emote_disapprove.png)                                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_disapprove.png'>Download</a>                       |
-| emote_fake_draw                        | 0x2A676FBF   | ![emote_fake_draw](images//multiwheel_emotes/emote_fake_draw.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_fake_draw.png'>Download</a>                        |
-| emote_favorite                         | 0xABEE5D45   | ![emote_favorite](images//multiwheel_emotes/emote_favorite.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_favorite.png'>Download</a>                         |
-| emote_fingershoot                      | 0x2E052F1F   | ![emote_fingershoot](images//multiwheel_emotes/emote_fingershoot.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_fingershoot.png'>Download</a>                      |
-| emote_glad_to_see_you                  | 0x50B86E11   | ![emote_glad_to_see_you](images//multiwheel_emotes/emote_glad_to_see_you.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_glad_to_see_you.png'>Download</a>                  |
-| emote_gonna_hurl                       | 0xE99C71F1   | ![emote_gonna_hurl](images//multiwheel_emotes/emote_gonna_hurl.png)                                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_gonna_hurl.png'>Download</a>                       |
-| emote_greet                            | 0x7136BAFF   | ![emote_greet](images//multiwheel_emotes/emote_greet.png)                                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet.png'>Download</a>                            |
-| emote_greet_finger_salute              | 0xE650601D   | ![emote_greet_finger_salute](images//multiwheel_emotes/emote_greet_finger_salute.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_finger_salute.png'>Download</a>              |
-| emote_greet_flying_kiss_1              | -            | ![emote_greet_flying_kiss_1](images/multiwheel_emotes/emote_greet_flying_kiss_1.png)                            | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_flying_kiss_1.png'>Download</a>              |
-| emote_greet_gentlewave                 | 0x5FDBA17F   | ![emote_greet_gentlewave](images//multiwheel_emotes/emote_greet_gentlewave.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_gentlewave.png'>Download</a>                 |
-| emote_greet_get_over_here              | 0x098B0496   | ![emote_greet_get_over_here](images//multiwheel_emotes/emote_greet_get_over_here.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_get_over_here.png'>Download</a>              |
-| emote_greet_hand_shake_1               | -            | ![emote_greet_hand_shake_1](images/multiwheel_emotes/emote_greet_hand_shake_1.png)                              | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_hand_shake_1.png'>Download</a>               |
-| emote_greet_hat_flick                  | 0x70DC4BCC   | ![emote_greet_hat_flick](images//multiwheel_emotes/emote_greet_hat_flick.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_hat_flick.png'>Download</a>                  |
-| emote_greet_hey_you                    | 0x0E61BA9F   | ![emote_greet_hey_you](images//multiwheel_emotes/emote_greet_hey_you.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_hey_you.png'>Download</a>                    |
-| emote_greet_outpour_1                  | 0x7BE3DC0B   | ![emote_greet_outpour_1](images//multiwheel_emotes/emote_greet_outpour_1.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_outpour_1.png'>Download</a>                  |
-| emote_greet_respectful_bow             | 0x9E709B30   | ![emote_greet_respectful_bow](images//multiwheel_emotes/emote_greet_respectful_bow.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_respectful_bow.png'>Download</a>             |
-| emote_greet_rough_housing_1            | -            | ![emote_greet_rough_housing_1](images/multiwheel_emotes/emote_greet_rough_housing_1.png)                        | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_rough_housing_1.png'>Download</a>            |
-| emote_greet_seven                      | 0xC1AF573F   | ![emote_greet_seven](images//multiwheel_emotes/emote_greet_seven.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_seven.png'>Download</a>                      |
-| emote_greet_subtle_wave                | 0x6F873861   | ![emote_greet_subtle_wave](images//multiwheel_emotes/emote_greet_subtle_wave.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_subtle_wave.png'>Download</a>                |
-| emote_greet_tada                       | 0x770CF751   | ![emote_greet_tada](images//multiwheel_emotes/emote_greet_tada.png)                                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_tada.png'>Download</a>                       |
-| emote_greet_thumbs_up                  | 0x7BA2E413   | ![emote_greet_thumbs_up](images//multiwheel_emotes/emote_greet_thumbs_up.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_thumbs_up.png'>Download</a>                  |
-| emote_greet_tip_hat                    | 0x456C08C0   | ![emote_greet_tip_hat](images//multiwheel_emotes/emote_greet_tip_hat.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_greet_tip_hat.png'>Download</a>                    |
-| emote_gunspin_dual                     | 0x7CEA2658   | ![emote_gunspin_dual](images//multiwheel_emotes/emote_gunspin_dual.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_gunspin_dual.png'>Download</a>                     |
-| emote_gunspin_single                   | 0x4086D9FE   | ![emote_gunspin_single](images//multiwheel_emotes/emote_gunspin_single.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_gunspin_single.png'>Download</a>                   |
-| emote_highlight                        | 0x37C5DB8B   | ![emote_highlight](images//multiwheel_emotes/emote_highlight.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_highlight.png'>Download</a>                        |
-| emote_insult                           | 0x9A210C21   | ![emote_insult](images//multiwheel_emotes/emote_insult.png)                                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_insult.png'>Download</a>                           |
-| emote_lets_go_crafting                 | 0x77746BA8   | ![emote_lets_go_crafting](images//multiwheel_emotes/emote_lets_go_crafting.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_lets_go_crafting.png'>Download</a>                 |
-| emote_lets_go_fishing                  | 0x82159F35   | ![emote_lets_go_fishing](images//multiwheel_emotes/emote_lets_go_fishing.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_lets_go_fishing.png'>Download</a>                  |
-| emote_lets_go_hunting                  | 0xA3217442   | ![emote_lets_go_hunting](images//multiwheel_emotes/emote_lets_go_hunting.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_lets_go_hunting.png'>Download</a>                  |
-| emote_lets_go_play_cards               | 0xA4FDEF2C   | ![emote_lets_go_play_cards](images//multiwheel_emotes/emote_lets_go_play_cards.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_lets_go_play_cards.png'>Download</a>               |
-| emote_look_to_distance                 | 0x62A3F015   | ![emote_look_to_distance](images//multiwheel_emotes/emote_look_to_distance.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_look_to_distance.png'>Download</a>                 |
-| emote_prospector_jig                   | 0x6738D73B   | ![emote_prospector_jig](images//multiwheel_emotes/emote_prospector_jig.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_prospector_jig.png'>Download</a>                   |
-| emote_reaction_a_okay_1                | 0x14914308   | ![emote_reaction_a_okay_1](images//multiwheel_emotes/emote_reaction_a_okay_1.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_a_okay_1.png'>Download</a>                |
-| emote_reaction_amazed_1                | 0xD6D2AF6C   | ![emote_reaction_amazed_1](images//multiwheel_emotes/emote_reaction_amazed_1.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_amazed_1.png'>Download</a>                |
-| emote_reaction_applause                | 0x1EF442EA   | ![emote_reaction_applause](images//multiwheel_emotes/emote_reaction_applause.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_applause.png'>Download</a>                |
-| emote_reaction_begmercy                | 0x64AE4D96   | ![emote_reaction_begmercy](images//multiwheel_emotes/emote_reaction_begmercy.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_begmercy.png'>Download</a>                |
-| emote_reaction_clap_along              | 0x0ED43462   | ![emote_reaction_clap_along](images//multiwheel_emotes/emote_reaction_clap_along.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_clap_along.png'>Download</a>              |
-| emote_reaction_facepalm_1              | 0xA8B3136B   | ![emote_reaction_facepalm_1](images//multiwheel_emotes/emote_reaction_facepalm_1.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_facepalm_1.png'>Download</a>              |
-| emote_reaction_hangover                | 0x6051F4C0   | ![emote_reaction_hangover](images//multiwheel_emotes/emote_reaction_hangover.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_hangover.png'>Download</a>                |
-| emote_reaction_how_dare_you            | 0x0D09D8C8   | ![emote_reaction_how_dare_you](images//multiwheel_emotes/emote_reaction_how_dare_you.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_how_dare_you.png'>Download</a>            |
-| emote_reaction_hush_your_mouth         | 0xAA503B55   | ![emote_reaction_hush_your_mouth](images//multiwheel_emotes/emote_reaction_hush_your_mouth.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_hush_your_mouth.png'>Download</a>         |
-| emote_reaction_im_shot                 | 0xA9D33DD1   | ![emote_reaction_im_shot](images//multiwheel_emotes/emote_reaction_im_shot.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_im_shot.png'>Download</a>                 |
-| emote_reaction_jovial_laugh            | 0x11D0FFD3   | ![emote_reaction_jovial_laugh](images//multiwheel_emotes/emote_reaction_jovial_laugh.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_jovial_laugh.png'>Download</a>            |
-| emote_reaction_nod_head                | 0x867AE256   | ![emote_reaction_nod_head](images//multiwheel_emotes/emote_reaction_nod_head.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_nod_head.png'>Download</a>                |
-| emote_reaction_phew_1                  | 0x9D0BB8D5   | ![emote_reaction_phew_1](images//multiwheel_emotes/emote_reaction_phew_1.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_phew_1.png'>Download</a>                  |
-| emote_reaction_point_and_laugh         | 0xC7D02E90   | ![emote_reaction_point_and_laugh](images//multiwheel_emotes/emote_reaction_point_and_laugh.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_point_and_laugh.png'>Download</a>         |
-| emote_reaction_scared_1                | 0x2355BBA8   | ![emote_reaction_scared_1](images//multiwheel_emotes/emote_reaction_scared_1.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_scared_1.png'>Download</a>                |
-| emote_reaction_shake_head              | 0xE5C6FC39   | ![emote_reaction_shake_head](images//multiwheel_emotes/emote_reaction_shake_head.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_shake_head.png'>Download</a>              |
-| emote_reaction_shrug_1                 | 0x30E5D6D0   | ![emote_reaction_shrug_1](images//multiwheel_emotes/emote_reaction_shrug_1.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_shrug_1.png'>Download</a>                 |
-| emote_reaction_slow_clap               | 0xC7D15280   | ![emote_reaction_slow_clap](images//multiwheel_emotes/emote_reaction_slow_clap.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_slow_clap.png'>Download</a>               |
-| emote_reaction_sniffing_1              | 0x2E731463   | ![emote_reaction_sniffing_1](images//multiwheel_emotes/emote_reaction_sniffing_1.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_sniffing_1.png'>Download</a>              |
-| emote_reaction_surrender               | 0x2EAE7A66   | ![emote_reaction_surrender](images//multiwheel_emotes/emote_reaction_surrender.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_surrender.png'>Download</a>               |
-| emote_reaction_thanks_1                | 0x7281CD36   | ![emote_reaction_thanks_1](images//multiwheel_emotes/emote_reaction_thanks_1.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_thanks_1.png'>Download</a>                |
-| emote_reaction_this_guy_1              | -            | ![emote_reaction_this_guy_1](images/multiwheel_emotes/emote_reaction_this_guy_1.png)                            | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_this_guy_1.png'>Download</a>              |
-| emote_reaction_thumbsdown              | 0xE5F6C1E3   | ![emote_reaction_thumbsdown](images//multiwheel_emotes/emote_reaction_thumbsdown.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_thumbsdown.png'>Download</a>              |
-| emote_reaction_wag_finger_1            | 0x94C03A42   | ![emote_reaction_wag_finger_1](images//multiwheel_emotes/emote_reaction_wag_finger_1.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_wag_finger_1.png'>Download</a>            |
-| emote_reaction_yeehaw                  | 0x7C9C3BD5   | ![emote_reaction_yeehaw](images//multiwheel_emotes/emote_reaction_yeehaw.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_reaction_yeehaw.png'>Download</a>                  |
-| emote_sob                              | 0x79DCD3C3   | ![emote_sob](images//multiwheel_emotes/emote_sob.png)                                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_sob.png'>Download</a>                              |
-| emote_spin_guts                        | 0xBFA56FF4   | ![emote_spin_guts](images//multiwheel_emotes/emote_spin_guts.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_spin_guts.png'>Download</a>                        |
-| emote_stomp                            | 0x5A65CDCB   | ![emote_stomp](images//multiwheel_emotes/emote_stomp.png)                                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_stomp.png'>Download</a>                            |
-| emote_taunt_best_shot_1                | 0x6D9826DE   | ![emote_taunt_best_shot_1](images//multiwheel_emotes/emote_taunt_best_shot_1.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_best_shot_1.png'>Download</a>                |
-| emote_taunt_chicken                    | 0x0E261F69   | ![emote_taunt_chicken](images//multiwheel_emotes/emote_taunt_chicken.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_chicken.png'>Download</a>                    |
-| emote_taunt_cock_snook_1               | -            | ![emote_taunt_cock_snook_1](images/multiwheel_emotes/emote_taunt_cock_snook_1.png)                              | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_cock_snook_1.png'>Download</a>               |
-| emote_taunt_cougar_snarl_1             | 0x23A29E96   | ![emote_taunt_cougar_snarl_1](images//multiwheel_emotes/emote_taunt_cougar_snarl_1.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_cougar_snarl_1.png'>Download</a>             |
-| emote_taunt_cuckoo_1                   | 0x0A9A1B44   | ![emote_taunt_cuckoo_1](images//multiwheel_emotes/emote_taunt_cuckoo_1.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_cuckoo_1.png'>Download</a>                   |
-| emote_taunt_fiddlehead_1               | 0xCDF87E88   | ![emote_taunt_fiddlehead_1](images//multiwheel_emotes/emote_taunt_fiddlehead_1.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_fiddlehead_1.png'>Download</a>               |
-| emote_taunt_finger_slinger_1           | 0xB6B34273   | ![emote_taunt_finger_slinger_1](images//multiwheel_emotes/emote_taunt_finger_slinger_1.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_finger_slinger_1.png'>Download</a>           |
-| emote_taunt_flip_off                   | 0xC7888642   | ![emote_taunt_flip_off](images//multiwheel_emotes/emote_taunt_flip_off.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_flip_off.png'>Download</a>                   |
-| emote_taunt_frighten_1                 | 0xE7200B2E   | ![emote_taunt_frighten_1](images//multiwheel_emotes/emote_taunt_frighten_1.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_frighten_1.png'>Download</a>                 |
-| emote_taunt_gorilla_chest_1            | 0x6760691E   | ![emote_taunt_gorilla_chest_1](images//multiwheel_emotes/emote_taunt_gorilla_chest_1.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_gorilla_chest_1.png'>Download</a>            |
-| emote_taunt_im_watching_you            | 0x438EF93F   | ![emote_taunt_im_watching_you](images//multiwheel_emotes/emote_taunt_im_watching_you.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_im_watching_you.png'>Download</a>            |
-| emote_taunt_insignificant_1            | -            | ![emote_taunt_insignificant_1](images/multiwheel_emotes/emote_taunt_insignificant_1.png)                        | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_insignificant_1.png'>Download</a>            |
-| emote_taunt_provoke                    | 0x2A6E25CF   | ![emote_taunt_provoke](images//multiwheel_emotes/emote_taunt_provoke.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_provoke.png'>Download</a>                    |
-| emote_taunt_ripper_1                   | 0xD1B8605E   | ![emote_taunt_ripper_1](images//multiwheel_emotes/emote_taunt_ripper_1.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_ripper_1.png'>Download</a>                   |
-| emote_taunt_throat_slit                | 0x1E36AF76   | ![emote_taunt_throat_slit](images//multiwheel_emotes/emote_taunt_throat_slit.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_throat_slit.png'>Download</a>                |
-| emote_taunt_up_yours                   | 0x727B7F71   | ![emote_taunt_up_yours](images//multiwheel_emotes/emote_taunt_up_yours.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_up_yours.png'>Download</a>                   |
-| emote_taunt_versus                     | 0x67401310   | ![emote_taunt_versus](images//multiwheel_emotes/emote_taunt_versus.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_versus.png'>Download</a>                     |
-| emote_taunt_war_cry                    | 0x18F3C41B   | ![emote_taunt_war_cry](images//multiwheel_emotes/emote_taunt_war_cry.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_war_cry.png'>Download</a>                    |
-| emote_taunt_you_stink                  | 0x842BA99B   | ![emote_taunt_you_stink](images//multiwheel_emotes/emote_taunt_you_stink.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_taunt_you_stink.png'>Download</a>                  |
-| emote_threaten                         | 0xD1681307   | ![emote_threaten](images//multiwheel_emotes/emote_threaten.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_threaten.png'>Download</a>                         |
-| emote_tough_guy                        | 0xD1491831   | ![emote_tough_guy](images//multiwheel_emotes/emote_tough_guy.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_tough_guy.png'>Download</a>                        |
-| emote_two_fingers                      | 0x03A4CD70   | ![emote_two_fingers](images//multiwheel_emotes/emote_two_fingers.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_two_fingers.png'>Download</a>                      |
-| emote_wheel_background                 | 0x2872C3A4   | ![emote_wheel_background](images//multiwheel_emotes/emote_wheel_background.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_wheel_background.png'>Download</a>                 |
-| emote_who_me                           | 0xD965ADD1   | ![emote_who_me](images//multiwheel_emotes/emote_who_me.png)                                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/emote_who_me.png'>Download</a>                           |
-| face_button_backround                  | 0xA3FE9878   | ![face_button_backround](images//multiwheel_emotes/face_button_backround.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures/multiwheel_emotes/images/multiwheel_emotes/face_button_backround.png'>Download</a>                  |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+emote_action_beckon_1 | 0x174C00B0 | ![emote_action_beckon_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_beckon_1.png)
+ |  | 
+emote_action_biting_gold_coin_1 | 0x4B751D74 | ![emote_action_biting_gold_coin_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_biting_gold_coin_1.png)
+ |  | 
+emote_action_blow_kiss | 0xB35BF312 | ![emote_action_blow_kiss](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_blow_kiss.png)
+ |  | 
+emote_action_boast | 0x573834E1 | ![emote_action_boast](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_boast.png)
+ |  | 
+emote_action_check_pocket_watch_1 | 0x6CB4E26A | ![emote_action_check_pocket_watch_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_check_pocket_watch_1.png)
+ |  | 
+emote_action_coin_flip | 0xACCCE53F | ![emote_action_coin_flip](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_coin_flip.png)
+ |  | 
+emote_action_drinking_cowboy_1 | 0x73B9A72B | ![emote_action_drinking_cowboy_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_drinking_cowboy_1.png)
+ |  | 
+emote_action_drinking_drifter_1 | 0x8558D581 | ![emote_action_drinking_drifter_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_drinking_drifter_1.png)
+ |  | 
+emote_action_drinking_secret_1 | 0x658D5DAA | ![emote_action_drinking_secret_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_drinking_secret_1.png)
+ |  | 
+emote_action_fist_pump | 0x95B50B29 | ![emote_action_fist_pump](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_fist_pump.png)
+ |  | 
+emote_action_flex | 0xDD94AC70 | ![emote_action_flex](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_flex.png)
+ |  | 
+emote_action_follow_me | 0x0D689F81 | ![emote_action_follow_me](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_follow_me.png)
+ |  | 
+emote_action_hissyfit | 0x63903CFA | ![emote_action_hissyfit](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_hissyfit.png)
+ |  | 
+emote_action_howl | 0xB5176486 | ![emote_action_howl](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_howl.png)
+ |  | 
+emote_action_hypnosis_pocket_watch_1 | 0x67BF2E85 | ![emote_action_hypnosis_pocket_watch_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_hypnosis_pocket_watch_1.png)
+ |  | 
+emote_action_idea_1 | 0x89EB5492 | ![emote_action_idea_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_idea_1.png)
+ |  | 
+emote_action_lets_go | 0x7F43BAF6 | ![emote_action_lets_go](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_lets_go.png)
+ |  | 
+emote_action_listen_1 | 0x494B1F72 | ![emote_action_listen_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_listen_1.png)
+ |  | 
+emote_action_look_yonder | 0x276A631B | ![emote_action_look_yonder](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_look_yonder.png)
+ |  | 
+emote_action_newthreads | 0x16D56761 | ![emote_action_newthreads](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_newthreads.png)
+ |  | 
+emote_action_nod_shuffle | 0x012B021A | ![emote_action_nod_shuffle](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_nod_shuffle.png)
+ |  | 
+emote_action_point | 0x94E72124 | ![emote_action_point](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_point.png)
+ |  | 
+emote_action_posse_up | 0x737B4918 | ![emote_action_posse_up](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_posse_up.png)
+ |  | 
+emote_action_prayer_1 | 0xE5E96168 | ![emote_action_prayer_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_prayer_1.png)
+ |  | 
+emote_action_rock_paper_scissors_1 | 0x753E45E6 | ![emote_action_rock_paper_scissors_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_rock_paper_scissors_1.png)
+ |  | 
+emote_action_scheme | 0xC0BFEB68 | ![emote_action_scheme](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_scheme.png)
+ |  | 
+emote_action_skyward_shooting | 0x342C72F0 | ![emote_action_skyward_shooting](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_skyward_shooting.png)
+ |  | 
+emote_action_smoke_cigar_cocky_1 | 0x5190161A | ![emote_action_smoke_cigar_cocky_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_smoke_cigar_cocky_1.png)
+ |  | 
+emote_action_smoke_cigar_drifter_1 | 0x0C19F5AA | ![emote_action_smoke_cigar_drifter_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_smoke_cigar_drifter_1.png)
+ |  | 
+emote_action_smoke_cigarette_classy_1 | 0xE3FA309C | ![emote_action_smoke_cigarette_classy_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_smoke_cigarette_classy_1.png)
+ |  | 
+emote_action_smoke_cigarette_drifter_1 | 0x4860240D | ![emote_action_smoke_cigarette_drifter_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_smoke_cigarette_drifter_1.png)
+ |  | 
+emote_action_smoke_cigarette | 0x7473C782 | ![emote_action_smoke_cigarette](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_smoke_cigarette.png)
+ |  | 
+emote_action_smoke_cigar | 0x2F4AD8D3 | ![emote_action_smoke_cigar](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_smoke_cigar.png)
+ |  | 
+emote_action_smoke_pipe_1 | 0x9E7A4A4E | ![emote_action_smoke_pipe_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_smoke_pipe_1.png)
+ |  | 
+emote_action_spin_and_aim_1 | 0x621B3CDB | ![emote_action_spin_and_aim_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_spin_and_aim_1.png)
+ |  | 
+emote_action_spit | 0x09D36AD0 | ![emote_action_spit](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_spit.png)
+ |  | 
+emote_action_spooky_1 | 0x566D10C4 | ![emote_action_spooky_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_spooky_1.png)
+ |  | 
+emote_action_stop_here | 0xA546239E | ![emote_action_stop_here](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_stop_here.png)
+ |  | 
+emote_action_take_notes_1 | 0x1481113A | ![emote_action_take_notes_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_action_take_notes_1.png)
+ |  | 
+emote_boo_hoo | 0xC7B2AD4F | ![emote_boo_hoo](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_boo_hoo.png)
+ |  | 
+emote_bow | 0xDB637C9C | ![emote_bow](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_bow.png)
+ |  | 
+emote_buttercup | 0x20F645D7 | ![emote_buttercup](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_buttercup.png)
+ |  | 
+emote_clap | 0xEAAA06A9 | ![emote_clap](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_clap.png)
+ |  | 
+emote_cower | 0x35314B3B | ![emote_cower](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_cower.png)
+ |  | 
+emote_dance_awkward_a | 0xE4FB3BA4 | ![emote_dance_awkward_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_awkward_a.png)
+ |  | 
+emote_dance_carefree_a | 0xC35738BA | ![emote_dance_carefree_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_carefree_a.png)
+ |  | 
+emote_dance_carefree_b | 0x942B5A5F | ![emote_dance_carefree_b](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_carefree_b.png)
+ |  | 
+emote_dance_confident_a | 0x806AF44F | ![emote_dance_confident_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_confident_a.png)
+ |  | 
+emote_dance_confident_b | 0x6E9450A2 | ![emote_dance_confident_b](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_confident_b.png)
+ |  | 
+emote_dance_drunk_a | 0xAEDF888A | ![emote_dance_drunk_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_drunk_a.png)
+ |  | 
+emote_dance_drunk_b | 0xDFF76AB9 | ![emote_dance_drunk_b](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_drunk_b.png)
+ |  | 
+emote_dance_formal_a | 0x82C750E6 | ![emote_dance_formal_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_formal_a.png)
+ |  | 
+emote_dance_graceful_a | 0x7B8888AD | ![emote_dance_graceful_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_graceful_a.png)
+ |  | 
+emote_dance_old_a | 0x1DD214A3 | ![emote_dance_old_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_old_a.png)
+ |  | 
+emote_dance | 0xDF34EAE6 | ![emote_dance](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance.png)
+ |  | 
+emote_dance_wild_a | 0x7DC4F271 | ![emote_dance_wild_a](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_wild_a.png)
+ |  | 
+emote_dance_wild_b | 0xB8A16829 | ![emote_dance_wild_b](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_dance_wild_b.png)
+ |  | 
+emote_disapprove | 0xE3733BD0 | ![emote_disapprove](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_disapprove.png)
+ |  | 
+emote_fake_draw | 0x2A676FBF | ![emote_fake_draw](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_fake_draw.png)
+ |  | 
+emote_favorite | 0xABEE5D45 | ![emote_favorite](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_favorite.png)
+ |  | 
+emote_fingershoot | 0x2E052F1F | ![emote_fingershoot](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_fingershoot.png)
+ |  | 
+emote_glad_to_see_you | 0x50B86E11 | ![emote_glad_to_see_you](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_glad_to_see_you.png)
+ |  | 
+emote_gonna_hurl | 0xE99C71F1 | ![emote_gonna_hurl](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_gonna_hurl.png)
+ |  | 
+emote_greet_finger_salute | 0xE650601D | ![emote_greet_finger_salute](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_finger_salute.png)
+ |  | 
+emote_greet_gentlewave | 0x5FDBA17F | ![emote_greet_gentlewave](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_gentlewave.png)
+ |  | 
+emote_greet_get_over_here | 0x098B0496 | ![emote_greet_get_over_here](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_get_over_here.png)
+ |  | 
+emote_greet_hat_flick | 0x70DC4BCC | ![emote_greet_hat_flick](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_hat_flick.png)
+ |  | 
+emote_greet_hey_you | 0x0E61BA9F | ![emote_greet_hey_you](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_hey_you.png)
+ |  | 
+emote_greet_outpour_1 | 0x7BE3DC0B | ![emote_greet_outpour_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_outpour_1.png)
+ |  | 
+emote_greet | 0x7136BAFF | ![emote_greet](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet.png)
+ |  | 
+emote_greet_respectful_bow | 0x9E709B30 | ![emote_greet_respectful_bow](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_respectful_bow.png)
+ |  | 
+emote_greet_seven | 0xC1AF573F | ![emote_greet_seven](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_seven.png)
+ |  | 
+emote_greet_subtle_wave | 0x6F873861 | ![emote_greet_subtle_wave](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_subtle_wave.png)
+ |  | 
+emote_greet_tada | 0x770CF751 | ![emote_greet_tada](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_tada.png)
+ |  | 
+emote_greet_thumbs_up | 0x7BA2E413 | ![emote_greet_thumbs_up](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_thumbs_up.png)
+ |  | 
+emote_greet_tip_hat | 0x456C08C0 | ![emote_greet_tip_hat](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_greet_tip_hat.png)
+ |  | 
+emote_gunspin_dual | 0x7CEA2658 | ![emote_gunspin_dual](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_gunspin_dual.png)
+ |  | 
+emote_gunspin_single | 0x4086D9FE | ![emote_gunspin_single](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_gunspin_single.png)
+ |  | 
+emote_highlight | 0x37C5DB8B | ![emote_highlight](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_highlight.png)
+ |  | 
+emote_insult | 0x9A210C21 | ![emote_insult](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_insult.png)
+ |  | 
+emote_lets_go_crafting | 0x77746BA8 | ![emote_lets_go_crafting](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_lets_go_crafting.png)
+ |  | 
+emote_lets_go_fishing | 0x82159F35 | ![emote_lets_go_fishing](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_lets_go_fishing.png)
+ |  | 
+emote_lets_go_hunting | 0xA3217442 | ![emote_lets_go_hunting](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_lets_go_hunting.png)
+ |  | 
+emote_lets_go_play_cards | 0xA4FDEF2C | ![emote_lets_go_play_cards](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_lets_go_play_cards.png)
+ |  | 
+emote_look_to_distance | 0x62A3F015 | ![emote_look_to_distance](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_look_to_distance.png)
+ |  | 
+emote_prospector_jig | 0x6738D73B | ![emote_prospector_jig](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_prospector_jig.png)
+ |  | 
+emote_reaction_amazed_1 | 0xD6D2AF6C | ![emote_reaction_amazed_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_amazed_1.png)
+ |  | 
+emote_reaction_a_okay_1 | 0x14914308 | ![emote_reaction_a_okay_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_a_okay_1.png)
+ |  | 
+emote_reaction_applause | 0x1EF442EA | ![emote_reaction_applause](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_applause.png)
+ |  | 
+emote_reaction_begmercy | 0x64AE4D96 | ![emote_reaction_begmercy](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_begmercy.png)
+ |  | 
+emote_reaction_clap_along | 0x0ED43462 | ![emote_reaction_clap_along](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_clap_along.png)
+ |  | 
+emote_reaction_facepalm_1 | 0xA8B3136B | ![emote_reaction_facepalm_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_facepalm_1.png)
+ |  | 
+emote_reaction_hangover | 0x6051F4C0 | ![emote_reaction_hangover](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_hangover.png)
+ |  | 
+emote_reaction_how_dare_you | 0x0D09D8C8 | ![emote_reaction_how_dare_you](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_how_dare_you.png)
+ |  | 
+emote_reaction_hush_your_mouth | 0xAA503B55 | ![emote_reaction_hush_your_mouth](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_hush_your_mouth.png)
+ |  | 
+emote_reaction_im_shot | 0xA9D33DD1 | ![emote_reaction_im_shot](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_im_shot.png)
+ |  | 
+emote_reaction_jovial_laugh | 0x11D0FFD3 | ![emote_reaction_jovial_laugh](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_jovial_laugh.png)
+ |  | 
+emote_reaction_nod_head | 0x867AE256 | ![emote_reaction_nod_head](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_nod_head.png)
+ |  | 
+emote_reaction_phew_1 | 0x9D0BB8D5 | ![emote_reaction_phew_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_phew_1.png)
+ |  | 
+emote_reaction_point_and_laugh | 0xC7D02E90 | ![emote_reaction_point_and_laugh](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_point_and_laugh.png)
+ |  | 
+emote_reaction_scared_1 | 0x2355BBA8 | ![emote_reaction_scared_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_scared_1.png)
+ |  | 
+emote_reaction_shake_head | 0xE5C6FC39 | ![emote_reaction_shake_head](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_shake_head.png)
+ |  | 
+emote_reaction_shrug_1 | 0x30E5D6D0 | ![emote_reaction_shrug_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_shrug_1.png)
+ |  | 
+emote_reaction_slow_clap | 0xC7D15280 | ![emote_reaction_slow_clap](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_slow_clap.png)
+ |  | 
+emote_reaction_sniffing_1 | 0x2E731463 | ![emote_reaction_sniffing_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_sniffing_1.png)
+ |  | 
+emote_reaction_surrender | 0x2EAE7A66 | ![emote_reaction_surrender](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_surrender.png)
+ |  | 
+emote_reaction_thanks_1 | 0x7281CD36 | ![emote_reaction_thanks_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_thanks_1.png)
+ |  | 
+emote_reaction_thumbsdown | 0xE5F6C1E3 | ![emote_reaction_thumbsdown](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_thumbsdown.png)
+ |  | 
+emote_reaction_wag_finger_1 | 0x94C03A42 | ![emote_reaction_wag_finger_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_wag_finger_1.png)
+ |  | 
+emote_reaction_yeehaw | 0x7C9C3BD5 | ![emote_reaction_yeehaw](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_reaction_yeehaw.png)
+ |  | 
+emote_sob | 0x79DCD3C3 | ![emote_sob](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_sob.png)
+ |  | 
+emote_spin_guts | 0xBFA56FF4 | ![emote_spin_guts](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_spin_guts.png)
+ |  | 
+emote_stomp | 0x5A65CDCB | ![emote_stomp](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_stomp.png)
+ |  | 
+emote_taunt_best_shot_1 | 0x6D9826DE | ![emote_taunt_best_shot_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_best_shot_1.png)
+ |  | 
+emote_taunt_chicken | 0x0E261F69 | ![emote_taunt_chicken](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_chicken.png)
+ |  | 
+emote_taunt_cougar_snarl_1 | 0x23A29E96 | ![emote_taunt_cougar_snarl_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_cougar_snarl_1.png)
+ |  | 
+emote_taunt_cuckoo_1 | 0x0A9A1B44 | ![emote_taunt_cuckoo_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_cuckoo_1.png)
+ |  | 
+emote_taunt_fiddlehead_1 | 0xCDF87E88 | ![emote_taunt_fiddlehead_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_fiddlehead_1.png)
+ |  | 
+emote_taunt_finger_slinger_1 | 0xB6B34273 | ![emote_taunt_finger_slinger_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_finger_slinger_1.png)
+ |  | 
+emote_taunt_flip_off | 0xC7888642 | ![emote_taunt_flip_off](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_flip_off.png)
+ |  | 
+emote_taunt_frighten_1 | 0xE7200B2E | ![emote_taunt_frighten_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_frighten_1.png)
+ |  | 
+emote_taunt_gorilla_chest_1 | 0x6760691E | ![emote_taunt_gorilla_chest_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_gorilla_chest_1.png)
+ |  | 
+emote_taunt_im_watching_you | 0x438EF93F | ![emote_taunt_im_watching_you](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_im_watching_you.png)
+ |  | 
+emote_taunt_provoke | 0x2A6E25CF | ![emote_taunt_provoke](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_provoke.png)
+ |  | 
+emote_taunt_ripper_1 | 0xD1B8605E | ![emote_taunt_ripper_1](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_ripper_1.png)
+ |  | 
+emote_taunt_throat_slit | 0x1E36AF76 | ![emote_taunt_throat_slit](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_throat_slit.png)
+ |  | 
+emote_taunt_up_yours | 0x727B7F71 | ![emote_taunt_up_yours](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_up_yours.png)
+ |  | 
+emote_taunt_versus | 0x67401310 | ![emote_taunt_versus](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_versus.png)
+ |  | 
+emote_taunt_war_cry | 0x18F3C41B | ![emote_taunt_war_cry](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_war_cry.png)
+ |  | 
+emote_taunt_you_stink | 0x842BA99B | ![emote_taunt_you_stink](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_taunt_you_stink.png)
+ |  | 
+emote_threaten | 0xD1681307 | ![emote_threaten](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_threaten.png)
+ |  | 
+emote_tough_guy | 0xD1491831 | ![emote_tough_guy](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_tough_guy.png)
+ |  | 
+emote_two_fingers | 0x03A4CD70 | ![emote_two_fingers](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_two_fingers.png)
+ |  | 
+emote_wheel_background | 0x2872C3A4 | ![emote_wheel_background](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_wheel_background.png)
+ |  | 
+emote_who_me | 0xD965ADD1 | ![emote_who_me](http://femga.com/images/samples/ui_textures/multiwheel_emotes/emote_who_me.png)
+ |  | 
+face_button_backround | 0xA3FE9878 | ![face_button_backround](http://femga.com/images/samples/ui_textures/multiwheel_emotes/face_button_backround.png)
+ |  | 

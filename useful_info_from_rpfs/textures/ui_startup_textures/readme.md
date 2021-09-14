@@ -11,597 +11,694 @@ end
 Citizen.CreateThread(function()
     while true do
     	Citizen.Wait(0)
-		DrawTexture("big_feed", "big_feed_bg_1", 0.5, 0.5, 0.251, 0.251, 0.0, 0, 0, 0, 240, false);
+		DrawTexture("Social_Club", "achievement_background", 0.5, 0.5, 0.251, 0.251, 0.0, 0, 0, 0, 240, false);
 	end
 end)
 ```
 
 <h2>big_feed (0xE095626F)</h2>
 
-| Texture hashname                | Texture hash | Texture example                                                                         | Download Image                                                                                                                                                                                            |
-| ------------------------------- | ------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| big_feed_bg_1                   | 0x8CE39317   | ![big_feed_bg_1](images/big_feed/big_feed_bg_1.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//big_feed_bg_1.png'>Download</a>                   |
-| big_feed_placeholder_background | 0xFDD5C0DD   | ![big_feed_placeholder_background](images/big_feed/big_feed_placeholder_background.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//big_feed_placeholder_background.png'>Download</a> |
-| feed_ink                        |              | ![feed_ink](images/big_feed//feed_ink.png)                                              | <a href='images/big_feed//feed_ink.png'>Download</a>                                                                                                                                                      |
-| feed_ink_overlay                |              | ![feed_ink_overlay](images/big_feed//feed_ink_overlay.png)                              | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//feed_ink_overlay.png'>Download</a>                |
-| pattern                         | 0xFF0BFA79   | ![pattern](images/big_feed/pattern.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//pattern.png'>Download</a>                         |
-| pattern_corner                  | 0x9B9E9BED   | ![pattern_corner](images/big_feed/pattern_corner.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//pattern_corner.png'>Download</a>                  |
-| pattern_left_right_border       | 0x6D551567   | ![pattern_left_right_border](images/big_feed/pattern_left_right_border.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//pattern_left_right_border.png'>Download</a>       |
-| pattern_top_bottom_border       | 0xE45BAC5A   | ![pattern_top_bottom_border](images/big_feed/pattern_top_bottom_border.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//pattern_top_bottom_border.png'>Download</a>       |
-| rdr_logo                        | 0x7A1AFBAE   | ![rdr_logo](images/big_feed/rdr_logo.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/big_feed//rdr_logo.png'>Download</a>                        |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+big_feed_bg_1 | 0x8CE39317 | ![big_feed_bg_1](http://femga.com/images/samples/ui_textures/ui_startup_textures/big_feed/big_feed_bg_1.png)
+ |  | 
+big_feed_placeholder_background | 0xFDD5C0DD | ![big_feed_placeholder_background](http://femga.com/images/samples/ui_textures/ui_startup_textures/big_feed/big_feed_placeholder_background.png)
+ |  | 
+pattern_corner | 0x9B9E9BED | ![pattern_corner](http://femga.com/images/samples/ui_textures/ui_startup_textures/big_feed/pattern_corner.png)
+ |  | 
+pattern_left_right_border | 0x6D551567 | ![pattern_left_right_border](http://femga.com/images/samples/ui_textures/ui_startup_textures/big_feed/pattern_left_right_border.png)
+ |  | 
+pattern | 0xFF0BFA79 | ![pattern](http://femga.com/images/samples/ui_textures/ui_startup_textures/big_feed/pattern.png)
+ |  | 
+pattern_top_bottom_border | 0xE45BAC5A | ![pattern_top_bottom_border](http://femga.com/images/samples/ui_textures/ui_startup_textures/big_feed/pattern_top_bottom_border.png)
+ |  | 
+rdr_logo | 0x7A1AFBAE | ![rdr_logo](http://femga.com/images/samples/ui_textures/ui_startup_textures/big_feed/rdr_logo.png)
+ |  | 
+
+
+
 
 <h2>boot_flow (0xBAAB6434)</h2>
 
-| Texture hashname        | Texture hash | Texture example                                                          | Download Image                                                                                                                                                                                     |
-| ----------------------- | ------------ | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| button_lang_ch          | 0xDD6FACC6   | ![button_lang_ch](images/boot_flow/button_lang_ch.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_ch.png'>Download</a>          |
-| button_lang_chs         | 0x8ABDB4D1   | ![button_lang_chs](images/boot_flow/button_lang_chs.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_chs.png'>Download</a>         |
-| button_lang_e           | 0xAAE0FF35   | ![button_lang_e](images/boot_flow/button_lang_e.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_e.png'>Download</a>           |
-| button_lang_f           | 0x93ABD0CB   | ![button_lang_f](images/boot_flow/button_lang_f.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_f.png'>Download</a>           |
-| button_lang_g           | 0x3E65A63C   | ![button_lang_g](images/boot_flow/button_lang_g.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_g.png'>Download</a>           |
-| button_lang_i           | 0xE646F600   | ![button_lang_i](images/boot_flow/button_lang_i.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_i.png'>Download</a>           |
-| button_lang_j           | 0xC11EABB0   | ![button_lang_j](images/boot_flow/button_lang_j.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_j.png'>Download</a>           |
-| button_lang_k           | 0x843B31EA   | ![button_lang_k](images/boot_flow/button_lang_k.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_k.png'>Download</a>           |
-| button_lang_mex         | 0xA46C335E   | ![button_lang_mex](images/boot_flow/button_lang_mex.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_mex.png'>Download</a>         |
-| button_lang_pl          | 0x418EC49F   | ![button_lang_pl](images/boot_flow/button_lang_pl.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_pl.png'>Download</a>          |
-| button_lang_pt          | 0xCF51E033   | ![button_lang_pt](images/boot_flow/button_lang_pt.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_pt.png'>Download</a>          |
-| button_lang_r           | 0x470F379B   | ![button_lang_r](images/boot_flow/button_lang_r.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_r.png'>Download</a>           |
-| button_lang_s           | 0xF85C9A37   | ![button_lang_s](images/boot_flow/button_lang_s.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//button_lang_s.png'>Download</a>           |
-| calibrationscreen       |              | ![calibrationscreen](images/boot_flow/calibrationscreen.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//calibrationscreen.png'>Download</a>       |
-| logo_rockstar_keyline_k | 0x21BDEFAA   | ![logo_rockstar_keyline_k](images/boot_flow/logo_rockstar_keyline_k.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//logo_rockstar_keyline_k.png'>Download</a> |
-| selection_arrow_left    | 297949742    | ![selection_arrow_left](images/boot_flow/selection_arrow_left.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//selection_arrow_left.png'>Download</a>    |
-| selection_arrow_right   | -2046065591  | ![selection_arrow_right](images/boot_flow/selection_arrow_right.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//selection_arrow_right.png'>Download</a>   |
-| selection_box_bg_1d     | -1655543612  | ![selection_box_bg_1d](images/boot_flow/selection_box_bg_1d.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//selection_box_bg_1d.png'>Download</a>     |
-| splash_screen           | 0x5C565C48   | ![splash_screen](images/boot_flow/splash_screen.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/boot_flow//splash_screen.png'>Download</a>           |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+button_lang_ch | 0xDD6FACC6 | ![button_lang_ch](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_ch.png)
+ |  | 
+button_lang_chs | 0x8ABDB4D1 | ![button_lang_chs](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_chs.png)
+ |  | 
+button_lang_e | 0xAAE0FF35 | ![button_lang_e](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_e.png)
+ |  | 
+button_lang_f | 0x93ABD0CB | ![button_lang_f](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_f.png)
+ |  | 
+button_lang_g | 0x3E65A63C | ![button_lang_g](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_g.png)
+ |  | 
+button_lang_i | 0xE646F600 | ![button_lang_i](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_i.png)
+ |  | 
+button_lang_j | 0xC11EABB0 | ![button_lang_j](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_j.png)
+ |  | 
+button_lang_k | 0x843B31EA | ![button_lang_k](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_k.png)
+ |  | 
+button_lang_mex | 0xA46C335E | ![button_lang_mex](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_mex.png)
+ |  | 
+button_lang_pl | 0x418EC49F | ![button_lang_pl](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_pl.png)
+ |  | 
+button_lang_pt | 0xCF51E033 | ![button_lang_pt](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_pt.png)
+ |  | 
+button_lang_r | 0x470F379B | ![button_lang_r](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_r.png)
+ |  | 
+button_lang_s | 0xF85C9A37 | ![button_lang_s](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/button_lang_s.png)
+ |  | 
+logo_rockstar_keyline_k | 0x21BDEFAA | ![logo_rockstar_keyline_k](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/logo_rockstar_keyline_k.png)
+ |  | 
+selection_arrow_left | 0x11C25A2E | ![selection_arrow_left](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/selection_arrow_left.png)
+ |  | 
+selection_arrow_right | 0x860B8449 | ![selection_arrow_right](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/selection_arrow_right.png)
+ |  | 
+selection_box_bg_1d | 0x9D5268C4 | ![selection_box_bg_1d](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/selection_box_bg_1d.png)
+ |  | 
+splash_screen | 0x5C565C48 | ![splash_screen](http://femga.com/images/samples/ui_textures/ui_startup_textures/boot_flow/splash_screen.png)
+ |  | 
 
-<h2>bootflow_tu  (--)</h2>
 
-| Texture hashname           | Texture hash | Texture example                                                                  | Download Image                                                                                                                                                                                         |
-| -------------------------- | ------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| hdr_calibration_background |              | ![hdr_calibration_background](images/bootflow_tu/hdr_calibration_background.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/bootflow_tu/hdr_calibration_background.png'>Download</a> |
-| hdr_calibration_foreground |              | ![hdr_calibration_foreground](images/bootflow_tu/hdr_calibration_foreground.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/bootflow_tu/hdr_calibration_foreground.png'>Download</a> |
-| menu_header_1a             | -1478524042  | ![menu_header_1a](images/bootflow_tu/menu_header_1a.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/bootflow_tu/menu_header_1a.png'>Download</a>             |
-| menu_ink_large1            |              | ![menu_ink_large1](images/bootflow_tu/menu_ink_large1.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/bootflow_tu/menu_ink_large1.png'>Download</a>            |
+
 
 <h2>elements_stamps_icons (0xB66E3D00)</h2>
 
-| Texture hashname       | Texture hash | Texture example                                                                    | Download Image                                                                                                                                                                                                |
-| ---------------------- | ------------ | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_25               | 0xDFCE4AB4   | ![stamp_25](images/elements_stamps_icons/stamp_25.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_25.png'>Download</a>               |
-| stamp_50               | 0xB707993F   | ![stamp_50](images/elements_stamps_icons/stamp_50.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_50.png'>Download</a>               |
-| stamp_cash             | 0x5B4CC879   | ![stamp_cash](images/elements_stamps_icons/stamp_cash.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_cash.png'>Download</a>             |
-| stamp_gold             | 1485653341   | ![stamp_gold](images/elements_stamps_icons/stamp_gold.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_gold.png'>Download</a>             |
-| stamp_lock             | 0x55B0B62A   | ![stamp_lock](images/elements_stamps_icons/stamp_lock.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_lock.png'>Download</a>             |
-| stamp_locked_rank      | 1511892115   | ![stamp_locked_rank](images/elements_stamps_icons/stamp_locked_rank.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_locked_rank.png'>Download</a>      |
-| stamp_locked_rank_gold | 0x343E92DA   | ![stamp_locked_rank_gold](images/elements_stamps_icons/stamp_locked_rank_gold.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_locked_rank_gold.png'>Download</a> |
-| stamp_money            | 0xC17797BF   | ![stamp_money](images/elements_stamps_icons/stamp_money.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_money.png'>Download</a>            |
-| stamp_new              | 0x9C1188BD   | ![stamp_new](images/elements_stamps_icons/stamp_new.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_new.png'>Download</a>              |
-| stamp_unlocked_rank    | 0x76EA4F45   | ![stamp_unlocked_rank](images/elements_stamps_icons/stamp_unlocked_rank.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_unlocked_rank.png'>Download</a>    |
-| stamp_wishlist         | 0x44E3AA0E   | ![stamp_wishlist](images/elements_stamps_icons/stamp_wishlist.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_wishlist.png'>Download</a>         |
-| stamp_x2_cash          | 0x4240A0A6   | ![stamp_x2_cash](images/elements_stamps_icons/stamp_x2_cash.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_x2_cash.png'>Download</a>          |
-| stamp_x2_xp            | 0x79961D34   | ![stamp_x2_xp](images/elements_stamps_icons/stamp_x2_xp.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_x2_xp.png'>Download</a>            |
-| stamp_x3_cash          | 0x7873DFC3   | ![stamp_x3_cash](images/elements_stamps_icons/stamp_x3_cash.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_x3_cash.png'>Download</a>          |
-| stamp_x3_xp            | 0xAAC918A7   | ![stamp_x3_xp](images/elements_stamps_icons/stamp_x3_xp.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_x3_xp.png'>Download</a>            |
-| stamp_xp               | 0x9F65AA53   | ![stamp_xp](images/elements_stamps_icons/stamp_xp.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons//stamp_xp.png'>Download</a>               |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_25 | 0xDFCE4AB4 | ![stamp_25](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_25.png)
+ |  | 
+stamp_50 | 0xB707993F | ![stamp_50](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_50.png)
+ |  | 
+stamp_cash | 0x5B4CC879 | ![stamp_cash](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_cash.png)
+ |  | 
+stamp_gold | 0x588D455D | ![stamp_gold](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_gold.png)
+ |  | 
+stamp_locked_rank_gold | 0x343E92DA | ![stamp_locked_rank_gold](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_locked_rank_gold.png)
+ |  | 
+stamp_locked_rank | 0x5A1DA493 | ![stamp_locked_rank](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_locked_rank.png)
+ |  | 
+stamp_lock | 0x55B0B62A | ![stamp_lock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_lock.png)
+ |  | 
+stamp_money | 0xC17797BF | ![stamp_money](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_money.png)
+ |  | 
+stamp_new | 0x9C1188BD | ![stamp_new](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_new.png)
+ |  | 
+stamp_unlocked_rank | 0x76EA4F45 | ![stamp_unlocked_rank](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_unlocked_rank.png)
+ |  | 
+stamp_wishlist | 0x44E3AA0E | ![stamp_wishlist](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_wishlist.png)
+ |  | 
+stamp_x2_cash | 0x4240A0A6 | ![stamp_x2_cash](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_x2_cash.png)
+ |  | 
+stamp_x2_xp | 0x79961D34 | ![stamp_x2_xp](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_x2_xp.png)
+ |  | 
+stamp_x3_cash | 0x7873DFC3 | ![stamp_x3_cash](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_x3_cash.png)
+ |  | 
+stamp_x3_xp | 0xAAC918A7 | ![stamp_x3_xp](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_x3_xp.png)
+ |  | 
+stamp_xp | 0x9F65AA53 | ![stamp_xp](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_icons/stamp_xp.png)
+ |  | 
 
-<h2>elements_stamps_icons_tu  (--)</h2>
 
-| Texture hashname                 | Texture hash | Texture example                                                                                           | Download Image                                                                                                                                                                                                            |
-| -------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_2x                         |              | ![stamp_2x](images/elements_stamps_icons_tu/stamp_2x.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_2x.png'>Download</a>                         |
-| stamp_3x                         |              | ![stamp_3x](images/elements_stamps_icons_tu/stamp_3x.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_3x.png'>Download</a>                         |
-| stamp_horse_gold                 |              | ![stamp_horse_gold](images/elements_stamps_icons_tu/stamp_horse_gold.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_horse_gold.png'>Download</a>                 |
-| stamp_increase_dollar            |              | ![stamp_increase_dollar](images/elements_stamps_icons_tu/stamp_increase_dollar.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_increase_dollar.png'>Download</a>            |
-| stamp_increase_xp                |              | ![stamp_increase_xp](images/elements_stamps_icons_tu/stamp_increase_xp.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_increase_xp.png'>Download</a>                |
-| stamp_percent_20                 |              | ![stamp_percent_20](images/elements_stamps_icons_tu/stamp_percent_20.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_percent_20.png'>Download</a>                 |
-| stamp_percent_25                 |              | ![stamp_percent_25](images/elements_stamps_icons_tu/stamp_percent_25.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_percent_25.png'>Download</a>                 |
-| stamp_percent_30                 |              | ![stamp_percent_30](images/elements_stamps_icons_tu/stamp_percent_30.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_percent_30.png'>Download</a>                 |
-| stamp_percent_35                 |              | ![stamp_percent_35](images/elements_stamps_icons_tu/stamp_percent_35.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_percent_35.png'>Download</a>                 |
-| stamp_percent_40                 |              | ![stamp_percent_40](images/elements_stamps_icons_tu/stamp_percent_40.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_percent_40.png'>Download</a>                 |
-| stamp_percent_50                 |              | ![stamp_percent_50](images/elements_stamps_icons_tu/stamp_percent_50.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_percent_50.png'>Download</a>                 |
-| stamp_roles_bounty_hunter_locked |              | ![stamp_roles_bounty_hunter_locked](images/elements_stamps_icons_tu/stamp_roles_bounty_hunter_locked.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_roles_bounty_hunter_locked.png'>Download</a> |
-| stamp_roles_collector_locked     |              | ![stamp_roles_collector_locked](images/elements_stamps_icons_tu/stamp_roles_collector_locked.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_roles_collector_locked.png'>Download</a>     |
-| stamp_roles_moonshiner_locked    |              | ![stamp_roles_moonshiner_locked](images/elements_stamps_icons_tu/stamp_roles_moonshiner_locked.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_roles_moonshiner_locked.png'>Download</a>    |
-| stamp_roles_trader_locked        |              | ![stamp_roles_trader_locked](images/elements_stamps_icons_tu/stamp_roles_trader_locked.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_icons_tu/stamp_roles_trader_locked.png'>Download</a>        |
+
 
 <h2>elements_stamps_text_de (0x3571AD38)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_de/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_de/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_de/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_de/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_de/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_de/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_de/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_de/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_de/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_de/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_de/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_de_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_de_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_de_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_de_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_de_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_en (0x16316D9C)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_en/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_en/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_en/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_en/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_en/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_en/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_en/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_en/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_en/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_en/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_en/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_en_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_en_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_en_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_en_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_en_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_es (0x72DF26E6)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_es/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_es/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_es/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_es/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_es/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_es/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_es/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_es/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_es/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_es/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_es/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_es_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_es_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_es_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_es_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_es_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_fr (0x7490C03E)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_fr/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_fr/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_fr/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_fr/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_fr/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_fr/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_fr/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_fr/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_fr/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_fr/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_fr/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_fr_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_fr_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_fr_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_fr_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_fr_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_it (0x22BC972F)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_it/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_it/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_it/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_it/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_it/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_it/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_it/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_it/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_it/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_it/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_it/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_it_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_it_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_it_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_it_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_it_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_ja (0xD58D7DAE)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_ja/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_ja/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_ja/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_ja/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_ja/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_ja/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_ja/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_ja/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_ja/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_ja/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ja/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_ja_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_ja_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_ja_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_ja_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ja_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_ko (0xEBC02B7F)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_ko/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_ko/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_ko/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_ko/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_ko/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_ko/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_ko/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_ko/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_ko/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_ko/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ko/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_ko_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_ko_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_ko_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_ko_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ko_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_mx (0x84ABE884)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_mx/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_mx/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_mx/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_mx/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_mx/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_mx/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_mx/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_mx/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_mx/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_mx/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_mx/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_mx_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_mx_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_mx_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_mx_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_mx_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_pl (0x8728E7FE)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_pl/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_pl/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_pl/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_pl/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_pl/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_pl/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_pl/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_pl/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_pl/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_pl/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pl/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_pl_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_pl_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_pl_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_pl_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pl_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_pt (0xB0B6BB1D)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_pt/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_pt/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_pt/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_pt/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_pt/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_pt/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_pt/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_pt/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_pt/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_pt/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_pt/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_pt_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_pt_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_pt_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_pt_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_pt_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_ru (0x13690268)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                              | Download Image                                                                                                                                                                                              |
-| ------------------ | ------------ | ---------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_ru/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_ru/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_ru/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_ru/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_ru/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_ru/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_ru/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_ru/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_ru/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_ru/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_ru/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_ru_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                             | Download Image                                                                                                                                                                                              |
-| ---------------- | ------------ | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_ru_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_ru_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_ru_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_ru_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_zh-hans (0x3A6D8832)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                                   | Download Image                                                                                                                                                                                                   |
-| ------------------ | ------------ | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_zh-hans/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_zh-hans/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_zh-hans/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_zh-hans/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_zh-hans/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_zh-hans/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_zh-hans/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_zh-hans/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_zh-hans/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_zh-hans/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hans/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_zh-hans_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                                  | Download Image                                                                                                                                                                                                   |
-| ---------------- | ------------ | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_zh-hans_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_zh-hans_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_zh-hans_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hans_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>elements_stamps_text_zh-hant (0x4DFB2F4D)</h2>
 
-| Texture hashname   | Texture hash | Texture example                                                                   | Download Image                                                                                                                                                                                                   |
-| ------------------ | ------------ | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_bestvalue    | 0x405EB297   | ![stamp_bestvalue](images/elements_stamps_text_zh-hant/stamp_bestvalue.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_bestvalue.png'>Download</a>    |
-| stamp_coupon       | 0x07DC44DC   | ![stamp_coupon](images/elements_stamps_text_zh-hant/stamp_coupon.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_coupon.png'>Download</a>       |
-| stamp_justforyou   | 0x87239145   | ![stamp_justforyou](images/elements_stamps_text_zh-hant/stamp_justforyou.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_justforyou.png'>Download</a>   |
-| stamp_last_chance  | 0xC96A9B03   | ![stamp_last_chance](images/elements_stamps_text_zh-hant/stamp_last_chance.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_last_chance.png'>Download</a>  |
-| stamp_limitedstock | 0x29183E47   | ![stamp_limitedstock](images/elements_stamps_text_zh-hant/stamp_limitedstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_limitedstock.png'>Download</a> |
-| stamp_options      | 0x1B5A688D   | ![stamp_options](images/elements_stamps_text_zh-hant/stamp_options.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_options.png'>Download</a>      |
-| stamp_owned        | 0x4DCEC69D   | ![stamp_owned](images/elements_stamps_text_zh-hant/stamp_owned.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_owned.png'>Download</a>        |
-| stamp_popular      | 0xE417416E   | ![stamp_popular](images/elements_stamps_text_zh-hant/stamp_popular.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_popular.png'>Download</a>      |
-| stamp_sale         | 0xB8794E98   | ![stamp_sale](images/elements_stamps_text_zh-hant/stamp_sale.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_sale.png'>Download</a>         |
-| stamp_soldout      | 0x4AE60B92   | ![stamp_soldout](images/elements_stamps_text_zh-hant/stamp_soldout.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant//stamp_soldout.png'>Download</a>      |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+stamp_bestvalue | 0x405EB297 | ![stamp_bestvalue](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_bestvalue.png)
+ |  | 
+stamp_coupon | 0x07DC44DC | ![stamp_coupon](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_coupon.png)
+ |  | 
+stamp_justforyou | 0x87239145 | ![stamp_justforyou](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_justforyou.png)
+ |  | 
+stamp_last_chance | 0xC96A9B03 | ![stamp_last_chance](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_last_chance.png)
+ |  | 
+stamp_limitedstock | 0x29183E47 | ![stamp_limitedstock](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_limitedstock.png)
+ |  | 
+stamp_options | 0x1B5A688D | ![stamp_options](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_options.png)
+ |  | 
+stamp_owned | 0x4DCEC69D | ![stamp_owned](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_owned.png)
+ |  | 
+stamp_popular | 0xE417416E | ![stamp_popular](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_popular.png)
+ |  | 
+stamp_sale | 0xB8794E98 | ![stamp_sale](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_sale.png)
+ |  | 
+stamp_soldout | 0x4AE60B92 | ![stamp_soldout](http://femga.com/images/samples/ui_textures/ui_startup_textures/elements_stamps_text_zh-hant/stamp_soldout.png)
+ |  | 
 
-<h2>elements_stamps_text_zh-hant_tu  (--)</h2>
 
-| Texture hashname | Texture hash | Texture example                                                                  | Download Image                                                                                                                                                                                                   |
-| ---------------- | ------------ | -------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| stamp_comingsoon |              | ![stamp_comingsoon](images/elements_stamps_text_zh-hant_tu/stamp_comingsoon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant_tu/stamp_comingsoon.png'>Download</a> |
-| stamp_opensoon   |              | ![stamp_opensoon](images/elements_stamps_text_zh-hant_tu/stamp_opensoon.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant_tu/stamp_opensoon.png'>Download</a>   |
-| stamp_outofstock |              | ![stamp_outofstock](images/elements_stamps_text_zh-hant_tu/stamp_outofstock.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/elements_stamps_text_zh-hant_tu/stamp_outofstock.png'>Download</a> |
+
 
 <h2>frontend_feed (0xDCF2D04A)</h2>
 
-| Texture hashname             | Texture hash | Texture example                                                                        | Download Image                                                                                                                                                                                              |
-| ---------------------------- | ------------ | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| free_roam_last_location_bkg  | 0xE7272B21   | ![free_roam_last_location_bkg](images/frontend_feed/free_roam_last_location_bkg.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//free_roam_last_location_bkg.png'>Download</a>  |
-| free_roam_last_location_tile | 0xFCA29F46   | ![free_roam_last_location_tile](images/frontend_feed/free_roam_last_location_tile.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//free_roam_last_location_tile.png'>Download</a> |
-| join_random_posse_bkg        | 0x47024F57   | ![join_random_posse_bkg](images/frontend_feed/join_random_posse_bkg.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//join_random_posse_bkg.png'>Download</a>        |
-| join_random_posse_tile       | 0xAB9D4248   | ![join_random_posse_tile](images/frontend_feed/join_random_posse_tile.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//join_random_posse_tile.png'>Download</a>       |
-| series_12_player_bkg         | 0x61D258AF   | ![series_12_player_bkg](images/frontend_feed/series_12_player_bkg.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//series_12_player_bkg.png'>Download</a>         |
-| series_12_player_tile        | 0xD93E131A   | ![series_12_player_tile](images/frontend_feed/series_12_player_tile.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//series_12_player_tile.png'>Download</a>        |
-| series_race_bkg              | 0xDF9B29DB   | ![series_race_bkg](images/frontend_feed/series_race_bkg.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//series_race_bkg.png'>Download</a>              |
-| series_race_tile             | 0xEAC50BB5   | ![series_race_tile](images/frontend_feed/series_race_tile.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_feed//series_race_tile.png'>Download</a>             |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+free_roam_last_location_bkg | 0xE7272B21 | ![free_roam_last_location_bkg](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/free_roam_last_location_bkg.png)
+ |  | 
+free_roam_last_location_tile | 0xFCA29F46 | ![free_roam_last_location_tile](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/free_roam_last_location_tile.png)
+ |  | 
+join_random_posse_bkg | 0x47024F57 | ![join_random_posse_bkg](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/join_random_posse_bkg.png)
+ |  | 
+join_random_posse_tile | 0xAB9D4248 | ![join_random_posse_tile](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/join_random_posse_tile.png)
+ |  | 
+series_12_player_bkg | 0x61D258AF | ![series_12_player_bkg](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/series_12_player_bkg.png)
+ |  | 
+series_12_player_tile | 0xD93E131A | ![series_12_player_tile](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/series_12_player_tile.png)
+ |  | 
+series_race_bkg | 0xDF9B29DB | ![series_race_bkg](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/series_race_bkg.png)
+ |  | 
+series_race_tile | 0xEAC50BB5 | ![series_race_tile](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_feed/series_race_tile.png)
+ |  | 
+
+
+
 
 <h2>frontend_store (0x38A2E0E4)</h2>
 
-| Texture hashname           | Texture hash | Texture example                                                                     | Download Image                                                                                                                                                                                            |
-| -------------------------- | ------------ | ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| divider_line               | -1129339710  | ![divider_line](images/frontend_store/divider_line.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store//divider_line.png'>Download</a>              |
-| gold_bg                    |              | ![gold_bg](images/frontend_store/gold_bg.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store/gold_bg.png'>Download</a>                    |
-| menu_ink_4                 |              | ![menu_ink_4](images/frontend_store/menu_ink_4.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store/menu_ink_4.png'>Download</a>                 |
-| store_background           |              | ![store_background](images/frontend_store/store_background.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store/store_background.png'>Download</a>           |
-| store_big_image            |              | ![store_big_image](images/frontend_store/store_big_image.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store/store_big_image.png'>Download</a>            |
-| store_med_image            |              | ![store_med_image](images/frontend_store/store_med_image.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store/store_med_image.png'>Download</a>            |
-| store_standalone_big_image |              | ![store_standalone_big_image](images/frontend_store/store_standalone_big_image.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store/store_standalone_big_image.png'>Download</a> |
-| title_divider              | 152129493    | ![title_divider](images/frontend_store/title_divider.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/frontend_store/title_divider.png'>Download</a>              |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+divider_line | 0xBCAFA4C2 | ![divider_line](http://femga.com/images/samples/ui_textures/ui_startup_textures/frontend_store/divider_line.png)
+ |  | 
+
+
+
 
 <h2>landing_page (0xC46D3AFF)</h2>
 
-| Texture hashname      | Texture hash | Texture example                                                         | Download Image                                                                                                                                                                                      |
-| --------------------- | ------------ | ----------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| background_alpha      | 0x523AF5D1   | ![background_alpha](images/landing_page/background_alpha.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//background_alpha.png'>Download</a>      |
-| bg_purchase_text      |              | ![bg_purchase_text](images/landing_page/bg_purchase_text.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//bg_purchase_text.png'>Download</a>      |
-| filter_dot            | -821304004   | ![filter_dot](images/landing_page/filter_dot.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//filter_dot.png'>Download</a>            |
-| frontend_bg_scroll    | 0xA5DDD232   | ![frontend_bg_scroll](images/landing_page/frontend_bg_scroll.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//frontend_bg_scroll.png'>Download</a>    |
-| gradient              | 0xC76C8678   | ![gradient](images/landing_page/gradient.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//gradient.png'>Download</a>              |
-| landing_page_pc_lower |              | ![landing_page_pc_lower](images/landing_page/landing_page_pc_lower.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//landing_page_pc_lower.png'>Download</a> |
-| landing_page_pc_upper |              | ![landing_page_pc_upper](images/landing_page/landing_page_pc_upper.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//landing_page_pc_upper.png'>Download</a> |
-| logo_mp               | 0x231844D7   | ![logo_mp](images/landing_page/logo_mp.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//logo_mp.png'>Download</a>               |
-| logo_sp               | 0xB881E8BC   | ![logo_sp](images/landing_page/logo_sp.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//logo_sp.png'>Download</a>               |
-| placeholder_image     | 0x00DFF1EF   | ![placeholder_image](images/landing_page/placeholder_image.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//placeholder_image.png'>Download</a>     |
-| shadow_bottom_edge    | 0xB14CACC2   | ![shadow_bottom_edge](images/landing_page/shadow_bottom_edge.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//shadow_bottom_edge.png'>Download</a>    |
-| shadow_side_edge      | 0x6E531BAD   | ![shadow_side_edge](images/landing_page/shadow_side_edge.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//shadow_side_edge.png'>Download</a>      |
-| storylogo_small       |              | ![storylogo_small](images/landing_page/storylogo_small.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//storylogo_small.png'>Download</a>       |
-| tile_highlight_bl     | 0xB9CC5CCA   | ![tile_highlight_bl](images/landing_page/tile_highlight_bl.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_bl.png'>Download</a>     |
-| tile_highlight_bot    | 0xE9FD6D56   | ![tile_highlight_bot](images/landing_page/tile_highlight_bot.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_bot.png'>Download</a>    |
-| tile_highlight_br     | 0x42D16ED6   | ![tile_highlight_br](images/landing_page/tile_highlight_br.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_br.png'>Download</a>     |
-| tile_highlight_l      | 0xDBA98427   | ![tile_highlight_l](images/landing_page/tile_highlight_l.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_l.png'>Download</a>      |
-| tile_highlight_r      | 0x330CB2F4   | ![tile_highlight_r](images/landing_page/tile_highlight_r.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_r.png'>Download</a>      |
-| tile_highlight_t      | 0x58887DEB   | ![tile_highlight_t](images/landing_page/tile_highlight_t.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_t.png'>Download</a>      |
-| tile_highlight_tl     | 0x2444E6AD   | ![tile_highlight_tl](images/landing_page/tile_highlight_tl.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_tl.png'>Download</a>     |
-| tile_highlight_tr     | 0x74F6080A   | ![tile_highlight_tr](images/landing_page/tile_highlight_tr.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//tile_highlight_tr.png'>Download</a>     |
-| triple_cash_star      | 0x74D14C46   | ![triple_cash_star](images/landing_page/triple_cash_star.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//triple_cash_star.png'>Download</a>      |
-| underline             | 0x70D1B303   | ![underline](images/landing_page/underline.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/landing_page//underline.png'>Download</a>             |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+background_alpha | 0x523AF5D1 | ![background_alpha](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/background_alpha.png)
+ |  | 
+frontend_bg_scroll | 0xA5DDD232 | ![frontend_bg_scroll](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/frontend_bg_scroll.png)
+ |  | 
+gradient | 0xC76C8678 | ![gradient](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/gradient.png)
+ |  | 
+logo_mp | 0x231844D7 | ![logo_mp](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/logo_mp.png)
+ |  | 
+logo_sp | 0xB881E8BC | ![logo_sp](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/logo_sp.png)
+ |  | 
+placeholder_image | 0x00DFF1EF | ![placeholder_image](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/placeholder_image.png)
+ |  | 
+shadow_bottom_edge | 0xB14CACC2 | ![shadow_bottom_edge](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/shadow_bottom_edge.png)
+ |  | 
+shadow_side_edge | 0x6E531BAD | ![shadow_side_edge](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/shadow_side_edge.png)
+ |  | 
+tile_highlight_bl | 0xB9CC5CCA | ![tile_highlight_bl](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_bl.png)
+ |  | 
+tile_highlight_bot | 0xE9FD6D56 | ![tile_highlight_bot](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_bot.png)
+ |  | 
+tile_highlight_br | 0x42D16ED6 | ![tile_highlight_br](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_br.png)
+ |  | 
+tile_highlight_l | 0xDBA98427 | ![tile_highlight_l](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_l.png)
+ |  | 
+tile_highlight_r | 0x330CB2F4 | ![tile_highlight_r](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_r.png)
+ |  | 
+tile_highlight_tl | 0x2444E6AD | ![tile_highlight_tl](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_tl.png)
+ |  | 
+tile_highlight_t | 0x58887DEB | ![tile_highlight_t](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_t.png)
+ |  | 
+tile_highlight_tr | 0x74F6080A | ![tile_highlight_tr](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/tile_highlight_tr.png)
+ |  | 
+triple_cash_star | 0x74D14C46 | ![triple_cash_star](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/triple_cash_star.png)
+ |  | 
+underline | 0x70D1B303 | ![underline](http://femga.com/images/samples/ui_textures/ui_startup_textures/landing_page/underline.png)
+ |  | 
+
+
+
 
 <h2>persistent_assets (0x19688DC0)</h2>
 
-|                       | Texture hashname | Texture hash                                                                  | Texture example                                                                                                                                                                                          | Download Image |
-| --------------------- | ---------------- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| card_highlight_bl     | 0xEF04B62C       | ![card_highlight_bl](images/persistent_assets/card_highlight_bl.png)          | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_bl.png'>Download</a>     |
-| card_highlight_bot    | 0x5238284D       | ![card_highlight_bot](images/persistent_assets/card_highlight_bot.png)        | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_bot.png'>Download</a>    |
-| card_highlight_br     | 0x24A32174       | ![card_highlight_br](images/persistent_assets/card_highlight_br.png)          | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_br.png'>Download</a>     |
-| card_highlight_l      | 0xDE756BF0       | ![card_highlight_l](images/persistent_assets/card_highlight_l.png)            | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_l.png'>Download</a>      |
-| card_highlight_r      | 0x40D4B0B1       | ![card_highlight_r](images/persistent_assets/card_highlight_r.png)            | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_r.png'>Download</a>      |
-| card_highlight_t      | 0x58195F4E       | ![card_highlight_t](images/persistent_assets/card_highlight_t.png)            | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_t.png'>Download</a>      |
-| card_highlight_tl     | 0xC78326FB       | ![card_highlight_tl](images/persistent_assets/card_highlight_tl.png)          | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_tl.png'>Download</a>     |
-| card_highlight_tr     | 0x20AD5952       | ![card_highlight_tr](images/persistent_assets/card_highlight_tr.png)          | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//card_highlight_tr.png'>Download</a>     |
-| help_text_bg          | 0x5E35E2C2       | ![help_text_bg](images/persistent_assets/help_text_bg.png)                    | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//help_text_bg.png'>Download</a>          |
-| scroller_arrow_bottom | 1947648833       | ![scroller_arrow_bottom](images/persistent_assets//scroller_arrow_bottom.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_arrow_bottom.png'>Download</a> |
-| scroller_arrow_top    | 2059316945       | ![scroller_arrow_top](images/persistent_assets//scroller_arrow_top.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_arrow_top.png'>Download</a>    |
-| scroller_left_bottom  | 2724667          | ![scroller_left_bottom](images/persistent_assets//scroller_left_bottom.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_left_bottom.png'>Download</a>  |
-| scroller_left_top     | -273590530       | ![scroller_left_top](images/persistent_assets//scroller_left_top.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_left_top.png'>Download</a>     |
-| scroller_line_down    | -1768867050      | ![scroller_line_down](images/persistent_assets//scroller_line_down.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_line_down.png'>Download</a>    |
-| scroller_line_up      | -1222611028      | ![scroller_line_up](images/persistent_assets//scroller_line_up.png)           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_line_up.png'>Download</a>      |
-| scroller_right_bottom | 2160390          | ![scroller_right_bottom](images/persistent_assets//scroller_right_bottom.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_right_bottom.png'>Download</a> |
-| scroller_right_top    | -1352883568      | ![scroller_right_top](images/persistent_assets//scroller_right_top.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/persistent_assets//scroller_right_top.png'>Download</a>    |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+card_highlight_bl | 0xEF04B62C | ![card_highlight_bl](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_bl.png)
+ |  | 
+card_highlight_bot | 0x5238284D | ![card_highlight_bot](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_bot.png)
+ |  | 
+card_highlight_br | 0x24A32174 | ![card_highlight_br](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_br.png)
+ |  | 
+card_highlight_l | 0xDE756BF0 | ![card_highlight_l](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_l.png)
+ |  | 
+card_highlight_r | 0x40D4B0B1 | ![card_highlight_r](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_r.png)
+ |  | 
+card_highlight_tl | 0xC78326FB | ![card_highlight_tl](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_tl.png)
+ |  | 
+card_highlight_t | 0x58195F4E | ![card_highlight_t](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_t.png)
+ |  | 
+card_highlight_tr | 0x20AD5952 | ![card_highlight_tr](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/card_highlight_tr.png)
+ |  | 
+help_text_bg | 0x5E35E2C2 | ![help_text_bg](http://femga.com/images/samples/ui_textures/ui_startup_textures/persistent_assets/help_text_bg.png)
+ |  | 
+
+
+
 
 <h2>policies_menu (0xADC2CBAD)</h2>
 
-| Texture hashname      | Texture hash | Texture example                                                          | Download Image                                                                                                                                                                                       |
-| --------------------- | ------------ | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| selection_arrow_right | -2046065591  | ![selection_arrow_right](images/policies_menu/selection_arrow_right.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/policies_menu//selection_arrow_right.png'>Download</a> |
-| selection_box_bg_1b   | 262950258    | ![selection_box_bg_1b](images/policies_menu/selection_box_bg_1b.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/policies_menu//selection_box_bg_1b.png'>Download</a>   |
-| tick                  | -460811553   | ![tick](images/policies_menu/tick.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/policies_menu//tick.png'>Download</a>                  |
-| tick_box              | 1385084899   | ![tick_box](images/policies_menu/tick_box.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/policies_menu//tick_box.png'>Download</a>              |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+selection_arrow_right | 0x860B8449 | ![selection_arrow_right](http://femga.com/images/samples/ui_textures/ui_startup_textures/policies_menu/selection_arrow_right.png)
+ |  | 
+selection_box_bg_1b | 0x0FAC4D72 | ![selection_box_bg_1b](http://femga.com/images/samples/ui_textures/ui_startup_textures/policies_menu/selection_box_bg_1b.png)
+ |  | 
+tick_box | 0x528EB7E3 | ![tick_box](http://femga.com/images/samples/ui_textures/ui_startup_textures/policies_menu/tick_box.png)
+ |  | 
+tick | 0xE48892DF | ![tick](http://femga.com/images/samples/ui_textures/ui_startup_textures/policies_menu/tick.png)
+ |  | 
+
+
+
 
 <h2>Social_Club (0xCD9297B5)</h2>
 
-| Texture hashname             | Texture hash | Texture example                                                                      | Download Image                                                                                                                                                                                            |
-| ---------------------------- | ------------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| achievement_background       | 0x3738D3A7   | ![achievement_background](images/Social_Club/achievement_background.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//achievement_background.png'>Download</a>       |
-| add_to_game_placeholder_icon | 0x5C557D0C   | ![add_to_game_placeholder_icon](images/Social_Club/add_to_game_placeholder_icon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//add_to_game_placeholder_icon.png'>Download</a> |
-| alert_icon                   | 0x5EF824C6   | ![alert_icon](images/Social_Club/alert_icon.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//alert_icon.png'>Download</a>                   |
-| award_background             | 0x046BF0BF   | ![award_background](images/Social_Club/award_background.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//award_background.png'>Download</a>             |
-| broken_image                 | 0x0C1FB7BB   | ![broken_image](images/Social_Club/broken_image.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//broken_image.png'>Download</a>                 |
-| challenge_background         | 0xB809B7B8   | ![challenge_background](images/Social_Club/challenge_background.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//challenge_background.png'>Download</a>         |
-| circle                       | 0xC6AE4953   | ![circle](images/Social_Club/circle.png)                                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//circle.png'>Download</a>                       |
-| crew_demote_icon             | 0x64700AE3   | ![crew_demote_icon](images/Social_Club/crew_demote_icon.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//crew_demote_icon.png'>Download</a>             |
-| crew_left_icon               | 0x88D55205   | ![crew_left_icon](images/Social_Club/crew_left_icon.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//crew_left_icon.png'>Download</a>               |
-| crew_promote_icon            | 0x58A3CF5D   | ![crew_promote_icon](images/Social_Club/crew_promote_icon.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//crew_promote_icon.png'>Download</a>            |
-| crew_tag                     | 0x2A438136   | ![crew_tag](images/Social_Club/crew_tag.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//crew_tag.png'>Download</a>                     |
-| disconnected_controller_icon | 0xF49F10CC   | ![disconnected_controller_icon](images/Social_Club/disconnected_controller_icon.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//disconnected_controller_icon.png'>Download</a> |
-| feed                         | 0x6BAD79F2   | ![feed](images/Social_Club/feed.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//feed.png'>Download</a>                         |
-| feed_menu_selection          | 0xAE4C7EAB   | ![feed_menu_selection](images/Social_Club/feed_menu_selection.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//feed_menu_selection.png'>Download</a>          |
-| kicked_icon                  | 0xF0C484D4   | ![kicked_icon](images/Social_Club/kicked_icon.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//kicked_icon.png'>Download</a>                  |
-| loading_image                | 0xB381FBD1   | ![loading_image](images/Social_Club/loading_image.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//loading_image.png'>Download</a>                |
-| loading_image_square         | 0x704EAC8B   | ![loading_image_square](images/Social_Club/loading_image_square.png)                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//loading_image_square.png'>Download</a>         |
-| message_icon                 | 0x5C94EDDD   | ![message_icon](images/Social_Club/message_icon.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//message_icon.png'>Download</a>                 |
-| missing_image                | 0xFDF8759C   | ![missing_image](images/Social_Club/missing_image.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//missing_image.png'>Download</a>                |
-| mission_shared               | 0x1C82F0AF   | ![mission_shared](images/Social_Club/mission_shared.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//mission_shared.png'>Download</a>               |
-| no_crew_emblem               | 0xE259A925   | ![no_crew_emblem](images/Social_Club/no_crew_emblem.png)                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//no_crew_emblem.png'>Download</a>               |
-| photo                        | 0x610E1503   | ![photo](images/Social_Club/photo.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//photo.png'>Download</a>                        |
-| play_icon                    | 0x0EA29AF7   | ![play_icon](images/Social_Club/play_icon.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//play_icon.png'>Download</a>                    |
-| playlist_shared              | 0xB818463A   | ![playlist_shared](images/Social_Club/playlist_shared.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//playlist_shared.png'>Download</a>              |
-| profile_image                | 0x33E91E3F   | ![profile_image](images/Social_Club/profile_image.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//profile_image.png'>Download</a>                |
-| radio_off                    | 0x2BA428DE   | ![radio_off](images/Social_Club/radio_off.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//radio_off.png'>Download</a>                    |
-| radio_on                     | 0xCCA1C511   | ![radio_on](images/Social_Club/radio_on.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//radio_on.png'>Download</a>                     |
-| ribbon_icon                  | 0xB2538412   | ![ribbon_icon](images/Social_Club/ribbon_icon.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//ribbon_icon.png'>Download</a>                  |
-| rockstar_icon                | 0xB77386FD   | ![rockstar_icon](images/Social_Club/rockstar_icon.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//rockstar_icon.png'>Download</a>                |
-| sc_background_gradient       | 0x55AA5727   | ![sc_background_gradient](images/Social_Club/sc_background_gradient.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_background_gradient.png'>Download</a>       |
-| sc_background_top_gradient   | 0xBE33E297   | ![sc_background_top_gradient](images/Social_Club/sc_background_top_gradient.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_background_top_gradient.png'>Download</a>   |
-| sc_button                    | 0xE58031ED   | ![sc_button](images/Social_Club/sc_button.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_button.png'>Download</a>                    |
-| sc_logo                      | 0x76C7E5AE   | ![sc_logo](images/Social_Club/sc_logo.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_logo.png'>Download</a>                      |
-| sc_logo_full                 | 0x9D9490EB   | ![sc_logo_full](images/Social_Club/sc_logo_full.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_logo_full.png'>Download</a>                 |
-| sc_outlink_icon              | 0xA24EC49C   | ![sc_outlink_icon](images/Social_Club/sc_outlink_icon.png)                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_outlink_icon.png'>Download</a>              |
-| sc_repeat_pattern            | 0xD01FD658   | ![sc_repeat_pattern](images/Social_Club/sc_repeat_pattern.png)                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_repeat_pattern.png'>Download</a>            |
-| sc_repeat_pattern_corner     | 0x47425459   | ![sc_repeat_pattern_corner](images/Social_Club/sc_repeat_pattern_corner.png)         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_repeat_pattern_corner.png'>Download</a>     |
-| sc_repeat_pattern_left_right | 0xBCDACB86   | ![sc_repeat_pattern_left_right](images/Social_Club/sc_repeat_pattern_left_right.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_repeat_pattern_left_right.png'>Download</a> |
-| sc_repeat_pattern_top_bottom | 0x16C1B7C5   | ![sc_repeat_pattern_top_bottom](images/Social_Club/sc_repeat_pattern_top_bottom.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//sc_repeat_pattern_top_bottom.png'>Download</a> |
-| settings                     | 0xA4FEB6F7   | ![settings](images/Social_Club/settings.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//settings.png'>Download</a>                     |
-| shadow_bottom_edge           | 0xB14CACC2   | ![shadow_bottom_edge](images/Social_Club/shadow_bottom_edge.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//shadow_bottom_edge.png'>Download</a>           |
-| star_icon                    | 0x81AE3C10   | ![star_icon](images/Social_Club/star_icon.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//star_icon.png'>Download</a>                    |
-| star_icon_on                 | 0x6C2012C0   | ![star_icon_on](images/Social_Club/star_icon_on.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//star_icon_on.png'>Download</a>                 |
-| staryellow                   | 0xA8E32004   | ![staryellow](images/Social_Club/staryellow.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//staryellow.png'>Download</a>                   |
-| tag_fade                     | 0xE129E6CF   | ![tag_fade](images/Social_Club/tag_fade.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//tag_fade.png'>Download</a>                     |
-| tag_icon                     | 0x5DBA7961   | ![tag_icon](images/Social_Club/tag_icon.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/Social_Club//tag_icon.png'>Download</a>                     |
-
-<h2>social_club_tu  (--)</h2>
-
-| Texture hashname                      | Texture hash | Texture example                                                                                           | Download Image                                                                                                                                                                                                       |
-| ------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| bookmark_icon_off_tu                  |              | ![bookmark_icon_off_tu](images/social_club_tu/bookmark_icon_off_tu.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/bookmark_icon_off_tu.png'>Download</a>                  |
-| bookmark_icon_on_tu                   |              | ![bookmark_icon_on_tu](images/social_club_tu/bookmark_icon_on_tu.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/bookmark_icon_on_tu.png'>Download</a>                   |
-| cloud_icon_tu                         |              | ![cloud_icon_tu](images/social_club_tu/cloud_icon_tu.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/cloud_icon_tu.png'>Download</a>                         |
-| creator_tu                            |              | ![creator_tu](images/social_club_tu/creator_tu.png)                                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/creator_tu.png'>Download</a>                            |
-| feed_generic_background_texture_tu    |              | ![feed_generic_background_texture_tu](images/social_club_tu/feed_generic_background_texture_tu.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/feed_generic_background_texture_tu.png'>Download</a>    |
-| feed_posse_entry_background_tu        |              | ![feed_posse_entry_background_tu](images/social_club_tu/feed_posse_entry_background_tu.png)               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/feed_posse_entry_background_tu.png'>Download</a>        |
-| loading_image_square_for_achievements |              | ![loading_image_square_for_achievements](images/social_club_tu/loading_image_square_for_achievements.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/loading_image_square_for_achievements.png'>Download</a> |
-| loading_image_square_for_challenges   |              | ![loading_image_square_for_challenges](images/social_club_tu/loading_image_square_for_challenges.png)     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/loading_image_square_for_challenges.png'>Download</a>   |
-| mission_stat_played_tu                |              | ![mission_stat_played_tu](images/social_club_tu/mission_stat_played_tu.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/mission_stat_played_tu.png'>Download</a>                |
-| mission_stat_thumbs_down_tu           |              | ![mission_stat_thumbs_down_tu](images/social_club_tu/mission_stat_thumbs_down_tu.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/mission_stat_thumbs_down_tu.png'>Download</a>           |
-| mission_stat_thumbs_up_tu             |              | ![mission_stat_thumbs_up_tu](images/social_club_tu/mission_stat_thumbs_up_tu.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/mission_stat_thumbs_up_tu.png'>Download</a>             |
-| mission_stats_background_tu           |              | ![mission_stats_background_tu](images/social_club_tu/mission_stats_background_tu.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/mission_stats_background_tu.png'>Download</a>           |
-| pedshot_overlay_highlight_tu          |              | ![pedshot_overlay_highlight_tu](images/social_club_tu/pedshot_overlay_highlight_tu.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/pedshot_overlay_highlight_tu.png'>Download</a>          |
-| playlist_browse_tu                    |              | ![playlist_browse_tu](images/social_club_tu/playlist_browse_tu.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/playlist_browse_tu.png'>Download</a>                    |
-| playlist_icon_tu                      |              | ![playlist_icon_tu](images/social_club_tu/playlist_icon_tu.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/playlist_icon_tu.png'>Download</a>                      |
-| rockstar_icon_small_tu                |              | ![rockstar_icon_small_tu](images/social_club_tu/rockstar_icon_small_tu.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/rockstar_icon_small_tu.png'>Download</a>                |
-| rockstar_icon_tu                      |              | ![rockstar_icon_tu](images/social_club_tu/rockstar_icon_tu.png)                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/rockstar_icon_tu.png'>Download</a>                      |
-| sc_icon_mp_playlist_elimination       |              | ![sc_icon_mp_playlist_elimination](images/social_club_tu/sc_icon_mp_playlist_elimination.png)             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_icon_mp_playlist_elimination.png'>Download</a>       |
-| sc_icon_mp_playlist_featured          |              | ![sc_icon_mp_playlist_featured](images/social_club_tu/sc_icon_mp_playlist_featured.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_icon_mp_playlist_featured.png'>Download</a>          |
-| sc_icon_mp_playlist_races             |              | ![sc_icon_mp_playlist_races](images/social_club_tu/sc_icon_mp_playlist_races.png)                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_icon_mp_playlist_races.png'>Download</a>             |
-| sc_icon_mp_playlist_shootout          |              | ![sc_icon_mp_playlist_shootout](images/social_club_tu/sc_icon_mp_playlist_shootout.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_icon_mp_playlist_shootout.png'>Download</a>          |
-| sc_icon_mp_playlist_special           |              | ![sc_icon_mp_playlist_special](images/social_club_tu/sc_icon_mp_playlist_special.png)                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_icon_mp_playlist_special.png'>Download</a>           |
-| sc_icon_mp_playlist_takeover          |              | ![sc_icon_mp_playlist_takeover](images/social_club_tu/sc_icon_mp_playlist_takeover.png)                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_icon_mp_playlist_takeover.png'>Download</a>          |
-| sc_loading_logo_tu                    |              | ![sc_loading_logo_tu](images/social_club_tu/sc_loading_logo_tu.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_loading_logo_tu.png'>Download</a>                    |
-| sc_logo_tu                            |              | ![sc_logo_tu](images/social_club_tu/sc_logo_tu.png)                                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/sc_logo_tu.png'>Download</a>                            |
-| shared_icon_bg_tu                     |              | ![shared_icon_bg_tu](images/social_club_tu/shared_icon_bg_tu.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/shared_icon_bg_tu.png'>Download</a>                     |
-| shared_mission_icon_tu                |              | ![shared_mission_icon_tu](images/social_club_tu/shared_mission_icon_tu.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/shared_mission_icon_tu.png'>Download</a>                |
-| shared_photo_icon_tu                  |              | ![shared_photo_icon_tu](images/social_club_tu/shared_photo_icon_tu.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/social_club_tu/shared_photo_icon_tu.png'>Download</a>                  |
-
-<h2>pausemenu_settings_startup  (--)</h2>
-
-| Texture hashname                      | Texture hash | Texture example                                                                                                       | Download Image                                                                                                                                                                                                                   |
-| ------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| divider_line                          | -1129339710  | ![divider_line](images/pausemenu_settings_startup/divider_line.png)                                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/divider_line.png'>Download</a>                          |
-| divider_line_short                    |              | ![divider_line_short](images/pausemenu_settings_startup/divider_line_short.png)                                       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/divider_line_short.png'>Download</a>                    |
-| menu_bar                              | 41016830     | ![menu_bar](images/pausemenu_settings_startup/menu_bar.png)                                                           | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/menu_bar.png'>Download</a>                              |
-| menu_icon_info_warning                | -199662542   | ![menu_icon_info_warning](images/pausemenu_settings_startup/menu_icon_info_warning.png)                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/menu_icon_info_warning.png'>Download</a>                |
-| menu_icon_lock                        | 566347780    | ![menu_icon_lock](images/pausemenu_settings_startup/menu_icon_lock.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/menu_icon_lock.png'>Download</a>                        |
-| menu_icon_tick                        | -1725710676  | ![menu_icon_tick](images/pausemenu_settings_startup/menu_icon_tick.png)                                               | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/menu_icon_tick.png'>Download</a>                        |
-| menu_icon_tick_sc                     |              | ![menu_icon_tick_sc](images/pausemenu_settings_startup/menu_icon_tick_sc.png)                                         | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/menu_icon_tick_sc.png'>Download</a>                     |
-| pause_settings_display_reticle_dot    |              | ![pause_settings_display_reticle_dot](images/pausemenu_settings_startup/pause_settings_display_reticle_dot.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/pause_settings_display_reticle_dot.png'>Download</a>    |
-| pause_settings_display_reticle_off    |              | ![pause_settings_display_reticle_off](images/pausemenu_settings_startup/pause_settings_display_reticle_off.png)       | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/pause_settings_display_reticle_off.png'>Download</a>    |
-| pause_settings_display_reticle_simple |              | ![pause_settings_display_reticle_simple](images/pausemenu_settings_startup/pause_settings_display_reticle_simple.png) | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/pause_settings_display_reticle_simple.png'>Download</a> |
-| pause_settings_display_second_screen  |              | ![pause_settings_display_second_screen](images/pausemenu_settings_startup/pause_settings_display_second_screen.png)   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/pause_settings_display_second_screen.png'>Download</a>  |
-| selection_arrow_left                  | 297949742    | ![selection_arrow_left](images/pausemenu_settings_startup/selection_arrow_left.png)                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/selection_arrow_left.png'>Download</a>                  |
-| selection_arrow_right                 | -2046065591  | ![selection_arrow_right](images/pausemenu_settings_startup/selection_arrow_right.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/selection_arrow_right.png'>Download</a>                 |
-| selection_box_bg_1b                   | 262950258    | ![selection_box_bg_1b](images/pausemenu_settings_startup/selection_box_bg_1b.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/selection_box_bg_1b.png'>Download</a>                   |
-| settings_headphones                   |              | ![settings_headphones](images/pausemenu_settings_startup/settings_headphones.png)                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/settings_headphones.png'>Download</a>                   |
-| settings_stereo                       |              | ![settings_stereo](images/pausemenu_settings_startup/settings_stereo.png)                                             | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/settings_stereo.png'>Download</a>                       |
-| settings_tv                           |              | ![settings_tv](images/pausemenu_settings_startup/settings_tv.png)                                                     | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/settings_tv.png'>Download</a>                           |
-| speakers_surround_0_0                 |              | ![speakers_surround_0_0](images/pausemenu_settings_startup/speakers_surround_0_0.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_0_0.png'>Download</a>                 |
-| speakers_surround_0_1                 |              | ![speakers_surround_0_1](images/pausemenu_settings_startup/speakers_surround_0_1.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_0_1.png'>Download</a>                 |
-| speakers_surround_0_2                 |              | ![speakers_surround_0_2](images/pausemenu_settings_startup/speakers_surround_0_2.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_0_2.png'>Download</a>                 |
-| speakers_surround_1_0                 |              | ![speakers_surround_1_0](images/pausemenu_settings_startup/speakers_surround_1_0.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_1_0.png'>Download</a>                 |
-| speakers_surround_1_1                 |              | ![speakers_surround_1_1](images/pausemenu_settings_startup/speakers_surround_1_1.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_1_1.png'>Download</a>                 |
-| speakers_surround_1_2                 |              | ![speakers_surround_1_2](images/pausemenu_settings_startup/speakers_surround_1_2.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_1_2.png'>Download</a>                 |
-| speakers_surround_2_0                 |              | ![speakers_surround_2_0](images/pausemenu_settings_startup/speakers_surround_2_0.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_2_0.png'>Download</a>                 |
-| speakers_surround_2_1                 |              | ![speakers_surround_2_1](images/pausemenu_settings_startup/speakers_surround_2_1.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_2_1.png'>Download</a>                 |
-| speakers_surround_2_2                 |              | ![speakers_surround_2_2](images/pausemenu_settings_startup/speakers_surround_2_2.png)                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/speakers_surround_2_2.png'>Download</a>                 |
-| star                                  | -1674006702  | ![star](images/pausemenu_settings_startup/star.png)                                                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/star.png'>Download</a>                                  |
-| store_card_bg                         |              | ![store_card_bg](images/pausemenu_settings_startup/store_card_bg.png)                                                 | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/store_card_bg.png'>Download</a>                         |
-| swatch_bg_1a                          | -1330017215  | ![swatch_bg_1a](images/pausemenu_settings_startup/swatch_bg_1a.png)                                                   | <a href='https://raw.githubusercontent.com/abdulkadiraktas/rdr3_discoveries/master/useful_info_from_rpfs/textures//ui_startup_textures/images/pausemenu_settings_startup/swatch_bg_1a.png'>Download</a>                          |
+Texture hashname | Texture hash | Texture example
+------------ | ---------------- | ---------------
+achievement_background | 0x3738D3A7 | ![achievement_background](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/achievement_background.png)
+ |  | 
+add_to_game_placeholder_icon | 0x5C557D0C | ![add_to_game_placeholder_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/add_to_game_placeholder_icon.png)
+ |  | 
+alert_icon | 0x5EF824C6 | ![alert_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/alert_icon.png)
+ |  | 
+award_background | 0x046BF0BF | ![award_background](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/award_background.png)
+ |  | 
+broken_image | 0x0C1FB7BB | ![broken_image](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/broken_image.png)
+ |  | 
+challenge_background | 0xB809B7B8 | ![challenge_background](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/challenge_background.png)
+ |  | 
+circle | 0xC6AE4953 | ![circle](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/circle.png)
+ |  | 
+crew_demote_icon | 0x64700AE3 | ![crew_demote_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/crew_demote_icon.png)
+ |  | 
+crew_left_icon | 0x88D55205 | ![crew_left_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/crew_left_icon.png)
+ |  | 
+crew_promote_icon | 0x58A3CF5D | ![crew_promote_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/crew_promote_icon.png)
+ |  | 
+crew_tag | 0x2A438136 | ![crew_tag](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/crew_tag.png)
+ |  | 
+disconnected_controller_icon | 0xF49F10CC | ![disconnected_controller_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/disconnected_controller_icon.png)
+ |  | 
+feed_menu_selection | 0xAE4C7EAB | ![feed_menu_selection](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/feed_menu_selection.png)
+ |  | 
+feed | 0x6BAD79F2 | ![feed](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/feed.png)
+ |  | 
+kicked_icon | 0xF0C484D4 | ![kicked_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/kicked_icon.png)
+ |  | 
+loading_image | 0xB381FBD1 | ![loading_image](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/loading_image.png)
+ |  | 
+loading_image_square | 0x704EAC8B | ![loading_image_square](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/loading_image_square.png)
+ |  | 
+message_icon | 0x5C94EDDD | ![message_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/message_icon.png)
+ |  | 
+missing_image | 0xFDF8759C | ![missing_image](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/missing_image.png)
+ |  | 
+mission_shared | 0x1C82F0AF | ![mission_shared](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/mission_shared.png)
+ |  | 
+no_crew_emblem | 0xE259A925 | ![no_crew_emblem](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/no_crew_emblem.png)
+ |  | 
+photo | 0x610E1503 | ![photo](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/photo.png)
+ |  | 
+play_icon | 0x0EA29AF7 | ![play_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/play_icon.png)
+ |  | 
+playlist_shared | 0xB818463A | ![playlist_shared](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/playlist_shared.png)
+ |  | 
+profile_image | 0x33E91E3F | ![profile_image](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/profile_image.png)
+ |  | 
+radio_off | 0x2BA428DE | ![radio_off](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/radio_off.png)
+ |  | 
+radio_on | 0xCCA1C511 | ![radio_on](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/radio_on.png)
+ |  | 
+ribbon_icon | 0xB2538412 | ![ribbon_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/ribbon_icon.png)
+ |  | 
+rockstar_icon | 0xB77386FD | ![rockstar_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/rockstar_icon.png)
+ |  | 
+sc_background_gradient | 0x55AA5727 | ![sc_background_gradient](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_background_gradient.png)
+ |  | 
+sc_background_top_gradient | 0xBE33E297 | ![sc_background_top_gradient](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_background_top_gradient.png)
+ |  | 
+sc_button | 0xE58031ED | ![sc_button](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_button.png)
+ |  | 
+sc_logo_full | 0x9D9490EB | ![sc_logo_full](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_logo_full.png)
+ |  | 
+sc_logo | 0x76C7E5AE | ![sc_logo](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_logo.png)
+ |  | 
+sc_outlink_icon | 0xA24EC49C | ![sc_outlink_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_outlink_icon.png)
+ |  | 
+sc_repeat_pattern_corner | 0x47425459 | ![sc_repeat_pattern_corner](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_repeat_pattern_corner.png)
+ |  | 
+sc_repeat_pattern_left_right | 0xBCDACB86 | ![sc_repeat_pattern_left_right](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_repeat_pattern_left_right.png)
+ |  | 
+sc_repeat_pattern | 0xD01FD658 | ![sc_repeat_pattern](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_repeat_pattern.png)
+ |  | 
+sc_repeat_pattern_top_bottom | 0x16C1B7C5 | ![sc_repeat_pattern_top_bottom](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/sc_repeat_pattern_top_bottom.png)
+ |  | 
+settings | 0xA4FEB6F7 | ![settings](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/settings.png)
+ |  | 
+shadow_bottom_edge | 0xB14CACC2 | ![shadow_bottom_edge](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/shadow_bottom_edge.png)
+ |  | 
+star_icon_on | 0x6C2012C0 | ![star_icon_on](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/star_icon_on.png)
+ |  | 
+star_icon | 0x81AE3C10 | ![star_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/star_icon.png)
+ |  | 
+staryellow | 0xA8E32004 | ![staryellow](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/staryellow.png)
+ |  | 
+tag_fade | 0xE129E6CF | ![tag_fade](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/tag_fade.png)
+ |  | 
+tag_icon | 0x5DBA7961 | ![tag_icon](http://femga.com/images/samples/ui_textures/ui_startup_textures/Social_Club/tag_icon.png)
+ |  | 
