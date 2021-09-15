@@ -64,14 +64,15 @@
 --  
 --  	HORSES:
 --  
---  		"horse_saddles"   		hex unsigned: 0xBAA7E618 	dec unsigned: 3131565592    dec signed: -1163401704
---  		"horse_bedrolls"  		hex unsigned: 0xEFB31921 	dec unsigned: 4021492001    dec signed: -273475295 
---  		"horse_blankets"  		hex unsigned: 0x17CEB41A 	dec unsigned: 399422490     dec signed: 399422490  
---  		"saddle_stirrups" 		hex unsigned: 0xDA6DADCA 	dec unsigned: 3664621002    dec signed: -630346294 
---  		"saddle_horns"    		hex unsigned: 0x5447332  	dec unsigned: 88372018      dec signed: 88372018   
---  		"horse_manes"			hex unsigned: 0xAA0217AB 	dec unsigned: 2852263851 	dec signed: -1442703445
---  		"HORSE_SADDLEBAGS"		hex unsigned: 0x80451C25 	dec unsigned: 2152012837 	dec signed: -2142954459
---  		"HORSE_TAILS"			hex unsigned: 0xA63CAE10 	dec unsigned: 2788994576 	dec signed: -1505972720
+--  		"horse_saddles"   						hex unsigned: 0xBAA7E618 	dec unsigned: 3131565592    dec signed: -1163401704
+--  		"horse_bedrolls"  						hex unsigned: 0xEFB31921 	dec unsigned: 4021492001    dec signed: -273475295 
+--  		"horse_blankets"  						hex unsigned: 0x17CEB41A 	dec unsigned: 399422490     dec signed: 399422490  
+--  		"saddle_stirrups" 						hex unsigned: 0xDA6DADCA 	dec unsigned: 3664621002    dec signed: -630346294 
+--  		"saddle_horns"    						hex unsigned: 0x5447332  	dec unsigned: 88372018      dec signed: 88372018   
+--  		"horse_manes"							hex unsigned: 0xAA0217AB 	dec unsigned: 2852263851 	dec signed: -1442703445
+--  		"HORSE_SADDLEBAGS"						hex unsigned: 0x80451C25 	dec unsigned: 2152012837 	dec signed: -2142954459
+--  		"HORSE_TAILS"							hex unsigned: 0xA63CAE10 	dec unsigned: 2788994576 	dec signed: -1505972720
+--  		"HORSE_EQUIPMENT_SADDLE_LANTERN_BASIC" 	hex unsigned: 0x635E387C 	dec unsigned: 1667119228 	dec signed: 1667119228   
 --
 --  
 --
@@ -86,10 +87,10 @@
 --  
 --  								hex unsigned: 0xAC106B30 	dec unsigned: 2886757168 	dec signed: -1408210128
 --  								hex unsigned: 0x94B2E3AF 	dec unsigned: 2494751663 	dec signed: -1800215633
---  								hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932  
+--									hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932  this is not category hashname. This is lantern component hash for horse
 --  								hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163 
 --  								hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232  
---  								hex unsigned: 0x635E387C 	dec unsigned: 1667119228 	dec signed: 1667119228 
+--  								
 
 
 
@@ -8003,7 +8004,7 @@ local cloth_hash_names = {
 	{hashname="",category_hashname="saddle_stirrups",ped_type="horse",is_multiplayer=true,category_hash=0xDA6DADCA,hash=0xE600E0BE,hash_dec_signed=-436150082,category_hash_dec_signed=-630346294},
 	{hashname="",category_hashname="saddle_stirrups",ped_type="horse",is_multiplayer=true,category_hash=0xDA6DADCA,hash=0xEDF82EF6,hash_dec_signed=-302502154,category_hash_dec_signed=-630346294},
 	{hashname="",category_hashname="saddle_stirrups",ped_type="horse",is_multiplayer=true,category_hash=0xDA6DADCA,hash=0xFD31EA31,hash_dec_signed=-47060431,category_hash_dec_signed=-630346294},
-	{hashname="HORSE_EQUIPMENT_SADDLE_LANTERN_BASIC",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0x1530BE1C,hash=0x635E387C,hash_dec_signed=1667119228,category_hash_dec_signed=355515932},
+	{hashname="HORSE_EQUIPMENT_SADDLE_LANTERN_BASIC",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0x635E387C,hash=0x1530BE1C,hash_dec_signed=355515932,category_hash_dec_signed=1667119228},
 	{hashname="",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0x30DEFDDF,hash=0x004BBEED,hash_dec_signed=4964077,category_hash_dec_signed=819920351},
 	{hashname="",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0x30DEFDDF,hash=0x0960D117,hash_dec_signed=157339927,category_hash_dec_signed=819920351},
 	{hashname="",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0x30DEFDDF,hash=0x281A6D81,hash_dec_signed=672820609,category_hash_dec_signed=819920351},
