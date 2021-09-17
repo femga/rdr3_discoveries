@@ -73,6 +73,7 @@
 --  		"horse_manes"			hex unsigned: 0xAA0217AB 	dec unsigned: 2852263851 	dec signed: -1442703445
 --  		"HORSE_SADDLEBAGS"		hex unsigned: 0x80451C25 	dec unsigned: 2152012837 	dec signed: -2142954459
 --  		"HORSE_TAILS"			hex unsigned: 0xA63CAE10 	dec unsigned: 2788994576 	dec signed: -1505972720
+--  		"horse_shoes"			hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232  
 --
 --  
 --
@@ -89,7 +90,6 @@
 --  *horse bridle*					hex unsigned: 0x94B2E3AF 	dec unsigned: 2494751663 	dec signed: -1800215633
 --  *horse lantern*					hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932  
 --  *horse masks*					hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163 
---  *horse feet*					hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232  
 --	*horse mustache*				hex unsigned: 0x30DEFDDF	dec unsigned: 819920351 	dec signed: 819920351  
 
 
@@ -3119,7 +3119,7 @@ local cloth_hash_names = {
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x1A6C9209,hash_dec_signed=443322889,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x20B72A9E,hash_dec_signed=548874910,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x22C9B060,hash_dec_signed=583643232,category_hash_dec_signed=-2041904210},
-	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x2A640582,hash_dec_signed=711198082,category_hash_dec_signed=-2041904210},
+	{hashname="",category_hashname="hats",ped_type="female",is_multiplayer=true,category_hash=0x9925C067,hash=0x2A640582,hash_dec_signed=711198082,category_hash_dec_signed=-1725579161},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x2B2B4268,hash_dec_signed=724255336,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x2B4270E8,hash_dec_signed=725774568,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x357B3AAA,hash_dec_signed=897268394,category_hash_dec_signed=-2041904210},
@@ -3129,20 +3129,20 @@ local cloth_hash_names = {
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x466EAC4B,hash_dec_signed=1181658187,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x4ED5435D,hash_dec_signed=1322599261,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x64963AFB,hash_dec_signed=1687567099,category_hash_dec_signed=-2041904210},
-	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x71BF8D56,hash_dec_signed=1908378966,category_hash_dec_signed=-2041904210},
+	{hashname="",category_hashname="hats",ped_type="female",is_multiplayer=true,category_hash=0x9925C067,hash=0x71BF8D56,hash_dec_signed=1908378966,category_hash_dec_signed=-1725579161},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x75AB5B78,hash_dec_signed=1974164344,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x78B55A99,hash_dec_signed=2025151129,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x7BA0D058,hash_dec_signed=2074136664,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x7C8136BD,hash_dec_signed=2088842941,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x857F9EFC,hash_dec_signed=-2055233796,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x8E433C71,hash_dec_signed=-1908196239,category_hash_dec_signed=-2041904210},
-	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0x8F4328D0,hash_dec_signed=-1891424048,category_hash_dec_signed=-2041904210},
+	{hashname="",category_hashname="hats",ped_type="female",is_multiplayer=true,category_hash=0x9925C067,hash=0x8F4328D0,hash_dec_signed=-1891424048,category_hash_dec_signed=-1725579161},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xA1B5C104,hash_dec_signed=-1581924092,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xA37C89AF,hash_dec_signed=-1552119377,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xA72B45E0,hash_dec_signed=-1490336288,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xB1B8D6FB,hash_dec_signed=-1313286405,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xB6ED8DFE,hash_dec_signed=-1225945602,category_hash_dec_signed=-2041904210},
-	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xB7772FA8,hash_dec_signed=-1216925784,category_hash_dec_signed=-2041904210},
+	{hashname="",category_hashname="hats",ped_type="female",is_multiplayer=true,category_hash=0x9925C067,hash=0xB7772FA8,hash_dec_signed=-1216925784,category_hash_dec_signed=-1725579161},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xBF6279DD,hash_dec_signed=-1084065315,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xC13E39C2,hash_dec_signed=-1052886590,category_hash_dec_signed=-2041904210},
 	{hashname="",category_hashname="hair",ped_type="female",is_multiplayer=true,category_hash=0x864B03AE,hash=0xC7A47B1C,hash_dec_signed=-945521892,category_hash_dec_signed=-2041904210},
