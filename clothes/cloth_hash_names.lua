@@ -73,7 +73,7 @@
 --  		"horse_manes"			hex unsigned: 0xAA0217AB 	dec unsigned: 2852263851 	dec signed: -1442703445
 --  		"HORSE_SADDLEBAGS"		hex unsigned: 0x80451C25 	dec unsigned: 2152012837 	dec signed: -2142954459
 --  		"HORSE_TAILS"			hex unsigned: 0xA63CAE10 	dec unsigned: 2788994576 	dec signed: -1505972720
---
+--  		"horse_shoes"			hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232 
 --  
 --
 --  UNKNOWN YET HASHNAMES FOR CATEGORIES:
@@ -88,8 +88,7 @@
 --  *horse saddle holster*			hex unsigned: 0xAC106B30 	dec unsigned: 2886757168 	dec signed: -1408210128
 --  *horse bridle*					hex unsigned: 0x94B2E3AF 	dec unsigned: 2494751663 	dec signed: -1800215633
 --  *horse lantern*					hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932  
---  *horse masks*					hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163 
---  *horse feet*					hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232  
+--  *horse masks*					hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163  
 --	*horse mustache*				hex unsigned: 0x30DEFDDF	dec unsigned: 819920351 	dec signed: 819920351  
 
 
@@ -8096,7 +8095,7 @@ local cloth_hash_names = {
 	{hashname="",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0xD3500E5D,hash=0xEEF65F11,hash_dec_signed=-285843695,category_hash_dec_signed=-749728163},
 	{hashname="",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0xD3500E5D,hash=0xF606EC4A,hash_dec_signed=-167318454,category_hash_dec_signed=-749728163},
 	{hashname="",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0xD3500E5D,hash=0xFA5B72BB,hash_dec_signed=-94670149,category_hash_dec_signed=-749728163},
-	{hashname="",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0xFACFC3C0,hash=0x0865A270,hash_dec_signed=140878448,category_hash_dec_signed=-87047232},
+	{hashname="horse_shoes",category_hashname="",ped_type="horse",is_multiplayer=true,category_hash=0xFACFC3C0,hash=0x0865A270,hash_dec_signed=140878448,category_hash_dec_signed=-87047232},
 	{hashname="CLOTHING_ITEM_SATCHEL_PZ_000_MONEY_BAG",category_hashname="accessories",ped_type="male",is_multiplayer=false,category_hash=0x79D7DF96,hash=0x1C92E7D8,hash_dec_signed=479389656,category_hash_dec_signed=2044190614},
 	{hashname="",category_hashname="accessories",ped_type="male",is_multiplayer=false,category_hash=0x79D7DF96,hash=0x281A5C46,hash_dec_signed=672816198,category_hash_dec_signed=2044190614},
 	{hashname="",category_hashname="accessories",ped_type="male",is_multiplayer=false,category_hash=0x79D7DF96,hash=0x51FBD089,hash_dec_signed=1375457417,category_hash_dec_signed=2044190614},
