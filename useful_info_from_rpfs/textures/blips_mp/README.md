@@ -11,7 +11,7 @@ addBlipForCoords("GROUP",GetHashKey("blip_adversary_large"),{2508.1557617188,-14
 ```
 
 <h3>Texture dictionary hashname (hash):</h3>
-<h2>BLIPS_MP (672378911)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/blips.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/blips.zip">without bg</a>]</h4>
+<h2>BLIPS_MP (672378911)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/blips_mp.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/blips_mp.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
 ------------ | ---------------- | --------------- | -----------
