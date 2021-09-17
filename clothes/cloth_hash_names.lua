@@ -80,17 +80,17 @@
 --  
 --  	PEDS:
 --  
---  								hex unsigned: 0xF8016BCA 	dec unsigned: 4160842698 	dec signed: -134124598
+--  *beards*						hex unsigned: 0xF8016BCA 	dec unsigned: 4160842698 	dec signed: -134124598
 --  								
 --  
 --  	HORSES:
 --  
---  								hex unsigned: 0xAC106B30 	dec unsigned: 2886757168 	dec signed: -1408210128
---  								hex unsigned: 0x94B2E3AF 	dec unsigned: 2494751663 	dec signed: -1800215633
---  								hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932  
---  								hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163 
---  								hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232  
-
+--  *horse saddle holster*			hex unsigned: 0xAC106B30 	dec unsigned: 2886757168 	dec signed: -1408210128
+--  *horse bridle*					hex unsigned: 0x94B2E3AF 	dec unsigned: 2494751663 	dec signed: -1800215633
+--  *horse lantern*					hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932  
+--  *horse masks*					hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163 
+--  *horse feet*					hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232  
+--	*horse mustache*				hex unsigned: 0x30DEFDDF	dec unsigned: 819920351 	dec signed: 819920351  
 
 
 
