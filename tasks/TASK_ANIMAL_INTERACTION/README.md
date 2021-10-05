@@ -1,20 +1,19 @@
 ## Animal Interaction Types
 
-	
 ## Example
 
 ```lua
 
-	-- TASK_ANIMAL_INTERACTION
+	-- TASK_ANIMAL_INTERACTION   I guess this name wrong. Because some interactions usable only ped. 
 	-- p0 - ped id
 	-- p1 - target ped id
 	-- p2 - interactionTypeHash
 	-- p3 - object model to use for interaction (0 if use nothing)
-	-- p4 -  1 = skip idle animation clip 
-	
+	-- p4 -  1 = skip idle animation clip
+
 	-- ped injected the horse with a syringe :
 	Citizen.InvokeNative(0xCD181A959CFDD7F4, PlayerPedId(), horse_ped_id, GetHashKey("Interaction_Injection_Quick"), GetHashKey("p_cs_syringe01x"), 1)
-	
+
 	-- brush horse
 	Citizen.InvokeNative(0xCD181A959CFDD7F4, PlayerPedId(), horse_ped_id, GetHashKey("Interaction_Brush"), GetHashKey("p_brushHorse02x"), 1)
 
@@ -25,122 +24,132 @@
 
 <h2>Some known Animal Interaction Types.</h2>
 
-	Interaction_Brush
-	Interaction_Dog_Idle
-	Interaction_Dog_Patting
-	Interaction_DrawBowFromScabbard
-	Interaction_DrawLeftPistol
-	Interaction_DrawRifleFromScabbard
-	Interaction_DrawRifleFromUnderSaddle
-	Interaction_DrawRifleFromUnderSaddle_BothHands
-	Interaction_DrawRightPistol
-	Interaction_DrawRightPistol_BothHands
-	Interaction_Food
-	Interaction_HolsterBowOnScabbard
-	Interaction_HolsterBowOnScabbard_DrawBowFromScabbard
-	Interaction_HolsterBowOnScabbard_DrawRifleFromScabbard
-	Interaction_HolsterBowOnScabbard_DrawRifleFromScabbard_BothHands
-	Interaction_HolsterBowOnScabbard_DrawRifleFromUnderSaddle
-	Interaction_HolsterBowOnScabbard_DrawRifleFromUnderSaddle_BothHands
-	Interaction_HolsterLeftPistol
-	Interaction_HolsterLeftPistol_DrawLeftPistol
-	Interaction_HolsterRifleUnderSaddle
-	Interaction_HolsterRifleUnderSaddle_BothHands
-	Interaction_HolsterRifleUnderSaddle_DrawBowFromScabbard
-	Interaction_HolsterRifleUnderSaddle_DrawBowFromScabbard_BothHands
-	Interaction_HolsterRifleUnderSaddle_DrawRifleFromScabbard
-	Interaction_HolsterRifleUnderSaddle_DrawRifleFromScabbard_BothHands
-	Interaction_HolsterRifleUnderSaddle_DrawRifleFromUnderSaddle
-	Interaction_HolsterRifleUnderSaddle_DrawRifleFromUnderSaddle_BothHands
-	Interaction_HolsterRightPistol
-	Interaction_HolsterRightPistol_BothHands
-	Interaction_HolsterRightPistol_DrawRightPistol
-	Interaction_HolsterRightPistol_DrawRightPistol_BothHands
-	Interaction_Injection_Quick
-	Interaction_LootSaddleBags
-	Interaction_Ointment
-	Interaction_PositiveLong
-	Interaction_PositiveLong1H
-	Interaction_PositiveLongAgitated
-	Interaction_PositiveShort
-	Interaction_PositiveShort1H
-	Interaction_PositiveShortAgitated
-	Interaction_RemoveArmadillo
-	Interaction_RemoveBadger
-	Interaction_RemoveCaliforniaCondor
-	Interaction_RemoveCat
-	Interaction_RemoveChicken
-	Interaction_RemoveCormorant
-	Interaction_RemoveCraneWhooping
-	Interaction_RemoveDuck
-	Interaction_RemoveDuckMallard
-	Interaction_RemoveEagle
-	Interaction_RemoveEgret
-	Interaction_RemoveFishBag
-	Interaction_RemoveGilaMonster
-	Interaction_RemoveGoose
-	Interaction_RemoveHawk
-	Interaction_RemoveHeron
-	Interaction_RemoveIguana
-	Interaction_RemoveLoon
-	Interaction_RemoveMuskrat
-	Interaction_RemoveOwl
-	Interaction_RemoveParrot
-	Interaction_RemovePelican
-	Interaction_RemovePheasant
-	Interaction_RemovePossum
-	Interaction_RemovePrairieChicken
-	Interaction_RemoveRabbit
-	Interaction_RemoveRaccoon
-	Interaction_RemoveRaven
-	Interaction_RemoveRedFootedBooby
-	Interaction_RemoveRooster
-	Interaction_RemoveRoseateSpoonbill
-	Interaction_RemoveSeagull
-	Interaction_RemoveSkunk
-	Interaction_RemoveSnake
-	Interaction_RemoveTurkey
-	Interaction_RemoveTurkey_02
-	Interaction_RemoveTurkeyWild
-	Interaction_RemoveVulture
-	Interaction_StowArmadillo
-	Interaction_StowBadger
-	Interaction_StowCaliforniaCondor
-	Interaction_StowCat
-	Interaction_StowChicken
-	Interaction_StowCormorant
-	Interaction_StowCraneWhooping
-	Interaction_StowDuck
-	Interaction_StowDuckMallard
-	Interaction_StowEagle
-	Interaction_StowEgret
-	Interaction_StowFishBag
-	Interaction_StowGilaMonster
-	Interaction_StowGoose
-	Interaction_StowHawk
-	Interaction_StowHeron
-	Interaction_StowIguana
-	Interaction_StowLoon
-	Interaction_StowMediumPelt
-	Interaction_StowMuskrat
-	Interaction_StowOwl
-	Interaction_StowParrot
-	Interaction_StowPelican
-	Interaction_StowPheasant
-	Interaction_StowPossum
-	Interaction_StowPrairieChicken
-	Interaction_StowRabbit
-	Interaction_StowRaccoon
-	Interaction_StowRaven
-	Interaction_StowRedFootedBooby
-	Interaction_StowRooster
-	Interaction_StowRoseateSpoonbill
-	Interaction_StowSaddle
-	Interaction_StowSeagull
-	Interaction_StowSkunk
-	Interaction_StowSnake
-	Interaction_StowTurkey
-	Interaction_StowTurkey_02
-	Interaction_StowTurkeyWild
-	Interaction_StowVulture
-	Interaction_TuckMediumPelt
+    INTERACTION_BRUSH
+    INTERACTION_DOG_IDLE
+    INTERACTION_DOG_PATTING
+    INTERACTION_DRAWBOWFROMSCABBARD
+    INTERACTION_DRAWLEFTPISTOL
+    INTERACTION_DRAWRIFLEFROMSCABBARD
+    INTERACTION_DRAWRIFLEFROMUNDERSADDLE
+    INTERACTION_DRAWRIFLEFROMUNDERSADDLE_BOTHHANDS
+    INTERACTION_DRAWRIGHTPISTOL
+    INTERACTION_DRAWRIGHTPISTOL_BOTHHANDS
+    INTERACTION_FOOD
+    INTERACTION_HOLSTERBOWONSCABBARD
+    INTERACTION_HOLSTERBOWONSCABBARD_DRAWBOWFROMSCABBARD
+    INTERACTION_HOLSTERBOWONSCABBARD_DRAWRIFLEFROMSCABBARD
+    INTERACTION_HOLSTERBOWONSCABBARD_DRAWRIFLEFROMSCABBARD_BOTHHANDS
+    INTERACTION_HOLSTERBOWONSCABBARD_DRAWRIFLEFROMUNDERSADDLE
+    INTERACTION_HOLSTERBOWONSCABBARD_DRAWRIFLEFROMUNDERSADDLE_BOTHHANDS
+    INTERACTION_HOLSTERLEFTPISTOL
+    INTERACTION_HOLSTERLEFTPISTOL_DRAWLEFTPISTOL
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE_BOTHHANDS
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE_DRAWBOWFROMSCABBARD
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE_DRAWBOWFROMSCABBARD_BOTHHANDS
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE_DRAWRIFLEFROMSCABBARD
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE_DRAWRIFLEFROMSCABBARD_BOTHHANDS
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE_DRAWRIFLEFROMUNDERSADDLE
+    INTERACTION_HOLSTERRIFLEUNDERSADDLE_DRAWRIFLEFROMUNDERSADDLE_BOTHHANDS
+    INTERACTION_HOLSTERRIGHTPISTOL
+    INTERACTION_HOLSTERRIGHTPISTOL_BOTHHANDS
+    INTERACTION_HOLSTERRIGHTPISTOL_DRAWRIGHTPISTOL
+    INTERACTION_HOLSTERRIGHTPISTOL_DRAWRIGHTPISTOL_BOTHHANDS
+    INTERACTION_INJECTION_QUICK
+    INTERACTION_LOOTSADDLEBAGS
+    INTERACTION_OINTMENT
+    INTERACTION_PATDOWNEARLYCOUNTERFAILMELEE -- use male/female ped not horse
+    INTERACTION_PATDOWNEARLYCOUNTERFAILPISTOL -- use male/female ped not horse
+    INTERACTION_PATDOWNEARLYCOUNTERFAILPUSH -- use male/female ped not horse
+    INTERACTION_PATDOWNQUICKKILLGUN1 -- use male/female ped not horse
+    INTERACTION_PATDOWNQUICKKILLGUN2 -- use male/female ped not horse
+    INTERACTION_PATDOWNQUICKKILLGUN3 -- use male/female ped not horse
+    INTERACTION_PATDOWNQUICKKILLGUN4 -- use male/female ped not horse
+    INTERACTION_PATDOWNSUCCESS -- use male/female ped not horse
+    INTERACTION_PATDOWNTARGET -- use male/female ped not horse
+    INTERACTION_POSITIVELONG
+    INTERACTION_POSITIVELONG1H
+    INTERACTION_POSITIVELONGAGITATED
+    INTERACTION_POSITIVESHORT
+    INTERACTION_POSITIVESHORT1H
+    INTERACTION_POSITIVESHORTAGITATED
+    INTERACTION_POSITIVESHORTHORSEBREAKING
+    INTERACTION_REMOVEARMADILLO
+    INTERACTION_REMOVEBADGER
+    INTERACTION_REMOVECALIFORNIACONDOR
+    INTERACTION_REMOVECAT
+    INTERACTION_REMOVECHICKEN
+    INTERACTION_REMOVECORMORANT
+    INTERACTION_REMOVECRANEWHOOPING
+    INTERACTION_REMOVEDUCK
+    INTERACTION_REMOVEDUCKMALLARD
+    INTERACTION_REMOVEEAGLE
+    INTERACTION_REMOVEEGRET
+    INTERACTION_REMOVEFISHBAG
+    INTERACTION_REMOVEGILAMONSTER
+    INTERACTION_REMOVEGOOSE
+    INTERACTION_REMOVEHAWK
+    INTERACTION_REMOVEHERON
+    INTERACTION_REMOVEIGUANA
+    INTERACTION_REMOVELOON
+    INTERACTION_REMOVEMUSKRAT
+    INTERACTION_REMOVEOWL
+    INTERACTION_REMOVEPARROT
+    INTERACTION_REMOVEPELICAN
+    INTERACTION_REMOVEPHEASANT
+    INTERACTION_REMOVEPOSSUM
+    INTERACTION_REMOVEPRAIRIECHICKEN
+    INTERACTION_REMOVERABBIT
+    INTERACTION_REMOVERACCOON
+    INTERACTION_REMOVERAVEN
+    INTERACTION_REMOVEREDFOOTEDBOOBY
+    INTERACTION_REMOVEROOSTER
+    INTERACTION_REMOVEROSEATESPOONBILL
+    INTERACTION_REMOVESEAGULL
+    INTERACTION_REMOVESKUNK
+    INTERACTION_REMOVESNAKE
+    INTERACTION_REMOVETURKEY
+    INTERACTION_REMOVETURKEY_02
+    INTERACTION_REMOVETURKEYWILD
+    INTERACTION_REMOVEVULTURE
+    INTERACTION_STOWARMADILLO
+    INTERACTION_STOWBADGER
+    INTERACTION_STOWCALIFORNIACONDOR
+    INTERACTION_STOWCAT
+    INTERACTION_STOWCHICKEN
+    INTERACTION_STOWCORMORANT
+    INTERACTION_STOWCRANEWHOOPING
+    INTERACTION_STOWDUCK
+    INTERACTION_STOWDUCKMALLARD
+    INTERACTION_STOWEAGLE
+    INTERACTION_STOWEGRET
+    INTERACTION_STOWFISHBAG
+    INTERACTION_STOWGILAMONSTER
+    INTERACTION_STOWGOOSE
+    INTERACTION_STOWHAWK
+    INTERACTION_STOWHERON
+    INTERACTION_STOWIGUANA
+    INTERACTION_STOWLOON
+    INTERACTION_STOWMEDIUMPELT
+    INTERACTION_STOWMUSKRAT
+    INTERACTION_STOWOWL
+    INTERACTION_STOWPARROT
+    INTERACTION_STOWPELICAN
+    INTERACTION_STOWPHEASANT
+    INTERACTION_STOWPOSSUM
+    INTERACTION_STOWPRAIRIECHICKEN
+    INTERACTION_STOWRABBIT
+    INTERACTION_STOWRACCOON
+    INTERACTION_STOWRAVEN
+    INTERACTION_STOWREDFOOTEDBOOBY
+    INTERACTION_STOWROOSTER
+    INTERACTION_STOWROSEATESPOONBILL
+    INTERACTION_STOWSADDLE
+    INTERACTION_STOWSEAGULL
+    INTERACTION_STOWSKUNK
+    INTERACTION_STOWSNAKE
+    INTERACTION_STOWTURKEY
+    INTERACTION_STOWTURKEY_02
+    INTERACTION_STOWTURKEYWILD
+    INTERACTION_STOWVULTURE
+    INTERACTION_TUCKMEDIUMPELT
