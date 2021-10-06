@@ -56,15 +56,27 @@
 	Interaction_HolsterRightPistol_BothHands
 	Interaction_HolsterRightPistol_DrawRightPistol
 	Interaction_HolsterRightPistol_DrawRightPistol_BothHands
+	Interaction_Idle
 	Interaction_Injection_Quick
 	Interaction_LootSaddleBags
 	Interaction_Ointment
+	Interaction_PatDownEarlyCounterFailMelee	<em>(target ped is human)</em>
+	Interaction_PatDownEarlyCounterFailPistol	<em>(target ped is human)</em>
+	Interaction_PatDownEarlyCounterFailPush	<em>(target ped is human)</em>
+	Interaction_PatDownQuickKillGun1	<em>(target ped is human)</em>
+	Interaction_PatDownQuickKillGun2	<em>(target ped is human)</em>
+	Interaction_PatDownQuickKillGun3	<em>(target ped is human)</em>
+	Interaction_PatDownQuickKillGun4	<em>(target ped is human)</em>
+	Interaction_PatDownSuccess	<em>(target ped is human)</em>
+	Interaction_PatDownTarget	<em>(target ped is human)</em>
+	Interaction_PickupPlant
 	Interaction_PositiveLong
 	Interaction_PositiveLong1H
 	Interaction_PositiveLongAgitated
 	Interaction_PositiveShort
 	Interaction_PositiveShort1H
 	Interaction_PositiveShortAgitated
+	Interaction_PositiveShortHorseBreaking
 	Interaction_RemoveArmadillo
 	Interaction_RemoveBadger
 	Interaction_RemoveCaliforniaCondor
