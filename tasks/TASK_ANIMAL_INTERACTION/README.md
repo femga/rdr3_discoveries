@@ -60,15 +60,15 @@
 	Interaction_Injection_Quick
 	Interaction_LootSaddleBags
 	Interaction_Ointment
-	Interaction_PatDownEarlyCounterFailMelee	<em>(target ped is human)</em>
-	Interaction_PatDownEarlyCounterFailPistol	<em>(target ped is human)</em>
-	Interaction_PatDownEarlyCounterFailPush	<em>(target ped is human)</em>
-	Interaction_PatDownQuickKillGun1	<em>(target ped is human)</em>
-	Interaction_PatDownQuickKillGun2	<em>(target ped is human)</em>
-	Interaction_PatDownQuickKillGun3	<em>(target ped is human)</em>
-	Interaction_PatDownQuickKillGun4	<em>(target ped is human)</em>
-	Interaction_PatDownSuccess	<em>(target ped is human)</em>
-	Interaction_PatDownTarget	<em>(target ped is human)</em>
+	Interaction_PatDownEarlyCounterFailMelee		(target ped is human)
+	Interaction_PatDownEarlyCounterFailPistol		(target ped is human)
+	Interaction_PatDownEarlyCounterFailPush		(target ped is human)
+	Interaction_PatDownQuickKillGun1		(target ped is human)
+	Interaction_PatDownQuickKillGun2		(target ped is human)
+	Interaction_PatDownQuickKillGun3		(target ped is human)
+	Interaction_PatDownQuickKillGun4		(target ped is human)
+	Interaction_PatDownSuccess		(target ped is human)
+	Interaction_PatDownTarget		(target ped is human)
 	Interaction_PickupPlant
 	Interaction_PositiveLong
 	Interaction_PositiveLong1H
