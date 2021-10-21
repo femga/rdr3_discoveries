@@ -5,34 +5,35 @@
 - [1. Item Interaction Types](#1-item-interaction-types)
 - [2. Example](#2-example)
 - [3. Dict & Prop](#3-dict--prop)
-- [<h2> 4. itemInteractionState & propId </h2>](#h2-4-iteminteractionstate--propid-h2)
+- [<h2> 4. item_interaction_state_name & item_interaction_propId </h2>](#h2-4-iteminteractionstate--propid-h2)
 
 ```lua
 
 --TaskItemInteraction(
---	ped --[[ Ped ]],
---	animType --[[ Hash ]],
---	propId --[[ Hash ]],
---	p3 --[[ integer ]],
---	p4 --[[ integer ]],
+--	ped, --[[ Ped ]]
+--	inventory_item_hash, --[[ Hash ]]
+--	item_interaction_state_name, --[[ Hash ]]
+--	p3, --[[ integer ]]
+--	item_interaction_flags, --[[ integer ]]
 --	p5 --[[ number ]]
 --)
+--
 --TaskItemInteraction_2(
---	ped --[[ Ped ]],
---	propNameGxt --[[ Hash ]],
---	prop --[[ Object ]],
---	propId --[[ Hash ]],
---	itemInteractionState --[[ Hash ]],
---	p5 --[[ integer ]],
---	p6 --[[ Any ]],
---	p7 --[[ number ]]
+--	ped, --[[ Ped ]]
+--	inventory_item_hash, --[[ Hash ]]
+--	object_id, --[[ Object ]]
+--	item_interaction_propId_hash, --[[ Hash ]]
+--	item_interaction_state_name_hash, --[[ Hash ]]
+--	p5, --[[ integer ]]
+--	item_interaction_flags, --[[ Any ]]
+--	p7, --[[ number ]]
 --)
 
 
 
-TaskItemInteraction(PlayerPedId(), nil, GetHashKey("JOURNAL_USE"), 1, 0, 0)
+TaskItemInteraction(PlayerPedId(), GetHashKey("DOCUMENT_PLAYER_JOURNAL"), GetHashKey("JOURNAL_USE"), 1, 0, 0)
 
-TaskItemInteraction_2(PlayerPedId(), GetHashKey("CONSUMABLE_COFFEE"), object, GetHashKey("P_MUGCOFFEE01X_PH_R_HAND"), GetHashKey("DRINK_COFFEE_HOLD"), 1, 0, -1082130432) -- this native needed object
+TaskItemInteraction_2(PlayerPedId(), GetHashKey("CONSUMABLE_COFFEE"), object_id, GetHashKey("P_MUGCOFFEE01X_PH_R_HAND"), GetHashKey("DRINK_COFFEE_HOLD"), 1, 0, -1) -- this native requires an object
 
 ```
 
@@ -96,9 +97,9 @@ TaskItemInteraction_2(PlayerPedId(), GetHashKey("CONSUMABLE_COFFEE"), object, Ge
 | WEAPON_REVOLVER_CATTLEMAN                                          | w_revolver_cattleman01 </br>w_revolver_doubleaction01 </br>w_pistol_mauser01 </br>w_revolver_schofield01 </br>w_pistol_semiauto01 </br>w_pistol_volcanic01 </br>w_shotgun_sawed01 </br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | WEDGE@A4-2_B0-75_W8_H9-4_InspectY                                  | s_candyBag01x_red </br>s_cheeseWedge1x </br>s_inv_baitHerb01x </br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-## <h2> 4. itemInteractionState & propId </h2>
+## <h2> 4. item_interaction_state_name & item_interaction_propId </h2>
 
-|          propId           | itemInteractionState                                                                | itemInteractionState hash |
+|          item_interaction_propId           | item_interaction_state_name                                                                | item_interaction_state_name hash |
 | :-----------------------: | ----------------------------------------------------------------------------------- | :-----------------------: |
 |        PrimaryItem        | APPLY_LOTION_BOTH_HANDS                                                             |        0x672FE666         |
 |        PrimaryItem        | APPLY_LOTION_LEFT_HAND                                                              |        0x552BD685         |
