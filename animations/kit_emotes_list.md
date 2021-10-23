@@ -1,34 +1,66 @@
--- ============================================================================
--- ============================================================================
--- ============================================================================
--- 
--- EXAMPLE OF USING:
--- 
--- Citizen.CreateThread(function()
---     while true do
---         Citizen.Wait(0) 
---         if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
---          	Citizen.InvokeNative(0xB31A277C1AC7B7FF,PlayerPedId(),1,2,GetHashKey("KIT_EMOTE_GREET_FANCY_BOW_1"),0,0,0,0,0)  -- FULL BODY EMOTE
---          	-- Citizen.InvokeNative(0xB31A277C1AC7B7FF,PlayerPedId(),0,0,GetHashKey("KIT_EMOTE_GREET_FANCY_BOW_1"),1,1,0,0,0)  -- UPPER BODY EMOTE
---         end     
---     end
--- end)
--- if u want use "KIT_EMOTE_TWIRL_GUN" these use this code
--- Citizen.InvokeNative(0xB31A277C1AC7B7FF, PlayerPedId(), 4, 1, GetHashKey("KIT_EMOTE_TWIRL_GUN"), 1, 1, 0, 0)
---
--- but "KIT_EMOTE_TWIRL_GUN_VAR_*" these variation still not working
---
--- 
--- ============================================================================
--- ============================================================================
--- ============================================================================
+ EXAMPLE OF USING:
+
+ ```lua
+ Citizen.CreateThread(function()
+     while true do
+         Citizen.Wait(0) 
+         if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
+          	Citizen.InvokeNative(0xB31A277C1AC7B7FF,PlayerPedId(),1,2,GetHashKey("KIT_EMOTE_GREET_FANCY_BOW_1"),0,0,0,0,0)  -- FULL BODY EMOTE
+          	-- Citizen.InvokeNative(0xB31A277C1AC7B7FF,PlayerPedId(),0,0,GetHashKey("KIT_EMOTE_GREET_FANCY_BOW_1"),1,1,0,0,0)  -- UPPER BODY EMOTE
+         end     
+     end
+ end)
+```
+ if u want use "KIT_EMOTE_TWIRL_GUN" these use this code
+
+ ```lua
+ Citizen.InvokeNative(0xB31A277C1AC7B7FF, PlayerPedId(), 4, 1, GetHashKey("KIT_EMOTE_TWIRL_GUN"), 1, 1, 0, 0)
+ ```
+
+ If you want variation of KIT_EMOTE_TWIRL_GUN_VAR* use these code block.
+```lua
+	-- from Maniac#7878
+	local emote = `KIT_EMOTE_TWIRL_GUN` or `KIT_EMOTE_TWIRL_GUN_DUAL` or `KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER`
+	RegisterCommand("spin", function(source, args)
+		local emote_variation = tonumber( args[1] )
+		if ( emote_variation ) then
+			local ped = PlayerPedId()--
+			Citizen.InvokeNative(0xCBCFFF805F1B4596, ped, emote)
+			Citizen.InvokeNative(0xB31A277C1AC7B7FF, ped, 4, 1, Citizen.InvokeNative(0x2C4FEC3D0EFA9FC0, ped), true, false, false, false, false)
+			Citizen.InvokeNative(0x01F661BB9C71B465, ped, 4, N_0xf4601c1203b1a78d(emote, emote_variation))
+			Citizen.InvokeNative(0x408CF580C5E96D49, ped, 4)--
+		end
+	end)
+	Example Code: /spin *variation* 0-6
+```
 
 
+Emote                   | Variation |
+:-:|:-:|
+KIT_EMOTE_TWIRL_GUN     |     -982117008 |
+KIT_EMOTE_TWIRL_GUN     |     551026234 |
+KIT_EMOTE_TWIRL_GUN     |     -2052623759 |
+KIT_EMOTE_TWIRL_GUN     |     1558660523 |
+KIT_EMOTE_TWIRL_GUN     |     -1583776004 |
+KIT_EMOTE_TWIRL_GUN     |     -2141290034 |
+KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER     |     -982117008 |
+KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER     |     551026234 |
+KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER     |     -2052623759 |
+KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER     |     1558660523 |
+KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER     |     -1583776004 |
+KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER     |     -2141290034 |
+KIT_EMOTE_TWIRL_GUN_DUAL     |     -982117008 |
+KIT_EMOTE_TWIRL_GUN_DUAL     |     551026234 |
+KIT_EMOTE_TWIRL_GUN_DUAL     |     -2052623759 |
+KIT_EMOTE_TWIRL_GUN_DUAL     |     1558660523 |
+KIT_EMOTE_TWIRL_GUN_DUAL     |     -1583776004 |
+KIT_EMOTE_TWIRL_GUN_DUAL     |     -2141290034 |
+-|-|
 
 
+```
 
 local kit_emotes = {
-
 	"KIT_EMOTE_ACTION_AIR_BANJO_1",                --0x910C8F72        -1861447822   --new
 	"KIT_EMOTE_ACTION_BECKON_1",                   --0x7FC09D55        2143329621
 	"KIT_EMOTE_ACTION_BITING_GOLD_COIN_1",         --0x17AA1FFF        397025279
@@ -150,14 +182,13 @@ local kit_emotes = {
 	"KIT_EMOTE_TAUNT_YOUSTINK_1",                  --0xF6130E04        -166523388
 	"KIT_EMOTE_TWIRL_GUN",                         --0xE6D0DD51        -422519471
 	"KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER",            --0x43F0C62B        1139852843
+	"KIT_EMOTE_TWIRL_GUN_DUAL",                    --0xE04E36A5        -531745115
+	"KIT_EMOTE_TWIRL_GUN_HOLD",                    --0xFAEF688A        -84973430
+	"KIT_EMOTE_TWIRL_GUN_VAR_A",                   --0xEA8D9B45        -359818427
+	"KIT_EMOTE_TWIRL_GUN_VAR_B",                   --0x4125C878        1092995192
+	"KIT_EMOTE_TWIRL_GUN_VAR_C",                   --0x4F2BE484        1328276612
+	"KIT_EMOTE_TWIRL_GUN_VAR_D",                   --0x288A1741        680138561
+	"KIT_EMOTE_TWIRL_GUN_VAR_E",                   --0x36D7B3DC        920105948   	--new
+	"KIT_EMOTE_TWIRL_GUN_VAR_F",                   --0x8A415AAE        -1975428434  --new
 
-	"KIT_EMOTE_TWIRL_GUN_DUAL",                    --??? 0xE04E36A5        -531745115
-	"KIT_EMOTE_TWIRL_GUN_HOLD",                    --??? 0xFAEF688A        -84973430
-	"KIT_EMOTE_TWIRL_GUN_VAR_A",                   --??? 0xEA8D9B45        -359818427
-	"KIT_EMOTE_TWIRL_GUN_VAR_B",                   --??? 0x4125C878        1092995192
-	"KIT_EMOTE_TWIRL_GUN_VAR_C",                   --??? 0x4F2BE484        1328276612
-	"KIT_EMOTE_TWIRL_GUN_VAR_D",                   --??? 0x288A1741        680138561
-	"KIT_EMOTE_TWIRL_GUN_VAR_E",                   --??? 0x36D7B3DC        920105948   	--new
-	"KIT_EMOTE_TWIRL_GUN_VAR_F",                   --??? 0x8A415AAE        -1975428434  --new
-
-}
+}```
