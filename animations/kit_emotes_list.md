@@ -17,7 +17,7 @@
  Citizen.InvokeNative(0xB31A277C1AC7B7FF, PlayerPedId(), 4, 1, GetHashKey("KIT_EMOTE_TWIRL_GUN"), 1, 1, 0, 0)
  ```
 
- If you want variation of KIT_EMOTE_TWIRL_GUN_VAR* use these code block.
+ If you want variation of `KIT_EMOTE_TWIRL_GUN` or `KIT_EMOTE_TWIRL_GUN_DUAL` or `KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER` use these code block.
 ```lua
 	-- from Maniac#7878
 	local emote = `KIT_EMOTE_TWIRL_GUN` or `KIT_EMOTE_TWIRL_GUN_DUAL` or `KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER`
