@@ -250,15 +250,15 @@ local kit_emotes = {
 
 
 	-- for ped model a_c_boar_01 (use emote_category 4 (TwirlGun)):
-	"BOAR_EMOTE",									-- 	0x9D11F0CE		-1659768626
+	"BOAR_EMOTE",					-- 	0x9D11F0CE		-1659768626
 
 	-- for ped model a_c_buck_01 (use emote_category 4 (TwirlGun)): 		
-    "BUCK_EMOTE",									-- 	0x0887EA4C		143125068
+    	"BUCK_EMOTE",					-- 	0x0887EA4C		143125068
 
-    -- for ped model a_c_possum_01 (use emote_category 4 (TwirlGun)):	
-    "POSSUM_EMOTE",                           		-- 	0x60B1440C		1622230028
+    	-- for ped model a_c_possum_01 (use emote_category 4 (TwirlGun)):	
+    	"POSSUM_EMOTE",                           	-- 	0x60B1440C		1622230028
 
-    -- for ped model a_c_rabbit_01 (use emote_category 4 (TwirlGun)):	
-    "RABBIT_EMOTE",                             	-- 	0x608663CD		1619420109
+    	-- for ped model a_c_rabbit_01 (use emote_category 4 (TwirlGun)):	
+    	"RABBIT_EMOTE",                             	-- 	0x608663CD		1619420109
 
 }
