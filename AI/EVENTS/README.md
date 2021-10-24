@@ -157,9 +157,9 @@ EVENT_PLAYER_MOUNT_WILD_HORSE | 0 | 1 | 0 - wild horse ped id
 EVENT_PLAYER_PROMPT_TRIGGERED | 0 | 10 | 0 - prompt type id ( [list](#prompt-type-ids) )<br> 1 - <em>unknown</em><br> 2 - target entity id<br> 3 - <em>unknown</em> (??? discovered inventory item)<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - discoverable entity type id ( [list](#discoverable-entity-type-ids) )<br> 8 - <em>unknown</em><br> 9 - kit_emote_action hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/animations/kit_emotes_list.lua) )
 EVENT_RAN_OVER_PED | 0 | 2 | 0 - <em>unknown</em><br> 1 - ped id that was ran over
 EVENT_REVIVE_ENTITY | 0 | 3 | 0 - VictimEntityId<br> 1 - reviver ped id<br> 2 - used inventory item hash
-EVENT_SCENARIO_ADD_PED | 0 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
-EVENT_SCENARIO_DESTROY_PROP | 0 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
-EVENT_SCENARIO_REMOVE_PED | 0 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
+EVENT_SCENARIO_ADD_PED | 2 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
+EVENT_SCENARIO_DESTROY_PROP | 2 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
+EVENT_SCENARIO_REMOVE_PED | 2 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
 EVENT_SHOCKING_ITEM_STOLEN | 0 | 3 | 0 - ped id<br> 1 - ped id<br> 2 - carriable entity id
 EVENT_SHOT_FIRED_BULLET_IMPACT | 0 | 1 | 0 - entity id that bullet hit
 EVENT_SHOT_FIRED_WHIZZED_BY | 0 | 1 | 0 - entity id that was shot
