@@ -17,9 +17,10 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 5 |  |  |  | **true**
 6 | PCF_DontInfluenceWantedLevel |  |  | false
 7 | PCF_DisableLockonToRandomPeds |  |  | false
-10 | prevent using first person view ?? | cancel this config |  | false
+9 | PCF_KilledByStealth |  |  | false
+10 | PCF_KilledByTakedown |  |  | false
 11 | PCF_Knockedout |  |  | false
-12 |  |  | PCF_IsAimingGun | false
+12 | PCF_IsAimingGun |  |  | false
 13 | PCF_ForcedAim |  |  | false
 14 |  |  | can ped free moving (not ragdoll and not covering) | **true**
 20 | prevent ped to quick switch weapon (with TAB button) |  |  | false
@@ -28,19 +29,30 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 24 |  |  |  | **true**
 26 | PCF_DisableMelee | cancel this config |  | false
 35 |  |  |  | **true**
+39 | PCF_ArrestResult |  |  | false
 40 | PCF_CanAttackFriendly |  |  | false
 43 | PCF_DisableLadderClimbing | cancel this config |  | false
 45 |  |  |  | **true**
+49 | PCF_CanPerformArrest |  |  | false
+50 | PCF_CanPerformUncuff |  |  | false
 51 | PCF_CanBeArrested |  |  | false
 62 | PCF_IsInCustody |  |  | false
 65 | PCF_PreventAutoShuffleToDriversSeat |  |  | false
+67 | PCF_PlayerIsWeird |  |  | false
 71 |  |  | was ped shoot from firearms at least once | false
+77 | PCF_DisableExplosionReactions |  |  | false
 80 |  |  |  | **true**
+87 | PCF_DisablePedAvoidance |  |  | false
+89 | PCF_DisablePanicInVehicle |  |  | false
 90 |  |  |  | **true**
 91 | do something with vertex on long coats |  |  | false
 99 |  |  |  | **true**
 103 |  |  |  | **true**
-109 |  |  |  | **true**
+107 | PCF_DontBlipCop |  |  | false
+109 | PCF_AvoidTearGas |  |  | **true**
+113 | PCF_DisableShockingEvents |  |  | false
+130 | PCF_DisableTalkTo |  |  | false
+131 | PCF_DontBlip |  |  | false
 136 | (for horse) disable mount | cancel this config |  | false
 138 | PCF_OneShotWillKillPed |  |  | false
 139 |  |  | (for horse) are horse legs in the air ?? | false
@@ -59,6 +71,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 177 |  |  | (for horse) is horse mounted by rider | false
 178 | PCF_AllowNonTempExceptionEvents |  |  | false
 182 | setting ped not to cop blip since friendly |  |  | false
+183 | PCF_IsDuckingInVehicle |  |  | false
 192 | NPCs cant attack ped | cancel this config |  | false
 194 | PCF_ShouldPedFollowersIgnoreWaypointMBR |  |  | false
 207 | PCF_FlamingHoovesActive |  |  | false
@@ -80,13 +93,14 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 260 | PCF_IsScuba |  |  | false
 263 | PCF_NoCriticalHits |  |  | false
 264 | PCF_UpperBodyDamageAnimsOnly |  |  | **true**
-265 | disable drowning |  |  | **true**
+265 | PCF_DrownsInWater |  |  | **true**
 267 |  |  |  | **true**
 270 |  |  |  | **true**
 273 | PCF_NeverEverTargetThisPed |  |  | false
 278 | PCF_ClearRadarBlipOnDeath |  |  | **true**
+279 | PCF_NeverLeavesGroup |  |  | false
 280 | PCF_DontEnterLeadersVehicle |  |  | false
-286 |  |  | is ped patting horse | false
+286 | PCF_DisableEvasiveDives |  |  | false
 287 | PCF_AllowMissionDriverlessDraftAnimalResponse |  |  | false
 291 |  |  |  | **true**
 292 |  |  | is ped using scenario | **true**
