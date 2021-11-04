@@ -38,6 +38,31 @@ Citizen.CreateThread(function()
 						print("4: IsOnGround: "..eventDataStruct:GetInt32(32))
 					end
 
+				elseif eventAtIndex == -140551285 then   -- if eventAtIndex == GetHashKey("EVENT_ENTITY_EXPLOSION")
+
+					local eventDataSize = 6  -- for EVENT_ENTITY_EXPLOSION data size is 6. Check table below.
+
+					local eventDataStruct = DataView.ArrayBuffer(8*6) -- buffer must be 8*eventDataSize or bigger
+					eventDataStruct:SetInt32(0 ,0)		 	-- 8*0 offset for 0 element of eventData	
+					eventDataStruct:SetInt32(8 ,0)    	  	-- 8*1 offset for 1 element of eventData		
+					eventDataStruct:SetInt32(16 ,0)			-- 8*2 offset for 2 element of eventData	
+					eventDataStruct:SetInt32(24 ,0)			-- 8*3 offset for 3 element of eventData	
+					eventDataStruct:SetInt32(32,0)    		-- 8*4 offset for 4 element of eventData
+					eventDataStruct:SetInt32(40,0)    		-- 8*5 offset for 5 element of eventData		
+					-- etc +8 offset for each next element (if data size is bigger then 6)
+
+
+					local is_data_exists = Citizen.InvokeNative(0x57EC5FA4D4D6AFCA,0,i,eventDataStruct:Buffer(),eventDataSize)	-- GET_EVENT_DATA
+
+					if is_data_exists then
+						print("0: pedId who did explosion: "..eventDataStruct:GetInt32(0))
+						print("1: unknown: "..eventDataStruct:GetInt32(8))
+						print("2: weaponhash: "..eventDataStruct:GetInt32(16))
+						print("3: explosion coord x: "..eventDataStruct:GetFloat32(24))		-- some data is float, check table below.
+						print("4: explosion coord y: "..eventDataStruct:GetFloat32(32))		-- some data is float, check table below.
+						print("5: explosion coord z: "..eventDataStruct:GetFloat32(40))		-- some data is float, check table below.
+					end
+
 				end
 			end
 		end
@@ -64,11 +89,11 @@ EVENT_CHALLENGE_REWARD | 0 | 3 | 0 - challenge reward hash<br> 1 - <em>unknown</
 EVENT_CONTAINER_INTERACTION | 0 | 4 | 0 - searcher ped id<br> 1 - searched entity id<br> 2 - <em>unknown</em><br> 3 - isContainerClosed after interaction
 EVENT_CRIME_CONFIRMED | 0 | 3 | 0 - crime type hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/crime_types.lua) )<br> 1 - criminal ped id<br> 2 - witness
 EVENT_DAILY_CHALLENGE_STREAK_COMPLETED | 0 | 1 | 0 - <em>unknown</em> (??? isDailyChallengeStreakCompleted)
-EVENT_ENTITY_BROKEN | 0 | 9 | 0 - broken entity id<br> 1 - <em>unknown</em> <br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
-EVENT_ENTITY_DAMAGED | 0 | 9 | 0 - damaged entity id<br> 1 - object (or ped id) that caused damage to the entity <br> 2 - weaponHash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - ammo hash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
-EVENT_ENTITY_DESTROYED | 0 | 9 | 0 - destroyed entity id<br> 1 - object (or ped id) that caused damage to the entity<br> 2 - weaponHash that damaged the entity  ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - ammo hash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em>
+EVENT_ENTITY_BROKEN | 0 | 9 | 0 - broken entity id<br> 1 - <em>unknown</em> <br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em>(??? damage amount)<br> 5 - <em>unknown</em><br> 6 - (float) entity coord x<br> 7 - (float) entity coord y<br> 8 - (float) entity coord z
+EVENT_ENTITY_DAMAGED | 0 | 9 | 0 - damaged entity id<br> 1 - object (or ped id) that caused damage to the entity <br> 2 - weaponHash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - ammo hash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 4 - (float) damage amount<br> 5 - <em>unknown</em><br> 6 - (float) entity coord x<br> 7 - (float) entity coord y<br> 8 - (float) entity coord z
+EVENT_ENTITY_DESTROYED | 0 | 9 | 0 - destroyed entity id<br> 1 - object (or ped id) that caused damage to the entity<br> 2 - weaponHash that damaged the entity  ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - ammo hash that damaged the entity ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )<br> 4 - (float) damage amount<br> 5 - <em>unknown</em><br> 6 - (float) entity coord x<br> 7 - (float) entity coord y<br> 8 - (float) entity coord z
 EVENT_ENTITY_DISARMED | 0 | 4 | 0 - VictimEntityId<br> 1 - DamagerEntityId<br> 2 - UsedWeapon hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - <em>unknown</em>
-EVENT_ENTITY_EXPLOSION | 0 | 6 | 0 - ped id who did explosion<br> 1 - <em>unknown</em><br> 2 - weaponhash( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - explosion coord x<br> 4 - explosion coord y<br> 5 - explosion coord z
+EVENT_ENTITY_EXPLOSION | 0 | 6 | 0 - ped id who did explosion<br> 1 - <em>unknown</em><br> 2 - weaponhash( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )<br> 3 - (float) explosion coord x<br> 4 - (float) explosion coord y<br> 5 - (float) explosion coord z
 EVENT_ENTITY_HOGTIED | 0 | 3 | 0 - hogtied entity id<br> 1 - hogtier ped id<br> 2 - <em>unknown</em>
 EVENT_HEADSHOT_BLOCKED_BY_HAT | 0 | 2 | 0 - Victim entity id<br> 1 - Inflictor entity id
 EVENT_HELP_TEXT_REQUEST | 0 | 4 |  0 - <em>unknown</em><br> 1 - tutorial flag hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/tutorial_flags.lua) )<br> 2 - <em>unknown</em><br> 3 - inventory item hash
@@ -84,7 +109,7 @@ EVENT_LOOT_COMPLETE | 0 | 3 | 0 - looterId<br> 1 - Looted entity id<br> 2 - isLo
 EVENT_LOOT_PLANT_START | 0 | 36 | 0 - NumGivenRewards<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em><br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em><br> 23 - OriginalTargetSpawnLocation<br> 24 - <em>unknown</em><br> 25 - <em>unknown</em><br> 26 - LooterId<br> 27 - LootedId<br> 28 - <em>unknown</em><br> 29 - LootedCompositeHashId<br> 30 - LootedPedStatHashName<br> 31 - LootedEntityWasAnimal<br> 32 - LootedEntityWasBird<br> 33 - <em>unknown</em><br> 34 - LootingBehaviorType<br> 35 - <em>unknown</em>  
 EVENT_LOOT_VALIDATION_FAIL | 0 | 2 | 0 - fail reason id ( [list](#event_loot_validation_fail-fail-reason-ids) )<br> 1 - looted_entity
 EVENT_MISS_INTENDED_TARGET | 0 | 3 | 0 - shooter ped id<br> 1 - entity id that was shot<br> 2 - weaponhash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
-EVENT_MOUNT_OVERSPURRED | 0 | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em><br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - <em>unknown</em> 
+EVENT_MOUNT_OVERSPURRED | 0 | 6 | 0 - rider id<br> 1 - mount id<br> 2 - <em>unknown</em> (??? (float) horse rage amount)<br> 3 - the number of times the horse has overspurred<br> 4 - maximum number or times the horse can be overspurred before buck off rider<br> 5 - <em>unknown</em> 
 EVENT_NETWORK_AWARD_CLAIMED | 1 | 12 | 0 - request id<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em> (??? result code [list](#award-claimed-result-codes))<br> 5 - <em>unknown</em> (??? award hash [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/awards.lua))<br> 6 - <em>unknown</em> (??? awarded xp amount)<br> 7 - <em>unknown</em> (??? awarded rank amount)<br> 8 - <em>unknown</em> (??? awarded cash amount)<br> 9 - <em>unknown</em> (??? awarded gold amount)<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em>
 EVENT_NETWORK_BOUNTY_REQUEST_COMPLETE | 1 | 7 | 0 - <em>unknown</em> (??? request id)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - Result code<br> 5 - Total Value<br> 6 - Pay Off Value
 EVENT_NETWORK_BULLET_IMPACTED_MULTIPLE_PEDS | 1 | 4 | 0 - shooter ped id<br> 1 - NumImpacted<br> 2 - NumKilled<br> 3 - NumIncapacitated
@@ -133,7 +158,7 @@ EVENT_NETWORK_POSSE_MEMBER_JOINED | 1 | 23 | 0 - posse id<br> 1 - unknown (??? p
 EVENT_NETWORK_POSSE_MEMBER_KICKED | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
 EVENT_NETWORK_POSSE_MEMBER_LEFT | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
 EVENT_NETWORK_POSSE_MEMBER_SET_ACTIVE | 1 | 23 | 0 - posse id<br> 1 - unknown (??? posse name)<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - network gamer handle<br> 10 - <em>unknown</em><br> 11 - <em>unknown</em><br> 12 - <em>unknown</em><br> 13 - <em>unknown</em><br> 14 - <em>unknown</em><br> 15 - <em>unknown</em><br> 16 - <em>unknown</em><br> 17 - <em>unknown</em><br> 18 - <em>unknown</em><br> 19 - <em>unknown</em><br> 20 - <em>unknown</em><br> 21 - <em>unknown</em><br> 22 - <em>unknown</em>
-EVENT_NETWORK_PROJECTILE_ATTACHED | 1 | 6 | 0 - damager entity id<br> 1 - victim entity id<br> 2 - projectile hit coord x<br> 3 - projectile hit coord y<br> 4 - projectile hit coord z<br> 5 - weaponhash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
+EVENT_NETWORK_PROJECTILE_ATTACHED | 1 | 6 | 0 - damager entity id<br> 1 - victim entity id<br> 2 - (float) projectile hit coord x<br> 3 - (float) projectile hit coord y<br> 4 - (float) projectile hit coord z<br> 5 - weaponhash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/weapons.lua) )
 EVENT_NETWORK_PROJECTILE_NO_DAMAGE_IMPACT | 1 | 2 | 0 - ped id<br> 1 - AmmoUsed hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/weapons/ammo_types.lua) )
 EVENT_NETWORK_REVIVED_ENTITY | 1 | 2 | 0 - Victim entity id<br> 1 - Reviver entity id
 EVENT_NETWORK_SESSION_EVENT | 1 | 10 | 0  - <em>unknown</em> (??? session event type)<br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - <em>unknown</em><br> 8 - <em>unknown</em><br> 9 - <em>unknown</em>
@@ -154,7 +179,7 @@ EVENT_PLAYER_ESCALATED_PED | 0 | 2 | 0 - player ped id<br> 1 - escalated ped id
 EVENT_PLAYER_HAT_EQUIPPED | 0 | 10 | 0 - player ped id<br> 1 - hat entity id<br> 2 - hat drawble hash<br> 3 - hat albedo hash<br> 4 - hat normal hash<br> 5 - hat material hash<br> 6 - hat palette hash<br> 7 - hat tint1<br> 8 - hat tint2<br> 9 - hat tint3 
 EVENT_PLAYER_HAT_KNOCKED_OFF | 0 | 5 | 0 - player ped id<br> 1 - ped id who threw off player hat<br> 2 - hat entity id<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em>
 EVENT_PLAYER_MOUNT_WILD_HORSE | 0 | 1 | 0 - wild horse ped id
-EVENT_PLAYER_PROMPT_TRIGGERED | 0 | 10 | 0 - prompt type id ( [list](#prompt-type-ids) )<br> 1 - <em>unknown</em><br> 2 - target entity id<br> 3 - <em>unknown</em> (??? discovered inventory item)<br> 4 - <em>unknown</em><br> 5 - <em>unknown</em><br> 6 - <em>unknown</em><br> 7 - discoverable entity type id ( [list](#discoverable-entity-type-ids) )<br> 8 - <em>unknown</em><br> 9 - kit_emote_action hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/animations/kit_emotes_list.lua) )
+EVENT_PLAYER_PROMPT_TRIGGERED | 0 | 10 | 0 - prompt type id ( [list](#prompt-type-ids) )<br> 1 - <em>unknown</em><br> 2 - target entity id<br> 3 - <em>unknown</em> (??? discovered inventory item)<br> 4 - (float) player ped coord x<br> 5 - (float) player ped coord y<br> 6 - (float) player ped coord z<br> 7 - discoverable entity type id ( [list](#discoverable-entity-type-ids) )<br> 8 - <em>unknown</em><br> 9 - kit_emote_action hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/animations/kit_emotes_list.lua) )
 EVENT_RAN_OVER_PED | 0 | 2 | 0 - <em>unknown</em><br> 1 - ped id that was ran over
 EVENT_REVIVE_ENTITY | 0 | 3 | 0 - VictimEntityId<br> 1 - reviver ped id<br> 2 - used inventory item hash
 EVENT_SCENARIO_ADD_PED | 2 | 2 | 0 - iScriptUID<br> 1 - <em>unknown</em>
