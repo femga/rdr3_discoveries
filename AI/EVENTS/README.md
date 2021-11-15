@@ -190,7 +190,7 @@ EVENT_SHOT_FIRED_BULLET_IMPACT | 0 | 1 | 0 - entity id that bullet hit
 EVENT_SHOT_FIRED_WHIZZED_BY | 0 | 1 | 0 - entity id that was shot
 EVENT_STAT_VALUE_CHANGED | 0 | 2 | 0 - stat value type hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/AI/EVENTS/stat_values.lua) )<br> 1 - unknown
 EVENT_TRIGGERED_ANIMAL_WRITHE | 0 | 2 | 0 - animal ped id<br> 1 - ped id who damaged animal
-EVENT_UI_ITEM_INSPECT_ACTIONED | 0 | 6 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em> (??? FitsSlot hash)<br> 5 - <em>unknown</em>
+EVENT_UI_ITEM_INSPECT_ACTIONED | 3 | 6 | 0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em> (??? FitsSlot hash)<br> 5 - <em>unknown</em>
 EVENT_UI_QUICK_ITEM_USED | 3 | 6 |  0 - <em>unknown</em><br> 1 - <em>unknown</em><br> 2 - <em>unknown</em><br> 3 - <em>unknown</em><br> 4 - <em>unknown</em> (??? FitsSlot hash)<br> 5 - entity id, item was used for
 EVENT_VEHICLE_CREATED | 0 | 1 | 0 - vehicle id that was created
 EVENT_VEHICLE_DESTROYED | 0 | 1 | 0 - <em>unknown</em> (??? destroyed vehicle id)
