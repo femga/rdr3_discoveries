@@ -9,3 +9,6 @@
 
 **Door extension** is ability of door entity to be "locked" or "open" by freezing and adding invisible collision. You can check all entities with door extensions [in this file](https://github.com/femga/rdr3_discoveries/blob/master/doorHashes/doorhashes.lua). Only doors with "door extension" can be "locked". If u want "lock" additional door, you must add "door extension" for this entity in the YMAP file.
 
+## CExtensionDefSwayableEffect
+
+**SwayableEffect** is ability of an entity to react to wind and collisions with other objects.
