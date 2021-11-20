@@ -806,7 +806,7 @@ local entity_extensions__expressions = {
 		expressionName = "parasol",
 	},
 	["mp006_p_mp_basket04x"] = {
-		extension_name = "l_003e46a4fz",		-- -- fake hashname for ped decals hash 0x84379261
+		extension_name = "l_003e46a4fz",		-- -- fake hashname for entity extension name hash 0x84379261
 		expressionDictionaryName = "props",
 		expressionName = "tumbler_liquid",
 	},
@@ -1460,8 +1460,8 @@ local entity_extensions__expressions = {
 		expressionDictionaryName = "propgamblingchips",
 		expressionName = "gamblingchips",
 	},
-	["cs4_13_props_veg24_107_lod"] = {
-		extension_name = "cs4_13_props_veg24_107_lod",
+	["prop_chip_black_x6"] = {
+		extension_name = "prop_chip_black_x6",
 		expressionDictionaryName = "propgamblingchips",
 		expressionName = "gamblingchips",
 	},
