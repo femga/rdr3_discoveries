@@ -30,3 +30,7 @@
 
 **ExplosionEffect** is ability of an entity to emit explosion effect when damaged. 
 
+
+## CExtensionDefLadder
+
+**Ladder** extension allows peds to climb this entity.
