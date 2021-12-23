@@ -46,3 +46,8 @@ With entities that have lightEffect extension, you can use the "light manipulati
 	_SET_LIGHT_TRANSLUCENCY_FOR_OBJECT	(0x63E39F09310F481F)<br>
 	etc...<br>
 
+
+## CExtensionDefParticleEffect
+
+**ParticleEffect** is ability of an entity to emit particle effect when it interacts with peds, is damaged or destroyed, etc...
+
