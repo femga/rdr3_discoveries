@@ -768,21 +768,21 @@ local entity_extensions__particleEffect = {
 	["mp005_p_mp_candlegroup03x"] = {
 
 		{
-            entity_extension_name = "p_mp_candlegroup03x",
+            	entity_extension_name = "p_mp_candlegroup03x",
 			offsetPosition = {x = -0.08101845, y = 0.05367100, z = 0.10831300,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_candlegroup03x",
+            	entity_extension_name = "p_mp_candlegroup03x",
 			offsetPosition = {x = -0.07289695, y = -0.06119000, z = 0.16557000,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_candlegroup03x",
+            	entity_extension_name = "p_mp_candlegroup03x",
 			offsetPosition = {x = 0.07509613, y = 0.04650501, z = 0.09283100,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
@@ -794,21 +794,21 @@ local entity_extensions__particleEffect = {
 	["mp005_p_mp_candlegroup05x"] = {
 
 		{
-            entity_extension_name = "p_mp_candlegroup05x",
+            	entity_extension_name = "p_mp_candlegroup05x",
 			offsetPosition = {x = 0.01852798, y = -0.01753600, z = 0.19216500,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_candlegroup05x",
+            	entity_extension_name = "p_mp_candlegroup05x",
 			offsetPosition = {x = 0.03106308, y = -0.00656100, z = 0.16910400,},
 			fxName = "brk_candle",
 			fxType = 3,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_candlegroup05x",
+            	entity_extension_name = "p_mp_candlegroup05x",
 			offsetPosition = {x = 0.01535225, y = -0.00659600, z = 0.17050300,},
 			fxName = "dst_candle",
 			fxType = 4,
@@ -820,35 +820,35 @@ local entity_extensions__particleEffect = {
 	["mp005_p_mp_moundbase3x"] = {
 
 		{
-            entity_extension_name = "p_mp_moundbase3x",
+            	entity_extension_name = "p_mp_moundbase3x",
 			offsetPosition = {x = -0.02376938, y = 0.07918596, z = 0.26938800,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase3x",
+            	entity_extension_name = "p_mp_moundbase3x",
 			offsetPosition = {x = -0.13347240, y = 0.05894208, z = 0.15893300,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase3x",
+            	entity_extension_name = "p_mp_moundbase3x",
 			offsetPosition = {x = 0.12516400, y = -0.02467489, z = 0.20122600,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase3x",
+            	entity_extension_name = "p_mp_moundbase3x",
 			offsetPosition = {x = 0.00191879, y = -0.09342718, z = 0.11604900,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase3x",
+            	entity_extension_name = "p_mp_moundbase3x",
 			offsetPosition = {x = 0.03564835, y = -0.02430725, z = 0.18603500,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
@@ -860,49 +860,49 @@ local entity_extensions__particleEffect = {
 	["mp005_p_mp_moundbase9x"] = {
 
 		{
-            entity_extension_name = "p_mp_moundbase9x",
+            	entity_extension_name = "p_mp_moundbase9x",
 			offsetPosition = {x = -0.07919693, y = 0.06349087, z = 0.24350500,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase9x",
+            	entity_extension_name = "p_mp_moundbase9x",
 			offsetPosition = {x = -0.05270004, y = 0.15671250, z = 0.16140500,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase9x",
+            	entity_extension_name = "p_mp_moundbase9x",
 			offsetPosition = {x = 0.00577164, y = -0.00102425, z = 0.37950500,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase9x",
+            	entity_extension_name = "p_mp_moundbase9x",
 			offsetPosition = {x = 0.02733231, y = 0.09137058, z = 0.19495900,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase9x",
+            	entity_extension_name = "p_mp_moundbase9x",
 			offsetPosition = {x = -0.17291640, y = -0.09113407, z = 0.23370500,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase9x",
+            	entity_extension_name = "p_mp_moundbase9x",
 			offsetPosition = {x = -0.09978867, y = -0.12200930, z = 0.44060500,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp_moundbase9x",
+            	entity_extension_name = "p_mp_moundbase9x",
 			offsetPosition = {x = -0.10073470, y = -0.04986763, z = 0.35274200,},
             fxName = "l_005ff475tg",   -- fake hashname for fxName hash 0x00DED847
 			fxType = 0,
@@ -2479,21 +2479,21 @@ local entity_extensions__particleEffect = {
 	["mp006_p_mp006_crate012x"] = {
 
 		{
-            entity_extension_name = "p_mp006_crate012x",
+            	entity_extension_name = "p_mp006_crate012x",
 			offsetPosition = {x = -0.01145935, y = 0.00763607, z = -0.00622900,},
 			fxName = "dst_dust",
 			fxType = 4,
 			boneTag = 31002,
 		},
 		{
-            entity_extension_name = "p_mp006_crate012x",
+            	entity_extension_name = "p_mp006_crate012x",
 			offsetPosition = {x = -0.01145935, y = 0.00763607, z = -0.00622900,},
 			fxName = "dst_wood_planks",
 			fxType = 4,
 			boneTag = 31002,
 		},
 		{
-            entity_extension_name = "p_mp006_crate012x",
+            	entity_extension_name = "p_mp006_crate012x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.12888900,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -2531,14 +2531,14 @@ local entity_extensions__particleEffect = {
 	["mp006_p_mp006_cratecanvase01x"] = {
 
 		{
-            entity_extension_name = "p_mp006_cratecanvase01x",
+            	entity_extension_name = "p_mp006_cratecanvase01x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_cloth",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-            entity_extension_name = "p_mp006_cratecanvase01x",
+            	entity_extension_name = "p_mp006_cratecanvase01x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_dust",
 			fxType = 4,
@@ -83851,7 +83851,7 @@ local entity_extensions__particleEffect = {
 	["mp001_mp_charcreate_int_detail02"] = {
 
 		{
-:           <name>mp_charcreate_int_detail02</name>
+			entity_extension_name = "mp_charcreate_int_detail02",
 			offsetPosition = {x = 1.96982800, y = 0.02420616, z = 1.00281900,},
 			fxName = "amb_dust_motes_window",
 			fxType = 0,
@@ -103551,7 +103551,8 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_finishline_bonfire01x"] = {
 
 		{
-:           <name>p_mp_finishline_bonfire01x</name>
+           	entity_extension_name = "p_mp_finishline_bonfire02x",
+           	entity_extension_name = "p_mp_finishline_bonfire01x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.07722300,},
 			fxName = "AMB_CAMPFIRE_LRG_MP",
 			fxType = 0,
@@ -103563,7 +103564,7 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_finishline_bonfire02x"] = {
 
 		{
-:           <name>p_mp_finishline_bonfire02x</name>
+           	entity_extension_name = "p_mp_finishline_bonfire02x",
 			offsetPosition = {x = -0.00526428, y = -0.06556702, z = 0.07722300,},
 			fxName = "AMB_CAMPFIRE_LRG_MP",
 			fxType = 0,
@@ -103575,7 +103576,7 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_finishlinefire01x"] = {
 
 		{
-:           <name>p_mp_finishlinefire01x</name>
+           	entity_extension_name = "p_mp_finishlinefire01x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 4.83961600,},
 			fxName = "AMB_CAMPFIRE_LRG_MP",
 			fxType = 0,
@@ -103688,7 +103689,7 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_kettle03_fire01x"] = {
 
 		{
-:           <name>p_mp_kettle03_fire01x</name>
+           	entity_extension_name = "p_mp_kettle03_fire01x",
 			offsetPosition = {x = 0.00601196, y = 0.00532532, z = 0.37886300,},
 			fxName = "AMB_CAMPFIRE_LRG_MP",
 			fxType = 0,
@@ -103700,21 +103701,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_gun01a"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_gun01a</name>
+           	entity_extension_name = "p_mp_pickup_barrel_gun01a",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_gun01a</name>
+           	entity_extension_name = "p_mp_pickup_barrel_gun01a",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_gun01a</name>
+           	entity_extension_name = "p_mp_pickup_barrel_gun01a",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103726,21 +103727,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_gun02a"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_gun02a</name>
+           	entity_extension_name = "p_mp_pickup_barrel_gun02a",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.59206300,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_gun02a</name>
+           	entity_extension_name = "p_mp_pickup_barrel_gun02a",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_gun02a</name>
+           	entity_extension_name = "p_mp_pickup_barrel_gun02a",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103752,21 +103753,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo10x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo10x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo10x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo10x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo10x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo10x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo10x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103778,21 +103779,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo11x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo11x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo11x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo11x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo11x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo11x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo11x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103804,21 +103805,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo12x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo12x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo12x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo12x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo12x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo12x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo12x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103830,21 +103831,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo13x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo13x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo13x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo13x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo13x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo13x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo13x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103856,21 +103857,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo14x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo14x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo14x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo14x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo14x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo14x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo14x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103882,21 +103883,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo15x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo15x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo15x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo15x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo15x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo15x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo15x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103908,21 +103909,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo16x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo16x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo16x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo16x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo16x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo16x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo16x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103934,21 +103935,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo17x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo17x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo17x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo17x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo17x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo17x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo17x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103960,21 +103961,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo18x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo18x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo18x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo18x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo18x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo18x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo18x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -103986,21 +103987,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo19x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo19x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo19x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo19x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo19x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo19x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo19x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104012,21 +104013,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo1x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo1x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo1x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo1x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo1x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo1x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo1x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104038,21 +104039,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo20x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo20x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo20x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo20x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo20x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo20x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo20x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104064,21 +104065,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo2x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo2x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo2x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo2x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo2x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo2x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo2x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104090,21 +104091,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo3x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo3x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo3x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo3x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo3x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo3x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo3x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104116,21 +104117,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo4x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo4x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo4x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo4x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo4x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo4x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo4x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104142,21 +104143,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo5x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo5x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo5x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo5x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo5x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo5x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo5x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104168,21 +104169,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo6x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo6x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo6x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo6x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo6x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo6x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo6x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104194,21 +104195,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo7x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo7x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo7x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo7x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo7x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo7x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo7x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104220,21 +104221,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo8x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo8x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo8x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo8x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo8x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo8x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo8x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -104246,21 +104247,21 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_pickup_barrel_logo9x"] = {
 
 		{
-:           <name>p_mp_pickup_barrel_logo9x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo9x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 1.32524000,},
 			fxName = "amb_smoke_cabin",
 			fxType = 0,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo9x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo9x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
 			boneTag = 0,
 		},
 		{
-:           <name>p_mp_pickup_barrel_logo9x</name>
+           	entity_extension_name = "p_mp_pickup_barrel_logo9x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00000000,},
 			fxName = "exp_wood",
 			fxType = 8,
@@ -115097,7 +115098,7 @@ local entity_extensions__particleEffect = {
 	["mp006_p_guitar02x"] = {
 
 		{
-:           <name>p_guitar02x</name>
+           	entity_extension_name = "p_guitar02x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = -0.10710400,},
 			fxName = "dst_wood_chunky",
 			fxType = 4,
@@ -126980,7 +126981,7 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_haybalecover01x"] = {
 
 		{
-:           <name>p_mp_haybalecover01x</name>
+           	entity_extension_name = "p_mp_haybalecover01x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.00890500,},
 			fxName = "sht_hay",
 			fxType = 2,
@@ -139111,7 +139112,7 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_campfire03x"] = {
 
 		{
-:           <name>p_mp_campfire03x</name>
+           	entity_extension_name = "p_mp_campfire03x",
 			offsetPosition = {x = -0.01307297, y = 0.03163147, z = 0.03061900,},
 			fxName = "amb_campfire_sma",
 			fxType = 0,
