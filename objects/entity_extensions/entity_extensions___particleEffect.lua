@@ -103551,7 +103551,6 @@ local entity_extensions__particleEffect = {
 	["mp001_p_mp_finishline_bonfire01x"] = {
 
 		{
-           	entity_extension_name = "p_mp_finishline_bonfire02x",
            	entity_extension_name = "p_mp_finishline_bonfire01x",
 			offsetPosition = {x = 0.00000000, y = 0.00000000, z = 0.07722300,},
 			fxName = "AMB_CAMPFIRE_LRG_MP",
