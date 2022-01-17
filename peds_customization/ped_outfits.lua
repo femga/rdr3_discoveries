@@ -1,16 +1,15 @@
 -- EXAMPLE OF USE (increase waist size for ped):
---  
+--
 -- Citizen.CreateThread(function()
 -- 		while true do
 -- 			Citizen.Wait(0)
--- 			if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E		
+-- 			if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
 -- 				local ped = PlayerPedId()
 -- 				Citizen.InvokeNative(0x1902C4CFCC5BE57C,ped, 0x74D74B1C)  -- _APPLY_NON_REQUESTED_METAPED_OUTFIT biggest waist size (0x74D74B1C)
 -- 				Citizen.InvokeNative(0xCC8CA3E88256E58F,ped, false, true, true, true, false) -- _UPDATE_PED_VARIATION
 -- 			end
 -- 		end
 -- end)
-
 
 local ped_non_requested_outfits = {
 
@@ -88,7 +87,7 @@ local ped_non_requested_outfits = {
 	0x2F8CE311,	-- player_zero_satchel_strap_000_lw
 	0x75E93D85,	-- player_zero_satchel_strap_000_c0
 	0x158C7AA8,	-- player_zero_satchel_strap_000
-	0x354A6644,	-- player_zero_holster_front_cup_000 
+	0x354A6644,	-- player_zero_holster_front_cup_000
 	0x2FF2BBB0,	-- player_zero_holster_cup_000_c0
 	0x4970C1AB,	-- player_zero_holster_cup_000_c0
 	0x7F053CB7,
@@ -124,42 +123,35 @@ local ped_non_requested_outfits = {
 	0x74D74B1C,	-- waist size + stomach size (for mp_male and mp_female) -- biggest
 
 	0x63F130D5,	-- upperbody size	-- smallest
-	0x55AA9448,	-- upperbody size	
-	0xB45951BC,	-- upperbody size	
-	0xC5DBF4C1,	-- upperbody size	
-	0x58F41AF7,	-- upperbody size	
-	0x6A2DBD6A,	-- upperbody size	
-	0x6CB9C282,	-- upperbody size	
-	0x7E90662F,	-- upperbody size	
-	0x114C8BA9,	-- upperbody size	
-	0x33DDD0CB,	-- upperbody size	
+	0x55AA9448,	-- upperbody size
+	0xB45951BC,	-- upperbody size
+	0xC5DBF4C1,	-- upperbody size
+	0x58F41AF7,	-- upperbody size
+	0x6A2DBD6A,	-- upperbody size
+	0x6CB9C282,	-- upperbody size
+	0x7E90662F,	-- upperbody size
+	0x114C8BA9,	-- upperbody size
+	0x33DDD0CB,	-- upperbody size
 	0x1BC3A19B,	-- upperbody size	 -- biggest
 
 	0xBB7091D9, 	-- waist size (for player_zero)	-- biggest
-	0xCF85BA03, 	-- waist size (for player_zero)	
-	0x17BECA74, 	-- waist size (for player_zero)	
-	0x29EA6ECB, 	-- waist size (for player_zero)	
-	0xF8DB8CAE, 	-- waist size (for player_zero)	
-	0x5AFE50F2, 	-- waist size (for player_zero)	
-	0x6EFC78EE, 	-- waist size (for player_zero)	
-	0x42499F89, 	-- waist size (for player_zero)	
-	0x4420A337, 	-- waist size (for player_zero)	
-	0x95C7C684, 	-- waist size (for player_zero)	
+	0xCF85BA03, 	-- waist size (for player_zero)
+	0x17BECA74, 	-- waist size (for player_zero)
+	0x29EA6ECB, 	-- waist size (for player_zero)
+	0xF8DB8CAE, 	-- waist size (for player_zero)
+	0x5AFE50F2, 	-- waist size (for player_zero)
+	0x6EFC78EE, 	-- waist size (for player_zero)
+	0x42499F89, 	-- waist size (for player_zero)
+	0x4420A337, 	-- waist size (for player_zero)
+	0x95C7C684, 	-- waist size (for player_zero)
 	0x652668B6, 	-- waist size (for player_zero)	-- smallest
-
-
-
-
-
-
-
 
 	-- HORSE OUTFITS:
 
 	0x4B96E611,	-- meta_horse_saddle_only
 	0xC6AE9EAB,	-- horse shoes
 	0xC52B4E7F,	-- horse bridle
-	0xC81D2897,	-- horse harness 
+	0xC81D2897,	-- horse harness
 	0x960C7C0A,	-- p_c_horse_01_task_001_alt
 	0x75DACEFA,	-- p_c_horse_01_task_001_alt
 	0x128B885D,	-- p_c_horse_01_task_001_alt
@@ -222,35 +214,28 @@ local ped_non_requested_outfits = {
 	0xFBC20910,	-- remove horse penis
 
 	0x86155956,	-- horse stomach size 	-- smallest
-	0x97F0FD0D,	-- horse stomach size 
-	0xEC92A64F,	-- horse stomach size 
-	0xC0794E49,	-- horse stomach size 
-	0xCDA6E8A4,	-- horse stomach size 
-	0xB418B588,	-- horse stomach size 
-	0x3743BBB0,	-- horse stomach size 
-	0x08EEDF07,	-- horse stomach size 
-	0x17C87CBA,	-- horse stomach size 
-	0xD998005A,	-- horse stomach size 
-	0x68109C55,	-- horse stomach size 
-	0x3BDB43E7,	-- horse stomach size 
-	0x4C35E49C,	-- horse stomach size 
-	0x1DF38818,	-- horse stomach size 
-	0x833C52B8,	-- horse stomach size 
-	0x927AF135,	-- horse stomach size 
-	0x677F9B3F,	-- horse stomach size 
-	0x79A13F82,	-- horse stomach size 
-	0xBA0BC056,	-- horse stomach size 
-	0xCC4664CB,	-- horse stomach size 
-	0x74D74B1C,	-- horse stomach size	-- biggest 
+	0x97F0FD0D,	-- horse stomach size
+	0xEC92A64F,	-- horse stomach size
+	0xC0794E49,	-- horse stomach size
+	0xCDA6E8A4,	-- horse stomach size
+	0xB418B588,	-- horse stomach size
+	0x3743BBB0,	-- horse stomach size
+	0x08EEDF07,	-- horse stomach size
+	0x17C87CBA,	-- horse stomach size
+	0xD998005A,	-- horse stomach size
+	0x68109C55,	-- horse stomach size
+	0x3BDB43E7,	-- horse stomach size
+	0x4C35E49C,	-- horse stomach size
+	0x1DF38818,	-- horse stomach size
+	0x833C52B8,	-- horse stomach size
+	0x927AF135,	-- horse stomach size
+	0x677F9B3F,	-- horse stomach size
+	0x79A13F82,	-- horse stomach size
+	0xBA0BC056,	-- horse stomach size
+	0xCC4664CB,	-- horse stomach size
+	0x74D74B1C,	-- horse stomach size	-- biggest
 
 	0xEB76D635,	-- horse stomach sagging
-
-
-
-
-
-
-
 
 	-- OTHER ANIMALS OUTFITS:
 
@@ -260,4 +245,3 @@ local ped_non_requested_outfits = {
 	0xC7D69B4D,	-- mp_a_c_arrow_01_wolf
 
 }
-

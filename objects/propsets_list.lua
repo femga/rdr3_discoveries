@@ -1,13 +1,13 @@
 --     Example of using (creating hunter camp):
--- 
+--
 -- 	Citizen.CreateThread(function()
 -- 	    Citizen.Wait(10000)
--- 
+--
 -- 	    local propset_name = "PG_HUNTERCAMP01X"
 --         local propset_hash = GetHashKey(propset_name)
 --         local ped_coords = GetEntityCoords(PlayerPedId())
 --         local x,y,z =  table.unpack(ped_coords + vector3(0.0,5.0,0.0))
--- 
+--
 -- 	    Citizen.InvokeNative(0xF3DE57A46D5585E9,propset_hash) -- REQUEST_PROPSET
 --         local counter = 1
 --         while not Citizen.InvokeNative(0x48A88FC684C55FDC,propset_hash) and counter <= 20 do   -- HAS_PROPSET_LOADED
@@ -47,8 +47,6 @@ local propset_names = {
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
               -- 0x82C376E0    -- p_woodpile06x
 
-
-
        "pg_ambcamp01x_tent_blanket",
           -- CONTAINS OBJECTS:
               -- 0xD33EE4C2    -- p_ambtentstripe01x
@@ -76,8 +74,6 @@ local propset_names = {
               -- 0x0112CA3F    -- s_cornedbeef01x
               -- 0x6A084B60    -- s_canpeaches01x
 
-
-
        "pg_ambcamp01x_tent_burlap",
           -- CONTAINS OBJECTS:
               -- 0x38A7E176    -- p_ambtentburlap01x
@@ -95,8 +91,6 @@ local propset_names = {
               -- 0xE1006BB5    -- p_foldedundershirt01x
               -- 0x234B8A4F    -- p_ambclothdrape01x
               -- 0xE1006BB5    -- p_foldedundershirt01x
-
-
 
        "pg_ambcamp01x_tent_burlap_lean",
           -- CONTAINS OBJECTS:
@@ -146,8 +140,6 @@ local propset_names = {
               -- 0xE8945B91    -- p_debrisboard14x
               -- 0xEF203121    -- p_chamberpot02x
 
-
-
        "pg_ambcamp01x_tent_canvas_leanto01",
           -- CONTAINS OBJECTS:
               -- 0x9E6692BD    -- p_ambfloorrug01x
@@ -167,8 +159,6 @@ local propset_names = {
               -- 0x0112CA3F    -- s_cornedbeef01x
               -- 0x2AD600ED    -- p_ambblanketroll01x
               -- 0xCA01661E    -- p_ambfloorrug02x
-
-
 
        "pg_ambcamp01x_tent_canvas_leanto02",
           -- CONTAINS OBJECTS:
@@ -210,8 +200,6 @@ local propset_names = {
               -- 0xAA42659C    -- p_jar04x
               -- 0xEF203121    -- p_chamberpot02x
 
-
-
        "pg_ambcamp01x_tent_canvas_leanto03",
           -- CONTAINS OBJECTS:
               -- 0x7B187D60    -- p_ambfloorroll01x
@@ -227,8 +215,6 @@ local propset_names = {
               -- 0xC39686EA    -- s_cmountainbitters_sl
               -- 0x0ED31094    -- s_chocolatebar02x
               -- 0xCA01661E    -- p_ambfloorrug02x
-
-
 
        "pg_ambcamp01x_tent_canvas_leanto04",
           -- CONTAINS OBJECTS:
@@ -248,8 +234,6 @@ local propset_names = {
               -- 0x68970FAE    -- s_inv_tonic01x
               -- 0x09A4E44E    -- s_inv_gin01x
               -- 0x59A5EF10    -- p_ambclothpile01x
-
-
 
        "pg_ambcamp01x_tent_canvas_pup01",
           -- CONTAINS OBJECTS:
@@ -274,8 +258,6 @@ local propset_names = {
               -- 0xC7857F13    -- p_dressinglbsammo01x
               -- 0x662E2016    -- s_inv_pistolammo01x
               -- 0x6DE02925    -- p_bottlebeer01x
-
-
 
        "pg_ambcamp01x_tent_canvas_pup02",
           -- CONTAINS OBJECTS:
@@ -318,8 +300,6 @@ local propset_names = {
               -- 0xA939A288    -- p_dressinglbsmed01x
               -- 0xEEE1A2B7    -- p_crate03d
 
-
-
        "pg_ambcamp01x_tent_canvas_tall01",
           -- CONTAINS OBJECTS:
               -- 0x20E1BDF1    -- p_tent_leento02x
@@ -353,8 +333,6 @@ local propset_names = {
               -- 0x2BF8422D    -- p_bedrollopen03x
               -- 0x07A5E377    -- p_hangracksml01x
 
-
-
        "pg_ambcamp01x_tent_canvas_tall02",
           -- CONTAINS OBJECTS:
               -- 0x20E1BDF1    -- p_tent_leento02x
@@ -379,8 +357,6 @@ local propset_names = {
               -- 0x6B4A16F6    -- p_dressinglbllinen01x
               -- 0xB27B2D83    -- p_ambropepile02x
               -- 0x9377BF7D    -- p_fishhanging10x
-
-
 
        "pg_ambcamp01x_tent_canvas_wedge_plain",
           -- CONTAINS OBJECTS:
@@ -427,8 +403,6 @@ local propset_names = {
               -- 0x285ADDDB    -- p_cuptin01x
               -- 0xAC32CF8D    -- p_shovel03x
 
-
-
        "pg_ambcamp01x_tent_canvas_wedge_stripe",
           -- CONTAINS OBJECTS:
               -- 0x602C5D78    -- s_tentwedge02b
@@ -460,8 +434,6 @@ local propset_names = {
               -- 0x7ADCDEC7    -- p_foldedrug01x
               -- 0xD71B7B3E    -- p_bottlebeer01a
 
-
-
        "pg_ambcamp01x_tent_debris01",
           -- CONTAINS OBJECTS:
               -- 0x4969E4A3    -- p_ambtentdebris01x
@@ -485,8 +457,6 @@ local propset_names = {
               -- 0xB85B8E93    -- p_dressinglbsfish01x
               -- 0x592E7684    -- p_boxsmltackle01x
               -- 0xCA01661E    -- p_ambfloorrug02x
-
-
 
        "pg_ambcamp01x_tent_destroyed",
           -- CONTAINS OBJECTS:
@@ -525,8 +495,6 @@ local propset_names = {
               -- 0x40B2C5ED    -- p_rag02x
               -- 0xBA686CB8    -- p_pencil01x
 
-
-
        "pg_ambcamp01x_tent_frame_dome",
           -- CONTAINS OBJECTS:
               -- 0x6A516EA7    -- p_ambframe04x
@@ -551,8 +519,6 @@ local propset_names = {
               -- 0x8BA7D7A5    -- s_inv_snakeoil_fty
               -- 0x1A01C598    -- p_candle01x
               -- 0xBB5ABDB1    -- p_ambfloorrug04x
-
-
 
        "pg_ambcamp01x_tent_frame_pup",
           -- CONTAINS OBJECTS:
@@ -583,8 +549,6 @@ local propset_names = {
               -- 0xF90B24F4    -- p_ambfloorleaves03x
               -- 0xDB0ABB46    -- p_ambpack04x
 
-
-
        "pg_ambcamp01x_tent_grass_lean",
           -- CONTAINS OBJECTS:
               -- 0x426A5439    -- p_ambtentgrass01x
@@ -609,8 +573,6 @@ local propset_names = {
               -- 0xB6A91A8B    -- s_inv_horsereviver01x
               -- 0x21F9DF66    -- p_haypile02x
 
-
-
        "pg_ambcamp01x_tent_ground01",
           -- CONTAINS OBJECTS:
               -- 0x7B187D60    -- p_ambfloorroll01x
@@ -619,8 +581,6 @@ local propset_names = {
               -- 0xE5AC3FB7    -- s_bedrollopen01x
               -- 0x625EB620    -- s_horsnack_beet01x
               -- 0x0B84A2B9    -- s_inv_flask01x
-
-
 
        "pg_ambcamp01x_tent_ground02",
           -- CONTAINS OBJECTS:
@@ -637,8 +597,6 @@ local propset_names = {
               -- 0x8E52A545    -- s_inv_medicine01x
               -- 0xE5AC3FB7    -- s_bedrollopen01x
 
-
-
        "pg_ambcamp01x_tent_ground03",
           -- CONTAINS OBJECTS:
               -- 0xCA01661E    -- p_ambfloorrug02x
@@ -652,8 +610,6 @@ local propset_names = {
               -- 0x44A8146F    -- p_bread06x
               -- 0xDF53E37F    -- p_cigar02x
               -- 0xE5AC3FB7    -- s_bedrollopen01x
-
-
 
        "pg_ambcamp01x_tent_ground04",
           -- CONTAINS OBJECTS:
@@ -682,8 +638,6 @@ local propset_names = {
               -- 0x47EAE229    -- p_merchbox01x
               -- 0x0EB451E7    -- p_sandbags03_static
 
-
-
        "pg_ambcamp01x_tent_ground05",
           -- CONTAINS OBJECTS:
               -- 0x9E6692BD    -- p_ambfloorrug01x
@@ -698,8 +652,6 @@ local propset_names = {
               -- 0x8AFF1529    -- p_dressinglbsutility01x
               -- 0xE5AC3FB7    -- s_bedrollopen01x
               -- 0x85CEA607    -- s_jerkypaper01x
-
-
 
        "pg_ambcamp01x_tent_ground06",
           -- CONTAINS OBJECTS:
@@ -726,8 +678,6 @@ local propset_names = {
               -- 0xC39686EA    -- s_cmountainbitters_sl
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
 
-
-
        "pg_ambcamp01x_tent_ground07",
           -- CONTAINS OBJECTS:
               -- 0xB2EED61C    -- p_ambfloortarp01x
@@ -740,8 +690,6 @@ local propset_names = {
               -- 0x0112CA3F    -- s_cornedbeef01x
               -- 0x9DD889CF    -- p_apple01x
               -- 0x7B187D60    -- p_ambfloorroll01x
-
-
 
        "pg_ambcamp01x_tent_ground08",
           -- CONTAINS OBJECTS:
@@ -758,8 +706,6 @@ local propset_names = {
               -- 0xD8F8A0D7    -- s_offal01x
               -- 0x4CD89504    -- s_inv_baitherb01x
               -- 0x2413F45B    -- p_ambpeltstack01x
-
-
 
        "pg_ambcamp01x_tent_hide",
           -- CONTAINS OBJECTS:
@@ -792,8 +738,6 @@ local propset_names = {
               -- 0xD8F8A0D7    -- s_offal01x
               -- 0x0991DC35    -- s_saltedbeef01x
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
-
-
 
        "pg_ambcamp01x_tent_hide_lean",
           -- CONTAINS OBJECTS:
@@ -842,8 +786,6 @@ local propset_names = {
               -- 0xDA565A9B    -- s_gunoil01x
               -- 0x07BF4DBD    -- p_pillow12x
 
-
-
        "pg_ambcamp01x_tent_leanto01",
           -- CONTAINS OBJECTS:
               -- 0x11C8A30F    -- p_tent_leento01x
@@ -862,8 +804,6 @@ local propset_names = {
               -- 0x47FCCFF3    -- s_beardtonic01x
               -- 0xF4B2AC82    -- p_rag04x
 
-
-
        "pg_ambcamp01x_tent_leanto02",
           -- CONTAINS OBJECTS:
               -- 0x20E1BDF1    -- p_tent_leento02x
@@ -877,8 +817,6 @@ local propset_names = {
               -- 0x900A53A2    -- s_tabaccoused01x
               -- 0x5AB8F9FF    -- s_peach01x
               -- 0x37947CCB    -- p_dressinglbmart01x
-
-
 
        "pg_ambcamp01x_tent_leanto03",
           -- CONTAINS OBJECTS:
@@ -900,8 +838,6 @@ local propset_names = {
               -- 0xB1191FBB    -- p_dressinglbmtool01x
               -- 0x02F9FDFA    -- p_shovel04x
 
-
-
        "pg_ambcamp01x_tent_leantopine",
           -- CONTAINS OBJECTS:
               -- 0xEB6AD7FF    -- p_leantopine01x
@@ -915,8 +851,6 @@ local propset_names = {
               -- 0x4CD89504    -- s_inv_baitherb01x
               -- 0x0991DC35    -- s_saltedbeef01x
               -- 0x4DC0C2E7    -- p_hathang01x
-
-
 
        "pg_ambcamp01x_tent_leather",
           -- CONTAINS OBJECTS:
@@ -941,8 +875,6 @@ local propset_names = {
               -- 0x234B8A4F    -- p_ambclothdrape01x
               -- 0xE1006BB5    -- p_foldedundershirt01x
 
-
-
        "pg_ambcamp01x_tent_leather_lean",
           -- CONTAINS OBJECTS:
               -- 0xC9E96F78    -- p_ambtentleather01b
@@ -960,8 +892,6 @@ local propset_names = {
               -- 0xE5AC3FB7    -- s_bedrollopen01x
               -- 0x7B187D60    -- p_ambfloorroll01x
               -- 0xCA01661E    -- p_ambfloorrug02x
-
-
 
        "pg_ambcamp01x_tent_leaves",
           -- CONTAINS OBJECTS:
@@ -981,8 +911,6 @@ local propset_names = {
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
 
-
-
        "pg_ambcamp01x_tent_leaves_lean",
           -- CONTAINS OBJECTS:
               -- 0x5489084A    -- p_ambtentmulch01b
@@ -998,8 +926,6 @@ local propset_names = {
               -- 0x5AB8F9FF    -- s_peach01x
               -- 0x829A0C5F    -- p_pear_02x
               -- 0xDB0ABB46    -- p_ambpack04x
-
-
 
        "pg_ambcamp01x_tent_oilskin01",
           -- CONTAINS OBJECTS:
@@ -1024,8 +950,6 @@ local propset_names = {
               -- 0x9DD889CF    -- p_apple01x
               -- 0x3C238C40    -- p_ambbundle01x
               -- 0xB27B2D83    -- p_ambropepile02x
-
-
 
        "pg_ambcamp01x_tent_oilskin_lean01",
           -- CONTAINS OBJECTS:
@@ -1062,8 +986,6 @@ local propset_names = {
               -- 0x4CD89504    -- s_inv_baitherb01x
               -- 0x4DC0C2E7    -- p_hathang01x
 
-
-
        "pg_ambcamp01x_tent_oilskin_lean02",
           -- CONTAINS OBJECTS:
               -- 0x0CE63363    -- p_ambtentoilskin01b
@@ -1081,8 +1003,6 @@ local propset_names = {
               -- 0x5AB8F9FF    -- s_peach01x
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
               -- 0x2BF8422D    -- p_bedrollopen03x
-
-
 
        "pg_ambcamp01x_tent_patchwork",
           -- CONTAINS OBJECTS:
@@ -1117,8 +1037,6 @@ local propset_names = {
               -- 0x7FE9CBFF    -- p_shoe02x
               -- 0xD416ECF1    -- p_ambfloorrug06x
 
-
-
        "pg_ambcamp01x_tent_patchwork_lean",
           -- CONTAINS OBJECTS:
               -- 0x5C1DA973    -- p_ambtentpatch01b
@@ -1143,8 +1061,6 @@ local propset_names = {
               -- 0x5B2D0F9F    -- s_rc_camprug01x
               -- 0x7B187D60    -- p_ambfloorroll01x
 
-
-
        "pg_ambcamp01x_tent_plaid",
           -- CONTAINS OBJECTS:
               -- 0x6FD002AE    -- p_ambtentplaid01x
@@ -1162,8 +1078,6 @@ local propset_names = {
               -- 0xC39686EA    -- s_cmountainbitters_sl
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
               -- 0x4DC0C2E7    -- p_hathang01x
-
-
 
        "pg_ambcamp01x_tent_plaid01",
           -- CONTAINS OBJECTS:
@@ -1192,8 +1106,6 @@ local propset_names = {
               -- 0xBB5ABDB1    -- p_ambfloorrug04x
               -- 0x7CBC6D3C    -- p_dressinglcmlinen01x
 
-
-
        "pg_ambcamp01x_tent_plaid_lean01",
           -- CONTAINS OBJECTS:
               -- 0x6B667A4B    -- p_ambtentplaid01b
@@ -1217,8 +1129,6 @@ local propset_names = {
               -- 0x186473CE    -- p_tin_soap01x
               -- 0x6B4A16F6    -- p_dressinglbllinen01x
               -- 0x4DC0C2E7    -- p_hathang01x
-
-
 
        "pg_ambcamp01x_tent_plaid_lean02",
           -- CONTAINS OBJECTS:
@@ -1248,8 +1158,6 @@ local propset_names = {
               -- 0xB7068D0B    -- p_foldedshirt_02
               -- 0xB7068D0B    -- p_foldedshirt_02
 
-
-
        "pg_ambcamp01x_tent_pup",
           -- CONTAINS OBJECTS:
               -- 0xFF70C1FF    -- p_tentarmypup01x
@@ -1267,8 +1175,6 @@ local propset_names = {
               -- 0x0991DC35    -- s_saltedbeef01x
               -- 0xC841DF58    -- p_woodpilechopped01x
 
-
-
        "pg_ambcamp01x_tent_pupoil",
           -- CONTAINS OBJECTS:
               -- 0x09BFBEB1    -- p_amb_tent01x
@@ -1284,8 +1190,6 @@ local propset_names = {
               -- 0xF46DCFA5    -- s_inv_tabacco01x
               -- 0x74CA3FFF    -- s_inv_rum01x
               -- 0xB1191FBB    -- p_dressinglbmtool01x
-
-
 
        "pg_ambcamp01x_tent_pupoil01",
           -- CONTAINS OBJECTS:
@@ -1317,8 +1221,6 @@ local propset_names = {
               -- 0x25E2D562    -- p_carcasshangfish01a
               -- 0xBEBCA255    -- p_campfireembers01x
               -- 0xBEBCA255    -- p_campfireembers01x
-
-
 
        "pg_ambcamp01x_tent_pupoil02",
           -- CONTAINS OBJECTS:
@@ -1359,8 +1261,6 @@ local propset_names = {
               -- 0x4CD89504    -- s_inv_baitherb01x
               -- 0xDA565A9B    -- s_gunoil01x
 
-
-
        "pg_ambcamp01x_tent_pupstripe",
           -- CONTAINS OBJECTS:
               -- 0x5D1FA697    -- p_amb_tent02x
@@ -1386,8 +1286,6 @@ local propset_names = {
               -- 0xE44C8504    -- s_biscuits01x
               -- 0x09A4E44E    -- s_inv_gin01x
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
-
-
 
        "pg_ambcamp01x_tent_pupstripe_glamp",
           -- CONTAINS OBJECTS:
@@ -1417,8 +1315,6 @@ local propset_names = {
               -- 0x406D2894    -- p_tin_pomade01x
               -- 0x6B4A16F6    -- p_dressinglbllinen01x
 
-
-
        "pg_ambcamp01x_tent_scrub",
           -- CONTAINS OBJECTS:
               -- 0x731ADD6E    -- p_ambtentscrub01x
@@ -1429,8 +1325,6 @@ local propset_names = {
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
               -- 0xB2D5FDAB    -- s_canbeans01x
               -- 0x829A0C5F    -- p_pear_02x
-
-
 
        "pg_ambcamp01x_tent_scrub_lean",
           -- CONTAINS OBJECTS:
@@ -1454,8 +1348,6 @@ local propset_names = {
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
               -- 0x4C034AC3    -- p_can04x
 
-
-
        "pg_ambcamp01x_tent_shelter_boat",
           -- CONTAINS OBJECTS:
               -- 0xB2EED61C    -- p_ambfloortarp01x
@@ -1475,8 +1367,6 @@ local propset_names = {
               -- 0x2CDFFFCD    -- p_pickup_bread01x
               -- 0x150C65DE    -- p_dressinglbmfish01x
 
-
-
        "pg_ambcamp01x_tent_shelter_build",
           -- CONTAINS OBJECTS:
               -- 0xB2EED61C    -- p_ambfloortarp01x
@@ -1491,8 +1381,6 @@ local propset_names = {
               -- 0x8E52A545    -- s_inv_medicine01x
               -- 0x05367EF0    -- p_boxlrgleather01x
               -- 0xAD9546F3    -- p_dressinglblutility01x
-
-
 
        "pg_ambcamp01x_tent_shelter_cart",
           -- CONTAINS OBJECTS:
@@ -1526,8 +1414,6 @@ local propset_names = {
               -- 0x08655A55    -- p_cl_gen_articlea
               -- 0x89EA5483    -- p_ambclothhang01x
 
-
-
        "pg_ambcamp01x_tent_shelter_firewood",
           -- CONTAINS OBJECTS:
               -- 0xB2EED61C    -- p_ambfloortarp01x
@@ -1541,8 +1427,6 @@ local propset_names = {
               -- 0x0112CA3F    -- s_cornedbeef01x
               -- 0x4DC0C2E7    -- p_hathang01x
               -- 0x6127EED3    -- p_craftingpot01x
-
-
 
        "pg_ambcamp01x_tent_shelter_scaff",
           -- CONTAINS OBJECTS:
@@ -1565,8 +1449,6 @@ local propset_names = {
               -- 0x0B84A2B9    -- s_inv_flask01x
               -- 0xB2D5FDAB    -- s_canbeans01x
 
-
-
        "pg_ambcamp01x_tent_shelter_tree_scaff",
           -- CONTAINS OBJECTS:
               -- 0x96EFE2EB    -- p_ambbed01x
@@ -1585,8 +1467,6 @@ local propset_names = {
               -- 0x8E52A545    -- s_inv_medicine01x
               -- 0x5AB8F9FF    -- s_peach01x
 
-
-
        "pg_ambcamp01x_tent_shelter_tree_tie01",
           -- CONTAINS OBJECTS:
               -- 0x7C5D55DB    -- p_ambtentrope01x
@@ -1604,8 +1484,6 @@ local propset_names = {
               -- 0x8AFF1529    -- p_dressinglbsutility01x
               -- 0x4CD89504    -- s_inv_baitherb01x
               -- 0x23C759D8    -- s_inv_snakeoil01x
-
-
 
        "pg_ambcamp01x_tent_shelter_tree_tie02",
           -- CONTAINS OBJECTS:
@@ -1636,8 +1514,6 @@ local propset_names = {
               -- 0x5AB8F9FF    -- s_peach01x
               -- 0x044E5B02    -- s_oatcakes01x
               -- 0x68A915A8    -- p_bucket03x
-
-
 
        "pg_ambcamp01x_tent_shelter_tree_trunk",
           -- CONTAINS OBJECTS:
@@ -1705,8 +1581,6 @@ local propset_names = {
               -- 0x56D5E9F8    -- p_waxdrip03x
               -- 0xDAF231B0    -- p_moundbase3x
 
-
-
        "pg_ambcamp01x_tent_snow",
           -- CONTAINS OBJECTS:
               -- 0x5B4535CA    -- p_amb_tent03x
@@ -1726,8 +1600,6 @@ local propset_names = {
               -- 0xDA565A9B    -- s_gunoil01x
               -- 0x66F3BCB4    -- s_inv_whiskey01x
               -- 0xBB5ABDB1    -- p_ambfloorrug04x
-
-
 
        "pg_ambcamp01x_tent_snow01",
           -- CONTAINS OBJECTS:
@@ -1754,8 +1626,6 @@ local propset_names = {
               -- 0xC39686EA    -- s_cmountainbitters_sl
               -- 0x1F31576D    -- p_boxlrgwoven01x
               -- 0xDFB9AF01    -- p_dressinglblhorse01x
-
-
 
        "pg_ambcamp01x_tent_snow02",
           -- CONTAINS OBJECTS:
@@ -1788,8 +1658,6 @@ local propset_names = {
               -- 0xA158EC7B    -- p_crate14x
               -- 0x54ACC676    -- p_ambclothseat01x
               -- 0x2413F45B    -- p_ambpeltstack01x
-
-
 
        "pg_ambcamp01x_tent_sticks",
           -- CONTAINS OBJECTS:
@@ -1826,8 +1694,6 @@ local propset_names = {
               -- 0xB4307372    -- p_ambcordfresh01x
               -- 0x12A4BA95    -- p_ambcorddried01x
 
-
-
        "pg_ambcamp01x_tent_sticks_tall",
           -- CONTAINS OBJECTS:
               -- 0x83E0A92C    -- p_tentmexican01x
@@ -1847,8 +1713,6 @@ local propset_names = {
               -- 0xD1F6EA81    -- p_dressinglcmproduce01x
               -- 0x4DC0C2E7    -- p_hathang01x
               -- 0xB78CD749    -- p_chestmedlog01x
-
-
 
        "pg_ambcamp01x_tent_string",
           -- CONTAINS OBJECTS:
@@ -1870,8 +1734,6 @@ local propset_names = {
               -- 0x4DC0C2E7    -- p_hathang01x
               -- 0xE5AC3FB7    -- s_bedrollopen01x
 
-
-
        "pg_ambcamp01x_tent_string_lean",
           -- CONTAINS OBJECTS:
               -- 0x0422923E    -- p_ambtentstring01b
@@ -1892,8 +1754,6 @@ local propset_names = {
               -- 0xE5AC3FB7    -- s_bedrollopen01x
               -- 0x2AD600ED    -- p_ambblanketroll01x
               -- 0x531C0D4A    -- p_apronground01x
-
-
 
        "pg_ambcamp01x_tent_string_tarp",
           -- CONTAINS OBJECTS:
@@ -1928,8 +1788,6 @@ local propset_names = {
               -- 0x8581AE45    -- p_feedbag01x
               -- 0xF4B2AC82    -- p_rag04x
 
-
-
        "pg_ambcamp01x_tent_wagon_debris",
           -- CONTAINS OBJECTS:
               -- 0xA0F3D0CA    -- p_cs_rag01x
@@ -1961,8 +1819,6 @@ local propset_names = {
               -- 0xD1B06CEC    -- p_cl_gen_articleb
               -- 0x89EA5483    -- p_ambclothhang01x
               -- 0x4E564514    -- p_cl_garment05
-
-
 
        "pg_ambcamp01x_tent_woven",
           -- CONTAINS OBJECTS:
@@ -2004,8 +1860,6 @@ local propset_names = {
               -- 0x05998CC9    -- p_basket02x
               -- 0x0FE89304    -- p_cs_woodpile01x
 
-
-
        "pg_ambcamp01x_tent_woven_lean",
           -- CONTAINS OBJECTS:
               -- 0x24B1B9D6    -- p_ambtentrug01b
@@ -2031,8 +1885,6 @@ local propset_names = {
               -- 0xA939A288    -- p_dressinglbsmed01x
               -- 0x7B187D60    -- p_ambfloorroll01x
               -- 0xD416ECF1    -- p_ambfloorrug06x
-
-
 
        "pg_ambcamp02x_tent_combo01",
           -- CONTAINS OBJECTS:
@@ -2065,8 +1917,6 @@ local propset_names = {
               -- 0x186473CE    -- p_tin_soap01x
               -- 0xEFAA3324    -- p_lantern09x
 
-
-
        "pg_ambcamp02x_tent_pup",
           -- CONTAINS OBJECTS:
               -- 0xA0F3D0CA    -- p_cs_rag01x
@@ -2094,8 +1944,6 @@ local propset_names = {
               -- 0xB2D5FDAB    -- s_canbeans01x
               -- 0x4777F53C    -- p_copperpot01x
               -- 0xDACC9DC1    -- p_pan01x
-
-
 
        "pg_ambcamp02x_tent_pupoil",
           -- CONTAINS OBJECTS:
@@ -2125,8 +1973,6 @@ local propset_names = {
               -- 0xEEE1A2B7    -- p_crate03d
               -- 0xEEE1A2B7    -- p_crate03d
 
-
-
        "pg_ambcamp02x_tent_snow",
           -- CONTAINS OBJECTS:
               -- 0xA0F3D0CA    -- p_cs_rag01x
@@ -2148,8 +1994,6 @@ local propset_names = {
               -- 0x2CDFFFCD    -- p_pickup_bread01x
               -- 0x54ACC676    -- p_ambclothseat01x
               -- 0x5BD08710    -- p_treestump02x
-
-
 
        "pg_ambcamp03x_tent_leanto01",
           -- CONTAINS OBJECTS:
@@ -2184,8 +2028,6 @@ local propset_names = {
               -- 0xCA11B07D    -- p_whiskeycrate01x
               -- 0x9786A300    -- p_ammoboxlancaster01x
               -- 0x6EA0221E    -- p_crate03c
-
-
 
        "pg_ambcamp03x_tent_leanto02",
           -- CONTAINS OBJECTS:
@@ -2243,8 +2085,6 @@ local propset_names = {
               -- 0x186473CE    -- p_tin_soap01x
               -- 0xDA565A9B    -- s_gunoil01x
 
-
-
        "pg_ambient_camp_add_bathtub01",
           -- CONTAINS OBJECTS:
               -- 0x3CF127BC    -- p_campfirerock01x
@@ -2263,8 +2103,6 @@ local propset_names = {
               -- 0x9667742A    -- s_shavingsoap1x
               -- 0xE59DE436    -- p_glovebox01x
 
-
-
        "pg_ambient_camp_add_boat01",
           -- CONTAINS OBJECTS:
               -- 0xF4B2AC82    -- p_rag04x
@@ -2279,8 +2117,6 @@ local propset_names = {
               -- 0xFD564D04    -- p_boat_oar_01_s
               -- 0x29D59B52    -- p_ambropepile01x
               -- 0xB27B2D83    -- p_ambropepile02x
-
-
 
        "pg_ambient_camp_add_boat02",
           -- CONTAINS OBJECTS:
@@ -2308,8 +2144,6 @@ local propset_names = {
               -- 0x30726C8B    -- p_trap05x
               -- 0x30726C8B    -- p_trap05x
 
-
-
        "pg_ambient_camp_add_build",
           -- CONTAINS OBJECTS:
               -- 0x982749FB    -- p_tentrolled01x
@@ -2336,8 +2170,6 @@ local propset_names = {
               -- 0x391088C8    -- p_dressinglbltool01x
               -- 0x07FC1538    -- p_toolbox01x
               -- 0x9F5C7C24    -- s_inv_revolverammo01x
-
-
 
        "pg_ambient_camp_add_butcher01",
           -- CONTAINS OBJECTS:
@@ -2369,8 +2201,6 @@ local propset_names = {
               -- 0xB2A33B51    -- p_gangtablemake02x
               -- 0x05DACE94    -- s_meatbit_organ_large01x
 
-
-
        "pg_ambient_camp_add_canoe01",
           -- CONTAINS OBJECTS:
               -- 0xF4B2AC82    -- p_rag04x
@@ -2392,8 +2222,6 @@ local propset_names = {
               -- 0x2BE58D77    -- p_bucketfish01x
               -- 0xD8F8A0D7    -- s_offal01x
               -- 0x30726C8B    -- p_trap05x
-
-
 
        "pg_ambient_camp_add_canoe02",
           -- CONTAINS OBJECTS:
@@ -2426,8 +2254,6 @@ local propset_names = {
               -- 0xCEEFB705    -- p_ambropedraped01x
               -- 0xB27B2D83    -- p_ambropepile02x
 
-
-
        "pg_ambient_camp_add_cart01",
           -- CONTAINS OBJECTS:
               -- 0xA47E4554    -- p_cartstreetvendor01x
@@ -2443,31 +2269,21 @@ local propset_names = {
               -- 0xDEFA691F    -- p_can05x
               -- 0x0112CA3F    -- s_cornedbeef01x
 
-
-
        "pg_ambient_camp_add_central_firebasin01",
           -- CONTAINS OBJECTS:
               -- 0x4E8BB775    -- p_campfirebasin01x
-
-
 
        "pg_ambient_camp_add_central_firechar01",
           -- CONTAINS OBJECTS:
               -- 0x26618909    -- p_campfirecharsml01x
 
-
-
        "pg_ambient_camp_add_central_firedirt01",
           -- CONTAINS OBJECTS:
               -- 0xAEC8B374    -- p_campfiredirt01x
 
-
-
        "pg_ambient_camp_add_central_firerock01",
           -- CONTAINS OBJECTS:
               -- 0xE936BA66    -- p_campfirerocksml02x
-
-
 
        "pg_ambient_camp_add_central_firescrub01",
           -- CONTAINS OBJECTS:
@@ -2475,8 +2291,6 @@ local propset_names = {
               -- 0x172D4A6B    -- p_cs_gua_branch01x
               -- 0x4647FEDE    -- p_woodpile05x
               -- 0x3AEBD482    -- p_campfirefresh01x
-
-
 
        "pg_ambient_camp_add_central_seat01",
           -- CONTAINS OBJECTS:
@@ -2486,16 +2300,12 @@ local propset_names = {
               -- 0xD416ECF1    -- p_ambfloorrug06x
               -- 0xC7DFD7E3    -- p_ambfloorrug05x
 
-
-
        "pg_ambient_camp_add_central_seat04",
           -- CONTAINS OBJECTS:
               -- 0xD416ECF1    -- p_ambfloorrug06x
               -- 0x4BCBCDC9    -- p_bench_log07x
               -- 0xBB5ABDB1    -- p_ambfloorrug04x
               -- 0x4C646CC0    -- p_rockstool02x
-
-
 
        "pg_ambient_camp_add_cloth01",
           -- CONTAINS OBJECTS:
@@ -2508,8 +2318,6 @@ local propset_names = {
               -- 0xCA01661E    -- p_ambfloorrug02x
               -- 0x47FCCFF3    -- s_beardtonic01x
               -- 0x2ADA8F46    -- p_foldedblanket02x
-
-
 
        "pg_ambient_camp_add_clothesline01",
           -- CONTAINS OBJECTS:
@@ -2528,8 +2336,6 @@ local propset_names = {
               -- 0x39F0EC07    -- p_clothespin01x
               -- 0x39F0EC07    -- p_clothespin01x
 
-
-
        "pg_ambient_camp_add_cook01",
           -- CONTAINS OBJECTS:
               -- 0x34AA3529    -- p_sawbucktable01x
@@ -2547,8 +2353,6 @@ local propset_names = {
               -- 0xDACC9DC1    -- p_pan01x
               -- 0xDE1392B2    -- p_cs_sugarbag01x
 
-
-
        "pg_ambient_camp_add_cook02",
           -- CONTAINS OBJECTS:
               -- 0xFF4275DC    -- p_sackapple01x
@@ -2565,8 +2369,6 @@ local propset_names = {
               -- 0x9DD889CF    -- p_apple01x
               -- 0xE5BA53DE    -- p_copperpot02x
               -- 0x7DDDE61E    -- p_floursack04x
-
-
 
        "pg_ambient_camp_add_debris01",
           -- CONTAINS OBJECTS:
@@ -2588,8 +2390,6 @@ local propset_names = {
               -- 0xC9A005DF    -- p_watermelon01bx
               -- 0x117D673F    -- p_ambsack02x
 
-
-
        "pg_ambient_camp_add_debrisveg01",
           -- CONTAINS OBJECTS:
               -- 0x954B54F1    -- p_stump
@@ -2606,8 +2406,6 @@ local propset_names = {
               -- 0x289E0147    -- p_plantpotnbx07x
               -- 0x4647FEDE    -- p_woodpile05x
               -- 0xB1D7590F    -- p_dirtpot01x
-
-
 
        "pg_ambient_camp_add_explore",
           -- CONTAINS OBJECTS:
@@ -2649,8 +2447,6 @@ local propset_names = {
               -- 0xA158EC7B    -- p_crate14x
               -- 0xF4B2AC82    -- p_rag04x
 
-
-
        "pg_ambient_camp_add_farmer01",
           -- CONTAINS OBJECTS:
               -- 0xF4B2AC82    -- p_rag04x
@@ -2667,15 +2463,11 @@ local propset_names = {
               -- 0xFF4275DC    -- p_sackapple01x
               -- 0x35E768E7    -- p_corn02x
 
-
-
        "pg_ambient_camp_add_fish01",
           -- CONTAINS OBJECTS:
               -- 0x9377BF7D    -- p_fishhanging10x
               -- 0x25E2D562    -- p_carcasshangfish01a
               -- 0x25E2D562    -- p_carcasshangfish01a
-
-
 
        "pg_ambient_camp_add_fishgut01",
           -- CONTAINS OBJECTS:
@@ -2700,8 +2492,6 @@ local propset_names = {
               -- 0xB85B8E93    -- p_dressinglbsfish01x
               -- 0x86814AE7    -- p_cigarettebox01x
 
-
-
        "pg_ambient_camp_add_forage01",
           -- CONTAINS OBJECTS:
               -- 0x5A55995E    -- p_ambforage01x
@@ -2714,8 +2504,6 @@ local propset_names = {
               -- 0xCA01661E    -- p_ambfloorrug02x
               -- 0xFF39018A    -- s_cmountainbitters_tl
 
-
-
        "pg_ambient_camp_add_forage02",
           -- CONTAINS OBJECTS:
               -- 0x96EFE2EB    -- p_ambbed01x
@@ -2726,8 +2514,6 @@ local propset_names = {
               -- 0x76B9CEC6    -- p_ambforage02x
               -- 0x23C759D8    -- s_inv_snakeoil01x
               -- 0xACACC4DF    -- p_dressinglblfarm01x
-
-
 
        "pg_ambient_camp_add_gamepole01",
           -- CONTAINS OBJECTS:
@@ -2750,8 +2536,6 @@ local propset_names = {
               -- 0xC7857F13    -- p_dressinglbsammo01x
               -- 0xCD4A76A8    -- s_inv_rifleammo01x
               -- 0xA04E8D42    -- p_boxsmlammo01x
-
-
 
        "pg_ambient_camp_add_games01",
           -- CONTAINS OBJECTS:
@@ -2784,8 +2568,6 @@ local propset_names = {
               -- 0x3C238C40    -- p_ambbundle01x
               -- 0x8DE7DF4D    -- s_clothpile01x
 
-
-
        "pg_ambient_camp_add_gear01",
           -- CONTAINS OBJECTS:
               -- 0x7B187D60    -- p_ambfloorroll01x
@@ -2805,8 +2587,6 @@ local propset_names = {
               -- 0xE1006BB5    -- p_foldedundershirt01x
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
               -- 0x8E52A545    -- s_inv_medicine01x
-
-
 
        "pg_ambient_camp_add_gear02",
           -- CONTAINS OBJECTS:
@@ -2832,8 +2612,6 @@ local propset_names = {
               -- 0xDBCF1440    -- p_canclean06x
               -- 0x044E5B02    -- s_oatcakes01x
 
-
-
        "pg_ambient_camp_add_gear03",
           -- CONTAINS OBJECTS:
               -- 0x592E7684    -- p_boxsmltackle01x
@@ -2845,8 +2623,6 @@ local propset_names = {
               -- 0xB27B2D83    -- p_ambropepile02x
               -- 0xA939A288    -- p_dressinglbsmed01x
               -- 0x8E52A545    -- s_inv_medicine01x
-
-
 
        "pg_ambient_camp_add_glamp",
           -- CONTAINS OBJECTS:
@@ -2874,21 +2650,15 @@ local propset_names = {
               -- 0x44A8146F    -- p_bread06x
               -- 0x47FCCFF3    -- s_beardtonic01x
 
-
-
        "pg_ambient_camp_add_hanglrg",
           -- CONTAINS OBJECTS:
               -- 0x6589B13B    -- p_hangracklrg01x
               -- 0xF76CF9CD    -- p_carcasshanglrg01x
 
-
-
        "pg_ambient_camp_add_hangmed",
           -- CONTAINS OBJECTS:
               -- 0xE1D4106D    -- p_hangrackmed01x
               -- 0xA3E50A6C    -- p_carcasshangmed01a
-
-
 
        "pg_ambient_camp_add_hangmix",
           -- CONTAINS OBJECTS:
@@ -2896,14 +2666,10 @@ local propset_names = {
               -- 0xF76CF9CD    -- p_carcasshanglrg01x
               -- 0xA3E50A6C    -- p_carcasshangmed01a
 
-
-
        "pg_ambient_camp_add_hangsml",
           -- CONTAINS OBJECTS:
               -- 0x9377BF7D    -- p_fishhanging10x
               -- 0x25E2D562    -- p_carcasshangfish01a
-
-
 
        "pg_ambient_camp_add_horsetack01",
           -- CONTAINS OBJECTS:
@@ -2924,8 +2690,6 @@ local propset_names = {
               -- 0xA4108C7A    -- p_whiskeycrate01x_dmg
               -- 0x9FFF3C78    -- p_horseshoe01x
 
-
-
        "pg_ambient_camp_add_hunt01",
           -- CONTAINS OBJECTS:
               -- 0x5C35FB62    -- p_moneybag05x
@@ -2940,8 +2704,6 @@ local propset_names = {
               -- 0x6589B13B    -- p_hangracklrg01x
               -- 0xF76CF9CD    -- p_carcasshanglrg01x
               -- 0x4CD89504    -- s_inv_baitherb01x
-
-
 
        "pg_ambient_camp_add_hunt02",
           -- CONTAINS OBJECTS:
@@ -2972,8 +2734,6 @@ local propset_names = {
               -- 0x0991DC35    -- s_saltedbeef01x
               -- 0xD8F8A0D7    -- s_offal01x
 
-
-
        "pg_ambient_camp_add_lamppost01",
           -- CONTAINS OBJECTS:
               -- 0xC75AB53D    -- p_crate01x_var02
@@ -2985,8 +2745,6 @@ local propset_names = {
               -- 0x9DD889CF    -- p_apple01x
               -- 0xEEE1A2B7    -- p_crate03d
 
-
-
        "pg_ambient_camp_add_laundry",
           -- CONTAINS OBJECTS:
               -- 0xDCFEE0B1    -- p_washtub02x
@@ -2996,8 +2754,6 @@ local propset_names = {
               -- 0x34AA3529    -- p_sawbucktable01x
               -- 0x8DC4AFC5    -- p_washboard01x
               -- 0x186473CE    -- p_tin_soap01x
-
-
 
        "pg_ambient_camp_add_makeshifttable01",
           -- CONTAINS OBJECTS:
@@ -3017,8 +2773,6 @@ local propset_names = {
               -- 0x8AFF1529    -- p_dressinglbsutility01x
               -- 0x2C681671    -- s_inv_cocainegum01x
               -- 0x9F82FCA5    -- s_crateseat03x
-
-
 
        "pg_ambient_camp_add_makeshifttable02",
           -- CONTAINS OBJECTS:
@@ -3042,8 +2796,6 @@ local propset_names = {
               -- 0x29F31050    -- p_stake01x
               -- 0x2F5FC077    -- p_crate14cx
 
-
-
        "pg_ambient_camp_add_mine",
           -- CONTAINS OBJECTS:
               -- 0x761C3172    -- p_goldcradlestand01x
@@ -3059,8 +2811,6 @@ local propset_names = {
               -- 0x9DEAE5F1    -- p_boxmeddeposit01x
               -- 0xD7A62402    -- p_dressinglbmcamp01x
               -- 0x86814AE7    -- p_cigarettebox01x
-
-
 
        "pg_ambient_camp_add_native01",
           -- CONTAINS OBJECTS:
@@ -3083,8 +2833,6 @@ local propset_names = {
               -- 0x073690E5    -- p_dressinglblcamp01x
               -- 0xF46DCFA5    -- s_inv_tabacco01x
 
-
-
        "pg_ambient_camp_add_pack01",
           -- CONTAINS OBJECTS:
               -- 0x3C238C40    -- p_ambbundle01x
@@ -3095,8 +2843,6 @@ local propset_names = {
               -- 0xB2D5FDAB    -- s_canbeans01x
               -- 0xE44C8504    -- s_biscuits01x
 
-
-
        "pg_ambient_camp_add_pack02",
           -- CONTAINS OBJECTS:
               -- 0xEF7BCCD7    -- p_basin01sm
@@ -3105,8 +2851,6 @@ local propset_names = {
               -- 0x3AD08638    -- p_ambpack02x
               -- 0x68970FAE    -- s_inv_tonic01x
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
-
-
 
        "pg_ambient_camp_add_pack03",
           -- CONTAINS OBJECTS:
@@ -3121,8 +2865,6 @@ local propset_names = {
               -- 0xE546FB46    -- p_ambropeloop01x
               -- 0xBF87C4B8    -- p_gourdwater01x
 
-
-
        "pg_ambient_camp_add_pack04",
           -- CONTAINS OBJECTS:
               -- 0x781173C9    -- p_ambpack05x
@@ -3133,37 +2875,25 @@ local propset_names = {
               -- 0xDACC9DC1    -- p_pan01x
               -- 0x2B0957B2    -- p_openbook01x
 
-
-
        "pg_ambient_camp_add_packcart01",
           -- CONTAINS OBJECTS:
               -- 0xFD6D69C5    -- p_ambcart01x
-
-
 
        "pg_ambient_camp_add_packcart02",
           -- CONTAINS OBJECTS:
               -- 0x755A613D    -- p_ambcart02x
 
-
-
        "pg_ambient_camp_add_packcart03",
           -- CONTAINS OBJECTS:
               -- 0x6D8FEE41    -- p_cart03x
-
-
 
        "pg_ambient_camp_add_packcart04",
           -- CONTAINS OBJECTS:
               -- 0xA47E4554    -- p_cartstreetvendor01x
 
-
-
        "pg_ambient_camp_add_packcart05",
           -- CONTAINS OBJECTS:
               -- 0x1907E28A    -- p_storagecartnbx01x
-
-
 
        "pg_ambient_camp_add_packcart06",
           -- CONTAINS OBJECTS:
@@ -3173,8 +2903,6 @@ local propset_names = {
               -- 0x3C238C40    -- p_ambbundle01x
               -- 0xEEE1A2B7    -- p_crate03d
               -- 0x29D59B52    -- p_ambropepile01x
-
-
 
        "pg_ambient_camp_add_packwagonbutcher01",
           -- CONTAINS OBJECTS:
@@ -3224,8 +2952,6 @@ local propset_names = {
               -- 0x8B272AFE    -- p_group_gamble_jar02x
               -- 0xF6E5D9FA    -- s_meatbit_rib_large01x
 
-
-
        "pg_ambient_camp_add_packwagonconvoy01",
           -- CONTAINS OBJECTS:
               -- 0x59A5EF10    -- p_ambclothpile01x
@@ -3244,8 +2970,6 @@ local propset_names = {
               -- 0x09862DFC    -- p_debrispile01x
               -- 0x3015A946    -- p_dressinglcmhunt02x
               -- 0x0112CA3F    -- s_cornedbeef01x
-
-
 
        "pg_ambient_camp_add_packwagoncookprep01",
           -- CONTAINS OBJECTS:
@@ -3286,16 +3010,12 @@ local propset_names = {
               -- 0xC7DFD7E3    -- p_ambfloorrug05x
               -- 0xC5EF0205    -- p_stewplate02x
 
-
-
        "pg_ambient_camp_add_packwagonpacked01",
           -- CONTAINS OBJECTS:
               -- 0x2949B2E5    -- s_chuckwagon01xsetup
               -- 0xED29C457    -- s_chuckwagon01xcoth01x
               -- 0x3C238C40    -- p_ambbundle01x
               -- 0x02F9FDFA    -- p_shovel04x
-
-
 
        "pg_ambient_camp_add_pelts01",
           -- CONTAINS OBJECTS:
@@ -3331,8 +3051,6 @@ local propset_names = {
               -- 0x7477E6D8    -- p_ambfishgut02x
               -- 0x662E2016    -- s_inv_pistolammo01x
 
-
-
        "pg_ambient_camp_add_picnic01",
           -- CONTAINS OBJECTS:
               -- 0x7ADCDEC7    -- p_foldedrug01x
@@ -3349,8 +3067,6 @@ local propset_names = {
               -- 0x85CEA607    -- s_jerkypaper01x
               -- 0xADDA0E56    -- s_cheesewedge1x
               -- 0xAA42659C    -- p_jar04x
-
-
 
        "pg_ambient_camp_add_snow01",
           -- CONTAINS OBJECTS:
@@ -3375,8 +3091,6 @@ local propset_names = {
               -- 0x29011C45    -- p_woodpiece01x
               -- 0x2410574E    -- p_ambpelt02x
               -- 0x29011C45    -- p_woodpiece01x
-
-
 
        "pg_ambient_camp_add_station",
           -- CONTAINS OBJECTS:
@@ -3412,8 +3126,6 @@ local propset_names = {
               -- 0x4777F53C    -- p_copperpot01x
               -- 0x012A5FF1    -- p_woodspoon01x
 
-
-
        "pg_ambient_camp_add_station02",
           -- CONTAINS OBJECTS:
               -- 0x34AA3529    -- p_sawbucktable01x
@@ -3442,8 +3154,6 @@ local propset_names = {
               -- 0xC45FA29B    -- p_tincan01x
               -- 0x4C034AC3    -- p_can04x
 
-
-
        "pg_ambient_camp_add_tarp01",
           -- CONTAINS OBJECTS:
               -- 0x68EB1056    -- p_buysellboxsm01x
@@ -3461,14 +3171,10 @@ local propset_names = {
               -- 0xB27B2D83    -- p_ambropepile02x
               -- 0xE546FB46    -- p_ambropeloop01x
 
-
-
        "pg_ambient_camp_add_umbrella01",
           -- CONTAINS OBJECTS:
               -- 0xC40834F2    -- p_chairfolding02x
               -- 0x92A711D4    -- p_umbrellanbx02x
-
-
 
        "pg_ambient_camp_add_water01",
           -- CONTAINS OBJECTS:
@@ -3483,8 +3189,6 @@ local propset_names = {
               -- 0x41F2AF65    -- p_canteen01x
               -- 0x186473CE    -- p_tin_soap01x
 
-
-
        "pg_ambient_camp_add_wood",
           -- CONTAINS OBJECTS:
               -- 0x20317B97    -- p_stump_01bx
@@ -3497,21 +3201,15 @@ local propset_names = {
               -- 0x29D74E6D    -- p_woodpiece05x
               -- 0xE8945B91    -- p_debrisboard14x
 
-
-
        "pg_ambient_campfire01ax",
           -- CONTAINS OBJECTS:
               -- 0x26618909    -- p_campfirecharsml01x
               -- 0xA0F3D0CA    -- p_cs_rag01x
 
-
-
        "pg_ambient_campfire01bx",
           -- CONTAINS OBJECTS:
               -- 0x40B2C5ED    -- p_rag02x
               -- 0x26618909    -- p_campfirecharsml01x
-
-
 
        "pg_ambient_campfire01x",
           -- CONTAINS OBJECTS:
@@ -3524,8 +3222,6 @@ local propset_names = {
               -- 0x0B84A2B9    -- s_inv_flask01x
               -- 0x26618909    -- p_campfirecharsml01x
 
-
-
        "pg_ambient_campfire01x_tent",
           -- CONTAINS OBJECTS:
               -- 0x592F2362    -- p_bedrollclosed01x
@@ -3535,8 +3231,6 @@ local propset_names = {
               -- 0x6DE02925    -- p_bottlebeer01x
               -- 0xFF70C1FF    -- p_tentarmypup01x
               -- 0xE5AC3FB7    -- s_bedrollopen01x
-
-
 
        "pg_ambient_campfire02x",
           -- CONTAINS OBJECTS:
@@ -3558,8 +3252,6 @@ local propset_names = {
               -- 0xE936BA66    -- p_campfirerocksml02x
               -- 0xBB5ABDB1    -- p_ambfloorrug04x
 
-
-
        "pg_ambient_campfire02x_stools",
           -- CONTAINS OBJECTS:
               -- 0xFF70C1FF    -- p_tentarmypup01x
@@ -3571,16 +3263,12 @@ local propset_names = {
               -- 0xE5AC3FB7    -- s_bedrollopen01x
               -- 0x1230B5AD    -- p_boiler01x
 
-
-
        "pg_ambient_campfire02x_tent",
           -- CONTAINS OBJECTS:
               -- 0xE5AC3FB7    -- s_bedrollopen01x
               -- 0xE528F5FC    -- p_cookgrate01x
               -- 0xE5AC3FB7    -- s_bedrollopen01x
               -- 0xFF70C1FF    -- p_tentarmypup01x
-
-
 
        "pg_ambient_campfire02xb",
           -- CONTAINS OBJECTS:
@@ -3614,8 +3302,6 @@ local propset_names = {
               -- 0x907D15C2    -- p_barrel06x
               -- 0x8A7A697C    -- p_bottlejd01x
 
-
-
        "pg_ambient_campfire02xc",
           -- CONTAINS OBJECTS:
               -- 0xE5AC3FB7    -- s_bedrollopen01x
@@ -3640,8 +3326,6 @@ local propset_names = {
               -- 0x9CD3CA7E    -- p_clothesfolded02x
               -- 0xCDCBC8C0    -- p_folded_vest01x
 
-
-
        "pg_ambient_campfire03x",
           -- CONTAINS OBJECTS:
               -- 0xA0F3D0CA    -- p_cs_rag01x
@@ -3665,8 +3349,6 @@ local propset_names = {
               -- 0x60D6608E    -- s_inv_medicinehalf01x
               -- 0x66F3BCB4    -- s_inv_whiskey01x
 
-
-
        "pg_ambient_campfire03x_tent",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
@@ -3688,8 +3370,6 @@ local propset_names = {
               -- 0x50CD6DA3    -- p_campfirechar01x
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x74289515    -- p_cookgrate02x
-
-
 
        "pg_ambient_campfire03x_tent_trap",
           -- CONTAINS OBJECTS:
@@ -3723,8 +3403,6 @@ local propset_names = {
               -- 0x8DB4B2F6    -- p_trap02x
               -- 0x30726C8B    -- p_trap05x
 
-
-
        "pg_ambient_campfire03x_test",
           -- CONTAINS OBJECTS:
               -- 0x1298EF27    -- p_campfire02xb
@@ -3746,8 +3424,6 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x2BF8422D    -- p_bedrollopen03x
 
-
-
        "pg_ambient_campfire04x",
           -- CONTAINS OBJECTS:
               -- 0xE5AC3FB7    -- s_bedrollopen01x
@@ -3766,8 +3442,6 @@ local propset_names = {
               -- 0x8E52A545    -- s_inv_medicine01x
               -- 0xDA565A9B    -- s_gunoil01x
 
-
-
        "pg_ambient_campfire04x_tent",
           -- CONTAINS OBJECTS:
               -- 0xE5AC3FB7    -- s_bedrollopen01x
@@ -3783,8 +3457,6 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x1308875C    -- p_lantern05x
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_ambient_campfire05x",
           -- CONTAINS OBJECTS:
@@ -3833,8 +3505,6 @@ local propset_names = {
               -- 0x4CD89504    -- s_inv_baitherb01x
               -- 0xB85B8E93    -- p_dressinglbsfish01x
 
-
-
        "pg_ambient_campfire05x_tent",
           -- CONTAINS OBJECTS:
               -- 0x6F9E850D    -- p_bedrollopen01x
@@ -3862,8 +3532,6 @@ local propset_names = {
               -- 0x4B5DD816    -- p_blanketground05x
               -- 0xFF70C1FF    -- p_tentarmypup01x
               -- 0xB3E5988A    -- p_chuckwagon01x
-
-
 
        "pg_ambient_campfireexconfed01x",
           -- CONTAINS OBJECTS:
@@ -3893,19 +3561,13 @@ local propset_names = {
               -- 0x98C3B388    -- p_boxlrgmeat01x
               -- 0xA6A449CF    -- s_lootablemoneybox
 
-
-
        "PG_AMBIENT_CAMPFIREOFF01X",
           -- CONTAINS OBJECTS:
               -- 0x9A04AB2A    -- p_campfireburnedout05x
 
-
-
        "PG_AMBIENT_CAMPFIREON01X",
           -- CONTAINS OBJECTS:
               -- 0xB9B5D29B    -- p_campfire05x
-
-
 
        "pg_ambient_campfireransacked01x",
           -- CONTAINS OBJECTS:
@@ -3916,8 +3578,6 @@ local propset_names = {
               -- 0x87852C24    -- p_debrispile03x
               -- 0x318B7C9E    -- p_debrispile02x
               -- 0x796A5A50    -- p_pot03x
-
-
 
        "pg_ambient_campfireransacked02x",
           -- CONTAINS OBJECTS:
@@ -3932,8 +3592,6 @@ local propset_names = {
               -- 0x09862DFC    -- p_debrispile01x
               -- 0x87852C24    -- p_debrispile03x
               -- 0x09862DFC    -- p_debrispile01x
-
-
 
        "pg_ambient_campfireransacked03x",
           -- CONTAINS OBJECTS:
@@ -3984,8 +3642,6 @@ local propset_names = {
               -- 0xC9BBE6F4    -- p_crate08b
               -- 0xC9BBE6F4    -- p_crate08b
 
-
-
        "pg_ambient_campfireransacked04x",
           -- CONTAINS OBJECTS:
               -- 0xE5AC3FB7    -- s_bedrollopen01x
@@ -4014,8 +3670,6 @@ local propset_names = {
               -- 0x4C034AC3    -- p_can04x
               -- 0x4C034AC3    -- p_can04x
               -- 0x68451C20    -- p_crate05x
-
-
 
        "PG_AMBIENT_CAMPFIREWINTER01X",
           -- CONTAINS OBJECTS:
@@ -4046,8 +3700,6 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0xE528F5FC    -- p_cookgrate01x
 
-
-
        "pg_ambient_campfirewinter02x",
           -- CONTAINS OBJECTS:
               -- 0xE5AC3FB7    -- s_bedrollopen01x
@@ -4070,8 +3722,6 @@ local propset_names = {
               -- 0x1308875C    -- p_lantern05x
               -- 0x5F5F56E4    -- p_stoolfolding01x
 
-
-
        "pg_ambient_coachrobbery01x",
           -- CONTAINS OBJECTS:
               -- 0xFD7A17C7    -- p_package_vg
@@ -4079,8 +3729,6 @@ local propset_names = {
               -- 0x6CD2A615    -- p_package08x
               -- 0xE3BA21A6    -- p_package10
               -- 0xEB77D803    -- p_fabricfolded02x
-
-
 
        "pg_beartrap01x",
           -- CONTAINS OBJECTS:
@@ -4090,16 +3738,12 @@ local propset_names = {
               -- 0x318DABC5    -- s_inv_xpres_pstammo01x
               -- 0xD85609D3    -- s_inv_xpres_rifleammo01x
 
-
-
        "pg_beartrap02x",
           -- CONTAINS OBJECTS:
               -- 0xEFAA3324    -- p_lantern09x
               -- 0x3725B744    -- s_beartrapanimated01x
               -- 0x1C074A6C    -- s_inv_cougarfangtrinket01x
               -- 0x5F6C3793    -- p_re_beartrapgroup02x
-
-
 
        "pg_bh_campreturn01x",
           -- CONTAINS OBJECTS:
@@ -4247,8 +3891,6 @@ local propset_names = {
               -- 0x66F3BCB4    -- s_inv_whiskey01x
               -- 0x66F3BCB4    -- s_inv_whiskey01x
 
-
-
        "PG_BH_RANCHER01X",
           -- CONTAINS OBJECTS:
               -- 0x0A6568D7    -- p_campfirecombined03x
@@ -4297,8 +3939,6 @@ local propset_names = {
               -- 0xF46DCFA5    -- s_inv_tabacco01x
               -- 0x02F097B2    -- p_cigarbox01x
 
-
-
        "pg_bh_skinnerwagon01x",
           -- CONTAINS OBJECTS:
               -- 0x04AC59BC    -- p_crate01x
@@ -4317,8 +3957,6 @@ local propset_names = {
               -- 0xB22E9689    -- p_barrel12x
               -- 0xB22E9689    -- p_barrel12x
               -- 0xB22E9689    -- p_barrel12x
-
-
 
        "pg_campfirerobbery01x",
           -- CONTAINS OBJECTS:
@@ -4379,8 +4017,6 @@ local propset_names = {
               -- 0x899F95E1    -- p_brokenbeerbottle01x
               -- 0x09862DFC    -- p_debrispile01x
 
-
-
        "PG_CARAVANCAMPFIRE01X",
           -- CONTAINS OBJECTS:
               -- 0x51A1229C    -- p_woodpile01x
@@ -4388,15 +4024,11 @@ local propset_names = {
               -- 0x50638BD5    -- p_pan02x
               -- 0xD6E51168    -- s_cookfire01x
 
-
-
        "pg_chainganggroup01x",
           -- CONTAINS OBJECTS:
               -- 0x8FFCACE7    -- mp_sca_rock_grp_l_01
               -- 0x5D8BC802    -- mp_sca_rock_grp_l_02
               -- 0xD1F9D02A    -- mp_roa_rock_grp_l_03
-
-
 
        "PG_COMPANIONACTIVITY_ROBBERY",
           -- CONTAINS OBJECTS:
@@ -4441,8 +4073,6 @@ local propset_names = {
               -- 0xA1A0DEFD    -- s_map01x
               -- 0x22370C62    -- p_sack04x
 
-
-
        "PG_COMPANIONACTIVITY_RUSTLING",
           -- CONTAINS OBJECTS:
               -- 0x0F980CBD    -- p_hitchingpost05x
@@ -4466,8 +4096,6 @@ local propset_names = {
               -- 0x006DB1E8    -- p_ropewall01x
               -- 0x332C4BBA    -- p_brushhorse01x
 
-
-
        "pg_creator_camp01x",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
@@ -4476,13 +4104,9 @@ local propset_names = {
               -- 0x4FF68AED    -- p_pot02x
               -- 0x835A4AEE    -- p_kindlingpile01x
 
-
-
        "pg_cs_marston101x",
           -- CONTAINS OBJECTS:
               -- 0x172999BE    -- p_cs_marston01_01x
-
-
 
        "pg_delivery_cktoil01x",
           -- CONTAINS OBJECTS:
@@ -4492,37 +4116,25 @@ local propset_names = {
               -- 0x4C564F48    -- p_barrel_cor01x
               -- 0x4C564F48    -- p_barrel_cor01x
 
-
-
        "pg_delivery_coal01x",
           -- CONTAINS OBJECTS:
               -- 0x375F5AB0    -- p_veh_pg_delivery_coal01x
-
-
 
        "pg_delivery_coal02x",
           -- CONTAINS OBJECTS:
               -- 0xD36D2009    -- p_veh_delivery_coalcart01x
 
-
-
        "pg_delivery_cotton01x",
           -- CONTAINS OBJECTS:
               -- 0x464408C0    -- p_veh_cottonwag03x
-
-
 
        "pg_delivery_dairy01x",
           -- CONTAINS OBJECTS:
               -- 0x539EE24E    -- p_veh_delivery_dairy01x
 
-
-
        "pg_delivery_orange01x",
           -- CONTAINS OBJECTS:
               -- 0x7D8C1A92    -- p_veh_delivery_orange01x_1
-
-
 
        "pg_drunkcamp01x",
           -- CONTAINS OBJECTS:
@@ -4555,8 +4167,6 @@ local propset_names = {
               -- 0x5A15300B    -- p_jug01bx
               -- 0x9DD889CF    -- p_apple01x
 
-
-
        "pg_fishingshore01x",
           -- CONTAINS OBJECTS:
               -- 0x2BE58D77    -- p_bucketfish01x
@@ -4567,16 +4177,12 @@ local propset_names = {
               -- 0x35914478    -- p_basketcreel01x
               -- 0x6B81A129    -- p_fishhanging01x
 
-
-
        "pg_gangcamp_lemoyne_captive",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x983D1027    -- p_windsorchair01x
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_gangcamp_lemoyne_general",
           -- CONTAINS OBJECTS:
@@ -4585,8 +4191,6 @@ local propset_names = {
               -- 0x983D1027    -- p_windsorchair01x
               -- 0x5F5F56E4    -- p_stoolfolding01x
 
-
-
        "pg_gangcamp_lemoyne_warstory",
           -- CONTAINS OBJECTS:
               -- 0x983D1027    -- p_windsorchair01x
@@ -4594,22 +4198,16 @@ local propset_names = {
               -- 0xC40834F2    -- p_chairfolding02x
               -- 0x9F82FCA5    -- s_crateseat03x
 
-
-
        "pg_gangcamp_odriscolls_general",
           -- CONTAINS OBJECTS:
               -- 0x0FC2D114    -- p_chair_barrel04b
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x2BF8422D    -- p_bedrollopen03x
 
-
-
        "pg_gangcamp_odriscolls_politics",
           -- CONTAINS OBJECTS:
               -- 0x0FC2D114    -- p_chair_barrel04b
               -- 0x54ACC676    -- p_ambclothseat01x
-
-
 
        "pg_gangcamp_odriscolls_robbery",
           -- CONTAINS OBJECTS:
@@ -4621,15 +4219,11 @@ local propset_names = {
               -- 0x4791E305    -- p_throwpillow_03x
               -- 0xC7DFD7E3    -- p_ambfloorrug05x
 
-
-
        "pg_gangcamp_skinner_argument",
           -- CONTAINS OBJECTS:
               -- 0xC7E32828    -- p_campfirecombined01x
               -- 0xFD6D69C5    -- p_ambcart01x
               -- 0x850AA332    -- p_bench08bx
-
-
 
        "pg_gangcamp_skinner_general",
           -- CONTAINS OBJECTS:
@@ -4637,14 +4231,10 @@ local propset_names = {
               -- 0x4BCBCDC9    -- p_bench_log07x
               -- 0xFD6D69C5    -- p_ambcart01x
 
-
-
        "pg_gangcamp_skinner_torture",
           -- CONTAINS OBJECTS:
               -- 0xC7E32828    -- p_campfirecombined01x
               -- 0x849EA7EE    -- p_bench_log03x
-
-
 
        "pg_goldpanner01x",
           -- CONTAINS OBJECTS:
@@ -4680,25 +4270,17 @@ local propset_names = {
               -- 0x50638BD5    -- p_pan02x
               -- 0x5D6D6ED3    -- p_campfiredebris01x
 
-
-
        "pg_gunforhire01x",
           -- CONTAINS OBJECTS:
               -- 0x8B308A40    -- p_veh_gunforhire01x
-
-
 
        "pg_gunforhire02x",
           -- CONTAINS OBJECTS:
               -- 0x8E348CE8    -- p_veh_gunforhire02x
 
-
-
        "pg_gunforhire03x",
           -- CONTAINS OBJECTS:
               -- 0x403BEEC8    -- p_veh_gunforhire03x
-
-
 
        "pg_herbalistcamp01x",
           -- CONTAINS OBJECTS:
@@ -4813,8 +4395,6 @@ local propset_names = {
               -- 0xF4B5B43E    -- p_garlic_02x
               -- 0xF4B5B43E    -- p_garlic_02x
 
-
-
        "pg_herbalistcamp01x_cart",
           -- CONTAINS OBJECTS:
               -- 0xE27BDCB2    -- p_cask01x
@@ -4841,8 +4421,6 @@ local propset_names = {
               -- 0xAF735FDF    -- s_cancorn01x
               -- 0x8E52A545    -- s_inv_medicine01x
               -- 0xFF39018A    -- s_cmountainbitters_tl
-
-
 
        "pg_herbalistcamp01x_notable",
           -- CONTAINS OBJECTS:
@@ -4942,8 +4520,6 @@ local propset_names = {
               -- 0xF4B5B43E    -- p_garlic_02x
               -- 0xF4B5B43E    -- p_garlic_02x
 
-
-
        "pg_herbalistcamp02x",
           -- CONTAINS OBJECTS:
               -- 0x6C1BD110    -- p_tent_leento03x
@@ -4975,8 +4551,6 @@ local propset_names = {
               -- 0xC0EB63C4    -- p_tobaccoleavesdried01x
               -- 0xC0EB63C4    -- p_tobaccoleavesdried01x
               -- 0x755E088B    -- p_cratetable01x
-
-
 
        "PG_HERBALISTCAMP03X",
           -- CONTAINS OBJECTS:
@@ -5030,8 +4604,6 @@ local propset_names = {
               -- 0xEB3A280B    -- p_herbsdry01x
               -- 0xEB3A280B    -- p_herbsdry01x
               -- 0x3639E34E    -- p_cookfirestructure02x
-
-
 
        "pg_herbalistcamp04x",
           -- CONTAINS OBJECTS:
@@ -5133,8 +4705,6 @@ local propset_names = {
               -- 0x93B9DE05    -- p_crateconf01x
               -- 0xC2EE3FCB    -- p_crate15bx
 
-
-
        "PG_HUNTERCAMP01X",
           -- CONTAINS OBJECTS:
               -- 0xA4435049    -- p_tableset01x
@@ -5190,14 +4760,10 @@ local propset_names = {
               -- 0x148FCE82    -- p_bespokemoosexlpelt01x
               -- 0x755A613D    -- p_ambcart02x
 
-
-
        "pg_ls_soldier2_01x",
           -- CONTAINS OBJECTS:
               -- 0x3EA57B19    -- p_veh_ls_soldier2ropes_01x
               -- 0x018D9C95    -- p_veh_ls_soldier2_01x
-
-
 
        "pg_mg_poker",
           -- CONTAINS OBJECTS:
@@ -5209,8 +4775,6 @@ local propset_names = {
               -- 0xEEBC4629    -- p_chair05x
               -- 0xEEBC4629    -- p_chair05x
 
-
-
        "pg_mis_mud1_wagon02x",
           -- CONTAINS OBJECTS:
               -- 0xC659226E    -- p_mis_mud1_wagon02x
@@ -5220,27 +4784,19 @@ local propset_names = {
               -- 0x7A2E824C    -- s_cvan_chest02
               -- 0x07FC1538    -- p_toolbox01x
 
-
-
        "pg_mis_mud1_wagon02x_nolooseprops",
           -- CONTAINS OBJECTS:
               -- 0xC659226E    -- p_mis_mud1_wagon02x
               -- 0x07FC1538    -- p_toolbox01x
 
-
-
        "pg_mission_ammodeal",
           -- CONTAINS OBJECTS:
               -- 0xF1CC152D    -- p_rc_exconfederates1_01x
-
-
 
        "pg_mission_bra1_wagon",
           -- CONTAINS OBJECTS:
               -- 0xECBF01A3    -- p_veh_brt1_tomansion01x
               -- 0xED15BA5C    -- s_wagon05xbr2cover
-
-
 
        "pg_mission_brt1_jump01x",
           -- CONTAINS OBJECTS:
@@ -5255,22 +4811,16 @@ local propset_names = {
               -- 0xC28617DB    -- p_jug01x
               -- 0xF090821E    -- p_cratebrand01x
 
-
-
        "pg_mission_brt1_tomansion01x",
           -- CONTAINS OBJECTS:
               -- 0xECBF01A3    -- p_veh_brt1_tomansion01x
               -- 0xC28617DB    -- p_jug01x
-
-
 
        "pg_mission_brt2",
           -- CONTAINS OBJECTS:
               -- 0xED15BA5C    -- s_wagon05xbr2cover
               -- 0x788080D2    -- p_mission_br2_01
               -- 0x66285C22    -- p_mission_br2_02
-
-
 
        "pg_mission_brt2_escape01x",
           -- CONTAINS OBJECTS:
@@ -5283,8 +4833,6 @@ local propset_names = {
               -- 0x7E243333    -- p_package04bx
               -- 0x7DDDE61E    -- p_floursack04x
 
-
-
        "pg_mission_cornwall1_01x",
           -- CONTAINS OBJECTS:
               -- 0x02B146E1    -- p_dressinglcllinen01x
@@ -5293,13 +4841,9 @@ local propset_names = {
               -- 0x2753EEDC    -- p_mission_crategatling01x
               -- 0xCF58344E    -- p_veh_cornwall1_01x
 
-
-
        "pg_mission_feud1_haybales01x",
           -- CONTAINS OBJECTS:
               -- 0x2851E9ED    -- p_veh_pg_vl_mis_fe_hayb
-
-
 
        "PG_MISSION_GRAYS1_SHOOTOUT01X",
           -- CONTAINS OBJECTS:
@@ -5394,8 +4938,6 @@ local propset_names = {
               -- 0xD1894A0D    -- p_cratecanvase01x
               -- 0xD1894A0D    -- p_cratecanvase01x
 
-
-
        "pg_mission_marston1_supplies01x",
           -- CONTAINS OBJECTS:
               -- 0x0A405D05    -- p_starchlaundry01x
@@ -5412,8 +4954,6 @@ local propset_names = {
               -- 0x84BED705    -- p_package05x
               -- 0x84BED705    -- p_package05x
               -- 0xAEA05AAB    -- p_veh_marston1_supplies01x
-
-
 
        "pg_mission_marston1_supplies02x",
           -- CONTAINS OBJECTS:
@@ -5432,13 +4972,9 @@ local propset_names = {
               -- 0x84BED705    -- p_package05x
               -- 0xAEA05AAB    -- p_veh_marston1_supplies01x
 
-
-
        "pg_mission_marston2_postoffice01x",
           -- CONTAINS OBJECTS:
               -- 0x28B5D0DD    -- p_mission_marston2
-
-
 
        "pg_mission_marston7_lumber01x",
           -- CONTAINS OBJECTS:
@@ -5446,15 +4982,11 @@ local propset_names = {
               -- 0x65ECB7BE    -- p_veh_wagon04x_ropeanchor01x
               -- 0x7A3775A8    -- p_veh_wagon04x_ropelumber01x
 
-
-
        "pg_mission_marston7_lumber02x",
           -- CONTAINS OBJECTS:
               -- 0x60EC68E6    -- p_veh_lumber02x
               -- 0x65ECB7BE    -- p_veh_wagon04x_ropeanchor01x
               -- 0xF5A66DB4    -- p_veh_wagon04x_ropelumber02x
-
-
 
        "pg_mission_marston7_lumber03x_doneloading",
           -- CONTAINS OBJECTS:
@@ -5462,13 +4994,9 @@ local propset_names = {
               -- 0x8AD118E7    -- p_veh_wagon04x_ropelumber03x
               -- 0x65ECB7BE    -- p_veh_wagon04x_ropeanchor01x
 
-
-
        "PG_MISSION_MARSTON7_LUMBER04X_GROUNDSTACK",
           -- CONTAINS OBJECTS:
               -- 0x171F1374    -- p_bat_lumber04fx
-
-
 
        "pg_mission_mary3_01x",
           -- CONTAINS OBJECTS:
@@ -5480,13 +5008,9 @@ local propset_names = {
               -- 0x3016FE07    -- s_inv_coinsack01x
               -- 0x18DA5218    -- p_veh_pg_vl_mi_mary3_1
 
-
-
        "pg_mission_moonshinesupplies",
           -- CONTAINS OBJECTS:
               -- 0xEBF32D0F    -- p_veh_moonshinesupplies01x
-
-
 
        "pg_mission_mud1_jackwagon01x",
           -- CONTAINS OBJECTS:
@@ -5494,15 +5018,11 @@ local propset_names = {
               -- 0x54AD423C    -- p_veh_pg_mis_mud_jackw01x
               -- 0x4D692807    -- p_veh_sidebarrelsupport01x
 
-
-
        "pg_mission_mud1_wagon01x",
           -- CONTAINS OBJECTS:
               -- 0x6FA77D9C    -- p_veh_chucksidebarrel03
               -- 0xDE7426DF    -- p_veh_pg_mission_mud1_wag1
               -- 0x4D692807    -- p_veh_sidebarrelsupport01x
-
-
 
        "pg_mission_mud1_wagon02x",
           -- CONTAINS OBJECTS:
@@ -5511,19 +5031,13 @@ local propset_names = {
               -- 0x2B027E4C    -- p_veh_pg_mis_mud_wag2
               -- 0x4D692807    -- p_veh_sidebarrelsupport01x
 
-
-
        "pg_mission_mud1_wagon03x",
           -- CONTAINS OBJECTS:
               -- 0x653B96B9    -- p_veh_pg_vl_mis_mud_w3
 
-
-
        "pg_mission_mud4_strauswag01x",
           -- CONTAINS OBJECTS:
               -- 0x1C61B7F1    -- p_veh_strauswag01x
-
-
 
        "pg_mission_mud4_strauswag02x",
           -- CONTAINS OBJECTS:
@@ -5532,8 +5046,6 @@ local propset_names = {
               -- 0x779E16CB    -- p_cratebrand03x
               -- 0x779E16CB    -- p_cratebrand03x
               -- 0x93B9DE05    -- p_crateconf01x
-
-
 
        "PG_MISSION_NATIVE2_01X",
           -- CONTAINS OBJECTS:
@@ -5549,8 +5061,6 @@ local propset_names = {
               -- 0x8B664AFD    -- p_cratetnt02x
               -- 0x38EE5449    -- pg_mission_native2
 
-
-
        "pg_mission_tntraft01x",
           -- CONTAINS OBJECTS:
               -- 0xF6B3A3D6    -- p_cratetnt01x
@@ -5561,13 +5071,9 @@ local propset_names = {
               -- 0xF5D5CB4E    -- p_prybar01x
               -- 0x26FE84AB    -- p_clamphand01x
 
-
-
        "PG_MISSION_TNTWAGON01X",
           -- CONTAINS OBJECTS:
               -- 0xE9EC8E90    -- p_tntwagon02x
-
-
 
        "pg_mission_trainRob4_Wagon02x_dynamite",
           -- CONTAINS OBJECTS:
@@ -5581,27 +5087,19 @@ local propset_names = {
               -- 0x09862DFC    -- p_debrispile01x
               -- 0x40B2C5ED    -- p_rag02x
 
-
-
        "pg_mission_utp2_coachlockbox",
           -- CONTAINS OBJECTS:
               -- 0x76D5E2E2    -- s_stagecoach004x_utp2
-
-
 
        "pg_mission_winter4_Car3",
           -- CONTAINS OBJECTS:
               -- 0xF7F7E061    -- p_mis_winter4_car03_decal
               -- 0x5BC3D389    -- p_veh_railrosdsupplies01
 
-
-
        "pg_mission_winter4_Car7",
           -- CONTAINS OBJECTS:
               -- 0x75B59B82    -- p_mis_winter4_car07
               -- 0x8B6A5640    -- p_mis_winter4_car07_decal
-
-
 
        "pg_moonshinecampgroup01x",
           -- CONTAINS OBJECTS:
@@ -5668,8 +5166,6 @@ local propset_names = {
               -- 0xB27B2D83    -- p_ambropepile02x
               -- 0xC7DFD7E3    -- p_ambfloorrug05x
 
-
-
        "pg_moonshiner3_tugboat2_1",
           -- CONTAINS OBJECTS:
               -- 0xA53A9FC5    -- mp005_p_mp_cratestack01x
@@ -5700,8 +5196,6 @@ local propset_names = {
               -- 0x04B77555    -- mp006_p_mp006_cratecanvase01x
               -- 0x3BB80110    -- mp006_p_mp_gankplank01x
 
-
-
        "pg_moonshiner_kidnap_01x",
           -- CONTAINS OBJECTS:
               -- 0x393FBF0A    -- p_crate06x
@@ -5719,8 +5213,6 @@ local propset_names = {
               -- 0xC28617DB    -- p_jug01x
               -- 0xC28617DB    -- p_jug01x
               -- 0xA70F9ADC    -- mp006_p_jug_debris01x
-
-
 
        "pg_moonshiner_rescueCook_01x",
           -- CONTAINS OBJECTS:
@@ -5767,25 +5259,17 @@ local propset_names = {
               -- 0x9F350FBB    -- p_crate02x
               -- 0x0F980CBD    -- p_hitchingpost05x
 
-
-
        "pg_mp004_gunforhire01x",
           -- CONTAINS OBJECTS:
               -- 0xA6717133    -- mp004_p_veh_gunforhire01x
-
-
 
        "pg_mp004_gunforhire02x",
           -- CONTAINS OBJECTS:
               -- 0x4C843E92    -- mp004_p_veh_gunforhire02x
 
-
-
        "pg_mp004_gunforhire03x",
           -- CONTAINS OBJECTS:
               -- 0xCF83261A    -- mp004_p_veh_gunforhire03x
-
-
 
        "PG_MP005_COLLECTORWAGONCAMP01",
           -- CONTAINS OBJECTS:
@@ -5808,31 +5292,21 @@ local propset_names = {
               -- 0x72711633    -- p_lamp32x
               -- 0x92D258C2    -- mp005_p_collectorwagon01b
 
-
-
        "pg_mp005_huntingwagontarp01",
           -- CONTAINS OBJECTS:
               -- 0xF0B73D99    -- mp005_p_huntingwagontarp01
-
-
 
        "pg_mp005_possecamp_tent_coveredtent_culture01",
           -- CONTAINS OBJECTS:
               -- 0x5D87A264    -- mp005_s_tentdoctor01x
 
-
-
        "pg_mp006_fetch_rowboat_1",
           -- CONTAINS OBJECTS:
               -- 0xE88D1B1C    -- mp006_p_veh_cornsacks_rowboat_1
 
-
-
        "pg_mp006_fetch_rowboatswamp02_1",
           -- CONTAINS OBJECTS:
               -- 0x95B88BA7    -- mp006_pg_rowboat_propset01x
-
-
 
        "pg_mp006_fetch_rowboatswamp_1",
           -- CONTAINS OBJECTS:
@@ -5843,27 +5317,25 @@ local propset_names = {
               -- 0xE27BDCB2    -- p_cask01x
               -- 0xAB7F0FCB    -- p_barrel01ax_sea
 
-
-
        "pg_mp007_naturalist_camp01x",
           -- CONTAINS OBJECTS:
-              -- 0xCE048389   
-              -- 0x74911793   
-              -- 0x08B83C47   
-              -- 0x08B83C47   
-              -- 0x08B83C47   
-              -- 0xA8270D70   
-              -- 0x8B27378A   
+              -- 0xCE048389
+              -- 0x74911793
+              -- 0x08B83C47
+              -- 0x08B83C47
+              -- 0x08B83C47
+              -- 0xA8270D70
+              -- 0x8B27378A
               -- 0x849A2221    -- p_trap01x
               -- 0xE84672E8    -- p_teatraycombo01x
               -- 0x617D9726    -- p_kerosenetablelamp01x
-              -- 0xE07ACC6F   
+              -- 0xE07ACC6F
               -- 0xFEF3E686    -- p_sidetable13x
               -- 0xE5EC607D    -- p_sketchbook02x
               -- 0x3067BE45    -- p_doc_botset15x
-              -- 0xBDBD1325   
+              -- 0xBDBD1325
               -- 0xD9955618    -- p_ledgerset01x
-              -- 0x28DE519C   
+              -- 0x28DE519C
               -- 0xD1E397E9    -- p_barrelgroup01x
               -- 0x68EFE70D    -- p_paperdrafting01b
               -- 0x3D4D3B15    -- p_paper03x
@@ -5871,26 +5343,26 @@ local propset_names = {
               -- 0xAB3169AB    -- p_inkwell06x
               -- 0x3A75AAE1    -- p_belljarplant01x
               -- 0xF057D7CD    -- p_magnifyingglass01x
-              -- 0x76B027B1   
-              -- 0x9AEEEBDA   
-              -- 0x34E8220E   
-              -- 0x878645E9   
-              -- 0x2B110F40   
-              -- 0xC426440C   
+              -- 0x76B027B1
+              -- 0x9AEEEBDA
+              -- 0x34E8220E
+              -- 0x878645E9
+              -- 0x2B110F40
+              -- 0xC426440C
               -- 0x3D12DC48    -- p_mortar_01
               -- 0xD5326DE3    -- p_pestle_01
               -- 0x47EAE229    -- p_merchbox01x
               -- 0x47EAE229    -- p_merchbox01x
               -- 0x3AD08638    -- p_ambpack02x
-              -- 0x1A8072B3   
+              -- 0x1A8072B3
               -- 0xAEC3ABEF    -- p_herbsdry02x
               -- 0xAEC3ABEF    -- p_herbsdry02x
               -- 0xCACBD933    -- p_chuckwagonbreak01x
-              -- 0x32295882   
-              -- 0xE41F129F   
+              -- 0x32295882
+              -- 0xE41F129F
               -- 0x8DB4B2F6    -- p_trap02x
-              -- 0x86C881AE   
-              -- 0x9D97B2E8   
+              -- 0x86C881AE
+              -- 0x9D97B2E8
               -- 0xF09E876B    -- p_file01x
               -- 0x4B1752D1    -- p_bag_leather_doctor
               -- 0xBD64E8F9    -- p_jarspecimen01x
@@ -5901,93 +5373,91 @@ local propset_names = {
               -- 0x130132B7    -- p_hammer02x
               -- 0xC9A79447    -- p_cratetools01x
               -- 0x090EB67C    -- p_brush01x
-              -- 0x2D30C6B4   
-              -- 0x90D1DD22   
+              -- 0x2D30C6B4
+              -- 0x90D1DD22
               -- 0xF0D636DA    -- p_cauldron02x
-              -- 0x68E4D566   
-              -- 0x45CFF9DF   
-              -- 0x9BECEEB2   
+              -- 0x68E4D566
+              -- 0x45CFF9DF
+              -- 0x9BECEEB2
               -- 0xBD64E8F9    -- p_jarspecimen01x
-              -- 0x4F478441   
-              -- 0x794F6270   
-              -- 0x1E044BF4   
-              -- 0xD92D31DE   
-              -- 0x2FB743DD   
+              -- 0x4F478441
+              -- 0x794F6270
+              -- 0x1E044BF4
+              -- 0xD92D31DE
+              -- 0x2FB743DD
               -- 0x5B92AF8D    -- p_microscopecase01x
               -- 0xAEC831FB    -- p_package09
-              -- 0x46B41DC1   
+              -- 0x46B41DC1
               -- 0x74E151B3    -- p_candlelamp01x
-              -- 0x73647BCD   
-              -- 0x1A1BFF8A   
-              -- 0x8A485B4D   
-              -- 0x8A485B4D   
-              -- 0xB4FDFABE   
-              -- 0xB4FDFABE   
-              -- 0xB3BD7401   
-              -- 0xB3BD7401   
+              -- 0x73647BCD
+              -- 0x1A1BFF8A
+              -- 0x8A485B4D
+              -- 0x8A485B4D
+              -- 0xB4FDFABE
+              -- 0xB4FDFABE
+              -- 0xB3BD7401
+              -- 0xB3BD7401
               -- 0xAEC831FB    -- p_package09
-              -- 0x8A485B4D   
-              -- 0x8A485B4D   
-              -- 0x8A485B4D   
-              -- 0x8A485B4D   
-              -- 0x53ADE046   
-              -- 0xF488E990   
-              -- 0xFE1AA9F2   
-              -- 0xE006C4EB   
-              -- 0x96BCC8F5   
-              -- 0x037EDE82   
-              -- 0x8A485B4D   
+              -- 0x8A485B4D
+              -- 0x8A485B4D
+              -- 0x8A485B4D
+              -- 0x8A485B4D
+              -- 0x53ADE046
+              -- 0xF488E990
+              -- 0xFE1AA9F2
+              -- 0xE006C4EB
+              -- 0x96BCC8F5
+              -- 0x037EDE82
+              -- 0x8A485B4D
               -- 0xEB3A280B    -- p_herbsdry01x
               -- 0x8F93FCE8    -- p_basket06bx
-              -- 0x2E32086C   
-              -- 0x32158CE7   
+              -- 0x2E32086C
+              -- 0x32158CE7
               -- 0x76B9CEC6    -- p_ambforage02x
               -- 0x8F93FCE8    -- p_basket06bx
-              -- 0x8A485B4D   
-              -- 0x8A485B4D   
-              -- 0x4C127A95   
-              -- 0xDAA1B6D9   
-              -- 0xDAA1B6D9   
-              -- 0x4C127A95   
-              -- 0x79DA54A0   
-              -- 0x79DA54A0   
-              -- 0xA0849D89   
-              -- 0xB53E2F72   
-              -- 0xB53E2F72   
-              -- 0x16035FF9   
-              -- 0x16035FF9   
-              -- 0x16035FF9   
-              -- 0xB53E2F72   
-              -- 0xED157943   
+              -- 0x8A485B4D
+              -- 0x8A485B4D
+              -- 0x4C127A95
+              -- 0xDAA1B6D9
+              -- 0xDAA1B6D9
+              -- 0x4C127A95
+              -- 0x79DA54A0
+              -- 0x79DA54A0
+              -- 0xA0849D89
+              -- 0xB53E2F72
+              -- 0xB53E2F72
+              -- 0x16035FF9
+              -- 0x16035FF9
+              -- 0x16035FF9
+              -- 0xB53E2F72
+              -- 0xED157943
               -- 0xE1FB46EC    -- p_mortarpestle02x
-              -- 0x9E70BFD3   
+              -- 0x9E70BFD3
               -- 0x350AAB66    -- p_pot_plant_05a
               -- 0x3B887390    -- p_pot_flowerarng10x
               -- 0x8CE060F5    -- p_pot_flowerarng09bx
               -- 0x3B887390    -- p_pot_flowerarng10x
               -- 0xB59EC339    -- p_pot_flowerarng17x
-              -- 0xE41F129F   
+              -- 0xE41F129F
               -- 0xD08DA708    -- p_bottlecrate02x
               -- 0x19C6D2FD    -- p_debrispile05x
               -- 0x7C319425    -- p_debrispile04x
               -- 0xF2E5ABA3    -- p_crate04x
-              -- 0x76B027B1   
-              -- 0x76B027B1   
-              -- 0x76B027B1   
-              -- 0xC426440C   
-              -- 0x2B110F40   
-              -- 0x9AEEEBDA   
-              -- 0x2D30C6B4   
-              -- 0xB53E2F72   
-              -- 0x8A485B4D   
-              -- 0x8A485B4D   
-              -- 0x9C2F374D   
+              -- 0x76B027B1
+              -- 0x76B027B1
+              -- 0x76B027B1
+              -- 0xC426440C
+              -- 0x2B110F40
+              -- 0x9AEEEBDA
+              -- 0x2D30C6B4
+              -- 0xB53E2F72
+              -- 0x8A485B4D
+              -- 0x8A485B4D
+              -- 0x9C2F374D
               -- 0x631680F0    -- mp006_p_mp006_cratecover07x
               -- 0x37E13F7D    -- p_journal01x
-              -- 0x71090A26   
-              -- 0xD366689D   
-
-
+              -- 0x71090A26
+              -- 0xD366689D
 
        "pg_mp_abandonfugitive01x",
           -- CONTAINS OBJECTS:
@@ -5995,8 +5465,6 @@ local propset_names = {
               -- 0xEB6AD7FF    -- p_leantopine01x
               -- 0x5D6D6ED3    -- p_campfiredebris01x
               -- 0x318B7C9E    -- p_debrispile02x
-
-
 
        "pg_mp_apothecary03x",
           -- CONTAINS OBJECTS:
@@ -6008,8 +5476,6 @@ local propset_names = {
               -- 0xBD64E8F9    -- p_jarspecimen01x
               -- 0x8B10FA14    -- p_plant04x
 
-
-
        "pg_mp_campfire01x",
           -- CONTAINS OBJECTS:
               -- 0xE936BA66    -- p_campfirerocksml02x
@@ -6018,13 +5484,9 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x5F5F56E4    -- p_stoolfolding01x
 
-
-
        "pg_mp_campfire02x",
           -- CONTAINS OBJECTS:
               -- 0x1298EF27    -- p_campfire02xb
-
-
 
        "pg_mp_campfire03x",
           -- CONTAINS OBJECTS:
@@ -6035,15 +5497,11 @@ local propset_names = {
               -- 0xCFCE5C90    -- p_kettle03x
               -- 0x495B5DD6    -- p_chair_crate02x
 
-
-
        "PG_MP_CAMPTENT01X",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
               -- 0x1B07227D    -- p_lantern05xint02
               -- 0xBEB90174    -- p_leanto03x
-
-
 
        "PG_MP_CAMPTRACK302X",
           -- CONTAINS OBJECTS:
@@ -6057,8 +5515,6 @@ local propset_names = {
               -- 0x835A4AEE    -- p_kindlingpile01x
               -- 0x1059CC9E    -- p_arrow01x
               -- 0xE5B7249E    -- p_lantern05xhang02
-
-
 
        "PG_MP_CAMPTRACK303X",
           -- CONTAINS OBJECTS:
@@ -6076,8 +5532,6 @@ local propset_names = {
               -- 0x6F9E850D    -- p_bedrollopen01x
               -- 0x6EA0221E    -- p_crate03c
 
-
-
        "PG_MP_CAMPTRACK304X",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
@@ -6093,8 +5547,6 @@ local propset_names = {
               -- 0x271BBD08    -- p_powderhorn01x
               -- 0x6F9E850D    -- p_bedrollopen01x
               -- 0x6EA0221E    -- p_crate03c
-
-
 
        "PG_MP_CAMPTRACK306X",
           -- CONTAINS OBJECTS:
@@ -6127,8 +5579,6 @@ local propset_names = {
               -- 0xFD7A17C7    -- p_package_vg
               -- 0x02F9FDFA    -- p_shovel04x
 
-
-
        "PG_MP_CAMPTRACK307X",
           -- CONTAINS OBJECTS:
               -- 0x1B07227D    -- p_lantern05xint02
@@ -6152,8 +5602,6 @@ local propset_names = {
               -- 0x2950BF5E    -- p_camp_plate_03x
               -- 0xEEE1A2B7    -- p_crate03d
               -- 0xD1894A0D    -- p_cratecanvase01x
-
-
 
        "pg_mp_freemodecamp01x",
           -- CONTAINS OBJECTS:
@@ -6182,8 +5630,6 @@ local propset_names = {
               -- 0x46979CE3    -- s_footlocker05x
               -- 0x110632F5    -- s_footlocker02x
               -- 0xC2C04FA3    -- p_chest01x
-
-
 
        "pg_mp_gangbounty01x",
           -- CONTAINS OBJECTS:
@@ -6215,8 +5661,6 @@ local propset_names = {
               -- 0xBFB4647F    -- p_camp_plate_02x
               -- 0x05781E89    -- p_jugtin01x
               -- 0x9049E300    -- p_knife03x
-
-
 
        "pg_mp_gangbounty02x",
           -- CONTAINS OBJECTS:
@@ -6254,8 +5698,6 @@ local propset_names = {
               -- 0x052F08C3    -- p_basketapple01x
               -- 0xBFB4647F    -- p_camp_plate_02x
               -- 0xC3B4741A    -- p_floursack02x
-
-
 
        "PG_MP_GANGBOUNTY_GEN_POPULATED01X",
           -- CONTAINS OBJECTS:
@@ -6304,13 +5746,9 @@ local propset_names = {
               -- 0x318B7C9E    -- p_debrispile02x
               -- 0x87852C24    -- p_debrispile03x
 
-
-
        "pg_mp_moonshinebiz_supplies01x_cart03",
           -- CONTAINS OBJECTS:
               -- 0x8D93BF1D    -- p_moonshinebiz02x_cart03
-
-
 
        "pg_mp_moonshinebiz_supplies02x_supwag",
           -- CONTAINS OBJECTS:
@@ -6329,14 +5767,10 @@ local propset_names = {
               -- 0x14177E4D    -- p_sackcorn01x
               -- 0x14177E4D    -- p_sackcorn01x
 
-
-
        "pg_mp_moonshinecamp01x",
           -- CONTAINS OBJECTS:
               -- 0xE269A4D3    -- p_jugwicker01x
               -- 0xD4139F84    -- p_still02x
-
-
 
        "pg_mp_moonshinecamp02x",
           -- CONTAINS OBJECTS:
@@ -6345,8 +5779,6 @@ local propset_names = {
               -- 0xE44A36B5    -- s_jug02x
               -- 0xD4139F84    -- p_still02x
               -- 0xE44A36B5    -- s_jug02x
-
-
 
        "pg_mp_moonshinecamp03x",
           -- CONTAINS OBJECTS:
@@ -6357,22 +5789,16 @@ local propset_names = {
               -- 0xE44A36B5    -- s_jug02x
               -- 0x4F2E6D24    -- p_floursack03x
 
-
-
        "pg_mp_moonshiner_blockade01x",
           -- CONTAINS OBJECTS:
               -- 0x560DDE61    -- mp005_p_mp_cover_s_bw
               -- 0xC5D3A899    -- p_barricade01x
               -- 0x763E072B    -- p_lampkerosene01x
 
-
-
        "pg_mp_moonshiner_blockade02x",
           -- CONTAINS OBJECTS:
               -- 0x775F12F5    -- mp005_p_mp_cover_ss_bw
               -- 0xC5D3A899    -- p_barricade01x
-
-
 
        "pg_mp_moonshiner_blockade03x",
           -- CONTAINS OBJECTS:
@@ -6380,8 +5806,6 @@ local propset_names = {
               -- 0xB186423B    -- mp005_p_mp_cover_su_bw
               -- 0xC5D3A899    -- p_barricade01x
               -- 0x763E072B    -- p_lampkerosene01x
-
-
 
        "pg_mp_moonshiner_blockade04x",
           -- CONTAINS OBJECTS:
@@ -6391,16 +5815,12 @@ local propset_names = {
               -- 0x560DDE61    -- mp005_p_mp_cover_s_bw
               -- 0x775F12F5    -- mp005_p_mp_cover_ss_bw
 
-
-
        "pg_mp_player_campfire01x",
           -- CONTAINS OBJECTS:
               -- 0x1298EF27    -- p_campfire02xb
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
-
-
 
        "pg_mp_possecamp_butchertable01x",
           -- CONTAINS OBJECTS:
@@ -6419,8 +5839,6 @@ local propset_names = {
               -- 0x77DC03A3    -- p_hideframe02x
               -- 0x302095C5    -- p_bloodyhangrag02x
               -- 0x1B07227D    -- p_lantern05xint02
-
-
 
        "pg_mp_possecamp_butchertable02x",
           -- CONTAINS OBJECTS:
@@ -6450,8 +5868,6 @@ local propset_names = {
               -- 0x2950BF5E    -- p_camp_plate_03x
               -- 0x1C20A2C4    -- p_trouardscrate01x
               -- 0x1B07227D    -- p_lantern05xint02
-
-
 
        "pg_mp_possecamp_butchertable03x",
           -- CONTAINS OBJECTS:
@@ -6498,8 +5914,6 @@ local propset_names = {
               -- 0x302095C5    -- p_bloodyhangrag02x
               -- 0xFFF595DC    -- p_meatpile01x
               -- 0x1B07227D    -- p_lantern05xint02
-
-
 
        "pg_mp_possecamp_butchertable04x",
           -- CONTAINS OBJECTS:
@@ -6554,8 +5968,6 @@ local propset_names = {
               -- 0xFFF595DC    -- p_meatpile01x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_campfire01x",
           -- CONTAINS OBJECTS:
               -- 0xA0F3D0CA    -- p_cs_rag01x
@@ -6576,8 +5988,6 @@ local propset_names = {
               -- 0xB47A41B6    -- p_debrispile08x
               -- 0x850AA332    -- p_bench08bx
 
-
-
        "pg_mp_possecamp_campfire_large000x",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
@@ -6596,8 +6006,6 @@ local propset_names = {
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0x90DECE8A    -- p_campfirerock02x
               -- 0x4F1CAC6D    -- p_campfirecook01x
-
-
 
        "pg_mp_possecamp_campfire_large001x",
           -- CONTAINS OBJECTS:
@@ -6620,8 +6028,6 @@ local propset_names = {
               -- 0x318B7C9E    -- p_debrispile02x
               -- 0xD71B7B3E    -- p_bottlebeer01a
               -- 0x835A4AEE    -- p_kindlingpile01x
-
-
 
        "PG_MP_POSSECAMP_CAMPFIRE_LARGE002X",
           -- CONTAINS OBJECTS:
@@ -6655,8 +6061,6 @@ local propset_names = {
               -- 0xD71B7B3E    -- p_bottlebeer01a
               -- 0xD71B7B3E    -- p_bottlebeer01a
 
-
-
        "pg_mp_possecamp_campfire_medium000x",
           -- CONTAINS OBJECTS:
               -- 0x7C319425    -- p_debrispile04x
@@ -6673,8 +6077,6 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x90DECE8A    -- p_campfirerock02x
               -- 0x4F1CAC6D    -- p_campfirecook01x
-
-
 
        "pg_mp_possecamp_campfire_medium001x",
           -- CONTAINS OBJECTS:
@@ -6695,8 +6097,6 @@ local propset_names = {
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0xBFB4647F    -- p_camp_plate_02x
 
-
-
        "pg_mp_possecamp_cover_small000x",
           -- CONTAINS OBJECTS:
               -- 0x85218677    -- p_barrel03x
@@ -6715,8 +6115,6 @@ local propset_names = {
               -- 0xD46E4919    -- p_debrisboards03x
               -- 0xEB2878CD    -- p_debrisboards01x
               -- 0xD46E4919    -- p_debrisboards03x
-
-
 
        "PG_MP_POSSECAMP_COVER_SMALL001X",
           -- CONTAINS OBJECTS:
@@ -6755,8 +6153,6 @@ local propset_names = {
               -- 0xC28617DB    -- p_jug01x
               -- 0x8DDD0C7B    -- p_camp_cup_01x
 
-
-
        "pg_mp_possecamp_culture_medium011x",
           -- CONTAINS OBJECTS:
               -- 0x16674793    -- p_chair11x
@@ -6766,8 +6162,6 @@ local propset_names = {
               -- 0x1B07227D    -- p_lantern05xint02
               -- 0x16674793    -- p_chair11x
               -- 0x53308BBD    -- p_bottlewine01x
-
-
 
        "pg_mp_possecamp_decor_bnty_table",
           -- CONTAINS OBJECTS:
@@ -6781,8 +6175,6 @@ local propset_names = {
               -- 0x78C7DF50    -- p_jugsilver01x
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_mp_possecamp_decor_col_table",
           -- CONTAINS OBJECTS:
@@ -6802,8 +6194,6 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x286BA892    -- mp005_s_posse_col_cloth02x
 
-
-
        "pg_mp_posseCamp_decor_large000x",
           -- CONTAINS OBJECTS:
               -- 0xDE0D5459    -- p_awningbills01b
@@ -6816,8 +6206,6 @@ local propset_names = {
               -- 0x7DDDE61E    -- p_floursack04x
               -- 0x309B61AC    -- p_basket01x
 
-
-
        "pg_mp_possecamp_decor_large000x_c",
           -- CONTAINS OBJECTS:
               -- 0x169D8D58    -- p_newspaperroll01x
@@ -6827,14 +6215,10 @@ local propset_names = {
               -- 0x9F82FCA5    -- s_crateseat03x
               -- 0x8DDD0C7B    -- p_camp_cup_01x
 
-
-
        "pg_mp_posseCamp_decor_large002x",
           -- CONTAINS OBJECTS:
               -- 0x195CF9FB    -- s_awning66x
               -- 0x60225A0D    -- p_hook_metal_001
-
-
 
        "pg_mp_possecamp_decor_large004x_c",
           -- CONTAINS OBJECTS:
@@ -6845,8 +6229,6 @@ local propset_names = {
               -- 0x6623C0C3    -- p_bloodytablerag01x
               -- 0x2C77F4ED    -- p_bucketcampmil01x
               -- 0x46D15748    -- p_crossflower02x
-
-
 
        "pg_mp_possecamp_decor_large005x",
           -- CONTAINS OBJECTS:
@@ -6869,8 +6251,6 @@ local propset_names = {
               -- 0x431059A4    -- p_spike01x
               -- 0x431059A4    -- p_spike01x
 
-
-
        "pg_mp_possecamp_decor_large005x_c",
           -- CONTAINS OBJECTS:
               -- 0xD01E3D9C    -- p_bench_log02x
@@ -6880,8 +6260,6 @@ local propset_names = {
               -- 0xECED6FF3    -- p_bearskin01x
               -- 0x1B3F13B9    -- p_chairrusticsav01x
 
-
-
        "pg_mp_posseCamp_decor_large006x",
           -- CONTAINS OBJECTS:
               -- 0x6008033E    -- p_barricadewood_lrg01x
@@ -6889,13 +6267,9 @@ local propset_names = {
               -- 0x5E0BDAE1    -- p_baghang01x
               -- 0x431059A4    -- p_spike01x
 
-
-
        "pg_mp_posseCamp_decor_large007x",
           -- CONTAINS OBJECTS:
               -- 0x6B434D5E    -- s_tent03x
-
-
 
        "pg_mp_possecamp_decor_large007x_b",
           -- CONTAINS OBJECTS:
@@ -6918,8 +6292,6 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x38EB95DC    -- p_bottlebeer01a_2
 
-
-
        "pg_mp_posseCamp_decor_medium000x",
           -- CONTAINS OBJECTS:
               -- 0xFE005309    -- p_hidepile02x
@@ -6932,8 +6304,6 @@ local propset_names = {
               -- 0x41F2AF65    -- p_canteen01x
               -- 0xA7826921    -- p_trap04x
               -- 0x849A2221    -- p_trap01x
-
-
 
        "pg_mp_posseCamp_decor_medium001x",
           -- CONTAINS OBJECTS:
@@ -6948,8 +6318,6 @@ local propset_names = {
               -- 0xB875E1B4    -- p_candlegroup04x
               -- 0x95C1A71F    -- p_barrel04x
 
-
-
        "pg_mp_posseCamp_decor_medium003x",
           -- CONTAINS OBJECTS:
               -- 0xB0906C4D    -- s_bucketoblood01x
@@ -6957,8 +6325,6 @@ local propset_names = {
               -- 0xAB157157    -- p_trap03x
               -- 0x3E590AEB    -- p_targetframe01x
               -- 0x95C1A71F    -- p_barrel04x
-
-
 
        "pg_mp_posseCamp_decor_medium004x",
           -- CONTAINS OBJECTS:
@@ -6978,8 +6344,6 @@ local propset_names = {
               -- 0x8FBAE0B2    -- p_beermugglass01x
               -- 0x38EB95DC    -- p_bottlebeer01a_2
 
-
-
        "pg_mp_possecamp_decor_medium006x",
           -- CONTAINS OBJECTS:
               -- 0x24D86583    -- p_cratedamagedebris01x
@@ -6996,8 +6360,6 @@ local propset_names = {
               -- 0xB6A4597C    -- p_fence01dx
               -- 0x7ADCDEC7    -- p_foldedrug01x
               -- 0x431059A4    -- p_spike01x
-
-
 
        "pg_mp_possecamp_decor_medium007x",
           -- CONTAINS OBJECTS:
@@ -7021,8 +6383,6 @@ local propset_names = {
               -- 0x2E5E1285    -- p_newspapergroup02x
               -- 0xA4E22DF6    -- p_chair09x
 
-
-
        "pg_mp_posseCamp_decor_medium008x",
           -- CONTAINS OBJECTS:
               -- 0x46D15748    -- p_crossflower02x
@@ -7036,8 +6396,6 @@ local propset_names = {
               -- 0x40BA703D    -- p_cartcabinet01x
               -- 0xF76A7204    -- p_washbasndoctor01x
 
-
-
        "pg_mp_possecamp_decor_medium009x",
           -- CONTAINS OBJECTS:
               -- 0x1B3F13B9    -- p_chairrusticsav01x
@@ -7048,8 +6406,6 @@ local propset_names = {
               -- 0xE242EF76    -- p_torchpost01x
               -- 0x43E6BF62    -- p_candlepuddle03x
               -- 0xBB86B844    -- p_candlepuddle05x
-
-
 
        "pg_mp_possecamp_decor_medium010x",
           -- CONTAINS OBJECTS:
@@ -7068,8 +6424,6 @@ local propset_names = {
               -- 0x6C3FADDC    -- p_group_gamble_jug01x
               -- 0x63B7E8A7    -- p_liqueurset02x
 
-
-
        "pg_mp_posseCamp_decor_medium011x",
           -- CONTAINS OBJECTS:
               -- 0x09862DFC    -- p_debrispile01x
@@ -7087,15 +6441,11 @@ local propset_names = {
               -- 0x5A15300B    -- p_jug01bx
               -- 0x60D41C96    -- p_table11x
 
-
-
        "pg_mp_posseCamp_decor_small000x",
           -- CONTAINS OBJECTS:
               -- 0x4C564F48    -- p_barrel_cor01x
               -- 0xDF9132BF    -- p_torchpostalwayson01x
               -- 0x2AE87D37    -- p_int_rockhang03x
-
-
 
        "PG_MP_POSSECAMP_DECOR_SMALL001X_SECONDARY",
           -- CONTAINS OBJECTS:
@@ -7115,15 +6465,11 @@ local propset_names = {
               -- 0x93243FC9    -- p_humanskull02x
               -- 0x93243FC9    -- p_humanskull02x
 
-
-
        "pg_mp_possecamp_decor_small002x",
           -- CONTAINS OBJECTS:
               -- 0x5BD08710    -- p_treestump02x
               -- 0xFC1D8A3B    -- p_ambpack01x
               -- 0x3C238C40    -- p_ambbundle01x
-
-
 
        "PG_MP_POSSECAMP_DECOR_SMALL003X",
           -- CONTAINS OBJECTS:
@@ -7136,16 +6482,12 @@ local propset_names = {
               -- 0x24D86583    -- p_cratedamagedebris01x
               -- 0x2203C309    -- p_barrel05b
 
-
-
        "pg_mp_possecamp_decor_small004x",
           -- CONTAINS OBJECTS:
               -- 0x2AE87D37    -- p_int_rockhang03x
               -- 0x4A6E7219    -- s_oldrifle01x
               -- 0x5E0BDAE1    -- p_baghang01x
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
-
-
 
        "pg_mp_posseCamp_decor_small005x",
           -- CONTAINS OBJECTS:
@@ -7155,8 +6497,6 @@ local propset_names = {
               -- 0xBEBCA255    -- p_campfireembers01x
               -- 0xBEBCA255    -- p_campfireembers01x
               -- 0x2F5FC077    -- p_crate14cx
-
-
 
        "pg_mp_possecamp_decor_small006x",
           -- CONTAINS OBJECTS:
@@ -7170,8 +6510,6 @@ local propset_names = {
               -- 0x431059A4    -- p_spike01x
               -- 0xF2685570    -- p_bucketcamphob01x
 
-
-
        "pg_mp_posseCamp_decor_small007x",
           -- CONTAINS OBJECTS:
               -- 0x729131D9    -- p_cratecover06x
@@ -7181,8 +6519,6 @@ local propset_names = {
               -- 0xAD252B02    -- p_chemisehanging01x
               -- 0xE269A4D3    -- p_jugwicker01x
               -- 0x2203C309    -- p_barrel05b
-
-
 
        "pg_mp_posseCamp_decor_small008x",
           -- CONTAINS OBJECTS:
@@ -7195,8 +6531,6 @@ local propset_names = {
               -- 0xACE9D630    -- p_pallet02x
               -- 0x6E1ECFA7    -- p_flourstack01bx
               -- 0x95C1A71F    -- p_barrel04x
-
-
 
        "pg_mp_posseCamp_decor_small009x",
           -- CONTAINS OBJECTS:
@@ -7219,8 +6553,6 @@ local propset_names = {
               -- 0x9B0221CB    -- p_ashtray01x
               -- 0xE2BBA2E9    -- p_cs_shotglass01x
 
-
-
        "pg_mp_posseCamp_decor_small010x",
           -- CONTAINS OBJECTS:
               -- 0x49237FD1    -- p_trunkset01x
@@ -7234,8 +6566,6 @@ local propset_names = {
               -- 0x4307F875    -- s_re_crate14xtop
               -- 0x1233E551    -- p_cuttingboard01x
 
-
-
        "pg_mp_posseCamp_decor_small011x",
           -- CONTAINS OBJECTS:
               -- 0x34AA3529    -- p_sawbucktable01x
@@ -7246,8 +6576,6 @@ local propset_names = {
               -- 0xEBCEBCD3    -- p_washbasinset01bx
               -- 0xBA5E58AB    -- p_washbasinset01ax
               -- 0xAAAB4FDA    -- p_barrel09x
-
-
 
        "pg_mp_possecamp_decor_trad_table",
           -- CONTAINS OBJECTS:
@@ -7266,8 +6594,6 @@ local propset_names = {
               -- 0x495B5DD6    -- p_chair_crate02x
               -- 0x09862DFC    -- p_debrispile01x
               -- 0x495B5DD6    -- p_chair_crate02x
-
-
 
        "PG_MP_POSSECAMP_DRUNKARDTENT01X",
           -- CONTAINS OBJECTS:
@@ -7300,8 +6626,6 @@ local propset_names = {
               -- 0xAEF90F49    -- p_saloonpropgroup01x
               -- 0x63BB7C17    -- p_saloonpropgroup02x
               -- 0xC8564333    -- p_saloonpropgroup04x
-
-
 
        "PG_MP_POSSECAMP_EMPTYTENT_LARGE000X",
           -- CONTAINS OBJECTS:
@@ -7346,8 +6670,6 @@ local propset_names = {
               -- 0xFA858FAA    -- p_tentrolled04x
               -- 0xF4B2AC82    -- p_rag04x
 
-
-
        "PG_MP_POSSECAMP_EMPTYTENT_LARGE001X",
           -- CONTAINS OBJECTS:
               -- 0x21DDBF2A    -- p_pallet01x
@@ -7370,8 +6692,6 @@ local propset_names = {
               -- 0xF090821E    -- p_cratebrand01x
               -- 0xD2659C8C    -- p_bucket_ladle01a
               -- 0x006DB1E8    -- p_ropewall01x
-
-
 
        "PG_MP_POSSECAMP_EMPTYTENT_LARGE002X",
           -- CONTAINS OBJECTS:
@@ -7400,8 +6720,6 @@ local propset_names = {
               -- 0x93B9DE05    -- p_crateconf01x
               -- 0xD08DA708    -- p_bottlecrate02x
 
-
-
        "PG_MP_POSSECAMP_EMPTYTENT_MEDIUM000X",
           -- CONTAINS OBJECTS:
               -- 0x93B9DE05    -- p_crateconf01x
@@ -7418,8 +6736,6 @@ local propset_names = {
               -- 0xCA3B4C19    -- p_crate23x
               -- 0x379A22A0    -- p_tackpile01x
               -- 0xEB2878CD    -- p_debrisboards01x
-
-
 
        "pg_mp_possecamp_emptytent_medium001x",
           -- CONTAINS OBJECTS:
@@ -7442,8 +6758,6 @@ local propset_names = {
               -- 0xEB2878CD    -- p_debrisboards01x
               -- 0xD05A82DB    -- p_crate22x_small
               -- 0xD05A82DB    -- p_crate22x_small
-
-
 
        "PG_MP_POSSECAMP_EMPTYTENT_MEDIUM002X",
           -- CONTAINS OBJECTS:
@@ -7472,8 +6786,6 @@ local propset_names = {
               -- 0xF1DEA899    -- p_cs_crocskin_medium_flat
               -- 0x09862DFC    -- p_debrispile01x
 
-
-
        "PG_MP_POSSECAMP_EXPLORERTENT01X",
           -- CONTAINS OBJECTS:
               -- 0x51631877    -- p_tent_leento04x
@@ -7499,8 +6811,6 @@ local propset_names = {
               -- 0x15563630    -- mp001_p_mp_cratebrand01x
               -- 0x8E1A2BDA    -- mp001_p_mp_globe02x
               -- 0x44325A1C    -- p_mp_map02x
-
-
 
        "pg_mp_possecamp_fishingtent",
           -- CONTAINS OBJECTS:
@@ -7540,8 +6850,6 @@ local propset_names = {
               -- 0xA38A736C    -- p_ambfishbone02x
               -- 0xA1114A15    -- p_pickup_cuttingboard01x
 
-
-
        "pg_mp_posseCamp_flagpole_small000x",
           -- CONTAINS OBJECTS:
               -- 0x1152C11B    -- mp001_s_mp_campflagpole01x
@@ -7550,8 +6858,6 @@ local propset_names = {
               -- 0x9894C520    -- p_sandbags04x
               -- 0x001810B5    -- p_sandbags03x
               -- 0xEB56743D    -- p_int_rockpile04x
-
-
 
        "pg_mp_possecamp_followercaravan_large000x",
           -- CONTAINS OBJECTS:
@@ -7628,8 +6934,6 @@ local propset_names = {
               -- 0x02F9FDFA    -- p_shovel04x
               -- 0xC28617DB    -- p_jug01x
 
-
-
        "PG_MP_POSSECAMP_FOLLOWERTENT_LARGE000X",
           -- CONTAINS OBJECTS:
               -- 0xC4FB0121    -- p_hidedisplay05x
@@ -7695,8 +6999,6 @@ local propset_names = {
               -- 0x4CB48909    -- p_nailsingle01x
               -- 0xAB157157    -- p_trap03x
 
-
-
        "PG_MP_POSSECAMP_FOLLOWERTENT_LARGE001X",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
@@ -7735,8 +7037,6 @@ local propset_names = {
               -- 0x4EE37E2B    -- p_vg_tray
               -- 0xC28617DB    -- p_jug01x
 
-
-
        "pg_mp_posseCamp_followerTent_large002x",
           -- CONTAINS OBJECTS:
               -- 0x04AC59BC    -- p_crate01x
@@ -7765,8 +7065,6 @@ local propset_names = {
               -- 0xF090821E    -- p_cratebrand01x
               -- 0x3C238C40    -- p_ambbundle01x
 
-
-
        "pg_mp_possecamp_followertent_large002x_b",
           -- CONTAINS OBJECTS:
               -- 0xDAA7B46E    -- p_barrel04b
@@ -7778,8 +7076,6 @@ local propset_names = {
               -- 0x7A6FFBF8    -- p_sackpear01x
               -- 0xB1923770    -- p_barrel_wash01x
 
-
-
        "pg_mp_possecamp_followertent_large002x_c",
           -- CONTAINS OBJECTS:
               -- 0xF520088C    -- p_crate15x
@@ -7789,8 +7085,6 @@ local propset_names = {
               -- 0x28DF1103    -- p_copperpan01bx
               -- 0x285ADDDB    -- p_cuptin01x
 
-
-
        "pg_mp_possecamp_goodspile01x",
           -- CONTAINS OBJECTS:
               -- 0x21DDBF2A    -- p_pallet01x
@@ -7799,8 +7093,6 @@ local propset_names = {
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x1B07227D    -- p_lantern05xint02
               -- 0x2203C309    -- p_barrel05b
-
-
 
        "pg_mp_possecamp_goodspile02x",
           -- CONTAINS OBJECTS:
@@ -7815,8 +7107,6 @@ local propset_names = {
               -- 0x2203C309    -- p_barrel05b
               -- 0x1B07227D    -- p_lantern05xint02
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_mp_possecamp_goodspile03x",
           -- CONTAINS OBJECTS:
@@ -7840,8 +7130,6 @@ local propset_names = {
               -- 0x2203C309    -- p_barrel05b
               -- 0x2203C309    -- p_barrel05b
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_mp_possecamp_goodspile04x",
           -- CONTAINS OBJECTS:
@@ -7875,8 +7163,6 @@ local propset_names = {
               -- 0x2203C309    -- p_barrel05b
               -- 0x5F5F56E4    -- p_stoolfolding01x
 
-
-
        "pg_mp_possecamp_hobo_medium011x",
           -- CONTAINS OBJECTS:
               -- 0x60D41C96    -- p_table11x
@@ -7896,8 +7182,6 @@ local propset_names = {
               -- 0xF2685570    -- p_bucketcamphob01x
               -- 0xE3513B85    -- p_ladlecamphob01x
 
-
-
        "pg_mp_possecamp_hobo_small010x",
           -- CONTAINS OBJECTS:
               -- 0x5DF2F660    -- p_trunkset02x
@@ -7914,8 +7198,6 @@ local propset_names = {
               -- 0x234B8A4F    -- p_ambclothdrape01x
               -- 0x59A5EF10    -- p_ambclothpile01x
               -- 0x93B9DE05    -- p_crateconf01x
-
-
 
        "pg_mp_posseCamp_horseEnclo_exlrg_combined",
           -- CONTAINS OBJECTS:
@@ -7945,8 +7227,6 @@ local propset_names = {
               -- 0xC66CAD0F    -- p_hitchingpost01x
               -- 0xE242EF76    -- p_torchpost01x
 
-
-
        "pg_mp_posseCamp_horseEnclo_lrg_combined",
           -- CONTAINS OBJECTS:
               -- 0x2203C309    -- p_barrel05b
@@ -7969,8 +7249,6 @@ local propset_names = {
               -- 0x6A7729CB    -- p_haybale03x
               -- 0x6A7729CB    -- p_haybale03x
               -- 0xAD66AC1A    -- p_watertroughsml01x
-
-
 
        "PG_MP_POSSECAMP_HORSEENCLOSURE_EXTRALARGE000X",
           -- CONTAINS OBJECTS:
@@ -7995,8 +7273,6 @@ local propset_names = {
               -- 0x07BEEC42    -- p_feedbag01bx
               -- 0x7833B7FF    -- p_stool08x
 
-
-
        "PG_MP_POSSECAMP_HORSEENCLOSURE_LARGE000X",
           -- CONTAINS OBJECTS:
               -- 0xB27B2D83    -- p_ambropepile02x
@@ -8017,8 +7293,6 @@ local propset_names = {
               -- 0x89EA5483    -- p_ambclothhang01x
               -- 0x203D17D0    -- p_haybale01x
 
-
-
        "pg_mp_posseCamp_lockbox_large000x",
           -- CONTAINS OBJECTS:
               -- 0x72DC1277    -- s_lootablebigbluechest02x
@@ -8033,8 +7307,6 @@ local propset_names = {
               -- 0x16784495    -- p_canempty11x
               -- 0xB27B2D83    -- p_ambropepile02x
               -- 0x1B07227D    -- p_lantern05xint02
-
-
 
        "pg_mp_possecamp_medicine04x",
           -- CONTAINS OBJECTS:
@@ -8084,8 +7356,6 @@ local propset_names = {
               -- 0x06F0E1AB    -- s_inv_tonichalf01x
               -- 0x06F0E1AB    -- s_inv_tonichalf01x
 
-
-
        "pg_mp_possecamp_merchanttent",
           -- CONTAINS OBJECTS:
               -- 0x1CD17EDC    -- s_whorewagon01x
@@ -8119,8 +7389,6 @@ local propset_names = {
               -- 0x08348696    -- p_fabricroll05x
               -- 0x19E6DA89    -- p_spiceset01x
 
-
-
        "pg_mp_possecamp_mil_medium011x",
           -- CONTAINS OBJECTS:
               -- 0x12446772    -- p_stool04x
@@ -8137,14 +7405,10 @@ local propset_names = {
               -- 0xC7DFD7E3    -- p_ambfloorrug05x
               -- 0xC7E7A608    -- p_cratetablemil01x
 
-
-
        "pg_mp_posseCamp_playerTent_large000x",
           -- CONTAINS OBJECTS:
               -- 0x1CD71407    -- s_tentbison01x
               -- 0x4D57D393    -- p_antlers01x
-
-
 
        "pg_mp_possecamp_playertent_large000x_b",
           -- CONTAINS OBJECTS:
@@ -8155,8 +7419,6 @@ local propset_names = {
               -- 0x69EAAB37    -- p_cardinal01x
               -- 0xB83FBCE9    -- p_cardinal01bx
               -- 0x03CF04EC    -- p_hidedisplay07x
-
-
 
        "pg_mp_possecamp_playertent_large000x_c",
           -- CONTAINS OBJECTS:
@@ -8173,8 +7435,6 @@ local propset_names = {
               -- 0xEC136081    -- p_ambpeltstring01x
               -- 0xB875E1B4    -- p_candlegroup04x
 
-
-
        "pg_mp_posseCamp_playerTent_large001x",
           -- CONTAINS OBJECTS:
               -- 0x7B187D60    -- p_ambfloorroll01x
@@ -8185,14 +7445,10 @@ local propset_names = {
               -- 0x2BF8422D    -- p_bedrollopen03x
               -- 0x19F213D4    -- p_shoppeltbuffalo01x
 
-
-
        "pg_mp_possecamp_playertent_large001x_b",
           -- CONTAINS OBJECTS:
               -- 0x93B9DE05    -- p_crateconf01x
               -- 0x35914478    -- p_basketcreel01x
-
-
 
        "pg_mp_possecamp_playertent_large001x_c",
           -- CONTAINS OBJECTS:
@@ -8206,13 +7462,9 @@ local propset_names = {
               -- 0x8983BF08    -- p_cratefloat01x
               -- 0xB576FE07    -- p_cs_rabbitskin_flat
 
-
-
        "pg_mp_posseCamp_playerTent_large002x",
           -- CONTAINS OBJECTS:
               -- 0x51631877    -- p_tent_leento04x
-
-
 
        "pg_mp_possecamp_playertent_large002x_b",
           -- CONTAINS OBJECTS:
@@ -8220,8 +7472,6 @@ local propset_names = {
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0x8983BF08    -- p_cratefloat01x
               -- 0xB875E1B4    -- p_candlegroup04x
-
-
 
        "pg_mp_possecamp_playertent_large002x_c",
           -- CONTAINS OBJECTS:
@@ -8236,8 +7486,6 @@ local propset_names = {
               -- 0x95478324    -- p_bucket01x
               -- 0xCA11B07D    -- p_whiskeycrate01x
 
-
-
        "pg_mp_possecamp_playertent_large003x",
           -- CONTAINS OBJECTS:
               -- 0x20E1BDF1    -- p_tent_leento02x
@@ -8249,15 +7497,11 @@ local propset_names = {
               -- 0x62772E9A    -- p_barricadewood_sml01x
               -- 0x62772E9A    -- p_barricadewood_sml01x
 
-
-
        "pg_mp_possecamp_playertent_large003x_b",
           -- CONTAINS OBJECTS:
               -- 0x34AA3529    -- p_sawbucktable01x
               -- 0x2950BF5E    -- p_camp_plate_03x
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_mp_possecamp_playertent_large003x_c",
           -- CONTAINS OBJECTS:
@@ -8266,8 +7510,6 @@ local propset_names = {
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0xD71B7B3E    -- p_bottlebeer01a
               -- 0x2BF8422D    -- p_bedrollopen03x
-
-
 
        "pg_mp_possecamp_playertent_large004x",
           -- CONTAINS OBJECTS:
@@ -8280,14 +7522,10 @@ local propset_names = {
               -- 0xFF70C1FF    -- p_tentarmypup01x
               -- 0xBB5ABDB1    -- p_ambfloorrug04x
 
-
-
        "pg_mp_possecamp_playertent_large004x_b",
           -- CONTAINS OBJECTS:
               -- 0xA835687F    -- p_washtub03x
               -- 0xFDE3380A    -- p_bucket02x
-
-
 
        "pg_mp_possecamp_playertent_large004x_c",
           -- CONTAINS OBJECTS:
@@ -8298,13 +7536,9 @@ local propset_names = {
               -- 0x41F2AF65    -- p_canteen01x
               -- 0xC3AB1F8B    -- p_candlebot01x
 
-
-
        "pg_mp_posseCamp_playerTent_large005x",
           -- CONTAINS OBJECTS:
               -- 0xCDFEB694    -- p_tentmountainmen01x
-
-
 
        "pg_mp_possecamp_playertent_large005x_b",
           -- CONTAINS OBJECTS:
@@ -8327,8 +7561,6 @@ local propset_names = {
               -- 0x07A5E377    -- p_hangracksml01x
               -- 0x2AD600ED    -- p_ambblanketroll01x
 
-
-
        "pg_mp_possecamp_playertent_large005x_c",
           -- CONTAINS OBJECTS:
               -- 0xEA9125C6    -- p_boilercamp01x
@@ -8336,8 +7568,6 @@ local propset_names = {
               -- 0x74E151B3    -- p_candlelamp01x
               -- 0x04AC59BC    -- p_crate01x
               -- 0x24D86583    -- p_cratedamagedebris01x
-
-
 
        "pg_mp_posseCamp_playerTent_medium000x",
           -- CONTAINS OBJECTS:
@@ -8349,20 +7579,14 @@ local propset_names = {
               -- 0xC3AB1F8B    -- p_candlebot01x
               -- 0x8983BF08    -- p_cratefloat01x
 
-
-
        "pg_mp_possecamp_playertent_medium000x_b",
           -- CONTAINS OBJECTS:
               -- 0x93B9DE05    -- p_crateconf01x
               -- 0x8547C573    -- p_cs_bedrollclsd01x
 
-
-
        "pg_mp_possecamp_playertent_medium000x_c",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_mp_possecamp_pokertable01x",
           -- CONTAINS OBJECTS:
@@ -8376,8 +7600,6 @@ local propset_names = {
               -- 0x0FC2D114    -- p_chair_barrel04b
               -- 0xF86C12CC    -- p_lanternstick09x
               -- 0x495B5DD6    -- p_chair_crate02x
-
-
 
        "pg_mp_possecamp_sav_medium011x",
           -- CONTAINS OBJECTS:
@@ -8397,8 +7619,6 @@ local propset_names = {
               -- 0xC7DFD7E3    -- p_ambfloorrug05x
               -- 0xEEBC4629    -- p_chair05x
 
-
-
        "pg_mp_possecamp_stewpot01x",
           -- CONTAINS OBJECTS:
               -- 0xC7E32828    -- p_campfirecombined01x
@@ -8413,8 +7633,6 @@ local propset_names = {
               -- 0xBEBCA255    -- p_campfireembers01x
               -- 0xBEBCA255    -- p_campfireembers01x
               -- 0xCCC1FEBE    -- p_pot05x
-
-
 
        "pg_mp_possecamp_sur_small010x",
           -- CONTAINS OBJECTS:
@@ -8433,8 +7651,6 @@ local propset_names = {
               -- 0xA4108C7A    -- p_whiskeycrate01x_dmg
               -- 0x68451C20    -- p_crate05x
 
-
-
        "pg_mp_possecamp_surv_medium011x",
           -- CONTAINS OBJECTS:
               -- 0x6EBE3622    -- p_table13x
@@ -8450,8 +7666,6 @@ local propset_names = {
               -- 0x09862DFC    -- p_debrispile01x
               -- 0xFDE3380A    -- p_bucket02x
 
-
-
        "pg_mp_possecamp_tent_aframetent_culture01",
           -- CONTAINS OBJECTS:
               -- 0x6F9E850D    -- p_bedrollopen01x
@@ -8460,8 +7674,6 @@ local propset_names = {
               -- 0xDB97190E    -- p_fabricstack01x
               -- 0x6FD002AE    -- p_ambtentplaid01x
               -- 0x5B36CD4B    -- p_bag01x
-
-
 
        "pg_mp_possecamp_tent_aframetent_culture01_b",
           -- CONTAINS OBJECTS:
@@ -8472,13 +7684,9 @@ local propset_names = {
               -- 0x9196DF7E    -- p_stoolcomfy02x
               -- 0x5C90B2BC    -- p_tablecoffee06x
 
-
-
        "pg_mp_possecamp_tent_aframetent_culture01_c",
           -- CONTAINS OBJECTS:
               -- 0x8B10FA14    -- p_plant04x
-
-
 
        "pg_mp_possecamp_tent_aframetent_hobo01",
           -- CONTAINS OBJECTS:
@@ -8493,22 +7701,16 @@ local propset_names = {
               -- 0xC7DFD7E3    -- p_ambfloorrug05x
               -- 0xD416ECF1    -- p_ambfloorrug06x
 
-
-
        "pg_mp_possecamp_tent_aframetent_hobo01_b",
           -- CONTAINS OBJECTS:
               -- 0x8983BF08    -- p_cratefloat01x
               -- 0x5EA815AC    -- p_jug01x_a
               -- 0x5DF597B8    -- p_flask01x
 
-
-
        "pg_mp_possecamp_tent_aframetent_hobo01_c",
           -- CONTAINS OBJECTS:
               -- 0x12446772    -- p_stool04x
               -- 0x7DDDE61E    -- p_floursack04x
-
-
 
        "pg_mp_possecamp_tent_aframetent_military01",
           -- CONTAINS OBJECTS:
@@ -8520,20 +7722,14 @@ local propset_names = {
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0x38287956    -- p_woodboard01x
 
-
-
        "pg_mp_possecamp_tent_aframetent_military01_b",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_mp_possecamp_tent_aframetent_military01_c",
           -- CONTAINS OBJECTS:
               -- 0x312AA507    -- p_crategatling01x
               -- 0x3AD08638    -- p_ambpack02x
-
-
 
        "pg_mp_possecamp_tent_aframetent_savage01_b",
           -- CONTAINS OBJECTS:
@@ -8543,21 +7739,15 @@ local propset_names = {
               -- 0x3007BA17    -- p_chickenhalf03x
               -- 0xB0906C4D    -- s_bucketoblood01x
 
-
-
        "pg_mp_possecamp_tent_aframetent_survivor01",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
               -- 0xEFD1BB41    -- p_ambtenthide01x
               -- 0xDB0ABB46    -- p_ambpack04x
 
-
-
        "pg_mp_possecamp_tent_aframetent_survivor01_b",
           -- CONTAINS OBJECTS:
               -- 0x51A1229C    -- p_woodpile01x
-
-
 
        "pg_mp_possecamp_tent_aframetent_survivor01_c",
           -- CONTAINS OBJECTS:
@@ -8568,21 +7758,15 @@ local propset_names = {
               -- 0x41F2AF65    -- p_canteen01x
               -- 0x5F5F56E4    -- p_stoolfolding01x
 
-
-
        "pg_mp_possecamp_tent_bounty01x",
           -- CONTAINS OBJECTS:
               -- 0xD1F72196    -- mp005_s_posse_tent_bountyhunter01x
               -- 0xF0FDD93B    -- p_mattress04x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_bounty01x_b",
           -- CONTAINS OBJECTS:
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
-
-
 
        "pg_mp_possecamp_tent_bounty02x",
           -- CONTAINS OBJECTS:
@@ -8603,13 +7787,9 @@ local propset_names = {
               -- 0x2F941E42    -- p_pillow11x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_bounty02x_b",
           -- CONTAINS OBJECTS:
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
-
-
 
        "pg_mp_possecamp_tent_bounty03x",
           -- CONTAINS OBJECTS:
@@ -8619,8 +7799,6 @@ local propset_names = {
               -- 0x2F71A6D6    -- p_cs_rug01x
               -- 0x089D9068    -- s_floor_platform01x
               -- 0x1B07227D    -- p_lantern05xint02
-
-
 
        "pg_mp_possecamp_tent_bounty03x_b",
           -- CONTAINS OBJECTS:
@@ -8638,13 +7816,9 @@ local propset_names = {
               -- 0xD4B39BFB    -- p_gen_documentfolder01x
               -- 0xA311CCB5    -- s_stagecoachtimetable01x
 
-
-
        "pg_mp_possecamp_tent_bounty03x_c",
           -- CONTAINS OBJECTS:
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
-
-
 
        "pg_mp_possecamp_tent_bounty04x",
           -- CONTAINS OBJECTS:
@@ -8681,13 +7855,9 @@ local propset_names = {
               -- 0x285ADDDB    -- p_cuptin01x
               -- 0x89482028    -- p_bamboosidetable01x
 
-
-
        "pg_mp_possecamp_tent_bounty04x_b",
           -- CONTAINS OBJECTS:
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
-
-
 
        "pg_mp_possecamp_tent_bounty05x",
           -- CONTAINS OBJECTS:
@@ -8730,14 +7900,10 @@ local propset_names = {
               -- 0xA83B31B9    -- p_gloves01x
               -- 0x41F2AF65    -- p_canteen01x
 
-
-
        "pg_mp_possecamp_tent_bounty05x_b",
           -- CONTAINS OBJECTS:
               -- 0x7D353A93    -- p_stoolcomfy01x
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
-
-
 
        "pg_mp_possecamp_tent_bounty06x",
           -- CONTAINS OBJECTS:
@@ -8784,13 +7950,9 @@ local propset_names = {
               -- 0xF63C7271    -- p_tin_coffee02x
               -- 0x0A405D05    -- p_starchlaundry01x
 
-
-
        "pg_mp_possecamp_tent_bounty06x_b",
           -- CONTAINS OBJECTS:
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
-
-
 
        "pg_mp_possecamp_tent_bounty07x",
           -- CONTAINS OBJECTS:
@@ -8849,8 +8011,6 @@ local propset_names = {
               -- 0xAD252B02    -- p_chemisehanging01x
               -- 0x10F89549    -- p_umbrella01x
 
-
-
        "pg_mp_possecamp_tent_bounty07x_b",
           -- CONTAINS OBJECTS:
               -- 0x74E9FDEE    -- p_compass01x
@@ -8868,13 +8028,9 @@ local propset_names = {
               -- 0xA311CCB5    -- s_stagecoachtimetable01x
               -- 0x234B8A4F    -- p_ambclothdrape01x
 
-
-
        "pg_mp_possecamp_tent_bounty07x_c",
           -- CONTAINS OBJECTS:
               -- 0xE5AD176B    -- mp005_s_posse_foldingchair_01x
-
-
 
        "pg_mp_possecamp_tent_collector01x",
           -- CONTAINS OBJECTS:
@@ -8884,13 +8040,9 @@ local propset_names = {
               -- 0xB5448C89    -- mp005_s_posse_col_book01x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_collector01x_b",
           -- CONTAINS OBJECTS:
               -- 0x8C66803F    -- mp005_s_posse_col_chair01x
-
-
 
        "pg_mp_possecamp_tent_collector02x",
           -- CONTAINS OBJECTS:
@@ -8903,13 +8055,9 @@ local propset_names = {
               -- 0xF0FDD93B    -- p_mattress04x
               -- 0x4B1752D1    -- p_bag_leather_doctor
 
-
-
        "pg_mp_possecamp_tent_collector02x_b",
           -- CONTAINS OBJECTS:
               -- 0x8C66803F    -- mp005_s_posse_col_chair01x
-
-
 
        "pg_mp_possecamp_tent_collector03x",
           -- CONTAINS OBJECTS:
@@ -8922,8 +8070,6 @@ local propset_names = {
               -- 0x5B2D0F9F    -- s_rc_camprug01x
               -- 0x13E30656    -- p_books02x
               -- 0x3C88F506    -- s_floor_platform02x
-
-
 
        "pg_mp_possecamp_tent_collector03x_b",
           -- CONTAINS OBJECTS:
@@ -8943,13 +8089,9 @@ local propset_names = {
               -- 0x1CE3D2DF    -- p_monkeyskull66x
               -- 0x5B92AF8D    -- p_microscopecase01x
 
-
-
        "pg_mp_possecamp_tent_collector03x_c",
           -- CONTAINS OBJECTS:
               -- 0x8C66803F    -- mp005_s_posse_col_chair01x
-
-
 
        "pg_mp_possecamp_tent_collector04x",
           -- CONTAINS OBJECTS:
@@ -8979,13 +8121,9 @@ local propset_names = {
               -- 0x70F5F621    -- p_birdcage01x
               -- 0x89482028    -- p_bamboosidetable01x
 
-
-
        "pg_mp_possecamp_tent_collector04x_b",
           -- CONTAINS OBJECTS:
               -- 0x8C66803F    -- mp005_s_posse_col_chair01x
-
-
 
        "pg_mp_possecamp_tent_collector05x",
           -- CONTAINS OBJECTS:
@@ -9011,13 +8149,9 @@ local propset_names = {
               -- 0x9CBC32C7    -- p_mortarpestle02bx
               -- 0x39EEC232    -- p_coffer01x
 
-
-
        "pg_mp_possecamp_tent_collector05x_b",
           -- CONTAINS OBJECTS:
               -- 0x8C66803F    -- mp005_s_posse_col_chair01x
-
-
 
        "pg_mp_possecamp_tent_collector06x",
           -- CONTAINS OBJECTS:
@@ -9073,13 +8207,9 @@ local propset_names = {
               -- 0x3CDC5956    -- mp005_s_posse_col_posters02x
               -- 0xD45E0743    -- mp005_s_posse_col_posters03x
 
-
-
        "pg_mp_possecamp_tent_collector06x_b",
           -- CONTAINS OBJECTS:
               -- 0x8C66803F    -- mp005_s_posse_col_chair01x
-
-
 
        "pg_mp_possecamp_tent_collector07x",
           -- CONTAINS OBJECTS:
@@ -9150,19 +8280,13 @@ local propset_names = {
               -- 0x5BC642F5    -- p_snakevoodoo01x
               -- 0x9AE8C4E8    -- p_banksealpress01x
 
-
-
        "pg_mp_possecamp_tent_collector07x_b",
           -- CONTAINS OBJECTS:
               -- 0x8C66803F    -- mp005_s_posse_col_chair01x
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_culture01",
           -- CONTAINS OBJECTS:
               -- 0xBA40DB2E    -- s_awningcul
-
-
 
        "pg_mp_possecamp_tent_coveredleanto_culture01_b",
           -- CONTAINS OBJECTS:
@@ -9178,21 +8302,15 @@ local propset_names = {
               -- 0xDB97190E    -- p_fabricstack01x
               -- 0xC3AB1F8B    -- p_candlebot01x
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_culture01_c",
           -- CONTAINS OBJECTS:
               -- 0x022DBE63    -- p_nightstand04x
               -- 0xFAA8ED32    -- p_glass03x
               -- 0x9196DF7E    -- p_stoolcomfy02x
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_hobo01",
           -- CONTAINS OBJECTS:
               -- 0xF173104C    -- s_awninghob
-
-
 
        "pg_mp_possecamp_tent_coveredleanto_hobo01_b",
           -- CONTAINS OBJECTS:
@@ -9204,19 +8322,13 @@ local propset_names = {
               -- 0xE27BDCB2    -- p_cask01x
               -- 0xE27BDCB2    -- p_cask01x
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_hobo01_c",
           -- CONTAINS OBJECTS:
               -- 0x20317B97    -- p_stump_01bx
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_military01",
           -- CONTAINS OBJECTS:
               -- 0x6F2F7471    -- s_awningmil
-
-
 
        "pg_mp_possecamp_tent_coveredleanto_military01_b",
           -- CONTAINS OBJECTS:
@@ -9239,16 +8351,12 @@ local propset_names = {
               -- 0x9786A300    -- p_ammoboxlancaster01x
               -- 0x2AD600ED    -- p_ambblanketroll01x
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_military01_c",
           -- CONTAINS OBJECTS:
               -- 0xD504309A    -- p_cannonbody01x
               -- 0xBE9AFDAE    -- p_cannonbarrel01x
               -- 0xB99983BD    -- p_cannonpyramid01x
               -- 0x12446772    -- p_stool04x
-
-
 
        "pg_mp_possecamp_tent_coveredleanto_savage01_b",
           -- CONTAINS OBJECTS:
@@ -9261,14 +8369,10 @@ local propset_names = {
               -- 0xB0906C4D    -- s_bucketoblood01x
               -- 0xB875E1B4    -- p_candlegroup04x
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_savage01_c",
           -- CONTAINS OBJECTS:
               -- 0x936D1E12    -- p_barrel08x
               -- 0xE242EF76    -- p_torchpost01x
-
-
 
        "pg_mp_possecamp_tent_coveredleanto_survivor01",
           -- CONTAINS OBJECTS:
@@ -9277,8 +8381,6 @@ local propset_names = {
               -- 0x8547C573    -- p_cs_bedrollclsd01x
               -- 0x8DE7DF4D    -- s_clothpile01x
               -- 0xC8E34C71    -- p_foldedblanket01x
-
-
 
        "pg_mp_possecamp_tent_coveredleanto_survivor01_b",
           -- CONTAINS OBJECTS:
@@ -9294,21 +8396,15 @@ local propset_names = {
               -- 0x5BD08710    -- p_treestump02x
               -- 0xB875E1B4    -- p_candlegroup04x
 
-
-
        "pg_mp_possecamp_tent_coveredleanto_survivor01_c",
           -- CONTAINS OBJECTS:
               -- 0x954B54F1    -- p_stump
               -- 0xE21C03EB    -- p_stool10x
               -- 0x76B9CEC6    -- p_ambforage02x
 
-
-
        "pg_mp_possecamp_tent_coveredtent_culture01",
           -- CONTAINS OBJECTS:
               -- 0x768357FA    -- s_tentdoctor01x
-
-
 
        "pg_mp_possecamp_tent_coveredtent_culture01_b",
           -- CONTAINS OBJECTS:
@@ -9319,8 +8415,6 @@ local propset_names = {
               -- 0x8176E7CC    -- p_meatcuttingboard01x
               -- 0x56D5A90E    -- p_pot_flowerarng11x
               -- 0xA5139ECA    -- p_stool07x
-
-
 
        "pg_mp_possecamp_tent_coveredtent_culture01_c",
           -- CONTAINS OBJECTS:
@@ -9345,8 +8439,6 @@ local propset_names = {
               -- 0x56A14270    -- p_paperdrafting01a
               -- 0xC0F826A0    -- p_hide02x
 
-
-
        "pg_mp_possecamp_tent_coveredtent_hobo01",
           -- CONTAINS OBJECTS:
               -- 0x138FFE6B    -- p_gangfence03x
@@ -9359,8 +8451,6 @@ local propset_names = {
               -- 0xB45CF56C    -- p_fencebeamstick_qpc_01bx
               -- 0x3E9CF9D7    -- p_tornclothobjets_01x
               -- 0xFB642D47    -- p_tornclothobjets_05x
-
-
 
        "pg_mp_possecamp_tent_coveredtent_hobo01_b",
           -- CONTAINS OBJECTS:
@@ -9387,8 +8477,6 @@ local propset_names = {
               -- 0x012A5FF1    -- p_woodspoon01x
               -- 0x2950BF5E    -- p_camp_plate_03x
 
-
-
        "pg_mp_possecamp_tent_coveredtent_hobo01_c",
           -- CONTAINS OBJECTS:
               -- 0x12446772    -- p_stool04x
@@ -9397,8 +8485,6 @@ local propset_names = {
               -- 0x2950BF5E    -- p_camp_plate_03x
               -- 0xA158EC7B    -- p_crate14x
               -- 0x2950BF5E    -- p_camp_plate_03x
-
-
 
        "pg_mp_possecamp_tent_coveredtent_military01",
           -- CONTAINS OBJECTS:
@@ -9419,16 +8505,12 @@ local propset_names = {
               -- 0x32B33BCE    -- p_cot01x
               -- 0xEF203121    -- p_chamberpot02x
 
-
-
        "pg_mp_possecamp_tent_coveredtent_military01_b",
           -- CONTAINS OBJECTS:
               -- 0x5E0BDAE1    -- p_baghang01x
               -- 0xF3FAECD2    -- p_jacket02x
               -- 0x07A5E377    -- p_hangracksml01x
               -- 0x271BBD08    -- p_powderhorn01x
-
-
 
        "pg_mp_possecamp_tent_coveredtent_military01_c",
           -- CONTAINS OBJECTS:
@@ -9437,8 +8519,6 @@ local propset_names = {
               -- 0x2950BF5E    -- p_camp_plate_03x
               -- 0x9786A300    -- p_ammoboxlancaster01x
               -- 0x8C845530    -- p_stool02x
-
-
 
        "pg_mp_possecamp_tent_coveredtent_savage01_b",
           -- CONTAINS OBJECTS:
@@ -9451,8 +8531,6 @@ local propset_names = {
               -- 0x20317B97    -- p_stump_01bx
               -- 0x50E00BD7    -- p_spookynative01x
 
-
-
        "pg_mp_possecamp_tent_coveredtent_survivor01",
           -- CONTAINS OBJECTS:
               -- 0x83E0A92C    -- p_tentmexican01x
@@ -9461,8 +8539,6 @@ local propset_names = {
               -- 0x0B434BA4    -- p_ambfloorleaves01x
               -- 0x0B434BA4    -- p_ambfloorleaves01x
               -- 0xE242EF76    -- p_torchpost01x
-
-
 
        "pg_mp_possecamp_tent_coveredtent_survivor01_b",
           -- CONTAINS OBJECTS:
@@ -9474,8 +8550,6 @@ local propset_names = {
               -- 0x1824F75E    -- p_snoeshoe01x
               -- 0x1A01C598    -- p_candle01x
 
-
-
        "pg_mp_possecamp_tent_coveredtent_survivor01_c",
           -- CONTAINS OBJECTS:
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
@@ -9485,14 +8559,10 @@ local propset_names = {
               -- 0x3C238C40    -- p_ambbundle01x
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
 
-
-
        "pg_mp_possecamp_tent_openleanto_culture01",
           -- CONTAINS OBJECTS:
               -- 0xDE0D5459    -- p_awningbills01b
               -- 0x1119683F    -- p_cs_baglevin01x
-
-
 
        "pg_mp_possecamp_tent_openleanto_culture01_b",
           -- CONTAINS OBJECTS:
@@ -9508,8 +8578,6 @@ local propset_names = {
               -- 0xEF203121    -- p_chamberpot02x
               -- 0x63BB7C17    -- p_saloonpropgroup02x
 
-
-
        "pg_mp_possecamp_tent_openleanto_culture01_c",
           -- CONTAINS OBJECTS:
               -- 0x1FAE76E1    -- s_caravancot01x
@@ -9519,8 +8587,6 @@ local propset_names = {
               -- 0x1A01C598    -- p_candle01x
               -- 0x8494264D    -- p_book08x
 
-
-
        "pg_mp_possecamp_tent_openleanto_hobo01",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
@@ -9529,15 +8595,11 @@ local propset_names = {
               -- 0xF2E5ABA3    -- p_crate04x
               -- 0x90570C3C    -- p_floursack01x
 
-
-
        "pg_mp_possecamp_tent_openleanto_hobo01_b",
           -- CONTAINS OBJECTS:
               -- 0xE5186F8C    -- p_debris02x
               -- 0xA4E22DF6    -- p_chair09x
               -- 0xC3B4741A    -- p_floursack02x
-
-
 
        "pg_mp_possecamp_tent_openleanto_hobo01_c",
           -- CONTAINS OBJECTS:
@@ -9547,8 +8609,6 @@ local propset_names = {
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0x951C7EFD    -- p_group_dishes01x_sd
 
-
-
        "pg_mp_possecamp_tent_openleanto_military01",
           -- CONTAINS OBJECTS:
               -- 0xF090821E    -- p_cratebrand01x
@@ -9557,16 +8617,12 @@ local propset_names = {
               -- 0x271BBD08    -- p_powderhorn01x
               -- 0x6F9E850D    -- p_bedrollopen01x
 
-
-
        "pg_mp_possecamp_tent_openleanto_military01_b",
           -- CONTAINS OBJECTS:
               -- 0x4C564F48    -- p_barrel_cor01x
               -- 0x12446772    -- p_stool04x
               -- 0xBE72010E    -- p_cs_crateammo01x
               -- 0x4C564F48    -- p_barrel_cor01x
-
-
 
        "pg_mp_possecamp_tent_openleanto_savage01_c",
           -- CONTAINS OBJECTS:
@@ -9579,8 +8635,6 @@ local propset_names = {
               -- 0x74E151B3    -- p_candlelamp01x
               -- 0x6623C0C3    -- p_bloodytablerag01x
               -- 0xB0906C4D    -- s_bucketoblood01x
-
-
 
        "pg_mp_possecamp_tent_openleanto_survivor01_b",
           -- CONTAINS OBJECTS:
@@ -9595,23 +8649,17 @@ local propset_names = {
               -- 0x3C238C40    -- p_ambbundle01x
               -- 0xC8E34C71    -- p_foldedblanket01x
 
-
-
        "pg_mp_possecamp_tent_openleanto_survivor01_c",
           -- CONTAINS OBJECTS:
               -- 0x9377BF7D    -- p_fishhanging10x
               -- 0x5BD08710    -- p_treestump02x
               -- 0x117D673F    -- p_ambsack02x
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_culture01",
           -- CONTAINS OBJECTS:
               -- 0xBA500A1A    -- p_cs_makeshiftstretcher01x
               -- 0x6B667A4B    -- p_ambtentplaid01b
               -- 0xF0FDD93B    -- p_mattress04x
-
-
 
        "pg_mp_possecamp_tent_simplebedroll_culture01_b",
           -- CONTAINS OBJECTS:
@@ -9621,16 +8669,12 @@ local propset_names = {
               -- 0x04AC59BC    -- p_crate01x
               -- 0x7D353A93    -- p_stoolcomfy01x
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_culture01_c",
           -- CONTAINS OBJECTS:
               -- 0x7ADCDEC7    -- p_foldedrug01x
               -- 0xF5F8E2FB    -- p_pillow08x
               -- 0x5D0CFF10    -- p_crate03x
               -- 0xDB97190E    -- p_fabricstack01x
-
-
 
        "pg_mp_possecamp_tent_simplebedroll_hobo01",
           -- CONTAINS OBJECTS:
@@ -9644,19 +8688,13 @@ local propset_names = {
               -- 0xAC595526    -- p_floursack02bx
               -- 0xE5B2D14B    -- p_loghalf01x
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_hobo01_b",
           -- CONTAINS OBJECTS:
               -- 0x5EA815AC    -- p_jug01x_a
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_hobo01_c",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
-
-
 
        "pg_mp_possecamp_tent_simplebedroll_military01",
           -- CONTAINS OBJECTS:
@@ -9665,23 +8703,17 @@ local propset_names = {
               -- 0x93B9DE05    -- p_crateconf01x
               -- 0x41F2AF65    -- p_canteen01x
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_military01_b",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x0E251133    -- p_ammoboxlancaster02x
               -- 0xEA9125C6    -- p_boilercamp01x
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_military01_c",
           -- CONTAINS OBJECTS:
               -- 0x9786A300    -- p_ammoboxlancaster01x
               -- 0x3AD08638    -- p_ambpack02x
               -- 0xB875E1B4    -- p_candlegroup04x
-
-
 
        "pg_mp_possecamp_tent_simplebedroll_survivor01",
           -- CONTAINS OBJECTS:
@@ -9692,21 +8724,15 @@ local propset_names = {
               -- 0xA1B3BAA7    -- p_ambtentscrub01b
               -- 0x79D1A9A7    -- p_ambfloorleaves02x
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_survivor01_b",
           -- CONTAINS OBJECTS:
               -- 0xE242EF76    -- p_torchpost01x
               -- 0x5BD08710    -- p_treestump02x
 
-
-
        "pg_mp_possecamp_tent_simplebedroll_survivor01_c",
           -- CONTAINS OBJECTS:
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0x93B9DE05    -- p_crateconf01x
-
-
 
        "pg_mp_possecamp_tent_simpleleanto_culture01",
           -- CONTAINS OBJECTS:
@@ -9715,8 +8741,6 @@ local propset_names = {
               -- 0x6B667A4B    -- p_ambtentplaid01b
               -- 0x7112BE49    -- p_lacepillow02x
               -- 0x0CAECD2D    -- s_blanketrolled01x
-
-
 
        "pg_mp_possecamp_tent_simpleleanto_culture01_b",
           -- CONTAINS OBJECTS:
@@ -9730,8 +8754,6 @@ local propset_names = {
               -- 0x8BF2B997    -- p_journal_open01x
               -- 0x7B43E768    -- p_map01x
 
-
-
        "pg_mp_possecamp_tent_simpleleanto_culture01_c",
           -- CONTAINS OBJECTS:
               -- 0x7ADCDEC7    -- p_foldedrug01x
@@ -9739,15 +8761,11 @@ local propset_names = {
               -- 0xDB97190E    -- p_fabricstack01x
               -- 0xBDA8A27B    -- p_opensuitcase01x
 
-
-
        "pg_mp_possecamp_tent_simpleleanto_hobo01",
           -- CONTAINS OBJECTS:
               -- 0x346B41FE    -- p_gangbed01x
               -- 0x32265483    -- p_ambtentburlap01b
               -- 0x592F2362    -- p_bedrollclosed01x
-
-
 
        "pg_mp_possecamp_tent_simpleleanto_hobo01_b",
           -- CONTAINS OBJECTS:
@@ -9763,14 +8781,10 @@ local propset_names = {
               -- 0x6C3FADDC    -- p_group_gamble_jug01x
               -- 0xA158EC7B    -- p_crate14x
 
-
-
        "pg_mp_possecamp_tent_simpleleanto_hobo01_c",
           -- CONTAINS OBJECTS:
               -- 0x6406138A    -- p_debris07x
               -- 0xC3B4741A    -- p_floursack02x
-
-
 
        "pg_mp_possecamp_tent_simpleleanto_military01",
           -- CONTAINS OBJECTS:
@@ -9783,16 +8797,12 @@ local propset_names = {
               -- 0xD4DE4535    -- p_ammo_box_001
               -- 0xD4DE4535    -- p_ammo_box_001
 
-
-
        "pg_mp_possecamp_tent_simpleleanto_military01_b",
           -- CONTAINS OBJECTS:
               -- 0x5F5F56E4    -- p_stoolfolding01x
               -- 0x8983BF08    -- p_cratefloat01x
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0xB875E1B4    -- p_candlegroup04x
-
-
 
        "pg_mp_possecamp_tent_simpleleanto_military01_c",
           -- CONTAINS OBJECTS:
@@ -9801,8 +8811,6 @@ local propset_names = {
               -- 0x68EFE70D    -- p_paperdrafting01b
               -- 0xF090821E    -- p_cratebrand01x
               -- 0x9CD3CA7E    -- p_clothesfolded02x
-
-
 
        "pg_mp_possecamp_tent_simpleleanto_savage01_c",
           -- CONTAINS OBJECTS:
@@ -9819,8 +8827,6 @@ local propset_names = {
               -- 0xDF9132BF    -- p_torchpostalwayson01x
               -- 0x1CE3D2DF    -- p_monkeyskull66x
 
-
-
        "pg_mp_possecamp_tent_simpleleanto_survivor01",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
@@ -9829,13 +8835,9 @@ local propset_names = {
               -- 0x4CB48909    -- p_nailsingle01x
               -- 0xC9E96F78    -- p_ambtentleather01b
 
-
-
        "pg_mp_possecamp_tent_simpleleanto_survivor01_b",
           -- CONTAINS OBJECTS:
               -- 0x9DE29B4D    -- p_ambwoodpile01x
-
-
 
        "pg_mp_possecamp_tent_simpleleanto_survivor01_c",
           -- CONTAINS OBJECTS:
@@ -9846,13 +8848,9 @@ local propset_names = {
               -- 0x41F2AF65    -- p_canteen01x
               -- 0x6C3FADDC    -- p_group_gamble_jug01x
 
-
-
        "pg_mp_possecamp_tent_tallleanto_culture01",
           -- CONTAINS OBJECTS:
               -- 0x3020FD56    -- s_tentwedge02x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_culture01_b",
           -- CONTAINS OBJECTS:
@@ -9872,8 +8870,6 @@ local propset_names = {
               -- 0x38EB95DC    -- p_bottlebeer01a_2
               -- 0xA8E3EBAF    -- p_sidetable08x
 
-
-
        "pg_mp_possecamp_tent_tallleanto_culture01_c",
           -- CONTAINS OBJECTS:
               -- 0xC2DC71CA    -- p_chair02x
@@ -9888,13 +8884,9 @@ local propset_names = {
               -- 0x2950BF5E    -- p_camp_plate_03x
               -- 0x309B61AC    -- p_basket01x
 
-
-
        "pg_mp_possecamp_tent_tallleanto_hobo01",
           -- CONTAINS OBJECTS:
               -- 0x6C1BD110    -- p_tent_leento03x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_hobo01_b",
           -- CONTAINS OBJECTS:
@@ -9906,8 +8898,6 @@ local propset_names = {
               -- 0x68A915A8    -- p_bucket03x
               -- 0x795B6962    -- p_debrisboard23x
               -- 0xB875E1B4    -- p_candlegroup04x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_hobo01_c",
           -- CONTAINS OBJECTS:
@@ -9921,13 +8911,9 @@ local propset_names = {
               -- 0x4C034AC3    -- p_can04x
               -- 0xDACC9DC1    -- p_pan01x
 
-
-
        "pg_mp_possecamp_tent_tallleanto_military01",
           -- CONTAINS OBJECTS:
               -- 0x6C1BD110    -- p_tent_leento03x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_military01_b",
           -- CONTAINS OBJECTS:
@@ -9939,8 +8925,6 @@ local propset_names = {
               -- 0xB875E1B4    -- p_candlegroup04x
               -- 0xCDCBC8C0    -- p_folded_vest01x
 
-
-
        "pg_mp_possecamp_tent_tallleanto_military01_c",
           -- CONTAINS OBJECTS:
               -- 0xF520088C    -- p_crate15x
@@ -9950,8 +8934,6 @@ local propset_names = {
               -- 0xE59DE436    -- p_glovebox01x
               -- 0x4C034AC3    -- p_can04x
               -- 0xB875E1B4    -- p_candlegroup04x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_savage01_b",
           -- CONTAINS OBJECTS:
@@ -9964,8 +8946,6 @@ local propset_names = {
               -- 0x96EFE2EB    -- p_ambbed01x
               -- 0xF52F55AF    -- p_spookynative08x
               -- 0xE57A46CE    -- p_spookyskulls08x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_savage01_c",
           -- CONTAINS OBJECTS:
@@ -9980,13 +8960,9 @@ local propset_names = {
               -- 0x7AC83F7F    -- p_fencestick01ax
               -- 0x4D3907F4    -- p_strawbundle01x
 
-
-
        "pg_mp_possecamp_tent_tallleanto_survivor01",
           -- CONTAINS OBJECTS:
               -- 0x6C1BD110    -- p_tent_leento03x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_survivor01_b",
           -- CONTAINS OBJECTS:
@@ -9997,8 +8973,6 @@ local propset_names = {
               -- 0x7ADCDEC7    -- p_foldedrug01x
               -- 0x6F9E850D    -- p_bedrollopen01x
               -- 0x55B20D99    -- p_hidewolf01x
-
-
 
        "pg_mp_possecamp_tent_tallleanto_survivor01_c",
           -- CONTAINS OBJECTS:
@@ -10019,8 +8993,6 @@ local propset_names = {
               -- 0x2F5FC077    -- p_crate14cx
               -- 0x8DC4AFC5    -- p_washboard01x
 
-
-
        "pg_mp_possecamp_tent_trader01x",
           -- CONTAINS OBJECTS:
               -- 0x38966F44    -- mp005_s_posse_tent_trader01x
@@ -10030,8 +9002,6 @@ local propset_names = {
               -- 0x7CF032C1    -- p_canlard01x
               -- 0x0DC5FA15    -- p_ambfloorfur02x
               -- 0x1B07227D    -- p_lantern05xint02
-
-
 
        "pg_mp_possecamp_tent_trader01x_b",
           -- CONTAINS OBJECTS:
@@ -10044,13 +9014,9 @@ local propset_names = {
               -- 0xCF0C1A4C    -- p_basin01x
               -- 0x8C227D3A    -- p_oilcan02x
 
-
-
        "pg_mp_possecamp_tent_trader01x_c",
           -- CONTAINS OBJECTS:
               -- 0x1FEA5357    -- mp005_s_posse_trad_chair01x
-
-
 
        "pg_mp_possecamp_tent_trader02x",
           -- CONTAINS OBJECTS:
@@ -10063,8 +9029,6 @@ local propset_names = {
               -- 0x0DC5FA15    -- p_ambfloorfur02x
               -- 0x7F8944EF    -- p_ambfloorrug07x
               -- 0x1B07227D    -- p_lantern05xint02
-
-
 
        "pg_mp_possecamp_tent_trader02x_b",
           -- CONTAINS OBJECTS:
@@ -10087,13 +9051,9 @@ local propset_names = {
               -- 0xDACC9DC1    -- p_pan01x
               -- 0x2B77CE21    -- s_offal01x_group02
 
-
-
        "pg_mp_possecamp_tent_trader02x_c",
           -- CONTAINS OBJECTS:
               -- 0x1FEA5357    -- mp005_s_posse_trad_chair01x
-
-
 
        "pg_mp_possecamp_tent_trader03x",
           -- CONTAINS OBJECTS:
@@ -10113,8 +9073,6 @@ local propset_names = {
               -- 0x495B5DD6    -- p_chair_crate02x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_trader03x_b",
           -- CONTAINS OBJECTS:
               -- 0x931857B6    -- p_wheelbarrow01x
@@ -10127,13 +9085,9 @@ local propset_names = {
               -- 0xE57D9006    -- p_oilolive01x
               -- 0x7CF032C1    -- p_canlard01x
 
-
-
        "pg_mp_possecamp_tent_trader03x_c",
           -- CONTAINS OBJECTS:
               -- 0x1FEA5357    -- mp005_s_posse_trad_chair01x
-
-
 
        "pg_mp_possecamp_tent_trader04x",
           -- CONTAINS OBJECTS:
@@ -10175,22 +9129,16 @@ local propset_names = {
               -- 0x78DF933F    -- s_wrappedmeat01x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_trader04x_b",
           -- CONTAINS OBJECTS:
               -- 0x4EA78263    -- mp005_s_posse_lardbarrels01x
               -- 0x71C9B9C4    -- p_boxlrgbirch01x
-
-
 
        "pg_mp_possecamp_tent_trader04x_c",
           -- CONTAINS OBJECTS:
               -- 0x870D1AC3    -- mp005_s_posse_goodsbundle01x
               -- 0x870D1AC3    -- mp005_s_posse_goodsbundle01x
               -- 0x1FEA5357    -- mp005_s_posse_trad_chair01x
-
-
 
        "pg_mp_possecamp_tent_trader05x",
           -- CONTAINS OBJECTS:
@@ -10229,21 +9177,15 @@ local propset_names = {
               -- 0xB6A8B1C9    -- s_bedrollfurlined01x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_trader05x_b",
           -- CONTAINS OBJECTS:
               -- 0x870D1AC3    -- mp005_s_posse_goodsbundle01x
               -- 0x870D1AC3    -- mp005_s_posse_goodsbundle01x
               -- 0x4EA78263    -- mp005_s_posse_lardbarrels01x
 
-
-
        "pg_mp_possecamp_tent_trader05x_c",
           -- CONTAINS OBJECTS:
               -- 0x1FEA5357    -- mp005_s_posse_trad_chair01x
-
-
 
        "pg_mp_possecamp_tent_trader06x",
           -- CONTAINS OBJECTS:
@@ -10288,21 +9230,15 @@ local propset_names = {
               -- 0xA7D16E0B    -- mp005_s_posse_turkeyplume01x
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_trader06x_b",
           -- CONTAINS OBJECTS:
               -- 0x8AC54F7B    -- mp005_s_posse_fleshingboard01x
               -- 0xCF0C1A4C    -- p_basin01x
               -- 0x931857B6    -- p_wheelbarrow01x
 
-
-
        "pg_mp_possecamp_tent_trader06x_c",
           -- CONTAINS OBJECTS:
               -- 0x1FEA5357    -- mp005_s_posse_trad_chair01x
-
-
 
        "pg_mp_possecamp_tent_trader07x",
           -- CONTAINS OBJECTS:
@@ -10366,8 +9302,6 @@ local propset_names = {
               -- 0x7B0CC91B    -- p_cast_iron_pot_002
               -- 0x1B07227D    -- p_lantern05xint02
 
-
-
        "pg_mp_possecamp_tent_trader07x_b",
           -- CONTAINS OBJECTS:
               -- 0xCF0C1A4C    -- p_basin01x
@@ -10381,13 +9315,9 @@ local propset_names = {
               -- 0x931857B6    -- p_wheelbarrow01x
               -- 0x3DFA5239    -- p_cauldron01x
 
-
-
        "pg_mp_possecamp_tent_trader07x_c",
           -- CONTAINS OBJECTS:
               -- 0x1FEA5357    -- mp005_s_posse_trad_chair01x
-
-
 
        "pg_mp_raidsupply_wagon_01x",
           -- CONTAINS OBJECTS:
@@ -10397,8 +9327,6 @@ local propset_names = {
               -- 0x68451C20    -- p_crate05x
               -- 0x68451C20    -- p_crate05x
               -- 0x6502C77C    -- mp003_s_mp_moneybag_stack02x
-
-
 
        "pg_mp_snakesales01x",
           -- CONTAINS OBJECTS:
@@ -10431,15 +9359,11 @@ local propset_names = {
               -- 0x2A5B8323    -- p_bottlemedicine08x
               -- 0xF03EAF29    -- p_bottlemedicine20x
 
-
-
        "pg_mp_tannercamp02x",
           -- CONTAINS OBJECTS:
               -- 0x65300BC3    -- p_fleshingboard01x
               -- 0x77DC03A3    -- p_hideframe02x
               -- 0x57EF2CD8    -- p_fleshingknife01x
-
-
 
        "pg_mp_tannercamp03x",
           -- CONTAINS OBJECTS:
@@ -10460,13 +9384,9 @@ local propset_names = {
               -- 0x7CC1324B    -- p_book01x
               -- 0xEA551221    -- p_book05x
 
-
-
        "pg_mp_trader_cart08_sml01x",
           -- CONTAINS OBJECTS:
               -- 0x4EA5EF26    -- mp005_p_veh_tg01x_cart08_sml
-
-
 
        "pg_mp_veh_rowboat_supplies01",
           -- CONTAINS OBJECTS:
@@ -10481,8 +9401,6 @@ local propset_names = {
               -- 0x90570C3C    -- p_floursack01x
               -- 0x2CEEBFC1    -- p_floursack08x
 
-
-
        "pg_mp_veh_rowboat_supplies02",
           -- CONTAINS OBJECTS:
               -- 0xA9F0B400    -- mp001_p_rowboat_base01x
@@ -10495,8 +9413,6 @@ local propset_names = {
               -- 0x19C391C7    -- p_cratebottles01x
               -- 0xCA11B07D    -- p_whiskeycrate01x
               -- 0xCA11B07D    -- p_whiskeycrate01x
-
-
 
        "pg_mp_veh_rowboat_supplies03",
           -- CONTAINS OBJECTS:
@@ -10515,8 +9431,6 @@ local propset_names = {
               -- 0x19C391C7    -- p_cratebottles01x
               -- 0xE384BF47    -- mp001_p_rowboat_base02x
 
-
-
        "pg_mp_veh_rowboat_supplies04",
           -- CONTAINS OBJECTS:
               -- 0xE384BF47    -- mp001_p_rowboat_base02x
@@ -10530,8 +9444,6 @@ local propset_names = {
               -- 0x90570C3C    -- p_floursack01x
               -- 0x2CEEBFC1    -- p_floursack08x
               -- 0x2CEEBFC1    -- p_floursack08x
-
-
 
        "pg_mp_veh_rowboatswamp_supplies01",
           -- CONTAINS OBJECTS:
@@ -10553,8 +9465,6 @@ local propset_names = {
               -- 0x5D0CFF10    -- p_crate03x
               -- 0x04DAA86F    -- mp001_p_veh_rowboatswamp_base01x
 
-
-
        "pg_mp_veh_rowboatswamp_supplies02",
           -- CONTAINS OBJECTS:
               -- 0x04DAA86F    -- mp001_p_veh_rowboatswamp_base01x
@@ -10568,8 +9478,6 @@ local propset_names = {
               -- 0xC3B4741A    -- p_floursack02x
               -- 0x90570C3C    -- p_floursack01x
               -- 0x90570C3C    -- p_floursack01x
-
-
 
        "pg_mp_veh_rowboatswamp_supplies03",
           -- CONTAINS OBJECTS:
@@ -10591,8 +9499,6 @@ local propset_names = {
               -- 0x19C391C7    -- p_cratebottles01x
               -- 0x04DAA86F    -- mp001_p_veh_rowboatswamp_base01x
 
-
-
        "pg_mp_veh_rowboatswamp_supplies04",
           -- CONTAINS OBJECTS:
               -- 0xF6B2B371    -- p_barrelapples01x
@@ -10611,8 +9517,6 @@ local propset_names = {
               -- 0x54768FF0    -- p_floursack05x
               -- 0x04DAA86F    -- mp001_p_veh_rowboatswamp_base01x
 
-
-
        "pg_mp_venomsuck01x",
           -- CONTAINS OBJECTS:
               -- 0x90835476    -- p_campfirenosmoke01x
@@ -10625,14 +9529,10 @@ local propset_names = {
               -- 0x8DDD0C7B    -- p_camp_cup_01x
               -- 0x97C815DB    -- p_camp_plate_01x
 
-
-
        "pg_mp_workshop01x",
           -- CONTAINS OBJECTS:
               -- 0xFF70C1FF    -- p_tentarmypup01x
               -- 0x6F9E850D    -- p_bedrollopen01x
-
-
 
        "pg_mp_workshop02x",
           -- CONTAINS OBJECTS:
@@ -10640,8 +9540,6 @@ local propset_names = {
               -- 0x20317B97    -- p_stump_01bx
               -- 0xC40834F2    -- p_chairfolding02x
               -- 0x6F9E850D    -- p_bedrollopen01x
-
-
 
        "pg_mp_workshop03x",
           -- CONTAINS OBJECTS:
@@ -10658,13 +9556,9 @@ local propset_names = {
               -- 0x6F9E850D    -- p_bedrollopen01x
               -- 0x116072E0    -- p_barrelhalf04x
 
-
-
        "pg_player_campalt1_01x",
           -- CONTAINS OBJECTS:
               -- 0x32380960    -- p_campfire02_amb
-
-
 
        "pg_player_campalt1_02x",
           -- CONTAINS OBJECTS:
@@ -10697,15 +9591,11 @@ local propset_names = {
               -- 0xEA9125C6    -- p_boilercamp01x
               -- 0x2BF8422D    -- p_bedrollopen03x
 
-
-
        "pg_player_campfire01x",
           -- CONTAINS OBJECTS:
               -- 0xFF70C1FF    -- p_tentarmypup01x
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
               -- 0x2BF8422D    -- p_bedrollopen03x
-
-
 
        "pg_player_campfire02x",
           -- CONTAINS OBJECTS:
@@ -10713,15 +9603,11 @@ local propset_names = {
               -- 0xFF70C1FF    -- p_tentarmypup01x
               -- 0x2BF8422D    -- p_bedrollopen03x
 
-
-
        "pg_player_campfire03x",
           -- CONTAINS OBJECTS:
               -- 0x51631877    -- p_tent_leento04x
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
               -- 0x6F9E850D    -- p_bedrollopen01x
-
-
 
        "pg_player_campfire04x",
           -- CONTAINS OBJECTS:
@@ -10752,8 +9638,6 @@ local propset_names = {
               -- 0xFDBAAFDB    -- p_campfire02x
               -- 0x85218677    -- p_barrel03x
 
-
-
        "pg_player_campfire4x401x",
           -- CONTAINS OBJECTS:
               -- 0x6F9E850D    -- p_bedrollopen01x
@@ -10764,13 +9648,9 @@ local propset_names = {
               -- 0xE528F5FC    -- p_cookgrate01x
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
 
-
-
        "pg_player_campfire_add01x",
           -- CONTAINS OBJECTS:
               -- 0x26618909    -- p_campfirecharsml01x
-
-
 
        "pg_player_campfire_add02x_tentbed",
           -- CONTAINS OBJECTS:
@@ -10778,25 +9658,17 @@ local propset_names = {
               -- 0x2BF8422D    -- p_bedrollopen03x
               -- 0x7B187D60    -- p_ambfloorroll01x
 
-
-
        "pg_player_campfire_add03x_stool",
           -- CONTAINS OBJECTS:
               -- 0xD1FE4266    -- s_stoolfoldingstatic01x
-
-
 
        "pg_player_campfire_add05x_bed",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
 
-
-
        "pg_rc_beauandpene201x",
           -- CONTAINS OBJECTS:
               -- 0x2024612B    -- p_veh_beaunpene201x
-
-
 
        "pg_rc_bountystrawduel01x",
           -- CONTAINS OBJECTS:
@@ -10818,8 +9690,6 @@ local propset_names = {
               -- 0x9F350FBB    -- p_crate02x
               -- 0xDBCE51C8    -- p_cs_jug01x
               -- 0xABBB7A32    -- p_matches01x
-
-
 
        "pg_rc_calloway01x",
           -- CONTAINS OBJECTS:
@@ -10878,8 +9748,6 @@ local propset_names = {
               -- 0xAD844AC0    -- s_inv_supertonic01x
               -- 0x02F097B2    -- p_cigarbox01x
 
-
-
        "pg_rc_exconfederates1_01x",
           -- CONTAINS OBJECTS:
               -- 0x5DD4D9F7    -- p_veh_chucksidebarrel02
@@ -10889,20 +9757,14 @@ local propset_names = {
               -- 0xD363FA26    -- p_package06x
               -- 0x38C0B4B5    -- p_veh_cratetnt02x
 
-
-
        "pg_rc_monroe1_01x",
           -- CONTAINS OBJECTS:
               -- 0x310CF880    -- p_strongbox01x
               -- 0x5AE86AE3    -- p_rc_monroe1_01x
 
-
-
        "PG_RC_NATIVEWAGONCORNWALL01X",
           -- CONTAINS OBJECTS:
               -- 0x6F734EA2    -- p_veh_nativesonwagon02x
-
-
 
        "PG_RC_ODDFELLOWS2_01X",
           -- CONTAINS OBJECTS:
@@ -10927,28 +9789,20 @@ local propset_names = {
               -- 0xFB19BD43    -- p_mugcoffee01x
               -- 0xBBEB75D2    -- p_satchel01x
 
-
-
        "pg_rc_ridethelightning01x",
           -- CONTAINS OBJECTS:
               -- 0xECBF01A3    -- p_veh_brt1_tomansion01x
               -- 0xED15BA5C    -- s_wagon05xbr2cover
 
-
-
        "pg_rc_saddiesupplies00x",
           -- CONTAINS OBJECTS:
               -- 0x24FDAF36    -- p_veh_sadiesupplies00x
-
-
 
        "pg_rc_saddiesupplies01x",
           -- CONTAINS OBJECTS:
               -- 0x22370C62    -- p_sack04x
               -- 0x824BEAB1    -- p_veh_sadiesupplies01x
               -- 0x5D0CFF10    -- p_crate03x
-
-
 
        "pg_re_armsdeal01x",
           -- CONTAINS OBJECTS:
@@ -10957,8 +9811,6 @@ local propset_names = {
               -- 0x205959C1    -- p_dressinglcmbutcher01x
               -- 0xD20BBBB5    -- s_inv_moneyclip01x
               -- 0x58E13B7A    -- s_inv_pocketwatch03x
-
-
 
        "pg_re_campfireambush01x",
           -- CONTAINS OBJECTS:
@@ -11009,8 +9861,6 @@ local propset_names = {
               -- 0xBEBCA255    -- p_campfireembers01x
               -- 0x4627477E    -- p_anim_armypup02x
 
-
-
        "pg_re_campfireambush02x",
           -- CONTAINS OBJECTS:
               -- 0x577AF30E    -- p_tentarmypup02x
@@ -11035,8 +9885,6 @@ local propset_names = {
               -- 0xF5FFE66F    -- p_bottlecognac01x
               -- 0xF5FFE66F    -- p_bottlecognac01x
 
-
-
        "pg_re_campfireambush03x",
           -- CONTAINS OBJECTS:
               -- 0xE936BA66    -- p_campfirerocksml02x
@@ -11051,19 +9899,13 @@ local propset_names = {
               -- 0x662E2016    -- s_inv_pistolammo01x
               -- 0x662E2016    -- s_inv_pistolammo01x
 
-
-
        "pg_re_checkpoint01x",
           -- CONTAINS OBJECTS:
               -- 0xE51823A8    -- p_veh_checkpoint01x
 
-
-
        "pg_re_checkpoint02x_food",
           -- CONTAINS OBJECTS:
               -- 0xDCD66E72    -- p_re_checkpoint02x_food
-
-
 
        "pg_re_cochinaygang01x",
           -- CONTAINS OBJECTS:
@@ -11099,8 +9941,6 @@ local propset_names = {
               -- 0xC28617DB    -- p_jug01x
               -- 0xC28617DB    -- p_jug01x
 
-
-
        "PG_RE_CRASHEDWAGONDEBRISTRAIL01X",
           -- CONTAINS OBJECTS:
               -- 0x1308875C    -- p_lantern05x
@@ -11118,8 +9958,6 @@ local propset_names = {
               -- 0x90783106    -- p_blouseground01x
               -- 0x1C4AFFA5    -- p_debris03x
               -- 0xEB2878CD    -- p_debrisboards01x
-
-
 
        "pg_re_creolegang01x",
           -- CONTAINS OBJECTS:
@@ -11172,8 +10010,6 @@ local propset_names = {
               -- 0x83F856D9    -- p_bottlebeer04x
               -- 0x83F856D9    -- p_bottlebeer04x
 
-
-
        "pg_re_davisboysgang01x",
           -- CONTAINS OBJECTS:
               -- 0xD4139F84    -- p_still02x
@@ -11211,13 +10047,9 @@ local propset_names = {
               -- 0x1308875C    -- p_lantern05x
               -- 0x1308875C    -- p_lantern05x
 
-
-
        "pg_re_deadbodies01x_lights",
           -- CONTAINS OBJECTS:
               -- 0x181C325D    -- p_blood01x_cart06
-
-
 
        "pg_re_dustersgang01x",
           -- CONTAINS OBJECTS:
@@ -11246,8 +10078,6 @@ local propset_names = {
               -- 0x393FBF0A    -- p_crate06x
               -- 0x393FBF0A    -- p_crate06x
               -- 0x90570C3C    -- p_floursack01x
-
-
 
        "pg_re_exconfederategang01x",
           -- CONTAINS OBJECTS:
@@ -11289,8 +10119,6 @@ local propset_names = {
               -- 0x0EB1D0CA    -- p_barrel11x
               -- 0x47DC58FB    -- p_debris01x
               -- 0x6406138A    -- p_debris07x
-
-
 
        "pg_re_exconfederategang02x",
           -- CONTAINS OBJECTS:
@@ -11357,8 +10185,6 @@ local propset_names = {
               -- 0x73F016A0    -- p_dressinglbmweathered02x
               -- 0xC7857F13    -- p_dressinglbsammo01x
 
-
-
        "pg_re_exconfederategang_noammo01x",
           -- CONTAINS OBJECTS:
               -- 0xC7E32828    -- p_campfirecombined01x
@@ -11391,16 +10217,12 @@ local propset_names = {
               -- 0x3C5675C2    -- p_barrel02x
               -- 0x257DC695    -- p_barrelwater01x
 
-
-
        "pg_re_fishing01x",
           -- CONTAINS OBJECTS:
               -- 0x68A915A8    -- p_bucket03x
               -- 0x2BE58D77    -- p_bucketfish01x
               -- 0x79F7EF41    -- p_tacklebox01x
               -- 0x68A915A8    -- p_bucket03x
-
-
 
        "pg_re_fleeingfamily01x",
           -- CONTAINS OBJECTS:
@@ -11414,14 +10236,10 @@ local propset_names = {
               -- 0x21384D39    -- s_inv_pocketwatch02x
               -- 0xBDB1FCD3    -- s_inv_piraterum01x
 
-
-
        "pg_re_frozentodeath01x",
           -- CONTAINS OBJECTS:
               -- 0xBFCF5961    -- p_campfire_win2_01x
               -- 0xD343289D    -- p_tentarmypupbrokensnow01x
-
-
 
        "pg_re_fund_before01x",
           -- CONTAINS OBJECTS:
@@ -11438,8 +10256,6 @@ local propset_names = {
               -- 0x310CF880    -- p_strongbox01x
               -- 0x37947CCB    -- p_dressinglbmart01x
               -- 0xB3979DC4    -- p_cs_billstack01x
-
-
 
        "pg_re_herbalistcamp_swamp01x",
           -- CONTAINS OBJECTS:
@@ -11473,8 +10289,6 @@ local propset_names = {
               -- 0xEB3A280B    -- p_herbsdry01x
               -- 0xEB3A280B    -- p_herbsdry01x
 
-
-
        "pg_re_inbredgang01x",
           -- CONTAINS OBJECTS:
               -- 0xB2C084F7    -- p_tent0101x
@@ -11499,8 +10313,6 @@ local propset_names = {
               -- 0xF3E71F7D    -- p_cutsack_sugar01x
               -- 0xF3E71F7D    -- p_cutsack_sugar01x
 
-
-
        "PG_RE_INBREDKIDNAP02X",
           -- CONTAINS OBJECTS:
               -- 0xB3E5988A    -- p_chuckwagon01x
@@ -11510,8 +10322,6 @@ local propset_names = {
               -- 0xF4B2AC82    -- p_rag04x
               -- 0x7FE9CBFF    -- p_shoe02x
               -- 0xBDA8A27B    -- p_opensuitcase01x
-
-
 
        "pg_re_islandstandoff01x",
           -- CONTAINS OBJECTS:
@@ -11571,8 +10381,6 @@ local propset_names = {
               -- 0xDC836190    -- p_cigarettecheapbox01x
               -- 0x74CA3FFF    -- s_inv_rum01x
 
-
-
        "PG_RE_ISLANDSTANDOFF02X",
           -- CONTAINS OBJECTS:
               -- 0x11C8A30F    -- p_tent_leento01x
@@ -11592,8 +10400,6 @@ local propset_names = {
               -- 0x3B5E0718    -- p_floursacksm02x
               -- 0x936D6929    -- p_sack07x
               -- 0x5170EBFD    -- p_sack05x
-
-
 
        "pg_re_lemoyneraiders01x",
           -- CONTAINS OBJECTS:
@@ -11695,8 +10501,6 @@ local propset_names = {
               -- 0xCD4B3DC8    -- p_dressinglbscamp01x
               -- 0x073690E5    -- p_dressinglblcamp01x
 
-
-
        "pg_re_moonshinecampgroup02x",
           -- CONTAINS OBJECTS:
               -- 0x495B5DD6    -- p_chair_crate02x
@@ -11779,13 +10583,9 @@ local propset_names = {
               -- 0x3CF127BC    -- p_campfirerock01x
               -- 0xD4139F84    -- p_still02x
 
-
-
        "pg_re_moonshinecampgroupcart01x",
           -- CONTAINS OBJECTS:
               -- 0xB9849F23    -- p_re_moonshinecampcart01x
-
-
 
        "pg_re_mountainmen01x",
           -- CONTAINS OBJECTS:
@@ -11826,8 +10626,6 @@ local propset_names = {
               -- 0x7188BCE0    -- p_debrispile07x
               -- 0x7188BCE0    -- p_debrispile07x
 
-
-
        "pg_re_mountainmen02x",
           -- CONTAINS OBJECTS:
               -- 0x962DF293    -- p_bedindian01x
@@ -11847,8 +10645,6 @@ local propset_names = {
               -- 0xBEB90174    -- p_leanto03x
               -- 0xBEB90174    -- p_leanto03x
               -- 0x988E3CFA    -- s_lootablemiscchest
-
-
 
        "pg_re_newbordeauxgang01x",
           -- CONTAINS OBJECTS:
@@ -11890,8 +10686,6 @@ local propset_names = {
               -- 0xC28617DB    -- p_jug01x
               -- 0xC28617DB    -- p_jug01x
               -- 0xC28617DB    -- p_jug01x
-
-
 
        "pg_re_odoriscollboysgang01x",
           -- CONTAINS OBJECTS:
@@ -11945,8 +10739,6 @@ local propset_names = {
               -- 0xA6A449CF    -- s_lootablemoneybox
               -- 0x310CF880    -- p_strongbox01x
               -- 0x310CF880    -- p_strongbox01x
-
-
 
        "pg_re_odoriscollboysgang02x",
           -- CONTAINS OBJECTS:
@@ -12040,8 +10832,6 @@ local propset_names = {
               -- 0x48DAFF8D    -- p_floursack07x
               -- 0x7DDDE61E    -- p_floursack04x
 
-
-
        "pg_re_odoriscollboysgang03x",
           -- CONTAINS OBJECTS:
               -- 0x2BF8422D    -- p_bedrollopen03x
@@ -12093,8 +10883,6 @@ local propset_names = {
               -- 0x0A5147C8    -- p_crate06bx
               -- 0x0A5147C8    -- p_crate06bx
 
-
-
        "pg_re_odriscollwagon01x",
           -- CONTAINS OBJECTS:
               -- 0x17BDC93C    -- p_veh_pg_vl_odriscoll01x
@@ -12104,8 +10892,6 @@ local propset_names = {
               -- 0xCD4A76A8    -- s_inv_rifleammo01x
               -- 0xDA565A9B    -- s_gunoil01x
               -- 0x23C759D8    -- s_inv_snakeoil01x
-
-
 
        "pg_re_possebreakout01x",
           -- CONTAINS OBJECTS:
@@ -12226,8 +11012,6 @@ local propset_names = {
               -- 0xD20BBBB5    -- s_inv_moneyclip01x
               -- 0xB8597759    -- s_inv_ring02x
 
-
-
        "pg_re_ruinlooters01x",
           -- CONTAINS OBJECTS:
               -- 0x6DE02925    -- p_bottlebeer01x
@@ -12313,8 +11097,6 @@ local propset_names = {
               -- 0xDA892C6E    -- p_rubblebag01x
               -- 0xDA892C6E    -- p_rubblebag01x
               -- 0xBF87C4B8    -- p_gourdwater01x
-
-
 
        "pg_re_savageaftermath03x",
           -- CONTAINS OBJECTS:
@@ -12417,8 +11199,6 @@ local propset_names = {
               -- 0xD8B3E555    -- p_pot01bx
               -- 0x763E072B    -- p_lampkerosene01x
 
-
-
        "pg_re_savageaftermath04x",
           -- CONTAINS OBJECTS:
               -- 0x46324AB1    -- p_tentarmypupbroken01x
@@ -12443,8 +11223,6 @@ local propset_names = {
               -- 0xE4DE67BD    -- p_debrispile06x
               -- 0x4647FEDE    -- p_woodpile05x
               -- 0x763E072B    -- p_lampkerosene01x
-
-
 
        "pg_re_savagefight01x",
           -- CONTAINS OBJECTS:
@@ -12503,8 +11281,6 @@ local propset_names = {
               -- 0x85CEA607    -- s_jerkypaper01x
               -- 0xCA01661E    -- p_ambfloorrug02x
 
-
-
        "pg_re_savagewagon01x",
           -- CONTAINS OBJECTS:
               -- 0x592F2362    -- p_bedrollclosed01x
@@ -12514,8 +11290,6 @@ local propset_names = {
               -- 0x90783106    -- p_blouseground01x
               -- 0xA158EC7B    -- p_crate14x
               -- 0x61067987    -- p_veh_savagearrows01x
-
-
 
        "pg_re_sharpshootercamp01x",
           -- CONTAINS OBJECTS:
@@ -12537,8 +11311,6 @@ local propset_names = {
               -- 0x6DE02925    -- p_bottlebeer01x
               -- 0x5B09F446    -- p_bottle02x
 
-
-
        "PG_RE_SHARPSHOOTERFARM01X",
           -- CONTAINS OBJECTS:
               -- 0x6A7729CB    -- p_haybale03x
@@ -12556,8 +11328,6 @@ local propset_names = {
               -- 0x04AC59BC    -- p_crate01x
               -- 0x93B9DE05    -- p_crateconf01x
 
-
-
        "pg_re_spookedhorse01x",
           -- CONTAINS OBJECTS:
               -- 0xBBF3603C    -- p_floursack06x
@@ -12573,25 +11343,17 @@ local propset_names = {
               -- 0xEA551221    -- p_book05x
               -- 0x495B5DD6    -- p_chair_crate02x
 
-
-
        "pg_re_supplydelivery01x",
           -- CONTAINS OBJECTS:
               -- 0xE039F6DE    -- p_veh_supplydeliver01x
-
-
 
        "pg_re_supplydelivery_gsmith01x",
           -- CONTAINS OBJECTS:
               -- 0xC6CCBF8A    -- p_veh_supgsmith01x
 
-
-
        "pg_re_trainholdup01x",
           -- CONTAINS OBJECTS:
               -- 0x282528F2    -- p_veh_trainholdup01x
-
-
 
        "pg_re_wagonlift01x",
           -- CONTAINS OBJECTS:
@@ -12603,14 +11365,10 @@ local propset_names = {
               -- 0x2C681671    -- s_inv_cocainegum01x
               -- 0xC1CC341F    -- p_veh_pg_re_wagonlift1
 
-
-
        "PG_RE_WEAPONTHREAT01X",
           -- CONTAINS OBJECTS:
               -- 0xF8375593    -- p_veh_weaponthreat01x
               -- 0x320B8265    -- p_veh_chucksidebarrel01
-
-
 
        "pg_re_wildman01x",
           -- CONTAINS OBJECTS:
@@ -12637,16 +11395,12 @@ local propset_names = {
               -- 0x09862DFC    -- p_debrispile01x
               -- 0x318B7C9E    -- p_debrispile02x
 
-
-
        "PG_SCENARIO_CHOPCARROT",
           -- CONTAINS OBJECTS:
               -- 0x07C8EB55    -- p_table10x
               -- 0x8176E7CC    -- p_meatcuttingboard01x
               -- 0x451F635C    -- p_basketcarrots02x
               -- 0x44D6E423    -- p_basketcarrots01x
-
-
 
        "PG_SCENARIO_CHOPVEGGIES",
           -- CONTAINS OBJECTS:
@@ -12668,8 +11422,6 @@ local propset_names = {
               -- 0x51D2143F    -- p_cs_kettle01x
               -- 0xFFDFEF2E    -- s_chuckwagon01x
 
-
-
        "PG_SCENARIO_CHOPWOOD",
           -- CONTAINS OBJECTS:
               -- 0x3296E221    -- p_stump_01x
@@ -12685,8 +11437,6 @@ local propset_names = {
               -- 0xA0248F2C    -- p_loghalf02x
               -- 0x51A1229C    -- p_woodpile01x
 
-
-
        "PG_SCENARIO_DUTCHCHESS",
           -- CONTAINS OBJECTS:
               -- 0xA4E22DF6    -- p_chair09x
@@ -12694,8 +11444,6 @@ local propset_names = {
               -- 0x6B150844    -- p_cs_chessset01x
               -- 0x32B33BCE    -- p_cot01x
               -- 0x5D0CFF10    -- p_crate03x
-
-
 
        "pg_scenario_dynamitemake",
           -- CONTAINS OBJECTS:
@@ -12722,8 +11470,6 @@ local propset_names = {
               -- 0x1E5D42A3    -- s_dynamitehusk01x
               -- 0x1E5D42A3    -- s_dynamitehusk01x
 
-
-
        "pg_scenario_molotovmake",
           -- CONTAINS OBJECTS:
               -- 0x6281781F    -- p_table06x
@@ -12744,8 +11490,6 @@ local propset_names = {
               -- 0x8A7A697C    -- p_bottlejd01x
               -- 0xCAF25745    -- p_bottle03x
 
-
-
        "PG_SCENARIO_REPAIRSADDLE",
           -- CONTAINS OBJECTS:
               -- 0x546FE382    -- p_saddlestand01x
@@ -12759,15 +11503,11 @@ local propset_names = {
               -- 0x828BCE7B    -- p_stool01x
               -- 0xF4342591    -- p_cs_bucket01x
 
-
-
        "PG_SCENARIO_STIRCAULDRON",
           -- CONTAINS OBJECTS:
               -- 0x9AA196FE    -- p_ladle02x
               -- 0xD456839B    -- p_cs_campfirecmbnd01x
               -- 0x51D2143F    -- p_cs_kettle01x
-
-
 
        "pg_scenario_treefallen",
           -- CONTAINS OBJECTS:
@@ -12777,8 +11517,6 @@ local propset_names = {
               -- 0xF7698B32    -- p_woodwedge01x
               -- 0xF7698B32    -- p_woodwedge01x
               -- 0x3ED5C503    -- p_sawhand02x
-
-
 
        "pg_sharpshootercamp01x",
           -- CONTAINS OBJECTS:
@@ -12812,8 +11550,6 @@ local propset_names = {
               -- 0x6DE02925    -- p_bottlebeer01x
               -- 0xC7E32828    -- p_campfirecombined01x
 
-
-
        "pg_sp_marstonswagon02x",
           -- CONTAINS OBJECTS:
               -- 0x7D4A70FF    -- p_tablecoffee01x
@@ -12842,8 +11578,6 @@ local propset_names = {
               -- 0x26A74E34    -- p_marstonwagonpiece02x
               -- 0x7DBBCE61    -- p_table43x
               -- 0x26430487    -- p_marstonwagonpiece01x
-
-
 
        "pg_stuckwagon01x",
           -- CONTAINS OBJECTS:
@@ -12901,8 +11635,6 @@ local propset_names = {
               -- 0xD20BBBB5    -- s_inv_moneyclip01x
               -- 0x0B8338EF    -- p_trunk02x
 
-
-
        "pg_stuckwagon02x",
           -- CONTAINS OBJECTS:
               -- 0xCACBD933    -- p_chuckwagonbreak01x
@@ -12921,8 +11653,6 @@ local propset_names = {
               -- 0x0B84A2B9    -- s_inv_flask01x
               -- 0x58E13B7A    -- s_inv_pocketwatch03x
               -- 0x9F5C7C24    -- s_inv_revolverammo01x
-
-
 
        "pg_stuckwagon02x_2",
           -- CONTAINS OBJECTS:
@@ -12957,27 +11687,19 @@ local propset_names = {
               -- 0x91DE00C3    -- p_potsbroken03
               -- 0x5A4F11A6    -- p_potsbroken02
 
-
-
        "pg_teamster_armourwag_breakables",
           -- CONTAINS OBJECTS:
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
 
-
-
        "pg_teamster_armourwag_gen",
           -- CONTAINS OBJECTS:
               -- 0xA4CAD3F2    -- p_teamster_gen01x_sml
-
-
 
        "pg_teamster_armourwag_perishables",
           -- CONTAINS OBJECTS:
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
               -- 0x62FA612F    -- p_teamster_perish01x_sml1
-
-
 
        "pg_teamster_armourwag_tnt",
           -- CONTAINS OBJECTS:
@@ -12990,43 +11712,29 @@ local propset_names = {
               -- 0xBBFB0174    -- p_powderkeg01x
               -- 0xBBFB0174    -- p_powderkeg01x
 
-
-
        "pg_teamster_cart01_breakables",
           -- CONTAINS OBJECTS:
               -- 0x53CC3C51    -- p_teamster_break01x_sml
-
-
 
        "pg_teamster_cart01_gen",
           -- CONTAINS OBJECTS:
               -- 0xA4CAD3F2    -- p_teamster_gen01x_sml
 
-
-
        "pg_teamster_cart01_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x3C699003    -- s_veh_lantern_rf
-
-
 
        "pg_teamster_cart01_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_teamster_cart01_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x94A2AED8    -- s_veh_lantern02_rf
 
-
-
        "pg_teamster_cart01_perishables",
           -- CONTAINS OBJECTS:
               -- 0x62FA612F    -- p_teamster_perish01x_sml1
-
-
 
        "pg_teamster_cart01_tnt",
           -- CONTAINS OBJECTS:
@@ -13040,50 +11748,34 @@ local propset_names = {
               -- 0x8B664AFD    -- p_cratetnt02x
               -- 0x8EA2272F    -- p_dynamite01x
 
-
-
        "pg_teamster_cart02_breakables",
           -- CONTAINS OBJECTS:
               -- 0x5D0CFF10    -- p_crate03x
 
-
-
        "pg_teamster_cart02_gen",
           -- CONTAINS OBJECTS:
-
-
 
        "pg_teamster_cart02_perishables",
           -- CONTAINS OBJECTS:
               -- 0x5D0CFF10    -- p_crate03x
 
-
-
        "pg_teamster_cart02_tnt",
           -- CONTAINS OBJECTS:
               -- 0x0E251133    -- p_ammoboxlancaster02x
-
-
 
        "pg_teamster_cart03_breakables",
           -- CONTAINS OBJECTS:
               -- 0x53CC3C51    -- p_teamster_break01x_sml
               -- 0x53CC3C51    -- p_teamster_break01x_sml
 
-
-
        "pg_teamster_cart03_gen",
           -- CONTAINS OBJECTS:
               -- 0x09E5F1B3    -- p_teamster_gen01x_med
-
-
 
        "pg_teamster_cart03_perishables",
           -- CONTAINS OBJECTS:
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
-
-
 
        "pg_teamster_cart03_tnt",
           -- CONTAINS OBJECTS:
@@ -13094,26 +11786,18 @@ local propset_names = {
               -- 0x4451BFF5    -- p_cratetnt03x
               -- 0xE191D8EF    -- p_veh_cart03x_rope01x
 
-
-
        "pg_teamster_cart04_breakables",
           -- CONTAINS OBJECTS:
               -- 0x0E566DC4    -- p_teamster_break01x_med
               -- 0x53CC3C51    -- p_teamster_break01x_sml
 
-
-
        "pg_teamster_cart04_gen",
           -- CONTAINS OBJECTS:
               -- 0x09E5F1B3    -- p_teamster_gen01x_med
 
-
-
        "pg_teamster_cart04_perishables",
           -- CONTAINS OBJECTS:
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
-
-
 
        "pg_teamster_cart04_tnt",
           -- CONTAINS OBJECTS:
@@ -13124,46 +11808,32 @@ local propset_names = {
               -- 0xBBFB0174    -- p_powderkeg01x
               -- 0xBBFB0174    -- p_powderkeg01x
 
-
-
        "pg_teamster_cart06_breakables",
           -- CONTAINS OBJECTS:
               -- 0x0E566DC4    -- p_teamster_break01x_med
               -- 0x0E566DC4    -- p_teamster_break01x_med
               -- 0x53CC3C51    -- p_teamster_break01x_sml
 
-
-
        "pg_teamster_cart06_gen",
           -- CONTAINS OBJECTS:
               -- 0xE98A31B9    -- p_teamster_gen01x_lrg
-
-
 
        "pg_teamster_cart06_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
 
-
-
        "pg_teamster_cart06_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
-
-
 
        "pg_teamster_cart06_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
 
-
-
        "pg_teamster_cart06_perishables",
           -- CONTAINS OBJECTS:
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
-
-
 
        "pg_teamster_cart06_tnt",
           -- CONTAINS OBJECTS:
@@ -13174,26 +11844,18 @@ local propset_names = {
               -- 0xF6B3A3D6    -- p_cratetnt01x
               -- 0xF6B3A3D6    -- p_cratetnt01x
 
-
-
        "pg_teamster_cart07_breakables",
           -- CONTAINS OBJECTS:
               -- 0x0E566DC4    -- p_teamster_break01x_med
-
-
 
        "pg_teamster_cart07_gen",
           -- CONTAINS OBJECTS:
               -- 0xA4CAD3F2    -- p_teamster_gen01x_sml
 
-
-
        "pg_teamster_cart07_perishables",
           -- CONTAINS OBJECTS:
               -- 0x62FA612F    -- p_teamster_perish01x_sml1
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
-
-
 
        "pg_teamster_cart07_tnt",
           -- CONTAINS OBJECTS:
@@ -13202,26 +11864,18 @@ local propset_names = {
               -- 0xBBFB0174    -- p_powderkeg01x
               -- 0xBBFB0174    -- p_powderkeg01x
 
-
-
        "pg_teamster_cart08_breakables",
           -- CONTAINS OBJECTS:
               -- 0x0E566DC4    -- p_teamster_break01x_med
-
-
 
        "pg_teamster_cart08_gen",
           -- CONTAINS OBJECTS:
               -- 0xA4CAD3F2    -- p_teamster_gen01x_sml
 
-
-
        "pg_teamster_cart08_perishables",
           -- CONTAINS OBJECTS:
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
-
-
 
        "pg_teamster_cart08_tnt",
           -- CONTAINS OBJECTS:
@@ -13234,41 +11888,29 @@ local propset_names = {
               -- 0x8B664AFD    -- p_cratetnt02x
               -- 0x8B664AFD    -- p_cratetnt02x
 
-
-
        "pg_teamster_chuckwagon000x_breakables",
           -- CONTAINS OBJECTS:
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
 
-
-
        "pg_teamster_chuckwagon000x_gen",
           -- CONTAINS OBJECTS:
               -- 0xE98A31B9    -- p_teamster_gen01x_lrg
-
-
 
        "pg_teamster_chuckwagon000x_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_teamster_chuckwagon000x_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_teamster_chuckwagon000x_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
               -- 0x94A2AED8    -- s_veh_lantern02_rf
-
-
 
        "pg_teamster_chuckwagon000x_perishables",
           -- CONTAINS OBJECTS:
@@ -13276,47 +11918,33 @@ local propset_names = {
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
               -- 0x0EB1D0CA    -- p_barrel11x
 
-
-
        "pg_teamster_chuckwagon000x_tnt",
           -- CONTAINS OBJECTS:
               -- 0x8AB7CEB4    -- p_tntwagon01x
-
-
 
        "pg_teamster_chuckwagon002x_breakables",
           -- CONTAINS OBJECTS:
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
 
-
-
        "pg_teamster_chuckwagon002x_gen",
           -- CONTAINS OBJECTS:
               -- 0xE98A31B9    -- p_teamster_gen01x_lrg
-
-
 
        "pg_teamster_chuckwagon002x_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_teamster_chuckwagon002x_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_teamster_chuckwagon002x_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
               -- 0x94A2AED8    -- s_veh_lantern02_rf
-
-
 
        "pg_teamster_chuckwagon002x_perishables",
           -- CONTAINS OBJECTS:
@@ -13324,53 +11952,37 @@ local propset_names = {
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
 
-
-
        "pg_teamster_chuckwagon002x_tnt",
           -- CONTAINS OBJECTS:
               -- 0xE9EC8E90    -- p_tntwagon02x
               -- 0x4451BFF5    -- p_cratetnt03x
-
-
 
        "pg_teamster_coalwagon_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_teamster_coalwagon_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_teamster_coalwagon_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
               -- 0x94A2AED8    -- s_veh_lantern02_rf
 
-
-
        "pg_teamster_gatchuck_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
-
-
 
        "pg_teamster_gatchuck_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
 
-
-
        "pg_teamster_gatchuck_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
-
-
 
        "pg_teamster_supplywagon_breakables",
           -- CONTAINS OBJECTS:
@@ -13378,46 +11990,32 @@ local propset_names = {
               -- 0x53CC3C51    -- p_teamster_break01x_sml
               -- 0x0E566DC4    -- p_teamster_break01x_med
 
-
-
        "pg_teamster_supplywagon_gen",
           -- CONTAINS OBJECTS:
               -- 0xE98A31B9    -- p_teamster_gen01x_lrg
-
-
 
        "pg_teamster_supplywagon_perishables",
           -- CONTAINS OBJECTS:
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
 
-
-
        "pg_teamster_supplywagon_tnt",
           -- CONTAINS OBJECTS:
               -- 0xE9EC8E90    -- p_tntwagon02x
-
-
 
        "pg_teamster_utilitywag_breakables",
           -- CONTAINS OBJECTS:
               -- 0x0E566DC4    -- p_teamster_break01x_med
               -- 0x0E566DC4    -- p_teamster_break01x_med
 
-
-
        "pg_teamster_utilitywag_gen",
           -- CONTAINS OBJECTS:
               -- 0x09E5F1B3    -- p_teamster_gen01x_med
-
-
 
        "pg_teamster_utilitywag_perishables",
           -- CONTAINS OBJECTS:
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
-
-
 
        "pg_teamster_utilitywag_tnt",
           -- CONTAINS OBJECTS:
@@ -13427,100 +12025,70 @@ local propset_names = {
               -- 0x4451BFF5    -- p_cratetnt03x
               -- 0xBBFB0174    -- p_powderkeg01x
 
-
-
        "pg_teamster_wagon02x_breakables",
           -- CONTAINS OBJECTS:
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
 
-
-
        "pg_teamster_wagon02x_gen",
           -- CONTAINS OBJECTS:
               -- 0xE98A31B9    -- p_teamster_gen01x_lrg
 
-
-
        "pg_teamster_wagon02x_gen02",
           -- CONTAINS OBJECTS:
               -- 0x36172FA0    -- mp001_p_genlrg01x
-
-
 
        "pg_teamster_wagon02x_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_teamster_wagon02x_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_teamster_wagon02x_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
               -- 0x94A2AED8    -- s_veh_lantern02_rf
 
-
-
        "pg_teamster_wagon02x_perishables",
           -- CONTAINS OBJECTS:
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
 
-
-
        "pg_teamster_wagon02x_tnt",
           -- CONTAINS OBJECTS:
               -- 0xE9EC8E90    -- p_tntwagon02x
-
-
 
        "pg_teamster_wagon04x_breakables",
           -- CONTAINS OBJECTS:
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
               -- 0x9F44B2F9    -- p_teamster_break01x_lrg
 
-
-
        "pg_teamster_wagon04x_gen",
           -- CONTAINS OBJECTS:
               -- 0xE98A31B9    -- p_teamster_gen01x_lrg
 
-
-
        "pg_teamster_wagon04x_gen02",
           -- CONTAINS OBJECTS:
               -- 0x36172FA0    -- mp001_p_genlrg01x
-
-
 
        "pg_teamster_wagon04x_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_teamster_wagon04x_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_teamster_wagon04x_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
               -- 0x94A2AED8    -- s_veh_lantern02_rf
-
-
 
        "pg_teamster_wagon04x_perishables",
           -- CONTAINS OBJECTS:
@@ -13529,54 +12097,38 @@ local propset_names = {
               -- 0x6FA77D9C    -- p_veh_chucksidebarrel03
               -- 0x4D692807    -- p_veh_sidebarrelsupport01x
 
-
-
        "pg_teamster_wagon04x_tnt",
           -- CONTAINS OBJECTS:
               -- 0xE9EC8E90    -- p_tntwagon02x
-
-
 
        "pg_teamster_wagon05x_breakables",
           -- CONTAINS OBJECTS:
               -- 0x0E566DC4    -- p_teamster_break01x_med
               -- 0x0E566DC4    -- p_teamster_break01x_med
 
-
-
        "pg_teamster_wagon05x_gen",
           -- CONTAINS OBJECTS:
               -- 0xE98A31B9    -- p_teamster_gen01x_lrg
-
-
 
        "pg_teamster_wagon05x_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_teamster_wagon05x_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_teamster_wagon05x_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
               -- 0x94A2AED8    -- s_veh_lantern02_rf
 
-
-
        "pg_teamster_wagon05x_perishables",
           -- CONTAINS OBJECTS:
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
               -- 0x3FEB3110    -- p_teamster_perish01x_lrg
-
-
 
        "pg_teamster_wagon05x_tnt",
           -- CONTAINS OBJECTS:
@@ -13588,44 +12140,30 @@ local propset_names = {
               -- 0x8B664AFD    -- p_cratetnt02x
               -- 0x8B664AFD    -- p_cratetnt02x
 
-
-
        "pg_teamster_wagon06x_breakables",
           -- CONTAINS OBJECTS:
               -- 0x0E566DC4    -- p_teamster_break01x_med
-
-
 
        "pg_teamster_wagon06x_gen",
           -- CONTAINS OBJECTS:
               -- 0x09E5F1B3    -- p_teamster_gen01x_med
 
-
-
        "pg_teamster_wagon06x_lightupgrade1",
           -- CONTAINS OBJECTS:
               -- 0x3C699003    -- s_veh_lantern_rf
-
-
 
        "pg_teamster_wagon06x_lightupgrade2",
           -- CONTAINS OBJECTS:
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_teamster_wagon06x_lightupgrade3",
           -- CONTAINS OBJECTS:
               -- 0x94A2AED8    -- s_veh_lantern02_rf
-
-
 
        "pg_teamster_wagon06x_perishables",
           -- CONTAINS OBJECTS:
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
               -- 0x40A61C87    -- p_teamster_perish01x_sml2
-
-
 
        "pg_teamster_wagon06x_tnt",
           -- CONTAINS OBJECTS:
@@ -13635,8 +12173,6 @@ local propset_names = {
               -- 0xF6B3A3D6    -- p_cratetnt01x
               -- 0xF6B3A3D6    -- p_cratetnt01x
               -- 0x4451BFF5    -- p_cratetnt03x
-
-
 
        "pg_veh_armoredcar01x_1",
           -- CONTAINS OBJECTS:
@@ -13666,13 +12202,9 @@ local propset_names = {
               -- 0x979DF6BE    -- p_bulkheadlight04x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
 
-
-
        "pg_veh_armysupplywagon_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
-
-
 
        "pg_veh_baggage01x_amb_med",
           -- CONTAINS OBJECTS:
@@ -13697,43 +12229,29 @@ local propset_names = {
               -- 0xABB5E75F    -- p_toolrack01x
               -- 0xFC2B834A    -- s_vault_sml_l_val01x
 
-
-
        "pg_veh_boatsteam02x_1",
           -- CONTAINS OBJECTS:
               -- 0xBBA44805    -- p_veh_boatsteam02x_1
-
-
 
        "pg_veh_boxcar01x_low",
           -- CONTAINS OBJECTS:
               -- 0xBC737485    -- p_boxcar_empty_pset_low
 
-
-
        "pg_veh_boxcar02x_holdup_low",
           -- CONTAINS OBJECTS:
               -- 0x24717DBB    -- pg_veh_boxcar02x_holdup_low
-
-
 
        "pg_veh_boxcar02x_low",
           -- CONTAINS OBJECTS:
               -- 0xBC737485    -- p_boxcar_empty_pset_low
 
-
-
        "pg_veh_boxcar03x_low",
           -- CONTAINS OBJECTS:
               -- 0x5B601C08    -- pg_veh_boxcar03x_low
 
-
-
        "pg_veh_boxcar04x_low",
           -- CONTAINS OBJECTS:
               -- 0xE6A81826    -- pg_veh_boxcar04x_low
-
-
 
        "pg_veh_boxcar04x_med",
           -- CONTAINS OBJECTS:
@@ -13758,13 +12276,9 @@ local propset_names = {
               -- 0xABB5E75F    -- p_toolrack01x
               -- 0xBA8A7B28    -- p_veh_trainrob4_08_lights
 
-
-
        "pg_veh_boxcar05x_low",
           -- CONTAINS OBJECTS:
               -- 0xBC737485    -- p_boxcar_empty_pset_low
-
-
 
        "pg_veh_boxcar_winter4_01x_med",
           -- CONTAINS OBJECTS:
@@ -13786,8 +12300,6 @@ local propset_names = {
               -- 0xAC5E46C6    -- p_boxcar_winter4_01x
               -- 0x4C564F48    -- p_barrel_cor01x
 
-
-
        "pg_veh_boxcar_winter4_02x_med",
           -- CONTAINS OBJECTS:
               -- 0x4B7C0655    -- p_boxcar04x_interior
@@ -13802,125 +12314,85 @@ local propset_names = {
               -- 0x3D2651E6    -- p_boxcar_winter04_brand2
               -- 0x33BA6575    -- p_lamp17x
 
-
-
        "pg_veh_canoe_01",
           -- CONTAINS OBJECTS:
               -- 0x3A5AD108    -- p_veh_canoe01x
 
-
-
        "pg_veh_canoe_02",
           -- CONTAINS OBJECTS:
               -- 0x9BE99108    -- p_veh_canoe02x
-
-
 
        "pg_veh_cart01_1",
           -- CONTAINS OBJECTS:
               -- 0xAFAABB8B    -- p_trunk06ax
               -- 0x4BB61C11    -- p_veh_cart01_1
 
-
-
        "pg_veh_cart01_2",
           -- CONTAINS OBJECTS:
               -- 0x8424904E    -- p_veh_pg_veh_cart01_2_01x
-
-
 
        "pg_veh_cart01_3",
           -- CONTAINS OBJECTS:
               -- 0x2267C975    -- p_veh_cart01_3
 
-
-
        "pg_veh_cart01_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_veh_cart03_1",
           -- CONTAINS OBJECTS:
               -- 0x72FFA2AD    -- p_veh_gensm02x
 
-
-
        "pg_veh_cart03_2",
           -- CONTAINS OBJECTS:
               -- 0x154D0FF1    -- p_veh_genmed01x
-
-
 
        "pg_veh_cart03_barrels01x",
           -- CONTAINS OBJECTS:
               -- 0xD18C4CB4    -- p_veh_cart03_barrels01x
 
-
-
        "pg_veh_cart04_1",
           -- CONTAINS OBJECTS:
               -- 0xF1B8C57D    -- p_veh_genmed02x
 
-
-
        "pg_veh_cart04_2",
           -- CONTAINS OBJECTS:
               -- 0x154D0FF1    -- p_veh_genmed01x
-
-
 
        "pg_veh_cart06_1",
           -- CONTAINS OBJECTS:
               -- 0xE1A55E54    -- p_trunk06x
               -- 0x09F19BCF    -- p_veh_cart06_1
 
-
-
        "pg_veh_cart06_2",
           -- CONTAINS OBJECTS:
               -- 0xF1B8C57D    -- p_veh_genmed02x
-
-
 
        "pg_veh_cart06_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
 
-
-
        "pg_veh_cart07_1",
           -- CONTAINS OBJECTS:
               -- 0x08764F1C    -- p_veh_gensm01x
-
-
 
        "pg_veh_cart07_2",
           -- CONTAINS OBJECTS:
               -- 0x72FFA2AD    -- p_veh_gensm02x
 
-
-
        "pg_veh_cart08_1",
           -- CONTAINS OBJECTS:
               -- 0x154D0FF1    -- p_veh_genmed01x
 
-
-
        "pg_veh_cart08_2",
           -- CONTAINS OBJECTS:
               -- 0x72FFA2AD    -- p_veh_gensm02x
-
-
 
        "pg_veh_chuckwagon000x_1",
           -- CONTAINS OBJECTS:
               -- 0xA6A449CF    -- s_lootablemoneybox
               -- 0x320B8265    -- p_veh_chucksidebarrel01
               -- 0xF210FCEB    -- p_veh_chuckwagon00x_1
-
-
 
        "pg_veh_chuckwagon000x_2",
           -- CONTAINS OBJECTS:
@@ -13929,8 +12401,6 @@ local propset_names = {
               -- 0x2A20E9DC    -- p_veh_chuckwagon000x_2
               -- 0x320B8265    -- p_veh_chucksidebarrel01
 
-
-
        "pg_veh_chuckwagon000x_2a",
           -- CONTAINS OBJECTS:
               -- 0xA6A449CF    -- s_lootablemoneybox
@@ -13938,15 +12408,11 @@ local propset_names = {
               -- 0x83E07B58    -- p_veh_chuckwagon000x_2a
               -- 0x320B8265    -- p_veh_chucksidebarrel01
 
-
-
        "pg_veh_chuckwagon000x_3",
           -- CONTAINS OBJECTS:
               -- 0xA255D9FE    -- s_footlocker06x
               -- 0x578E44B2    -- p_veh_chuckwagon000x_3
               -- 0x320B8265    -- p_veh_chucksidebarrel01
-
-
 
        "pg_veh_chuckwagon000x_3a",
           -- CONTAINS OBJECTS:
@@ -13955,27 +12421,19 @@ local propset_names = {
               -- 0x6B5A4B60    -- p_veh_chuckwagon000x_3a
               -- 0x320B8265    -- p_veh_chucksidebarrel01
 
-
-
        "pg_veh_chuckwagon000x_4",
           -- CONTAINS OBJECTS:
               -- 0x320B8265    -- p_veh_chucksidebarrel01
               -- 0xDE2C7EBD    -- p_veh_genlrg02x
-
-
 
        "pg_veh_chuckwagon000x_lanterns",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_veh_chuckwagon000x_orange_1",
           -- CONTAINS OBJECTS:
               -- 0xC5446145    -- p_veh_chuckwag_orange01x_1
-
-
 
        "pg_veh_chuckwagon002x_1",
           -- CONTAINS OBJECTS:
@@ -13983,15 +12441,11 @@ local propset_names = {
               -- 0x321FAA36    -- p_veh_genlrg01x
               -- 0x154D0FF1    -- p_veh_genmed01x
 
-
-
        "pg_veh_chuckwagon002x_2",
           -- CONTAINS OBJECTS:
               -- 0x9A2CF7B7    -- p_veh_genlrg03x
               -- 0x08764F1C    -- p_veh_gensm01x
               -- 0x5DD4D9F7    -- p_veh_chucksidebarrel02
-
-
 
        "pg_veh_chuckwagon002x_3",
           -- CONTAINS OBJECTS:
@@ -13999,20 +12453,14 @@ local propset_names = {
               -- 0xF1B8C57D    -- p_veh_genmed02x
               -- 0x5DD4D9F7    -- p_veh_chucksidebarrel02
 
-
-
        "pg_veh_chuckwagon002x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_veh_coach2_1",
           -- CONTAINS OBJECTS:
               -- 0xDDC3716E    -- p_veh_coach02x_1
-
-
 
        "pg_veh_coach2_boota",
           -- CONTAINS OBJECTS:
@@ -14022,27 +12470,19 @@ local propset_names = {
               -- 0xDE29D6BD    -- p_car_int_chestdressing02x
               -- 0xBBEB75D2    -- p_satchel01x
 
-
-
        "pg_veh_coal_wagon_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_veh_gatchuck_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
-
-
 
        "pg_veh_germfam_wagon04x_01",
           -- CONTAINS OBJECTS:
               -- 0x639E0D16    -- p_veh_germfam_wagon04x_01
               -- 0xAE45CB33    -- p_veh_wagons_hay01x
-
-
 
        "pg_veh_horseboat_1",
           -- CONTAINS OBJECTS:
@@ -14079,8 +12519,6 @@ local propset_names = {
               -- 0x763E072B    -- p_lampkerosene01x
               -- 0xEA9125C6    -- p_boilercamp01x
 
-
-
        "pg_veh_horseboat_1_lights",
           -- CONTAINS OBJECTS:
               -- 0x33CD2DFE    -- p_bulkheadlight03x
@@ -14091,8 +12529,6 @@ local propset_names = {
               -- 0x33CD2DFE    -- p_bulkheadlight03x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
-
-
 
        "pg_veh_horseboat_1_wreckage",
           -- CONTAINS OBJECTS:
@@ -14165,25 +12601,17 @@ local propset_names = {
               -- 0x9F350FBB    -- p_crate02x
               -- 0x9F350FBB    -- p_crate02x
 
-
-
        "pg_veh_keelboat_01",
           -- CONTAINS OBJECTS:
               -- 0xEC52B18B    -- p_veh_keelboat01x
-
-
 
        "pg_veh_keelboat_02",
           -- CONTAINS OBJECTS:
               -- 0x7539BBBF    -- p_veh_keelboat02x
 
-
-
        "pg_veh_keelboat_03",
           -- CONTAINS OBJECTS:
               -- 0x4E24EEAA    -- p_veh_keelboat03x
-
-
 
        "pg_veh_keelboat_lanterns_1",
           -- CONTAINS OBJECTS:
@@ -14192,27 +12620,19 @@ local propset_names = {
               -- 0x3C699003    -- s_veh_lantern_rf
               -- 0x56E86B7C    -- s_veh_lantern_lf
 
-
-
        "pg_veh_logwagon2_1",
           -- CONTAINS OBJECTS:
               -- 0xE862E5AB    -- p_veh_logwagon01
               -- 0xC11780E9    -- p_veh_logwagonropes01
-
-
 
        "pg_veh_logwagon_1",
           -- CONTAINS OBJECTS:
               -- 0xE862E5AB    -- p_veh_logwagon01
               -- 0xC11780E9    -- p_veh_logwagonropes01
 
-
-
        "pg_veh_nbdguama_01x",
           -- CONTAINS OBJECTS:
               -- 0x76B3F73F    -- p_veh_pg_veh_nbdguama_01x
-
-
 
        "pg_veh_nbdguama_lights01x",
           -- CONTAINS OBJECTS:
@@ -14227,8 +12647,6 @@ local propset_names = {
               -- 0x979DF6BE    -- p_bulkheadlight04x
               -- 0x979DF6BE    -- p_bulkheadlight04x
 
-
-
        "pg_veh_northpassenger01x_1_med",
           -- CONTAINS OBJECTS:
               -- 0x08449041    -- p_lamphanging14x
@@ -14240,8 +12658,6 @@ local propset_names = {
               -- 0xDDE64341    -- p_sidetable20x_norpass01x
               -- 0xF638B901    -- p_norpass01x_interior
               -- 0x4C675064    -- p_seatsnorpass01x
-
-
 
        "pg_veh_northpassenger03x_med",
           -- CONTAINS OBJECTS:
@@ -14258,8 +12674,6 @@ local propset_names = {
               -- 0x6C459F5B    -- p_table01x_norpass03x
               -- 0x6C459F5B    -- p_table01x_norpass03x
               -- 0xDE008854    -- p_seatsnorpass03x
-
-
 
        "pg_veh_opensleeper01x_med",
           -- CONTAINS OBJECTS:
@@ -14279,26 +12693,18 @@ local propset_names = {
               -- 0x5045C1A1    -- p_opensleeper_furniture01x
               -- 0x3A18F406    -- p_opensleeper_cratestnt01x
 
-
-
        "pg_veh_pirogue_01",
           -- CONTAINS OBJECTS:
               -- 0xB8AFAA6A    -- p_veh_pirogue01x
               -- 0xEFAE3574    -- p_veh_pirogue01x_b
 
-
-
        "pg_veh_policewagon01x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
 
-
-
        "pg_veh_policewagongatling01x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
-
-
 
        "pg_veh_privatearmoured01x_med",
           -- CONTAINS OBJECTS:
@@ -14329,8 +12735,6 @@ local propset_names = {
               -- 0xC762B042    -- p_chairsalon01x
               -- 0xC762B042    -- p_chairsalon01x
               -- 0xB1B643B0    -- p_chair12bx
-
-
 
        "pg_veh_privatedining01x_med",
           -- CONTAINS OBJECTS:
@@ -14383,8 +12787,6 @@ local propset_names = {
               -- 0x97D6D24F    -- p_lamp22x
               -- 0x97D6D24F    -- p_lamp22x
 
-
-
        "pg_veh_privateobservation01x_med",
           -- CONTAINS OBJECTS:
               -- 0xEEDD073D    -- p_sidetable18x_privateobs
@@ -14429,60 +12831,42 @@ local propset_names = {
               -- 0x677DAB5D    -- p_tableconsole03x
               -- 0x3441E0CF    -- p_bench17x
 
-
-
        "pg_veh_privateSteamer01x",
           -- CONTAINS OBJECTS:
               -- 0x6EAE5DA2    -- p_steamer_coal_fire
               -- 0x2CDBC0F2    -- s_omnilightdummy01x
               -- 0x7221FABE    -- s_spotlightdummy01x
 
-
-
        "pg_veh_rowboat_01",
           -- CONTAINS OBJECTS:
               -- 0x35B612BC    -- p_veh_rowboat01x
 
-
-
        "pg_veh_rowboat_02",
           -- CONTAINS OBJECTS:
               -- 0xD6DB4F58    -- p_veh_rowboat02x
-
-
 
        "pg_veh_rowboat_lightupgrade_1",
           -- CONTAINS OBJECTS:
               -- 0x56E86B7C    -- s_veh_lantern_lf
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_veh_rowboat_lightupgrade_2",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_veh_rowboat_lightupgrade_3",
           -- CONTAINS OBJECTS:
               -- 0x62F9E44B    -- s_veh_lantern02_lf
               -- 0x94A2AED8    -- s_veh_lantern02_rf
 
-
-
        "pg_veh_rowboatswamp_01",
           -- CONTAINS OBJECTS:
               -- 0x04AFEC42    -- p_veh_rowboatswamp01x
 
-
-
        "pg_veh_rowboatswamp_02",
           -- CONTAINS OBJECTS:
               -- 0x7C344C89    -- p_veh_rowboatswamp02x
-
-
 
        "pg_veh_shipguama02_lights01x",
           -- CONTAINS OBJECTS:
@@ -14514,8 +12898,6 @@ local propset_names = {
               -- 0x979DF6BE    -- p_bulkheadlight04x
               -- 0x979DF6BE    -- p_bulkheadlight04x
               -- 0x979DF6BE    -- p_bulkheadlight04x
-
-
 
        "pg_veh_shipguama02_med",
           -- CONTAINS OBJECTS:
@@ -14690,8 +13072,6 @@ local propset_names = {
               -- 0xEE907E89    -- p_cratestack03x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
 
-
-
        "pg_veh_shipGuama02_storm1x",
           -- CONTAINS OBJECTS:
               -- 0x979DF6BE    -- p_bulkheadlight04x
@@ -14837,13 +13217,9 @@ local propset_names = {
               -- 0x3C5675C2    -- p_barrel02x
               -- 0x3C5675C2    -- p_barrel02x
 
-
-
        "pg_veh_shipnbdguama2_1",
           -- CONTAINS OBJECTS:
               -- 0x304A66EC    -- p_veh_ship_nbdguama2_01x
-
-
 
        "pg_veh_shipnbdguama2_1_lights",
           -- CONTAINS OBJECTS:
@@ -14858,31 +13234,21 @@ local propset_names = {
               -- 0x33CD2DFE    -- p_bulkheadlight03x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
 
-
-
        "pg_veh_stagecoach001x_1",
           -- CONTAINS OBJECTS:
               -- 0x7473C24D    -- p_veh_stagecoach001x_1
-
-
 
        "pg_veh_stagecoach001x_2",
           -- CONTAINS OBJECTS:
               -- 0x8B1DEFA1    -- p_veh_stagecoach001x_2
 
-
-
        "pg_veh_stagecoach002x_1",
           -- CONTAINS OBJECTS:
               -- 0xA87ACDB3    -- p_veh_stagecoach002x_1
 
-
-
        "pg_veh_stagecoach002x_2",
           -- CONTAINS OBJECTS:
               -- 0xD634A926    -- p_veh_stagecoach002x_2
-
-
 
        "pg_veh_stagecoach002x_boota",
           -- CONTAINS OBJECTS:
@@ -14890,8 +13256,6 @@ local propset_names = {
               -- 0x662E2016    -- s_inv_pistolammo01x
               -- 0xB2D5FDAB    -- s_canbeans01x
               -- 0x571BAE81    -- p_rho_int_drwdressing03x
-
-
 
        "pg_veh_stagecoach003x_boota",
           -- CONTAINS OBJECTS:
@@ -14901,37 +13265,25 @@ local propset_names = {
               -- 0xD7A62402    -- p_dressinglbmcamp01x
               -- 0xB4857673    -- p_dressinglblpackage01x
 
-
-
        "pg_veh_stagecoach003x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
-
-
 
        "pg_veh_stagecoach005x_1",
           -- CONTAINS OBJECTS:
               -- 0xB02CAAAA    -- p_veh_stagecoach005x_1
 
-
-
        "pg_veh_stagecoach005x_2",
           -- CONTAINS OBJECTS:
               -- 0x2C89A372    -- p_veh_stagecoach005x_2
-
-
 
        "pg_veh_stagecoach006x_1",
           -- CONTAINS OBJECTS:
               -- 0xB7172E97    -- p_veh_stagecoach006x_1
 
-
-
        "pg_veh_stagecoach006x_2",
           -- CONTAINS OBJECTS:
               -- 0xEF601F18    -- p_veh_stagecoach006x_2
-
-
 
        "pg_veh_traincar01x",
           -- CONTAINS OBJECTS:
@@ -14940,8 +13292,6 @@ local propset_names = {
               -- 0x5D61CD82    -- p_lantern09xhang
               -- 0x5D61CD82    -- p_lantern09xhang
               -- 0xF2D3FC73    -- p_veh_pg_vl_train1
-
-
 
        "pg_veh_traincar02x",
           -- CONTAINS OBJECTS:
@@ -14961,8 +13311,6 @@ local propset_names = {
               -- 0x9EFB7134    -- s_inv_goldtooth01x
               -- 0xCD4A76A8    -- s_inv_rifleammo01x
               -- 0x13C56562    -- s_inv_earring02x
-
-
 
        "PG_VEH_TRAINCAR02X_MOB3B",
           -- CONTAINS OBJECTS:
@@ -15001,19 +13349,13 @@ local propset_names = {
               -- 0xBC8F7EA5    -- s_inv_ring03x
               -- 0xD20BBBB5    -- s_inv_moneyclip01x
 
-
-
        "pg_veh_trainrob4_car14_low",
           -- CONTAINS OBJECTS:
               -- 0x8238ADD1    -- pg_veh_trainrob4_car14_low
 
-
-
        "pg_veh_trainrob4_car16_low",
           -- CONTAINS OBJECTS:
               -- 0x3E0894AE    -- pg_veh_trainrob4_car16_low
-
-
 
        "pg_veh_tre2_opensleeper01x_med",
           -- CONTAINS OBJECTS:
@@ -15050,8 +13392,6 @@ local propset_names = {
               -- 0x45199D7C    -- p_sidetable02x
               -- 0x45199D7C    -- p_sidetable02x
 
-
-
        "pg_veh_trolley01x_1",
           -- CONTAINS OBJECTS:
               -- 0x2D999F9E    -- s_leafletstack01x
@@ -15063,13 +13403,9 @@ local propset_names = {
               -- 0x2D999F9E    -- s_leafletstack01x
               -- 0x2D999F9E    -- s_leafletstack01x
 
-
-
        "pg_veh_trolley01x_lights",
           -- CONTAINS OBJECTS:
               -- 0xE9DB5492    -- p_veh_pg_vl_mis_tro_li
-
-
 
        "pg_veh_tugboat2_1",
           -- CONTAINS OBJECTS:
@@ -15097,8 +13433,6 @@ local propset_names = {
               -- 0xF090821E    -- p_cratebrand01x
               -- 0x3A7FAA1A    -- p_basketrope01x
 
-
-
        "pg_veh_tugboat2_lights01x",
           -- CONTAINS OBJECTS:
               -- 0x33CD2DFE    -- p_bulkheadlight03x
@@ -15113,8 +13447,6 @@ local propset_names = {
               -- 0x33CD2DFE    -- p_bulkheadlight03x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
-
-
 
        "pg_veh_turbineboat01x_lights",
           -- CONTAINS OBJECTS:
@@ -15132,82 +13464,56 @@ local propset_names = {
               -- 0x33CD2DFE    -- p_bulkheadlight03x
               -- 0x33CD2DFE    -- p_bulkheadlight03x
 
-
-
        "pg_veh_utilliwag_1",
           -- CONTAINS OBJECTS:
               -- 0x154D0FF1    -- p_veh_genmed01x
-
-
 
        "pg_veh_utilliwag_2",
           -- CONTAINS OBJECTS:
               -- 0xF1B8C57D    -- p_veh_genmed02x
               -- 0x08764F1C    -- p_veh_gensm01x
 
-
-
        "pg_veh_utilliwag_3",
           -- CONTAINS OBJECTS:
               -- 0x08764F1C    -- p_veh_gensm01x
               -- 0x72FFA2AD    -- p_veh_gensm02x
 
-
-
        "pg_veh_utilliwag_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_veh_utilliwag_lightupgrade_1",
           -- CONTAINS OBJECTS:
               -- 0x3C699003    -- s_veh_lantern_rf
 
-
-
        "pg_veh_utilliwag_lightupgrade_2",
           -- CONTAINS OBJECTS:
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_veh_utilliwag_lightupgrade_3",
           -- CONTAINS OBJECTS:
               -- 0x94A2AED8    -- s_veh_lantern02_rf
 
-
-
        "pg_veh_utilliwag_orange_1",
           -- CONTAINS OBJECTS:
               -- 0xF745791D    -- p_veh_utilliwag_orange01x
-
-
 
        "pg_veh_wagon02x_1",
           -- CONTAINS OBJECTS:
               -- 0x321FAA36    -- p_veh_genlrg01x
 
-
-
        "pg_veh_wagon02x_2",
           -- CONTAINS OBJECTS:
               -- 0xDE2C7EBD    -- p_veh_genlrg02x
-
-
 
        "pg_veh_wagon02x_3",
           -- CONTAINS OBJECTS:
               -- 0x9A2CF7B7    -- p_veh_genlrg03x
 
-
-
        "pg_veh_wagon02x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_veh_wagon04x_1",
           -- CONTAINS OBJECTS:
@@ -15215,15 +13521,11 @@ local propset_names = {
               -- 0x6FA77D9C    -- p_veh_chucksidebarrel03
               -- 0x4D692807    -- p_veh_sidebarrelsupport01x
 
-
-
        "pg_veh_wagon04x_2",
           -- CONTAINS OBJECTS:
               -- 0xDE2C7EBD    -- p_veh_genlrg02x
               -- 0x6FA77D9C    -- p_veh_chucksidebarrel03
               -- 0x4D692807    -- p_veh_sidebarrelsupport01x
-
-
 
        "pg_veh_wagon04x_3",
           -- CONTAINS OBJECTS:
@@ -15231,112 +13533,78 @@ local propset_names = {
               -- 0x6FA77D9C    -- p_veh_chucksidebarrel03
               -- 0x4D692807    -- p_veh_sidebarrelsupport01x
 
-
-
        "pg_veh_wagon04x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_veh_wagon05x_1",
           -- CONTAINS OBJECTS:
               -- 0x321FAA36    -- p_veh_genlrg01x
 
-
-
        "pg_veh_wagon05x_2",
           -- CONTAINS OBJECTS:
               -- 0xDE2C7EBD    -- p_veh_genlrg02x
-
-
 
        "pg_veh_wagon05x_2_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_veh_wagon05x_3",
           -- CONTAINS OBJECTS:
               -- 0x154D0FF1    -- p_veh_genmed01x
               -- 0xF1B8C57D    -- p_veh_genmed02x
 
-
-
        "pg_veh_wagon05x_4",
           -- CONTAINS OBJECTS:
               -- 0x9A2CF7B7    -- p_veh_genlrg03x
-
-
 
        "pg_veh_wagon05x_5",
           -- CONTAINS OBJECTS:
               -- 0x7EC9DC5F    -- mp001_p_genmed03x
               -- 0xCC8C1EAD    -- p_boxmedpaint01x
 
-
-
        "pg_veh_wagon05x_cotton",
           -- CONTAINS OBJECTS:
               -- 0xB21363B1    -- p_veh_cottonwag02x
-
-
 
        "pg_veh_wagon05x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_veh_wagon05x_lanterns02",
           -- CONTAINS OBJECTS:
               -- 0x3C699003    -- s_veh_lantern_rf
-
-
 
        "pg_veh_wagon06x_1",
           -- CONTAINS OBJECTS:
               -- 0x154D0FF1    -- p_veh_genmed01x
 
-
-
        "pg_veh_wagon06x_2",
           -- CONTAINS OBJECTS:
               -- 0xF1B8C57D    -- p_veh_genmed02x
-
-
 
        "pg_veh_wagon06x_3",
           -- CONTAINS OBJECTS:
               -- 0x72FFA2AD    -- p_veh_gensm02x
               -- 0x08764F1C    -- p_veh_gensm01x
 
-
-
        "pg_veh_wagonarmoured01x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_veh_wagonprison01x_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
 
-
-
        "pg_veh_wagonsuffrage_lanterns01",
           -- CONTAINS OBJECTS:
               -- 0x82BBE013    -- s_veh_lantern01_lf
               -- 0xB6D0D7E0    -- s_veh_lantern01_rf
-
-
 
        "pg_vehload_cotton01",
           -- CONTAINS OBJECTS:
@@ -15347,13 +13615,9 @@ local propset_names = {
               -- 0x6C55B0B2    -- s_cottonbale02x
               -- 0x6C55B0B2    -- s_cottonbale02x
 
-
-
        "pg_vehload_crates01",
           -- CONTAINS OBJECTS:
               -- 0x84AC5469    -- p_veh_load_crates01
-
-
 
        "pg_vehload_haybale01",
           -- CONTAINS OBJECTS:
@@ -15363,26 +13627,18 @@ local propset_names = {
               -- 0x6A7729CB    -- p_haybale03x
               -- 0x6A7729CB    -- p_haybale03x
 
-
-
        "pg_vehload_livestock01",
           -- CONTAINS OBJECTS:
               -- 0x046E56FB    -- p_pg_vehload_livestock01
-
-
 
        "pg_vehload_lumber01",
           -- CONTAINS OBJECTS:
               -- 0x1BCE1E9F    -- p_cratechicken01x
               -- 0xD6D01C2B    -- p_vehload_lumber01
 
-
-
        "pg_vehload_sacks01",
           -- CONTAINS OBJECTS:
               -- 0xE359AE65    -- p_vehload_sacks01
-
-
 
        "pg_vl_blacksmith01",
           -- CONTAINS OBJECTS:
@@ -15392,8 +13648,6 @@ local propset_names = {
               -- 0x5FFA7EC5    -- p_dressinglcmcoal01x
               -- 0x3EACE2FE    -- p_veh_pg_vl_blacksmith01x
 
-
-
        "pg_vl_butcher01",
           -- CONTAINS OBJECTS:
               -- 0xA446C2F3    -- p_chestmedice01x
@@ -15401,8 +13655,6 @@ local propset_names = {
               -- 0x9212706B    -- p_dressinglblbutcher01x
               -- 0x7D93DE0A    -- p_dressinglbmlice02x
               -- 0xA6FA53C9    -- p_veh_pg_vl_butcher01x
-
-
 
        "pg_vl_craftsman01",
           -- CONTAINS OBJECTS:
@@ -15412,8 +13664,6 @@ local propset_names = {
               -- 0xF7A5EB9D    -- p_dressinglcmtool01x
               -- 0x9BCC9C61    -- p_veh_pg_vl_craftsman01x
 
-
-
        "pg_vl_delivery01",
           -- CONTAINS OBJECTS:
               -- 0x0AC33C49    -- p_steamer_trunk_001
@@ -15421,8 +13671,6 @@ local propset_names = {
               -- 0xB4857673    -- p_dressinglblpackage01x
               -- 0x961DE9F8    -- p_dressinglcmpackage01x
               -- 0x2506E34B    -- p_veh_pg_vl_delivery01
-
-
 
        "pg_vl_farmer01",
           -- CONTAINS OBJECTS:
@@ -15433,8 +13681,6 @@ local propset_names = {
               -- 0xD1F6EA81    -- p_dressinglcmproduce01x
               -- 0x7EE0E285    -- p_veh_pg_vl_farmer01x
 
-
-
        "pg_vl_farmer02",
           -- CONTAINS OBJECTS:
               -- 0xB4CC2EA1    -- p_chestmedproduce01x
@@ -15442,8 +13688,6 @@ local propset_names = {
               -- 0xB74983D8    -- p_dressinglcmfarm01x
               -- 0xAD9546F3    -- p_dressinglblutility01x
               -- 0x7BABE3A5    -- p_veh_pg_vl_farmer0201x
-
-
 
        "pg_vl_ferrier01",
           -- CONTAINS OBJECTS:
@@ -15453,8 +13697,6 @@ local propset_names = {
               -- 0x503E0D19    -- p_dressinglcmhorse01x
               -- 0x129D7CF6    -- p_veh_pg_vl_ferrier01x
 
-
-
        "pg_vl_fisherman01",
           -- CONTAINS OBJECTS:
               -- 0x48DF9BF0    -- p_chestmedtrap01x
@@ -15463,8 +13705,6 @@ local propset_names = {
               -- 0x71EFD834    -- p_dressinglblfish01x
               -- 0x4DEF44FB    -- p_veh_pg_vl_fisherman01x
 
-
-
        "pg_vl_hunter01",
           -- CONTAINS OBJECTS:
               -- 0x8B90BE92    -- p_chestmedhunt01x
@@ -15472,15 +13712,11 @@ local propset_names = {
               -- 0xD120F60F    -- p_dressinglblhunt01x
               -- 0x98D021AE    -- p_veh_pg_vl_hunter01
 
-
-
        "pg_vl_movingfamily01",
           -- CONTAINS OBJECTS:
               -- 0x3983AEBF    -- p_bench20x
               -- 0x5D352604    -- p_boxlrgtin01x
               -- 0x6DB2E2CC    -- p_veh_pg_vl_mov_fami01
-
-
 
        "pg_vl_rancher01",
           -- CONTAINS OBJECTS:
@@ -15490,8 +13726,6 @@ local propset_names = {
               -- 0xDFB9AF01    -- p_dressinglblhorse01x
               -- 0x57669807    -- p_veh_pg_vl_rancher01
 
-
-
        "pg_vl_rancher02",
           -- CONTAINS OBJECTS:
               -- 0xCE357FE8    -- p_chestmedwicker01x
@@ -15499,8 +13733,6 @@ local propset_names = {
               -- 0xAD9546F3    -- p_dressinglblutility01x
               -- 0x503E0D19    -- p_dressinglcmhorse01x
               -- 0x68E53B04    -- p_veh_pg_vl_rancher02
-
-
 
        "pg_vl_rancher03",
           -- CONTAINS OBJECTS:
@@ -15510,8 +13742,6 @@ local propset_names = {
               -- 0x503E0D19    -- p_dressinglcmhorse01x
               -- 0x865975E4    -- p_veh_pg_vl_rancher03
 
-
-
        "pg_vl_rancher04",
           -- CONTAINS OBJECTS:
               -- 0xA446C2F3    -- p_chestmedice01x
@@ -15519,8 +13749,6 @@ local propset_names = {
               -- 0x9AC84476    -- p_dressinglblproduce01x
               -- 0x79E7F349    -- p_dressinglcmdairy01x
               -- 0x17F59922    -- p_veh_pg_vl_rancher04
-
-
 
        "pg_vl_rancher05",
           -- CONTAINS OBJECTS:
@@ -15530,8 +13758,6 @@ local propset_names = {
               -- 0xF53A5301    -- p_dressinglcmhay01x
               -- 0x53038F39    -- p_veh_pg_vl_rancher05
 
-
-
        "pg_vl_tradesman01",
           -- CONTAINS OBJECTS:
               -- 0x4FF6E322    -- p_chestmedbin01x
@@ -15539,8 +13765,6 @@ local propset_names = {
               -- 0xF7A5EB9D    -- p_dressinglcmtool01x
               -- 0xFD523BEB    -- p_dressinglbstool01x
               -- 0xA7548C69    -- p_veh_pg_vl_tradesman01x
-
-
 
        "pg_vl_tradesman02",
           -- CONTAINS OBJECTS:
@@ -15550,8 +13774,6 @@ local propset_names = {
               -- 0x7645808A    -- p_dressinglcmtool02x
               -- 0x4CEDD651    -- p_veh_pg_vl_tradesman02x
 
-
-
        "pg_vl_tradesman03",
           -- CONTAINS OBJECTS:
               -- 0x4FF6E322    -- p_chestmedbin01x
@@ -15559,8 +13781,6 @@ local propset_names = {
               -- 0xAD9546F3    -- p_dressinglblutility01x
               -- 0xF7A5EB9D    -- p_dressinglcmtool01x
               -- 0x10FCEF6C    -- p_veh_pg_vl_tradesman03x
-
-
 
        "pg_vl_tradesman04",
           -- CONTAINS OBJECTS:
@@ -15570,8 +13790,6 @@ local propset_names = {
               -- 0x7645808A    -- p_dressinglcmtool02x
               -- 0xB0635EF3    -- p_veh_pg_vl_tradesman04
 
-
-
        "pg_vl_travellingfamily01",
           -- CONTAINS OBJECTS:
               -- 0xCE357FE8    -- p_chestmedwicker01x
@@ -15579,8 +13797,6 @@ local propset_names = {
               -- 0x5E75B258    -- p_dressinglbmmed01x
               -- 0xB957332B    -- p_boxmedmedical01x
               -- 0x2F91908F    -- p_veh_travelingfam01x
-
-
 
        "pg_vl_travellinglabour01",
           -- CONTAINS OBJECTS:
@@ -15590,13 +13806,9 @@ local propset_names = {
               -- 0x391088C8    -- p_dressinglbltool01x
               -- 0xAE9FF401    -- p_veh_pg_vl_t_labour01x
 
-
-
        "pg_wagon02xclimbtest01x",
           -- CONTAINS OBJECTS:
               -- 0x8568358F    -- p_trunk04x
-
-
 
        "pg_wilderchest01x",
           -- CONTAINS OBJECTS:
@@ -15608,8 +13820,6 @@ local propset_names = {
               -- 0xB47A41B6    -- p_debrispile08x
               -- 0x46324AB1    -- p_tentarmypupbroken01x
               -- 0xA2676B16    -- s_footlockersnow03x
-
-
 
        "pg_wilderchest02x",
           -- CONTAINS OBJECTS:
@@ -15624,8 +13834,6 @@ local propset_names = {
               -- 0xC28617DB    -- p_jug01x
               -- 0xBEB90174    -- p_leanto03x
               -- 0xA2676B16    -- s_footlockersnow03x
-
-
 
        "pg_wilderchest03x",
           -- CONTAINS OBJECTS:

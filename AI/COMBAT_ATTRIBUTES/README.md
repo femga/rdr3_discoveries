@@ -1,6 +1,5 @@
 ## Some COMBAT ATTRIBUTES Flags
 
-
 ## Example
 
 ```lua
@@ -10,7 +9,7 @@
 <h2>Some known COMBAT ATTRIBUTES Flags.</h2>
 
 FlagId | COMBAT ATTRIBUTE Action Result
------------ | -------------------------- 
+----------- | --------------------------
 0 | CA_USE_COVER
 1 | CA_USE_VEHICLE
 2 | CA_DO_DRIVEBYS
@@ -67,4 +66,3 @@ FlagId | COMBAT ATTRIBUTE Action Result
 125 | CA_QUIT_WHEN_TARGET_FLEES_INTERACTION_FIGHT
 131 | CA_PREVENT_UNSAFE_PROJECTILE_THROWS
 133 | CA_DISABLE_BLANK_SHOTS
-

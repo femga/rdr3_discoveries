@@ -402,5 +402,5 @@ local stat_values = {
 	"WINDOWS_BROKEN",                            -- 0x136D754B		-- 325940555
 	"WINS",                                      -- 0x8F334BA8		-- -1892463704
 	"XP_WON",                                    -- 0xB4965CC3		-- -1265214269
-	
+
 }

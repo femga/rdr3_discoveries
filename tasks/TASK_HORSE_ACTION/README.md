@@ -1,6 +1,5 @@
 ## Some Horse Action Types
 
-
 ## Example
 
 ```lua

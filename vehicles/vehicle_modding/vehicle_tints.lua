@@ -8,10 +8,9 @@
 -- Citizen.InvokeNative(0x8268B098F6FCA4E2, vehicle_policeWagon01x_id, 2) -- apply tint 2, maximum tint number for this vehicle model
 -- Citizen.InvokeNative(0x8268B098F6FCA4E2, vehicle_policeWagon01x_id, 0) -- apply tint 0 to this vehicle, lowest tint number
 -- Citizen.InvokeNative(0x8268B098F6FCA4E2, vehicle_policeWagon01x_id, -1)  -- remove all tints. Vehicle turns default "green"
--- Citizen.InvokeNative(0x8268B098F6FCA4E2, vehicle_policeWagon01x_id, -2)  -- some vehicles with tints remove livery. In this case, the inscription "police patrol" disappears from the transport. 
+-- Citizen.InvokeNative(0x8268B098F6FCA4E2, vehicle_policeWagon01x_id, -2)  -- some vehicles with tints remove livery. In this case, the inscription "police patrol" disappears from the transport.
 
 --------------------------------------------------------------------------------
-
 
 local vehicle_tints = {
 
@@ -112,8 +111,6 @@ local vehicle_tints = {
 	["wagonWork01x"]               = 2,
 	["warWagon2"]                  = 6,
 	["wintercoalcar"]              = 1,
-
-
 
 	-- Don`t have tints:
 

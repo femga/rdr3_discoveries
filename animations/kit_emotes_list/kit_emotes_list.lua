@@ -1,7 +1,7 @@
 -- ============================================================================
 -- ============================================================================
 -- ============================================================================
--- 
+--
 -- local emote_category = {
 --     [0] = "Reaction",
 --     [1] = "Action",
@@ -12,15 +12,15 @@
 -- }
 --
 -- EXAMPLE OF USING:
--- 
+--
 -- Citizen.CreateThread(function()
 --     while true do
---         Citizen.Wait(0) 
+--         Citizen.Wait(0)
 --         if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
 --				local emote_category = 3
 --          	Citizen.InvokeNative(0xB31A277C1AC7B7FF,PlayerPedId(),emote_category,2,GetHashKey("KIT_EMOTE_GREET_FANCY_BOW_1"),0,0,0,0,0)  -- FULL BODY EMOTE
 --          	-- Citizen.InvokeNative(0xB31A277C1AC7B7FF,PlayerPedId(),emote_category,0,GetHashKey("KIT_EMOTE_GREET_FANCY_BOW_1"),1,1,0,0,0)  -- UPPER BODY EMOTE
---         end     
+--         end
 --     end
 -- end)
 --
@@ -34,22 +34,22 @@
 -- SOME THINGS ABOUT KIT_EMOTE_TWIRL_GUN:
 --
 -- kit_emote_twirl types:
--- 
+--
 -- KIT_EMOTE_TWIRL_GUN
 -- KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER
 -- KIT_EMOTE_TWIRL_GUN_DUAL
--- 
 --
--- 
+--
+--
 --	local weapon_twirl_variation_names = {
---		[0] = "REVERSE_SPIN",			-- 0, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_A		
---		[1] = "SPIN_UP",				-- 1, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_B	
---		[2] = "REVERSE_SPIN_UP",		-- 2, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_C			
---		[3] = "ALTERNATING_FLIPS",	    -- 3, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_D			
---		[4] = "SHOULDER_TOSS",		    -- 4, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_E		
---		[5] = "FIGURE_EIGHT_TOSS",	    -- 5, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_F			
+--		[0] = "REVERSE_SPIN",			-- 0, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_A
+--		[1] = "SPIN_UP",				-- 1, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_B
+--		[2] = "REVERSE_SPIN_UP",		-- 2, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_C
+--		[3] = "ALTERNATING_FLIPS",	    -- 3, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_D
+--		[4] = "SHOULDER_TOSS",		    -- 4, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_E
+--		[5] = "FIGURE_EIGHT_TOSS",	    -- 5, it is the same as KIT_EMOTE_TWIRL_GUN_VAR_F
 --	}
--- 
+--
 -- local weapon_kit_emote_slot_ids = {
 -- 		[0] = "WEAPON_EMOTE_VARIATION_A",
 -- 		[1] = "WEAPON_EMOTE_VARIATION_B",
@@ -57,49 +57,49 @@
 -- 		[3] = "WEAPON_EMOTE_VARIATION_D",
 -- 		[4] = "WEAPON_EMOTE_VARIATION_PREVIEW",
 -- }
--- 
--- 
+--
+--
 -- SOME NATIVES FOR KIT_EMOTE_TWIRL_GUN:
--- 
+--
 -- -- Equip weapon kit_emote_twirl
 -- Citizen.InvokeNative(0xCBCFFF805F1B4596, PlayerPedId(), GetHashKey("KIT_EMOTE_TWIRL_GUN_DUAL"))  -- _EQUIP_WEAPON_KIT_EMOTE_TWIRL  "KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER"
--- 
+--
 -- -- Unequip weapon kit_emote_twirl
 -- Citizen.InvokeNative(0xCBCFFF805F1B4596, PlayerPedId(), 0)
--- 
+--
 -- -- Get equipped kit_emote_twirl
 -- Citizen.InvokeNative(0x2C4FEC3D0EFA9FC0, PlayerPedId()) -- _GET_EQUIPPED_KIT_EMOTE_TWIRL returns "KIT_EMOTE_TWIRL_GUN_DUAL" in this example
--- 
+--
 -- -- Get kit_emote_twirl variation name hash by num
 -- Citizen.InvokeNative(0xF4601C1203B1A78D, GetHashKey("KIT_EMOTE_TWIRL_GUN_DUAL"), 3) -- _GET_WEAPON_KIT_EMOTE_TWIRL_VARIATION_BY_NUM    returns hash for "ALTERNATING_FLIPS" in this example
--- 
+--
 -- -- Enable kit_emote_twirl variation
 -- Citizen.InvokeNative(0x01F661BB9C71B465, PlayerPedId(), weapon_kit_emote_slot_id, GetHashKey("SHOULDER_TOSS")) -- _ENABLE_WEAPON_KIT_EMOTE_TWIRL_VARIATION
--- 
+--
 -- -- Disable kit_emote_twirl variation
 -- Citizen.InvokeNative(0x01F661BB9C71B465, PlayerPedId(), weapon_kit_emote_slot_id, 0)
--- 
+--
 -- -- Activate kit_emote_twirl inventory slot id
 -- Citizen.InvokeNative(0x408CF580C5E96D49, PlayerPedId(), weapon_kit_emote_slot_id) -- _ACTIVATE_KIT_EMOTE_TWIRL_SLOT_ID
 --
 --
 --
 -- EXAMPLE OF USING:
--- 
+--
 -- RegisterCommand("spin", function(source, args)
 --		local kit_emote_twirl_type = `KIT_EMOTE_TWIRL_GUN_DUAL` -- or `KIT_EMOTE_TWIRL_GUN_DUAL` or `KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER`
 --		local kit_emote_twirl_variation_num = tonumber( args[1] )
 --		if ( kit_emote_twirl_variation_num ) then
 --			local weapon_twirl_variation_names = {
---				[0] = "REVERSE_SPIN",		
---				[1] = "SPIN_UP",			
---				[2] = "REVERSE_SPIN_UP",	
+--				[0] = "REVERSE_SPIN",
+--				[1] = "SPIN_UP",
+--				[2] = "REVERSE_SPIN_UP",
 --				[3] = "ALTERNATING_FLIPS",
---				[4] = "SHOULDER_TOSS",		
+--				[4] = "SHOULDER_TOSS",
 --				[5] = "FIGURE_EIGHT_TOSS",
 --			}
 --			local ped = PlayerPedId()
---			local kit_emote_twirl_variation = weapon_twirl_variation_names[kit_emote_twirl_variation_num] 
+--			local kit_emote_twirl_variation = weapon_twirl_variation_names[kit_emote_twirl_variation_num]
 --			local emote_category = 4  -- category "TwirlGun"
 --			Citizen.InvokeNative(0xCBCFFF805F1B4596, ped, kit_emote_twirl_type)
 --			Citizen.InvokeNative(0xB31A277C1AC7B7FF, ped, emote_category, 1, kit_emote_twirl_type, true, false, false, false, false)
@@ -107,18 +107,14 @@
 --			Citizen.InvokeNative(0x408CF580C5E96D49, ped, 0)
 --		end
 -- end)
--- 
--- Equip some weapons and call "/spin [0-5]" from chat or "spin [0-5]" from console
---  
 --
--- 
+-- Equip some weapons and call "/spin [0-5]" from chat or "spin [0-5]" from console
+--
+--
+--
 -- ============================================================================
 -- ============================================================================
 -- ============================================================================
-
-
-
-
 
 local kit_emotes = {
 
@@ -247,18 +243,16 @@ local kit_emotes = {
 	"KIT_EMOTE_TWIRL_GUN_LEFT_HOLSTER",            	--	0x43F0C62B		1139852843
 	"KIT_EMOTE_TWIRL_GUN_DUAL",                   	--	0xE04E36A5		-531745115
 
-
-
 	-- for ped model a_c_boar_01 (use emote_category 4 (TwirlGun)):
 	"BOAR_EMOTE",					-- 	0x9D11F0CE		-1659768626
 
-	-- for ped model a_c_buck_01 (use emote_category 4 (TwirlGun)): 		
+	-- for ped model a_c_buck_01 (use emote_category 4 (TwirlGun)):
     	"BUCK_EMOTE",					-- 	0x0887EA4C		143125068
 
-    	-- for ped model a_c_possum_01 (use emote_category 4 (TwirlGun)):	
+    	-- for ped model a_c_possum_01 (use emote_category 4 (TwirlGun)):
     	"POSSUM_EMOTE",                           	-- 	0x60B1440C		1622230028
 
-    	-- for ped model a_c_rabbit_01 (use emote_category 4 (TwirlGun)):	
+    	-- for ped model a_c_rabbit_01 (use emote_category 4 (TwirlGun)):
     	"RABBIT_EMOTE",                             	-- 	0x608663CD		1619420109
 
 }

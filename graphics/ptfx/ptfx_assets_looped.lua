@@ -1,18 +1,17 @@
-
 --		EXAMPLE. MAKE FIRE BREATH FROM PED HEAD:
---------------------------------------------------------------------------------------------		
---------------------------------------------------------------------------------------------	
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 --		local new_ptfx_dictionary = "anm_fire_dancers"
 --		local new_ptfx_name = "ent_anim_fire_breathe_loop"
---		
+--
 --		local is_particle_effect_active = false
 --		local current_ptfx_dictionary = new_ptfx_dictionary
 --		local current_ptfx_name = new_ptfx_name
---		
+--
 --		local current_ptfx_handle_id = false
---		
+--
 --		local bone_index = 247   -- ["PH_Head"]  = {bone_index = 247, bone_id = 57278},
---		
+--
 --		local ptfx_offcet_x = 0.0
 --		local ptfx_offcet_y = 0.0
 --		local ptfx_offcet_z = 0.0
@@ -23,8 +22,8 @@
 --		local ptfx_axis_x = 0
 --		local ptfx_axis_y = 0
 --		local ptfx_axis_z = 0
---		
---		
+--
+--
 --		Citizen.CreateThread(function()
 --		   	while true do
 --		        Citizen.Wait(0)
@@ -41,7 +40,7 @@
 --		        		end
 --		    			if Citizen.InvokeNative(0x65BB72F29138F5D6, GetHashKey(current_ptfx_dictionary)) then  -- HasNamedPtfxAssetLoaded
 --		    				Citizen.InvokeNative(0xA10DB07FC234DD12, current_ptfx_dictionary) -- UseParticleFxAsset
---		
+--
 --		    				current_ptfx_handle_id = Citizen.InvokeNative(0x9C56621462FFE7A6,current_ptfx_name,PlayerPedId(),ptfx_offcet_x,ptfx_offcet_y,ptfx_offcet_z,ptfx_rot_x,ptfx_rot_y,ptfx_rot_z,bone_index,ptfx_scale,ptfx_axis_x,ptfx_axis_y,ptfx_axis_z) -- StartNetworkedParticleFxLoopedOnEntityBone
 --		    				--current_ptfx_handle_id =  Citizen.InvokeNative(0x8F90AB32E1944BDE,current_ptfx_name,PlayerPedId(),ptfx_offcet_x,ptfx_offcet_y,ptfx_offcet_z,ptfx_rot_x,ptfx_rot_y,ptfx_rot_z,ptfx_scale,ptfx_axis_x,ptfx_axis_y,ptfx_axis_z)    -- StartNetworkedParticleFxLoopedOnEntity
 --		    				is_particle_effect_active = true
@@ -55,22 +54,18 @@
 --							end
 --						end
 --						current_ptfx_handle_id = false
---						is_particle_effect_active = false	
+--						is_particle_effect_active = false
 --		        	end
 --		        end
 --		    end
---		end) 
+--		end)
 --
 ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
 
-
-
-
 -- ptfx_assets_looped = {
 -- 	[ptfx_dictionary] = {ptfx_name},
 -- }
-
 
 local ptfx_assets_looped = {
 	["anm_climbing"] = {

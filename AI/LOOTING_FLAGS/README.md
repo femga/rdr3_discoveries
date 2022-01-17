@@ -1,6 +1,5 @@
 ## Some Looting Flags
 
-
 ## Example
 
 ```lua

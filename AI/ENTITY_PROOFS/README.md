@@ -5,10 +5,9 @@ It is "bitmask" type of flags. You can sum it up. For example, setting flag to 1
 ## Example
 
 ```lua
-	Citizen.InvokeNative(0xFAEE099C6F890BB8, ped_id, 4 + 16, 0)  -- SET_ENTITY_PROOFS   -- make ped explosion and melee proof.	
+	Citizen.InvokeNative(0xFAEE099C6F890BB8, ped_id, 4 + 16, 0)  -- SET_ENTITY_PROOFS   -- make ped explosion and melee proof.
 
-	local all_active_flags = Citizen.InvokeNative(0x6CF0DAD7FA1088EA,ped_id)   --  _GET_ENTITY_PROOFS  returns 20 in this example. 
-
+	local all_active_flags = Citizen.InvokeNative(0x6CF0DAD7FA1088EA,ped_id)   --  _GET_ENTITY_PROOFS  returns 20 in this example.
 
 	-- To check if some flag is active use this function.
 
@@ -23,7 +22,7 @@ It is "bitmask" type of flags. You can sum it up. For example, setting flag to 1
 <h2>Some Known Entity Proof Flags.</h2>
 
 FlagId | Entity Proof Flag Action Result
------------ | -------------------------- 
+----------- | --------------------------
 1 | bullet proof
 2 | flame proof
 4 | explosion proof
@@ -33,4 +32,3 @@ FlagId | Entity Proof Flag Action Result
 64 | smoke proof
 128 | headshots proof
 256 | projectile proof
-

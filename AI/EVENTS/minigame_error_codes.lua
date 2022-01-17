@@ -28,5 +28,5 @@ local minigame_error_codes = {
 	"ERROR_TABLE_KILLED",                         -- 0x3A74FD65		-- 980745573
 	"ERROR_REQUEST_TIMED_OUT",                    -- 0x49F6BE7B		-- 1240907387
 	"ERROR_TABLE_RESERVE_SEAT_FAILED",            -- 0x6FE0687D		-- 1876977789
-	
+
 }

@@ -1,12 +1,11 @@
 --------------------------------------------------------------------------------
 -- Example of use:
 --
---	local metaped_outfit = Citizen.InvokeNative(0x13154A76CE0CF9AB,GetHashKey("a_c_alligator_01"),0xDE852F17) -- RequestMetapedOutfit 
+--	local metaped_outfit = Citizen.InvokeNative(0x13154A76CE0CF9AB,GetHashKey("a_c_alligator_01"),0xDE852F17) -- RequestMetapedOutfit
 --	Citizen.Wait(200)
 --	Citizen.InvokeNative(0x74F512E29CB717E2,metaped_outfit,a_c_alligator_01_ped_id ,true,false) 			  -- ApplyPedMetapedOutfit
 --
 --------------------------------------------------------------------------------
-
 
 local metaped_outfits = {
 	["a_c_alligator_01"] = {
@@ -5031,8 +5030,6 @@ local metaped_outfits = {
 	    {0xE1AE8D1A},
 	    {0x21444C76},
 	    {0xCBA0A12C},
-
-
 
 	},
 	["rces_abigail3_females_01"] = {

@@ -4,7 +4,6 @@
 --  	TO REMOVE ANIMPOSTFX EFFECT:
 --    	AnimpostfxStop("PauseMenuIn")
 
-
 local animpostfx = {
 
 	"PauseMenuIn",
@@ -350,8 +349,6 @@ local animpostfx = {
 	"Cutscene_MP_FMTut_Pt4",
 	"Cutscene_MP_FMTut_Pt5",
 	"Cutscene_MP_FMTut_Pt6",
-
-
 
 	-- fake hashnames for unknown animpostfx hashes, but they work as well
 

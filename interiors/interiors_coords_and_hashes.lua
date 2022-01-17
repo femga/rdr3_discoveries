@@ -302,21 +302,20 @@ local interiors_list = {
 	[76033] = {x=-572.78009033203,y=-5926.986328125,z=75.550514221191,typeHashId=-2058311230,typeHashName="mp005_mp_collector_lobby_int",rpf="mp_collector_lobby_int.rpf"},
 	[76545] = {x=2734.7485351563,y=-1117.3830566406,z=37.40047454834,typeHashId=-1342756225,typeHashName="mp005_mp_new_photo_posse_int",rpf="mp_new_photo_posse_int.rpf"},
 	[76289] = {x=-572.78009033203,y=-6038.1411132813,z=75.550514221191,typeHashId=1843350190,typeHashName="mp005_mp_reward_lobby_int",rpf="mp_reward_lobby_int.rpf"},
-	[76801] = {x=-572.78009033203,y=-5958.9375,z=75.550514221191,typeHashId=151614302,typeHashName="mp005_mp_trader_lobby_int",rpf="mp_trader_lobby_int.rpf"},	
-	[73218] = {x=-1393.5012207031,y=1181.4250488281,z=221.63369750977,typeHashId=1869093440,typeHashName="mil_mine_cave_int4",rpf="mil_mine_cave_04.rpf"},			
-	[59394] = {x=-1420.4987792969,y=1171.5920410156,z=225.60629272461,typeHashId=-2124562913,typeHashName="mil_mine_cave_int1",rpf="mil_mine_cave_01.rpf"},			
-	[33538] = {x=-1440.2355957031,y=1189.5712890625,z=225.40866088867,typeHashId=1872173714,typeHashName="mil_mine_cave_int2",rpf="mil_mine_cave_02.rpf"},			
-	[12034] = {x=-1418.7707519531,y=1197.4487304688,z=224.4430847168,typeHashId=-2119254323,typeHashName="mil_mine_cave_int3",rpf="mil_mine_cave_03.rpf"},			
-	
+	[76801] = {x=-572.78009033203,y=-5958.9375,z=75.550514221191,typeHashId=151614302,typeHashName="mp005_mp_trader_lobby_int",rpf="mp_trader_lobby_int.rpf"},
+	[73218] = {x=-1393.5012207031,y=1181.4250488281,z=221.63369750977,typeHashId=1869093440,typeHashName="mil_mine_cave_int4",rpf="mil_mine_cave_04.rpf"},
+	[59394] = {x=-1420.4987792969,y=1171.5920410156,z=225.60629272461,typeHashId=-2124562913,typeHashName="mil_mine_cave_int1",rpf="mil_mine_cave_01.rpf"},
+	[33538] = {x=-1440.2355957031,y=1189.5712890625,z=225.40866088867,typeHashId=1872173714,typeHashName="mil_mine_cave_int2",rpf="mil_mine_cave_02.rpf"},
+	[12034] = {x=-1418.7707519531,y=1197.4487304688,z=224.4430847168,typeHashId=-2119254323,typeHashName="mil_mine_cave_int3",rpf="mil_mine_cave_03.rpf"},
+
 	-- UNKNOWN TYPEHASHNAME(!!!):
 
 	[25090] = {x=339.67950439453,y=1505.8784179688,z=180.95112609863,typeHashId=-1601726546,typeHashName="",rpf="old_cptquarter_int.rpf"},			-- UNKNOWN TYPEHASHNAME!!!
-	
 
 	-----------------------------------------------------------------------------------------------------------------------
 	------------------------------------------  Interiors from game version 1207.80 till 1311.12 --------------------------
 	-----------------------------------------------------------------------------------------------------------------------
-	
+
 	[77313] = {x=1789.1730957031,y=-817.29760742188,z=191.59609985352,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},
 	[77569] = {x=-1090.7846679688,y=711.73596191406,z=83.230895996094,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},
 	[77825] = {x=-1864.5423583984,y=-1727.5068359375,z=88.252014160156,typeHashId=855142338,typeHashName="mp006_moonshine01_int",rpf="mp006_moonshine01_int.rpf"},

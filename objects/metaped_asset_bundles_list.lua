@@ -2,10 +2,10 @@
 -- ===========================================
 -- ===========================================
 --
--- metaped asset bundle is a collision object (collision_arm, collision_hat, collision_glasses, collision_hat_rammask, etc) with dynamic textures. 
+-- metaped asset bundle is a collision object (collision_arm, collision_hat, collision_glasses, collision_hat_rammask, etc) with dynamic textures.
 --
 -- EXAMPLE OF USE:
---  
+--
 -- Citizen.CreateThread(function()
 -- 	while true do
 -- 		Citizen.Wait(0)
@@ -14,14 +14,14 @@
 -- 		  	local x,y,z = table.unpack(GetEntityCoords(ped))
 -- 		  	local forwardX=GetEntityForwardX(ped)
 -- 		  	local forwardY=GetEntityForwardY(ped)
--- 		  	local forward_fix = 3 
+-- 		  	local forward_fix = 3
 -- 		  	local z_fix = 0
 -- 		  	local obj_x = x+(forwardX*forward_fix)
 -- 		  	local obj_y = y+(forwardY*forward_fix)
--- 		  	local obj_z = z + z_fix   
+-- 		  	local obj_z = z + z_fix
 -- 		  	local obj_rotation_x = 0.0
 -- 		  	local obj_rotation_y = 0.0
--- 		  	local obj_rotation_z = 0.0    
+-- 		  	local obj_rotation_z = 0.0
 -- 			local asset_bundle_request_id = Citizen.InvokeNative(0x91FE941F9FCFB702,0xC526CD8C,0)    -- _REQUEST_METAPED_ASSET_BUNDLE (skullmask 0xC526CD8C)
 -- 			if asset_bundle_request_id then
 -- 				local counter = 0
@@ -41,10 +41,6 @@
 -- ===========================================
 -- ===========================================
 -- ===========================================
-
-
-
-
 
 local metaped_asset_bundles = {
 
@@ -98,4 +94,3 @@ local metaped_asset_bundles = {
 	0x58E1C775,	-- mp_afghanpolo_001
 
 }
-

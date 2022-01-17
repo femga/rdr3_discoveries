@@ -26,7 +26,7 @@ moles
 spots
 ```
 
-## EXAMPLES: 
+## EXAMPLES:
 Apply default color to lipsticks:
 ```
 /ov lipsticks 1
@@ -56,7 +56,6 @@ Remove shadows:
 ```
 /ov shadows 0
 ```
-
 
 ## FUNCTION  "toggleOverlayChange"
 

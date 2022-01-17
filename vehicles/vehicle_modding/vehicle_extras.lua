@@ -301,7 +301,6 @@ local vehicle_extras = {
         1,
     },
 
-
     --DONT HAVE EXTRAS:
 
     -- ["armoredCar01x"] = {},

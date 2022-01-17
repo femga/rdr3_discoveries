@@ -21,7 +21,6 @@ local frontend_soundsets = {
       "NAV_RIGHT",
     },
 
-
     ["Mission_Complete_Sounds"] = {
       "Mission_Complete_Final_Wipe_Off",
     },

@@ -4,7 +4,6 @@
 --	REMOVE HUD PRESET:
 --	Citizen.InvokeNative(0x8BC7C1F929D07BF3 ,GetHashKey("HUD_CTX_IN_FAST_TRAVEL_MENU"))   -- revert reticle, help, feed, award massages, etc.
 
-
 local hud_presets = {
 
 	"HUD_CTX_CODE_TOOLS",								-- 0x15E17C71

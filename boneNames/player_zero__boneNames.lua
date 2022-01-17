@@ -769,6 +769,6 @@ local player_zero__boneNames = {
 	["XH_L_Hand00"]                                 = {bone_index = 201, bone_id = 64687},
 	["XH_R_Hand00"]                                 = {bone_index = 327, bone_id = 64847},
 	["XH_R_Hand01"]                                 = {bone_index = 328, bone_id = 64848},
-	["XH_Spine"]                                    = {bone_index = 461, bone_id = 65009},           
+	["XH_Spine"]                                    = {bone_index = 461, bone_id = 65009},
 
 }

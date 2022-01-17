@@ -1,10 +1,10 @@
 -- Ped decals are stains of blood, dirt, dust, etc on the character`s body.
--- 
+--
 -- Example of use:
 -- Citizen.InvokeNative(0x46DF918788CB093F,PlayerPedId(),"PD_Vomit", 0.0, 0.0);  -- APPLY_PED_DAMAGE_PACK PD_Vomit for ped with damage 0.0 and mult 0.0
--- 
+--
 -- Citizen.InvokeNative(0x523C79AEEFCC4A2A,PlayerPedId(),10, "ALL")   -- CLEAR_PED_DAMAGE_DECAL_BY_ZONE zone 10, decals type "all"
--- 
+--
 -- Zones:
 -- 0  - upperbody
 -- 1  - head
@@ -17,9 +17,9 @@
 -- 8  - right leg
 -- 9  - [unknown]
 -- 10 - all zones
--- 
--- 
--- Not all real hashnames are known for ped decals yet. 
+--
+--
+-- Not all real hashnames are known for ped decals yet.
 -- But we can use fake names with the same joaat hashes.
 -- For example, using these fake hashnames you can apply different variations of pencil-drawn stubble:
 -- "l_00cc3be4oq"
@@ -27,7 +27,6 @@
 -- "l_00cc3be4os"
 -- "l_00cc3be4ot"
 -- "l_00cc3be4ou"
-
 
 local ped_decals = {
 
@@ -274,11 +273,6 @@ local ped_decals = {
     "PD_War_Veteran_Dead_Wolf",
     "PD_War_Vetetran_Legendary_boar",
     "PD_Winter_2_Arthur_snow_shoulder",
-
-
-
-
-
 
     -- FAKE HASHNAMES (but they work as well):
 
@@ -1202,7 +1196,3 @@ local ped_decals = {
     "l_024ccd2dlz",     -- fake hashname for ped decals hash 0x33025625
 
 }
-
-
-
-

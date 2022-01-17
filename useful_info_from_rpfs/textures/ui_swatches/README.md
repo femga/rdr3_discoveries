@@ -1,4 +1,4 @@
-## Example of using:  
+## Example of using:
 ```lua
 local function DrawTexture(textureStreamed,textureName,x, y, width, height,rotation,r, g, b, a, p11)
     if not HasStreamedTextureDictLoaded(textureStreamed) then
@@ -14,12 +14,9 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
- 
-
 
 <h3>Texture dictionary hashname (hash):</h3>
 <h2>ui_swatches (-191519043)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_swatches.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_swatches.zip">without bg</a>]</h4>
-
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
 ------------ | ---------------- | --------------- | -----------

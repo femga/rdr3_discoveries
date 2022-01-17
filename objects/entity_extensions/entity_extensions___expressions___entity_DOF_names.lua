@@ -38,9 +38,6 @@
 -- ===========================================
 -- ===========================================
 
-
-
-
 local entity_DOF_names = {
 
     {
@@ -178,7 +175,7 @@ local entity_DOF_names = {
     	entity_models = {
             "p_mugcoffee01x",
         },
-    },        
+    },
 
     {
     	DOF_name = "Chip01_Ctrl",
@@ -227,7 +224,6 @@ local entity_DOF_names = {
         },
     },
 
-
     {
         DOF_name = "Chip02_Ctrl",
         expression_type = 2,
@@ -275,7 +271,6 @@ local entity_DOF_names = {
         },
     },
 
-
     {
         DOF_name = "Chip03_Ctrl",
         expression_type = 2,
@@ -322,7 +317,6 @@ local entity_DOF_names = {
             "p_chips_val05x",
         },
     },
-
 
     {
         DOF_name = "Chip04_Ctrl",
@@ -987,7 +981,7 @@ local entity_DOF_names = {
     	entity_models = {
             "mp006_s_mnshn_product02x_empty",
         },
-    }, 
+    },
 
     {
     	DOF_name = "empty_jug05_Ctrl",
@@ -1118,5 +1112,3 @@ local entity_DOF_names = {
     },
 
 }
-
-

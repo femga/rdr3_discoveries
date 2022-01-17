@@ -1,6 +1,5 @@
 ## Animal Interaction Types
 
-	
 ## Example
 
 ```lua
@@ -10,11 +9,11 @@
 	-- p1 - target ped id
 	-- p2 - interactionTypeHash
 	-- p3 - object model to use for interaction (0 if use nothing)
-	-- p4 -  1 = skip idle animation clip 
-	
+	-- p4 -  1 = skip idle animation clip
+
 	-- ped injected the horse with a syringe :
 	Citizen.InvokeNative(0xCD181A959CFDD7F4, PlayerPedId(), horse_ped_id, GetHashKey("Interaction_Injection_Quick"), GetHashKey("p_cs_syringe01x"), 1)
-	
+
 	-- brush horse
 	Citizen.InvokeNative(0xCD181A959CFDD7F4, PlayerPedId(), horse_ped_id, GetHashKey("Interaction_Brush"), GetHashKey("p_brushHorse02x"), 1)
 

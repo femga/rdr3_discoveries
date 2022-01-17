@@ -25,4 +25,3 @@ local color_palletes = {
 	0xF93DB0C8,
 	0xFB71527B,
 }
-

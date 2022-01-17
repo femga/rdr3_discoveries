@@ -1,4 +1,4 @@
--- [entity_model] = { 
+-- [entity_model] = {
 -- 	{explosion_effect1},
 -- 	{explosion_effect2},
 -- 	{explosion_effect3},
@@ -137,7 +137,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "s_mp_racefinishtarget01x",
 			explosionName = "EXP_TAG_LANTERN",
@@ -157,7 +156,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_cratetnt01x",
@@ -179,7 +177,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_cratetnt01xa",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -199,7 +196,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_cratetnt02x",
@@ -221,7 +217,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_cratetnt02xa",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -241,7 +236,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_cratetnt03x",
@@ -263,7 +257,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_dynamite01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -283,7 +276,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_dynamite02x",
@@ -305,7 +297,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_dynamite03x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -325,7 +316,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_dynamite04x",
@@ -347,7 +337,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_dynamitecrate01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -367,7 +356,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_dynamitecrate02x",
@@ -389,7 +377,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_molotov01x",
 			explosionName = "EXP_TAG_MOLOTOV",
@@ -409,7 +396,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_molotovcrate01x",
@@ -431,7 +417,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_powderkeg01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -451,7 +436,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_powderkeg02x",
@@ -473,7 +457,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_stickydymt_bundle",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -493,7 +476,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_stickydymt_single",
@@ -515,7 +497,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_tnt_trainrobbery_01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -535,7 +516,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_tnt01x",
@@ -557,7 +537,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_tntarmswagon01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -565,7 +544,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_tntarmswagon01x",
@@ -575,7 +553,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_tntarmswagon01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -584,7 +561,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_tntarmswagon01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -592,7 +568,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_tntarmswagon01x",
@@ -614,7 +589,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_tntwagon01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -635,7 +609,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_tntwagon02x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -655,7 +628,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_veh_cratetnt02x",
@@ -689,7 +661,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_cs_cratetnt01x",
 			explosionName = "EXP_TAG_DYNAMITESTACK",
@@ -709,7 +680,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_cs_cratetnt02x",
@@ -731,7 +701,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 0,
 		},
 
-
 		{
 			entity_extension_name = "p_cs_traincratetnt01x",
 			explosionName = "EXP_TAG_DYNAMITESTACK",
@@ -752,7 +721,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_cs_traincratetnt02x",
 			explosionName = "EXP_TAG_DYNAMITESTACK",
@@ -772,7 +740,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 2,
 		},
-
 
 		{
 			entity_extension_name = "p_tntwagon02x_r",
@@ -842,7 +809,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_gun_crateset01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -863,7 +829,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_gun_crateset02x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -872,7 +837,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_gun_crateset02x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -880,7 +844,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 2,
 		},
-
 
 		{
 			entity_extension_name = "p_gun_crateset02x",
@@ -974,7 +937,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_veh_supgsmith01x",
 			explosionName = "EXP_TAG_DYNAMITESTACK",
@@ -982,7 +944,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 2,
 		},
-
 
 		{
 			entity_extension_name = "p_veh_supgsmith01x",
@@ -992,7 +953,6 @@ local entity_extensions__explosionEffect = {
 			explosionType = 2,
 		},
 
-
 		{
 			entity_extension_name = "p_veh_supgsmith01x",
 			explosionName = "EXP_TAG_DYNAMITE",
@@ -1000,7 +960,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 2,
 		},
-
 
 		{
 			entity_extension_name = "p_veh_supgsmith01x",
@@ -1021,7 +980,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 2,
 		},
-
 
 		{
 			entity_extension_name = "p_veh_traincar02x",
@@ -1126,7 +1084,6 @@ local entity_extensions__explosionEffect = {
 			explosionTag = 0,
 			explosionType = 0,
 		},
-
 
 		{
 			entity_extension_name = "p_mp_crateTnt03x",

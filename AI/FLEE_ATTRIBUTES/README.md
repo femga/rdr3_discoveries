@@ -1,6 +1,5 @@
 ## Some FLEE ATTRIBUTES Flags
 
-
 ## Example
 
 ```lua
@@ -10,7 +9,7 @@
 <h2>Some known FLEE ATTRIBUTES Flags.</h2>
 
 FlagId | FLEE ATTRIBUTE Action Result
------------ | -------------------------- 
+----------- | --------------------------
 0 | unknown yet
 1 | unknown yet
 2 | unknown yet
@@ -35,4 +34,3 @@ FlagId | FLEE ATTRIBUTE Action Result
 1048576 | FA_DISABLE_MOUNT_USAGE
 2097152 | unknown yet
 4194304 | FA_DISABLE_ENTER_VEHICLES
-

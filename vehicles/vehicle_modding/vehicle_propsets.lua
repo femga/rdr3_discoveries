@@ -6,7 +6,7 @@
 
 -- Example of use:
 -- ... create some vehicle Huntercart01
--- Citizen.InvokeNative(0x75F90E4051CC084C, vehicle_Huntercart01_id, GetHashKey("pg_mp005_huntingWagonTarp01")) -- _ADD_VEHICLE_PROPSETS 
+-- Citizen.InvokeNative(0x75F90E4051CC084C, vehicle_Huntercart01_id, GetHashKey("pg_mp005_huntingWagonTarp01")) -- _ADD_VEHICLE_PROPSETS
 -- Citizen.InvokeNative(0x31F343383F19C987, vehicle_Huntercart01_id, 0.5, 1)  -- _SET_VEHICLE_TARP_HEIGHT
 -- Citizen.InvokeNative(0x75F90E4051CC084C, vehicle_Huntercart01_id, 0)  -- _REMOVE_ALL_VEHICLE_PROPSETS
 
@@ -14,8 +14,6 @@
 -- Citizen.InvokeNative(0xD798DF5DB67B1659, vehicle_Huntercart01_id)  -- _IS_VEHICLE_PROPSET_APPLIED
 
 --------------------------------------------------------------------------------
-
-
 
 local vehicle_propsets = {
 
@@ -30,7 +28,7 @@ local vehicle_propsets = {
     ["keelboat"] = {
         "pg_veh_keelboat_01",
         "pg_veh_keelboat_02",
-        "pg_veh_keelboat_03",     
+        "pg_veh_keelboat_03",
     },
 
     ["boatSteam02x"] = {
@@ -63,7 +61,7 @@ local vehicle_propsets = {
         "pg_teamster_cart02_breakables",
         "pg_teamster_cart02_gen",
         "pg_teamster_cart02_perishables",
-        "pg_teamster_cart02_tnt",     
+        "pg_teamster_cart02_tnt",
     },
 
     ["cart03"] = {
@@ -75,7 +73,7 @@ local vehicle_propsets = {
         "pg_teamster_cart03_tnt",
         "pg_veh_cart03_1",
         "pg_veh_cart03_2",
-        "pg_veh_cart03_barrels01x",     
+        "pg_veh_cart03_barrels01x",
     },
 
     ["cart04"] = {
@@ -85,7 +83,7 @@ local vehicle_propsets = {
         "pg_teamster_cart04_perishables",
         "pg_teamster_cart04_tnt",
         "pg_veh_cart04_1",
-        "pg_veh_cart04_2",         
+        "pg_veh_cart04_2",
     },
 
     ["cart06"] = {
@@ -94,7 +92,7 @@ local vehicle_propsets = {
         "pg_teamster_cart06_perishables",
         "pg_teamster_cart06_tnt",
         "pg_veh_cart06_1",
-        "pg_veh_cart06_2",     
+        "pg_veh_cart06_2",
     },
 
     ["cart07"] = {
@@ -103,7 +101,7 @@ local vehicle_propsets = {
         "pg_teamster_cart07_perishables",
         "pg_teamster_cart07_tnt",
         "pg_veh_cart07_1",
-        "pg_veh_cart07_2",     
+        "pg_veh_cart07_2",
     },
 
     ["cart08"] = {
@@ -112,7 +110,7 @@ local vehicle_propsets = {
         "pg_teamster_cart08_perishables",
         "pg_teamster_cart08_tnt",
         "pg_veh_cart08_1",
-        "pg_veh_cart08_2",         
+        "pg_veh_cart08_2",
     },
 
     ["coach2"] = {
@@ -175,7 +173,7 @@ local vehicle_propsets = {
         "pg_teamster_supplywagon_gen",
         "pg_teamster_supplywagon_perishables",
         "pg_teamster_supplywagon_tnt",
-        "pg_delivery_Cotton01x",         
+        "pg_delivery_Cotton01x",
     },
 
     ["supplywagon2"] = {
@@ -184,15 +182,15 @@ local vehicle_propsets = {
     },
 
     ["logwagon"] = {
-        "pg_veh_logwagon_1",         
+        "pg_veh_logwagon_1",
     },
 
     ["logwagon2"] = {
-        "pg_veh_logwagon2_1",         
+        "pg_veh_logwagon2_1",
     },
 
     ["coal_wagon"] = {
-        "pg_delivery_Coal01x",     
+        "pg_delivery_Coal01x",
     },
 
     ["chuckwagon002x"] = {
@@ -224,11 +222,11 @@ local vehicle_propsets = {
         "pg_vl_tradesman03",
         "pg_vl_tradesman04",
         "pg_vl_travellingFamily01",
-        "pg_vl_travellingLabour01",     
+        "pg_vl_travellingLabour01",
     },
 
     ["handcart"] = {
-        "pg_mission_trainrob3_01x",     
+        "pg_mission_trainrob3_01x",
     },
 
     ["horseBoat"] = {
@@ -272,7 +270,7 @@ local vehicle_propsets = {
     },
 
     ["ship_nbdGuama"] = {
-        "pg_veh_NBDguama_01x",         
+        "pg_veh_NBDguama_01x",
     },
 
     ["ship_nbdGuama2"] = {
@@ -291,7 +289,7 @@ local vehicle_propsets = {
     },
 
     ["stagecoach003x"] = {
-        "pg_veh_stagecoach003x_bootA",     
+        "pg_veh_stagecoach003x_bootA",
     },
 
     ["stagecoach004x"] = {
@@ -421,7 +419,7 @@ local vehicle_propsets = {
         "pg_vl_tradesman04",
         "pg_vl_travellingFamily01",
         "pg_vl_travellingLabour01",
-        "pg_veh_germFam_wagon04x_01",     
+        "pg_veh_germFam_wagon04x_01",
     },
 
     ["wagon05x"] = {
@@ -465,7 +463,7 @@ local vehicle_propsets = {
     },
 
     ["wagonDairy01x"] = {
-        "pg_delivery_dairy01x",    
+        "pg_delivery_dairy01x",
     },
 
     ["utilliwag"] = {
@@ -482,12 +480,12 @@ local vehicle_propsets = {
         "pg_veh_utilliwag_1",
         "pg_veh_utilliwag_2",
         "pg_veh_utilliwag_3",
-        "pg_veh_utilliwag_orange_1",   
+        "pg_veh_utilliwag_orange_1",
     },
 
     ["gatchuck"] = {
         "pg_mission_native2_01x",
-        "pg_teamster_payroll01x_gat",         
+        "pg_teamster_payroll01x_gat",
     },
 
     ["wagon05x_2"] = {
@@ -501,8 +499,6 @@ local vehicle_propsets = {
     ["TugBoat3"] = {
         "pg_moonshiner3_tugboat2_1",
     },
-
-
 
     -- DONT HAVE VEHICLE PROPSETS:
 
