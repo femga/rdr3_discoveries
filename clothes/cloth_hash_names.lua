@@ -75,9 +75,9 @@
 --  		"HORSE_SADDLEBAGS"		hex unsigned: 0x80451C25 	dec unsigned: 2152012837 	dec signed: -2142954459
 --  		"HORSE_TAILS"			hex unsigned: 0xA63CAE10 	dec unsigned: 2788994576 	dec signed: -1505972720
 --  		"horse_shoes"			hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232 
---  		"horse_accessories"		hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163 
+--			"horse_accessories"		hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163 
 --  		"horse_bridles"			hex unsigned: 0x94B2E3AF 	dec unsigned: 2494751663 	dec signed: -1800215633
---  		"horse_mustache"		hex unsigned: 0x30DEFDDF	dec unsigned: 819920351 	dec signed: 819920351 
+--			"horse_mustache"		hex unsigned: 0x30DEFDDF	dec unsigned: 819920351 	dec signed: 819920351 
 --  		"saddle_lanterns"		hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932   
 --  
 --
