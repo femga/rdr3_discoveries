@@ -600,5 +600,5 @@ local mp_female__boneNames = {
 	["XH_R_Hand00"]                       = {bone_index = 396, bone_id = 64847},
 	["XH_R_Hand01"]                       = {bone_index = 397, bone_id = 64848},
 	["XH_Spine"]                          = {bone_index = 467, bone_id = 65009},
-  
+
 }

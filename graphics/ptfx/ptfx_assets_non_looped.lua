@@ -1,16 +1,15 @@
-
 --		EXAMPLE. MAKE FIREWORK BURST FROM YOUR PED:
---------------------------------------------------------------------------------------------		
---------------------------------------------------------------------------------------------	
+--------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 --		local new_ptfx_dictionary = "scr_lom_train"
 --		local new_ptfx_name = "scr_ind1_firework_burst"
---		
+--
 --		local is_particle_effect_active = false
 --		local current_ptfx_dictionary = new_ptfx_dictionary
 --		local current_ptfx_name = new_ptfx_name
---		
+--
 --		local current_ptfx_handle_id = false
---		
+--
 --		local ptfx_offcet_x = 0.0
 --		local ptfx_offcet_y = 0.0
 --		local ptfx_offcet_z = 0.0
@@ -21,8 +20,8 @@
 --		local ptfx_axis_x = 0
 --		local ptfx_axis_y = 0
 --		local ptfx_axis_z = 0
---		
---		
+--
+--
 --		Citizen.CreateThread(function()
 --		   	while true do
 --		        Citizen.Wait(0)
@@ -39,8 +38,8 @@
 --		        		end
 --		    			if Citizen.InvokeNative(0x65BB72F29138F5D6, GetHashKey(current_ptfx_dictionary)) then  -- HasNamedPtfxAssetLoaded
 --		    				Citizen.InvokeNative(0xA10DB07FC234DD12, current_ptfx_dictionary) -- UseParticleFxAsset
---		
---		    				
+--
+--
 --		    				current_ptfx_handle_id =  Citizen.InvokeNative(0xE6CFE43937061143,current_ptfx_name,PlayerPedId(),ptfx_offcet_x,ptfx_offcet_y,ptfx_offcet_z,ptfx_rot_x,ptfx_rot_y,ptfx_rot_z,ptfx_scale,ptfx_axis_x,ptfx_axis_y,ptfx_axis_z)    -- StartNetworkedParticleFxNonLoopedOnEntity
 --		    				is_particle_effect_active = true
 --						else
@@ -53,22 +52,18 @@
 --							end
 --						end
 --						current_ptfx_handle_id = false
---						is_particle_effect_active = false	
+--						is_particle_effect_active = false
 --		        	end
 --		        end
 --		    end
---		end) 
+--		end)
 --
 ------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------
 
-
-
-
 -- ptfx_assets_non_looped = {
 -- 	[ptfx_dictionary] = {ptfx_name},
 -- }
-
 
 local ptfx_assets_non_looped = {
 	["scr_beechers"] = {
@@ -1469,5 +1464,3 @@ local ptfx_assets_non_looped = {
 		"blood_stone_crusher_exp",
 	},
 }
-
-

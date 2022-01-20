@@ -1,4 +1,4 @@
-## Example of using:  
+## Example of using:
 ```lua
 local function DrawTexture(textureStreamed,textureName,x, y, width, height,rotation,r, g, b, a, p11)
     if not HasStreamedTextureDictLoaded(textureStreamed) then
@@ -14,11 +14,8 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
- 
-
 
 <h3>Texture dictionary hashname (hash):</h3>
-
 
 <h2>dominos_set_3 (434231703)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x19E1D997.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0x19E1D997.ytd.zip">without bg</a>]</h4>
 
@@ -81,9 +78,6 @@ domino_0_4 | -1030104349 | ![domino_0_4](http://femga.com/images/samples/ui_text
 domino_1_6 | 1392314716 | ![domino_1_6](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x19E1D997.ytd/domino_1_6.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x19E1D997.ytd/domino_1_6.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0x19E1D997.ytd/domino_1_6.png)
  |  |
 
-
-
-
 <h2>dominos_set_6 (240173689)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x0E50C279.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0x0E50C279.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -144,9 +138,6 @@ domino_0_4 | -1030104349 | ![domino_0_4](http://femga.com/images/samples/ui_text
  |  |
 domino_1_6 | 1392314716 | ![domino_1_6](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x0E50C279.ytd/domino_1_6.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x0E50C279.ytd/domino_1_6.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0x0E50C279.ytd/domino_1_6.png)
  |  |
-
-
-
 
 <h2>dominos_set_1 (-193491261)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/domino/0xF4778EC3.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0xF4778EC3.ytd.zip">without bg</a>]</h4>
 
@@ -209,9 +200,6 @@ domino_0_4 | -1030104349 | ![domino_0_4](http://femga.com/images/samples/ui_text
 domino_1_6 | 1392314716 | ![domino_1_6](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0xF4778EC3.ytd/domino_1_6.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0xF4778EC3.ytd/domino_1_6.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0xF4778EC3.ytd/domino_1_6.png)
  |  |
 
-
-
-
 <h2>dominos_set_2 (665056539)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x27A3F51B.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0x27A3F51B.ytd.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -273,9 +261,6 @@ domino_0_4 | -1030104349 | ![domino_0_4](http://femga.com/images/samples/ui_text
 domino_1_6 | 1392314716 | ![domino_1_6](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x27A3F51B.ytd/domino_1_6.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0x27A3F51B.ytd/domino_1_6.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0x27A3F51B.ytd/domino_1_6.png)
  |  |
 
-
-
-
 <h2>dominos_set_5 (-1056659494)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/domino/0xC104A7DA.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0xC104A7DA.ytd.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -336,9 +321,6 @@ domino_0_4 | -1030104349 | ![domino_0_4](http://femga.com/images/samples/ui_text
  |  |
 domino_1_6 | 1392314716 | ![domino_1_6](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0xC104A7DA.ytd/domino_1_6.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/domino/0xC104A7DA.ytd/domino_1_6.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0xC104A7DA.ytd/domino_1_6.png)
  |  |
-
-
-
 
 <h2>dominos_set_4 (-887505904)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/domino/0xCB19BC10.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/domino/0xCB19BC10.ytd.zip">without bg</a>]</h4>
 

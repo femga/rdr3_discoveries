@@ -1,4 +1,4 @@
--- [entity_model] = { 
+-- [entity_model] = {
 -- 	{lightEffect_extension1},
 -- 	{lightEffect_extension2},
 -- 	{lightEffect_extension3},
@@ -10,7 +10,6 @@
 -- _SET_LIGHT_SCATTERING_DISABLED_FOR_OBJECT	(0x04D1D4E411CE52D0)
 -- _SET_LIGHT_TRANSLUCENCY_FOR_OBJECT	(0x63E39F09310F481F)
 -- etc...
-
 
 local entity_extensions__lightEffect = {
 
@@ -1727,7 +1726,7 @@ local entity_extensions__lightEffect = {
 	},
 
 	["mp001_mp_charcreate_lightsholder"] = {
-		"l_0057aa86gh",     -- fake hashname for entity extension hash 0xB7A2D817	
+		"l_0057aa86gh",     -- fake hashname for entity extension hash 0xB7A2D817
 	},
 
 	["mp001_mp_charcreate_lightsholder02"] = {

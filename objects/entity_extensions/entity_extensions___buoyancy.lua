@@ -42,5 +42,5 @@ local entity_model__to__buoyancy_name = {
 	["p_diveflag01x"] = {
 		"p_diveflag01x",
 	},
-	
+
 }

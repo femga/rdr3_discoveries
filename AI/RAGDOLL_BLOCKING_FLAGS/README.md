@@ -1,6 +1,5 @@
 ## Some RAGDOLL BLOCKING Flags
 
-
 ## Example
 
 ```lua
@@ -10,8 +9,8 @@
 <h2>Some known RAGDOLL BLOCKING Flags.</h2>
 
 FlagId | RAGDOLL BLOCKING FLAG Action Result
------------ | -------------------------- 
-0 | 
+----------- | --------------------------
+0 |
 1 | RBF_BULLET_IMPACT
 2 | RBF_VEHICLE_IMPACT
 4 | RBF_FIRE
@@ -24,12 +23,11 @@ FlagId | RAGDOLL BLOCKING FLAG Action Result
 512 | RBF_FALLING
 1024 | RBF_WATER_JET
 2048 | RBF_DROWNING
-4096 | 
+4096 |
 8192 | RBF_PLAYER_BUMP
 16384 | RBF_PLAYER_RAGDOLL_BUMP
 32768 | RBF_PED_RAGDOLL_BUMP
 65536 | RBF_VEHICLE_GRAB
 131072 | RBF_SMOKE_GRENADE
 262144 | RBF_HORSE_BUMP
-524288 | 
-
+524288 |

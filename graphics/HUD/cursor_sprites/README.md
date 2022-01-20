@@ -1,5 +1,4 @@
-
-## Example of using:  
+## Example of using:
 ```lua
 
 Citizen.CreateThread(function()
@@ -11,9 +10,7 @@ end)
 
 ```
 
-
 <h2>Cursor sprites</h2>
-
 
 Cursor ID | Cursor`s sprite name | Cursor`s sprite image
 ------------ | ---------------- | ---------------
@@ -38,6 +35,3 @@ Cursor ID | Cursor`s sprite name | Cursor`s sprite image
 18 | mouse_cursor_style_hand_finger_negative | ![mouse_cursor_style_hand_finger_negative](http://femga.com/images/samples/cursors/mouse_cursor_style_hand_finger_negative.png)
 19 | mouse_cursor_style_hand_finger_trimming | ![mouse_cursor_style_hand_finger_trimming](http://femga.com/images/samples/cursors/mouse_cursor_style_hand_finger_trimming.png)
 20 | mouse_cursor_style_hand_finger_dollar | ![mouse_cursor_style_hand_finger_dollar](http://femga.com/images/samples/cursors/mouse_cursor_style_hand_finger_dollar.png)
-
-
-

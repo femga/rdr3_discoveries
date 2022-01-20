@@ -1,7 +1,5 @@
 ## Some zones types and names
 
-
-
 ## Example
 
 ```lua
@@ -12,14 +10,14 @@
 	local ZoneTypeId = 10
   	local current_district = Citizen.InvokeNative(0x43AD8FC02B429D33 ,x,y,z,ZoneTypeId)
   	if current_district then
-  	  print("Current district is "..tostring(current_district)) 	  
+  	  print("Current district is "..tostring(current_district))
   	end
-	
+
 ```
 
 <h2>Some known zones types and names.</h2>
 
-ZoneTypeId | ZoneTypeName | ZoneTypeNameHash | ZoneName | ZoneNameHash hex | ZoneNameHash dec 
+ZoneTypeId | ZoneTypeName | ZoneTypeNameHash | ZoneName | ZoneNameHash hex | ZoneNameHash dec
 ----------- | ----------------- | --------------------- | --------------------- | --------------------- | ---------
 0 | STATE | 0x77A848C7 | Ambarino | 0xF2D2E4A4 | -221059932
 0 | STATE | 0x77A848C7 | Guarma | 0x7356B8ED | 1935063277
@@ -341,4 +339,3 @@ ZoneTypeId | ZoneTypeName | ZoneTypeNameHash | ZoneName | ZoneNameHash hex | Zon
 12 | TEXT_WRITTEN | 0x886AD928 | W_5_VETTERS_ECHO | 0x5511F36C | 1427239788
 12 | TEXT_WRITTEN | 0x886AD928 | W_6_RADLEYS_HOUSE | 0x7678268D | 1987585677
 12 | TEXT_WRITTEN | 0x886AD928 | W_6_REED_COTTAGE | 0x59607054 | 1499492436
-

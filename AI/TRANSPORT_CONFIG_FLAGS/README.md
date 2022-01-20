@@ -11,7 +11,7 @@
 <h2>Some known Transport Config Flags.</h2>
 
 FlagId | Transport Config Flag Result
------------ | -------------------------- 
+----------- | --------------------------
 0 | TCF_NotConsideredForEntryByLocalPlayer
 2 | Blocking the ability for anyone but players to get on
 4 | enabling transitions (with flag 5)

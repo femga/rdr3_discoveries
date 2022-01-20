@@ -77,5 +77,5 @@ local ammo_types = {
 	"AMMO_TOMAHAWK_HOMING",                        -- 0xABD7C401		-- -1411922943
 	"AMMO_TOMAHAWK_IMPROVED",                      -- 0xCE489834		-- -834103244
 	"AMMO_TURRET",                                 -- 0xBA2D509B		-- -1171435365
-	
+
 }

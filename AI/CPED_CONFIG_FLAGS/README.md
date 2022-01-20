@@ -5,7 +5,7 @@ To set Config Ped Flags u dont need to call it every frame (unlike CPed Reset Fl
 ## Example
 
 ```lua
-	Citizen.InvokeNative(0x1913FE4CBF41C463,PlayerPedId(),254,true)   -- SetPedConfigFlag, flag 254 gives full immunity vs melee and range attack	
+	Citizen.InvokeNative(0x1913FE4CBF41C463,PlayerPedId(),254,true)   -- SetPedConfigFlag, flag 254 gives full immunity vs melee and range attack
 ```
 
 <h2>Some known Config Ped Flags.</h2>
@@ -126,8 +126,8 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 347 | PCF_IsSanctionedShooter |  |  | false
 352 | together with 533: after few steps of stairs (up or down), ped turns back (dont effect vertical ladders) | cancel this config |  | false
 356 | PCF_BlockRobberyInteractionEscape |  |  | false
-359 | PCF_AllowInCombatInteractionLockonOnTargetPed |  |  | false 
-361 | setting to ignore weapon degradation |  |  | false 
+359 | PCF_AllowInCombatInteractionLockonOnTargetPed |  |  | false
+361 | setting to ignore weapon degradation |  |  | false
 364 | setting block instant death volumes for zone ?? |  |  | false
 366 | PCF_DisableVehicleTransitions |  |  | false
 370 | PCF_DisableDeadEyeTagging |  |  | false
@@ -181,9 +181,7 @@ FlagId | SetPedConfigFlag TRUE Result | SetPedConfigFlag FALSE Result | GetPedCo
 580 |  |  | PCF_IsTranquilized | false
 582 | PCF_AllowStudyInMP |  |  | false
 592 | Disabling full body hit reacts |  |  | false
-593 | Eagle Eye Skill dont unlock at rank |  |  | false 
+593 | Eagle Eye Skill dont unlock at rank |  |  | false
 595 | PCF_AllowAutoSwitchToProjectiles |  |  | false
 599 | PCF_DisableScenarioWarpWeaponDestruction |  |  | false
 600 | PCF_SkipOwnershipCheckForHorseToEquipWeapons |  |  | false
-
-

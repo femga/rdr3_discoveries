@@ -29,8 +29,6 @@
 --	p7, --[[ number ]]
 --)
 
-
-
 TaskItemInteraction(PlayerPedId(), GetHashKey("DOCUMENT_PLAYER_JOURNAL"), GetHashKey("JOURNAL_USE"), 1, 0, 0)
 
 TaskItemInteraction_2(PlayerPedId(), GetHashKey("CONSUMABLE_COFFEE"), object_id, GetHashKey("P_MUGCOFFEE01X_PH_R_HAND"), GetHashKey("DRINK_COFFEE_HOLD"), 1, 0, -1) -- this native requires an object

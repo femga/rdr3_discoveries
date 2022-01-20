@@ -1,4 +1,3 @@
-
 local overlays_info = {
 
     ["eyebrows"] = {
@@ -28,7 +27,6 @@ local overlays_info = {
                     {id=0xFE183197,albedo=0x92B508CD,normal=0x6AA92A3E,ma=0xB4A436DB,},    --   {albedo="mp_u_faov_eyebrow_m_004_ab",normal="mp_u_faov_eyebrow_m_004_nm",ma="mp_u_faov_eyebrow_m_004_ma",},
                 },
 
-
     ["scars"] =     {
                     {id=0xC8E45B5B,albedo=0x6245579F,normal=0xD53A336F,},       -- {albedo="mp_u_faov_scar_000_ab",normal="mp_u_faov_scar_000_nm",},
                     {id=0x90D86B44,albedo=0xA1538E6F,normal=0xDFCB1159,},       -- {albedo="mp_u_faov_scar_001_ab",normal="mp_u_faov_scar_001_nm",},
@@ -47,7 +45,7 @@ local overlays_info = {
                     {id=0x0ED23C06,albedo=0xAEA45D76,normal=0x364DAAA6,},       -- {albedo="mp_u_faov_scar_014_ab",normal="mp_u_faov_scar_014_nm",},
                     {id=0x5712CCB6,albedo=0x9318AF61,normal=0x98104C8C,},       -- {albedo="mp_u_faov_scar_015_ab",normal="mp_u_faov_scar_015_nm",},
 
-                },  
+                },
 
     ["eyeliners"] = {
                     {id=0x29A2E58F,albedo=0xA952BF75,ma=0xDD55AF2A,},                                                -- {albedo="mp_u_faov_eyeliner_000_ab",ma="mp_u_faov_eyeliner_000_ma",},
@@ -158,7 +156,7 @@ local overlays_info = {
                     {id=0xFDE40D8B,albedo=0x6DBC9203,},                                                              -- {albedo="mp_u_faov_freckles_011_ab",},
                     {id=0x7E338E44,albedo=0x097D1D0A,},                                                              -- {albedo="mp_u_faov_freckles_012_ab",},
                     {id=0x70F273C2,albedo=0x81A25BCE,},                                                              -- {albedo="mp_u_faov_freckles_013_ab",},
-                    {id=0x61C7D56D,albedo=0x197A1335,},                                                              -- {albedo="mp_u_faov_freckles_014_ab",},  
+                    {id=0x61C7D56D,albedo=0x197A1335,},                                                              -- {albedo="mp_u_faov_freckles_014_ab",},
     },
     ["grime"] =     {
                     {id=0xA2F30923,albedo=0x16CDD724,normal=0x136165B3,ma=0xF3DFA7AC,},                              -- {albedo="mp_u_faov_grime_000_ab",normal="mp_u_faov_grime_000_nm",ma="mp_u_faov_grime_000_ma",},
@@ -250,7 +248,6 @@ local color_palettes = {
     {0xFB71527B,},
 }
 
-
 local texture_types = {
     ["male"] = {
         albedo=GetHashKey("head_fr1_sc08_soft_c0_001_ab"),
@@ -263,7 +260,7 @@ local texture_types = {
     ["female"] = {
         albedo=GetHashKey("mp_head_fr1_sc08_c0_000_ab"),
         normal=GetHashKey("head_fr1_mp_002_nm"),
-        material=0x7FC5B1E1, 
+        material=0x7FC5B1E1,
         color_type=1,
         texture_opacity=1.0,
         unk_arg=0,
@@ -273,33 +270,29 @@ local texture_types = {
 local current_texture_settings = texture_types["male"]
 
 local overlay_all_layers = {
-    {name="eyebrows",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,    },                                      
-    {name="scars",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },                                      
-    {name="eyeliners",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,   },                                      
-    {name="lipsticks",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,   },                                      
-    {name="acne",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,        },                                      
-    {name="shadows",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,     },                                      
-    {name="beardstabble",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,},                                      
-    {name="paintedmasks",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,},                                      
-    {name="ageing",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,      },                                      
-    {name="blush",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },                                      
-    {name="complex",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,     },                                      
-    {name="disc",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,        },                                      
-    {name="foundation",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,  },                                      
-    {name="freckles",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,    },                                      
-    {name="grime",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },                                      
-    {name="hair",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,        },                                      
-    {name="moles",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },                                      
-    {name="spots",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },                                      
+    {name="eyebrows",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,    },
+    {name="scars",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },
+    {name="eyeliners",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,   },
+    {name="lipsticks",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,   },
+    {name="acne",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,        },
+    {name="shadows",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,     },
+    {name="beardstabble",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,},
+    {name="paintedmasks",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,},
+    {name="ageing",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,      },
+    {name="blush",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },
+    {name="complex",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,     },
+    {name="disc",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,        },
+    {name="foundation",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,  },
+    {name="freckles",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,    },
+    {name="grime",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },
+    {name="hair",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,        },
+    {name="moles",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },
+    {name="spots",visibility=0,tx_id=1,tx_normal=0,tx_material=0,tx_color_type=0,tx_opacity=1.0,tx_unk=0,palette=0,palette_color_primary=0,palette_color_secondary=0,palette_color_tertiary=0,var=0,opacity=1.0,       },
 }
-
-
 
 local textureId = -1
 local overlay_opacity = 1.0
 local is_overlay_change_active = false
-
-
 
 -- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!    BIND THIS FUNCTION TO YOUR MENU    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -319,7 +312,6 @@ local is_overlay_change_active = false
 -- palette_color_tertiary:      from 0 till 254
 -- var:                         0, for "eyeliners" from 0 till 15, for "shadows" from 0 till 5, for "lipsticks" from 0 till 7,
 -- opacity:                     from 0.0 till 1.0
-
 
 local function toggleOverlayChange(name,visibility,tx_id,tx_normal,tx_material,tx_color_type,tx_opacity,tx_unk,palette_id,palette_color_primary,palette_color_secondary,palette_color_tertiary,var,opacity)
     for k,v in pairs(overlay_all_layers) do
@@ -354,13 +346,13 @@ end
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
-        if is_overlay_change_active then  
+        if is_overlay_change_active then
             local ped = PlayerPedId()
             if IsPedMale(ped) then
                 current_texture_settings = texture_types["male"]
             else
                 current_texture_settings = texture_types["female"]
-            end          
+            end
             if textureId ~= -1 then
                 Citizen.InvokeNative(0xB63B9178D0F58D82,textureId)  -- reset texture
                 Citizen.InvokeNative(0x6BEFAA907B076859,textureId)  -- remove texture
@@ -387,10 +379,6 @@ Citizen.CreateThread(function()
         end
     end
 end)
-
-
-
-
 
 -- arg[1] name:                        name of overlay
 -- arg[2] visibility:                  0 or 1
@@ -422,9 +410,9 @@ end)
 -- "moles"
 -- "spots"
 
--- for example: 
+-- for example:
 -- Apply default color to lipsticks:
--- /ov lipsticks 1 
+-- /ov lipsticks 1
 -- Apply 15th type of eyebrows:
 -- /ov eyebrows 1 15
 -- Apply 12th type of scars:
@@ -436,8 +424,8 @@ end)
 -- Remove shadows:
 -- /ov shadows 0
 
-RegisterCommand('/ov', function(source, args)   
-    if args [1] ~= nil then    
+RegisterCommand('/ov', function(source, args)
+    if args [1] ~= nil then
         local name = args[1]
         local visibility = 1
         if args[2] ~= nil then
@@ -450,7 +438,7 @@ RegisterCommand('/ov', function(source, args)
         local var = 0
         if args[4] ~= nil then
             var = tonumber(args[4])
-        end 
+        end
         local tx_color_type = 0
         if name == "scars" or name == "spots" or name == "disc" or name == "complex" or name == "acne" or name == "ageing" or name == "moles" or name == "freckles" then
             tx_color_type = 1
@@ -458,7 +446,7 @@ RegisterCommand('/ov', function(source, args)
         local opacity = 1.0
         if args[5] ~= nil then
             opacity = tonumber(args[5])
-        end 
+        end
         local palette_id = 1
         if args[6] ~= nil then
             palette_id =  tonumber(args[6])
@@ -471,10 +459,10 @@ RegisterCommand('/ov', function(source, args)
         if args[8] ~= nil then
             palette_color_secondary = tonumber(args[8])
         end
-        local palette_color_tertiary = 0 
+        local palette_color_tertiary = 0
         if args[9] ~= nil then
             palette_color_tertiary = tonumber(args[9])
-        end 
+        end
         toggleOverlayChange(name,visibility,tx_id,0,0,tx_color_type,1.0,0,palette_id,palette_color_primary,palette_color_secondary,palette_color_tertiary,var,opacity)
     end
 end)

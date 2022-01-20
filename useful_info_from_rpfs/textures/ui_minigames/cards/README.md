@@ -1,4 +1,4 @@
-## Example of using:  
+## Example of using:
 ```lua
 local function DrawTexture(textureStreamed,textureName,x, y, width, height,rotation,r, g, b, a, p11)
     if not HasStreamedTextureDictLoaded(textureStreamed) then
@@ -14,8 +14,6 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
- 
-
 
 <h3>Texture dictionary hashname (hash):</h3>
 
@@ -130,9 +128,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xAC515A77.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0xAC515A77.ytd/spades_7.png)
  |  |
 
-
-
-
 <h2>card_set_1 (-695324944)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0xD68E2EF0.ytd.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -243,9 +238,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
  |  |
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xD68E2EF0.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0xD68E2EF0.ytd/spades_7.png)
  |  |
-
-
-
 
 <h2>card_set_9 (682513207)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x28AE5337.ytd.zip">without bg</a>]</h4>
 
@@ -358,9 +350,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x28AE5337.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x28AE5337.ytd/spades_7.png)
  |  |
 
-
-
-
 <h2>card_set_8 (459880621)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x1B6938AD.ytd.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -471,9 +460,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
  |  |
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x1B6938AD.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x1B6938AD.ytd/spades_7.png)
  |  |
-
-
-
 
 <h2>card_set_4 (1875796338)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x6FCE6172.ytd.zip">without bg</a>]</h4>
 
@@ -586,9 +572,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x6FCE6172.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x6FCE6172.ytd/spades_7.png)
  |  |
 
-
-
-
 <h2>card_set_5 (-1651983130)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x9D88BCE6.ytd.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -699,9 +682,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
  |  |
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x9D88BCE6.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x9D88BCE6.ytd/spades_7.png)
  |  |
-
-
-
 
 <h2>card_set_6 (938340790)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x37EDF1B6.ytd.zip">without bg</a>]</h4>
 
@@ -814,9 +794,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x37EDF1B6.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x37EDF1B6.ytd/spades_7.png)
  |  |
 
-
-
-
 <h2>card_set_3 (-1173195271)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0xBA1275F9.ytd.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -928,8 +905,6 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0xBA1275F9.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0xBA1275F9.ytd/spades_7.png)
  |  |
 
-
-
 <h2>card_set_7 (1158941698)</h2><h4>[download full pack <a href="http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd.zip">with bg</a> / <a href="http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x45140C02.ytd.zip">without bg</a>]</h4>
 
 Texture hashname | Texture hash | Texture example | Download image with<br> or without background
@@ -1040,6 +1015,3 @@ spades_3 | 1049716172 | ![spades_3](http://femga.com/images/samples/ui_textures/
  |  |
 spades_7 | -1400094260 | ![spades_7](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_7.png) | [with bg](http://femga.com/images/samples/ui_textures/ui_minigames/cards/0x45140C02.ytd/spades_7.png) / [without bg](http://femga.com/images/samples/ui_textures_no_bg/ui_minigames/cards/0x45140C02.ytd/spades_7.png)
  |  |
-
-
-

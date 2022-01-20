@@ -1,4 +1,3 @@
-
 ## Combat Action Disable Flags
 
 Combat Action Disable Flags disable actions from this ped or against this ped.

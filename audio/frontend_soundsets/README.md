@@ -12,12 +12,12 @@ local frontend_soundset_name =  "DEADEYE"
 
 Citizen.CreateThread(function()
   while true do
-      Citizen.Wait(0) 
+      Citizen.Wait(0)
       if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
-        if not is_frontend_sound_playing then           
+        if not is_frontend_sound_playing then
           if frontend_soundset_ref ~= 0 then
             Citizen.InvokeNative(0x0F2A2175734926D8,frontend_soundset_name, frontend_soundset_ref);   -- load sound frontend
-          end    
+          end
           Citizen.InvokeNative(0x67C540AA08E4A6F5,frontend_soundset_name, frontend_soundset_ref, true, 0);  -- play sound frontend
           is_frontend_sound_playing = true
           print("sound frontend is playing")

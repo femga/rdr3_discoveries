@@ -9,7 +9,7 @@ Citizen.CreateThread(function()
 
 		local color_text = "This color is ~COLOR_REDLIGHT~COLOR_REDLIGHT"
 		Citizen.InvokeNative(0xd79334a4bb99bad1, Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", color_text, Citizen.ResultAsLong()), 0.1, 0.4)
-		
+
 		local color_text = "These colors are ~pa~COLOR_POSSE_ALLY ~COLOR_WHITE~, COLOR_WHITE and ~COLOR_REPLAY_GREEN~COLOR_REPLAY_GREEN"
 		Citizen.InvokeNative(0xd79334a4bb99bad1, Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", color_text, Citizen.ResultAsLong()), 0.1, 0.5)
 
@@ -17,11 +17,10 @@ Citizen.CreateThread(function()
 end)
 ```
 
-### SHORT CODES 
- 
+### SHORT CODES
+
  Example of using:
  ```"I am a great magician! Your clothes are ~e~red!"```
-         
 
 e   -  COLOR_ENEMY
 
@@ -61,11 +60,10 @@ t7  -  COLOR_NET_PLAYER9
 
 t8  -  COLOR_NET_PLAYER10
 
+### FULL CODES
 
-### FULL CODES	
-
-Color hashnames | Color examples 
------------- | ---------------- 
+Color hashnames | Color examples
+------------ | ----------------
 COLOR_PURE_WHITE<br>COLOR_WHITE<br>COLOR_BLACK<br>COLOR_OFF_BLACK<br>COLOR_GREY | ![screen_1.png](http://femga.com/images/samples/screenshots/screen_1.png)
 COLOR_GREYLIGHT<br>COLOR_GREYMID<br>COLOR_GREYDARK<br>COLOR_RED<br>COLOR_REDLIGHT | ![screen_2.png](http://femga.com/images/samples/screenshots/screen_2.png)
 COLOR_REDDARK<br>COLOR_BLUE<br>COLOR_BLUELIGHT<br>COLOR_BLUEDARK<br>COLOR_YELLOWSTRONG | ![screen_3.png](http://femga.com/images/samples/screenshots/screen_3.png)

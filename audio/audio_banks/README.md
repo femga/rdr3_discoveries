@@ -1,6 +1,5 @@
 ## AUDIO BANKS
 
-
 ## Some speech params for functions:
 
 ```
@@ -32,7 +31,7 @@ end
 function play_ambient_speech_from_entity(entity_id,sound_ref_string,sound_name_string,speech_params_string,speech_line)
 
 argument |  description
------------- | ---------------- 
+------------ | ----------------
 ENTITY_ID | ped id
 SOUND_REF_STRING | audio bank dictionary
 SOUND_NAME_STRING | name of sound from audio bank dictionary. Name should not contain last doubles. For example, audio bank dictionary "0132_G_M_M_UNICRIMINALS_01_BLACK_01" contains seven names from GIDDY_UP_ESCALATED_01 till GIDDY_UP_ESCALATED_07. But sound_name_string for all of them is "GIDDY_UP_ESCALATED".
@@ -40,7 +39,6 @@ SPEECH_PARAMS_STRING | speech params string from table. Some params dont work. U
 SPEECH_LINE | whats line to play (for GIDDY_UP_ESCALATED it is from 1 till 7). 0 - play random line.
 
 function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_name_string,speech_line) have same arguments and coords x,y,z for sound positon.
-
 
 ## Example of using audio banks for ambient speech (PLAY_AMBIENT_SPEECH1 and PLAY_AMBIENT_SPEECH_AT_COORDS):
 
@@ -71,12 +69,12 @@ function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_name_str
 				        Int64 = { code = "i8", size = 8 },
 				        Uint64 = { code = "I8", size = 8 },
 
-				        LuaInt = { code = "j", size = 8 }, 
-				        UluaInt = { code = "J", size = 8 }, 
-				        LuaNum = { code = "n", size = 8}, 
+				        LuaInt = { code = "j", size = 8 },
+				        UluaInt = { code = "J", size = 8 },
+				        LuaNum = { code = "n", size = 8},
 				        Float32 = { code = "f", size = 4 },
-				        Float64 = { code = "d", size = 8 }, 
-				        String = { code = "z", size = -1, }, 
+				        Float64 = { code = "d", size = 8 },
+				        String = { code = "z", size = -1, },
 				    },
 
 				    FixedTypes = {
@@ -206,7 +204,6 @@ function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_name_str
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 
-
 local function play_ambient_speech_from_entity(entity_id,sound_ref_string,sound_name_string,speech_params_string,speech_line)
     local struct = DataView.ArrayBuffer(128)
     local sound_name = Citizen.InvokeNative(0xFA925AC00EB830B9, 10, "LITERAL_STRING", sound_name_string,Citizen.ResultAsLong())
@@ -220,7 +217,7 @@ local function play_ambient_speech_from_entity(entity_id,sound_ref_string,sound_
     speech_params_BigInt:SetInt64(0,speech_params)
     struct:SetInt64(0,sound_name_BigInt:GetInt64(0))
     struct:SetInt64(8,sound_ref_BigInt:GetInt64(0))
-    struct:SetInt32(16, speech_line)   
+    struct:SetInt32(16, speech_line)
     struct:SetInt64(24,speech_params_BigInt:GetInt64(0))
     struct:SetInt32(32, 0)
     struct:SetInt32(40, 1)
@@ -241,7 +238,7 @@ local function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_na
     speech_params_BigInt:SetInt64(0,291934926)
     struct:SetInt64(0,sound_name_BigInt:GetInt64(0))
     struct:SetInt64(8,sound_ref_BigInt:GetInt64(0))
-    struct:SetInt32(16, speech_line)   
+    struct:SetInt32(16, speech_line)
     struct:SetInt64(24,speech_params_BigInt:GetInt64(0))
     struct:SetInt32(32, 0)
     struct:SetInt32(40, 1)
@@ -250,28 +247,23 @@ local function play_ambient_speech_from_position(x,y,z,sound_ref_string,sound_na
 	Citizen.InvokeNative(0xED640017ED337E45,x,y,z,struct:Buffer())
 end
 
-
 Citizen.CreateThread(function()
   while true do
-    Citizen.Wait(0) 
+    Citizen.Wait(0)
     if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
     	play_ambient_speech_from_entity(PlayerPedId(),"0315_U_M_M_NbxDoctor_01","CHAT_PEDTYPE_DIALOG","speech_params_force",0)
     end
   end
 end)
 
-
 Citizen.CreateThread(function()
   while true do
-    Citizen.Wait(0) 
+    Citizen.Wait(0)
     if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x956C2A0E) then   -- pressed R
-    	local x,y,z =  table.unpack(GetEntityCoords(PlayerPedId())) 
+    	local x,y,z =  table.unpack(GetEntityCoords(PlayerPedId()))
     	play_ambient_speech_from_position(x,y+10,z,"0013_A_F_M_ASBTOWNFOLK_01_WHITE_01","WHATS_YOUR_PROBLEM",0)
     end
   end
 end)
 
 ```
-
-
-

@@ -1,7 +1,7 @@
-## Example of using:  
+## Example of using:
 ```lua
 Citizen.CreateThread(function()
-    Citizen.Wait(10000)    
+    Citizen.Wait(10000)
 
 	local moonshine_interior_id = 77313
 	local imaps_for_moonshine_interior_id_77313 = {
@@ -23,14 +23,13 @@ Citizen.CreateThread(function()
 		"mp006_mshine_theme_christmas",
 	}
 
-
 	-- request imap for moonshine interior:
 	for k,v in pairs(imaps_for_moonshine_interior_id_77313) do
 		if not IsImapActive(v) then
 		    RequestImap(v)
 		end
 	end
-	-- activate some interior entity sets. 
+	-- activate some interior entity sets.
 	for k,v in pairs(interior_sets_for_moonshine_interior) do
 	  if not IsInteriorEntitySetActive(moonshine_interior_id,v) then
 	    ActivateInteriorEntitySet(moonshine_interior_id,v)
@@ -38,11 +37,10 @@ Citizen.CreateThread(function()
 	end
 
 	-- teleport player to moonshine interior
-	Citizen.InvokeNative(0x239A3351AC1DA385,PlayerPedId(),1782.6,-804.5,189.2,true,true,true) 
+	Citizen.InvokeNative(0x239A3351AC1DA385,PlayerPedId(),1782.6,-804.5,189.2,true,true,true)
 
 end)
 ```
- 
 
 ## Interior Sets
 

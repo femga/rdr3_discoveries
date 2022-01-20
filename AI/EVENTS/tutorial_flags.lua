@@ -975,6 +975,5 @@ local tutorial_flags = {
 	"TF_MP_CHALLENGES_ROLE_BOUNTY_HUNTER_011",                            -- 0x55A06A00		-- 1436576256
 	"TF_MP_CLOUD_LETTER_TELEGRAM_COLLECTED",                              -- 0x37ABDF77		-- 934010743
 	"NUM_CURRENT_TUTORIALS",                                              -- 0xDE828176		-- -561872522
-	
-}
 
+}

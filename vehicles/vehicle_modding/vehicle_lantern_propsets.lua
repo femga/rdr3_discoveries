@@ -6,11 +6,10 @@
 
 -- Example of use:
 -- ... create some vehicle wagonPrison01x
--- Citizen.InvokeNative(0xC0F0417A90402742, vehicle_wagonPrison01x_id, GetHashKey("pg_veh_wagonPrison01x_lanterns01")) -- _ADD_VEHICLE_LANTERN_PROPSETS 
+-- Citizen.InvokeNative(0xC0F0417A90402742, vehicle_wagonPrison01x_id, GetHashKey("pg_veh_wagonPrison01x_lanterns01")) -- _ADD_VEHICLE_LANTERN_PROPSETS
 -- Citizen.InvokeNative(0xE31C0CB1C3186D40, vehicle_wagonPrison01x_id)  -- _REMOVE_ALL_VEHICLE_LANTERN_PROPSETS
 
 --------------------------------------------------------------------------------
-
 
 local vehicle_lantern_propsets = {
 
@@ -147,11 +146,7 @@ local vehicle_lantern_propsets = {
         "pg_veh_tugboat2_lights01x",
     },
 
-
-
-
-
-    -- DONT HAVE LANTERN_PROPSETS: 
+    -- DONT HAVE LANTERN_PROPSETS:
 
     -- ["privateopensleeper02x"] = {},
     -- ["privateopensleeper01x"] = {},

@@ -1,11 +1,11 @@
 -- Here i will post all names for cloth joaat hashes. It helps a lot to sort this shit out.
 
 --  All categories are joaat hashes from these names:
---  
---  
+--
+--
 --  KNOWN HASHNAMES FOR CATEGORIES:
 --  	PEDS:
---  
+--
 --  		"boot_accessories"   	hex unsigned: 0x18729F39   	dec unsigned: 410165049   	dec signed: 410165049
 --  		"pants"              	hex unsigned: 0x1D4C528A   	dec unsigned: 491541130   	dec signed: 491541130
 --  		"cloaks"             	hex unsigned: 0x3C1A74CD   	dec unsigned: 1008366797  	dec signed: 1008366797
@@ -46,7 +46,7 @@
 --  		"talisman_belt"      	hex unsigned: 0x1AECF7DC   	dec unsigned: 451737564   	dec signed: 451737564
 --  		"ammo_pistols"       	hex unsigned: 0x3F1F01E5   	dec unsigned: 1058996709  	dec signed: 1058996709
 --  		"holsters_crossdraw" 	hex unsigned: 0x49C89D9B   	dec unsigned: 1237884315  	dec signed: 1237884315
---  		"aprons"				hex unsigned: 0x76F0E272   	dec unsigned: 1995498098  	dec signed: 1995498098	
+--  		"aprons"				hex unsigned: 0x76F0E272   	dec unsigned: 1995498098  	dec signed: 1995498098
 --  		"skirts"             	hex unsigned: 0xA0E3AB7F   	dec unsigned: 2699275135  	dec signed: -1595692161
 --			"MASKS_LARGE"			hex unsigned: 0x4A73515C 	dec unsigned: 1249071452 	dec signed: 1249071452
 --			"heads"    				hex unsigned: 0x378AD10C  	dec unsigned: 931844364  	dec signed: 931844364
@@ -62,37 +62,34 @@
 --  		"hair_accessories"		hex unsigned: 0x8E84A2AA 	dec unsigned: 2391057066 	dec signed: -1903910230
 --			"dresses" 				hex unsigned: 0xA2926F9B 	dec unsigned: 2727505819 	dec signed: -1567461477
 
---  
+--
 --  	HORSES:
---  
+--
 --  		"horse_saddles"   		hex unsigned: 0xBAA7E618 	dec unsigned: 3131565592    dec signed: -1163401704
---  		"horse_bedrolls"  		hex unsigned: 0xEFB31921 	dec unsigned: 4021492001    dec signed: -273475295 
---  		"horse_blankets"  		hex unsigned: 0x17CEB41A 	dec unsigned: 399422490     dec signed: 399422490  
---  		"saddle_stirrups" 		hex unsigned: 0xDA6DADCA 	dec unsigned: 3664621002    dec signed: -630346294 
---  		"saddle_horns"    		hex unsigned: 0x5447332  	dec unsigned: 88372018      dec signed: 88372018   
+--  		"horse_bedrolls"  		hex unsigned: 0xEFB31921 	dec unsigned: 4021492001    dec signed: -273475295
+--  		"horse_blankets"  		hex unsigned: 0x17CEB41A 	dec unsigned: 399422490     dec signed: 399422490
+--  		"saddle_stirrups" 		hex unsigned: 0xDA6DADCA 	dec unsigned: 3664621002    dec signed: -630346294
+--  		"saddle_horns"    		hex unsigned: 0x5447332  	dec unsigned: 88372018      dec signed: 88372018
 --  		"horse_manes"			hex unsigned: 0xAA0217AB 	dec unsigned: 2852263851 	dec signed: -1442703445
 --  		"HORSE_SADDLEBAGS"		hex unsigned: 0x80451C25 	dec unsigned: 2152012837 	dec signed: -2142954459
 --  		"HORSE_TAILS"			hex unsigned: 0xA63CAE10 	dec unsigned: 2788994576 	dec signed: -1505972720
---  		"horse_shoes"			hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232 
---  
+--  		"horse_shoes"			hex unsigned: 0xFACFC3C0 	dec unsigned: 4207920064 	dec signed: -87047232
+--
 --
 --  UNKNOWN YET HASHNAMES FOR CATEGORIES:
---  
+--
 --  	PEDS:
---  
+--
 --  *beards*						hex unsigned: 0xF8016BCA 	dec unsigned: 4160842698 	dec signed: -134124598
---  								
---  
+--
+--
 --  	HORSES:
---  
+--
 --  *horse saddle holster*			hex unsigned: 0xAC106B30 	dec unsigned: 2886757168 	dec signed: -1408210128
 --  *horse bridle*					hex unsigned: 0x94B2E3AF 	dec unsigned: 2494751663 	dec signed: -1800215633
---  *horse lantern*					hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932  
---  *horse masks*					hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163  
---	*horse mustache*				hex unsigned: 0x30DEFDDF	dec unsigned: 819920351 	dec signed: 819920351  
-
-
-
+--  *horse lantern*					hex unsigned: 0x1530BE1C 	dec unsigned: 355515932  	dec signed: 355515932
+--  *horse masks*					hex unsigned: 0xD3500E5D 	dec unsigned: 3545239133 	dec signed: -749728163
+--	*horse mustache*				hex unsigned: 0x30DEFDDF	dec unsigned: 819920351 	dec signed: 819920351
 
 local cloth_hash_names = {
 

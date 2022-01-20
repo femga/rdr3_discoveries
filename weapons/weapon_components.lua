@@ -1,22 +1,22 @@
 --		Weapon components fall into two groups: "model-specific" and "shared". "Shared" are divided into "shortarm", "longarm",
---		"shotgun" and "melee_blade". 
+--		"shotgun" and "melee_blade".
 --		Be careful, the "FRAME_VERTDATA" component breaks colors for other components. You must remove it for the other
 --		components to work.
---		
---		
---		
---		
---		
+--
+--
+--
+--
+--
 --		Example. Create weapon object, load weapon asset (with native 0x72D4CB5DB927009C) if your ped dont equip this type of weapon yet, and then :
---		
---		
+--
+--
 --		local entity_id = ENTITY_ID_HERE   --  WEAPON_REVOLVER_CATTLEMAN object id here or ped with equipped WEAPON_REVOLVER_CATTLEMAN
 --		local weapon_object_model_hash = GetHashKey("WEAPON_REVOLVER_CATTLEMAN")
 --		local weapon_component_hash1 = GetHashKey("COMPONENT_REVOLVER_CATTLEMAN_BARREL_LONG")    		-- model-specific weapon component
 --		local weapon_component_hash2 = GetHashKey("COMPONENT_SHORTARM_BARREL_MATERIAL_7")				-- shared weapon component
 --		local weapon_component_hash3 = GetHashKey("COMPONENT_SHORTARM_BARREL_ENGRAVING_2")				-- shared weapon component
 --		local weapon_component_hash4 = GetHashKey("COMPONENT_SHORTARM_BARREL_ENGRAVING_MATERIAL_3")		-- shared weapon component
---		
+--
 --		local function apply_weapon_component(weapon_component_hash)
 --			local weapon_component_model_hash = Citizen.InvokeNative(0x59DE03442B6C9598,weapon_component_hash)  -- GetWeaponComponentTypeModel
 --			if weapon_component_model_hash and weapon_component_model_hash ~= 0 then
@@ -30,28 +30,28 @@
 --					Citizen.InvokeNative(0x74C9090FDD1BB48E,entity_id,weapon_component_hash, weapon_object_model_hash, true)  -- GiveWeaponComponentToEntity
 --					SetModelAsNoLongerNeeded(weapon_component_model_hash)
 --				end
---			end	
+--			end
 --		end
---		
+--
 --		apply_weapon_component(weapon_component_hash1)
 --		apply_weapon_component(weapon_component_hash2)
 --		apply_weapon_component(weapon_component_hash3)
 --		apply_weapon_component(weapon_component_hash4)
---		
---		
---		
---		
---		
+--
+--
+--
+--
+--
 --		To remove weapon component:
---		
+--
 --		if Citizen.InvokeNative(0x76A18844E743BF91,entity_id, GetHashKey("COMPONENT_SHORTARM_BARREL_ENGRAVING_2") ) then  -- HasWeaponGotWeaponComponent
 --		  	Citizen.InvokeNative(0xF7D82B0D66777611,entity_id, GetHashKey("COMPONENT_SHORTARM_BARREL_ENGRAVING_2") )   -- RemoveWeaponComponentFromWeaponObject
 --		end
---			
---		
---		
---		
---		
+--
+--
+--
+--
+--
 --		local weapon__to__shared_group_of_components = {
 --			["WEAPON_BOW"]                           = {},
 --			["WEAPON_FISHINGROD"]                    = {},
@@ -124,10 +124,6 @@
 --			["WEAPON_MELEE_LANTERN_HALLOWEEN"]       = {},
 --		}
 
-
-
-
-
 local model_specific_components = {
 
     ["WEAPON_REVOLVER_CATTLEMAN"] = {
@@ -154,7 +150,6 @@ local model_specific_components = {
         },
     },
 
-
     ["WEAPON_REVOLVER_DOUBLEACTION"] = {
         ["BARREL"] = {
           "COMPONENT_REVOLVER_DOUBLEACTION_BARREL_SHORT",
@@ -174,16 +169,11 @@ local model_specific_components = {
         },
     },
 
-
-
-
     ["WEAPON_REVOLVER_DOUBLEACTION_EXOTIC"] = {
         ["GRIP"] = {
           "COMPONENT_REVOLVER_DOUBLEACTION_GRIP_EXOTIC",
-        },  
+        },
     },
-
-
 
     ["WEAPON_REVOLVER_SCHOFIELD"] = {
         ["BARREL"] = {
@@ -208,8 +198,6 @@ local model_specific_components = {
           "COMPONENT_SHORTARM_FRAME_ENGRAVING_SCHOFIELD_BOUNTY",
         },
     },
-
-
 
     ["WEAPON_PISTOL_MAUSER"] = {
         ["BARREL"] = {
@@ -238,8 +226,6 @@ local model_specific_components = {
         }
     },
 
-
-
     ["WEAPON_PISTOL_SEMIAUTO"] = {
         ["BARREL"] = {
           "COMPONENT_PISTOL_SEMIAUTO_BARREL_SHORT",
@@ -260,8 +246,6 @@ local model_specific_components = {
           "COMPONENT_PISTOL_SEMIAUTO_CLIP",
         },
     },
-
-
 
     ["WEAPON_PISTOL_VOLCANIC"] = {
         ["BARREL"] = {
@@ -287,7 +271,6 @@ local model_specific_components = {
         },
 
     },
-
 
     ["WEAPON_PISTOL_M1899"] = {
         ["BARREL"] = {
@@ -346,8 +329,6 @@ local model_specific_components = {
         },
     },
 
-
-
     ["WEAPON_REPEATER_CARBINE"] = {
 
         ["GRIP"] = {
@@ -376,7 +357,6 @@ local model_specific_components = {
         },
     },
 
-
     ["WEAPON_REPEATER_HENRY"] = {
 
         ["GRIP"] = {
@@ -398,7 +378,6 @@ local model_specific_components = {
           "COMPONENT_REPEATER_HENRY_WRAP6",
         },
     },
-
 
     ["WEAPON_REPEATER_EVANS"] = {
 
@@ -427,8 +406,6 @@ local model_specific_components = {
         },
     },
 
-
-
     ["WEAPON_REPEATER_WINCHESTER"] = {
 
         ["GRIP"] = {
@@ -455,9 +432,6 @@ local model_specific_components = {
           "COMPONENT_LONGARM_FRAME_ENGRAVING_WINCHESTER_COLLECTOR",
         },
     },
-
-
-
 
     ["WEAPON_RIFLE_VARMINT"] = {
 
@@ -492,10 +466,6 @@ local model_specific_components = {
           "COMPONENT_LONGARM_ROLE_ENGRAVING_VARMINT_NATURALIST",
         },
     },
-
-
-
-
 
     ["WEAPON_RIFLE_BOLTACTION"] = {
         ["GRIP"] = {
@@ -568,9 +538,7 @@ local model_specific_components = {
           "COMPONENT_RIFLE_SPRINGFIELD_WRAP5",
           "COMPONENT_RIFLE_SPRINGFIELD_WRAP6",
         },
-    },  
-
-
+    },
 
     ["WEAPON_SNIPERRIFLE_CARCANO"] = {
         ["GRIP"] = {
@@ -595,10 +563,7 @@ local model_specific_components = {
           "COMPONENT_RIFLE_CARCANO_WRAP5",
           "COMPONENT_RIFLE_CARCANO_WRAP6",
         },
-    },  
-
-
-
+    },
 
     ["WEAPON_SNIPERRIFLE_ROLLINGBLOCK"] = {
         ["GRIP"] = {
@@ -626,13 +591,11 @@ local model_specific_components = {
         },
     },
 
-
-
     ["WEAPON_SHOTGUN_REPEATING"] = {
         ["BARREL"] = {
           "COMPONENT_SHOTGUN_REPEATING_BARREL_SHORT",
           "COMPONENT_SHOTGUN_REPEATING_BARREL_LONG",
-        }, 
+        },
         ["GRIP"] = {
           "COMPONENT_SHOTGUN_REPEATING01_GRIP",
           "COMPONENT_SHOTGUN_REPEATING01_GRIP_IRONWOOD",
@@ -651,15 +614,14 @@ local model_specific_components = {
           "COMPONENT_SHOTGUN_REPEATING_WRAP5",
           "COMPONENT_SHOTGUN_REPEATING_WRAP6",
         },
-    },  
-
+    },
 
     ["WEAPON_SHOTGUN_PUMP"] = {
         ["BARREL"] = {
           "COMPONENT_SHOTGUN_PUMP_BARREL_SHORT",
           "COMPONENT_SHOTGUN_PUMP_BARREL_LONG",
           "COMPONENT_SHOTGUN_PUMP_BARREL_HALLOWEEN",
-        }, 
+        },
         ["GRIP"] = {
           "COMPONENT_SHOTGUN_PUMP_GRIP",
           "COMPONENT_SHOTGUN_PUMP_GRIP_IRONWOOD",
@@ -692,15 +654,14 @@ local model_specific_components = {
           "COMPONENT_SHOTGUN_FRAME_ENGRAVING_PUMP_TRADER",
           "COMPONENT_LONGARM_ROLE_ENGRAVING_PUMP_HALLOWEEN",
         },
-    },      
-
+    },
 
     ["WEAPON_SHOTGUN_DOUBLEBARREL"] = {
         ["BARREL"] = {
           "COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_SHORT",
           "COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_LONG",
           "COMPONENT_SHOTGUN_DOUBLEBARREL_BARREL_KRAMPUS",
-        }, 
+        },
         ["GRIP"] = {
           "COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP",
           "COMPONENT_SHOTGUN_DOUBLEBARREL_GRIP_EXOTIC",
@@ -734,8 +695,6 @@ local model_specific_components = {
         },
     },
 
-
-
     ["WEAPON_SHOTGUN_SAWEDOFF"] = {
         ["GRIP"] = {
           "COMPONENT_SHOTGUN_SAWEDOFF_GRIP",
@@ -748,7 +707,7 @@ local model_specific_components = {
           "COMPONENT_SHOTGUN_SAWED_SIGHT_NARROW",
           "COMPONENT_SHOTGUN_SAWED_SIGHT_WIDE",
           "COMPONENT_SHOTGUN_SAWED_SIGHT_MOONSHINER",
-        }, 
+        },
         ["WRAP"] = {
           "COMPONENT_SHOTGUN_SAWEDOFF_WRAP1",
           "COMPONENT_SHOTGUN_SAWEDOFF_WRAP2",
@@ -766,7 +725,7 @@ local model_specific_components = {
         ["FRAME_VERTDATA"] = {
           "COMPONENT_LONGARM_ROLE_ENGRAVING_SAWEDOFF_MOONSHINER",
         },
-    },  
+    },
 
     ["WEAPON_SHOTGUN_SEMIAUTO"] = {
         ["BARREL"] = {
@@ -778,7 +737,7 @@ local model_specific_components = {
           "COMPONENT_SHOTGUN_SEMIAUTO_GRIP_IRONWOOD",
           "COMPONENT_SHOTGUN_SEMIAUTO_GRIP_ENGRAVED",
           "COMPONENT_SHOTGUN_SEMIAUTO_GRIP_BURLED",
-        }, 
+        },
         ["SIGHT"] = {
           "COMPONENT_SHOTGUN_SEMIAUTO_SIGHT_NARROW",
           "COMPONENT_SHOTGUN_SEMIAUTO_SIGHT_WIDE",
@@ -792,7 +751,6 @@ local model_specific_components = {
           "COMPONENT_SHOTGUN_SEMIAUTO_WRAP6",
         },
     },
-
 
     ["WEAPON_BOW_IMPROVED"] = {
         ["GRIP"] = {
@@ -840,69 +798,32 @@ local model_specific_components = {
         },
     },
 
-
     ["WEAPON_MELEE_KNIFE"] = {
         ["GRIP"] = {
           "COMPONENT_MELEE_KNIFE02_GRIP",
           "COMPONENT_MELEE_KNIFE13_GRIP",
-        }, 
+        },
 
     },
 
     ["WEAPON_THROWN_DYNAMITE"] = {
         ["TORCH_MATCHSTICK"] = {
           "COMPONENT_DYNAMITE_MOLOTOV_TORCH_MATCHSTICK",
-        }, 
+        },
     },
 
     ["WEAPON_KIT_BINOCULARS"] = {
         ["TORCH_MATCHSTICK"] = {
           "COMPONENT_BINOCULARS_SCOPE01",
-        }, 
+        },
     },
 
     ["WEAPON_FISHINGROD"] = {
         ["COMPONENT_FISHING_LINE"] = {
           "COMPONENT_FISHING_LINE",
-        }, 
+        },
     },
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 local shared_components = {
     ["SHORTARM"] = {
@@ -918,8 +839,8 @@ local shared_components = {
           "COMPONENT_SHORTARM_TRIGGER_MATERIAL_8",
           "COMPONENT_SHORTARM_TRIGGER_MATERIAL_9",
           "COMPONENT_SHORTARM_TRIGGER_MATERIAL_10",
-        },  
-        
+        },
+
         ["SIGHT_MATERIAL"] = {
           "COMPONENT_SHORTARM_SIGHT_MATERIAL_1",
           "COMPONENT_SHORTARM_SIGHT_MATERIAL_2",
@@ -931,8 +852,8 @@ local shared_components = {
           "COMPONENT_SHORTARM_SIGHT_MATERIAL_8",
           "COMPONENT_SHORTARM_SIGHT_MATERIAL_9",
           "COMPONENT_SHORTARM_SIGHT_MATERIAL_10",
-        },         
-        
+        },
+
         ["HAMMER_MATERIAL"] = {
           "COMPONENT_SHORTARM_HAMMER_MATERIAL_1",
           "COMPONENT_SHORTARM_HAMMER_MATERIAL_2",
@@ -944,8 +865,8 @@ local shared_components = {
           "COMPONENT_SHORTARM_HAMMER_MATERIAL_8",
           "COMPONENT_SHORTARM_HAMMER_MATERIAL_9",
           "COMPONENT_SHORTARM_HAMMER_MATERIAL_10",
-        },  
-        
+        },
+
         ["FRAME_MATERIAL"] = {
           "COMPONENT_SHORTARM_FRAME_MATERIAL_1",
           "COMPONENT_SHORTARM_FRAME_MATERIAL_2",
@@ -957,14 +878,14 @@ local shared_components = {
           "COMPONENT_SHORTARM_FRAME_MATERIAL_8",
           "COMPONENT_SHORTARM_FRAME_MATERIAL_9",
           "COMPONENT_SHORTARM_FRAME_MATERIAL_10",
-        },  
+        },
 
         ["FRAME_ENGRAVING"] = {
           "COMPONENT_SHORTARM_FRAME_ENGRAVING_1",
           "COMPONENT_SHORTARM_FRAME_ENGRAVING_2",
           "COMPONENT_SHORTARM_FRAME_ENGRAVING_3",
           "COMPONENT_SHORTARM_FRAME_ENGRAVING_4",
-        }, 
+        },
 
         ["FRAME_ENGRAVING_MATERIAL"] = {
           "COMPONENT_SHORTARM_FRAME_ENGRAVING_MATERIAL_1",
@@ -994,7 +915,7 @@ local shared_components = {
           "COMPONENT_SHORTARM_BARREL_MATERIAL_8",
           "COMPONENT_SHORTARM_BARREL_MATERIAL_9",
           "COMPONENT_SHORTARM_BARREL_MATERIAL_10",
-        }, 
+        },
 
         ["BARREL_ENGRAVING"] = {
           "COMPONENT_SHORTARM_BARREL_ENGRAVING_1",
@@ -1031,14 +952,14 @@ local shared_components = {
           "COMPONENT_SHORTARM_CYLINDER_MATERIAL_8",
           "COMPONENT_SHORTARM_CYLINDER_MATERIAL_9",
           "COMPONENT_SHORTARM_CYLINDER_MATERIAL_10",
-        },  
+        },
 
         ["CYLINDER_ENGRAVING"] = {
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_1",
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_2",
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_3",
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_4",
-        }, 
+        },
 
         ["CYLINDER_ENGRAVING_MATERIAL"] = {
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_7",
@@ -1055,7 +976,7 @@ local shared_components = {
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_12",
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_13",
           "COMPONENT_SHORTARM_CYLINDER_ENGRAVING_MATERIAL_14",
-        },        
+        },
 
         ["GRIP_MATERIAL"] = {
           "COMPONENT_SHORTARM_GRIP_MATERIAL_PEARL",
@@ -1069,7 +990,7 @@ local shared_components = {
           "COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_4",
           "COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_5",
           "COMPONENT_SHORTARM_GRIPSTOCK_ENGRAVING_6",
-        }, 
+        },
 
         ["GRIPSTOCK_TINT"] = {
           "COMPONENT_SHORTARM_GRIPSTOCK_TINT_A_1",
@@ -1092,16 +1013,13 @@ local shared_components = {
           "COMPONENT_SHORTARM_GRIPSTOCK_TINT_PEARL",
           "COMPONENT_SHORTARM_GRIPSTOCK_TINT_GRAY_BIRCH",
           "COMPONENT_SHORTARM_GRIPSTOCK_TINT_BURLED",
-        },  
+        },
 
         ["BARREL_RIFLING"] = {
           "COMPONENT_SHORTARM_BARREL_RIFLING_1",
-        },  
-
+        },
 
     },
-
-
 
     ["LONGARM"] = {
 
@@ -1116,7 +1034,7 @@ local shared_components = {
           "COMPONENT_LONGARM_TRIGGER_MATERIAL_8",
           "COMPONENT_LONGARM_TRIGGER_MATERIAL_9",
           "COMPONENT_LONGARM_TRIGGER_MATERIAL_10",
-        }, 
+        },
         ["SIGHT_MATERIAL"] = {
           "COMPONENT_LONGARM_SIGHT_MATERIAL_1",
           "COMPONENT_LONGARM_SIGHT_MATERIAL_2",
@@ -1159,7 +1077,7 @@ local shared_components = {
           "COMPONENT_LONGARM_BARREL_ENGRAVING_3",
           "COMPONENT_LONGARM_BARREL_ENGRAVING_2",
           "COMPONENT_LONGARM_BARREL_ENGRAVING_4",
-        }, 
+        },
         ["BARREL_ENGRAVING_MATERIAL"] = {
           "COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_1",
           "COMPONENT_LONGARM_BARREL_ENGRAVING_MATERIAL_2",
@@ -1188,14 +1106,14 @@ local shared_components = {
           "COMPONENT_LONGARM_CYLINDER_MATERIAL_8",
           "COMPONENT_LONGARM_CYLINDER_MATERIAL_9",
           "COMPONENT_LONGARM_CYLINDER_MATERIAL_10",
-        }, 
+        },
 
         ["CYLINDER_ENGRAVING"] = {
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_1",
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_2",
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_3",
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_4",
-        },  
+        },
         ["CYLINDER_ENGRAVING_MATERIAL"] = {
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_1",
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_2",
@@ -1211,7 +1129,7 @@ local shared_components = {
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_12",
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_13",
           "COMPONENT_LONGARM_CYLINDER_ENGRAVING_MATERIAL_14",
-        }, 
+        },
 
         ["FRAME_MATERIAL"] = {
           "COMPONENT_LONGARM_FRAME_MATERIAL_1",
@@ -1224,14 +1142,14 @@ local shared_components = {
           "COMPONENT_LONGARM_FRAME_MATERIAL_8",
           "COMPONENT_LONGARM_FRAME_MATERIAL_9",
           "COMPONENT_LONGARM_FRAME_MATERIAL_10",
-        }, 
+        },
 
         ["FRAME_ENGRAVING"] = {
           "COMPONENT_LONGARM_FRAME_ENGRAVING_1",
           "COMPONENT_LONGARM_FRAME_ENGRAVING_2",
           "COMPONENT_LONGARM_FRAME_ENGRAVING_3",
           "COMPONENT_LONGARM_FRAME_ENGRAVING_4",
-        }, 
+        },
 
         ["FRAME_ENGRAVING_MATERIAL"] = {
           "COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_1",
@@ -1248,11 +1166,11 @@ local shared_components = {
           "COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_12",
           "COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_13",
           "COMPONENT_LONGARM_FRAME_ENGRAVING_MATERIAL_14",
-        }, 
+        },
 
         ["GRIP_MATERIAL"] = {
           "COMPONENT_LONGARM_GRIP_MATERIAL_BURLED",
-        }, 
+        },
 
         ["GRIPSTOCK_TINT"] = {
           "COMPONENT_LONGARM_GRIPSTOCK_TINT_A_1",
@@ -1275,7 +1193,7 @@ local shared_components = {
           "COMPONENT_LONGARM_GRIPSTOCK_TINT_PEARL",
           "COMPONENT_LONGARM_GRIPSTOCK_TINT_GRAY_BIRCH",
           "COMPONENT_LONGARM_GRIPSTOCK_TINT_BURLED",
-        }, 
+        },
 
          ["GRIPSTOCK_ENGRAVING"] = {
           "COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_1",
@@ -1284,13 +1202,12 @@ local shared_components = {
           "COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_4",
           "COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_5",
           "COMPONENT_LONGARM_GRIPSTOCK_ENGRAVING_6",
-        }, 
-
+        },
 
         ["WRAP_MATERIAL"] = {
           "COMPONENT_LONGARM_WRAP_MATERIAL_LEATHER",
           "COMPONENT_LONGARM_WRAP_MATERIAL_CLOTH",
-        },  
+        },
 
         ["WRAP_TINT"] = {
           "COMPONENT_LONGARM_WRAP_TINT_WHITE",
@@ -1362,7 +1279,7 @@ local shared_components = {
       	  "COMPONENT_RIFLE_CS_STRAP01",
       	  "COMPONENT_REPEATER_CLOTH_STRAP01",
       	  "COMPONENT_LEFTSHOULDER_STRAP01",
-        },          
+        },
         ["STRAP_TINT"] = {
           "COMPONENT_LONGARM_STRAP_TINT_A_1",
           "COMPONENT_LONGARM_STRAP_TINT_A_2",
@@ -1372,11 +1289,11 @@ local shared_components = {
           "COMPONENT_LONGARM_STRAP_TINT_A_6",
           "COMPONENT_LONGARM_STRAP_TINT_A_7",
           "COMPONENT_LONGARM_STRAP_TINT_A_8",
-        }, 
+        },
 
         ["BARREL_RIFLING"] = {
           "COMPONENT_LONGARM_BARREL_RIFLING_1",
-        }, 
+        },
 
     	["SCOPE"] = {
           "COMPONENT_RIFLE_SCOPE02",
@@ -1385,7 +1302,6 @@ local shared_components = {
         },
 
     },
-
 
     ["SHOTGUN"] = {
         ["CYLINDER_ENGRAVING"] = {
@@ -1419,12 +1335,12 @@ local shared_components = {
           "COMPONENT_MELEE_BLADE_MATERIAL_8",
           "COMPONENT_MELEE_BLADE_MATERIAL_4",
           "COMPONENT_MELEE_BLADE_MATERIAL_9",
-        }, 
+        },
         ["MELEE_BLADE_ENGRAVING"] = {
           "COMPONENT_MELEE_BLADE_ENGRAVING_1",
           "COMPONENT_MELEE_BLADE_ENGRAVING_2",
           "COMPONENT_MELEE_BLADE_ENGRAVING_3",
-        }, 
+        },
         ["MELEE_BLADE_ENGRAVING_MATERIAL"] = {
           "COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_1",
           "COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_2",
@@ -1439,7 +1355,7 @@ local shared_components = {
           "COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_12",
           "COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_13",
           "COMPONENT_MELEE_BLADE_ENGRAVING_MATERIAL_14",
-        },  
+        },
 
         ["GRIP_TINT"] = {
           "COMPONENT_MELEE_GRIP_TINT_A_1",
@@ -1461,7 +1377,5 @@ local shared_components = {
           "COMPONENT_MELEE_GRIP_TINT_GRAY_BIRCH",
         },
 
-    },    
+    },
 }
-
-

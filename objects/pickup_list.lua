@@ -3,7 +3,7 @@
 -- ===========================================
 
 -- EXAMPLE OF USING:
---  
+--
 -- Citizen.CreateThread(function()
 --   while true do
 --     Citizen.Wait(0)
@@ -12,11 +12,11 @@
 --       local x,y,z = table.unpack(GetEntityCoords(ped))
 --       local forwardX=GetEntityForwardX(ped)
 --       local forwardY=GetEntityForwardY(ped)
---       local forward_fix = 3 
+--       local forward_fix = 3
 --       local z_fix = 0
 --       local obj_x = x+(forwardX*forward_fix)
 --       local obj_y = y+(forwardY*forward_fix)
---       local obj_z = z + z_fix          
+--       local obj_z = z + z_fix
 --       local pickup_type = GetHashKey("PICKUP_HEALTH_STANDARD")
 --       local created_pickup =Citizen.InvokeNative(0xFBA08C503DD5FA58,pickup_type, obj_x, obj_y, obj_z, false,0,0,0,0,0.0,0) -- create pickup in front of player ped
 --       Citizen.InvokeNative(0x0552AA3FFC5B87AA,created_pickup,1)   -- BLOCK_PICKUP_PLACEMENT_LIGHT
@@ -27,10 +27,6 @@
 -- ===========================================
 -- ===========================================
 -- ===========================================
-
-
-
-
 
 local pickup_types = {
 	"PICKUP_AMMO_ARROW",

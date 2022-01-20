@@ -1,4 +1,4 @@
--- [entity_model] = { 
+-- [entity_model] = {
 -- 	{ladder_extension1},
 -- 	{ladder_extension2},
 -- 	{ladder_extension3},

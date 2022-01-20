@@ -1,6 +1,5 @@
 ## Some Carrying Flags
 
-
 ## Example
 
 ```lua

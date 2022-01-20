@@ -18,7 +18,6 @@ local vehicle_liveries = {
 	 {3, "PU"},
 	},
 
-
 	["gatchuck"] = {
 	 {0, "0 - Simple Red Yellow"},
 	 {1, "1 - Tapered Yellow Cream"},
@@ -38,7 +37,6 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish Yellow Red"},
 	},
 
-
 	["privateboxcar04x"] = {
 	 {0, "0 -Lannahechee"},
 	 {1, "1 -Central Union"},
@@ -46,7 +44,6 @@ local vehicle_liveries = {
 	 {3, "ARMY"},
 	 {4, "PU"},
 	},
-
 
 	["privateboxcar02x"] = {
 	 {0, "0 -LM"},
@@ -56,14 +53,12 @@ local vehicle_liveries = {
 	 {4, "PU"},
 	},
 
-
 	["STAGECOACH002X"] = {
 	 {0, "0 -Davis"},
 	 {1, "1 -Boles"},
 	 {2, "2 -Heartlands"},
 	 {3, "3 -Tapered"},
 	},
-
 
 	["cart03"] = {
 	 {0, "0 - Simple Cream"},
@@ -78,7 +73,6 @@ local vehicle_liveries = {
 	 {9, "9 - Tapered Double Red Yellow"},
 	},
 
-
 	["midlandboxcar05x"] = {
 	 {0, "LM"},
 	 {1, "CU"},
@@ -86,11 +80,9 @@ local vehicle_liveries = {
 	 {3, "PU"},
 	},
 
-
 	["midlandrefrigeratorCar"] = {
 	 {0, "LM"},
 	},
-
 
 	["boatSteam02x"] = {
 	 {0, "0 -AnnieMay"},
@@ -99,18 +91,15 @@ local vehicle_liveries = {
 	 {3, "3 -Magicienne"},
 	},
 
-
 	["northpassenger03x"] = {
 	 {0, "CU"},
 	},
-
 
 	["privateopensleeper01x"] = {
 	 {0, "SE"},
 	 {1, "ARMY"},
 	 {2, "PU"},
 	},
-
 
 	["coach4"] = {
 	 {0, "0 - Lines Red Grey"},
@@ -128,7 +117,6 @@ local vehicle_liveries = {
 	 {12, "12 - Lines Gold Yellow"},
 	 {13, "13 - Crosshatch Gold"},
 	},
-
 
 	["wagon05x"] = {
 	 {0, "0 - Simple Yellow"},
@@ -153,18 +141,15 @@ local vehicle_liveries = {
 	 {19, "19 - Flourish Worn Red Cream"},
 	},
 
-
 	["bountywagon01x"] = {
 	 {0, "0 - Livery1"},
 	 {1, "1 - Livery2"},
 	 {2, "2 - Livery3"},
 	},
 
-
 	["policeWagon01x"] = {
 	 {0, "0 - Police Red White"},
 	},
-
 
 	["stagecoach003x"] = {
 	 {0, "1 -Davis"},
@@ -172,7 +157,6 @@ local vehicle_liveries = {
 	 {2, "3 -Heartlands"},
 	 {3, "4 -Ornate"},
 	},
-
 
 	["coach5"] = {
 	 {0, "0 - Lines Yellow"},
@@ -188,7 +172,6 @@ local vehicle_liveries = {
 	 {10, "10 - Squared Gold"},
 	 {11, "11 - Leaf Gold"},
 	},
-
 
 	["coach6"] = {
 	 {0, "0 - Simple Cream"},
@@ -209,17 +192,14 @@ local vehicle_liveries = {
 	 {15, "15 - Leaf Gold"},
 	},
 
-
 	["northcoalcar01x"] = {
 	 {0, "CU"},
 	 {1, "LM"},
 	},
 
-
 	["policeWagongatling01x"] = {
 	 {0, "0 - Police Red White"},
 	},
-
 
 	["privateboxcar01x"] = {
 	 {0, "LM"},
@@ -228,7 +208,6 @@ local vehicle_liveries = {
 	 {3, "ARMY"},
 	 {4, "PU"},
 	},
-
 
 	["chuckwagon002X"] = {
 	 {0, "0 - Simple Lining Yellow"},
@@ -244,7 +223,6 @@ local vehicle_liveries = {
 	 {10, "10 - Gold Leaf"},
 	},
 
-
 	["coach3_cutscene"] = {
 	 {0, "1 -Lines"},
 	 {1, "2 -Flourish"},
@@ -252,18 +230,15 @@ local vehicle_liveries = {
 	 {3, "4 -Gold Leaf"},
 	},
 
-
 	["privateDining01x"] = {
 	 {0, "SE"},
 	 {1, "PU"},
 	},
 
-
 	["privateSteamer01x"] = {
 	 {0, "SE"},
 	 {1, "PU"},
 	},
-
 
 	["coach3"] = {
 	 {0, "0 - Lines Gold"},
@@ -281,14 +256,12 @@ local vehicle_liveries = {
 	 {12, "12 - Tapered Red Orange"},
 	},
 
-
 	["coach2"] = {
 	 {0, "0 -Davis"},
 	 {1, "1 -Boles"},
 	 {2, "2 -Heartlands"},
 	 {3, "3 -Tapered"},
 	},
-
 
 	["Huntercart01"] = {
 	 {0, "0 - Hunt0"},
@@ -299,7 +272,6 @@ local vehicle_liveries = {
 	 {5, "5 - Hunt5"},
 	},
 
-
 	["oilWagon01x"] = {
 	 {0, "0 - Cornwall Red Cream"},
 	 {1, "1 - Cornwall Red Black"},
@@ -308,7 +280,6 @@ local vehicle_liveries = {
 	 {4, "4 - Cornwall White Orange"},
 	 {5, "5 -  Cornwall Yellow Red"},
 	},
-
 
 	["wagon06x"] = {
 	 {0, "0 - Simple Cream Red"},
@@ -329,7 +300,6 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish II Green Gold"},
 	},
 
-
 	["wagon03x"] = {
 	 {0, "0 - Simple Brown Red"},
 	 {1, "1 - Double Red Yellow"},
@@ -348,7 +318,6 @@ local vehicle_liveries = {
 	 {14, "14 - Tapered Cream Red"},
 	 {15, "15 - Flourish Red Yellow"},
 	},
-
 
 	["cart02"] = {
 	 {0, "0 - Tapered Double Red Yellow"},
@@ -369,14 +338,12 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish Yellow"},
 	},
 
-
 	["warWagon2"] = {
 	 {0, "0 -Simple Lining"},
 	 {1, "1 -Double Lining"},
 	 {2, "2 -Tapered"},
 	 {3, "3 -Gold Leaf"},
 	},
-
 
 	["wagonarmoured01x"] = {
 	 {0, "0 - Liv 1"},
@@ -412,14 +379,12 @@ local vehicle_liveries = {
 	 {30, "30 -Liv 10c"},
 	},
 
-
 	["caboose01x"] = {
 	 {0, "LM"},
 	 {1, "CU"},
 	 {2, "SE"},
 	 {3, "PU"},
 	},
-
 
 	["stagecoach004_2x"] = {
 	 {0, "0 -Davis"},
@@ -429,29 +394,24 @@ local vehicle_liveries = {
 	 {4, "4 -Lemoyne"},
 	},
 
-
 	["privatepassenger01x"] = {
 	 {0, "SE"},
 	 {1, "PU"},
 	},
-
 
 	["trolley01x"] = {
 	 {0, "CWALL"},
 	 {1, "PU"},
 	},
 
-
 	["NORTHSTEAMER01X"] = {
 	 {0, "northsteamer01x_LM"},
 	 {1, "northsteamer01x_CU"},
 	},
 
-
 	["northpassenger01x"] = {
 	 {0, "CU"},
 	},
-
 
 	["utilliwag"] = {
 	 {0, "0 - Simple Red"},
@@ -472,7 +432,6 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish Red Yellow"},
 	},
 
-
 	["cart06"] = {
 	 {0, "0 - Simple Yellow White"},
 	 {1, "1 - Tapered Double Yellow Red"},
@@ -489,11 +448,9 @@ local vehicle_liveries = {
 	 {12, "12 - Tapered Double Black"},
 	},
 
-
 	["WAGONDOC01X"] = {
 	 {0, "0 -Doctors"},
 	},
-
 
 	["coal_wagon"] = {
 	 {0, "0 -M.Harris01"},
@@ -501,7 +458,6 @@ local vehicle_liveries = {
 	 {2, "2 -M.Harris02"},
 	 {3, "3 -Jameson02"},
 	},
-
 
 	["supplywagon2"] = {
 	 {0, "0 - Simple Yellow Blue"},
@@ -522,7 +478,6 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish Gold Brown"},
 	},
 
-
 	["cart04"] = {
 	 {0, "0 - Simple Yellow"},
 	 {1, "1 - Loco Cream Red"},
@@ -532,7 +487,6 @@ local vehicle_liveries = {
 	 {5, "5 - Lines Thick White Yellow"},
 	 {6, "6 - Flourish Gold"},
 	},
-
 
 	["supplywagon"] = {
 	 {0, "0 - Simple Yellow Blue"},
@@ -553,21 +507,17 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish Gold Brown"},
 	},
 
-
 	["wagonWork01x"] = {
 	 {0, "0 -Wakefield"},
 	},
-
 
 	["stagecoach004x"] = {
 	 {0, "0 -Boles"},
 	},
 
-
 	["ArmySupplyWagon"] = {
 	 {0, "0 -US Army"},
 	},
-
 
 	["stagecoach006x"] = {
 	 {0, "1 -Davis"},
@@ -575,7 +525,6 @@ local vehicle_liveries = {
 	 {2, "3 -Heartlands"},
 	 {3, "4 -Simple"},
 	},
-
 
 	["buggy02"] = {
 	 {0, "0 - Simple Yellow"},
@@ -594,7 +543,6 @@ local vehicle_liveries = {
 	 {13, "13 - Flourish Red Black"},
 	 {14, "14 - Ornate Red Black"},
 	},
-
 
 	["wagon02x"] = {
 	 {0, "0 - Simple Red"},
@@ -616,7 +564,6 @@ local vehicle_liveries = {
 	 {16, "16 - Tapered Gold"},
 	},
 
-
 	["cart07"] = {
 	 {0, "0 - Simple Green Yellow"},
 	 {1, "1 - Tapered Double Yellow Red"},
@@ -632,13 +579,11 @@ local vehicle_liveries = {
 	 {11, "11 - Rounded Worn Black White"},
 	},
 
-
 	["privateCoalCar01x"] = {
 	 {0, "SE"},
 	 {1, "PU"},
 	 {2, "ARMY"},
 	},
-
 
 	["oilWagon02x"] = {
 	 {0, "0 - Cornwall Red Cream"},
@@ -649,11 +594,9 @@ local vehicle_liveries = {
 	 {5, "5 -  Cornwall Yellow Red"},
 	},
 
-
 	["handcart"] = {
 	 {0, "0 "},
 	},
-
 
 	["buggy01"] = {
 	 {0, "0 - Simple Yellow"},
@@ -673,7 +616,6 @@ local vehicle_liveries = {
 	 {14, "14 - Ornate Red Black"},
 	},
 
-
 	["buggy03"] = {
 	 {0, "0 - Simple Yellow"},
 	 {1, "1 - Flourish Red Yellow"},
@@ -692,11 +634,9 @@ local vehicle_liveries = {
 	 {14, "14 - Ornate Red Black"},
 	},
 
-
 	["wagontraveller01x"] = {
 	 {0, "0 - Traveller Red Yellow"},
 	},
-
 
 	["cart05"] = {
 	 {0, "0 - Line Blue"},
@@ -710,7 +650,6 @@ local vehicle_liveries = {
 	 {8, "8 - Flourish Yellow White"},
 	 {9, "9 - Double Line Orange"},
 	},
-
 
 	["gatchuck_2"] = {
 	 {0, "0 - Simple Red Yellow"},
@@ -731,7 +670,6 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish Yellow Red"},
 	},
 
-
 	["cart08"] = {
 	 {0, "0 - Single Line Yellow Red"},
 	 {1, "1 - Simple Double Cream Yellow"},
@@ -751,12 +689,10 @@ local vehicle_liveries = {
 	 {15, "15 - Double Line Worn"},
 	},
 
-
 	["wagonDairy01x"] = {
 	 {0, "0 - Kauffman"},
 	 {1, "1 - Kauffman Worn"},
 	},
-
 
 	["wagon04x"] = {
 	 {0, "0 - Simple Cream"},
@@ -777,14 +713,12 @@ local vehicle_liveries = {
 	 {15, "15 - Flourish Cream Red"},
 	},
 
-
 	["stagecoach005x"] = {
 	 {0, "1 -Davis"},
 	 {1, "2 -Boles"},
 	 {2, "3 -Heartlands"},
 	 {3, "4 -Tapered"},
 	},
-
 
 	["chuckwagon000X"] = {
 	 {0, "0 -Simple Lining Red"},
@@ -800,7 +734,6 @@ local vehicle_liveries = {
 	 {10, "10 - Double Lining Red Yellow"},
 	},
 
-
 	["stagecoach001x"] = {
 	 {0, "1 -Davis"},
 	 {1, "2 -Boles"},
@@ -808,19 +741,16 @@ local vehicle_liveries = {
 	 {3, "4 -Ornate"},
 	},
 
-
 	["privateopensleeper02x"] = {
 	 {0, "SE"},
 	 {1, "ARMY"},
 	 {2, "PU"},
 	},
 
-
 	["privateRooms01x"] = {
 	 {0, "SE"},
 	 {1, "PU"},
 	},
-
 
 	["cart01"] = {
 	 {0, "0 - Simple Cream"},
@@ -836,7 +766,6 @@ local vehicle_liveries = {
 	 {10, "10 - Simple Worn Cream"},
 	 {11, "11 - Tapered Worn Red Cream"},
 	},
-
 
 	["wagon05x_2"] = {
 	 {0, "0 - Simple Yellow"},
@@ -860,7 +789,6 @@ local vehicle_liveries = {
 	 {18, "18 - Double Black Red"},
 	 {19, "19 - Flourish Worn Red Cream"},
 	},
-
 
     ---------- DONT HAVE LIVERIES:
     -- ["steamerdummy"] = {},

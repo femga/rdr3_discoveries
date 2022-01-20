@@ -1,5 +1,3 @@
-
-
 local challenge_goals = {
 
 	"ACCURACY_100PERCENT",													-- -1720572606		-- 0x99722542
@@ -1230,4 +1228,3 @@ local challenge_goals = {
 	"WNT4_SAVELENNY",														-- -1862949391		-- 0x90F5A5F1
 
 }
-

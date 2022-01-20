@@ -2,24 +2,22 @@
 
 Combat style is a "profile" applying different parameters to ped as animations, tactical analysis settings, allowed or blocked [combat mods](#combatstyle-mods), combat flags, aimLogic, combat speed, combat modifiers etc.
 
-All parameters for each combat style are contained in the META file combatstyles.meta. Combatstyles.meta consists of four big sections: styles, mods, aimLogicControllers and speedControllers. 
+All parameters for each combat style are contained in the META file combatstyles.meta. Combatstyles.meta consists of four big sections: styles, mods, aimLogicControllers and speedControllers.
 
-CombatStyle Mods are little tweaks to combat style. They can be stacked. If they change same parameter, the last one overwrites the previous one. Some styles block certain or even all combat mods (allowed mods = none). 
+CombatStyle Mods are little tweaks to combat style. They can be stacked. If they change same parameter, the last one overwrites the previous one. Some styles block certain or even all combat mods (allowed mods = none).
 
 ## Example to apply Combat Style
 
 ```lua
-	-- 0x8ACC0506743A8A5C 
-	-- _APPLY_COMBAT_STYLE(Ped ped, Hash combatstyleHash, int p2, float duration)  
-	-- p2 is unknown, usually 1, sometimes 0 or 2; 
+	-- 0x8ACC0506743A8A5C
+	-- _APPLY_COMBAT_STYLE(Ped ped, Hash combatstyleHash, int p2, float duration)
+	-- p2 is unknown, usually 1, sometimes 0 or 2;
 	-- duration in seconds, -1.0 = forever.
 
-	Citizen.InvokeNative(0x8ACC0506743A8A5C, NPC_ped_id, GetHashKey("SituationAllStop"), 1, 240.0)  -- apply combatstyle "SituationAllStop" for 240 seconds. Ped holds fire and prefer not move.  
-
-
+	Citizen.InvokeNative(0x8ACC0506743A8A5C, NPC_ped_id, GetHashKey("SituationAllStop"), 1, 240.0)  -- apply combatstyle "SituationAllStop" for 240 seconds. Ped holds fire and prefer not move.
 
 	-- 0x78815FC52832B690
-	-- _CLEAR_COMBAT_STYLE (Ped ped, any p1) 
+	-- _CLEAR_COMBAT_STYLE (Ped ped, any p1)
 	-- p1 is unknown, in scripts always 1.
 
 	Citizen.InvokeNative(0x78815FC52832B690, NPC_ped_id, 1) -- clear previous applied combat style for ped
@@ -28,19 +26,17 @@ CombatStyle Mods are little tweaks to combat style. They can be stacked. If they
 ## Example to apply CombatStyle Mod
 
 ```lua
-	-- 0x8B1E8E35A6E814EA 
-	-- _APPLY_COMBAT_STYLE_MOD(Ped ped, Hash combatStyleModHash, float duration)  
+	-- 0x8B1E8E35A6E814EA
+	-- _APPLY_COMBAT_STYLE_MOD(Ped ped, Hash combatStyleModHash, float duration)
 	-- duration in seconds, -1.0 = forever.
 
-	Citizen.InvokeNative(0x8B1E8E35A6E814EA, NPC_ped_id, GetHashKey("AlwaysMiss"), 240.0)  -- apply CombatStyle Mod "AlwaysMiss" for 240 seconds. Ped will miss every shot.  
+	Citizen.InvokeNative(0x8B1E8E35A6E814EA, NPC_ped_id, GetHashKey("AlwaysMiss"), 240.0)  -- apply CombatStyle Mod "AlwaysMiss" for 240 seconds. Ped will miss every shot.
 
+	-- Native to cancel combat mod is not known yet. Can be cancelled by tricky way: applying combat style with all blocked combat mods:
 
-	-- Native to cancel combat mod is not known yet. Can be cancelled by tricky way: applying combat style with all blocked combat mods: 
-	
 	Citizen.InvokeNative(0x8ACC0506743A8A5C, NPC_ped_id, GetHashKey("Script_CalmAimPostCombat_Low"), 1, 240.0)  -- apply combatstyle "Script_CalmAimPostCombat_Low" for 240 seconds to block all combat mods.
 	Citizen.InvokeNative(0x78815FC52832B690, NPC_ped_id, 1) -- clear previous applied combat style "Script_CalmAimPostCombat_Low" for ped
 ```
-
 
 <h2>List of Combat Styles.</h2>
 
@@ -173,7 +169,6 @@ CombatStyle Mods are little tweaks to combat style. They can be stacked. If they
 	Mounted_Charge
 	OnAMovingTrain
 	SeekCover_KeepDistanceFromTarget
-
 
 ## CombatStyle Mods
 
