@@ -8,9 +8,9 @@ local created_blips = {}
 Citizen.CreateThread(function()
     Citizen.Wait(10000)
 
-    local blip_name = "modifier_example"
+    local blip_name = "blip_modifier_example"
     local blip_coords = {x = 0.0, y = 0.0, z = 0.0}
-    local blip_hash = GetHashKey("blip_gold")
+    local blip_hash = GetHashKey("BLIP_GOLD")
     local blip_modifier_hash = GetHashKey("BLIP_MODIFIER_MP_COLOR_2")
     local blip_id = Citizen.InvokeNative(0x554D9D53F696D002, GetHashKey("BLIP_STYLE_PICKUP"), blip_coords.x, blip_coords.y, blip_coords.z)
 
@@ -20,7 +20,7 @@ Citizen.CreateThread(function()
     -- _SET_BLIP_NAME_FROM_PLAYER_STRING:
     Citizen.InvokeNative(0x9CB1A1623062F402, blip_id, blip_name)
 
-    created_blips[blip_id] = true
+    created_blips[blip_id] = true   -- table for removing blips if needed
 
 end)
 
