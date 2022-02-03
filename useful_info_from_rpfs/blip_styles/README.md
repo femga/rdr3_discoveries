@@ -12,7 +12,7 @@ Citizen.CreateThread(function()
     local blip_coords = {x = 0.0, y = 0.0, z = 0.0}
     local blip_hash = GetHashKey("BLIP_GOLD")
     local blip_style = GetHashKey("BLIP_STYLE_TEAM_WAYPOINT")
-    local blip_id = Citizen.InvokeNative(0x554D9D53F696D002, GetHashKey("BLIP_STYLE_PICKUP"), blip_coords.x, blip_coords.y, blip_coords.z)
+    local blip_id = Citizen.InvokeNative(0x554D9D53F696D002, blip_style, blip_coords.x, blip_coords.y, blip_coords.z)
 
     SetBlipSprite(blip_id, blip_hash, 0)
     -- _SET_BLIP_NAME_FROM_PLAYER_STRING:
