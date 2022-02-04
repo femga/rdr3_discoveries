@@ -5,9 +5,9 @@
 ```lua
 
 Citizen.CreateThread(function()
-    while true do
+	while true do
         Citizen.Wait(0)
-        if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
+        	if Citizen.InvokeNative(0x91AEF906BCA88877,0, 0x17BEC168) then   -- pressed E
 			local explosionTag_id = 12  -- EXP_TAG_BULLET
         		local explosion_vfxTag_hash = 0x7DD07579 	-- applies effect exp_lightning_strike, if native ADD_EXPLOSION_WITH_USER_VFX is used
         		local ped = PlayerPedId()
