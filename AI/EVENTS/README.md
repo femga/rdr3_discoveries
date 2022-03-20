@@ -175,7 +175,7 @@ EVENT_PLAYER_COLLECTED_AMBIENT_PICKUP | 0 | 8 | 0 - pickup name hash<br> 1 - <em
 EVENT_PLAYER_ESCALATED_PED | 0 | 2 | 0 - player ped id<br> 1 - escalated ped id
 EVENT_PLAYER_HAT_EQUIPPED | 0 | 10 | 0 - player ped id<br> 1 - hat entity id<br> 2 - hat drawble hash<br> 3 - hat albedo hash<br> 4 - hat normal hash<br> 5 - hat material hash<br> 6 - hat palette hash<br> 7 - hat tint1<br> 8 - hat tint2<br> 9 - hat tint3
 EVENT_PLAYER_HAT_KNOCKED_OFF | 0 | 5 | 0 - player ped id<br> 1 - ped id who threw off player hat<br> 2 - hat entity id<br> 3 - <em>unknown</em><br> 4 - <em>unknown</em>
-EVENT_PLAYER_HORSE_AGITATED_BY_ANIMAL | 0 | 4 | 0 - horse ped id | 1 - agitated animal | 2 - <em>unknown</em> | 3 - <em>unknown</em>
+EVENT_PLAYER_HORSE_AGITATED_BY_ANIMAL | 0 | 4 | 0 - horse ped id<br> 1 - agitated animal<br> 2 - <em>unknown</em><br> 3 - <em>unknown</em>
 EVENT_PLAYER_MOUNT_WILD_HORSE | 0 | 1 | 0 - wild horse ped id
 EVENT_PLAYER_PROMPT_TRIGGERED | 0 | 10 | 0 - prompt type id ( [list](#prompt-type-ids) )<br> 1 - <em>unknown</em><br> 2 - target entity id<br> 3 - <em>unknown</em> (??? discovered inventory item)<br> 4 - (float) player ped coord x<br> 5 - (float) player ped coord y<br> 6 - (float) player ped coord z<br> 7 - discoverable entity type id ( [list](#discoverable-entity-type-ids) )<br> 8 - <em>unknown</em><br> 9 - kit_emote_action hash ( [list](https://github.com/femga/rdr3_discoveries/blob/master/animations/kit_emotes_list.lua) )
 EVENT_RAN_OVER_PED | 0 | 2 | 0 - <em>unknown</em><br> 1 - ped id that was ran over
