@@ -104,7 +104,7 @@ Scenarios and conditional anims can have multiple conditions enclosed in special
 ## Requirements: conditions: Ped Command Hash
 
 
-**Ped Command Hash** is special command, that can be activated to change conditional anim variations or trigger transitions between conditional anims. Some ped command hashes can be found [here.](https://github.com/femga/rdr3_discoveries/blob/master/scenarios/ped_commands.lua) 
+**Ped Command Hash** is special command, that can be activated to change conditional anim variations or trigger transitions between conditional anims. Some ped command hashes can be found [here.](https://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios/ped_commands.lua) 
 
 ```lua
 
