@@ -6,7 +6,7 @@
 
 **ConditionalAnim transition** specifies which animation to trigger to smoothly change one ConditionalAnim to another.
 
-Usually a scenario has several conditional anims. If the native function does not directly specify which conditional anim to run, then a random one is launched (if the conditions are met). If the native function specifies conditional anim that does not meet the requirments, then a random acceptable one is played. If no conditional anim satisfies the requirments, then ped ignores scenario or can be stuck. 
+Usually a scenario has several conditional anims. If the native function (TASK_START_SCENARIO_IN_PLACE_HASH, TASK_USE_SCENARIO_POINT, etc) does not directly specify which conditional anim to run, then a random one is launched (if the conditions are met). If the native function specifies conditional anim that does not meet the requirments, then a random acceptable one is played. If no conditional anim satisfies the requirments, then ped ignores scenario or can be stuck. 
 
 
 
@@ -70,9 +70,9 @@ For conditional anims requirements:
 ***Conditions*** are special game states that must be met in order to activate a scenario or conditional anims. It can be requirements to ped model, ped gender, current ingame time, activated ped commands, etc. 
 
 ```
-file /common_0/data/ai/scenarios/conditionalanims/amb_rest_ca.meta:
+[file /common_0/data/ai/scenarios/conditionalanims/amb_rest_ca.meta]:
 For example, scenario WORLD_HUMAN_DRUNK_PASSED_OUT_FLOOR have conditional anim WORLD_HUMAN_DRUNK_PASSED_OUT_FLOOR_MALE_A, 
-that have special condition CAIConditionIsMale to run. As a result, female peds cannot use this conditional anim.|
+that have special condition CAIConditionIsMale to run. As a result, female peds cannot use this conditional anim.
 ```
 
 
@@ -80,7 +80,7 @@ that have special condition CAIConditionIsMale to run. As a result, female peds 
 It may also be required that the special condition ***does not*** exist. In this case, the condition is enclosed in special tags _CAIConditionNot_. 
 
 ```
-file /common_0/data/ai/scenarios/conditionalanims/amb_rest_ca.meta:
+[file /common_0/data/ai/scenarios/conditionalanims/amb_rest_ca.meta]:
 For example, scenario PROP_HUMAN_SEAT_CHAIR_SAD have conditional anim PROP_HUMAN_SEAT_CHAIR_SAD_FEMALE_A, 
 that have special requirement to NOT have condition CAIConditionIsMale . As a result, male peds cannot use this 
 conditional anim.
@@ -89,7 +89,7 @@ conditional anim.
 Scenarios and conditional anims can have multiple conditions at once or requirements to not have multiple conditions. 
 
 ```
-file /common_0/data/ai/scenarios/conditionalanims/amb_rest_ca.meta:
+[file /common_0/data/ai/scenarios/conditionalanims/amb_rest_ca.meta]:
 For example, scenario WORLD_HUMAN_BOTTLE_PICKUP_BOX_TABLE_BEER have conditional anim 
 WORLD_HUMAN_BOTTLE_PICKUP_TABLE_BOX_MALE_B, that have special condition CAIConditionIsMale and requirements to NOT have 
 conditions CAIConditionIsPlayer and CAIConditionIsMetaPedType MPT_TEEN. As a result, all player peds, all female peds 
@@ -136,7 +136,7 @@ end)
 Some scenario or conditional anims flags can prevent scenario using. 
 
 ```
-file /common_0/data/ai/scenarios/animals_mammal.meta:
+[file /common_0/data/ai/scenarios/animals_mammal.meta]:
 For example, scenario WORLD_ANIMAL_HORSE_SLEEPING have flag "ScenarioExitNearPlayer" and can be played if player is 
 far enough.
 ```
