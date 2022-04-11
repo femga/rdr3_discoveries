@@ -19,6 +19,7 @@ Usually a scenario has several conditional anims. If the native function (TASK_S
   - ConditionalAnim A
     - ConditionalAnim Conditions 
     - ConditionalAnim Flags 
+    - PropData
     - Enter anim
     - Base anim
     - Exit anim
@@ -29,6 +30,7 @@ Usually a scenario has several conditional anims. If the native function (TASK_S
   - ConditionalAnim B
     - ConditionalAnim Conditions 
     - ConditionalAnim Flags 
+    - PropData
     - Enter anim
     - Base anim
     - Exit anim
@@ -49,6 +51,22 @@ Usually a scenario has several conditional anims. If the native function (TASK_S
      - TransitionToConditionalAnim List
      - Transition Clips
 
+
+## Anim variations
+
+Сonditional anim contains various types of clips.
+
+***Enter*** anim contains clips for animation start.
+
+***Base*** anim contains clips for main part of animation.
+
+***Exit*** anim contains clips for animation ending.
+
+***Active looks*** anims  contains clips for moments when the NPC's attention is attracted by player walking by.
+
+***Reaction enter*** anims  contains clips for moments when ped begin to react to an interesting or threatening events.
+
+***Reaction exit*** anims  contains clips for moments when ped ends to react to an interesting or threatening events and return to base conditional anim.
 
 
 ## Requirements
@@ -104,7 +122,7 @@ Scenarios and conditional anims can have multiple conditions enclosed in special
 ## Requirements: conditions: Ped Command Hash
 
 
-**Ped Command Hash** is special command, that can be activated to change conditional anim variations or trigger transitions between conditional anims. Some ped command hashes can be found [here.](https://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios/ped_commands.lua) 
+**Ped Command Hash** is special command, that can be activated to change conditional anim variations or trigger transitions between conditional anims. Check ped command hashes for transitions [here](https://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios/ped_commands_for_transitions_between_anims.lua) and ped command hashes for selecting anim variations [here.](https://github.com/femga/rdr3_discoveries/blob/master/animations/scenarios/ped_commands_for_selecting_anim_variations.lua)
 
 ```lua
 

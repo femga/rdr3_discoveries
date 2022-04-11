@@ -1,3 +1,6 @@
+-- These are commands for transitioning from one conditional anim to another within some scenario.
+-- 
+-- 
 -- Citizen.CreateThread(function()
 -- 	while true do
 --  		Citizen.Wait(0)
