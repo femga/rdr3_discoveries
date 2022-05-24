@@ -42,6 +42,8 @@ Citizen.CreateThread(function()
 end)
 ```
 
+***Some unknown yet interior_sets have fake hashnames (for example, l_0032bd22vj, l_0078655bjv, l_012cc3a9aj, etc), but they work as well as real ones.***
+
 ## Interior Sets
 
 Interior id | Interior typehash | Interior typehashName | Interior set name
@@ -146,6 +148,10 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 1026 | -865373967 | val_doctor_int | _s_inv_tonic01x_group
 1282 | 588925696 | agu_boiler_int | agu_shutters_closed
 1282 | 588925696 | agu_boiler_int | agu_shutters_open
+2050 | -326895244 | new_gunshop_int | l_00003ab1jo
+2050 | -326895244 | new_gunshop_int | l_0032bd22vj
+2050 | -326895244 | new_gunshop_int | l_0078655bjv
+2050 | -326895244 | new_gunshop_int | l_012cc3a9aj
 2050 | -326895244 | new_gunshop_int | _s_inv_arrowammo01x_dressing
 2050 | -326895244 | new_gunshop_int | _s_inv_highvlcty_pstAmmo01x_group
 2050 | -326895244 | new_gunshop_int | _s_inv_highvlcty_revAmmo01x_group
@@ -249,12 +255,15 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 4610 | 1310078654 | han_house_int | han_int_tables_flipped
 4610 | 1310078654 | han_house_int | han_int_tables_upright
 4610 | 1310078654 | han_house_int | HAN_WIN_LOCK
+4610 | 1310078654 | han_house_int | l_000032d4et
+4610 | 1310078654 | han_house_int | l_00283f5evy
 6914 | -407504142 | lon_mule_int | loneMule_CandleOn
 6914 | -407504142 | lon_mule_int | lon_mule_DayLight
 6914 | -407504142 | lon_mule_int | lon_mule_int_chair
 6914 | -407504142 | lon_mule_int | lon_mule_int_rope
 7170 | -1635180876 | val_jail_int | val_jail_int_walla
 7170 | -1635180876 | val_jail_int | val_jail_int_wallb
+7426 | 1652253685 | but_shack_int | l_00042655ba
 8962 | 1098856137 | rho_gunsmith_int | p_fireplacelogs02x
 8962 | 1098856137 | rho_gunsmith_int | rhoGunsmith_FireOFF
 8962 | 1098856137 | rho_gunsmith_int | rhoGunsmith_FireON
@@ -276,10 +285,13 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 8962 | 1098856137 | rho_gunsmith_int | _s_inv_shotgun_sign_dressing
 8962 | 1098856137 | rho_gunsmith_int | _s_inv_slug_shotgunAmmo01x_group
 8962 | 1098856137 | rho_gunsmith_int | _s_inv_varmint_rifleammo01x_group
+8962 | 1098856137 | rho_gunsmith_int | l_0015774btd
+9730 | 2096834329 | lak_hideout_int | l_009b8bb1sb
 9730 | 2096834329 | lak_hideout_int | lak_hideout_intgroup_trapdoor
 9986 | 390184799 | dow_house_int | IntGroup_Downes_after_move
 9986 | 390184799 | dow_house_int | IntGroup_Downes_before_move
 9986 | 390184799 | dow_house_int | IntGroup_Downes_pulp_novel
+9986 | 390184799 | dow_house_int | l_003b0767yh
 10498 | 424368334 | mfr_blacksmith01_int | mfr_blacksmith_wilchest69
 10754 | 1045170370 | rdl_house_01_int | rdl_house_wilChest
 11778 | -937663888 | tum_gunsmith_int | tum_gunsmith_int_rentSign
@@ -304,8 +316,8 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 11778 | -937663888 | tum_gunsmith_int | _s_inv_xpres_pstAmmo01x_group
 11778 | -937663888 | tum_gunsmith_int | _s_inv_xpres_revAmmo01x_group
 11778 | -937663888 | tum_gunsmith_int | _s_inv_xpres_rifleAmmo01x_group
-12034 | -2119254323 |  | mil_cave_lights_03
-12034 | -2119254323 |  | mil_mine_cave03_cheat01
+12034 | -2119254323 | mil_mine_cave_int3 | mil_cave_lights_03
+12034 | -2119254323 | mil_mine_cave_int3 | mil_mine_cave03_cheat01
 12290 | 1809394080 | val_bank_int_main | val_bank_front_windows
 12290 | 1809394080 | val_bank_int_main | val_bank_int_curtainsclosed
 12290 | 1809394080 | val_bank_int_main | val_bank_int_curtainsopen
@@ -317,21 +329,30 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 12290 | 1809394080 | val_bank_int_main | val_bank_vault_dressing
 12290 | 1809394080 | val_bank_int_main | val_bank_vault_dressing_damage
 12546 | -658231316 | bla_photo_int | bla_photo_int_chairs
+12546 | -658231316 | bla_photo_int | l_004531c2kd
 14338 | -1183976406 | abe_farmhouse_int | abe_farmhouse_chest
 14338 | -1183976406 | abe_farmhouse_int | abe_SP_armoir
 14338 | -1183976406 | abe_farmhouse_int | ABE_WORKROOM
 14338 | -1183976406 | abe_farmhouse_int | clean_abe
+14338 | -1183976406 | abe_farmhouse_int | l_002efa71vb
+14338 | -1183976406 | abe_farmhouse_int | l_005ae1effe
 14338 | -1183976406 | abe_farmhouse_int | p_lamphanging04x
 14338 | -1183976406 | abe_farmhouse_int | p_washbasinset01x
 14338 | -1183976406 | abe_farmhouse_int | ransacked_abe
 14338 | -1183976406 | abe_farmhouse_int | ransacked_abe01
 14338 | -1183976406 | abe_farmhouse_int | ransacked_abe03
 14594 | 1958681082 | eme_barn_int | here_kitty_4_props
+14594 | 1958681082 | eme_barn_int | l_0054447fuj
 14850 | -163887359 | ldj_shack01_int | ldj_shack_cc_graffiti
 14850 | -163887359 | ldj_shack01_int | ldj_shack_pulp_novel
 15618 | 1843155892 | ben_shack_int | ben_shack_wildernesschest
+15618 | 1843155892 | ben_shack_int | l_001c2b67ru
 18178 | 978821587 | str_whore_int | str_whore_int_rentSign
 19458 | 1097213022 | new_man_gala_int | gala_artbookcrates
+19458 | 1097213022 | new_man_gala_int | l_0018ac00jv
+19458 | 1097213022 | new_man_gala_int | l_003d37c5iw
+19458 | 1097213022 | new_man_gala_int | l_00424cc5so
+20994 | -660315457 | new_theater_int | l_00031273tq
 20994 | -660315457 | new_theater_int | new_theater_cancan
 20994 | -660315457 | new_theater_int | new_theater_fireperformer
 20994 | -660315457 | new_theater_int | new_theater_int_rope
@@ -352,6 +373,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 21250 | 1937309385 | val_saloon_int | val_saloon_br03_bloody
 21250 | 1937309385 | val_saloon_int | val_saloon_johnclothes01
 21250 | 1937309385 | val_saloon_int | val_saloon_johnclothes02
+21506 | 548263002 | str_genst_int | l_01699186vy
 21506 | 548263002 | str_genst_int | _p_apple01x_dressing
 21506 | 548263002 | str_genst_int | _p_apple01x_group
 21506 | 548263002 | str_genst_int | _p_carrots_01x_dressing
@@ -410,9 +432,30 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 22018 | -1893439765 | cat_house_01_int | cat_house_whiskey
 23042 | -2077231866 | arm_sheriff_int | arm_sheriff_int_abandoned
 23042 | -2077231866 | arm_sheriff_int | arm_sheriff_int_normal_mp
+23042 | -2077231866 | arm_sheriff_int | l_0000cc70lj
 23554 | -1385690961 | shack_lt_int | LT_murder_after01
 23554 | -1385690961 | shack_lt_int | LT_murder_after02
 23554 | -1385690961 | shack_lt_int | LT_murder_before
+23554 | -1385690961 | shack_lt_int | l_00076ac9gg
+23554 | -1385690961 | shack_lt_int | l_0024187fkk
+23554 | -1385690961 | shack_lt_int | l_007d1c1dat
+23554 | -1385690961 | shack_lt_int | l_00ee12ecpp
+24834 | -1669978973 | sha_mansion_int | l_0007151fcr
+24834 | -1669978973 | sha_mansion_int | l_0007151fcs
+24834 | -1669978973 | sha_mansion_int | l_0007151fct
+24834 | -1669978973 | sha_mansion_int | l_0007151fcu
+24834 | -1669978973 | sha_mansion_int | l_0017e109um
+24834 | -1669978973 | sha_mansion_int | l_0017e109un
+24834 | -1669978973 | sha_mansion_int | l_0017e109uo
+24834 | -1669978973 | sha_mansion_int | l_0017e109up
+24834 | -1669978973 | sha_mansion_int | l_001eec40gj
+24834 | -1669978973 | sha_mansion_int | l_00326fd9rs
+24834 | -1669978973 | sha_mansion_int | l_0047781fyh
+24834 | -1669978973 | sha_mansion_int | l_009080delp
+24834 | -1669978973 | sha_mansion_int | l_0126661brt
+24834 | -1669978973 | sha_mansion_int | l_0126661bru
+24834 | -1669978973 | sha_mansion_int | l_0126661brv
+24834 | -1669978973 | sha_mansion_int | l_0126661brw
 24834 | -1669978973 | sha_mansion_int | shb_arthurpickup_bookforage
 24834 | -1669978973 | sha_mansion_int | shb_arthurpickup_bookhunting
 24834 | -1669978973 | sha_mansion_int | shb_p_ammo01
@@ -444,6 +487,10 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 26626 | -204299498 | new_art_int | new_forMyArt_gallery
 26626 | -204299498 | new_art_int | new_forMyArt_paintings
 26626 | -204299498 | new_art_int | st_denis_art_int_open
+26882 | -1064794141 | tax_house_int | l_000fe944yd
+26882 | -1064794141 | tax_house_int | l_0028fcd5yb
+27394 | 635062626 | l_14_cave | l_0003b2aeco
+27394 | 635062626 | l_14_cave | l_0014ec58jh
 27394 | 635062626 | l_14_cave | l_14_wildchest73
 27394 | 635062626 | l_14_cave | POISON_MINE_BLOCKAGE
 27394 | 635062626 | l_14_cave | POISON_MINE_BLOCKAGE_COLLAPSED
@@ -455,6 +502,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 28162 | 352769442 | adl_cabin01_int | adl_cabin01_int_vfx_02
 28162 | 352769442 | adl_cabin01_int | adl_winter01_trapdoorclosed
 28162 | 352769442 | adl_cabin01_int | adl_winter01_trapdooropen
+28162 | 352769442 | adl_cabin01_int | l_002b5d74mp
 28418 | -1637236028 | car_house_int | _car_house_int_after_ransack
 28418 | -1637236028 | car_house_int | _car_house_int_before_ransack
 28418 | -1637236028 | car_house_int | _car_house_int_day
@@ -468,10 +516,16 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 29186 | -1760613037 | str_jailpost_int | str_jail_unbrokenwall
 29442 | 1794125639 | rho_bank_int | rhobank_int_walla
 29442 | 1794125639 | rho_bank_int | rhobank_int_wallb
+29698 | -565068911 | val_saloon2_int | l_00260edcej
+30722 | -1606920848 | shack_sc_int | l_00433351su
 30722 | -1606920848 | shack_sc_int | shack_sc_int_pulp_novel
+30978 | -1226299217 | dis_stonehenge_int | l_005c0d63ve
+32514 | -2104861777 | pai_house_int | l_00336c6ffa
+32514 | -2104861777 | pai_house_int | l_00545796nh
 32514 | -2104861777 | pai_house_int | loansharking_chair_col
 32514 | -2104861777 | pai_house_int | pai_intgroup_lootables
-33538 | 1872173714 |  | mil_cave_lights_02
+33026 | 1652253685 | but_shack_int | l_00042655ba
+33538 | 1872173714 | mil_mine_cave_int2 | mil_cave_lights_02
 34050 | 1281507364 | val_res_a_int | val_res_a_int_peepcurtain
 34306 | 1129175760 | bra_tre_house_int | br_tre_house_cheat01
 34562 | -1866150230 | new_pharmacy_int | SD_doc_curtain01
@@ -495,9 +549,12 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 37122 | 2118541782 | val_hotel_int_main | mud3_val_hotel_room_curtain01
 37122 | 2118541782 | val_hotel_int_main | val_hotel_int_rentSign
 37378 | 746191734 | new_saloon02_int | ForMyArt_nobarprops
+37634 | -1342123354 | gap_mine_int | l_0058b4efkm
 38146 | 1789596391 | l_07_cave_int | int_group_bone_25
 38146 | 1789596391 | l_07_cave_int | mp_tre_int_eastwatsons01
 38402 | -578836113 | new_shady_shop_int | new_shadyshop_cheatcode01
+39682 | -1759714232 | new_pie_tunnel_int | l_00273181op
+39938 | 666254892 | pro_worker_house_int | l_0085992ajt
 39938 | 666254892 | pro_worker_house_int | pro_int_shaving
 39938 | 666254892 | pro_worker_house_int | pro_worker_bedmade
 39938 | 666254892 | pro_worker_house_int | pro_worker_bedunmade
@@ -509,6 +566,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 40194 | 997531175 | rho_sheriff_int | rho_sheriff_int_JBO1_02
 40450 | -926611940 | dis_grz_preskull_int | dis_grz_preskull_cheat01
 40706 | 1996001058 | com_muleshed_int | com_muleshed_int_ladder_broken
+40706 | 1996001058 | com_muleshed_int | l_00c4586fzn
 40962 | -49123512 | tan_house_int | tan_evelyn_2
 40962 | -49123512 | tan_house_int | tan_evelyn_3_4
 40962 | -49123512 | tan_house_int | tan_evelyn_5
@@ -596,6 +654,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 47874 | -875072509 | cor_factoryb_int | cor_factb_int_cheatcode_01
 47874 | -875072509 | cor_factoryb_int | cor_factb_int_rail_blockers
 48642 | 1287327772 | cas_house_int | cas_housewares
+48642 | 1287327772 | cas_house_int | l_001df149sb
 49154 | -1768653302 | new_man_bronte | bronte_glass_breakable
 49154 | -1768653302 | new_man_bronte | bronte_glass_unbreakable
 49154 | -1768653302 | new_man_bronte | bronte_mp_dressing
@@ -605,6 +664,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 49410 | 2094668886 | new_photo_int | new_photo_tablechair
 50178 | 262395856 | ann_coalbreaker_int_main | int_trainrob01_cover2
 50434 | 1082883376 | bur_calaboose_int | bur_bric_int_Tre02_BurntTown01
+50434 | 1082883376 | bur_calaboose_int | l_00a74492gz
 50690 | -787722102 | bee_house_int | Beechers_after_2.2
 50690 | -787722102 | bee_house_int | Beechers_after_Marston8_Abigail2.2
 50690 | -787722102 | bee_house_int | Beechers_after_Marston8_Abigail2.2_dressing
@@ -624,6 +684,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 50690 | -787722102 | bee_house_int | bee_squirrel_onLivingRmShelf
 50690 | -787722102 | bee_house_int | IntGrp_livingrm_furniture_basic
 50690 | -787722102 | bee_house_int | IntGrp_livingrm_furniture_fancy
+50690 | -787722102 | bee_house_int | l_01d3daefob
 51202 | -1800106923 | ser_grandkor_l1_int | korrigan_props_default
 51202 | -1800106923 | ser_grandkor_l1_int | korrigan_props_poker
 51714 | -52985177 | dov_lab_int | Damaged_Cage_Door
@@ -644,6 +705,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 54274 | -952358881 | rho_saloon_int | rho_saloon_int_rentSign
 54274 | -952358881 | rho_saloon_int | rho_sal_tables01
 54274 | -952358881 | rho_saloon_int | rho_sal_tables02
+54786 | 1103910892 | six_cabin_int | l_003ea158oa
 54786 | 1103910892 | six_cabin_int | six_fireplace_ON
 54786 | 1103910892 | six_cabin_int | six_lights_off
 54786 | 1103910892 | six_cabin_int | six_lights_on
@@ -671,9 +733,11 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 58882 | -2091111721 | van_exoticgoods_int | _s_inv_whiskey01x_group
 59138 | 768224943 | bea_01_int | BEA_CAVE_INT_PLATFORM
 59138 | 768224943 | bea_01_int | BEA_CAVE_INT_PLATFORMBURNED
-59394 | -2124562913 |  | mil_cave_lights_01
+59394 | -2124562913 | mil_mine_cave_int1 | mil_cave_lights_01
 59650 | 905970398 | adl_barn_int | adl_exit_blocker
 59650 | 905970398 | adl_barn_int | adl_stall_blocker
+59650 | 905970398 | adl_barn_int | l_0073930fgz
+59650 | 905970398 | adl_barn_int | l_00f1d165rk
 59906 | -1140178786 | val_magiclantern_int | val_magiclantern_intgroup_closed
 59906 | -1140178786 | val_magiclantern_int | val_magiclantern_intgroup_open
 60674 | -1800106923 | ser_grandkor_l1_int | korrigan_props_default
@@ -743,6 +807,8 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 62210 | 1507082145 | scr_shack_int | scr_shack_jewlerybox
 62722 | 1519105621 | shack_hf_int | hf_murder_after01
 62722 | 1519105621 | shack_hf_int | HF_pulp_novel
+62722 | 1519105621 | shack_hf_int | l_0036ba9elu
+62722 | 1519105621 | shack_hf_int | l_01118dccmn
 62978 | -1591810361 | ven_shack01_int | ven_int_chair
 62978 | -1591810361 | ven_shack01_int | ven_int_lights_OFF
 62978 | -1591810361 | ven_shack01_int | ven_int_lights_ON
@@ -769,6 +835,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 63746 | 108187356 | val_gunsmith_int_main | _s_inv_varmint_rifleammo01x_group
 64002 | 1623441509 | j_14_cave01_int | j_14_cave_wildman
 64002 | 1623441509 | j_14_cave01_int | j_14_cave_wildman_Lit
+64002 | 1623441509 | j_14_cave01_int | l_005c0d63ve
 64258 | 279927401 | agu_hut01_int | agu_hut_01_window_jump
 64258 | 279927401 | agu_hut01_int | agu_hut_01_window_Post
 64258 | 279927401 | agu_hut01_int | agu_hut_01_window_Pre
@@ -793,10 +860,14 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 65282 | -1790033252 | wal_trainstation_int | _s_saltedbeef01x_group
 65282 | -1790033252 | wal_trainstation_int | _s_saltedbeef02x_group
 66050 | 1740577523 | col_bunkhouse_int | col_bunkhouse_lights_on
+66050 | 1740577523 | col_bunkhouse_int | l_0165eeecba
+66562 | -1908380861 | pai_barn_int | l_00b60edfzc
 67074 | -1069603214 | van_farmhse01_int | van_farmhouse_monster
+67330 | -1886437312 | sil_house_int | l_0054af05ok
 67330 | -1886437312 | sil_house_int | sil_house_wilchest72
 67842 | -384162458 | swa_depot01_int | swa_chairs_cinematic
 67842 | -384162458 | swa_depot01_int | swa_chairs_regular
+69122 | 931393695 | rho_slum_player_int | l_0016703ewe
 69122 | 931393695 | rho_slum_player_int | rho_slum_player_trelawny01_stage_01
 69122 | 931393695 | rho_slum_player_int | rho_slum_player_trelawny01_stage_02
 70146 | -1348122341 | shack_hb_int | p_door_val_bank02
@@ -804,6 +875,8 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 70146 | -1348122341 | shack_hb_int | shb_int_MP
 70146 | -1348122341 | shack_hb_int | shb_int_SP
 71170 | 1202331463 | str_doctor_int | str_dr_intgroup_curtains
+72450 | -1610248235 | roc_house_int | l_003a19a0dy
+72450 | -1610248235 | roc_house_int | l_004d4774zj
 72450 | -1610248235 | roc_house_int | rocky_int_clean
 72450 | -1610248235 | roc_house_int | rocky_int_messy
 72706 | 506340962 | bra_mansion_int | bra_int_bedroom_clean
@@ -816,7 +889,10 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 72706 | 506340962 | bra_mansion_int | bra_mansion_WindowsStatic
 72706 | 506340962 | bra_mansion_int | bra_man_dining_vfx
 72706 | 506340962 | bra_mansion_int | bra_man_parlor_vfx
-73218 | 1869093440 |  | mil_cave_lights_04
+72706 | 506340962 | bra_mansion_int | l_000cec28nw
+72706 | 506340962 | bra_mansion_int | l_0056c431nf
+73218 | 1869093440 | mil_mine_cave_int4 | mil_cave_lights_04
+73474 | 1917788284 | che_barn_int | l_006f5d86gi
 73730 | 933851390 | shack_sk2_int | SK2_Painting_high_moral
 73730 | 933851390 | shack_sk2_int | SK2_Painting_low_moral
 73730 | 933851390 | shack_sk2_int | SK2_Painting_set_01
@@ -827,6 +903,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 73730 | 933851390 | shack_sk2_int | stranger_cryptic_lives
 74241 | -109235898 | mp001_mp_charcreate_int | mp_char_female_mirror
 74241 | -109235898 | mp001_mp_charcreate_int | mp_char_male_mirror
+77313 | 855142338 | mp006_moonshine01_int | l_007be336qs
 77313 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1
 77313 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1b
 77313 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1c
@@ -866,6 +943,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 77313 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_goth
 77313 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_hunter
 77313 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_refined
+77569 | 855142338 | mp006_moonshine01_int | l_007be336qs
 77569 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1
 77569 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1b
 77569 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1c
@@ -905,6 +983,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 77569 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_goth
 77569 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_hunter
 77569 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_refined
+77825 | 855142338 | mp006_moonshine01_int | l_007be336qs
 77825 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1
 77825 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1b
 77825 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1c
@@ -944,6 +1023,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 77825 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_goth
 77825 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_hunter
 77825 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_refined
+78337 | 855142338 | mp006_moonshine01_int | l_007be336qs
 78337 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1
 78337 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1b
 78337 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1c
@@ -983,6 +1063,7 @@ Interior id | Interior typehash | Interior typehashName | Interior set name
 78337 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_goth
 78337 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_hunter
 78337 | 855142338 | mp006_moonshine01_int | mp006_mshine_theme_refined
+78593 | 855142338 | mp006_moonshine01_int | l_007be336qs
 78593 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1
 78593 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1b
 78593 | 855142338 | mp006_moonshine01_int | mp006_mshine_band1c
