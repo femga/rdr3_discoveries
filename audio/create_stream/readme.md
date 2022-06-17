@@ -22,20 +22,31 @@ StopStream(streamedmusic)
 ```
 You can then use via PlayStreamFromPed etc.
 
+
 |soundSet|streamName|
 |:-|:-|
 | 1 between 10 | inworld_music_concertina |
 | 1 between 10 | inworld_music_mandolin_upbeat |
 | 1 between 14 | inworld_music_banjo |
+| 1 between 15 | inworld_music_mandolin |
+| 1 between 17 | inworld_music_guitar |
+| 1 between 2 | inworld_music_fiddle |
 | 1 between 2 | inworld_music_jawharp_downbeat |
 | 1 between 3 | inworld_music_harmonica_upbeat |
+| 1 between 3 | inworld_music_trumpet_upbeat |
+| 1 between 4 | inworld_music_concertina_upbeat |
 | 1 between 4 | inworld_music_harmonica_downbeat |
 | 1 between 4 | inworld_music_jawharp_upbeat |
 | 1 between 4 | inworld_music_wax_cylinder_swamp_boat |
 | 1 between 5 | inworld_music_fiddle_downbeat |
 | 1 between 5 | inworld_music_mandolin_downbeat |
+| 1 between 6 | inworld_music_concertina_downbeat |
+| 1 between 6 | inworld_music_jawharp |
 | 1 between 6 | inworld_music_trumpet |
+| 1 between 7 | inworld_music_banjo_downbeat |
+| 1 between 7 | inworld_music_banjo_upbeat |
 | 1 between 7 | inworld_music_fiddle_upbeat |
+| 1 between 7 | inworld_music_harmonica |
 | 1 between 8 | inworld_music_guitar_upbeat |
 | 1 between 9 | inworld_music_guitar_downbeat |
 | altered_state | MP005_MPICLS_Sounds |
