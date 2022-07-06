@@ -75,6 +75,11 @@ Citizen.CreateThread(function()
           for k,v in pairs(sound_table) do
               -- PLAY SOUND ID CLONE:
               Citizen.InvokeNative( 0xF1C5310FEAA36B48,k, soundset_name, PlayerPedId(),soundset_ref, false, 0);
+          
+              -- PLAY SOUND ID FROM COORDS:
+              -- local coords = GetEntityCoords(PlayerPedId()) + vector3(0.0,5.0,0.0)  -- 5.0 meters from ped
+              -- Citizen.InvokeNative(0xDCF5BA95BBF0FABA, k, "BOTTLE_SMASH", coords.x, coords.y, coords.z, "FUD1_SOUNDS", 0, 0, 1)
+          
           end
           is_soundset_playing = true
         end

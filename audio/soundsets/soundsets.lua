@@ -216,6 +216,7 @@ local soundsets = {
       "Dial_Turn_Single",
       "Small_Safe_Tumbler",
       "Small_Safe_Tumbler_Final",
+      "Dial_Turn_Single_Variable",
     },
 
     ["GRY2_Sounds"] = {
@@ -574,6 +575,26 @@ local soundsets = {
 
     ["FUD1_SOUNDS"] = {
       "BOTTLE_SMASH",
+    },
+
+    ["MGFSH_Insect_Sounds"] = {
+      "Fishing_Fly_Swarm",
+    },
+
+    ["OFF_MISSION_SOUNDS"] = {
+      "COTTON_GIN",
+    },
+
+    ["FIRE_SMOLDER_LARGE_SOUNDSET"] = {
+      "MAIN_LOOP",
+    },
+    
+    ["MGFSH_Sounds"] = {
+      "VFX_SPLASH",
+    },
+
+    ["COMPANIONS_ROBBERIES_SOUNDSET"] = {
+      "FUSE",
     },
 
     -- [0] = {
