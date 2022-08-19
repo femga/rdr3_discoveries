@@ -9,6 +9,7 @@ end
 
 <h2>BLIPS ENTITIES</h2>
 
+```lua
 local blips_entities = {
     -678244495, -- gray destination
     -1702907713, -- pink enemy
@@ -57,3 +58,4 @@ local blips_entities = {
     1673015813, -- white ( ) unselectable?
     1247852480, -- yellow ( ) unselectable?
 }
+```
