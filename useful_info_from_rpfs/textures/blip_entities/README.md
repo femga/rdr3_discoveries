@@ -1,13 +1,15 @@
 ## Example of using:
 ```lua
-local blip = Citizen.InvokeNative(0x23f74c2fda6e7c61, -678244495, entity)
-SetBlipScale(blip,1.5)
-Citizen.InvokeNative(0x9CB1A1623062F402, blip, blipname)
+local function addBlipForCoords(blipname,bliphash,entity)
+    local blip = Citizen.InvokeNative(0x23f74c2fda6e7c61, bliphash, entity)
+    SetBlipScale(blip,1.5)
+    Citizen.InvokeNative(0x9CB1A1623062F402, blip, blipname)
+end
 ```
 
-<h2>BLIPS ENTITY</h2>
+<h2>BLIPS ENTITIES</h2>
 
-local blip_entity = {
+local blips_entities = {
     -678244495, -- gray destination
     -1702907713, -- pink enemy
     -1337945352, -- white unselectable?
