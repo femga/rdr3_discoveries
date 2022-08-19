@@ -1,6 +1,6 @@
 ## Example of using:
 ```lua
-local function addBlipForCoords(blipname,bliphash,entity)
+local function addBlipForEntity(blipname,bliphash,entity)
     local blip = Citizen.InvokeNative(0x23f74c2fda6e7c61, bliphash, entity)
     SetBlipScale(blip,1.5)
     Citizen.InvokeNative(0x9CB1A1623062F402, blip, blipname)
