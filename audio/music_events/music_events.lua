@@ -23,8 +23,7 @@
 --------------------------------------------------------------------------------
 
 local music_events = {
-    "MP_CHARACTER_CREATION_START",
-    "MP_CHARACTER_CREATION_STOP",
+
     "AB21_ABIGAIL",
     "AB21_BEECHERS_RIDE_SONG_EVENT",
     "AB21_CABIN",
@@ -1179,6 +1178,8 @@ local music_events = {
     "MP007_ANIMAL_TAGGING_MUSIC_START",
     "MP007_ANIMAL_TAGGING_MUSIC_STOP",
     "MP_CLOUDS_TRANSITION_MUSIC",
+    "MP_CHARACTER_CREATION_START",
+    "MP_CHARACTER_CREATION_STOP",
     "MP_FM_END",
     "MP_FM_FISHING_STOP",
     "MP_HORSE_RACE_BEGINS",
