@@ -23,7 +23,7 @@
 --------------------------------------------------------------------------------
 
 local music_events = {
-
+    "MP_CHARACTER_CREATION_START",
     "AB21_ABIGAIL",
     "AB21_BEECHERS_RIDE_SONG_EVENT",
     "AB21_CABIN",
