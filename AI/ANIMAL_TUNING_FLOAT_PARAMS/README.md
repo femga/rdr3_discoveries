@@ -13,15 +13,15 @@ ParamId | Result
 ----------- | --------------------------
  0 |
  1 |
- 2 |
- 3 |
+ 2 | ATF_AlertedWalkAwayMaxTime
+ 3 | ATF_AlertedWalkAwayMinTime
  4 |
- 5 |
- 6 |
- 7 |
- 8 |
+ 5 | ATF_BraveryMax
+ 6 | ATF_BraveryMin
+ 7 | ATF_CombatCircleMaxRadius
+ 8 | ATF_CombatCircleMinRadius
  9 |
- 10 |
+ 10 | ATF_FearRange
  11 |
  12 |
  13 |
@@ -84,7 +84,7 @@ ParamId | Result
  70 |
  71 |
  72 |
- 73 |
+ 73 | ATF_ThreatResponseChargeProbability
  74 | ATF_ThreatResponseCombatProbability
  75 | ATF_ThreatResponseCombatProbabilityVsPacks
  76 |
@@ -99,7 +99,7 @@ ParamId | Result
  85 | ATF_ThreatResponseOtherFleeOrCombatRange
  86 | ATF_ThreatResponsePlayerAlertProvokeRange
  87 | ATF_ThreatResponsePlayerAlertRange
- 88 |
+ 88 | ATF_ThreatResponsePlayerAlertThreatenRange
  89 | ATF_ThreatResponsePlayerBackToAlertedRange
  90 | ATF_ThreatResponsePlayerBackToUnAlertedRange
  91 | ATF_ThreatResponsePlayerFleeOrCombatRange
@@ -115,17 +115,17 @@ ParamId | Result
  101 |
  102 |
  103 |
- 104 |
+ 104 | ATF_ThreatResponseThreatAlertRange
  105 | ATF_ThreatResponseThreatBackToAlertedRange
  106 | ATF_ThreatResponseThreatBackToUnAlertedRange
  107 |
  108 |
  109 |
  110 |
- 111 |
+ 111 | ATF_WarnSoundRange
  112 | ATF_TargetingPreferClosePlayerTargetThreshold
- 113 |
- 114 |
+ 113 | ATF_ThreatResponseLoudNoiseAlertedRange
+ 114 | 
  115 | ATF_ThreatResponseNoiseSmallCaliberFleeOrCombatRange
  116 |
  117 | ATF_ThreatResponseNoiseMediumCaliberFleeOrCombatRange
