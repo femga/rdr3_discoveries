@@ -12,42 +12,42 @@
 ParamId | Animal Tuning Bool Params Result
 ----------- | --------------------------
 0 |
- 1 |
- 2 |
- 3 |
+ 1 | ATB_AlertedFaceTarget
+ 2 | ATB_AlertedFleeSlowly
+ 3 | ATB_AlertedWalkAway
  4 |
- 5 |
+ 5 | ATB_AvoidTowns
  6 |
  7 |
  8 |
- 9 |
- 10 |
- 11 |
- 12 |
- 13 |
- 14 |
+ 9 | ATB_CombatCharge
+ 10 | ATB_CombatChargePrey
+ 11 | ATB_CombatCircle
+ 12 | ATB_CombatMelee
+ 13 | ATB_CombatMeleeThreats
+ 14 | ATB_CombatStalk
  15 | ATB_CombatStandGround
- 16 |
- 17 |
- 18 |
+ 16 | ATB_CombatUnderwaterAmbush
+ 17 | ATB_CombatWarnPrey
+ 18 | ATB_DeepSwim
  19 |
  20 |
- 21 |
- 22 |
- 23 |
- 24 |
- 25 |
- 26 |
- 27 |
+ 21 | ATB_EnableFlocks
+ 22 | ATB_FleeMountedPeds
+ 23 | ATB_FlockEnableAlerted
+ 24 | ATB_FlockEnableFlee
+ 25 | ATB_FlockEnablePavementGraph
+ 26 | ATB_FlockEnableUnalerted
+ 27 | 
  28 | ATB_Herbivore
  29 |
- 30 |
+ 30 | ATB_Livestock
  31 |
  32 | ATB_NeverRetreatFromMelee
  33 |
  34 | ATB_NoCriticalHits
  35 |
- 36 |
+ 36 | ATB_OnlyOneFlock
  37 |
  38 |
  39 |
@@ -64,50 +64,50 @@ ParamId | Animal Tuning Bool Params Result
  50 |
  51 | ATB_WarnAfterKnockdownsInMelee
  52 |
- 53 |
+ 53 | ATB_CanPlayDead
  54 |
  55 |
- 56 |
+ 56 | ATB_EnableFleeGroup
  57 |
- 58 |
+ 58 | ATB_IsBird
  59 |
  60 |
  61 |
  62 |
  63 |
- 64 |
+ 64 | ATB_IsFish
  65 |
  66 |
- 67 |
+ 67 | ATB_EnableFleeOwner
  68 |
  69 |
  70 |
- 71 |
+ 71 | ATB_RagdollEasily
  72 |
  73 |
  74 |
- 75 |
+ 75 | ATB_IsSuperScary
  76 |
  77 | ATB_ForceCombatAnimalMeleeRetreatOnNearbyGunfire
  78 |
  79 |
  80 |
  81 |
- 82 |
+ 82 | ATB_UseFishFlee
  83 |
  84 |
  85 |
  86 |
  87 |
  88 | ATB_WaitInsteadOfFleeForUnreachableVolumes
- 89 |
+ 89 | ATB_AlertedFlocking
  90 |
  91 |
- 92 |
+ 92 | ATB_AlertedCharging
  93 |
  94 |
  95 |
  96 |
- 97 |
+ 97 | ATB_CannotBeTamed
  98 |
  99 |
