@@ -46,15 +46,15 @@ Combat Float id | Changing Combat Float result
 30 | BulletReactionChance
 31 | DismountDistance
 32 |
-33 |
-34 |
-35 |
-36 |
-37 |
+33 | HomingRocketBreakLockAngle
+34 | HomingRocketBreakLockAngleClose
+35 | HomingRocketBreakLockCloseDistance
+36 | HomingRocketTurnRateModifier
+37 | TimeBetweenAggressiveMovesDuringVehicleChase
 38 | PinnedDownTakeCoverAmount
 39 | HipFireChanceMultiplier
 40 | WeaponPickupChance
-41 |
+41 | MountedChasingDistance
 42 | ExecuteTargetChance
 43 | ExecuteTargetFromReloadChance
 44 | ExecuteTargetMaxDistance
