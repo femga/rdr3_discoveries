@@ -340,7 +340,7 @@ Flag Id | Flag Name | Flag Description
 289 |  | 
 290 |  | 
 291 |  | 
-292 |  | 
+292 | PRF_BlockFidgets | 
 293 |  | set hide radial reticle
 294 | PRF_DisableReticleSway | 
 295 | PRF_DetachLasso | 
