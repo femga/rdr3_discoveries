@@ -59,7 +59,7 @@ Flag Id | Flag Name | Flag Description
 8 | PRF_ForcePlayerFiring | 
 9 | PRF_ForcePeekFromCover | 
 10 | PRF_ForcePedToStrafe | 
-11 |  | 
+11 | PRF_ForceMeleeStrafingAnims | 
 12 | PRF_UseKinematicPhysics | 
 13 | PRF_ClearLockonTarget | 
 14 | PRF_ForcePedToUseScripCamHeading | 
@@ -187,7 +187,7 @@ Flag Id | Flag Name | Flag Description
 136 |  | 
 137 |  | 
 138 |  | 
-139 |  | set prevent ped stamina refill | is trying melee attack ??
+139 | PRF_DisableStaminaRegen | set prevent ped stamina refill | 
 140 |  | 
 141 |  | 
 142 |  | 
