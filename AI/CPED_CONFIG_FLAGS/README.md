@@ -156,8 +156,8 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 141 | PCF_DisablePlayerAutoHolster |	|	
 142 |	|	|	
 143 |	|	|	
-144 |	|	|	
-145 |	|	|	
+144 |	PCF_DisableHorseMPAutoFlee |	|	
+145 | PCF_EnableHorseMPAutoFleeInSP	|	|	
 146 | PCF_CantWitnessCrimes |	|	
 147 |	|	|	
 148 |	|	|	
