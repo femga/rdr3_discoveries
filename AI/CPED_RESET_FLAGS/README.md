@@ -60,19 +60,19 @@ Flag Id | Flag Name | Flag Description
 9 | PRF_ForcePeekFromCover | 
 10 | PRF_ForcePedToStrafe | 
 11 | PRF_ForceMeleeStrafingAnims | 
-12 | PRF_UseKinematicPhysics | 
+12 | PRF_UseKinematicPhysics | ped pushes any physical objects out of its way when it moves into them
 13 | PRF_ClearLockonTarget | 
 14 | PRF_ForcePedToUseScripCamHeading | 
 15 | PRF_IgnoreTargetsCoverForLOS | 
 16 | PRF_DisableCrouchWhileInCover | 
-17 | PRF_ForceRunningSpeedForFragSmashing | 
+17 | PRF_ForceRunningSpeedForFragSmashing | peds will smash through frag objects when playing custom anims
 18 | PRF_ExtraLongWeaponRange | 
 19 | PRF_ForcePlayerToEnterVehicleThroughDirectDoorOnly | 
 20 | PRF_TaskCullExtraFarAway | 
 21 | PRF_DisableAutoVaulting | 
 22 | PRF_UseBulletPenetration | 
 23 | PRF_ForceAimAtHead | 
-24 | PRF_DisableSeeThroughChecksWhenTargeting | 
+24 | PRF_DisableSeeThroughChecksWhenTargeting | Line of Sight checks will fail if any materials with 'see through' materials found
 25 | PRF_CannotBeTargetedByAI | 
 26 | PRF_ForceInjuryAfterStunned | 
 27 | PRF_BlockWeaponFire | 
@@ -205,8 +205,8 @@ Flag Id | Flag Name | Flag Description
 154 |  | 
 155 | PRF_IsEnteringCover | 
 156 | PRF_IsExitingCover | 
-157 |  | is ped in ragdoll with pistol or revolver
-158 |  | 
+157 | PRF_NoTimeDelayBeforeShot | 
+158 | PRF_ForceScriptControlledRagdoll | 
 159 |  | 
 160 |  | 
 161 |  | 
@@ -217,7 +217,7 @@ Flag Id | Flag Name | Flag Description
 166 | PRF_ForceBackAgainstWallCover | 
 167 |  | 
 168 | PRF_DisablePlayerClimbing | 
-169 |  | 
+169 | PRF_NeverDieFromCapsuleRagdollSettings | 
 170 |  | 
 171 |  | 
 172 |  | 
