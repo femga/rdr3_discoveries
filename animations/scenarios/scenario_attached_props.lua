@@ -1,0 +1,125 @@
+-- these are props that come attached to scenarios by using these strings you can get their entity handle etc.
+-- credits to t3chman for the list
+-- EXAMPLE:
+--[[
+        -- this string requires last parameter to be false in order to get entity, might be cause ped puts sledgehammer down, others might require true
+        local detach = false
+        local hammer = GetPedRegisterProp(PlayerPedId(), "SLEDGEHAMMER", detach) -- must invoke native
+        if hammer then
+            DeleteEntity(hammer)
+        end
+
+        --  you can create the object and give the prop to scenario by using the same string
+        -- create object here
+         local conditionalAnim = ""
+         GivePedScenarioProp(PlayerPedId(), object, "SLEDGEHAMMER", 'WORLD_HUMAN_SLEDGEHAMMER', conditionalAnim, true) -- must invoke native
+
+         -- alternatively you can remove the prop from the scenario using the string it self
+         RemovePedProp(PlayerPedId(), "SLEDGEHAMMER")
+ ]]
+
+-- mp005_p_collector_cigHolder01x_PH_R_HAND
+-- mp006_p_dblcello01x_XH_R_HAND00
+-- mp006_p_mnshn_washboard01x_XH_R_HAND00
+-- P_AMB_clipboard_01_PH_L_HAND
+-- p_axe01x_PH_R_HAND
+-- p_banjo01x_PH_R_HAND
+-- p_banjo01x_XH_R_HAND00
+-- p_bedRollClosed_sml02x
+-- p_boiler02x_PH_L_HAND
+-- p_boiler02x
+-- p_bottleBeer01x_PH_R_HAND
+-- p_bottleJD01x_ph_r_hand
+-- p_bow01x_PH_R_HAND
+-- p_bowl04x_stew_PH_L_HAND
+-- p_broom02x_PH_R_HAND
+-- p_broom04x_PH_R_HAND
+-- p_bucket03x_PH_L_HAND
+-- p_can01x_PH_L_HAND
+-- p_chamberpot_pot_PH_R_HAND
+-- p_cigar01x_PH_R_HAND
+-- p_cigar02x_PH_R_HAND
+-- p_cigarette_cs01x_PH_L_HAND
+-- p_cigarette_cs01x_PH_R_HAND
+-- p_cigarette_cs02x_PH_L_HAND
+-- p_club01x_PH_R_HAND
+-- p_coal01x_PH_L_HAND
+-- p_crate03x_PH_R_HAND
+-- p_crateConf01x_PH_R_HAND
+-- p_cs_book03x_PH_L_HAND
+-- p_cs_book04x_PH_R_HAND
+-- p_cs_bucket01bx_PH_R_HAND
+-- p_cs_bucket01bx
+-- p_cs_bucket01x_PH_R_HAND
+-- p_cs_concertina01x_PH_R_HAND
+-- p_cs_crateTnt01x_PH_R_HAND
+-- p_cs_Fan01x_PH_R_HAND
+-- p_cs_hookPulley01x_PH_L_HAND
+-- p_cs_JessicaPurse01x_PH_L_HAND
+-- p_cs_ledgerSmall01x_PH_L_HAND
+-- p_cs_meatBowl01x_PH_R_HAND
+-- p_cs_newspaper_03x_PH_R_HAND
+-- p_cs_purse01x_PH_R_HAND
+-- p_cs_rag02x_PH_R_HAND
+-- p_cs_rollupcig01x_PH_R_HAND
+-- p_cs_sackCorn01x_PH_R_HAND
+-- p_cs_suitcase05x_up_PH_L_HAND
+-- p_dynamiteCrate02x_PH_L_HAND
+-- p_feedBag01bx_PH_L_HAND
+-- p_fiddle01x_PH_L_HAND
+-- p_filletKnife01x_PH_R_HAND
+-- p_fishingPole02x_PH_R_HAND
+-- p_flask01x_PH_R_HAND
+-- p_glass001x_PH_R_HAND
+-- p_glass01x_PH_R_HAND
+-- p_guitar01x_PH_R_HAND
+-- p_guitar01x_XH_R_HAND00
+-- p_hammer03x_PH_R_HAND
+-- p_harmonica01x_PH_R_HAND
+-- p_hatBowler01x_PH_L_HAND
+-- p_hayBale03x_PH_R_HAND
+-- p_hayBale03x
+-- p_Javierknife_temp_PH_R_HAND
+-- p_jawHarp01x_PH_L_HAND
+-- p_jawHarp01xPH_L_HAND
+-- p_kettle03x_PH_L_HAND
+-- p_kettle03x
+-- p_knife01x_PH_R_HAND
+-- p_ladle04x_PH_R_HAND
+-- p_lantern05x_PH_L_HAND
+-- p_lumber09_piece01x_PH_R_Hand
+-- p_MANDOLIN01x_PH_R_HAND
+-- p_matchstick01x_PH_L_HAND
+-- p_meatChunks01x_PH_L_HAND
+-- p_milkCan01x_PH_L_HAND
+-- p_moneyStack01x_PH_R_HAND
+-- p_mugCoffee01x_ph_r_hand
+-- p_nailFile01x_PH_R_HAND
+-- p_package08x_PH_R_HAND_01
+-- p_package08x_PH_R_HAND_02
+-- p_pen01x_PH_R_HAND
+-- p_pencil01x_PH_L_HAND
+-- p_pencil01x_XH_R_HAND00
+-- p_piano03x
+-- p_pipe01x_PH_R_HAND
+-- p_pitchfork01x_PH_R_HAND
+-- p_pocketMirror01x_PH_L_HAND
+-- p_rake03x_PH_R_HAND
+-- p_sackCorn01x_PH_R_HAND
+-- p_sharpeningStone01x_PH_L_HAND
+-- p_shovel03x_PH_R_HAND
+-- p_spoon01x_PH_R_HAND
+-- p_spoon01x_XH_L_HAND00
+-- p_stick_dynamite01x_PH_L_HAND
+-- p_tacksingle01x
+-- p_toolBox01x_PH_L_HAND
+-- p_TRUMPET01x_PH_L_HAND
+-- p_waterpump01x_PH_L_HAND
+-- p_woodWhittle01x_PH_L_HAND
+-- s_herbalPouch02x_PH_L_HAND
+-- s_inv_tonic01x_PH_L_HAND
+-- s_penelopePurse01x_PH_L_HAND
+-- SLEDGEHAMMER
+-- p_shotGlass01x_PH_L_Hand
+-- p_cs_newspaper_02x_noanim_PH_L_HAND
+-- p_stickFirePoker01x_PH_R_HAND
