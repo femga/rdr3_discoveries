@@ -650,3 +650,85 @@ Now I wonder if it changes the money icon to match locale
 0x3FDCC1F8C17E303
 Citizen.InvokeNative(0x3FDCC1F8C17E303E, PlayerPedId(), 10, 0)
 it's change health bar around heart icon
+
+------------------------
+------------------------
+------------------------
+
+0x718c6ecf5e8cbdd4  (by aaron1a12)
+Forces the third person gameplay camera at closest zoom. 
+Must be called every frame to interpolate
+
+N_0x718c6ecf5e8cbdd4()
+
+------------------------
+------------------------
+------------------------
+
+0x71d71e08a7ed5bd7  (by aaron1a12)
+Zooms in the third person camera closer to ground level
+Must be called every frame to interpolate. Pass zero to reset
+
+N_0x71d71e08a7ed5bd7(1)
+
+------------------------
+------------------------
+------------------------
+
+0x066167c63111d8cf  (by aaron1a12)
+Sets the third person gameplay camera zoom level and blends in.
+Must be called every frame to interpolate.
+Important: offset and distance permanently affects subtle zoom in weapon wheel and possibly in menus too.
+
+N_0x066167c63111d8cf(fAlpha, iUnk0, fOffset, iUnk1, fDistance)
+N_0x066167c63111d8cf(1.0, 1, 0.0, 1, 0.75)
+
+------------------------
+------------------------
+------------------------
+
+0x9D6DEC9791A4E501 (by aaron1a12)
+Returns true or false if the ped can say a specific speech line with PlayPedAmbientSpeechNative()
+Not reliable on remote clients when used on a player ped.
+
+N_0x9d6dec9791a4e501(ped, soundName, 0, 1)
+
+------------------------
+------------------------
+------------------------
+
+0x4A98E228A936DBCC (by aaron1a12)
+Gets the hash for the currently playing speech line
+
+N_0x4a98e228a936dbcc(ped)
+
+------------------------
+------------------------
+------------------------
+
+0x6bffb7c276866996 (by aaron1a12)
+Gets the hash for the last played speech line
+
+N_0x6bffb7c276866996(ped)
+
+------------------------
+------------------------
+------------------------
+
+0x0501d52d24ea8934 (by aaron1a12)
+Seems to return horse ped when really close (facing, directly riding, etc)
+Maybe when horse interaction prompts are allowed to show?
+
+N_0x0501d52d24ea8934(1)
+
+------------------------
+------------------------
+------------------------
+
+0x9c409bbc492cb5b1(by aaron1a12)
+Returns the hash of the currently highlighted item in the weapon wheel. Only works while the wheel is open. 
+Use in conjunction with IsControlJustReleased(0, `INPUT_OPEN_WHEEL_MENU`) to detect item selection/usage.
+
+if N_0x9c409bbc492cb5b1() == `CONSUMABLE_PEACHES_CAN` and IsControlJustReleased(0, `INPUT_OPEN_WHEEL_MENU`) then
+  print("You just ate a bunch of peaches.")
+end
