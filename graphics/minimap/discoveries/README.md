@@ -8,6 +8,8 @@ Citizen.CreateThread(function()
   end    
 end)
 ```
+![image](https://github.com/zelbeus/rdr3_discoveries_f/assets/66686454/411483b3-3fe1-49b6-97b0-4778fd8baffe)
+
 <h2>Discovery List</h2>
 
 Discovery hashname | Discovery hash
