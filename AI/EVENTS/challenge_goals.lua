@@ -1,3 +1,15 @@
+local challenges = {
+	"SP_CHAL_BAND_ROOT",
+	"SP_CHAL_EXPL_ROOT",
+	"SP_CHAL_GAMB_ROOT",
+	"SP_CHAL_HERB_ROOT",
+	"SP_CHAL_HORSE_ROOT",
+	"SP_CHAL_HUNT_ROOT",
+	"SP_CHAL_SHOT_ROOT",
+	"SP_CHAL_SURV_ROOT",
+	"SP_CHAL_WEAP_ROOT",
+}
+
 local challenge_goals = {
 
 	"ACCURACY_100PERCENT",													-- -1720572606		-- 0x99722542
