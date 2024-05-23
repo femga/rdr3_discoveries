@@ -1,0 +1,32 @@
+local challenges = {
+
+	"SP_CHAL_BAND_ROOT",
+	"SP_CHAL_EXPL_ROOT",
+	"SP_CHAL_GAMB_ROOT",
+	"SP_CHAL_HERB_ROOT",
+	"SP_CHAL_HORSE_ROOT",
+	"SP_CHAL_HUNT_ROOT",
+	"SP_CHAL_SHOT_ROOT",
+	"SP_CHAL_SURV_ROOT",
+	"SP_CHAL_WEAP_ROOT",
+	"MPAC_Role_BountyHunter",
+	"MPAC_Role_Collector",
+	"MPAC_Role_Trader",
+	"MPAC_Sharpshooter",
+	"MPAC_Combat",
+	"MPAC_Hunting",
+	"MPAC_Survivalist",
+	"MPAC_Crimes",
+	"MPAC_Travel",
+	"MPAC_Trade",
+	"MPAC_General",
+	"MPAC_Horse",
+	"MPAC_Wagon",
+	"MPAC_Posse",
+	"MPAC_FreemodeMissions",
+	"MPAC_Competitive",
+	"MPAC_GunslingerVsOutlaw",
+	"MPAC_Role_Moonshiner",
+
+}
+
