@@ -32,6 +32,11 @@ Upon reaching the challenge goal, the player receives a challenge rewards. The p
 	Citizen.InvokeNative(0xF63DF9EE16393343, GetHashKey("MPAC_Travel"), GetHashKey("MPAC_TRAVEL_004"), 1)
 	Citizen.InvokeNative(0xF63DF9EE16393343, GetHashKey("MPAC_Travel"), GetHashKey("MPAC_TRAVEL_005"), 1)
 
+	--Adding Progress to Challenge Goal
+	ChalAddGoalProgressInt(GetHashKey("MPAC_Travel"), GetHashKey("MPAC_TRAVEL_005"), 1)
+	--Getting Progress for Challenge Goal
+	local progress = Citizen.InvokeNative(0xDDBD560745B1EE98, GetHashKey("MPAC_Travel"), GetHashKey("MPAC_TRAVEL_005"), PlayerId())
+	print(progress)
 ```
 
 <h2>Challenges.</h2>
