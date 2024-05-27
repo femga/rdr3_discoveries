@@ -330,4 +330,16 @@ local frontend_soundsets = {
       "Friend_Pick_Up",
     },
 
+    ["HUD_PLAYER_MENU"] = {
+      "MENU_ENTER",
+      "MENU_CLOSE",
+      "SELECT",
+      "BACK",
+      "NAV_LEFT",
+      "NAV_RIGHT",
+      "NAV_UP",
+      "NAV_DOWN",
+      "BUMPER_LEFT",
+      "BUMPER_RIGHT",
+    }
 }
