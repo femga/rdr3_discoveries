@@ -4257,7 +4257,7 @@ local scenario_types_with_conditional_anims = {
       "CODE_WOLF_WARNING",
   },
 
-  ["FarmAnimal",
+  ["FarmAnimal"] = {
   },
 
   ["PROP_HitchingPost"] = {
