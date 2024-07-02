@@ -732,3 +732,18 @@ Use in conjunction with IsControlJustReleased(0, `INPUT_OPEN_WHEEL_MENU`) to det
 if N_0x9c409bbc492cb5b1() == `CONSUMABLE_PEACHES_CAN` and IsControlJustReleased(0, `INPUT_OPEN_WHEEL_MENU`) then
   print("You just ate a bunch of peaches.")
 end
+
+
+
+------------------------
+0xC412AA1C73111FE0(by Ultimation)
+Adds a pelt to a horse from an itemHash and the albedo, (optional) normal textures.
+
+local mount = GetMountOwnedByPlayer(PlayerId())
+local itemhash = GetHashKey('PROVISION_DEER_HIDE_POOR')
+local albedo = GetHashKey('a_c_deer_01_uppr_000_c0_001_ab')
+local normal = 0
+local param5 = 0 -- always appears to be 0
+
+Citizen.InvokeNative(0xC412AA1C73111FE0,mount,itemHash,albedo,normal,0,param5)
+------------------------
