@@ -1,11 +1,13 @@
---[[
-Example of usage:
+## Example
+```lua
 TaskAnimalInteraction(ped, horsePed, joaat("Interaction_Brush"), joaat("p_brushHorse02x"), false)
 repeat Wait(0) until HasAnimEventFired(ped, joaat("INTERACT"))
 print("Horse has been brushed!")
+```
 
-List of actionHashes (These hashes must be used with their associated animation.):
-]]
+# List of anim events (these hashes must be used with their associated animation):
+Anim Event |
+-- |
 1971901080
 1488152799
 830377326
