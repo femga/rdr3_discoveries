@@ -11,7 +11,7 @@ SetRelationshipBetweenGroups(RelationTypeId, `rel_civmale`, `PLAYER`)
 ```
 
 
-# List of relation types::
+# List of relation types:
 RelationTypeId | RelationTypeName
 ----------- | --------------------------
 0 | ACQUAINTANCE_TYPE_PED_NONE
@@ -135,7 +135,7 @@ REL_FETCH_ENEMY_1
 REL_FETCH_ENEMY_2
 
 
-# List of peds and their corresponding default relationship groups
+# List of peds and their corresponding default relationship groups:
 Ped Model Name | Default Relationship Group
 ----------- | --------------------------
 A_C_Alligator_01 | REL_ALLIGATOR
