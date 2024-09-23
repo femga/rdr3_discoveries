@@ -12,7 +12,7 @@ SetRelationshipBetweenGroups(RelationTypeId, `rel_civmale`, `PLAYER`)
 
 
 # List of relation types::
-RelationTypeName | RelationTypeId
+RelationTypeId | RelationTypeName
 ----------- | --------------------------
 0 | ACQUAINTANCE_TYPE_PED_NONE
 1 | ACQUAINTANCE_TYPE_PED_RESPECT
