@@ -137,6 +137,7 @@ REL_FETCH_ENEMY_2
 
 # List of peds and their corresponding default relationship groups
 Ped Model Name | Default Relationship Group
+----------- | --------------------------
 A_C_Alligator_01 | REL_ALLIGATOR
 A_C_Alligator_02 | REL_ALLIGATOR
 A_C_Alligator_03 | REL_DOMESTICATED_ANIMAL
