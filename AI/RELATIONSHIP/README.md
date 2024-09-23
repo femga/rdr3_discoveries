@@ -1,88 +1,135 @@
+## Relationship groups
+
+Relationship groups of peds can be pre-configured by game (***default relationship groups***) or created by scripts with native function ADD_RELATIONSHIP_GROUP.
+
+
 ## Example
 ```lua
 -- This line will make male civils hate players.
-SetRelationshipBetweenGroups(6, `rel_civmale`, `PLAYER`)
+local RelationTypeId = 6
+SetRelationshipBetweenGroups(RelationTypeId, `rel_civmale`, `PLAYER`)
 ```
 
-# List of game based relations:
-Relationship Group |
+
+# List of relation types::
+RelationTypeName | RelationTypeId
+----------- | --------------------------
+0 | ACQUAINTANCE_TYPE_PED_NONE
+1 | ACQUAINTANCE_TYPE_PED_RESPECT
+2 | ACQUAINTANCE_TYPE_PED_LIKE
+3 | ACQUAINTANCE_TYPE_PED_IGNORE
+4 | ACQUAINTANCE_TYPE_PED_DISLIKE
+5 | ACQUAINTANCE_TYPE_PED_WANTED
+6 | ACQUAINTANCE_TYPE_PED_HATE
+7 | ACQUAINTANCE_TYPE_PED_DEAD
+8 | ACQUAINTANCE_TYPE_PED_DISGUISE
+9 | ACQUAINTANCE_TYPE_PED_THIEF
+
+
+
+# List of default relationship groups:
+Default Relationship Group Name |
 -- |
-rel_civmale (male civils default group)
-rel_civfemale (female civils default group)
-rel_civnative (indians default group)
-rel_domesticated_pet_animal
-rel_domesticated_animal (cows, pigs, etc.. default group)
-REL_WILD_ANIMAL (wild animals default group)
-REL_WILD_ANIMAL_BIRD (birds default group)
-REL_WILD_ANIMAL_PREDATOR (predators default group)
-REL_ALLIGATOR (alligators default group)
-REL_REAA_ANIMALS
-rel_hen_animal (hens default group)
-REL_BOAR (boars default group)
-PLAYER (default players group)
-rel_player_<number from 0 to 31> (default players group in MP)
-rel_player_like
-rel_player_dislike
-rel_player_ally
-rel_player_enemy
-rel_player_cop
-REL_GANG_LEADER
-rel_gang_laramie_gang
-rel_gang_dutchs
-rel_gang_dutchs_horses
-rel_gang_odriscoll
-rel_gang_skinner_brothers
-rel_gang_smugglers
-rel_gang_creole
-rel_gang_lemoyne_raiders
-rel_gang_murfree_brood
-rel_gt_team_<number from 0 to 7> (probably default groups in MP when you join a group)
-rel_gt_ffa
-rel_mp_like_all_players
-rel_mp_wanted_criminal
-REL_MPREST
-REL_MPREAA
-rel_re_enemy
-rel_re_victim
-rel_bounty
-rel_bounty_hunter
-rel_network_safe
-rel_network_free_agent
-rel_braithwaites
-rel_braith_guard
-rel_fetch_enemy_<number from 1 to 2>
-REL_CHU_PRIMARY_<number>
-REL_CHU_ALLY_<number>
-REL_CHU_ENEMY_<number>
-REL_CHU_KIDNAP_<number>
-REL_REAMD_LEMOYNE_RAIDERS
-REL_REAMD_JOINT
-REL_REAMD_DEALERS
-rel_guama_law
-rel_cop
-rel_greys
-rel_minigame_player
-rel_town_mob
-rel_criminals
-rel_companion_group
-rel_shooter
-rel_pinkertons
-rel_gunslingers
-REL_SHOPKEEPER
-REL_REBNT
-REL_CATHERINE
-REL_TRAIN_HOLDUP
-REL_OREPHT
+PLAYER
+CIVMALE
+CIVFEMALE
+COP
+NO_RELATIONSHIP
+REL_CIVMALE
+REL_CIVFEMALE
+REL_CIVNATIVE
+REL_RE_VICTIM
+REL_RE_ENEMY
+REL_VANHORN_THUG
+REL_VANHORN_CITIZEN
+REL_COP
 REL_NO_RELATIONSHIP
-REL_LOGGING_WOLF
-REL_DRUNK_<number>
-REL_TENANT
-REL_LOGGING
-REL_CATFISH_FATHER
-REL_CONVOY
-REL_CATFISH_SON
-REL_REEX_RAIDERS
-REL_MINE_WORKERS
-REL_DUTCH
-REL_MICAH
-REL_RESAF_CAMPER
+REL_PLAYER_ENEMY
+REL_PLAYER_ALLY
+REL_PLAYER_LIKE
+REL_PLAYER_DISLIKE
+REL_COMPANION_GROUP
+REL_WILD_ANIMAL
+REL_WILD_ANIMAL_BIRD
+REL_WILD_ANIMAL_PREDATOR
+REL_BOAR
+REL_ALLIGATOR
+REL_HEN_ANIMAL
+REL_DOMESTICATED_ANIMAL
+REL_BOUNTY_HUNTER
+REL_TOWN_MOB
+REL_GUAMA_LAW
+REL_PINKERTONS
+REL_UNICRIMINALS
+REL_CRIMINALS
+REL_MP_WANTED_CRIMINAL
+REL_GUNSLINGERS
+REL_GANG_LARAMIE_GANG
+REL_GANG_SKINNER_BROTHERS
+REL_GANG_CREOLE
+REL_GANG_LEMOYNE_RAIDERS
+REL_GANG_SMUGGLERS
+REL_GANG_ODRISCOLL
+REL_GANG_MURFREE_BROOD
+REL_GANG_DUTCHS
+REL_GANG_DUTCHS_HORSES
+REL_BRAITHWAITES
+REL_GREYS
+REL_NETWORK_SAFE
+REL_NETWORK_FREE_AGENT
+REL_GT_FFA
+REL_GT_TEAM_0
+REL_GT_TEAM_1
+REL_GT_TEAM_2
+REL_GT_TEAM_3
+REL_GT_TEAM_4
+REL_GT_TEAM_5
+REL_GT_TEAM_6
+REL_GT_TEAM_7
+REL_PLAYER_COP
+REL_PLAYER_0
+REL_PLAYER_1
+REL_PLAYER_2
+REL_PLAYER_3
+REL_PLAYER_4
+REL_PLAYER_5
+REL_PLAYER_6
+REL_PLAYER_7
+REL_PLAYER_8
+REL_PLAYER_9
+REL_PLAYER_10
+REL_PLAYER_11
+REL_PLAYER_12
+REL_PLAYER_13
+REL_PLAYER_14
+REL_PLAYER_15
+REL_PLAYER_16
+REL_PLAYER_17
+REL_PLAYER_18
+REL_PLAYER_19
+REL_PLAYER_20
+REL_PLAYER_21
+REL_PLAYER_22
+REL_PLAYER_23
+REL_PLAYER_24
+REL_PLAYER_25
+REL_PLAYER_26
+REL_PLAYER_27
+REL_PLAYER_28
+REL_PLAYER_29
+REL_PLAYER_30
+REL_PLAYER_31
+REL_GUARD
+REL_GUARD_ASB
+REL_GUARD_BRONTE
+REL_RANCHER
+REL_DOMESTICATED_PET_ANIMAL
+REL_GREYS_GUARD
+REL_BRAITH_GUARD
+REL_NBXLABORER
+REL_VALFARMER
+REL_HILLBILLY
+REL_MINIGAME_PLAYER
+REL_MP_LIKE_ALL_PLAYERS
+REL_FETCH_ENEMY_1
+REL_FETCH_ENEMY_2
