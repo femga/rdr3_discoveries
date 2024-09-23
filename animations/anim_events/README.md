@@ -225,7 +225,7 @@ joaat("Shot3")
 1352845595
 256044616
 1185753746
-joaat("dead"
+joaat("dead")
 1127451883
 673864806
 1352559923
@@ -308,7 +308,7 @@ joaat("WOLF")
 220797369
 174961811
 1382853318
-joaat("BARK"
+joaat("BARK")
 1641393317
 1784625749
 904913835
@@ -329,16 +329,16 @@ joaat("safetobreakoutb")
 1824589780
 1215474181
 MISC::GET_HASH_KEY("ChangeOutfit")
-joaat("hey_you"
-joaat("PLEASE"
+joaat("hey_you")
+joaat("PLEASE")
 2033048347
 1880282835
 1157265058
-joaat("hitped"
+joaat("hitped")
 756888172
 947648498
 377438560
-joaat("OPEN"
+joaat("OPEN")
 735209979
 916389463
 MISC::GET_HASH_KEY("Breakout_Upright")
@@ -412,7 +412,7 @@ joaat("Attach")
 joaat("guama_freeplay1")
 1162739759
 1178611789
-joaat("FIRE"
+joaat("FIRE")
 98839351
 joaat("cower_exit")
 joaat("Stop")
@@ -429,7 +429,7 @@ joaat("KNIFE_SWIPE")
 joaat("gamefinished")
 435960775
 329477842
-joaat("jog"
+joaat("jog")
 MISC::GET_HASH_KEY("AttachManure")
 419783961
 1308194400
@@ -562,7 +562,7 @@ joaat("rob_and_dump")
 1713036237
 1662606675
 1742469724
-joaat("dump"
+joaat("dump")
 1856475125
 826324311
 MISC::GET_HASH_KEY("attach")
@@ -645,7 +645,7 @@ joaat("mry3_th_learly")
 joaat("Help")
 983934627
 joaat("PLAYER_MASK")
-joaat("exit"
+joaat("exit")
 joaat("endsinstand")
 1388775939
 428295725
@@ -666,7 +666,7 @@ joaat("OnKnees")
 437520029
 1408655137
 2039367936
-joaat("Eat"
+joaat("Eat")
 1631365526
 1179642452
 1228204929
@@ -838,7 +838,7 @@ joaat("FadeOut")
 MISC::GET_HASH_KEY("NotFinalPlaylist")
 513672191
 1480191636
-joaat("Cut"
+joaat("Cut")
 2023235118
 1502208860
 joaat("ply_shit")
@@ -937,11 +937,11 @@ joaat("offer_work")
 joaat("BREAKOUT_RABBIT")
 663533857
 1772761102
-joaat("SKIP"
+joaat("SKIP")
 1817889081
 576298046
 1428722195
-joaat("HAT"
+joaat("HAT")
 79041699
 417495762
 281223346
