@@ -2,6 +2,10 @@
 
 Relationship groups can be pre-configured by game (***default relationship groups***) or created by scripts with native function ADD_RELATIONSHIP_GROUP. Every ped model is bound to some default relationship group. You can assign ped to another default relationship group with native function SET_PED_RELATIONSHIP_GROUP_DEFAULT_HASH.
 
+[List of relation types](#list-of-relation-types)
+[List of default relationship groups](#list-of-default-relationship-groups)
+[List of peds and their corresponding default relationship groups](#list-of-peds-and-their-corresponding-default-relationship-groups)
+
 
 ## Example
 ```lua
