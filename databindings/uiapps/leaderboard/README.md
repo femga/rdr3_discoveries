@@ -1,0 +1,1 @@
+TODO: The interface is not fully discovered, you have to understand how to edit the scoreboard lines.

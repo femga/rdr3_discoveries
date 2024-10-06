@@ -1,0 +1,1 @@
+Databindings are used for many interfaces, in huds, notifications, menus and so on.

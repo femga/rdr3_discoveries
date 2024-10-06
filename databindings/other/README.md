@@ -1,0 +1,1 @@
+This category concerns interfaces that activate/deactivate themselves by changing the value of one of their data often called "isVisible".
