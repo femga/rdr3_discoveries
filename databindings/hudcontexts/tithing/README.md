@@ -6,8 +6,8 @@
 Tithing
 ├── Supplies : String
 ├── CampFunds : Container
-|   ├── dollars : Int
-|   └── cents : Int
+    ├── dollars : Int
+    └── cents : Int
 └── PlayerCash : Container
     ├── dollars : Int
     └── cents : Int
