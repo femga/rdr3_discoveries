@@ -1,13 +1,16 @@
-Translation interface is an uiapp.
+## Hashname
+TRANSLATION_OVERLAY
 
-App hashname: TRANSLATION_OVERLAY
-Entry hashname: CATALOGUE
+## Entry hashname
+CATALOGUE
 
-Tree:
-    Translate
-        -> Catalogue : Container
-            -> divider<int> : Container
-                -> isVisible : Bool
-            -> textField<0 or 2> : Container
-                -> text : String
-                -> style : Int (from 0 to 3)
+## Tree structure
+```bash
+└── Translate : Container
+    └── Catalogue : Container
+        ├── divider<int> : Container
+        │   └── isVisible : Bool
+        └── textField<0 or 2> : Container
+            ├── text : String
+            └── style : Int (from 0 to 3)
+```
