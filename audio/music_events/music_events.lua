@@ -1302,6 +1302,11 @@ local music_events = {
     "MOB5_START",
     "MOB5_UPSTAIRS",
     "MOB5_UPSTAIRS_2",
+    "MOONSHINE_1_PRELOAD_START",
+    "MOONSHINE_2_PRELOAD_START",
+    "MOONSHINE_3_PRELOAD_START",
+    "MOONSHINE_4_PRELOAD_START",
+    "MOONSHINE_5_PRELOAD_START",
     "MP007_ANIMAL_TAGGING_MUSIC_START",
     "MP007_ANIMAL_TAGGING_MUSIC_STOP",
     "MP_ADV_INTRO_OS",
@@ -1324,6 +1329,8 @@ local music_events = {
     "MP_DGFH_BOAT_ESCORT_ATTACK",
     "MP_DGFH_BOAT_ESCORT_ROW",
     "MP_DGFH_BOAT_ESCORT_START",
+    "MP_FEAR_OUTRO_OS_TEAM1",
+    "MP_FEAR_OUTRO_OS_TEAM2",
     "MP_FM_END",
     "MP_FM_FISHING_START",
     "MP_FM_FISHING_STOP",
@@ -1351,6 +1358,18 @@ local music_events = {
     "MP_JAIL_TIME_STOP",
     "MP_MISSIONS_GLOBAL_END",
     "MP_MISSIONS_GLOBAL_FAIL",
+    "MP_NAT_ANIMAL_MISSION_FAILED",
+    "MP_NAT_ANIMAL_SIGHTING_ANIMALS",
+    "MP_NAT_ANIMAL_SIGHTING_POACHERS",
+    "MP_NAT_ANIMAL_SIGHTING_SAMPLE",
+    "MP_NAT_ANIMAL_SIGHTING_SEARCH",
+    "MP_NAT_ANIMAL_SIGHTING_START",
+    "MP_NAT_HIDEOUT_ENTER_AREA",
+    "MP_NAT_HIDEOUT_FAIL",
+    "MP_NAT_HIDEOUT_FIGHT",
+    "MP_NAT_HIDEOUT_START",
+    "MP_NAT_MISSION_ANIMAL_SPOTTED",
+    "MP_NAT_MISSION_COMPLETE_MUSIC",
     "MP_NAT_WILDLIFE_PHOTOGRAPHER_MUSIC_START",
     "MP_NAT_WILDLIFE_PHOTOGRAPHER_MUSIC_STOP",
     "MP_OWC_END",
@@ -2855,7 +2874,6 @@ local music_events = {
 
 
 
-
     ------------------------------------------------------------------------------
     -- FAKENAMES FOR UNKNOWN YET MUSIC EVENTS (BUT THESE FAKE NAMES WORK AS WELL)
     ------------------------------------------------------------------------------
@@ -2870,6 +2888,7 @@ local music_events = {
     "l_000130b2uq",
     "l_00013770fp",
     "l_00014dceac",
+    "l_0001783boi",
     "l_0001cad7hj",
     "l_0001fd3djo",
     "l_00020917oz",
@@ -3061,6 +3080,7 @@ local music_events = {
     "l_0024cc91ky",
     "l_0024e3f4bb",
     "l_0024f9cdog",
+    "l_00251a7fbe",
     "l_00252ea7tk",
     "l_0025300ezt",
     "l_0025509fgo",
@@ -3121,6 +3141,8 @@ local music_events = {
     "l_0033ce3bey",
     "l_0033d265hn",
     "l_00346f81sz",
+    "l_00356d8dps",
+    "l_0035736fdb",
     "l_0035930apt",
     "l_003687fanr",
     "l_00368f3bdg",
@@ -3224,6 +3246,7 @@ local music_events = {
     "l_0050b45dey",
     "l_0050dbdfzv",
     "l_005165e6df",
+    "l_0051d51chy",
     "l_00522131pp",
     "l_0052a489gm",
     "l_0052b183mc",
@@ -3400,6 +3423,7 @@ local music_events = {
     "l_00acc40een",
     "l_00ad216awt",
     "l_00ada444mh",
+    "l_00adb44bsc",
     "l_00adccaczv",
     "l_00ae372cyk",
     "l_00aea48abb",
@@ -3468,6 +3492,7 @@ local music_events = {
     "l_00fb1422gb",
     "l_0100ba84nl",
     "l_010205caor",
+    "l_0103d6d5bv",
     "l_01045b88pv",
     "l_01071648vl",
     "l_0107670afy",
@@ -3475,6 +3500,7 @@ local music_events = {
     "l_0111467eyy",
     "l_01147b00dy",
     "l_01168ad8nn",
+    "l_01178a31jr",
     "l_0117ff92dn",
     "l_0118755evf",
     "l_01198f1bno",
@@ -3520,6 +3546,7 @@ local music_events = {
     "l_0249f4f4yd",
     "l_02801b94an",
     "l_02f24097kj",
+
 
 
 }
