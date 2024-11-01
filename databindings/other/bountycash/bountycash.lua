@@ -1,12 +1,13 @@
 function ShowBountyCash(title)
     local rootContainer = DatabindingAddDataContainerFromPath("", "BountyCash")
     DatabindingAddDataBool(rootContainer, "State", true)
-    DatabindingAddDataString(rootContainer, "Title", title)
+    DatabindingAddDataString(rootContainer, "Text", title)
 end
 
 function HideBountyCash()
     local rootContainer = DatabindingAddDataContainerFromPath("", "BountyCash")
     DatabindingAddDataBool(rootContainer, "State", false)
+    DatabindingAddDataString(rootContainer, "Text", "")
 end
 
 --[[
