@@ -7,6 +7,7 @@ end
 function HideBountyCash()
     local rootContainer = DatabindingAddDataContainerFromPath("", "BountyCash")
     DatabindingAddDataBool(rootContainer, "State", false)
+    DatabindingAddDataString(rootContainer, "Text", "")
 end
 
 --[[
