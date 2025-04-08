@@ -1,8 +1,10 @@
 ```lua
 Citizen.CreateThread(function()
   local discovery_hash = GetHashKey("MAP_HIDEOUT_SHADY_BELLE")
-  if MapIsDiscoveryActive(discovery_hash) then --0x3F81EA4275D39D6F
-    MapDiscoverySetEnabled(discovery_hash) -- 0xDA98246C7A3C2189
+
+  --Native MapIsDiscoveryActive does not return boolean value anymore, only 0 or 1, needs extra check to remove if discovery is active
+  if MapIsDiscoveryActive(discovery_hash) == 1 then --0x3F81EA4275D39D6F
+    MapDiscoverySetEnabled(discovery_hash, false) -- 0xDA98246C7A3C2189
   else
     MapDiscoverRegion(discovery_hash) -- 0xD8C7162AB2E2AF45
   end    
