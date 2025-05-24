@@ -72,7 +72,7 @@ local animpostfx = {
 	"cutscene_rbch2rsc11_bink8",
 	"DEADEYE",
 	"DeadEyeEmpty",
-	"death01"
+	"death01",
 	"DeathFailMP01",
 	"directionalhit01",
 	"EagleEye",
