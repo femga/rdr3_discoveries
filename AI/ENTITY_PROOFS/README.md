@@ -15,7 +15,7 @@ It is "bitmask" type of flags. You can sum it up. For example, setting flag to 1
         return (full_bit_mask & flag_to_check) ~= 0;
     end
 
- 	-- is_flag_active(all_active_flags,8)  -- Сhecking if "collision proof flag" 8 is active. Returns FALSE in this example.
+ 	-- is_flag_active(all_active_flags,8)  -- Checking if "collision proof flag" 8 is active. Returns FALSE in this example.
 
 ```
 

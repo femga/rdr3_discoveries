@@ -54,7 +54,7 @@ Usually a scenario has several conditional anims. If the native function (TASK_S
 
 ## Anim variations
 
-Сonditional anim contains various types of clips.
+Conditional anim contains various types of clips.
 
 ***Enter*** anim contains clips for animation start.
 
