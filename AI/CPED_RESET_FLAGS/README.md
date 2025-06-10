@@ -228,7 +228,7 @@ Flag Id | Flag Name | Flag Description
 177 | PRF_PreventFleeFromIntimidatedTask | 
 178 | PRF_IsNearLootable | 
 179 |  | 
-180 |  | set ped don't have collision
+180 | PRF_EnableGhostMode | set ped don't have collision
 181 | PRF_DisableAmbientConversations | 
 182 |  | 
 183 |  | 
@@ -361,7 +361,7 @@ Flag Id | Flag Name | Flag Description
 310 | PRF_AllowPlayerPushing | 
 311 | PRF_IsAimingWithWeapon | 
 312 |  | is attacking
-313 |  | 
+313 | PRF_CanBeAttackedByFriendlyPed | 
 314 |  | 
 315 |  | 
 316 |  | 

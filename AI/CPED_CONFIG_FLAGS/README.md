@@ -156,7 +156,7 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 141 | PCF_DisablePlayerAutoHolster |	|	
 142 |	|	|	
 143 |	|	|	
-144 |	PCF_DisableHorseMPAutoFlee |	|	
+144 | PCF_DisableHorseMPAutoFlee |	|	
 145 | PCF_EnableHorseMPAutoFleeInSP	|	|	
 146 | PCF_CantWitnessCrimes |	|	
 147 |	|	|	
@@ -203,7 +203,7 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 188 |	|	|	
 189 |	|	|	
 190 |	|	|	
-191 |	|	|	
+191 | PCF_DisableHorseRevival	|	|	
 192 | PCF_DisableShootingAt |	|	
 193 |	|	|	
 194 | PCF_ShouldPedFollowersIgnoreWaypointMBR |	|	
@@ -247,7 +247,7 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 232 | PCF_ForceDieInCar	|	|	
 233 | PCF_PedIsEnemyToPlayer |	|	
 234 | PCF_NeverDoScenarioExitProbeChecks	|	|	
-235 |	PCF_NeverDoScenarioNavChecks |	|	
+235 | PCF_NeverDoScenarioNavChecks |	|	
 236 | PCF_ForceSynchronousScenarioExitChecking |	|	
 237 | PCF_ForcePlayNormalScenarioExitOnNextScriptCommand |	|	
 238 | PCF_ForcePlayImmediateScenarioExitOnNextScriptCommand	|	|	
@@ -259,7 +259,7 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 244 | PCF_DontAttackPlayerWithoutWantedLevel	|	|	
 245 | PCF_DontActivateRagdollFromAnyPedImpact	|	|	
 246 | PCF_ForcePedLoadCover |	|	
-247 |	PCF_BlockCoweringInCover |	|	
+247 | PCF_BlockCoweringInCover |	|	
 248 | PCF_BlockPeekingInCover	|	|	
 249 | PCF_BlockWeaponSwitching |	|	
 250 | PCF_StopWeaponFiringOnImpact | |	
@@ -267,43 +267,43 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 252 | PCF_SteerAroundDeadBodies	|	| **true**
 253 |	|	|	
 254 |	| full immunity vs melee and range attack |	
-255 |	PCF_SteersAroundPeds |	| **true**
+255 | PCF_SteersAroundPeds |	| **true**
 256 | PCF_SteersAroundVehicles |	| **true**
 257 | PCF_BlocksPathingWhenDead	|	|	
 258 |	|	|	
 259 | PCF_CanAmbientHeadtrack |	|	
 260 | PCF_IsScuba |	|	
 261 | PCF_ResetLastVehicleOnVehicleExit	|	|	
-262 |	PCF_AllowPedInVehiclesOverrideTaskFlags |	|	
+262 | PCF_AllowPedInVehiclesOverrideTaskFlags |	|	
 263 | PCF_NoCriticalHits |	|	
 264 | PCF_UpperBodyDamageAnimsOnly |	| **true**
 265 | PCF_DrownsInWater |	| **true**
 266 | PCF_DiesInstantlyWhenSwimming	|	|	
-267 |	PCF_DrownsInSinkingVehicle |	| **true**
+267 | PCF_DrownsInSinkingVehicle |	| **true**
 268 | PCF_DisableWeaponBlocking |	|	
-269 |	PCF_StayInCarOnJack |	|	
-270 |	PCF_CanBeShotInVehicle |	| **true**
-271 |	PCF_SuppressLowLODRagdollSwitchWhenCorpseSettles |	|	
-272 |	PCF_TreatAsAmbientPedForDriverLockOn |	|	
+269 | PCF_StayInCarOnJack |	|	
+270 | PCF_CanBeShotInVehicle |	| **true**
+271 | PCF_SuppressLowLODRagdollSwitchWhenCorpseSettles |	|	
+272 | PCF_TreatAsAmbientPedForDriverLockOn |	|	
 273 | PCF_NeverEverTargetThisPed |	|	
-274 |	PCF_AllowPlayerLockOnIfFriendly |	|	
-275 |	PCF_UseCameraHeadingForDesiredDirectionLockOnTest |	|	
-276 |	PCF_TargettableWithNoLos |	|	
+274 | PCF_AllowPlayerLockOnIfFriendly |	|	
+275 | PCF_UseCameraHeadingForDesiredDirectionLockOnTest |	|	
+276 | PCF_TargettableWithNoLos |	|	
 277 |	|	|	
 278 | PCF_ClearRadarBlipOnDeath |	| **true**
 279 | PCF_NeverLeavesGroup |	|	
 280 | PCF_DontEnterLeadersVehicle |	|	
-281 |	PCF_BlockGroupPedAimedAtResponse |	|	
-282 |	PCF_WillRemainOnBoatAfterMissionEnds |	|	
+281 | PCF_BlockGroupPedAimedAtResponse |	|	
+282 | PCF_WillRemainOnBoatAfterMissionEnds |	|	
 283 | PCF_DisableInjuredRiderResponse |	|	
 284 |	|	|	
-285 |	PCF_ForcePlayDirectedNormalScenarioExitOnNextScriptCommand |	|	
+285 | PCF_ForcePlayDirectedNormalScenarioExitOnNextScriptCommand |	|	
 286 | PCF_DisableEvasiveDives |	|	
 287 | PCF_AllowMissionDriverlessDraftAnimalResponse |	|	
 288 |	|	|	
 289 | PCF_TreatDislikeAsHateWhenInCombat |	|	
 290 | PCF_TreatNonFriendlyAsHateWhenInCombat |	|	
-291 |	PCF_CanPlayInCarIdles |	| **true**
+291 | PCF_CanPlayInCarIdles |	| **true**
 292 |	| is ped using scenario | **true**
 293 |	|	|	
 294 | PCF_DisableDriverlessDraftAnimalResponse |	|	
@@ -350,7 +350,7 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 335 |	| prevent holster weapon (with tab button). Dont effect to "twirl" holster (with double tab) |	
 336 | PCF_ForceInjuredMovement |	|	
 337 | PCF_DontExitVehicleIfNoDraftAnimals |	|	
-338 |	|	|	
+338 | PCF_BlockMoveInCover |	|	
 339 |	|	|	
 340 | PCF_DisableAllMeleeTakedowns |	|	
 341 | PCF_ForceDismountLeft |	|	
@@ -465,7 +465,7 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 450 |	|	|	
 451 | PCF_HorseDontEvaluateRiderForDamageChecks |	|	
 452 |	|	|	
-453 |	|	|	
+453 | PCF_AllowMissionPedToFlee	|	|	
 454 |	|	|	
 455 |	|	|	
 456 | PCF_ForcePedKnockOut |	|	
@@ -580,7 +580,7 @@ FlagId | Flag Name | Flag Description | Default Value for Player Ped
 565 | PCF_IsValidForVehicleSeatStow |	|	
 566 | PCF_EnableSpecialActionBranches |	|	
 567 | PCF_DisableHorseShunting |	|	
-568 |	|	|	
+568 | PCF_NeverKillWhenTrapped |	|	
 569 | PCF_CanBeAttackedByFriendlyPed |	|	
 570 |	|	|	
 571 |	|	|	
