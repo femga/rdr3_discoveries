@@ -22,7 +22,7 @@ end)
 
 ```
 
-![miniobjects_example](http://femga.com/images/samples/miniobjects/miniobjects_example.png)
+![miniobjects_example](https://femga.com:8080/images/samples/miniobjects/miniobjects_example.png)
 
 <h2>Minimap objects</h2>
 

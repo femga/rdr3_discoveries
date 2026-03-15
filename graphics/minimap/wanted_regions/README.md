@@ -23,7 +23,7 @@ end)
 
 ```
 
-![wanted_regions_example](http://femga.com/images/samples/screenshots/wanted_regions_example.png)
+![wanted_regions_example](https://femga.com:8080/images/samples/screenshots/wanted_regions_example.png)
 
 <h2>Wanted regions</h2>
 

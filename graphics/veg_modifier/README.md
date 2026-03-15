@@ -2,8 +2,8 @@
 
 **Static veg modifiers** remove or flatten grass, debris, bushes, snow etc.
 
-![veg_modifiers_example](http://femga.com/images/samples/graphics/veg_modifier_01.jpg)
-![veg_modifiers_example](http://femga.com/images/samples/graphics/veg_modifier_02.jpg)
+![veg_modifiers_example](https://femga.com:8080/images/samples/graphics/veg_modifier_01.jpg)
+![veg_modifiers_example](https://femga.com:8080/images/samples/graphics/veg_modifier_02.jpg)
 
 <h2>Veg Modifiers Flags</h2>
 
