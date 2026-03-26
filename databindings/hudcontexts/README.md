@@ -14,6 +14,9 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 > [!NOTE]
 > This list is created on a best effort basis and may not be completely accurate depending on the combination of HUD contexts, UI apps, and UI properties.
 
+> [!NOTE]
+> Only the contexts that have an effect on the UI are listed here. There are more contexts that are either unused or have their effects undocumented at this time. See also [HUD Presets](../../graphics/HUD/hud_presets/hud_presets.lua) for more information on the individual HUD slots.
+
 ### HUD_CTX_AMBIENT_SPECTATOR_VIEW
 | HUD Slot | Visibility State |
 | :--- | :--- |
