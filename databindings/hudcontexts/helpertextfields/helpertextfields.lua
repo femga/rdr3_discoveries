@@ -1,5 +1,5 @@
 function ShowHelperTextFields(fields)
-    EnableHudContext(-66088566)
+    EnableHudContext(`HUD_CTX_MP_INSTANCED_TOP_RIGHT_HUD`)
 
     local rootContainer = DatabindingAddDataContainerFromPath("", "helperTextfields")
     for key, field in pairs(fields) do
@@ -9,7 +9,7 @@ function ShowHelperTextFields(fields)
 end
 
 function HideHelperTextFields()
-    DisableHudContext(-66088566)
+    DisableHudContext(`HUD_CTX_MP_INSTANCED_TOP_RIGHT_HUD`)
 end
 
 --[[
