@@ -83,6 +83,11 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | :--- | :--- |
 | **OBJECTIVE** | Hidden |
 
+### HUD_CTX_FADED_GAMEPLAY
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **TOP_DRAW_CASH** | Fade Out |
+
 ### HUD_CTX_FIREFIGHT_CUTSCENE
 | HUD Slot | Visibility State |
 | :--- | :--- |
@@ -135,17 +140,35 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | HUD Slot | Visibility State |
 | :--- | :--- |
 | **AMMO** | Shown |
+| **CACHED_OBJECTIVE** | Shown |
 | **CAMP_SUPPLY** | Shown |
 | **CASH** | Fade In |
+| **DEADEYE_CORE** | Fade In |
+| **DEADEYE_METER** | Fade In |
 | **FEED_LOCATION** | Shown |
 | **FEED_SCORETIMER_MESSAGE** | Shown |
 | **FEED_TRANSPORTATION** | Shown |
+| **HEALTH_CORE** | Fade In |
+| **HEALTH_METER** | Fade In |
 | **HONOR** | Shown |
+| **HORSE_HEALTH_CORE** | Fade In |
+| **HORSE_HEALTH_METER** | Fade In |
+| **HORSE_STAMINA_CORE** | Fade In |
+| **HORSE_STAMINA_METER** | Fade In |
 | **MP_GOLD_CURRENCY** | Shown |
+| **MP_HORSE_OVERHEAD_DISPLAY** | Shown |
 | **MP_HUD_ABILITYCARD_INDICATOR** | Shown |
+| **MP_MOONSHINE_BUSINESS** | Hidden |
 | **MP_OVERHEAD_DISPLAY** | Shown |
+| **MP_PLAYER_OVERHEAD_DISPLAY** | Shown |
+| **MP_PLAYSTYLE_ICON** | Fade In |
+| **MP_TRADER** | Hidden |
 | **OBJECTIVE** | Hidden |
 | **RADAR** | Fade Out |
+| **RPG_ICONS_HORSE** | Hidden |
+| **RPG_ICONS_PLAYER** | Hidden |
+| **STAMINA_CORE** | Fade In |
+| **STAMINA_METER** | Fade In |
 | **TOP_RIGHT_SCORES_STACK** | Shown |
 | **WANTED** | Shown |
 
@@ -220,7 +243,6 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | **FEED_TICKER** | Shown |
 | **FEED_TOAST** | Hidden |
 | **FEED_TRANSPORTATION** | Hidden |
-| **HELPER_TEXT** | Hidden |
 | **HONOR** | Hidden |
 | **MP_GOLD_CURRENCY** | Hidden |
 | **MP_HUD_ABILITYCARD_INDICATOR** | Hidden |
@@ -398,11 +420,15 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | **FEED_TICKER** | Hidden |
 | **FEED_TRANSPORTATION** | Hidden |
 | **HONOR** | Hidden |
+| **HORSE_HEALTH_CORE** | Hidden |
+| **HORSE_STAMINA_CORE** | Hidden |
 | **MP_GOLD_CURRENCY** | Hidden |
 | **MP_HUD_ABILITYCARD_INDICATOR** | Hidden |
 | **MP_OVERHEAD_DISPLAY** | Hidden |
 | **RADAR** | Fade Out |
 | **RETICLE** | Hidden |
+| **RPG_ICONS_HORSE** | Hidden |
+| **RPG_ICONS_PLAYER** | Hidden |
 | **SCORETIMER** | Hidden |
 | **WANTED** | Hidden |
 
@@ -437,6 +463,75 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | :--- | :--- |
 | **CASH** | Fade In |
 | **MP_GOLD_CURRENCY** | Shown |
+
+### HUD_CTX_ITEM_CONSUMPTION_DEADEYE
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **DEADEYE_METER** | Fade In |
+| **HEALTH_METER** | Fade In |
+| **RPG_ICONS_PLAYER** | Hidden |
+| **STAMINA_METER** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_DEADEYE_CORE
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **DEADEYE_CORE** | Fade In |
+| **HEALTH_CORE** | Fade In |
+| **STAMINA_CORE** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_HEALTH
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **DEADEYE_METER** | Fade In |
+| **HEALTH_METER** | Fade In |
+| **RPG_ICONS_PLAYER** | Hidden |
+| **STAMINA_METER** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_HEALTH_CORE
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **DEADEYE_CORE** | Fade In |
+| **HEALTH_CORE** | Fade In |
+| **STAMINA_CORE** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_HORSE_HEALTH
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **HORSE_HEALTH_METER** | Fade In |
+| **HORSE_STAMINA_METER** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_HORSE_HEALTH_CORE
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **HORSE_HEALTH_CORE** | Fade In |
+| **HORSE_STAMINA_CORE** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_HORSE_STAMINA
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **HORSE_HEALTH_METER** | Fade In |
+| **HORSE_STAMINA_METER** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_HORSE_STAMINA_CORE
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **HORSE_HEALTH_CORE** | Fade In |
+| **HORSE_STAMINA_CORE** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_STAMINA
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **DEADEYE_METER** | Fade In |
+| **HEALTH_METER** | Fade In |
+| **RPG_ICONS_PLAYER** | Hidden |
+| **STAMINA_METER** | Fade In |
+
+### HUD_CTX_ITEM_CONSUMPTION_STAMINA_CORE
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **DEADEYE_CORE** | Fade In |
+| **HEALTH_CORE** | Fade In |
+| **STAMINA_CORE** | Fade In |
 
 ### HUD_CTX_MAYOR2_CUTSCENE_OBJECTIVES
 | HUD Slot | Visibility State |
@@ -687,12 +782,18 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | HUD Slot | Visibility State |
 | :--- | :--- |
 | **CASH** | Hidden |
+| **MP_MOONSHINE_BUSINESS** | Shown |
 
 ### HUD_CTX_MP_NATURALIST_ANIMAL_MODE
 | HUD Slot | Visibility State |
 | :--- | :--- |
 | **RADAR** | Fade Out |
 | **RPG_ICONS** | Fade Out |
+
+### HUD_CTX_MP_OUTLAW_MISSIONS_MENU
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **CAPITALE** | Shown |
 
 ### HUD_CTX_MP_OUT_OF_AREA_BOUNDS
 | HUD Slot | Visibility State |
@@ -712,6 +813,17 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | **MP_HUD_ABILITYCARD_INDICATOR** | Hidden |
 | **SCORETIMER** | Hidden |
 | **WANTED** | Hidden |
+
+### HUD_CTX_MP_PLAYSTYLE_ICON_TRANSITION
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **MP_PLAYSTYLE_ICON** | Fade In |
+
+### HUD_CTX_MP_RACES
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **HORSE_STAMINA_CORE** | Fade In |
+| **HORSE_STAMINA_METER** | Fade In |
 
 ### HUD_CTX_MP_SHOW_HUD_ABILITY_CARD_INDICATOR
 | HUD Slot | Visibility State |
@@ -747,17 +859,24 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | :--- | :--- |
 | **CASH** | Hidden |
 | **MP_HUD_ABILITYCARD_INDICATOR** | Hidden |
+| **MP_TRADER** | Shown |
 
 ### HUD_CTX_MP_TRADER
 | HUD Slot | Visibility State |
 | :--- | :--- |
 | **CASH** | Fade In |
 | **MP_HUD_ABILITYCARD_INDICATOR** | Hidden |
+| **MP_TRADER** | Shown |
 
 ### HUD_CTX_MP_UGC_PLAYER_OUTRO
 | HUD Slot | Visibility State |
 | :--- | :--- |
 | **FEED_TICKER** | Hidden |
+
+### HUD_CTX_NO_ALIVE_PLAYER_HORSE
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **RPG_ICONS_HORSE** | Hidden |
 
 ### HUD_CTX_PLAYER_CAMERA_MODE
 | HUD Slot | Visibility State |
@@ -781,6 +900,7 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | **MINIGAMES_PLAYER_CASH** | Fade Out |
 | **MP_GOLD_CURRENCY** | Hidden |
 | **MP_HUD_ABILITYCARD_INDICATOR** | Hidden |
+| **MP_MOONSHINE_BUSINESS** | Hidden |
 | **MP_OVERHEAD_DISPLAY** | Hidden |
 | **PHOTO_MODE** | Shown |
 | **PLAYER_CAMERA_MODE_UI** | Shown |
@@ -896,6 +1016,17 @@ The following are all available HUD contexts in alphabetical order with the HUD 
 | HUD Slot | Visibility State |
 | :--- | :--- |
 | **OBJECTIVE** | Hidden |
+
+### HUD_CTX_SKINNING_PROCESS
+| HUD Slot | Visibility State |
+| :--- | :--- |
+| **DEADEYE_CORE** | Fade In |
+| **DEADEYE_METER** | Fade In |
+| **HEALTH_CORE** | Fade In |
+| **HEALTH_METER** | Fade In |
+| **MP_PLAYSTYLE_ICON** | Fade In |
+| **STAMINA_CORE** | Fade In |
+| **STAMINA_METER** | Fade In |
 
 ### HUD_CTX_TITHING
 | HUD Slot | Visibility State |
@@ -1053,13 +1184,28 @@ UI apps may toggle different UI elements on or off based on the currently runnin
 | :--- | :--- |
 | **AMMO** | Hidden |
 | **CASH** | Fade Out |
+| **DEADEYE_CORE** | Fade In |
+| **DEADEYE_METER** | Fade In |
 | **FEED_LOCATION** | Hidden |
 | **FEED_SHARD** | Hidden |
+| **HEALTH_CORE** | Fade In |
+| **HEALTH_METER** | Fade In |
+| **HORSE_HEALTH_CORE** | Fade In |
+| **HORSE_HEALTH_METER** | Fade In |
+| **HORSE_STAMINA_CORE** | Fade In |
+| **HORSE_STAMINA_METER** | Fade In |
 | **MP_GENERIC_HUD** | Hidden |
 | **MP_HUD_ABILITYCARD_INDICATOR** | Hidden |
+| **MP_HUD_ABILITY_CARDS** | Hidden |
+| **MP_PLAYSTYLE_ICON** | Fade In |
+| **QUICK_SELECT_HORSE_INFO** | Hidden |
 | **RADAR** | Fade Out |
 | **RETICLE** | Hidden |
+| **RPG_ICONS_HORSE** | Hidden |
+| **RPG_ICONS_PLAYER** | Hidden |
 | **SCORETIMER** | Hidden |
+| **STAMINA_CORE** | Fade In |
+| **STAMINA_METER** | Fade In |
 
 ### pause_menu
 | HUD Slot | Visibility State |
@@ -1134,6 +1280,7 @@ UI apps may toggle different UI elements on or off based on the currently runnin
 | **FEED_SCORETIMER_MESSAGE** | Hidden |
 | **FEED_TOAST** | Hidden |
 | **FEED_TRANSACTION** | Hidden |
+| **MP_TRADER** | Shown |
 | **RADAR** | Fade Out |
 | **RETICLE** | Hidden |
 | **RPG_ICONS** | Fade Out |
