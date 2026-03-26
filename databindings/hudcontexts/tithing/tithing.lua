@@ -10,11 +10,11 @@ function ShowTithing(title, campFundsDollars, campFundsCents, playerCashDollars,
     DatabindingAddDataInt(playerCashContainer, "dollars", playerCashDollars)
     DatabindingAddDataInt(playerCashContainer, "cents", playerCashCents)
 
-    EnableHudContext(1670279562)
+    EnableHudContext(`HUD_CTX_TITHING`)
 end
 
 function HideTithing()
-    DisableHudContext(1670279562)
+    DisableHudContext(`HUD_CTX_TITHING`)
 end
 
 --[[
