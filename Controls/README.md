@@ -59,7 +59,7 @@ Hash | HashName | QWERTY | Xbox | Category | Version
 0x311353EB|INPUT_PHOTO_MODE_MOVE_LEFT_ONLY|A||Photo&nbsp;Mode|
 0x877F1027|INPUT_FRONTEND_NAV_LEFT|A,&nbsp;Arrow&nbsp;Left|Dpad&nbsp;Left,&nbsp;LS&nbsp;X|Menus|1207.80
 0xFDDD89D4|INPUT_MINIGAME_DOMINOES_MOVE_LEFT_ONLY|A,&nbsp;Arrow&nbsp;Left|Dpad&nbsp;Left,&nbsp;LS&nbsp;X|Minigames|
-0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A,&nbsp;Arrow&nbsp;Left/Right,&nbsp;D|LS&nbsp;X|Menus|***1311.12***
+0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A,&nbsp;D,&nbsp;Arrow&nbsp;Left/Right|LS&nbsp;X|Menus|***1311.12***
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A,&nbsp;D|LS&nbsp;X|Menus|1207.80
 0x126796EB|INPUT_HORSE_MOVE_LR|A,&nbsp;D|LS&nbsp;X|Mount/Vehicle|1207.80
 0xD8DFCAB3|INPUT_VEH_BOAT_TURN_LR|A,&nbsp;D|LS&nbsp;X|Mount/Vehicle|1207.80
@@ -86,10 +86,6 @@ Hash | HashName | QWERTY | Xbox | Category | Version
 0xCFA703D3|INPUT_CAMERA_EXPRESSION_NEXT|Arrow&nbsp;Down|Dpad&nbsp;Down|Portable&nbsp;Camera|
 0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow&nbsp;Down|Dpad&nbsp;Down||
 0x01EBFABD|INPUT_PHOTO_MODE_FOCAL_LENGTH_DOWN_ONLY|Arrow&nbsp;Down||Photo&nbsp;Mode|
-0x886ABA4E|INPUT_PHOTO_MODE_FOCAL_LENGTH|Arrow&nbsp;Up/Down|LS&nbsp;Y|Photo&nbsp;Mode|
-0xAC70F311|INPUT_DOCUMENT_SCROLL|Arrow&nbsp;Up/Down,&nbsp;Mouse&nbsp;Scroll&nbsp;Up/Down|RS&nbsp;Y|Menus|
-0xA917D24B|INPUT_MULTIPLAYER_LEADERBOARD_SCROLL_UD|Arrow&nbsp;Up/Down,&nbsp;Mouse&nbsp;Scroll&nbsp;Up/Down|RS&nbsp;Y|Menus|
-0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow&nbsp;Up/Down,&nbsp;S,&nbsp;W|LS&nbsp;Y|Menus|***1311.12***
 0xD72F3E29|INPUT_DOCUMENT_SCROLL_DOWN_ONLY|Arrow&nbsp;Down,&nbsp;Mouse&nbsp;Scroll&nbsp;Down||Menus|
 0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow&nbsp;Down,&nbsp;S|Dpad&nbsp;Down,&nbsp;LS&nbsp;Y|Menus|1207.80
 0xFD9FC86D|INPUT_MINIGAME_DOMINOES_MOVE_DOWN_ONLY|Arrow&nbsp;Down,&nbsp;S|Dpad&nbsp;Down,&nbsp;LS&nbsp;Y|Minigames|
@@ -109,6 +105,10 @@ Hash | HashName | QWERTY | Xbox | Category | Version
 0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow&nbsp;Right|Dpad&nbsp;Right||
 0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow&nbsp;Right,&nbsp;D|Dpad&nbsp;Right,&nbsp;LS&nbsp;X|Menus|1207.80
 0x7D5187C9|INPUT_MINIGAME_DOMINOES_MOVE_RIGHT_ONLY|Arrow&nbsp;Right,&nbsp;D|Dpad&nbsp;Right,&nbsp;LS&nbsp;X|Minigames|
+0x886ABA4E|INPUT_PHOTO_MODE_FOCAL_LENGTH|Arrow&nbsp;Up/Down|LS&nbsp;Y|Photo&nbsp;Mode|
+0xAC70F311|INPUT_DOCUMENT_SCROLL|Arrow&nbsp;Up/Down,&nbsp;Mouse&nbsp;Scroll&nbsp;Up/Down|RS&nbsp;Y|Menus|
+0xA917D24B|INPUT_MULTIPLAYER_LEADERBOARD_SCROLL_UD|Arrow&nbsp;Up/Down,&nbsp;Mouse&nbsp;Scroll&nbsp;Up/Down|RS&nbsp;Y|Menus|
+0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow&nbsp;Up/Down,&nbsp;S,&nbsp;W|LS&nbsp;Y|Menus|***1311.12***
 0xBCD1444B|INPUT_CREATOR_MENU_UP|Arrow&nbsp;Up|Dpad&nbsp;Up|Menus|
 0x6319DB71|INPUT_FRONTEND_UP|Arrow&nbsp;Up|Dpad&nbsp;Up|Menus|1207.80
 0x911CB09E|INPUT_GAME_MENU_UP|Arrow&nbsp;Up|Dpad&nbsp;Up|Menus|1207.80
