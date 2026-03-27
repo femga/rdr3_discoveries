@@ -2,9 +2,7 @@
 
 Below are the default control mappings for QWERTY keyboards and Xbox controllers. While players can customize these bindings, some controls are natively exclusive to a specific input method. If a control lacks a mapping for a particular device, it will be unusable on that input method.
 
-This behavior is most common with axis-related inputs. For example, the game may use `INPUT_PC_FREE_LOOK` for keyboards, whereas controllers utilize `INPUT_LOOK_LR` and `INPUT_LOOK_UD` to provide analog axis data.
-
-To manage these input variations within your scripts, utilize the following natives:
+This behavior is most common with axis-related inputs. To manage these input variations within your scripts, utilize the following natives:
 - `IsUsingKeyboardAndMouse(control)`: Use this to check the player's active input method and toggle logic accordingly.
 - `IsControlJustPressed(control, input)`: Used to detect a single button press event.
 - `GetControlNormal(control, input)`: Used for axis-based controls. It returns a float (-1.0 to 1.0) representing the degree of movement.
