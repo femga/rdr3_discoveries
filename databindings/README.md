@@ -17,6 +17,7 @@ The interface system is generally categorized into three primary areas:
 This section provides links to external UI-focused resources developed within the community. These resources offer additional implementation details that may be useful when implementing specific interfaces.
 
 - [0xAhmedBero's Databinding research](https://github.com/0xAhmedBero/0x_Databinding): Various databinding related research
+- [draobrehtom's RedM UI Apps](https://github.com/draobrehtom/redm-uiapps): Various UI app implementations and research
 - [mikethemadkiwi's Fast Travel](https://github.com/mikethemadkiwi/mwg_fasttravel): Fast Travel specific research and implementation
 - [mikethemadkiwi's Player Menu](https://github.com/mikethemadkiwi/RedM-NPM): Player Menu specific research and implementation
 - [Sarbatore's RDR UIs](https://github.com/Sarbatore/rdr_uis): Various assorted UI components and implementations
