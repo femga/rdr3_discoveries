@@ -16,13 +16,15 @@ You can disable any actions using the `DisableControlAction` function, but you c
 - `IsDisabledControlJustReleased(control_type, input)`: Used to detect a disabled button release event.
 - `IsDisabledControlPressed(control_type, input)`: Used to detect a continuous disabled button press event.
 
+## Contexts
+
 Rockstar Games uses context-based button grouping. Context can be switched automatically. For example, the default context is "OnFoot." When you mount a horse, the context automatically changes to "OnMount," when you enter a carriage, it changes to "InVehicle." You can only detect buttons within the current context using the above natives.
 
 For example, if you're on foot (the "OnFoot" context), you can't detect the "INPUT_WHISTLE_HORSEBACK" button, which is available in the "OnMount" context and not available in "OnFoot".
 
-You can arbitrarily change the context to your desired one using the native `SetControlContext(control_type, context)`. This native doesn't need to be run every frame, but the context will automatically change if the engine requires it (for example, if you mount or dismount a horse). You can check the context for the corresponding control_type using the native `GetCurrentControlContext(control_type)`.
+You can arbitrarily change the context to your desired one using the native `SetControlContext(control_type, context)`. This native doesn't need to be run every frame, but the engine can change it when necessary (for example, if you mount or dismount a horse). You can check the context for the corresponding control_type using the native `GetCurrentControlContext(control_type)`.
 
-Changing the context can disable almost all buttons. For example, by changing the context to 'UIFeedInteractOverride', you'll only be able to detect the single "INPUT_FEED_INTERACT" button. Consequently, your character will lose control. To regain control, you need to change the context to the current one (i.e., if the character is on a horse, change it to "OnMount," if on foot, change it to "OnFoot," and so on).
+Changing the context can disable almost all buttons. For example, by changing the context to 'UIFeedInteractOverride', you'll only be able to detect the single "INPUT_FEED_INTERACT" button. Also your character will lose control. To regain control, you need to change the context to the relevant one (i.e., if the character is on a horse, change it to "OnMount," if on foot, change it to "OnFoot," and so on).
 
 The control_type for all contexts is 0. With the exception of:
 
@@ -32,7 +34,7 @@ AnimalControlSet 3
 InteractionLockOn 2
 ```
 
-Remember that the default context for all other control_types is false. And resetting to "default" happens like this:
+Remember that the default context for all other control_types is false. And to reset to "default" you need to do this:
 
 ```lua
 SetControlContext(0, GetHashKey("OnFoot")) -- or OnMount or InVehicle or other current control
@@ -59,7 +61,7 @@ SetControlContext(6, false)
 Hash | HashName | QWERTY | Xbox | Context
 ---- | -------- | ------ | ---- | -------
 0xBDC733EE|INPUT_MINIGAME_CHANGE_BET_AXIS_Y|&#8209;<br> =<br>Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|LS Y|MinigameBlackjack<br>MinigamePoker<br>
-0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad Down|MinigameBlackjack<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFiveFingerFillet<br>MinigamePoker<br>
+0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad_Down|MinigameBlackjack<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFiveFingerFillet<br>MinigamePoker<br>
 0x2354D2E6|INPUT_PHOTO_MODE_ZOOM_OUT|[|LT|PhotoMode<br>
 0x30811620|INPUT_PHOTO_MODE_CONTRAST_DOWN_ONLY|[||PhotoMode<br>
 0x3D23549A|INPUT_FRONTEND_RIGHT_AXIS_X|[<br> ]|RS X|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
@@ -72,7 +74,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x5D2DD717|INPUT_PHOTO_MODE_CONTRAST_UP_ONLY|]||PhotoMode<br>
 0xA5BDCD3C|INPUT_SNIPER_ZOOM_IN_ONLY|]<br> Mouse_Scroll_Up|LS Y|OnFoot<br>OnMount<br>InVehicle<br>
 0xBF14CFE7|INPUT_CAMERA_ADVANCED_ZOOM_IN|]<br> Mouse_Scroll_Up|RT|AdvancedPhotoCamera<br>
-0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad Up|MinigameBlackjack<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFiveFingerFillet<br>MinigamePoker<br>
+0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad_Up|MinigameBlackjack<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFiveFingerFillet<br>MinigamePoker<br>
 0xF311100C|INPUT_EMOTE_DANCE|1|Y|InteractionLockOn<br>OnlinePhotoStudioShop<br>UI_EMOTES_RADIAL_MENU<br>
 0x52D29063|INPUT_EMOTE_TWIRL_GUN_VAR_B|1|Y|OnFoot<br>WeaponEmotes_WithVariations<br>
 0xE6F612E4|INPUT_SELECT_QUICKSELECT_SIDEARMS_LEFT|1||OnFoot<br>OnMount<br>InVehicle<br>
@@ -89,7 +91,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0xA1FDE2A6|INPUT_SELECT_QUICKSELECT_SECONDARY_LONGARM|6||OnFoot<br>OnMount<br>InVehicle<br>
 0xB03A913B|INPUT_SELECT_QUICKSELECT_THROWN|7||OnFoot<br>OnMount<br>InVehicle<br>
 0x42385422|INPUT_SELECT_QUICKSELECT_PRIMARY_LONGARM|8||OnFoot<br>OnMount<br>InVehicle<br>
-0x83608AC0|INPUT_MINIGAME_HELP_NEXT|A|Dpad Right|MinigameDominoes<br>MinigamePoker<br>
+0x83608AC0|INPUT_MINIGAME_HELP_NEXT|A|Dpad_Right|MinigameDominoes<br>MinigamePoker<br>
 0x5092BF47|INPUT_MULTIPLAYER_SPECTATE_PLAYER_PREV|A|LB|OnlineSpectatorCamera<br>
 0x86D773F6|INPUT_HORSE_MOVE_LEFT_ONLY|A|LS X|OnMount<br>
 0x5BED7C91|INPUT_VEH_BOAT_TURN_LEFT_ONLY|A|LS X|InVehicle<br>MinigameCrackpotRCBoat<br>
@@ -99,8 +101,8 @@ Hash | HashName | QWERTY | Xbox | Context
 0x7065027D|INPUT_MOVE_LEFT_ONLY|A|LS X|OnFoot<br>OnMount<br>InVehicle<br>MinigameFishing<br>OnlinePhotoStudioShop<br>
 0x65F0ACDF|INPUT_MINIGAME_FFF_X|A|X|MinigameFiveFingerFillet<br>
 0x311353EB|INPUT_PHOTO_MODE_MOVE_LEFT_ONLY|A||PhotoMode<br>
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>SocialClubFeedFilter<br>
-0xFDDD89D4|INPUT_MINIGAME_DOMINOES_MOVE_LEFT_ONLY|A<br> Arrow Left|Dpad Left<br> LS X|MinigameDominoes<br>
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>SocialClubFeedFilter<br>
+0xFDDD89D4|INPUT_MINIGAME_DOMINOES_MOVE_LEFT_ONLY|A<br> Arrow Left|Dpad_Left<br> LS X|MinigameDominoes<br>
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x126796EB|INPUT_HORSE_MOVE_LR|A<br> D|LS X|OnMount<br>AdvancedPhotoCamera<br>AnimalControlSet<br>
@@ -115,59 +117,59 @@ Hash | HashName | QWERTY | Xbox | Context
 0xF1111E4A|INPUT_SCRIPTED_FLY_LR|A<br> D|LS X|OnFoot<br>OnMount<br>CreatorSkyCam<br>
 0x4F136512|INPUT_PHOTO_MODE_MOVE_LR|A<br> D|LS X|PhotoMode<br>
 0x4FD4E558|INPUT_MINIGAME_FISHING_RIGHT_AXIS_X|A<br> D|RS X|MinigameFishing<br>
-0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigamePoker<br>OnlineDeathCamera<br>OnlineIncapacitation<br>OnlineLeaderboardEndScreen<br>OnlineSpectatorCamera<br>
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameBuildingFences<br>MinigameCleaningStalls<br>MinigameCrackpotRCBoat<br>MinigameFishing<br>MinigamePoker<br>PlayerPerfomingChore<br>Reverend1TrainTrackRescue<br>
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MidGameOnlineLeaderboardOverride<br>MinigameFishing<br>OnlineLeaderboardOverride<br>OnlineSpectatorCamera<br>UI_RADAR_EDIT_MODE<br>
+0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigamePoker<br>OnlineDeathCamera<br>OnlineIncapacitation<br>OnlineLeaderboardEndScreen<br>OnlineSpectatorCamera<br>
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameBuildingFences<br>MinigameCleaningStalls<br>MinigameCrackpotRCBoat<br>MinigameFishing<br>MinigamePoker<br>PlayerPerfomingChore<br>Reverend1TrainTrackRescue<br>
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MidGameOnlineLeaderboardOverride<br>MinigameFishing<br>OnlineLeaderboardOverride<br>OnlineSpectatorCamera<br>UI_RADAR_EDIT_MODE<br>
 0x8AAA0AD4|INPUT_PC_FREE_LOOK|Alt<br> Mouse_Scroll_Click||OnFoot<br>OnMount<br>InVehicle<br>MinigameBlackjack<br>MinigameDominoes<br>MinigamePoker<br>
-0x97410755|INPUT_CREATOR_MENU_DOWN|Arrow Down|Dpad Down|CreatorOnFoot<br>CreatorSkyCam<br>
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFishing<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>Satchel<br>SatchelFolder<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
-0xCEFF5C13|INPUT_TITHING_DECREASE_AMOUNT|Arrow Down|Dpad Down|Tithing<br>
-0xB341F407|INPUT_PHOTO_MODE_FILTER_INTENSITY_DOWN|Arrow Down|Dpad Down|PhotoMode<br>
-0xCFA703D3|INPUT_CAMERA_EXPRESSION_NEXT|Arrow Down|Dpad Down|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
-0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad Down|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0x97410755|INPUT_CREATOR_MENU_DOWN|Arrow Down|Dpad_Down|CreatorOnFoot<br>CreatorSkyCam<br>
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFishing<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>Satchel<br>SatchelFolder<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
+0xCEFF5C13|INPUT_TITHING_DECREASE_AMOUNT|Arrow Down|Dpad_Down|Tithing<br>
+0xB341F407|INPUT_PHOTO_MODE_FILTER_INTENSITY_DOWN|Arrow Down|Dpad_Down|PhotoMode<br>
+0xCFA703D3|INPUT_CAMERA_EXPRESSION_NEXT|Arrow Down|Dpad_Down|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
+0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad_Down|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x01EBFABD|INPUT_PHOTO_MODE_FOCAL_LENGTH_DOWN_ONLY|Arrow Down||PhotoMode<br>
 0xD72F3E29|INPUT_DOCUMENT_SCROLL_DOWN_ONLY|Arrow Down<br> Mouse_Scroll_Down||DocumentMenus<br>
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
-0xFD9FC86D|INPUT_MINIGAME_DOMINOES_MOVE_DOWN_ONLY|Arrow Down<br> S|Dpad Down<br> LS Y|MinigameDominoes<br>
-0xEC6A30AA|INPUT_CREATOR_MENU_LEFT|Arrow Left|Dpad Left|CreatorOnFoot<br>CreatorSkyCam<br>
-0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad Left|OnFoot<br>OnMount<br>InVehicle<br>DocumentMenus<br>
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>SocialClubFeed<br>
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>PlayerJournal<br>Satchel<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
-0x4F640885|INPUT_PHOTO_MODE_FILTER_PREV|Arrow Left|Dpad Left|PhotoMode<br>
-0x8D5BE9D1|INPUT_CAMERA_POSE_PREV|Arrow Left|Dpad Left|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
-0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad Left|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
-0x19D8334C|INPUT_CREATOR_MENU_RIGHT|Arrow Right|Dpad Right|CreatorOnFoot<br>CreatorSkyCam<br>
-0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad Right|OnFoot<br>OnMount<br>InVehicle<br>DocumentMenus<br>
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>SocialClubFeed<br>
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>PlayerJournal<br>Satchel<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
-0x699F8D08|INPUT_PHOTO_MODE_FILTER_NEXT|Arrow Right|Dpad Right|PhotoMode<br>
-0xF810FB35|INPUT_CAMERA_POSE_NEXT|Arrow Right|Dpad Right|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
-0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad Right|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>SocialClubFeedFilter<br>
-0x7D5187C9|INPUT_MINIGAME_DOMINOES_MOVE_RIGHT_ONLY|Arrow Right<br> D|Dpad Right<br> LS X|MinigameDominoes<br>
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
+0xFD9FC86D|INPUT_MINIGAME_DOMINOES_MOVE_DOWN_ONLY|Arrow Down<br> S|Dpad_Down<br> LS Y|MinigameDominoes<br>
+0xEC6A30AA|INPUT_CREATOR_MENU_LEFT|Arrow Left|Dpad_Left|CreatorOnFoot<br>CreatorSkyCam<br>
+0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>DocumentMenus<br>
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>SocialClubFeed<br>
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>PlayerJournal<br>Satchel<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
+0x4F640885|INPUT_PHOTO_MODE_FILTER_PREV|Arrow Left|Dpad_Left|PhotoMode<br>
+0x8D5BE9D1|INPUT_CAMERA_POSE_PREV|Arrow Left|Dpad_Left|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
+0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad_Left|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0x19D8334C|INPUT_CREATOR_MENU_RIGHT|Arrow Right|Dpad_Right|CreatorOnFoot<br>CreatorSkyCam<br>
+0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>DocumentMenus<br>
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>SocialClubFeed<br>
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>PlayerJournal<br>Satchel<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
+0x699F8D08|INPUT_PHOTO_MODE_FILTER_NEXT|Arrow Right|Dpad_Right|PhotoMode<br>
+0xF810FB35|INPUT_CAMERA_POSE_NEXT|Arrow Right|Dpad_Right|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
+0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad_Right|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>SocialClubFeedFilter<br>
+0x7D5187C9|INPUT_MINIGAME_DOMINOES_MOVE_RIGHT_ONLY|Arrow Right<br> D|Dpad_Right<br> LS X|MinigameDominoes<br>
 0x886ABA4E|INPUT_PHOTO_MODE_FOCAL_LENGTH|Arrow Up<br>Arrow Down|LS Y|PhotoMode<br>
 0xAC70F311|INPUT_DOCUMENT_SCROLL|Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y|DocumentMenus<br>
 0xA917D24B|INPUT_MULTIPLAYER_LEADERBOARD_SCROLL_UD|Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y|MidGameOnlineLeaderboardOverride<br>OnlineLeaderboardEndScreen<br>OnlineLeaderboardOverride<br>
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
-0xBCD1444B|INPUT_CREATOR_MENU_UP|Arrow Up|Dpad Up|CreatorOnFoot<br>CreatorSkyCam<br>
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFishing<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>Satchel<br>SatchelFolder<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
-0x24F37AB5|INPUT_TITHING_INCREASE_AMOUNT|Arrow Up|Dpad Up|Tithing<br>
-0x2286D46B|INPUT_PHOTO_MODE_FILTER_INTENSITY_UP|Arrow Up|Dpad Up|PhotoMode<br>
-0x07B6435D|INPUT_CAMERA_EXPRESSION_PREV|Arrow Up|Dpad Up|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
-0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad Up|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0xBCD1444B|INPUT_CREATOR_MENU_UP|Arrow Up|Dpad_Up|CreatorOnFoot<br>CreatorSkyCam<br>
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameFishing<br>MinigameFiveFingerFillet<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>Satchel<br>SatchelFolder<br>ShopBrowsing<br>ShopCatalogue<br>Wardrobe<br>WildernessSuppliesShop<br>
+0x24F37AB5|INPUT_TITHING_INCREASE_AMOUNT|Arrow Up|Dpad_Up|Tithing<br>
+0x2286D46B|INPUT_PHOTO_MODE_FILTER_INTENSITY_UP|Arrow Up|Dpad_Up|PhotoMode<br>
+0x07B6435D|INPUT_CAMERA_EXPRESSION_PREV|Arrow Up|Dpad_Up|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
+0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad_Up|FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0xFAFBD66A|INPUT_PHOTO_MODE_FOCAL_LENGTH_UP_ONLY|Arrow Up||PhotoMode<br>
 0x3D0C19EC|INPUT_DOCUMENT_SCROLL_UP_ONLY|Arrow Up<br> Mouse_Scroll_Up||DocumentMenus<br>
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
-0xC6AB8CB3|INPUT_MINIGAME_DOMINOES_MOVE_UP_ONLY|Arrow Up<br> W|Dpad Up<br> LS Y|MinigameDominoes<br>
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
+0xC6AB8CB3|INPUT_MINIGAME_DOMINOES_MOVE_UP_ONLY|Arrow Up<br> W|Dpad_Up<br> LS Y|MinigameDominoes<br>
 0xD3ECF82F|INPUT_SHOP_BOUNTY|B|B|OnFoot<br>InteractionLockOn<br>
-0x63A38F2C|INPUT_INTERACT_HORSE_BRUSH|B|Dpad Left|InteractionLockOn<br>
-0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad Right|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
-0x5966D52A|INPUT_OPEN_SATCHEL_HORSE_MENU|B|Dpad Right|OnFoot<br>
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameFishing<br>
-0x9B1CA8DA|INPUT_INSPECT_OPEN_SATCHEL|B|Dpad Up|InspectItem<br>InspectItemOutro<br>
+0x63A38F2C|INPUT_INTERACT_HORSE_BRUSH|B|Dpad_Left|InteractionLockOn<br>
+0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
+0x5966D52A|INPUT_OPEN_SATCHEL_HORSE_MENU|B|Dpad_Right|OnFoot<br>
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameFishing<br>
+0x9B1CA8DA|INPUT_INSPECT_OPEN_SATCHEL|B|Dpad_Up|InspectItem<br>InspectItemOutro<br>
 0xBB3FC460|INPUT_CREATOR_MENU_CANCEL|Backspace<br> Esc|B|CreatorOnFoot<br>CreatorSkyCam<br>
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>Benchmark<br>FrontendMenu<br>MinigameDrinkingShooting<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>SocialClubFeed<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>SpectatorCamera<br>
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
@@ -188,7 +190,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x811F4A1A|INPUT_SECONDARY_SPECIAL_ABILITY_SECONDARY|Capslock<br> Mouse_Scroll_Click|LS Click|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameFishing<br>
 0xCEE12B50|INPUT_SPECIAL_ABILITY|Capslock<br> Mouse_Scroll_Click|RS Click|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameDrinkingShooting<br>MinigameFishing<br>
 0xE16B9AAD|INPUT_HORSE_STOP|Control|B<br> RB|OnMount<br>AdvancedPhotoCamera<br>AnimalControlSet<br>ControlGamePadUI_OnMount<br>
-0x0B1BE2E8|INPUT_CAMP_SETUP_TENT|Control|Dpad Up|OnFoot<br>
+0x0B1BE2E8|INPUT_CAMP_SETUP_TENT|Control|Dpad_Up|OnFoot<br>
 0xB4F298BA|INPUT_MULTIPLAYER_DEAD_SWITCH_RESPAWN|Control|LB|OnlineDeathCamera<br>
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click|CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>OnlineCrafting<br>OnlineLeaderboardEndScreen<br>ShopCatalogue<br>
 0xDB096B85|INPUT_DUCK|Control|LS Click|OnFoot<br>AdvancedPhotoCamera<br>ControlGamePadUI_OnFoot<br>PhotoCameraInUse<br>
@@ -216,8 +218,8 @@ Hash | HashName | QWERTY | Xbox | Context
 0x4AF4D473|INPUT_FRONTEND_DELETE|Delete|X|OnFoot<br>OnMount<br>InVehicle<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x52C5C34A|INPUT_MINIGAME_FISHING_KEEP_FISH|E|A|MinigameFishing<br>
 0xB40A9BDB|INPUT_MINIGAME_FISHING_RESET_CAST|E|B|MinigameFishing<br>
-0x96E70854|INPUT_PHOTO_MODE_ROTATE_RIGHT|E|Dpad Right|PhotoMode<br>
-0x7B5B896D|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_RIGHT|E|Dpad Up|MinigameFiveFingerFillet<br>
+0x96E70854|INPUT_PHOTO_MODE_ROTATE_RIGHT|E|Dpad_Right|PhotoMode<br>
+0x7B5B896D|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_RIGHT|E|Dpad_Up|MinigameFiveFingerFillet<br>
 0x3003F9DC|INPUT_CAMERA_DOF|E|LB|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
 0x0A1EFC09|INPUT_MINIGAME_ACTION_LEFT|E|LS X|Mudtown1WheelFixing<br>
 0x16D70379|INPUT_MINIGAME_ACTION_RIGHT|E|LS X|Utopia1Jailbreak<br>
@@ -294,7 +296,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x253FEC09|INPUT_QUICK_SELECT_PUT_AWAY_ROD|F|B|UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
 0x7914A3DD|INPUT_STOP_LEADING_ANIMAL|F|B|OnFoot<br>
 0x26A18F47|INPUT_INTERACT_LOCKON_NEG|F|B|OnFoot<br>OnMount<br>InVehicle<br>InteractionLockOn<br>MinigameFishing<br>
-0xC67E13BB|INPUT_CAMP_BED_INSPECT|F|Dpad Up|OnFoot<br>
+0xC67E13BB|INPUT_CAMP_BED_INSPECT|F|Dpad_Up|OnFoot<br>
 0x6FC9DE68|INPUT_MINIGAME_FFF_FLOURISH_CONTINUE|F|LB|MinigameFiveFingerFillet<br>
 0xCABC2460|INPUT_MINIGAME_BARTENDER_POUR|F|LS X|MinigameBartender<br>
 0xD593C221|INPUT_CAMERA_ADVANCED_SWITCH_CONTROLS|F|RB|AdvancedPhotoCamera<br>
@@ -310,7 +312,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x44CD301B|INPUT_FRONTEND_PHOTO_MODE|F6|Select|FrontendMenu<br>
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select|OnFoot<br>OnMount<br>InVehicle<br>Calderon1ForceDoor<br>MinigameBlackjack<br>MinigameBuildingFences<br>MinigameCleaningStalls<br>MinigameDominoes<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigameMilking<br>MinigamePoker<br>NoPlayerControl<br>
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6||OnFoot<br>OnMount<br>InVehicle<br>Calderon1ForceDoor<br>MinigameBlackjack<br>MinigameBuildingFences<br>MinigameCleaningStalls<br>MinigameDominoes<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigameMilking<br>MinigamePoker<br>NoPlayerControl<br>
-0x760A9C6F|INPUT_INTERACT_OPTION1|G|Dpad Up|OnFoot<br>InteractionLockOn<br>
+0x760A9C6F|INPUT_INTERACT_OPTION1|G|Dpad_Up|OnFoot<br>InteractionLockOn<br>
 0xA1ABB953|INPUT_INTERACT_ANIMAL|G|LS Click|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnMount<br>
 0x63A0D258|INPUT_VEH_HORN|G|LS Click|InVehicle<br>ControlGamePadUI_InVehicle<br>
 0x0984E40A|INPUT_CREATOR_MENU_SELECT|G|LT<br> RT|CreatorOnFoot<br>CreatorSkyCam<br>
@@ -320,21 +322,21 @@ Hash | HashName | QWERTY | Xbox | Context
 0x72A9D1F7|INPUT_MINIGAME_POKER_CHECK_FOLD|G|Y|MinigamePoker<br>
 0xE8337356|INPUT_CAMERA_CONTEXT_GALLERY|G|Y|AdvancedPhotoCamera<br>PhotoCameraInUse<br>
 0xA8142713|INPUT_MINIGAME_BLACKJACK_HIT|H|A|MinigameBlackjack<br>
-0x84543902|INPUT_INTERACT_OPTION2|H|Dpad Down|OnFoot<br>InteractionLockOn<br>
-0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad Up|OnFoot<br>OnMount<br>InVehicle<br>
-0x73A8FD83|INPUT_SADDLE_TRANSFER|H|Dpad Up|OnFoot<br>InteractionLockOn<br>
-0x24978A28|INPUT_WHISTLE|H|Dpad Up|OnFoot<br>InVehicle<br>AdvancedPhotoCamera<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>MinigameFishing<br>PhotoCameraInUse<br>
-0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad Up|OnMount<br>AnimalControlSet<br>ControlGamePadUI_OnMount<br>
+0x84543902|INPUT_INTERACT_OPTION2|H|Dpad_Down|OnFoot<br>InteractionLockOn<br>
+0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad_Up|OnFoot<br>OnMount<br>InVehicle<br>
+0x73A8FD83|INPUT_SADDLE_TRANSFER|H|Dpad_Up|OnFoot<br>InteractionLockOn<br>
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up|OnFoot<br>InVehicle<br>AdvancedPhotoCamera<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>MinigameFishing<br>PhotoCameraInUse<br>
+0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad_Up|OnMount<br>AnimalControlSet<br>ControlGamePadUI_OnMount<br>
 0x7765B9D4|INPUT_MINIGAME_POKER_SHOW_POSSIBLE_HANDS|H|LS Click|MinigamePoker<br>
 0x7DBA5D49|INPUT_MULTIPLAYER_SPECTATE_HIDE_HUD|H|Y|OnlineSpectatorCamera<br>
 0x7F9055F5|INPUT_PHOTO_MODE_TOGGLE_HUD|H|Y|PhotoMode<br>
 0x064D1698|INPUT_FRONTEND_SOCIAL_CLUB|Home|Select|OnFoot<br>OnMount<br>InVehicle<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
-0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad Right|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
-0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad Left|OnFoot<br>OnMount<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
-0xC64E2284|INPUT_PHOTO_MODE_EXPOSURE_UP|J|Dpad Up|PhotoMode<br>
-0xAD07A5A5|INPUT_PHOTO_MODE_EXPOSURE_DOWN|K|Dpad Down|PhotoMode<br>
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>AnimalControlSet<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameBlackjack<br>MinigameBuildingFences<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigameMilking<br>MinigamePoker<br>OnlineDeathCamera<br>OnlineIncapacitation<br>OnlineSpectatorCamera<br>PhotoCameraInUse<br>PlayerPerfomingChore<br>SpectatorCamera<br>
-0x9DE08D71|INPUT_PHOTO_MODE_EXPOSURE_LOCK|L|Dpad Right|PhotoMode<br>
+0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
+0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad_Left|OnFoot<br>OnMount<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
+0xC64E2284|INPUT_PHOTO_MODE_EXPOSURE_UP|J|Dpad_Up|PhotoMode<br>
+0xAD07A5A5|INPUT_PHOTO_MODE_EXPOSURE_DOWN|K|Dpad_Down|PhotoMode<br>
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>AnimalControlSet<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameBlackjack<br>MinigameBuildingFences<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigameMilking<br>MinigamePoker<br>OnlineDeathCamera<br>OnlineIncapacitation<br>OnlineSpectatorCamera<br>PhotoCameraInUse<br>PlayerPerfomingChore<br>SpectatorCamera<br>
+0x9DE08D71|INPUT_PHOTO_MODE_EXPOSURE_LOCK|L|Dpad_Right|PhotoMode<br>
 0xE31C6A41|INPUT_MAP|M|Start|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>AnimalControlSet<br>Calderon1ForceDoor<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>FrontendMenu<br>MinigameBlackjack<br>MinigameBuildingFences<br>MinigameCleaningStalls<br>MinigameDominoes<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigameInterrogation<br>MinigameMilking<br>MinigamePoker<br>NoPlayerControl<br>PhotoCameraInUse<br>PlayerPerfomingChore<br>Tithing<br>
 0x11DBBAB9|INPUT_CURSOR_FORWARD_CLICK|Mouse_Button_1||FrontendMenu<br>GameMenuMouse<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
 0x9805D715|INPUT_CURSOR_FORWARD_DOUBLE_CLICK|Mouse_Button_1||FrontendMenu<br>GameMenuMouse<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
@@ -416,7 +418,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x27568539|INPUT_CURSOR_CANCEL|Mouse_Right_Click||FrontendMenu<br>GameMenuMouse<br>MinigameDominoes<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>StickyFeed<br>
 0x9CB4ECCE|INPUT_CURSOR_CANCEL_DOUBLE_CLICK|Mouse_Right_Click||FrontendMenu<br>GameMenuMouse<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
 0xD7F70F36|INPUT_CURSOR_CANCEL_HOLD|Mouse_Right_Click||FrontendMenu<br>GameMenuMouse<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
-0x7E75F4DC|INPUT_EMOTES_MANAGE|Mouse_Scroll_Click|Dpad Left|UI_EMOTES_RADIAL_MENU<br>
+0x7E75F4DC|INPUT_EMOTES_MANAGE|Mouse_Scroll_Click|Dpad_Left|UI_EMOTES_RADIAL_MENU<br>
 0xAC5922EA|INPUT_CAMERA_SELFIE|Mouse_Scroll_Click|RS Click|AdvancedPhotoCamera<br>PhotoCameraInUse<br>PhotoCameraOnFoot<br>
 0x6AA8A71B|INPUT_CURSOR_SCROLL_CLICK|Mouse_Scroll_Click||FrontendMenu<br>GameMenuMouse<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
 0xE1B6ED6D|INPUT_CURSOR_SCROLL_DOUBLE_CLICK|Mouse_Scroll_Click||FrontendMenu<br>GameMenuMouse<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>
@@ -429,8 +431,8 @@ Hash | HashName | QWERTY | Xbox | Context
 0xD33B28BE|INPUT_RADIAL_MENU_SLOT_NAV_PREV_ALTERNATE|Mouse_Scroll_Down||UI_QUICK_SELECT_RADIAL_MENU<br>
 0xEB4130DF|INPUT_FRONTEND_RIGHT_AXIS_Y|Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SatchelFolder<br>SocialClubFeed<br>
 0x49C73CB2|INPUT_MINIGAME_FISHING_REEL_SPEED_AXIS|Mouse_Scroll_Up<br>Mouse_Scroll_Down||MinigameFishing<br>
-0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>
-0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad Down|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
+0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>
+0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
 0x406ADFAE|INPUT_ACCURATE_AIM|Mouse_Scroll_Up|RS Click|OnFoot<br>OnMount<br>InVehicle<br>
 0xCC1075A7|INPUT_PREV_WEAPON|Mouse_Scroll_Up||OnFoot<br>OnMount<br>InVehicle<br>OnlineIncapacitation<br>UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
 0xF78D7337|INPUT_SELECT_PREV_WEAPON|Mouse_Scroll_Up||OnFoot<br>OnMount<br>InVehicle<br>OnlineIncapacitation<br>
@@ -444,7 +446,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x60C65EB4|INPUT_GAME_MENU_RIGHT_AXIS_Y|Numpad 5<br> Numpad 8|RS Y|CharacterCreator<br>OnlineLeaderboardEndScreen<br>
 0xE1CECE4B|INPUT_GAME_MENU_RIGHT_STICK_RIGHT|Numpad 6|RS X|CharacterCreator<br>OnlineLeaderboardEndScreen<br>
 0xF0232A03|INPUT_GAME_MENU_RIGHT_STICK_UP|Numpad 8|RS Y|CharacterCreator<br>OnlineLeaderboardEndScreen<br>
-0xF1301666|INPUT_VEH_HEADLIGHT|O|Dpad Right|InVehicle<br>ControlGamePadUI_InVehicle<br>
+0xF1301666|INPUT_VEH_HEADLIGHT|O|Dpad_Right|InVehicle<br>ControlGamePadUI_InVehicle<br>
 0x4E074EE6|INPUT_MULTIPLAYER_SPECTATE_PLAYER_OPTIONS|O|RS Click|OnlineSpectatorCamera<br>
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>AnimalControlSet<br>Calderon1ForceDoor<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>CraftingMenu<br>CreatorOnFoot<br>CreatorSkyCam<br>FrontendMenu<br>GameMenu<br>GameMenuMouse<br>GenericViewable<br>Harmonica<br>HorseShopMenu<br>Ledger<br>LobbyMenu<br>MaintainInspectWeapon<br>MinigameBlackjack<br>MinigameBuilding<br>MinigameBuildingFences<br>MinigameCleaningStalls<br>MinigameCrackpotRCBoat<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigameInterrogation<br>MinigameMilking<br>MinigamePoker<br>NoPlayerControl<br>OnlineDeathCamera<br>OnlineIncapacitation<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlineSpectatorCamera<br>PhotoCameraInUse<br>PhotoFeed<br>PlayerJournal<br>Reverend1TrainTrackRescue<br>ShopCatalogue<br>SocialClubFeed<br>Tithing<br>WildernessSuppliesShop<br>
 0x51104035|INPUT_FRONTEND_LT|Page Down|LT|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
@@ -457,8 +459,8 @@ Hash | HashName | QWERTY | Xbox | Context
 0x6FED71BC|INPUT_FRONTEND_RT|Page Up|RT|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x335D8D76|INPUT_CREATOR_ZOOM_IN|Page Up|RT|CreatorOnFoot<br>CreatorSkyCam<br>
 0xCBD5B26E|INPUT_GAME_MENU_TAB_LEFT|Page Up<br> Q|LB|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>GenericViewable<br>HandheldCatalogue<br>HorseShopMenu<br>InspectItem<br>InspectItemOutro<br>Ledger<br>LobbyMenu<br>OnlineLeaderboardEndScreen<br>OnlinePhotoStudioShop<br>OnlinePlayerMenu<br>PlayerJournal<br>Satchel<br>ShopCatalogue<br>WildernessSuppliesShop<br>
-0x29A3550E|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_LEFT|Q|Dpad Down|MinigameFiveFingerFillet<br>
-0x2EEA1D2A|INPUT_PHOTO_MODE_ROTATE_LEFT|Q|Dpad Left|PhotoMode<br>
+0x29A3550E|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_LEFT|Q|Dpad_Down|MinigameFiveFingerFillet<br>
+0x2EEA1D2A|INPUT_PHOTO_MODE_ROTATE_LEFT|Q|Dpad_Left|PhotoMode<br>
 0xE885EF16|INPUT_FRONTEND_LB|Q|LB|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x5F97B231|INPUT_MINIGAME_BUILDING_CAMERA_PREV|Q|LB|MinigameBuilding<br>
 0xE8D7D731|INPUT_MINIGAME_DANCE_PREV|Q|LB|MinigameDancing<br>
@@ -474,8 +476,8 @@ Hash | HashName | QWERTY | Xbox | Context
 0x6816A38E|INPUT_MULTIPLAYER_DEAD_INFORM_LAW|Q|RB|OnlineDeathCamera<br>
 0xDC03B043|INPUT_MINIGAME_BARTENDER_SERVE|R|A|MinigameBartender<br>
 0xE30CD707|INPUT_RELOAD|R|B|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
-0x6D1319BE|INPUT_SHOP_SELL|R|Dpad Right|OnFoot<br>InteractionLockOn<br>
-0x0D55A0F0|INPUT_INTERACT_HORSE_FEED|R|Dpad Right|InteractionLockOn<br>
+0x6D1319BE|INPUT_SHOP_SELL|R|Dpad_Right|OnFoot<br>InteractionLockOn<br>
+0x0D55A0F0|INPUT_INTERACT_HORSE_FEED|R|Dpad_Right|InteractionLockOn<br>
 0xF7750B25|INPUT_MINIGAME_FFF_FLOURISH_END|R|LT|MinigameFiveFingerFillet<br>
 0x77E56FB3|INPUT_SELECT_NEXT_WHEEL|R|RB|UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
 0x9D75674E|INPUT_CREATOR_ROTATE_RIGHT|R|RB|CreatorOnFoot<br>CreatorSkyCam<br>
@@ -534,7 +536,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x7C0162C0|INPUT_FRONTEND_Y|Shift|Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>PhotoFeedFullscreen<br>SocialClubFeed<br>
 0xD10A3A36|INPUT_INTERACT_LOCKON_A|Space|A|InteractionLockOn<br>
 0x5181713D|INPUT_CONTEXT_A|Space|A|OnFoot<br>OnMount<br>InVehicle<br>GenericViewable<br>Harmonica<br>InspectItem<br>InspectItemOutro<br>MaintainInspectWeapon<br>MinigameBuildingFences<br>MinigameDrinkingShooting<br>SpectatorCamera<br>
-0xCC18F960|INPUT_MULTIPLAYER_DEAD_LEADER_FEUD|Space|Dpad Right|OnlineDeathCamera<br>
+0xCC18F960|INPUT_MULTIPLAYER_DEAD_LEADER_FEUD|Space|Dpad_Right|OnlineDeathCamera<br>
 0xADE09435|INPUT_MINIGAME_BLACKJACK_TABLE_VIEW|Space|RT|MinigameBlackjack<br>
 0x7733CF2C|INPUT_MINIGAME_DOMINOES_VIEW_MOVES|Space|RT|MinigameDominoes<br>
 0xE402B898|INPUT_MINIGAME_POKER_COMMUNITY_CARDS|Space|RT|MinigamePoker<br>
@@ -570,7 +572,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click|CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HorseShopMenu<br>LobbyMenu<br>MinigameFishing<br>OnlineLeaderboardEndScreen<br>OnlinePlayerMenu<br>Satchel<br>ShopCatalogue<br>Wardrobe<br>
 0x171910DC|INPUT_FRONTEND_SELECT|Tab|Select|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x85D24405|INPUT_CREATOR_MENU_TOGGLE|Tab||OnFoot<br>OnMount<br>InVehicle<br>
-0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad Up|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
+0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad_Up|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>
 0x70CBD78D|INPUT_DISABLE_RADAR|V|B|UI_RADAR_EDIT_MODE<br>
 0x88F8B6B1|INPUT_MINIGAME_DOMINOES_VIEW_DOMINOES|V|LT|MinigameDominoes<br>
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>ControlGamePadUI_InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameFishing<br>OnlineSpectatorCamera<br>
@@ -585,14 +587,14 @@ Hash | HashName | QWERTY | Xbox | Context
 0x8FD015D8|INPUT_MOVE_UP_ONLY|W|LS Y|OnFoot<br>OnMount<br>InVehicle<br>OnlinePhotoStudioShop<br>
 0x29A5E51E|INPUT_VEH_DRAFT_MOVE_UP_ONLY|W||InVehicle<br>
 0x315D57E6|INPUT_PHOTO_MODE_MOVE_UP_ONLY|W||PhotoMode<br>
-0xB138D899|INPUT_PHOTO_MODE_LENSE_NEXT|X|Dpad Down|PhotoMode<br>
-0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad Left|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameFishing<br>
-0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad Right|UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
+0xB138D899|INPUT_PHOTO_MODE_LENSE_NEXT|X|Dpad_Down|PhotoMode<br>
+0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>ControlGamePadUI_OnMount<br>MinigameFishing<br>
+0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad_Right|UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>MinigameFishing<br>PhotoFeed<br>PhotoFeedFullscreen<br>SatchelFolder<br>SocialClubFeed<br>
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT|OnFoot<br>OnMount<br>InVehicle<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>InspectItem<br>InspectItemOutro<br>LobbyMenu<br>OnlineLeaderboardEndScreen<br>ShopCatalogue<br>
 0xCF0B11DE|INPUT_EXPAND_RADAR|X|X|UI_RADAR_EDIT_MODE<br>
-0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad Left|UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
-0x06A057F8|INPUT_PHOTO_MODE_LENSE_PREV|Z|Dpad Up|PhotoMode<br>
+0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad_Left|UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
+0x06A057F8|INPUT_PHOTO_MODE_LENSE_PREV|Z|Dpad_Up|PhotoMode<br>
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT|OnFoot<br>OnMount<br>InVehicle<br>CharacterCreator<br>GameMenu<br>GameMenuMouse<br>HandheldCatalogue<br>HorseShopMenu<br>InspectItem<br>InspectItemOutro<br>LobbyMenu<br>OnlineLeaderboardEndScreen<br>ShopCatalogue<br>
 0xC511543B|INPUT_WEAPON_INSPECT_ZOOM|Z|RT|InspectItem<br>InspectItemOutro<br>
@@ -624,34 +626,34 @@ Hash | HashName | QWERTY | Xbox
 0xB03A913B|INPUT_SELECT_QUICKSELECT_THROWN|7|
 0x42385422|INPUT_SELECT_QUICKSELECT_PRIMARY_LONGARM|8|
 0x7065027D|INPUT_MOVE_LEFT_ONLY|A|LS X
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
 0xF1111E4A|INPUT_SCRIPTED_FLY_LR|A<br> D|LS X
-0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad Down
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
+0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad_Down
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
 0x8AAA0AD4|INPUT_PC_FREE_LOOK|Alt<br> Mouse_Scroll_Click|
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad Left
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad Right
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad_Left
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad_Right
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0xD3ECF82F|INPUT_SHOP_BOUNTY|B|B
-0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad Right
-0x5966D52A|INPUT_OPEN_SATCHEL_HORSE_MENU|B|Dpad Right
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right
+0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad_Right
+0x5966D52A|INPUT_OPEN_SATCHEL_HORSE_MENU|B|Dpad_Right
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
@@ -662,7 +664,7 @@ Hash | HashName | QWERTY | Xbox
 0xD8CF0C95|INPUT_CREATOR_RS|C|RS Click
 0x811F4A1A|INPUT_SECONDARY_SPECIAL_ABILITY_SECONDARY|Capslock<br> Mouse_Scroll_Click|LS Click
 0xCEE12B50|INPUT_SPECIAL_ABILITY|Capslock<br> Mouse_Scroll_Click|RS Click
-0x0B1BE2E8|INPUT_CAMP_SETUP_TENT|Control|Dpad Up
+0x0B1BE2E8|INPUT_CAMP_SETUP_TENT|Control|Dpad_Up
 0xDB096B85|INPUT_DUCK|Control|LS Click
 0x67ED272E|INPUT_MELEE_GRAPPLE_MOUNT_SWITCH|Control|LS Click
 0x339F3730|INPUT_CREATOR_LS|Control|LS Click
@@ -712,23 +714,23 @@ Hash | HashName | QWERTY | Xbox
 0xD9C50532|INPUT_HOGTIE|F|B
 0x7914A3DD|INPUT_STOP_LEADING_ANIMAL|F|B
 0x26A18F47|INPUT_INTERACT_LOCKON_NEG|F|B
-0xC67E13BB|INPUT_CAMP_BED_INSPECT|F|Dpad Up
+0xC67E13BB|INPUT_CAMP_BED_INSPECT|F|Dpad_Up
 0xEA150E72|INPUT_SHOP_SPECIAL|F|X
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
 0x1F6D95E5|INPUT_SELECT_ITEM_WHEEL|F4|LB<br> RB
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
-0x760A9C6F|INPUT_INTERACT_OPTION1|G|Dpad Up
+0x760A9C6F|INPUT_INTERACT_OPTION1|G|Dpad_Up
 0xA1ABB953|INPUT_INTERACT_ANIMAL|G|LS Click
 0x5415BE48|INPUT_INTERACT_LOCKON_ANIMAL|G|X
-0x84543902|INPUT_INTERACT_OPTION2|H|Dpad Down
-0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad Up
-0x73A8FD83|INPUT_SADDLE_TRANSFER|H|Dpad Up
-0x24978A28|INPUT_WHISTLE|H|Dpad Up
+0x84543902|INPUT_INTERACT_OPTION2|H|Dpad_Down
+0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad_Up
+0x73A8FD83|INPUT_SADDLE_TRANSFER|H|Dpad_Up
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up
 0x064D1698|INPUT_FRONTEND_SOCIAL_CLUB|Home|Select
-0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad Right
-0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad Left
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad_Right
+0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad_Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xB28318C0|INPUT_CONTEXT_ACTION|Mouse_Left_Click|A
 0x07CE1E61|INPUT_ATTACK|Mouse_Left_Click|RT
@@ -753,8 +755,8 @@ Hash | HashName | QWERTY | Xbox
 0xD0842EDF|INPUT_SELECT_NEXT_WEAPON|Mouse_Scroll_Down|
 0x9DA42644|INPUT_GAME_MENU_SCROLL_BACKWARD|Mouse_Scroll_Down|
 0xEB4130DF|INPUT_FRONTEND_RIGHT_AXIS_Y|Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
-0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad Down
-0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad Down
+0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad_Down
+0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down
 0x406ADFAE|INPUT_ACCURATE_AIM|Mouse_Scroll_Up|RS Click
 0xCC1075A7|INPUT_PREV_WEAPON|Mouse_Scroll_Up|
 0xF78D7337|INPUT_SELECT_PREV_WEAPON|Mouse_Scroll_Up|
@@ -774,7 +776,7 @@ Hash | HashName | QWERTY | Xbox
 0xB3F388BC|INPUT_INTERACT_LOCKON_STUDY_BINOCULARS|Q|RB
 0x31219490|INPUT_INTERACT_LOCKON_TARGET_INFO|Q|RB
 0xE30CD707|INPUT_RELOAD|R|B
-0x6D1319BE|INPUT_SHOP_SELL|R|Dpad Right
+0x6D1319BE|INPUT_SHOP_SELL|R|Dpad_Right
 0xF6BB7378|INPUT_INTERACT_POS|R|X
 0xB5EEEFB7|INPUT_MELEE_BLOCK|R|X
 0xD0C1FEFF|INPUT_MELEE_GRAPPLE_BREAKOUT|R|X
@@ -812,12 +814,12 @@ Hash | HashName | QWERTY | Xbox
 0x6070D032|INPUT_QUICK_EQUIP_ITEM|Tab|LB
 0x171910DC|INPUT_FRONTEND_SELECT|Tab|Select
 0x85D24405|INPUT_CREATOR_MENU_TOGGLE|Tab|
-0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad Up
+0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad_Up
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select
 0xE72B43F4|INPUT_FOCUS_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
 0x8FD015D8|INPUT_MOVE_UP_ONLY|W|LS Y
-0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad Left
+0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
@@ -844,33 +846,33 @@ Hash | HashName | QWERTY | Xbox
 0x42385422|INPUT_SELECT_QUICKSELECT_PRIMARY_LONGARM|8|
 0x86D773F6|INPUT_HORSE_MOVE_LEFT_ONLY|A|LS X
 0x7065027D|INPUT_MOVE_LEFT_ONLY|A|LS X
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X
 0x126796EB|INPUT_HORSE_MOVE_LR|A<br> D|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
 0xF1111E4A|INPUT_SCRIPTED_FLY_LR|A<br> D|LS X
-0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad Down
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
+0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad_Down
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
 0x8AAA0AD4|INPUT_PC_FREE_LOOK|Alt<br> Mouse_Scroll_Click|
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad Left
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad Right
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad_Left
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad_Right
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
-0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad Right
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
+0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad_Right
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
@@ -928,12 +930,12 @@ Hash | HashName | QWERTY | Xbox
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
 0xA1ABB953|INPUT_INTERACT_ANIMAL|G|LS Click
-0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad Up
-0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad Up
+0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad_Up
+0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad_Up
 0x064D1698|INPUT_FRONTEND_SOCIAL_CLUB|Home|Select
-0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad Right
-0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad Left
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad_Right
+0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad_Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xB28318C0|INPUT_CONTEXT_ACTION|Mouse_Left_Click|A
 0x07CE1E61|INPUT_ATTACK|Mouse_Left_Click|RT
@@ -958,8 +960,8 @@ Hash | HashName | QWERTY | Xbox
 0xD0842EDF|INPUT_SELECT_NEXT_WEAPON|Mouse_Scroll_Down|
 0x9DA42644|INPUT_GAME_MENU_SCROLL_BACKWARD|Mouse_Scroll_Down|
 0xEB4130DF|INPUT_FRONTEND_RIGHT_AXIS_Y|Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
-0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad Down
-0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad Down
+0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad_Down
+0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down
 0x406ADFAE|INPUT_ACCURATE_AIM|Mouse_Scroll_Up|RS Click
 0xCC1075A7|INPUT_PREV_WEAPON|Mouse_Scroll_Up|
 0xF78D7337|INPUT_SELECT_PREV_WEAPON|Mouse_Scroll_Up|
@@ -1017,13 +1019,13 @@ Hash | HashName | QWERTY | Xbox
 0xE6360A8E|INPUT_PICKUP|Tab|LB
 0x171910DC|INPUT_FRONTEND_SELECT|Tab|Select
 0x85D24405|INPUT_CREATOR_MENU_TOGGLE|Tab|
-0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad Up
+0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad_Up
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select
 0xE72B43F4|INPUT_FOCUS_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
 0x699487BB|INPUT_HORSE_MOVE_UP_ONLY|W|LS Y
 0x8FD015D8|INPUT_MOVE_UP_ONLY|W|LS Y
-0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad Left
+0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
@@ -1053,7 +1055,7 @@ Hash | HashName | QWERTY | Xbox
 0x198AFC64|INPUT_VEH_DRAFT_TURN_LEFT_ONLY|A|LS X
 0x9DF54706|INPUT_VEH_MOVE_LEFT_ONLY|A|LS X
 0x7065027D|INPUT_MOVE_LEFT_ONLY|A|LS X
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X
 0xD8DFCAB3|INPUT_VEH_BOAT_TURN_LR|A<br> D|LS X
@@ -1061,27 +1063,27 @@ Hash | HashName | QWERTY | Xbox
 0xA7DFAE8A|INPUT_VEH_DRAFT_TURN_LR|A<br> D|LS X
 0xF1E2852C|INPUT_VEH_MOVE_LR|A<br> D|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
-0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad Down
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
+0x580C4473|INPUT_HUD_SPECIAL|Alt|Dpad_Down
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
 0x8AAA0AD4|INPUT_PC_FREE_LOOK|Alt<br> Mouse_Scroll_Click|
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad Left
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad Right
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad_Left
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad_Right
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
-0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad Right
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
+0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad_Right
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
@@ -1145,11 +1147,11 @@ Hash | HashName | QWERTY | Xbox
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
 0xA1ABB953|INPUT_INTERACT_ANIMAL|G|LS Click
 0x63A0D258|INPUT_VEH_HORN|G|LS Click
-0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad Up
-0x24978A28|INPUT_WHISTLE|H|Dpad Up
+0xC5CF41B2|INPUT_MULTIPLAYER_PREDATOR_ABILITY|H|Dpad_Up
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up
 0x064D1698|INPUT_FRONTEND_SOCIAL_CLUB|Home|Select
-0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad Right
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad_Right
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xB28318C0|INPUT_CONTEXT_ACTION|Mouse_Left_Click|A
 0xF1C341BA|INPUT_VEH_ATTACK2|Mouse_Left_Click|A
@@ -1185,14 +1187,14 @@ Hash | HashName | QWERTY | Xbox
 0xD0842EDF|INPUT_SELECT_NEXT_WEAPON|Mouse_Scroll_Down|
 0x9DA42644|INPUT_GAME_MENU_SCROLL_BACKWARD|Mouse_Scroll_Down|
 0xEB4130DF|INPUT_FRONTEND_RIGHT_AXIS_Y|Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
-0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad Down
-0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad Down
+0x841240A9|INPUT_IRON_SIGHT|Mouse_Scroll_Up|Dpad_Down
+0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down
 0x406ADFAE|INPUT_ACCURATE_AIM|Mouse_Scroll_Up|RS Click
 0xCC1075A7|INPUT_PREV_WEAPON|Mouse_Scroll_Up|
 0xF78D7337|INPUT_SELECT_PREV_WEAPON|Mouse_Scroll_Up|
 0x81457A1A|INPUT_GAME_MENU_SCROLL_FORWARD|Mouse_Scroll_Up|
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
-0xF1301666|INPUT_VEH_HEADLIGHT|O|Dpad Right
+0xF1301666|INPUT_VEH_HEADLIGHT|O|Dpad_Right
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x51104035|INPUT_FRONTEND_LT|Page Down|LT
 0x3C3DD371|INPUT_CREATOR_RT|Page Down|RT
@@ -1248,14 +1250,14 @@ Hash | HashName | QWERTY | Xbox
 0xE6360A8E|INPUT_PICKUP|Tab|LB
 0x171910DC|INPUT_FRONTEND_SELECT|Tab|Select
 0x85D24405|INPUT_CREATOR_MENU_TOGGLE|Tab|
-0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad Up
+0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad_Up
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select
 0xE72B43F4|INPUT_FOCUS_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
 0xDEBD7EF6|INPUT_VEH_MOVE_UP_ONLY|W|LS Y
 0x8FD015D8|INPUT_MOVE_UP_ONLY|W|LS Y
 0x29A5E51E|INPUT_VEH_DRAFT_MOVE_UP_ONLY|W|
-0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad Left
+0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
@@ -1274,12 +1276,12 @@ Hash | HashName | QWERTY | Xbox
 0xBF14CFE7|INPUT_CAMERA_ADVANCED_ZOOM_IN|]<br> Mouse_Scroll_Up|RT
 0x126796EB|INPUT_HORSE_MOVE_LR|A<br> D|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
-0xCFA703D3|INPUT_CAMERA_EXPRESSION_NEXT|Arrow Down|Dpad Down
-0x8D5BE9D1|INPUT_CAMERA_POSE_PREV|Arrow Left|Dpad Left
-0xF810FB35|INPUT_CAMERA_POSE_NEXT|Arrow Right|Dpad Right
-0x07B6435D|INPUT_CAMERA_EXPRESSION_PREV|Arrow Up|Dpad Up
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
+0xCFA703D3|INPUT_CAMERA_EXPRESSION_NEXT|Arrow Down|Dpad_Down
+0x8D5BE9D1|INPUT_CAMERA_POSE_PREV|Arrow Left|Dpad_Left
+0xF810FB35|INPUT_CAMERA_POSE_NEXT|Arrow Right|Dpad_Right
+0x07B6435D|INPUT_CAMERA_EXPRESSION_PREV|Arrow Up|Dpad_Up
 0xA4BD74A5|INPUT_CAMERA_BACK|Backspace<br> Esc|B
 0x5FC770EA|INPUT_CAMERA_PUT_AWAY|Backspace<br> Esc|B
 0xE16B9AAD|INPUT_HORSE_STOP|Control|B<br> RB
@@ -1289,8 +1291,8 @@ Hash | HashName | QWERTY | Xbox
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0xD593C221|INPUT_CAMERA_ADVANCED_SWITCH_CONTROLS|F|RB
 0xE8337356|INPUT_CAMERA_CONTEXT_GALLERY|G|Y
-0x24978A28|INPUT_WHISTLE|H|Dpad Up
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xB869EDFE|INPUT_CAMERA_ADVANCED_TAKE_PHOTO|Mouse_Left_Click|A
 0x3D99EEC6|INPUT_HORSE_GUN_LR|Mouse_Move_X|RS X
@@ -1318,23 +1320,23 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x3D23549A|INPUT_FRONTEND_RIGHT_AXIS_X|[<br> ]|RS X
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X
 0x126796EB|INPUT_HORSE_MOVE_LR|A<br> D|LS X
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
@@ -1351,8 +1353,8 @@ Hash | HashName | QWERTY | Xbox
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x02CEC7D5|INPUT_ANIMAL_EMOTE|F|B
-0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad Up
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad_Up
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x60C81CDE|INPUT_HORSE_ATTACK|Mouse_Left_Click|RT
 0x6BC904FC|INPUT_CINEMATIC_CAM_LR|Mouse_Move_X|RS X
@@ -1434,10 +1436,10 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xF431D57A|INPUT_GAME_MENU_LEFT_AXIS_X|A<br> D|LS X
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -1463,24 +1465,24 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right
 0xA6C67243|INPUT_CINEMATIC_CAM_CHANGE_SHOT|C|RS Click
 0xCAE9B017|INPUT_VEH_LOOK_BEHIND|C|RS Click
 0xCEE12B50|INPUT_SPECIAL_ABILITY|Capslock<br> Mouse_Scroll_Click|RS Click
 0xD648E48D|INPUT_VEH_DRAFT_BRAKE|Control|RB
 0xFEFAB9B4|INPUT_VEH_EXIT|E|Y
 0x63A0D258|INPUT_VEH_HORN|G|LS Click
-0x24978A28|INPUT_WHISTLE|H|Dpad Up
-0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad Right
-0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad Left
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up
+0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad_Right
+0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad_Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xF4330038|INPUT_VEH_ATTACK|Mouse_Left_Click|RT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
 0xBDD5830D|INPUT_VEH_DRAFT_AIM|Mouse_Right_Click|LT
-0xF1301666|INPUT_VEH_HEADLIGHT|O|Dpad Right
+0xF1301666|INPUT_VEH_HEADLIGHT|O|Dpad_Right
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x1ECA87D4|INPUT_SPECIAL_ABILITY_ACTION|Q|RB
 0xE30CD707|INPUT_RELOAD|R|B
@@ -1501,10 +1503,10 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x7ABC6A66|INPUT_SNIPER_ZOOM|[<br> ]<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|LS Y
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
-0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad Right
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
+0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad_Right
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right
 0xA6C67243|INPUT_CINEMATIC_CAM_CHANGE_SHOT|C|RS Click
 0x9959A6F0|INPUT_LOOK_BEHIND|C|RS Click
 0x811F4A1A|INPUT_SECONDARY_SPECIAL_ABILITY_SECONDARY|Capslock<br> Mouse_Scroll_Click|LS Click
@@ -1516,15 +1518,15 @@ Hash | HashName | QWERTY | Xbox
 0xCDC4E4E9|INPUT_SKIP_CUTSCENE|Enter<br> Mouse_Left_Click<br> Space|A
 0xB2F377E8|INPUT_MELEE_ATTACK|F|B
 0xD9C50532|INPUT_HOGTIE|F|B
-0x24978A28|INPUT_WHISTLE|H|Dpad Up
-0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad Right
-0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad Left
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up
+0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad_Right
+0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad_Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x07CE1E61|INPUT_ATTACK|Mouse_Left_Click|RT
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
-0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad Down
+0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x1ECA87D4|INPUT_SPECIAL_ABILITY_ACTION|Q|RB
 0xDE794E3E|INPUT_COVER|Q|RB
@@ -1537,11 +1539,11 @@ Hash | HashName | QWERTY | Xbox
 0xB238FE0B|INPUT_TOGGLE_HOLSTER|Tab|LB
 0xAC4BD4F1|INPUT_OPEN_WHEEL_MENU|Tab|LB
 0xE6360A8E|INPUT_PICKUP|Tab|LB
-0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad Up
+0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad_Up
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select
 0xE72B43F4|INPUT_FOCUS_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
-0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad Left
+0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left
 </details>
 <details>
   <summary>ControlGamePadUI_OnMount | 0x4A7103CB | 1248920523</summary>
@@ -1550,10 +1552,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
-0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad Right
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
+0xEED15F18|INPUT_SWITCH_FIRING_MODE|B|Dpad_Right
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right
 0xA6C67243|INPUT_CINEMATIC_CAM_CHANGE_SHOT|C|RS Click
 0x81280569|INPUT_HORSE_LOOK_BEHIND|C|RS Click
 0x811F4A1A|INPUT_SECONDARY_SPECIAL_ABILITY_SECONDARY|Capslock<br> Mouse_Scroll_Click|LS Click
@@ -1563,15 +1565,15 @@ Hash | HashName | QWERTY | Xbox
 0xCBDB82A8|INPUT_HORSE_EXIT|E|Y
 0x1A3EABBB|INPUT_HORSE_MELEE|F|B
 0xA1ABB953|INPUT_INTERACT_ANIMAL|G|LS Click
-0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad Up
-0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad Right
-0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad Left
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0xE7EB9185|INPUT_WHISTLE_HORSEBACK|H|Dpad_Up
+0xC1989F95|INPUT_QUICK_USE_ITEM|I|Dpad_Right
+0xF3830D8E|INPUT_OPEN_JOURNAL|J|Dpad_Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x60C81CDE|INPUT_HORSE_ATTACK|Mouse_Left_Click|RT
 0x61470051|INPUT_HORSE_AIM|Mouse_Right_Click|LT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
-0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad Down
+0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x1ECA87D4|INPUT_SPECIAL_ABILITY_ACTION|Q|RB
 0xE30CD707|INPUT_RELOAD|R|B
@@ -1582,11 +1584,11 @@ Hash | HashName | QWERTY | Xbox
 0xE4D2CE1D|INPUT_HORSE_JUMP|Space|X
 0xB238FE0B|INPUT_TOGGLE_HOLSTER|Tab|LB
 0xAC4BD4F1|INPUT_OPEN_WHEEL_MENU|Tab|LB
-0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad Up
+0xD8F73058|INPUT_AIM_IN_AIR|U|Dpad_Up
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select
 0xE72B43F4|INPUT_FOCUS_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
-0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad Left
+0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left
 </details>
 <details>
   <summary>CraftingMenu | 0x44BD2F77 | 1153249143</summary>
@@ -1595,10 +1597,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -1622,10 +1624,10 @@ Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x59753EDC|INPUT_CREATOR_MOVE_LR|A<br> D|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
-0x97410755|INPUT_CREATOR_MENU_DOWN|Arrow Down|Dpad Down
-0xEC6A30AA|INPUT_CREATOR_MENU_LEFT|Arrow Left|Dpad Left
-0x19D8334C|INPUT_CREATOR_MENU_RIGHT|Arrow Right|Dpad Right
-0xBCD1444B|INPUT_CREATOR_MENU_UP|Arrow Up|Dpad Up
+0x97410755|INPUT_CREATOR_MENU_DOWN|Arrow Down|Dpad_Down
+0xEC6A30AA|INPUT_CREATOR_MENU_LEFT|Arrow Left|Dpad_Left
+0x19D8334C|INPUT_CREATOR_MENU_RIGHT|Arrow Right|Dpad_Right
+0xBCD1444B|INPUT_CREATOR_MENU_UP|Arrow Up|Dpad_Up
 0xBB3FC460|INPUT_CREATOR_MENU_CANCEL|Backspace<br> Esc|B
 0xF55864CD|INPUT_CREATOR_SEARCH|Capslock|LS Click<br> RS Click
 0x6E1F639B|INPUT_VEH_BRAKE|Control|RB
@@ -1662,10 +1664,10 @@ Hash | HashName | QWERTY | Xbox
 0x59753EDC|INPUT_CREATOR_MOVE_LR|A<br> D|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
 0xF1111E4A|INPUT_SCRIPTED_FLY_LR|A<br> D|LS X
-0x97410755|INPUT_CREATOR_MENU_DOWN|Arrow Down|Dpad Down
-0xEC6A30AA|INPUT_CREATOR_MENU_LEFT|Arrow Left|Dpad Left
-0x19D8334C|INPUT_CREATOR_MENU_RIGHT|Arrow Right|Dpad Right
-0xBCD1444B|INPUT_CREATOR_MENU_UP|Arrow Up|Dpad Up
+0x97410755|INPUT_CREATOR_MENU_DOWN|Arrow Down|Dpad_Down
+0xEC6A30AA|INPUT_CREATOR_MENU_LEFT|Arrow Left|Dpad_Left
+0x19D8334C|INPUT_CREATOR_MENU_RIGHT|Arrow Right|Dpad_Right
+0xBCD1444B|INPUT_CREATOR_MENU_UP|Arrow Up|Dpad_Up
 0xBB3FC460|INPUT_CREATOR_MENU_CANCEL|Backspace<br> Esc|B
 0xF55864CD|INPUT_CREATOR_SEARCH|Capslock|LS Click<br> RS Click
 0x9C5E030C|INPUT_SCRIPTED_FLY_ZDOWN|Control|RT
@@ -1700,8 +1702,8 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xD72F3E29|INPUT_DOCUMENT_SCROLL_DOWN_ONLY|Arrow Down<br> Mouse_Scroll_Down|
-0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad Left
-0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad Right
+0x20190AB4|INPUT_DOCUMENT_PAGE_PREV|Arrow Left|Dpad_Left
+0xC97792B7|INPUT_DOCUMENT_PAGE_NEXT|Arrow Right|Dpad_Right
 0xAC70F311|INPUT_DOCUMENT_SCROLL|Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
 0x3D0C19EC|INPUT_DOCUMENT_SCROLL_UP_ONLY|Arrow Up<br> Mouse_Scroll_Up|
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
@@ -1715,21 +1717,21 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x3D23549A|INPUT_FRONTEND_RIGHT_AXIS_X|[<br> ]|RS X
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad Left
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad Right
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad_Left
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad_Right
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B
 0xD7DE6B1E|INPUT_FRONTEND_RUP|Control|Y
@@ -1783,10 +1785,10 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xF431D57A|INPUT_GAME_MENU_LEFT_AXIS_X|A<br> D|LS X
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -1813,10 +1815,10 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xF431D57A|INPUT_GAME_MENU_LEFT_AXIS_X|A<br> D|LS X
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -1895,10 +1897,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -1968,10 +1970,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
@@ -1995,7 +1997,7 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x1788C283|INPUT_INSPECT_LR|A<br> D|LS X
-0x9B1CA8DA|INPUT_INSPECT_OPEN_SATCHEL|B|Dpad Up
+0x9B1CA8DA|INPUT_INSPECT_OPEN_SATCHEL|B|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xD51B784F|INPUT_CONTEXT_Y|E|Y
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -2021,7 +2023,7 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x9B1CA8DA|INPUT_INSPECT_OPEN_SATCHEL|B|Dpad Up
+0x9B1CA8DA|INPUT_INSPECT_OPEN_SATCHEL|B|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xD51B784F|INPUT_CONTEXT_Y|E|Y
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -2051,7 +2053,7 @@ Hash | HashName | QWERTY | Xbox
 0x661857B3|INPUT_EMOTE_COMM|3|A
 0x470DC190|INPUT_EMOTE_TAUNT|4|B
 0xD3ECF82F|INPUT_SHOP_BOUNTY|B|B
-0x63A38F2C|INPUT_INTERACT_HORSE_BRUSH|B|Dpad Left
+0x63A38F2C|INPUT_INTERACT_HORSE_BRUSH|B|Dpad_Left
 0x09A92B8B|INPUT_INTERACT_LOCKON_Y|E|Y
 0xDFF812F9|INPUT_SHOP_BUY|E|Y
 0x9FA5AD07|INPUT_INTERACT_LOCKON_ROB|E|Y
@@ -2062,17 +2064,17 @@ Hash | HashName | QWERTY | Xbox
 0x4216AF06|INPUT_HORSE_COMMAND_FLEE|F|B
 0x26A18F47|INPUT_INTERACT_LOCKON_NEG|F|B
 0xEA150E72|INPUT_SHOP_SPECIAL|F|X
-0x760A9C6F|INPUT_INTERACT_OPTION1|G|Dpad Up
+0x760A9C6F|INPUT_INTERACT_OPTION1|G|Dpad_Up
 0x5415BE48|INPUT_INTERACT_LOCKON_ANIMAL|G|X
-0x84543902|INPUT_INTERACT_OPTION2|H|Dpad Down
-0x73A8FD83|INPUT_SADDLE_TRANSFER|H|Dpad Up
+0x84543902|INPUT_INTERACT_OPTION2|H|Dpad_Down
+0x73A8FD83|INPUT_SADDLE_TRANSFER|H|Dpad_Up
 0x13C42BB2|INPUT_EMOTE_ACTION|Mouse_Left_Click|RT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
 0x8CF90A9D|INPUT_PROMPT_PAGE_NEXT|Q|RB
 0xB3F388BC|INPUT_INTERACT_LOCKON_STUDY_BINOCULARS|Q|RB
 0x31219490|INPUT_INTERACT_LOCKON_TARGET_INFO|Q|RB
-0x6D1319BE|INPUT_SHOP_SELL|R|Dpad Right
-0x0D55A0F0|INPUT_INTERACT_HORSE_FEED|R|Dpad Right
+0x6D1319BE|INPUT_SHOP_SELL|R|Dpad_Right
+0x0D55A0F0|INPUT_INTERACT_HORSE_FEED|R|Dpad_Right
 0xAE5DFDED|INPUT_HORSE_COMMAND_STAY|R|X
 0x71F89BBC|INPUT_INTERACT_LOCKON_CALL_ANIMAL|R|X
 0xF63A17F9|INPUT_INTERACT_LOCKON_POS|R|X
@@ -2110,10 +2112,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
@@ -2131,10 +2133,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
@@ -2186,7 +2188,7 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
 0xA917D24B|INPUT_MULTIPLAYER_LEADERBOARD_SCROLL_UD|Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
 0x8CF90A9D|INPUT_PROMPT_PAGE_NEXT|Q|RB
 </details>
@@ -2210,14 +2212,14 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xBDC733EE|INPUT_MINIGAME_CHANGE_BET_AXIS_Y|&#8209;<br> =<br>Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|LS Y
-0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad Down
-0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad Up
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
+0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad_Down
+0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad_Up
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
 0x8AAA0AD4|INPUT_PC_FREE_LOOK|Alt<br> Mouse_Scroll_Click|
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xE9094BA0|INPUT_MINIGAME_QUIT|Backspace<br> Esc|B
 0x74486CA4|INPUT_MINIGAME_BLACKJACK_DOUBLE|D|Y
@@ -2228,7 +2230,7 @@ Hash | HashName | QWERTY | Xbox
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
 0xA8142713|INPUT_MINIGAME_BLACKJACK_HIT|H|A
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0x03F1E7CB|INPUT_MINIGAME_BLACKJACK_HAND_VIEW|Mouse_Right_Click|LT
@@ -2262,13 +2264,13 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
 0xE9094BA0|INPUT_MINIGAME_QUIT|Backspace<br> Esc|B
 0xD51B784F|INPUT_CONTEXT_Y|E|Y
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xB28318C0|INPUT_CONTEXT_ACTION|Mouse_Left_Click|A
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
@@ -2285,7 +2287,7 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
 0xE9094BA0|INPUT_MINIGAME_QUIT|Backspace<br> Esc|B
 0x2EAB0795|INPUT_DYNAMIC_SCENARIO|E|Y
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
@@ -2307,7 +2309,7 @@ Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x5BED7C91|INPUT_VEH_BOAT_TURN_LEFT_ONLY|A|LS X
 0xD8DFCAB3|INPUT_VEH_BOAT_TURN_LR|A<br> D|LS X
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
 0x428D5F39|INPUT_VEH_BOAT_BRAKE|Control|RB
 0xF9780DFB|INPUT_VEH_BOAT_TURN_RIGHT_ONLY|D|LS X
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
@@ -2338,19 +2340,19 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad Down
-0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad Up
-0x83608AC0|INPUT_MINIGAME_HELP_NEXT|A|Dpad Right
-0xFDDD89D4|INPUT_MINIGAME_DOMINOES_MOVE_LEFT_ONLY|A<br> Arrow Left|Dpad Left<br> LS X
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
+0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad_Down
+0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad_Up
+0x83608AC0|INPUT_MINIGAME_HELP_NEXT|A|Dpad_Right
+0xFDDD89D4|INPUT_MINIGAME_DOMINOES_MOVE_LEFT_ONLY|A<br> Arrow Left|Dpad_Left<br> LS X
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
 0x8AAA0AD4|INPUT_PC_FREE_LOOK|Alt<br> Mouse_Scroll_Click|
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xFD9FC86D|INPUT_MINIGAME_DOMINOES_MOVE_DOWN_ONLY|Arrow Down<br> S|Dpad Down<br> LS Y
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x7D5187C9|INPUT_MINIGAME_DOMINOES_MOVE_RIGHT_ONLY|Arrow Right<br> D|Dpad Right<br> LS X
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
-0xC6AB8CB3|INPUT_MINIGAME_DOMINOES_MOVE_UP_ONLY|Arrow Up<br> W|Dpad Up<br> LS Y
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xFD9FC86D|INPUT_MINIGAME_DOMINOES_MOVE_DOWN_ONLY|Arrow Down<br> S|Dpad_Down<br> LS Y
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x7D5187C9|INPUT_MINIGAME_DOMINOES_MOVE_RIGHT_ONLY|Arrow Right<br> D|Dpad_Right<br> LS X
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
+0xC6AB8CB3|INPUT_MINIGAME_DOMINOES_MOVE_UP_ONLY|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xE9094BA0|INPUT_MINIGAME_QUIT|Backspace<br> Esc|B
 0x95F5BB7C|INPUT_MINIGAME_DOMINOES_PLAY_TILE|Enter|A
@@ -2360,7 +2362,7 @@ Hash | HashName | QWERTY | Xbox
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x9D2AEA88|INPUT_CURSOR_ACCEPT|Mouse_Left_Click|
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
@@ -2382,14 +2384,14 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad Down
-0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad Up
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
+0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad_Down
+0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad_Up
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0xE9094BA0|INPUT_MINIGAME_QUIT|Backspace<br> Esc|B
 0xCEE12B50|INPUT_SPECIAL_ABILITY|Capslock<br> Mouse_Scroll_Click|RS Click
 0xC7B5340A|INPUT_FRONTEND_ACCEPT|Enter<br> Numpad Enter|A
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0x07CE1E61|INPUT_ATTACK|Mouse_Left_Click|RT
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
@@ -2409,12 +2411,12 @@ Hash | HashName | QWERTY | Xbox
 0x7065027D|INPUT_MOVE_LEFT_ONLY|A|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
 0x4FD4E558|INPUT_MINIGAME_FISHING_RIGHT_AXIS_X|A<br> D|RS X
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
-0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad Right
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
+0x4CC0E2FE|INPUT_OPEN_SATCHEL_MENU|B|Dpad_Right
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x811F4A1A|INPUT_SECONDARY_SPECIAL_ABILITY_SECONDARY|Capslock<br> Mouse_Scroll_Click|LS Click
 0xCEE12B50|INPUT_SPECIAL_ABILITY|Capslock<br> Mouse_Scroll_Click|RS Click
@@ -2434,8 +2436,8 @@ Hash | HashName | QWERTY | Xbox
 0xD7AF56A0|INPUT_MINIGAME_FISHING_REEL_SPEED_DOWN|F|
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
-0x24978A28|INPUT_WHISTLE|H|Dpad Up
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x07CE1E61|INPUT_ATTACK|Mouse_Left_Click|RT
 0xA1CD103A|INPUT_MINIGAME_FISHING_HOOK|Mouse_Left_Click|RT
@@ -2464,7 +2466,7 @@ Hash | HashName | QWERTY | Xbox
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
-0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad Left
+0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 </details>
 <details>
@@ -2474,25 +2476,25 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad Down
-0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad Up
+0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad_Down
+0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad_Up
 0x65F0ACDF|INPUT_MINIGAME_FFF_X|A|X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xE9094BA0|INPUT_MINIGAME_QUIT|Backspace<br> Esc|B
 0x73AD4858|INPUT_MINIGAME_FFF_Y|D|Y
-0x7B5B896D|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_RIGHT|E|Dpad Up
+0x7B5B896D|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_RIGHT|E|Dpad_Up
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x6FC9DE68|INPUT_MINIGAME_FFF_FLOURISH_CONTINUE|F|LB
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x07B8BEAF|INPUT_CONTEXT_RT|Mouse_Left_Click|RT
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
@@ -2500,7 +2502,7 @@ Hash | HashName | QWERTY | Xbox
 0x61E4CACC|INPUT_MINIGAME_FFF_ZOOM|Mouse_Right_Click|RT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
-0x29A3550E|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_LEFT|Q|Dpad Down
+0x29A3550E|INPUT_MINIGAME_FFF_CYCLE_SEQUENCE_LEFT|Q|Dpad_Down
 0xF7750B25|INPUT_MINIGAME_FFF_FLOURISH_END|R|LT
 0x1BC81873|INPUT_MINIGAME_FFF_B|S|B
 0xFDA83190|INPUT_MOVE_UD|S<br> W|LS Y
@@ -2535,7 +2537,7 @@ Hash | HashName | QWERTY | Xbox
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x3C0A40F2|INPUT_PHOTO_MODE|F6|Select
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xFF4B2ADA|INPUT_MINIGAME_MILKING_LEFT_ACTION|Mouse_Left_Click|LS Y
 0x30BE7CF2|INPUT_MINIGAME_MILKING_RIGHT_ACTION|Mouse_Right_Click|RS Y
@@ -2550,11 +2552,11 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xBDC733EE|INPUT_MINIGAME_CHANGE_BET_AXIS_Y|&#8209;<br> =<br>Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|LS Y
-0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad Down
-0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad Up
-0x83608AC0|INPUT_MINIGAME_HELP_NEXT|A|Dpad Right
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
+0xD3EBF425|INPUT_MINIGAME_DECREASE_BET|&#8209;<br> Arrow Down<br> Mouse_Scroll_Down|Dpad_Down
+0xC7CB8D5F|INPUT_MINIGAME_INCREASE_BET|=<br> Arrow Up<br> Mouse_Scroll_Up|Dpad_Up
+0x83608AC0|INPUT_MINIGAME_HELP_NEXT|A|Dpad_Right
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
 0x8AAA0AD4|INPUT_PC_FREE_LOOK|Alt<br> Mouse_Scroll_Click|
 0xE9094BA0|INPUT_MINIGAME_QUIT|Backspace<br> Esc|B
 0x410B0B2E|INPUT_MINIGAME_PLACE_BET|Enter|A
@@ -2566,7 +2568,7 @@ Hash | HashName | QWERTY | Xbox
 0x35957F6C|INPUT_PHOTO_MODE_PC|F6|
 0x72A9D1F7|INPUT_MINIGAME_POKER_CHECK_FOLD|G|Y
 0x7765B9D4|INPUT_MINIGAME_POKER_SHOW_POSSIBLE_HANDS|H|LS Click
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xF923B337|INPUT_MINIGAME_POKER_YOUR_CARDS|Mouse_Right_Click|LT
@@ -2638,12 +2640,12 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
 0xB4F298BA|INPUT_MULTIPLAYER_DEAD_SWITCH_RESPAWN|Control|LB
 0x4D11FE01|INPUT_MULTIPLAYER_DEAD_PARLEY|E|Y
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0xB4A11066|INPUT_MULTIPLAYER_DEAD_FEUD|F|B
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0x18987353|INPUT_MULTIPLAYER_DEAD_RESPAWN|Mouse_Left_Click|A
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
@@ -2651,7 +2653,7 @@ Hash | HashName | QWERTY | Xbox
 0x6816A38E|INPUT_MULTIPLAYER_DEAD_INFORM_LAW|Q|RB
 0xF875FC78|INPUT_MULTIPLAYER_DEAD_DUEL|R|X
 0xE50DCA13|INPUT_MULTIPLAYER_DEAD_PRESS_CHARGES|R|X
-0xCC18F960|INPUT_MULTIPLAYER_DEAD_LEADER_FEUD|Space|Dpad Right
+0xCC18F960|INPUT_MULTIPLAYER_DEAD_LEADER_FEUD|Space|Dpad_Right
 0xAC4BD4F1|INPUT_OPEN_WHEEL_MENU|Tab|LB
 </details>
 <details>
@@ -2661,12 +2663,12 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
 0xD51B784F|INPUT_CONTEXT_Y|E|Y
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x3B24C470|INPUT_CONTEXT_B|F|B
 0xB4A11066|INPUT_MULTIPLAYER_DEAD_FEUD|F|B
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xFD0F0C2C|INPUT_NEXT_WEAPON|Mouse_Scroll_Down|
 0xD0842EDF|INPUT_SELECT_NEXT_WEAPON|Mouse_Scroll_Down|
@@ -2685,12 +2687,12 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xF431D57A|INPUT_GAME_MENU_LEFT_AXIS_X|A<br> D|LS X
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
 0xA917D24B|INPUT_MULTIPLAYER_LEADERBOARD_SCROLL_UD|Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -2718,7 +2720,7 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
 0xA917D24B|INPUT_MULTIPLAYER_LEADERBOARD_SCROLL_UD|Arrow Up<br>Arrow Down<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0x8CF90A9D|INPUT_PROMPT_PAGE_NEXT|Q|RB
@@ -2736,10 +2738,10 @@ Hash | HashName | QWERTY | Xbox
 0x470DC190|INPUT_EMOTE_TAUNT|4|B
 0x7065027D|INPUT_MOVE_LEFT_ONLY|A|LS X
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xB4E465B4|INPUT_MOVE_RIGHT_ONLY|D|LS X
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -2762,10 +2764,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
@@ -2784,15 +2786,15 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x5092BF47|INPUT_MULTIPLAYER_SPECTATE_PLAYER_PREV|A|LB
-0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad Down
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
+0xE8342FF2|INPUT_MULTIPLAYER_INFO|Alt|Dpad_Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
 0xA6C67243|INPUT_CINEMATIC_CAM_CHANGE_SHOT|C|RS Click
 0xBA065692|INPUT_MULTIPLAYER_SPECTATE_PLAYER_NEXT|D|RB
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x3B24C470|INPUT_CONTEXT_B|F|B
 0xB4A11066|INPUT_MULTIPLAYER_DEAD_FEUD|F|B
 0x7DBA5D49|INPUT_MULTIPLAYER_SPECTATE_HIDE_HUD|H|Y
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0x6BC904FC|INPUT_CINEMATIC_CAM_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y|
@@ -2812,10 +2814,10 @@ Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x47EC4C22|INPUT_CAMERA_ZOOM|[<br> ]<br>Mouse_Scroll_Up<br>Mouse_Scroll_Down|LS Y
 0x4D8FB4C1|INPUT_MOVE_LR|A<br> D|LS X
-0xCFA703D3|INPUT_CAMERA_EXPRESSION_NEXT|Arrow Down|Dpad Down
-0x8D5BE9D1|INPUT_CAMERA_POSE_PREV|Arrow Left|Dpad Left
-0xF810FB35|INPUT_CAMERA_POSE_NEXT|Arrow Right|Dpad Right
-0x07B6435D|INPUT_CAMERA_EXPRESSION_PREV|Arrow Up|Dpad Up
+0xCFA703D3|INPUT_CAMERA_EXPRESSION_NEXT|Arrow Down|Dpad_Down
+0x8D5BE9D1|INPUT_CAMERA_POSE_PREV|Arrow Left|Dpad_Left
+0xF810FB35|INPUT_CAMERA_POSE_NEXT|Arrow Right|Dpad_Right
+0x07B6435D|INPUT_CAMERA_EXPRESSION_PREV|Arrow Up|Dpad_Up
 0xA4BD74A5|INPUT_CAMERA_BACK|Backspace<br> Esc|B
 0x5FC770EA|INPUT_CAMERA_PUT_AWAY|Backspace<br> Esc|B
 0xDB096B85|INPUT_DUCK|Control|LS Click
@@ -2823,8 +2825,8 @@ Hash | HashName | QWERTY | Xbox
 0xE2473BF0|INPUT_INTERACT_LOCKON_TRACK_ANIMAL|E|Y
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0xE8337356|INPUT_CAMERA_CONTEXT_GALLERY|G|Y
-0x24978A28|INPUT_WHISTLE|H|Dpad Up
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x24978A28|INPUT_WHISTLE|H|Dpad_Up
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x44FA14C2|INPUT_CAMERA_TAKE_PHOTO|Mouse_Left_Click|RT
 0x08F8BC6D|INPUT_LOOK_LEFT_ONLY|Mouse_Move_X|RS X
@@ -2860,21 +2862,21 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x3D23549A|INPUT_FRONTEND_RIGHT_AXIS_X|[<br> ]|RS X
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad Left
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad Right
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad_Left
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad_Right
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B
 0xD7DE6B1E|INPUT_FRONTEND_RUP|Control|Y
@@ -2924,10 +2926,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0xC7B5340A|INPUT_FRONTEND_ACCEPT|Enter<br> Numpad Enter|A
 0x11DBBAB9|INPUT_CURSOR_FORWARD_CLICK|Mouse_Button_1|
@@ -2961,10 +2963,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0xC7B5340A|INPUT_FRONTEND_ACCEPT|Enter<br> Numpad Enter|A
 0x11DBBAB9|INPUT_CURSOR_FORWARD_CLICK|Mouse_Button_1|
@@ -3002,21 +3004,21 @@ Hash | HashName | QWERTY | Xbox
 0x5D2DD717|INPUT_PHOTO_MODE_CONTRAST_UP_ONLY|]|
 0x311353EB|INPUT_PHOTO_MODE_MOVE_LEFT_ONLY|A|
 0x4F136512|INPUT_PHOTO_MODE_MOVE_LR|A<br> D|LS X
-0xB341F407|INPUT_PHOTO_MODE_FILTER_INTENSITY_DOWN|Arrow Down|Dpad Down
+0xB341F407|INPUT_PHOTO_MODE_FILTER_INTENSITY_DOWN|Arrow Down|Dpad_Down
 0x01EBFABD|INPUT_PHOTO_MODE_FOCAL_LENGTH_DOWN_ONLY|Arrow Down|
-0x4F640885|INPUT_PHOTO_MODE_FILTER_PREV|Arrow Left|Dpad Left
-0x699F8D08|INPUT_PHOTO_MODE_FILTER_NEXT|Arrow Right|Dpad Right
+0x4F640885|INPUT_PHOTO_MODE_FILTER_PREV|Arrow Left|Dpad_Left
+0x699F8D08|INPUT_PHOTO_MODE_FILTER_NEXT|Arrow Right|Dpad_Right
 0x886ABA4E|INPUT_PHOTO_MODE_FOCAL_LENGTH|Arrow Up<br>Arrow Down|LS Y
-0x2286D46B|INPUT_PHOTO_MODE_FILTER_INTENSITY_UP|Arrow Up|Dpad Up
+0x2286D46B|INPUT_PHOTO_MODE_FILTER_INTENSITY_UP|Arrow Up|Dpad_Up
 0xFAFBD66A|INPUT_PHOTO_MODE_FOCAL_LENGTH_UP_ONLY|Arrow Up|
 0x2F13EC9A|INPUT_PHOTO_MODE_BACK|Backspace<br> Esc|B
 0x5357A7F5|INPUT_PHOTO_MODE_MOVE_RIGHT_ONLY|D|
-0x96E70854|INPUT_PHOTO_MODE_ROTATE_RIGHT|E|Dpad Right
+0x96E70854|INPUT_PHOTO_MODE_ROTATE_RIGHT|E|Dpad_Right
 0xDCE96D67|INPUT_PHOTO_MODE_VIEW_PHOTOS|G|X
 0x7F9055F5|INPUT_PHOTO_MODE_TOGGLE_HUD|H|Y
-0xC64E2284|INPUT_PHOTO_MODE_EXPOSURE_UP|J|Dpad Up
-0xAD07A5A5|INPUT_PHOTO_MODE_EXPOSURE_DOWN|K|Dpad Down
-0x9DE08D71|INPUT_PHOTO_MODE_EXPOSURE_LOCK|L|Dpad Right
+0xC64E2284|INPUT_PHOTO_MODE_EXPOSURE_UP|J|Dpad_Up
+0xAD07A5A5|INPUT_PHOTO_MODE_EXPOSURE_DOWN|K|Dpad_Down
+0x9DE08D71|INPUT_PHOTO_MODE_EXPOSURE_LOCK|L|Dpad_Right
 0xA190AAC7|INPUT_PHOTO_MODE_TAKE_PHOTO|Mouse_Left_Click|A
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0x8F32E2EB|INPUT_PHOTO_MODE_SWITCH_MODE|Mouse_Scroll_Click<br> Tab|RB
@@ -3025,14 +3027,14 @@ Hash | HashName | QWERTY | Xbox
 0x047099F1|INPUT_PHOTO_MODE_DOF_DOWN_ONLY|Page Down|RS Y
 0x26B9AE6A|INPUT_PHOTO_MODE_DOF|Page Down<br> Page Up|RS Y
 0x87B07940|INPUT_PHOTO_MODE_DOF_UP_ONLY|Page Up|RS Y
-0x2EEA1D2A|INPUT_PHOTO_MODE_ROTATE_LEFT|Q|Dpad Left
+0x2EEA1D2A|INPUT_PHOTO_MODE_ROTATE_LEFT|Q|Dpad_Left
 0xA209BD57|INPUT_PHOTO_MODE_RESET|R|RS Click
 0x4EBCC409|INPUT_PHOTO_MODE_MOVE_DOWN_ONLY|S|
 0xEC001315|INPUT_PHOTO_MODE_MOVE_UD|S<br> W|LS Y
 0x9F06B29C|INPUT_PHOTO_MODE_CHANGE_CAMERA|V|Select
 0x315D57E6|INPUT_PHOTO_MODE_MOVE_UP_ONLY|W|
-0xB138D899|INPUT_PHOTO_MODE_LENSE_NEXT|X|Dpad Down
-0x06A057F8|INPUT_PHOTO_MODE_LENSE_PREV|Z|Dpad Up
+0xB138D899|INPUT_PHOTO_MODE_LENSE_NEXT|X|Dpad_Down
+0x06A057F8|INPUT_PHOTO_MODE_LENSE_PREV|Z|Dpad_Up
 </details>
 <details>
   <summary>PlayerJournal | 0x26E0BB81 | 652262273</summary>
@@ -3041,8 +3043,8 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
@@ -3063,11 +3065,11 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
 0x8E90C7BB|INPUT_QUIT|Backspace<br> Esc|B
 0x2EAB0795|INPUT_DYNAMIC_SCENARIO|E|Y
 0x3B24C470|INPUT_CONTEXT_B|F|B
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x07B8BEAF|INPUT_CONTEXT_RT|Mouse_Left_Click|RT
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT
@@ -3104,7 +3106,7 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad Down
+0xCF8A4ECA|INPUT_REVEAL_HUD|Alt|Dpad_Down
 0xF5A13A0D|INPUT_MINIGAME_ACTION_UP|E|LS Y
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0xB28318C0|INPUT_CONTEXT_ACTION|Mouse_Left_Click|A
@@ -3128,10 +3130,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
@@ -3169,8 +3171,8 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
@@ -3216,10 +3218,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 </details>
 <details>
@@ -3229,10 +3231,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0xA8F6DE66|INPUT_GAME_MENU_LS|Control|LS Click
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
@@ -3260,21 +3262,21 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0x3D23549A|INPUT_FRONTEND_RIGHT_AXIS_X|[<br> ]|RS X
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
 0x3224BC55|INPUT_FRONTEND_SCROLL_AXIS_X|A<br> D<br>Arrow Left<br>Arrow Right|LS X
 0xFB56DD5B|INPUT_FRONTEND_AXIS_X|A<br> D|LS X
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad Left
-0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad Left
-0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad Right
-0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad Right
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0xF8480EED|INPUT_FRONTEND_MAP_NAV_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0xA65EBAB4|INPUT_FRONTEND_LEFT|Arrow Left|Dpad_Left
+0xE0D75B00|INPUT_FRONTEND_MAP_NAV_LEFT|Arrow Left|Dpad_Left
+0xDEB34313|INPUT_FRONTEND_RIGHT|Arrow Right|Dpad_Right
+0x28725E5D|INPUT_FRONTEND_MAP_NAV_RIGHT|Arrow Right|Dpad_Right
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
 0x21651AD6|INPUT_FRONTEND_SCROLL_AXIS_Y|Arrow Up<br>Arrow Down<br> S<br> W|LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x125A70E5|INPUT_FRONTEND_MAP_NAV_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0x5B48F938|INPUT_FRONTEND_RRIGHT|Backspace<br> Esc|B
 0xD7DE6B1E|INPUT_FRONTEND_RUP|Control|Y
@@ -3305,12 +3307,12 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad Left<br> LS X
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad Right<br> LS X
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x877F1027|INPUT_FRONTEND_NAV_LEFT|A<br> Arrow Left|Dpad_Left<br> LS X
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0x08BD758C|INPUT_FRONTEND_NAV_RIGHT|Arrow Right<br> D|Dpad_Right<br> LS X
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0xC7B5340A|INPUT_FRONTEND_ACCEPT|Enter<br> Numpad Enter|A
 0x11DBBAB9|INPUT_CURSOR_FORWARD_CLICK|Mouse_Button_1|
@@ -3341,10 +3343,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad Down
-0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad Down<br> LS Y
-0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad Up
-0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad Up<br> LS Y
+0x05CA7C52|INPUT_FRONTEND_DOWN|Arrow Down|Dpad_Down
+0x78114AB3|INPUT_FRONTEND_NAV_DOWN|Arrow Down<br> S|Dpad_Down<br> LS Y
+0x6319DB71|INPUT_FRONTEND_UP|Arrow Up|Dpad_Up
+0x8CFFE0A1|INPUT_FRONTEND_NAV_UP|Arrow Up<br> W|Dpad_Up<br> LS Y
 0x156F7119|INPUT_FRONTEND_CANCEL|Backspace<br> Esc|B
 0xC7B5340A|INPUT_FRONTEND_ACCEPT|Enter<br> Numpad Enter|A
 0x11DBBAB9|INPUT_CURSOR_FORWARD_CLICK|Mouse_Button_1|
@@ -3379,7 +3381,7 @@ Hash | HashName | QWERTY | Xbox
 0xD51B784F|INPUT_CONTEXT_Y|E|Y
 0xC7B5340A|INPUT_FRONTEND_ACCEPT|Enter<br> Numpad Enter|A
 0x3B24C470|INPUT_CONTEXT_B|F|B
-0x80F28E95|INPUT_PLAYER_MENU|L|Dpad Left
+0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0x08F8BC6D|INPUT_LOOK_LEFT_ONLY|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X
@@ -3411,8 +3413,8 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0xCEFF5C13|INPUT_TITHING_DECREASE_AMOUNT|Arrow Down|Dpad Down
-0x24F37AB5|INPUT_TITHING_INCREASE_AMOUNT|Arrow Up|Dpad Up
+0xCEFF5C13|INPUT_TITHING_DECREASE_AMOUNT|Arrow Down|Dpad_Down
+0x24F37AB5|INPUT_TITHING_INCREASE_AMOUNT|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0xE31C6A41|INPUT_MAP|M|Start
@@ -3447,7 +3449,7 @@ Hash | HashName | QWERTY | Xbox
 0x390948DC|INPUT_RADIAL_MENU_NAV_LR|Mouse_Move_X|RS X
 0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
-0x7E75F4DC|INPUT_EMOTES_MANAGE|Mouse_Scroll_Click|Dpad Left
+0x7E75F4DC|INPUT_EMOTES_MANAGE|Mouse_Scroll_Click|Dpad_Left
 0x1C826362|INPUT_EMOTE_GROUP_LINK|Tab|RB
 0x4FD1C57B|INPUT_EMOTE_GROUP_LINK_HORSE|Tab|RB
 0xE2B557A3|INPUT_OPEN_EMOTE_WHEEL|Tab|RB
@@ -3467,8 +3469,8 @@ Hash | HashName | QWERTY | Xbox
 0xCC1075A7|INPUT_PREV_WEAPON|Mouse_Scroll_Up|
 0x77E56FB3|INPUT_SELECT_NEXT_WHEEL|R|RB
 0x9CC7A1A4|INPUT_QUICK_SHORTCUT_ABILITIES_MENU|Space|Y
-0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad Right
-0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad Left
+0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad_Right
+0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad_Left
 </details>
 <details>
   <summary>UI_QUICK_SELECT_RADIAL_MENU | 0xB7A28A1A | -1214084582</summary>
@@ -3490,8 +3492,8 @@ Hash | HashName | QWERTY | Xbox
 0x93D6723F|INPUT_RADIAL_MENU_SLOT_NAV_PREV|Q|LT
 0x77E56FB3|INPUT_SELECT_NEXT_WHEEL|R|RB
 0x9CC7A1A4|INPUT_QUICK_SHORTCUT_ABILITIES_MENU|Space|Y
-0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad Right
-0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad Left
+0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad_Right
+0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad_Left
 </details>
 <details>
   <summary>UI_RADAR_EDIT_MODE | 0xEC2684E8 | -333019928</summary>
@@ -3500,7 +3502,7 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad Down
+0x0F39B3D4|INPUT_SELECT_RADAR_MODE|Alt|Dpad_Down
 0x51AA7A35|INPUT_REGULAR_RADAR|C|A
 0x8CF90A9D|INPUT_PROMPT_PAGE_NEXT|Q|RB
 0x70CBD78D|INPUT_DISABLE_RADAR|V|B
@@ -3525,10 +3527,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
@@ -3565,10 +3567,10 @@ Hash | HashName | QWERTY | Xbox
 
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
-0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad Down
-0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad Left
-0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad Right
-0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad Up
+0x4403F97F|INPUT_GAME_MENU_DOWN|Arrow Down|Dpad_Down
+0xAD7FCC5B|INPUT_GAME_MENU_LEFT|Arrow Left|Dpad_Left
+0x65F9EC5B|INPUT_GAME_MENU_RIGHT|Arrow Right|Dpad_Right
+0x911CB09E|INPUT_GAME_MENU_UP|Arrow Up|Dpad_Up
 0x308588E6|INPUT_GAME_MENU_CANCEL|Backspace<br> Esc|B
 0x110AD1D2|INPUT_GAME_MENU_TAB_RIGHT|E<br> Page Down|RB
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
