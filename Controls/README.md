@@ -1,30 +1,32 @@
 ## Controls
 
-Below are the default control mappings for QWERTY keyboards and Xbox controllers. While players can customize these bindings, some controls are natively exclusive to a specific input method. If a control lacks a mapping for a particular device, it will be unusable on that input method.
+Below are the default control mappings for QWERTY keyboards and Xbox controllers. Some controls are natively exclusive to a specific input method. If a control lacks a mapping for a particular device, it will be unusable on that input method.
 
 This behavior is most common with axis-related inputs. To manage these input variations within your scripts, utilize the following natives:
 
 - `IsUsingKeyboardAndMouse(control_type)`: Use this to check the player's active input method and toggle logic accordingly.
-- `IsControlJustPressed(control_type, input)`: Used to detect a single button press event.
-- `IsControlJustReleased(control_type, input)`: Used to detect a button release event.
-- `IsControlPressed(control_type, input)`: Used to detect a continuous button press event.
+- `IsControlJustPressed(control_type, input)`: Used to detect a single input press event.
+- `IsControlJustReleased(control_type, input)`: Used to detect a input release event.
+- `IsControlPressed(control_type, input)`: Used to detect a continuous input press event.
 - `GetControlNormal(control_type, input)`: Used for axis-based controls. It returns a float (-1.0 to 1.0) representing the degree of movement.
 
-You can disable any actions using the `DisableControlAction` function, but you can still detect button press using these natives:
+You can disable any actions using the `DisableControlAction` function, but you can still detect input press using these natives:
 
-- `IsDisabledControlJustPressed(control_type, input)`: Used to detect a single disabled button press event.
-- `IsDisabledControlJustReleased(control_type, input)`: Used to detect a disabled button release event.
-- `IsDisabledControlPressed(control_type, input)`: Used to detect a continuous disabled button press event.
+- `IsDisabledControlJustPressed(control_type, input)`: Used to detect a single disabled input press event.
+- `IsDisabledControlJustReleased(control_type, input)`: Used to detect a disabled input release event.
+- `IsDisabledControlPressed(control_type, input)`: Used to detect a continuous disabled input press event.
+
+Please note that the input is mapped to the default button on the keyboard/gamepad. However, the player can change the default button to their own. This means you're binding the check not to a specific button, but to a specific input action (which could theoretically be bound to any button by player).
 
 ## Contexts
 
-Rockstar Games uses context-based button grouping. Context can be switched automatically. For example, the default context is "OnFoot." When you mount a horse, the context automatically changes to "OnMount," when you enter a carriage, it changes to "InVehicle." You can only detect buttons within the current context using the above natives.
+Rockstar Games uses context-based input grouping. Context can be switched automatically. For example, the default context is "OnFoot." When you mount a horse, the context automatically changes to "OnMount," when you enter a carriage, it changes to "InVehicle." You can only detect inputs within the current context using the above natives.
 
-For example, if you're on foot (the "OnFoot" context), you can't detect the "INPUT_WHISTLE_HORSEBACK" button, which is available in the "OnMount" context and not available in "OnFoot".
+For example, if you're on foot (the "OnFoot" context), **you can't** detect the input "INPUT_WHISTLE_HORSEBACK", which is available in the "OnMount" context and not available in "OnFoot".
 
 You can arbitrarily change the context to your desired one using the native `SetControlContext(control_type, context)`. This native doesn't need to be run every frame, but the engine can change it when necessary (for example, if you mount or dismount a horse). You can check the context for the corresponding control_type using the native `GetCurrentControlContext(control_type)`.
 
-Changing the context can disable almost all buttons. For example, by changing the context to 'UIFeedInteractOverride', you'll only be able to detect the single "INPUT_FEED_INTERACT" button. Also your character will lose control. To regain control, you need to change the context to the relevant one (i.e., if the character is on a horse, change it to "OnMount," if on foot, change it to "OnFoot," and so on).
+Changing the context can disable almost all inputs. For example, by changing the context to "UIFeedInteractOverride", you'll only be able to detect the single input "INPUT_FEED_INTERACT". Also your character will lose control. To regain control, you need to change the context to the relevant one (i.e., if the character is on a horse, change it to "OnMount," if on foot, change it to "OnFoot," and so on).
 
 The control_type for all contexts is 0. With the exception of:
 
@@ -34,16 +36,16 @@ AnimalControlSet 3
 InteractionLockOn 2
 ```
 
-Remember that the default context for all other control_types is false. And to reset to "default" you need to do this:
+Remember that the default context for all other control_types is "false". And to reset to "default" you need to do this:
 
 ```lua
-SetControlContext(0, GetHashKey("OnFoot")) -- or OnMount or InVehicle or other current control
-SetControlContext(1, false)
-SetControlContext(2, false)
-SetControlContext(3, false)
-SetControlContext(4, false)
-SetControlContext(5, false)
-SetControlContext(6, false)
+  SetControlContext(0, GetHashKey("OnFoot")) -- or OnMount or InVehicle or other relevant control
+  SetControlContext(1, false)
+  SetControlContext(2, false)
+  SetControlContext(3, false)
+  SetControlContext(4, false)
+  SetControlContext(5, false)
+  SetControlContext(6, false)
 ```
 
 
@@ -51,6 +53,7 @@ SetControlContext(6, false)
 
 > [!NOTE]
 > Some controls in RedM works only since certain game versions.
+
 
 ## Known controls for context names (click to expand the list.)
 <details>
@@ -224,7 +227,7 @@ Hash | HashName | QWERTY | Xbox | Context
 0x0A1EFC09|INPUT_MINIGAME_ACTION_LEFT|E|LS X|Mudtown1WheelFixing<br>
 0x16D70379|INPUT_MINIGAME_ACTION_RIGHT|E|LS X|Utopia1Jailbreak<br>
 0xF601BCFC|INPUT_MINIGAME_ACTION_DOWN|E|LS Y|Calderon1ForceDoor<br>Marston53BirthingFoal<br>
-0xF5A13A0D|INPUT_MINIGAME_ACTION_UP|E|LS Y|Gang2RopeClimb<br>Marston53BirthingFoal<br>Mudtown1WheelFixing<br>ODriscolls3Surgery<br>Reverend1TrainTrackRescue<br>Saloon1Drown<br>Winter4TakingDynamite
+0xF5A13A0D|INPUT_MINIGAME_ACTION_UP|E|LS Y|Gang2RopeClimb<br>Marston53BirthingFoal<br>Mudtown1WheelFixing<br>ODriscolls3Surgery<br>Reverend1TrainTrackRescue<br>Saloon1Drown<br>Winter4TakingDynamite<br>
 0x17BEC168|INPUT_FRONTEND_RB|E|RB|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
 0x16B0EEF8|INPUT_MINIGAME_BUILDING_CAMERA_NEXT|E|RB|MinigameBuilding<br>
 0x3FEDA104|INPUT_MINIGAME_DANCE_NEXT|E|RB|MinigameDancing<br>
@@ -388,10 +391,15 @@ Hash | HashName | QWERTY | Xbox | Context
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>PhotoCameraInUse<br>SpectatorCamera<br>
 0xB6F3E4FE|INPUT_VEH_GUN_LR|Mouse_Move_X|RS X|InVehicle<br>
 0xD6C4ECDC|INPUT_CURSOR_X|Mouse_Move_X||FrontendMenu<br>GameMenuMouse<br>MinigameDominoes<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>StickyFeed<br>
+0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y||OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>OnlineSpectatorCamera<br>
+0x55EA24F3|INPUT_CREATOR_LOOK_UD|Mouse_Move_Y|RS Y|CreatorOnFoot<br>CreatorSkyCam<br>
+0xE4130778|INPUT_CURSOR_Y|Mouse_Move_Y||FrontendMenu<br>GameMenuMouse<br>MinigameDominoes<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>StickyFeed<br>
+0xBFF476F9|INPUT_HORSE_GUN_UD|Mouse_Move_Y|RS Y|OnMount<br>AdvancedPhotoCamera<br>ControlGamePadUI_OnMount<br>HandheldCatalogue<br>PlayerJournal<br>
+0x8ED92E16|INPUT_LOOK_DOWN_ONLY|Mouse_Move_Y|RS Y|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>PhotoCameraInUse<br>SpectatorCamera<br>
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>AnimalControlSet<br>ControlGamePadUI_OnFoot<br>CreatorOnFoot<br>CreatorSkyCam<br>GenericViewable<br>HandheldCatalogue<br>Harmonica<br>Ledger<br>MaintainInspectWeapon<br>MinigameBlackjack<br>MinigameBuildingFences<br>MinigameCleaningStalls<br>MinigameCrackpotRCBoat<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigamePoker<br>OnlineDeathCamera<br>OnlineIncapacitation<br>OnlineSpectatorCamera<br>PhotoCameraInUse<br>PhotoMode<br>PlayerJournal<br>ShopCatalogue<br>SpectatorCamera<br>Tithing<br>WildernessSuppliesShop<br>
+0xC0651D40|INPUT_LOOK_UP_ONLY|Mouse_Move_Y|RS Y|OnFoot<br>OnMount<br>InVehicle<br>AdvancedPhotoCamera<br>PhotoCameraInUse<br>SpectatorCamera<br>
 0x09BF4645|INPUT_MINIGAME_FISHING_LEFT_AXIS_Y|Mouse_Move_Y|LS Y|MinigameFishing<br>
 0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y|OnFoot<br>OnMount<br>InVehicle<br>MinigameFishing<br>UI_EMOTES_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
-0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y||OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>OnlineSpectatorCamera<br>
-0xE4130778|INPUT_CURSOR_Y|Mouse_Move_Y||FrontendMenu<br>GameMenuMouse<br>MinigameDominoes<br>PhotoFeed<br>PhotoFeedFullscreen<br>PhotoFeedOptions<br>Satchel<br>SatchelFolder<br>SocialClubFeedFilter<br>SocialClubFeedOptions<br>StickyFeed<br>
 0x162AFEB8|INPUT_MELEE_HORSE_ATTACK_SECONDARY|Mouse_Right_Click|LB|HorseMeleeOverride<br>
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT|OnFoot<br>OnMount<br>InVehicle<br>ControlGamePadUI_OnFoot<br>MinigameDrinkingShooting<br>MinigameFishing<br>
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>Harmonica<br>InspectItem<br>InspectItemOutro<br>MinigameFiveFingerFillet<br>OnlinePhotoStudioShop<br>PlayerPerfomingChore<br>
@@ -601,6 +609,140 @@ Hash | HashName | QWERTY | Xbox | Context
 0x70B87844|INPUT_VEH_DRAFT_SWITCH_DRIVERS|Z|X|InVehicle<br>
 0xC7083798|INPUT_VEH_SHUFFLE|Z|X|InVehicle<br>ControlGamePadUI_InVehicle<br>
 0x5FEF1B6D|INPUT_SIMPLE_RADAR|Z|Y|UI_RADAR_EDIT_MODE<br>
+0xDAB9EE72|INPUT_MINIGAME_POKER_CALL||A|MinigamePoker<br>
+0x206B2087|INPUT_MINIGAME_POKER_CHECK||A|MinigamePoker<br>
+0xB568BCD0|INPUT_MINIGAME_POKER_SKIP_TUTORIAL||A|MinigamePoker<br>
+0x37933367|INPUT_SCRIPT_RDOWN||A|
+0xC61611E6|INPUT_VEH_DROP_PROJECTILE||A|InVehicle<br>
+0x4E42696E|INPUT_DROP_AMMO||B|OnFoot<br>OnMount<br>InVehicle<br>
+0x22A3B800|INPUT_SCRIPT_RRIGHT||B|
+0x7DBCD016|INPUT_DROP_WEAPON||Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
+0x9384E0A8|INPUT_MINIGAME_HELP||Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigamePoker<br>
+0xB1DA5574|INPUT_SCRIPT_PAD_DOWN||Dpad_Down|MinigameFiveFingerFillet<br>
+0x8A7B8833|INPUT_SNIPER_ZOOM_OUT_SECONDARY||Dpad_Down|OnFoot<br>OnMount<br>InVehicle<br>
+0xF19BE385|INPUT_CONTEXT_SECONDARY||Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>
+0x73846677|INPUT_DETONATE||Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>
+0xC5F53156|INPUT_MINIGAME_HELP_PREV||Dpad_Left|MinigameDominoes<br>MinigamePoker<br>
+0x1AF81D9E|INPUT_SCRIPT_PAD_LEFT||Dpad_Left|
+0x0AF99998|INPUT_THROW_GRENADE||Dpad_Left|OnFoot<br>OnMount<br>InVehicle<br>
+0xB73BCA77|INPUT_CONTEXT||Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>
+0xFA0B29CD|INPUT_QUICK_SELECT_TOGGLE_SHORTCUT_ITEM||Dpad_Right|UI_QUICK_SELECT_COMPACT_RADIAL_MENU<br>UI_QUICK_SELECT_RADIAL_MENU<br>
+0x82A9B758|INPUT_SCRIPT_PAD_RIGHT||Dpad_Right|SpectatorCamera<br>
+0x7DCA9C75|INPUT_TALK||Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>
+0x50BA1A77|INPUT_WEAPON_SPECIAL_TWO||Dpad_Right|OnFoot<br>OnMount<br>InVehicle<br>
+0xB0BCE5D6|INPUT_INTERACT_HORSE_CARE||Dpad_Up|OnFoot<br>
+0x0DC15ADD|INPUT_SCRIPT_PAD_UP||Dpad_Up|SpectatorCamera<br>
+0x6BE9C207|INPUT_SNIPER_ZOOM_IN_SECONDARY||Dpad_Up|OnFoot<br>OnMount<br>InVehicle<br>
+0xE624C062|INPUT_SCRIPT_LB||LB|SpectatorCamera<br>
+0x0D0FB9B1|INPUT_CREATOR_RAISE||LS Click|CreatorOnFoot<br>CreatorSkyCam<br>
+0xAADDC975|INPUT_SCRIPT_LS||LS Click|
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X|OnFoot<br>OnMount<br>InVehicle<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HorseShopMenu<br>LobbyMenu<br>OnlineLeaderboardEndScreen<br>Wardrobe<br>WildernessSuppliesShop<br>
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X|OnFoot<br>OnMount<br>InVehicle<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HorseShopMenu<br>LobbyMenu<br>OnlineLeaderboardEndScreen<br>Wardrobe<br>WildernessSuppliesShop<br>
+0x1F8EEF84|INPUT_SCRIPT_LEFT_AXIS_X||LS X|CreatorSkyCam<br>Harmonica<br>MinigameFishing<br>
+0x3D2EA092|INPUT_MINIGAME_BLACKJACK_BET_AXIS_Y||LS Y|
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y|OnFoot<br>OnMount<br>InVehicle<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HorseShopMenu<br>LobbyMenu<br>OnlineLeaderboardEndScreen<br>Wardrobe<br>WildernessSuppliesShop<br>
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y|OnFoot<br>OnMount<br>InVehicle<br>CharacterCreator<br>CraftingMenu<br>GameMenu<br>GameMenuMouse<br>HorseShopMenu<br>LobbyMenu<br>OnlineLeaderboardEndScreen<br>Wardrobe<br>WildernessSuppliesShop<br>
+0x5418D8AB|INPUT_SCRIPT_LEFT_AXIS_Y||LS Y|CreatorSkyCam<br>MinigameFishing<br>
+0xC2B1193A|INPUT_MINIGAME_POKER_HOLE_CARDS||LT|MinigamePoker<br>
+0x2B314A1E|INPUT_SCRIPT_LT||LT|SpectatorCamera<br>
+0x9EDC8D65|INPUT_FRONTEND_LEADERBOARD||RB|OnFoot<br>OnMount<br>InVehicle<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0xBDB8D6F3|INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY||RB|OnFoot<br>OnMount<br>InVehicle<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0x91E9231C|INPUT_SCRIPT_RB||RB|SpectatorCamera<br>
+0x7A9093DE|INPUT_CINEMATIC_SLOWMO||RS Click|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>
+0x1BDE2EB3|INPUT_CREATOR_LOWER||RS Click|CreatorOnFoot<br>CreatorSkyCam<br>
+0xD04E9FE2|INPUT_SCRIPT_RS||RS Click|
+0x7CB55776|INPUT_VEH_CIN_CAM_CHANGE_SHOT||RS Click|
+0xA6B769E9|INPUT_SCRIPT_RIGHT_AXIS_X||RS X|CreatorSkyCam<br>MinigameDrinkingShooting<br>MinigameFishing<br>
+0x6B359A27|INPUT_FRONTEND_MAP_ZOOM||RS Y|OnFoot<br>OnMount<br>InVehicle<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0x23AE34A2|INPUT_CINEMATIC_CAM_DOWN_ONLY||RS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>
+0xEFCFE6B7|INPUT_CINEMATIC_CAM_UP_ONLY||RS Y|OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>
+0x27A5EBC0|INPUT_SCRIPT_RIGHT_AXIS_Y||RS Y|CreatorSkyCam<br>MinigameDrinkingShooting<br>MinigameFishing<br>
+0x482560EE|INPUT_VEH_GUN_UD||RS Y|InVehicle<br>ControlGamePadUI_InVehicle<br>
+0x642DE054|INPUT_VEH_SLOWMO_DOWN_ONLY||RS Y|InVehicle<br>
+0xF1F9CD26|INPUT_VEH_SLOWMO_UD||RS Y|InVehicle<br>
+0x2B981F4F|INPUT_VEH_SLOWMO_UP_ONLY||RS Y|InVehicle<br>
+0x4AA1560E|INPUT_VEH_STUNT_UD||RS Y|InVehicle<br>
+0x03753498|INPUT_MINIGAME_POKER_BOARD_CARDS||RT|MinigamePoker<br>
+0x26E9CD17|INPUT_SCRIPT_RT||RT|SpectatorCamera<br>
+0xC8722109|INPUT_SCRIPT_SELECT||Select|SpectatorCamera<br>
+0x5B3690F2|INPUT_VEH_DUCK||Select|InVehicle<br>
+0x5D1788FF|INPUT_MINIGAME_NEW_GAME||X|MinigameDominoes<br>
+0xAA56B926|INPUT_VEH_JUMP||X|InVehicle<br>
+0x4A21C66B|INPUT_MINIGAME_CLEAR_BET||X|MinigameDominoes<br>
+0xA4DB0458|INPUT_SCRIPT_RLEFT||X|
+0x889A626F|INPUT_VEH_SELECT_NEXT_WEAPON||X|InVehicle<br>
+0x771D6E13|INPUT_SCRIPT_RUP||Y|
+0x733901F3|INPUT_WEAPON_SPECIAL||Y|OnFoot<br>OnMount<br>InVehicle<br>
+0x593DB489|INPUT_CELLPHONE_CAMERA_DOF| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xD7E274E7|INPUT_CELLPHONE_CAMERA_EXPRESSION| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x5AC1805E|INPUT_CELLPHONE_CAMERA_FOCUS_LOCK| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xE18CC57A|INPUT_CELLPHONE_CAMERA_GRID| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x6A440BFE|INPUT_CELLPHONE_CAMERA_SELFIE| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xDD833287|INPUT_CELLPHONE_CANCEL| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x82196002|INPUT_CELLPHONE_DOWN| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xBE354011|INPUT_CELLPHONE_EXTRA_OPTION| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x3ABBE990|INPUT_CELLPHONE_LEFT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xD2C28BB4|INPUT_CELLPHONE_OPTION| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xD25EFDCD|INPUT_CELLPHONE_RIGHT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x47CD0F3B|INPUT_CELLPHONE_SCROLL_BACKWARD| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xCB4E1798|INPUT_CELLPHONE_SCROLL_FORWARD| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xDC264018|INPUT_CELLPHONE_SELECT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xD2EE3B1E|INPUT_CELLPHONE_UP| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x972F8D1E|INPUT_CHARACTER_WHEEL| :no_entry: UNUSED INPUT, NO_MAPPING||OnFoot<br>OnMount<br>
+0xD7E7B375|INPUT_CINEMATIC_CAM_HOLD| :no_entry: UNUSED INPUT, NO_MAPPING||OnFoot<br>OnMount<br>InVehicle<br>
+0xA7FAC2DE|INPUT_CINEMATIC_CAM_LEFT_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING||
+0xCAF11C22|INPUT_CINEMATIC_CAM_RIGHT_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING||
+0x7BF65AC8|INPUT_ENTER_CHEAT_CODE| :no_entry: UNUSED INPUT, NO_MAPPING||OnFoot<br>OnMount<br>InVehicle<br>
+0x3E32FCEE|INPUT_FRONTEND_ENDSCREEN_ACCEPT| :no_entry: UNUSED INPUT, NO_MAPPING||OnFoot<br>OnMount<br>InVehicle<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0xC79BDE9F|INPUT_FRONTEND_ENDSCREEN_EXPAND| :no_entry: UNUSED INPUT, NO_MAPPING||OnFoot<br>OnMount<br>InVehicle<br>FrontendMenu<br>PhotoFeed<br>SocialClubFeed<br>
+0x70089459|INPUT_HORSE_SPECIAL| :no_entry: UNUSED INPUT, NO_MAPPING||OnMount<br>
+0xCC510E59|INPUT_INTERACTION_MENU| :no_entry: UNUSED INPUT, NO_MAPPING||OnMount<br>
+0x5A717E80|INPUT_MINIGAME_CRAPS_ACCEPT_DICE| :no_entry: UNUSED INPUT, NO_MAPPING||
+0x33889B44|INPUT_MINIGAME_CRAPS_SKIP| :no_entry: UNUSED INPUT, NO_MAPPING||
+0x653F8BF4|INPUT_MINIGAME_CRAPS_THROW_DICE| :no_entry: UNUSED INPUT, NO_MAPPING||
+0x2330F517|INPUT_MINIGAME_POKER_CHEAT_LR| :no_entry: UNUSED INPUT, NO_MAPPING||
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING||OnFoot<br>OnMount<br>InVehicle<br>AnimalControlSet<br>MinigameBlackjack<br>MinigameDominoes<br>MinigameDrinkingShooting<br>MinigameFishing<br>MinigameFiveFingerFillet<br>MinigamePoker<br>OnlineDeathCamera<br>OnlineIncapacitation<br>OnlineSpectatorCamera<br>
+0x4CF871D0|INPUT_PHONE| :no_entry: UNUSED INPUT, NO_MAPPING||OnFoot<br>OnMount<br>InVehicle<br>
+0xFE6DD360|INPUT_PHOTO_MODE_FILTER_INTENSITY| :no_entry: UNUSED INPUT, NO_MAPPING||PhotoMode<br>
+0x323AA450|INPUT_REPLAY_ADVANCE| :no_entry: UNUSED INPUT, NO_MAPPING||
+0xA2117C9A|INPUT_VEH_DRIVE_LOOK| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x55AC04E5|INPUT_VEH_DRIVE_LOOK2| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x1D71D7AA|INPUT_VEH_FLY_ATTACK| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x4D83147C|INPUT_VEH_FLY_ATTACK2| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x2FBA3F0B|INPUT_VEH_FLY_ATTACK_CAMERA| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x378A10F7|INPUT_VEH_FLY_DUCK| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x6C9810A5|INPUT_VEH_FLY_MOUSE_CONTROL_OVERRIDE| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x0F4E369F|INPUT_VEH_FLY_PITCH_DOWN_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xE67E1E57|INPUT_VEH_FLY_PITCH_UD| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x6280BA1A|INPUT_VEH_FLY_PITCH_UP_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x56F84EA0|INPUT_VEH_FLY_ROLL_LEFT_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x3C8AB570|INPUT_VEH_FLY_ROLL_LR| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x876B3361|INPUT_VEH_FLY_ROLL_RIGHT_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x24E94299|INPUT_VEH_FLY_SELECT_NEXT_WEAPON| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xC0D874E5|INPUT_VEH_FLY_SELECT_PREV_WEAPON| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x307FC4C1|INPUT_VEH_FLY_SELECT_TARGET_LEFT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x52F25C96|INPUT_VEH_FLY_SELECT_TARGET_RIGHT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x084DFF95|INPUT_VEH_FLY_THROTTLE_DOWN| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xFE0FE518|INPUT_VEH_FLY_UNDERCARRIAGE| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xE3238029|INPUT_VEH_FLY_VERTICAL_FLIGHT_MODE| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x31589AD1|INPUT_VEH_FLY_YAW_LEFT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xBD143FC6|INPUT_VEH_FLY_YAW_RIGHT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xB985AA5E|INPUT_VEH_GRAPPLING_HOOK| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x39CCABD5|INPUT_VEH_MOUSE_CONTROL_OVERRIDE| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x22E0F7E7|INPUT_VEH_NEXT_RADIO| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xF7FA2DDC|INPUT_VEH_NEXT_RADIO_TRACK| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x9785CE13|INPUT_VEH_PREV_RADIO| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x0A94C4FF|INPUT_VEH_PREV_RADIO_TRACK| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x585E942D|INPUT_VEH_PUSHBIKE_FRONT_BRAKE| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xFD8D64A7|INPUT_VEH_PUSHBIKE_PEDAL| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xF8CBAFB5|INPUT_VEH_PUSHBIKE_REAR_BRAKE| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0xF03EE151|INPUT_VEH_PUSHBIKE_SPRINT| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x3E7CF9A4|INPUT_VEH_ROOF| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x0C97BAC7|INPUT_VEH_SELECT_PREV_WEAPON| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x493919DB|INPUT_VEH_SPECIAL| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x5EC33578|INPUT_VEH_SPECIAL_ABILITY_FRANKLIN| :no_entry: UNUSED INPUT, NO_MAPPING||InVehicle<br>
+0x469CE271|INPUT_VEH_SUB_PITCH_UD| :no_entry: UNUSED INPUT, NO_MAPPING||
+0x627C4619|INPUT_VEH_SUB_TURN_LR| :no_entry: UNUSED INPUT, NO_MAPPING||
 </details>
 <details>
   <summary>OnFoot | 0xF5A638B9 | -173655879</summary>
@@ -741,8 +883,11 @@ Hash | HashName | QWERTY | Xbox
 0x08F8BC6D|INPUT_LOOK_LEFT_ONLY|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X
-0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y|
+0x8ED92E16|INPUT_LOOK_DOWN_ONLY|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
+0xC0651D40|INPUT_LOOK_UP_ONLY|Mouse_Move_Y|RS Y
+0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
@@ -824,6 +969,36 @@ Hash | HashName | QWERTY | Xbox
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x4E42696E|INPUT_DROP_AMMO||B
+0x7DBCD016|INPUT_DROP_WEAPON||Dpad_Down
+0x9384E0A8|INPUT_MINIGAME_HELP||Dpad_Down
+0x8A7B8833|INPUT_SNIPER_ZOOM_OUT_SECONDARY||Dpad_Down
+0xF19BE385|INPUT_CONTEXT_SECONDARY||Dpad_Left
+0x73846677|INPUT_DETONATE||Dpad_Left
+0x0AF99998|INPUT_THROW_GRENADE||Dpad_Left
+0xB73BCA77|INPUT_CONTEXT||Dpad_Right
+0x7DCA9C75|INPUT_TALK||Dpad_Right
+0x50BA1A77|INPUT_WEAPON_SPECIAL_TWO||Dpad_Right
+0xB0BCE5D6|INPUT_INTERACT_HORSE_CARE||Dpad_Up
+0x6BE9C207|INPUT_SNIPER_ZOOM_IN_SECONDARY||Dpad_Up
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
+0x9EDC8D65|INPUT_FRONTEND_LEADERBOARD||RB
+0xBDB8D6F3|INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY||RB
+0x7A9093DE|INPUT_CINEMATIC_SLOWMO||RS Click
+0x6B359A27|INPUT_FRONTEND_MAP_ZOOM||RS Y
+0x23AE34A2|INPUT_CINEMATIC_CAM_DOWN_ONLY||RS Y
+0xEFCFE6B7|INPUT_CINEMATIC_CAM_UP_ONLY||RS Y
+0x733901F3|INPUT_WEAPON_SPECIAL||Y
+0x972F8D1E|INPUT_CHARACTER_WHEEL| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xD7E7B375|INPUT_CINEMATIC_CAM_HOLD| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x7BF65AC8|INPUT_ENTER_CHEAT_CODE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x3E32FCEE|INPUT_FRONTEND_ENDSCREEN_ACCEPT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xC79BDE9F|INPUT_FRONTEND_ENDSCREEN_EXPAND| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x4CF871D0|INPUT_PHONE| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>OnMount | 0x374A4FC8 | 927616968</summary>
@@ -948,8 +1123,12 @@ Hash | HashName | QWERTY | Xbox
 0x08F8BC6D|INPUT_LOOK_LEFT_ONLY|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X
-0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y|
+0xBFF476F9|INPUT_HORSE_GUN_UD|Mouse_Move_Y|RS Y
+0x8ED92E16|INPUT_LOOK_DOWN_ONLY|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
+0xC0651D40|INPUT_LOOK_UP_ONLY|Mouse_Move_Y|RS Y
+0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT
 0x61470051|INPUT_HORSE_AIM|Mouse_Right_Click|LT
@@ -1030,6 +1209,37 @@ Hash | HashName | QWERTY | Xbox
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x4E42696E|INPUT_DROP_AMMO||B
+0x7DBCD016|INPUT_DROP_WEAPON||Dpad_Down
+0x9384E0A8|INPUT_MINIGAME_HELP||Dpad_Down
+0x8A7B8833|INPUT_SNIPER_ZOOM_OUT_SECONDARY||Dpad_Down
+0xF19BE385|INPUT_CONTEXT_SECONDARY||Dpad_Left
+0x73846677|INPUT_DETONATE||Dpad_Left
+0x0AF99998|INPUT_THROW_GRENADE||Dpad_Left
+0xB73BCA77|INPUT_CONTEXT||Dpad_Right
+0x7DCA9C75|INPUT_TALK||Dpad_Right
+0x50BA1A77|INPUT_WEAPON_SPECIAL_TWO||Dpad_Right
+0x6BE9C207|INPUT_SNIPER_ZOOM_IN_SECONDARY||Dpad_Up
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
+0x9EDC8D65|INPUT_FRONTEND_LEADERBOARD||RB
+0xBDB8D6F3|INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY||RB
+0x7A9093DE|INPUT_CINEMATIC_SLOWMO||RS Click
+0x6B359A27|INPUT_FRONTEND_MAP_ZOOM||RS Y
+0x23AE34A2|INPUT_CINEMATIC_CAM_DOWN_ONLY||RS Y
+0xEFCFE6B7|INPUT_CINEMATIC_CAM_UP_ONLY||RS Y
+0x733901F3|INPUT_WEAPON_SPECIAL||Y
+0x972F8D1E|INPUT_CHARACTER_WHEEL| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xD7E7B375|INPUT_CINEMATIC_CAM_HOLD| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x7BF65AC8|INPUT_ENTER_CHEAT_CODE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x3E32FCEE|INPUT_FRONTEND_ENDSCREEN_ACCEPT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xC79BDE9F|INPUT_FRONTEND_ENDSCREEN_EXPAND| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x70089459|INPUT_HORSE_SPECIAL| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xCC510E59|INPUT_INTERACTION_MENU| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x4CF871D0|INPUT_PHONE| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>InVehicle | 0x579FFAC8 | 1470102216</summary>
@@ -1171,8 +1381,11 @@ Hash | HashName | QWERTY | Xbox
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X
 0xB6F3E4FE|INPUT_VEH_GUN_LR|Mouse_Move_X|RS X
-0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y|
+0x8ED92E16|INPUT_LOOK_DOWN_ONLY|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
+0xC0651D40|INPUT_LOOK_UP_ONLY|Mouse_Move_Y|RS Y
+0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
@@ -1264,6 +1477,94 @@ Hash | HashName | QWERTY | Xbox
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
 0x70B87844|INPUT_VEH_DRAFT_SWITCH_DRIVERS|Z|X
 0xC7083798|INPUT_VEH_SHUFFLE|Z|X
+0xC61611E6|INPUT_VEH_DROP_PROJECTILE||A
+0x4E42696E|INPUT_DROP_AMMO||B
+0x7DBCD016|INPUT_DROP_WEAPON||Dpad_Down
+0x9384E0A8|INPUT_MINIGAME_HELP||Dpad_Down
+0x8A7B8833|INPUT_SNIPER_ZOOM_OUT_SECONDARY||Dpad_Down
+0xF19BE385|INPUT_CONTEXT_SECONDARY||Dpad_Left
+0x73846677|INPUT_DETONATE||Dpad_Left
+0x0AF99998|INPUT_THROW_GRENADE||Dpad_Left
+0xB73BCA77|INPUT_CONTEXT||Dpad_Right
+0x7DCA9C75|INPUT_TALK||Dpad_Right
+0x50BA1A77|INPUT_WEAPON_SPECIAL_TWO||Dpad_Right
+0x6BE9C207|INPUT_SNIPER_ZOOM_IN_SECONDARY||Dpad_Up
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
+0x9EDC8D65|INPUT_FRONTEND_LEADERBOARD||RB
+0xBDB8D6F3|INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY||RB
+0x7A9093DE|INPUT_CINEMATIC_SLOWMO||RS Click
+0x6B359A27|INPUT_FRONTEND_MAP_ZOOM||RS Y
+0x23AE34A2|INPUT_CINEMATIC_CAM_DOWN_ONLY||RS Y
+0xEFCFE6B7|INPUT_CINEMATIC_CAM_UP_ONLY||RS Y
+0x482560EE|INPUT_VEH_GUN_UD||RS Y
+0x642DE054|INPUT_VEH_SLOWMO_DOWN_ONLY||RS Y
+0xF1F9CD26|INPUT_VEH_SLOWMO_UD||RS Y
+0x2B981F4F|INPUT_VEH_SLOWMO_UP_ONLY||RS Y
+0x4AA1560E|INPUT_VEH_STUNT_UD||RS Y
+0x5B3690F2|INPUT_VEH_DUCK||Select
+0xAA56B926|INPUT_VEH_JUMP||X
+0x889A626F|INPUT_VEH_SELECT_NEXT_WEAPON||X
+0x733901F3|INPUT_WEAPON_SPECIAL||Y
+0x593DB489|INPUT_CELLPHONE_CAMERA_DOF| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xD7E274E7|INPUT_CELLPHONE_CAMERA_EXPRESSION| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x5AC1805E|INPUT_CELLPHONE_CAMERA_FOCUS_LOCK| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xE18CC57A|INPUT_CELLPHONE_CAMERA_GRID| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x6A440BFE|INPUT_CELLPHONE_CAMERA_SELFIE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xDD833287|INPUT_CELLPHONE_CANCEL| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x82196002|INPUT_CELLPHONE_DOWN| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xBE354011|INPUT_CELLPHONE_EXTRA_OPTION| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x3ABBE990|INPUT_CELLPHONE_LEFT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xD2C28BB4|INPUT_CELLPHONE_OPTION| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xD25EFDCD|INPUT_CELLPHONE_RIGHT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x47CD0F3B|INPUT_CELLPHONE_SCROLL_BACKWARD| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xCB4E1798|INPUT_CELLPHONE_SCROLL_FORWARD| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xDC264018|INPUT_CELLPHONE_SELECT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xD2EE3B1E|INPUT_CELLPHONE_UP| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xD7E7B375|INPUT_CINEMATIC_CAM_HOLD| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x7BF65AC8|INPUT_ENTER_CHEAT_CODE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x3E32FCEE|INPUT_FRONTEND_ENDSCREEN_ACCEPT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xC79BDE9F|INPUT_FRONTEND_ENDSCREEN_EXPAND| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x4CF871D0|INPUT_PHONE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xA2117C9A|INPUT_VEH_DRIVE_LOOK| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x55AC04E5|INPUT_VEH_DRIVE_LOOK2| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x1D71D7AA|INPUT_VEH_FLY_ATTACK| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x4D83147C|INPUT_VEH_FLY_ATTACK2| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x2FBA3F0B|INPUT_VEH_FLY_ATTACK_CAMERA| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x378A10F7|INPUT_VEH_FLY_DUCK| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x6C9810A5|INPUT_VEH_FLY_MOUSE_CONTROL_OVERRIDE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x0F4E369F|INPUT_VEH_FLY_PITCH_DOWN_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xE67E1E57|INPUT_VEH_FLY_PITCH_UD| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x6280BA1A|INPUT_VEH_FLY_PITCH_UP_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x56F84EA0|INPUT_VEH_FLY_ROLL_LEFT_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x3C8AB570|INPUT_VEH_FLY_ROLL_LR| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x876B3361|INPUT_VEH_FLY_ROLL_RIGHT_ONLY| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x24E94299|INPUT_VEH_FLY_SELECT_NEXT_WEAPON| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xC0D874E5|INPUT_VEH_FLY_SELECT_PREV_WEAPON| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x307FC4C1|INPUT_VEH_FLY_SELECT_TARGET_LEFT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x52F25C96|INPUT_VEH_FLY_SELECT_TARGET_RIGHT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x084DFF95|INPUT_VEH_FLY_THROTTLE_DOWN| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xFE0FE518|INPUT_VEH_FLY_UNDERCARRIAGE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xE3238029|INPUT_VEH_FLY_VERTICAL_FLIGHT_MODE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x31589AD1|INPUT_VEH_FLY_YAW_LEFT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xBD143FC6|INPUT_VEH_FLY_YAW_RIGHT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xB985AA5E|INPUT_VEH_GRAPPLING_HOOK| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x39CCABD5|INPUT_VEH_MOUSE_CONTROL_OVERRIDE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x22E0F7E7|INPUT_VEH_NEXT_RADIO| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xF7FA2DDC|INPUT_VEH_NEXT_RADIO_TRACK| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x9785CE13|INPUT_VEH_PREV_RADIO| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x0A94C4FF|INPUT_VEH_PREV_RADIO_TRACK| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x585E942D|INPUT_VEH_PUSHBIKE_FRONT_BRAKE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xFD8D64A7|INPUT_VEH_PUSHBIKE_PEDAL| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xF8CBAFB5|INPUT_VEH_PUSHBIKE_REAR_BRAKE| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xF03EE151|INPUT_VEH_PUSHBIKE_SPRINT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x3E7CF9A4|INPUT_VEH_ROOF| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x0C97BAC7|INPUT_VEH_SELECT_PREV_WEAPON| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x493919DB|INPUT_VEH_SPECIAL| :no_entry: UNUSED INPUT, NO_MAPPING|
+0x5EC33578|INPUT_VEH_SPECIAL_ABILITY_FRANKLIN| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>AdvancedPhotoCamera | 0x58A2D75A | 1487066970</summary>
@@ -1299,6 +1600,10 @@ Hash | HashName | QWERTY | Xbox
 0x08F8BC6D|INPUT_LOOK_LEFT_ONLY|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X
+0xBFF476F9|INPUT_HORSE_GUN_UD|Mouse_Move_Y|RS Y
+0x8ED92E16|INPUT_LOOK_DOWN_ONLY|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
+0xC0651D40|INPUT_LOOK_UP_ONLY|Mouse_Move_Y|RS Y
 0x776F65E9|INPUT_CAMERA_HANDHELD_USE|Mouse_Right_Click|LT
 0xAC5922EA|INPUT_CAMERA_SELFIE|Mouse_Scroll_Click|RS Click
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
@@ -1360,6 +1665,7 @@ Hash | HashName | QWERTY | Xbox
 0x6BC904FC|INPUT_CINEMATIC_CAM_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y|
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT
 0x61470051|INPUT_HORSE_AIM|Mouse_Right_Click|LT
 0xEB4130DF|INPUT_FRONTEND_RIGHT_AXIS_Y|Mouse_Scroll_Up<br>Mouse_Scroll_Down|RS Y
@@ -1381,6 +1687,10 @@ Hash | HashName | QWERTY | Xbox
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
+0x7A9093DE|INPUT_CINEMATIC_SLOWMO||RS Click
+0x23AE34A2|INPUT_CINEMATIC_CAM_DOWN_ONLY||RS Y
+0xEFCFE6B7|INPUT_CINEMATIC_CAM_UP_ONLY||RS Y
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>Benchmark | 0xE548D37D | -448212099</summary>
@@ -1457,6 +1767,10 @@ Hash | HashName | QWERTY | Xbox
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>ControlGamePadUI_InVehicle | 0xE1088952 | -519534254</summary>
@@ -1494,6 +1808,7 @@ Hash | HashName | QWERTY | Xbox
 0xE72B43F4|INPUT_FOCUS_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
 0xC7083798|INPUT_VEH_SHUFFLE|Z|X
+0x482560EE|INPUT_VEH_GUN_UD||RS Y
 </details>
 <details>
   <summary>ControlGamePadUI_OnFoot | 0x80730B6E | -2139944082</summary>
@@ -1524,6 +1839,7 @@ Hash | HashName | QWERTY | Xbox
 0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x07CE1E61|INPUT_ATTACK|Mouse_Left_Click|RT
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
 0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down
@@ -1571,6 +1887,7 @@ Hash | HashName | QWERTY | Xbox
 0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0x60C81CDE|INPUT_HORSE_ATTACK|Mouse_Left_Click|RT
+0xBFF476F9|INPUT_HORSE_GUN_UD|Mouse_Move_Y|RS Y
 0x61470051|INPUT_HORSE_AIM|Mouse_Right_Click|LT
 0xF8982F00|INPUT_INTERACT_LOCKON|Mouse_Right_Click|LT
 0x3076E97C|INPUT_TOGGLE_WEAPON_SCOPE|Mouse_Scroll_Up|Dpad_Down
@@ -1614,6 +1931,10 @@ Hash | HashName | QWERTY | Xbox
 0xFBD7B3E6|INPUT_GAME_MENU_OPTION|Space|X
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>CreatorOnFoot | 0x365A7C6F | 911899759</summary>
@@ -1642,6 +1963,8 @@ Hash | HashName | QWERTY | Xbox
 0x338A0D45|INPUT_CREATOR_GRAB|Mouse_Left_Click|LB<br> RB
 0xAEB2A9C7|INPUT_CREATOR_LOOK_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0x55EA24F3|INPUT_CREATOR_LOOK_UD|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x24A42F93|INPUT_CREATOR_ZOOM_OUT|Page Down|LT
 0x335D8D76|INPUT_CREATOR_ZOOM_IN|Page Up|RT
@@ -1653,6 +1976,8 @@ Hash | HashName | QWERTY | Xbox
 0x639B9FC9|INPUT_SCRIPTED_FLY_ZUP|Shift|LT
 0x5A03B3F3|INPUT_CREATOR_MENU_FUNCTION|Space|X
 0x16CCFEC6|INPUT_CREATOR_SWITCH_CAM|V|Select
+0x0D0FB9B1|INPUT_CREATOR_RAISE||LS Click
+0x1BDE2EB3|INPUT_CREATOR_LOWER||RS Click
 </details>
 <details>
   <summary>CreatorSkyCam | 0x7B4D1CFB | 2068651259</summary>
@@ -1681,6 +2006,8 @@ Hash | HashName | QWERTY | Xbox
 0x338A0D45|INPUT_CREATOR_GRAB|Mouse_Left_Click|LB<br> RB
 0xAEB2A9C7|INPUT_CREATOR_LOOK_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0x55EA24F3|INPUT_CREATOR_LOOK_UD|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x24A42F93|INPUT_CREATOR_ZOOM_OUT|Page Down|LT
 0x335D8D76|INPUT_CREATOR_ZOOM_IN|Page Up|RT
@@ -1693,6 +2020,12 @@ Hash | HashName | QWERTY | Xbox
 0x639B9FC9|INPUT_SCRIPTED_FLY_ZUP|Shift|LT
 0x5A03B3F3|INPUT_CREATOR_MENU_FUNCTION|Space|X
 0x16CCFEC6|INPUT_CREATOR_SWITCH_CAM|V|Select
+0x0D0FB9B1|INPUT_CREATOR_RAISE||LS Click
+0x1F8EEF84|INPUT_SCRIPT_LEFT_AXIS_X||LS X
+0x5418D8AB|INPUT_SCRIPT_LEFT_AXIS_Y||LS Y
+0x1BDE2EB3|INPUT_CREATOR_LOWER||RS Click
+0xA6B769E9|INPUT_SCRIPT_RIGHT_AXIS_X||RS X
+0x27A5EBC0|INPUT_SCRIPT_RIGHT_AXIS_Y||RS Y
 </details>
 <details>
   <summary>DocumentMenus | 0xE6A1A134 | -425615052</summary>
@@ -1776,6 +2109,11 @@ Hash | HashName | QWERTY | Xbox
 0x171910DC|INPUT_FRONTEND_SELECT|Tab|Select
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
+0x9EDC8D65|INPUT_FRONTEND_LEADERBOARD||RB
+0xBDB8D6F3|INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY||RB
+0x6B359A27|INPUT_FRONTEND_MAP_ZOOM||RS Y
+0x3E32FCEE|INPUT_FRONTEND_ENDSCREEN_ACCEPT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xC79BDE9F|INPUT_FRONTEND_ENDSCREEN_EXPAND| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>GameMenu | 0x0F1B373C | 253441852</summary>
@@ -1806,6 +2144,10 @@ Hash | HashName | QWERTY | Xbox
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>GameMenuMouse | 0xB754A08A | -1219190646</summary>
@@ -1856,6 +2198,10 @@ Hash | HashName | QWERTY | Xbox
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>Gang2RopeClimb | 0x283670BA | 674656442</summary>
@@ -1881,6 +2227,7 @@ Hash | HashName | QWERTY | Xbox
 0x3B24C470|INPUT_CONTEXT_B|F|B
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x53296B75|INPUT_INSPECT_ZOOM|Mouse_Right_Click|RT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
@@ -1908,6 +2255,8 @@ Hash | HashName | QWERTY | Xbox
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
 0x3D99EEC6|INPUT_HORSE_GUN_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xBFF476F9|INPUT_HORSE_GUN_UD|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x53296B75|INPUT_INSPECT_ZOOM|Mouse_Right_Click|RT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xCBD5B26E|INPUT_GAME_MENU_TAB_LEFT|Page Up<br> Q|LB
@@ -1927,10 +2276,12 @@ Hash | HashName | QWERTY | Xbox
 0x3B24C470|INPUT_CONTEXT_B|F|B
 0x07B8BEAF|INPUT_CONTEXT_RT|Mouse_Left_Click|RT
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x5181713D|INPUT_CONTEXT_A|Space|A
+0x1F8EEF84|INPUT_SCRIPT_LEFT_AXIS_X||LS X
 </details>
 <details>
   <summary>HorseBreakingOverride | 0xA2211737 | -1574889673</summary>
@@ -1988,6 +2339,10 @@ Hash | HashName | QWERTY | Xbox
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>InspectItem | 0x25823D28 | 629292328</summary>
@@ -2121,6 +2476,7 @@ Hash | HashName | QWERTY | Xbox
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x53296B75|INPUT_INSPECT_ZOOM|Mouse_Right_Click|RT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
@@ -2151,6 +2507,10 @@ Hash | HashName | QWERTY | Xbox
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>MaintainInspectWeapon | 0xDD26FD77 | -584647305</summary>
@@ -2163,6 +2523,7 @@ Hash | HashName | QWERTY | Xbox
 0x3B24C470|INPUT_CONTEXT_B|F|B
 0x07B8BEAF|INPUT_CONTEXT_RT|Mouse_Left_Click|RT
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0xE3BF959B|INPUT_CONTEXT_X|R|X
@@ -2233,6 +2594,7 @@ Hash | HashName | QWERTY | Xbox
 0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x03F1E7CB|INPUT_MINIGAME_BLACKJACK_HAND_VIEW|Mouse_Right_Click|LT
 0x5484DBDD|INPUT_CURSOR_SCROLL_HOLD|Mouse_Scroll_Click|
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
@@ -2241,6 +2603,7 @@ Hash | HashName | QWERTY | Xbox
 0xADE09435|INPUT_MINIGAME_BLACKJACK_TABLE_VIEW|Space|RT
 0x432B111F|INPUT_MINIGAME_BLACKJACK_SPLIT|Tab|RB
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>MinigameBuilding | 0x359EC622 | 899597858</summary>
@@ -2274,6 +2637,7 @@ Hash | HashName | QWERTY | Xbox
 0xE31C6A41|INPUT_MAP|M|Start
 0xB28318C0|INPUT_CONTEXT_ACTION|Mouse_Left_Click|A
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0xFDA83190|INPUT_MOVE_UD|S<br> W|LS Y
@@ -2296,6 +2660,7 @@ Hash | HashName | QWERTY | Xbox
 0xE31C6A41|INPUT_MAP|M|Start
 0x1D927DF2|INPUT_MINIGAME_ACTION_X|Mouse_Left_Click|X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0xFDA83190|INPUT_MOVE_UD|S<br> W|LS Y
@@ -2315,6 +2680,7 @@ Hash | HashName | QWERTY | Xbox
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0x6866FA3A|INPUT_VEH_BOAT_ATTACK|Mouse_Left_Click|RT
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x92F5F01E|INPUT_VEH_BOAT_AIM|Mouse_Right_Click|LT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
@@ -2368,6 +2734,7 @@ Hash | HashName | QWERTY | Xbox
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xD6C4ECDC|INPUT_CURSOR_X|Mouse_Move_X|
 0xE4130778|INPUT_CURSOR_Y|Mouse_Move_Y|
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x27568539|INPUT_CURSOR_CANCEL|Mouse_Right_Click|
 0x5484DBDD|INPUT_CURSOR_SCROLL_HOLD|Mouse_Scroll_Click|
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
@@ -2376,6 +2743,11 @@ Hash | HashName | QWERTY | Xbox
 0xC5E622D7|INPUT_MINIGAME_DOMINOES_SKIP_DEAL|Tab|RB
 0x88F8B6B1|INPUT_MINIGAME_DOMINOES_VIEW_DOMINOES|V|LT
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
+0x9384E0A8|INPUT_MINIGAME_HELP||Dpad_Down
+0xC5F53156|INPUT_MINIGAME_HELP_PREV||Dpad_Left
+0x5D1788FF|INPUT_MINIGAME_NEW_GAME||X
+0x4A21C66B|INPUT_MINIGAME_CLEAR_BET||X
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>MinigameDrinkingShooting | 0x643FE3F4 | 1681908724</summary>
@@ -2394,12 +2766,17 @@ Hash | HashName | QWERTY | Xbox
 0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0x07CE1E61|INPUT_ATTACK|Mouse_Left_Click|RT
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
 0x6328239B|INPUT_SPECIAL_ABILITY_SECONDARY|Mouse_Right_Click|LT
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x1ECA87D4|INPUT_SPECIAL_ABILITY_ACTION|Q|RB
 0x5181713D|INPUT_CONTEXT_A|Space|A
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
+0x9384E0A8|INPUT_MINIGAME_HELP||Dpad_Down
+0xA6B769E9|INPUT_SCRIPT_RIGHT_AXIS_X||RS X
+0x27A5EBC0|INPUT_SCRIPT_RIGHT_AXIS_Y||RS Y
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>MinigameFishing | 0xE12BDD1B | -517219045</summary>
@@ -2444,6 +2821,7 @@ Hash | HashName | QWERTY | Xbox
 0x69B10623|INPUT_MINIGAME_FISHING_LEFT_AXIS_X|Mouse_Move_X|LS X
 0x390948DC|INPUT_RADIAL_MENU_NAV_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x09BF4645|INPUT_MINIGAME_FISHING_LEFT_AXIS_Y|Mouse_Move_Y|LS Y
 0xBA60039F|INPUT_RADIAL_MENU_NAV_UD|Mouse_Move_Y|RS Y
 0xF84FA74F|INPUT_AIM|Mouse_Right_Click|LT
@@ -2468,6 +2846,11 @@ Hash | HashName | QWERTY | Xbox
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
 0x827E9EE8|INPUT_SWITCH_SHOULDER|X|Dpad_Left
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
+0x1F8EEF84|INPUT_SCRIPT_LEFT_AXIS_X||LS X
+0x5418D8AB|INPUT_SCRIPT_LEFT_AXIS_Y||LS Y
+0xA6B769E9|INPUT_SCRIPT_RIGHT_AXIS_X||RS X
+0x27A5EBC0|INPUT_SCRIPT_RIGHT_AXIS_Y||RS Y
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>MinigameFiveFingerFillet | 0x07A7F7B3 | 128448435</summary>
@@ -2498,6 +2881,7 @@ Hash | HashName | QWERTY | Xbox
 0xE31C6A41|INPUT_MAP|M|Start
 0x07B8BEAF|INPUT_CONTEXT_RT|Mouse_Left_Click|RT
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xC13A6564|INPUT_CONTEXT_LT|Mouse_Right_Click|LT
 0x61E4CACC|INPUT_MINIGAME_FFF_ZOOM|Mouse_Right_Click|RT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
@@ -2510,6 +2894,8 @@ Hash | HashName | QWERTY | Xbox
 0x3073681B|INPUT_MINIGAME_FFF_SKIP_TURN|Tab|RB
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
 0x0E717DC6|INPUT_MINIGAME_FFF_A|W|A
+0xB1DA5574|INPUT_SCRIPT_PAD_DOWN||Dpad_Down
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>MinigameInterrogation | 0xFE7EC400 | -25246720</summary>
@@ -2571,6 +2957,7 @@ Hash | HashName | QWERTY | Xbox
 0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xE31C6A41|INPUT_MAP|M|Start
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xF923B337|INPUT_MINIGAME_POKER_YOUR_CARDS|Mouse_Right_Click|LT
 0x5484DBDD|INPUT_CURSOR_SCROLL_HOLD|Mouse_Scroll_Click|
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
@@ -2578,6 +2965,14 @@ Hash | HashName | QWERTY | Xbox
 0xE402B898|INPUT_MINIGAME_POKER_COMMUNITY_CARDS|Space|RT
 0x646A7792|INPUT_MINIGAME_POKER_SKIP|Tab|RB
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
+0xDAB9EE72|INPUT_MINIGAME_POKER_CALL||A
+0x206B2087|INPUT_MINIGAME_POKER_CHECK||A
+0xB568BCD0|INPUT_MINIGAME_POKER_SKIP_TUTORIAL||A
+0x9384E0A8|INPUT_MINIGAME_HELP||Dpad_Down
+0xC5F53156|INPUT_MINIGAME_HELP_PREV||Dpad_Left
+0xC2B1193A|INPUT_MINIGAME_POKER_HOLE_CARDS||LT
+0x03753498|INPUT_MINIGAME_POKER_BOARD_CARDS||RT
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>MinigameTriggers | 0x6C84442D | 1820607533</summary>
@@ -2648,6 +3043,7 @@ Hash | HashName | QWERTY | Xbox
 0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0x18987353|INPUT_MULTIPLAYER_DEAD_RESPAWN|Mouse_Left_Click|A
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0x6816A38E|INPUT_MULTIPLAYER_DEAD_INFORM_LAW|Q|RB
@@ -2655,6 +3051,7 @@ Hash | HashName | QWERTY | Xbox
 0xE50DCA13|INPUT_MULTIPLAYER_DEAD_PRESS_CHARGES|R|X
 0xCC18F960|INPUT_MULTIPLAYER_DEAD_LEADER_FEUD|Space|Dpad_Right
 0xAC4BD4F1|INPUT_OPEN_WHEEL_MENU|Tab|LB
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>OnlineIncapacitation | 0x003821E3 | 3678691</summary>
@@ -2670,6 +3067,7 @@ Hash | HashName | QWERTY | Xbox
 0xB4A11066|INPUT_MULTIPLAYER_DEAD_FEUD|F|B
 0x80F28E95|INPUT_PLAYER_MENU|L|Dpad_Left
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0xFD0F0C2C|INPUT_NEXT_WEAPON|Mouse_Scroll_Down|
 0xD0842EDF|INPUT_SELECT_NEXT_WEAPON|Mouse_Scroll_Down|
 0xCC1075A7|INPUT_PREV_WEAPON|Mouse_Scroll_Up|
@@ -2678,6 +3076,7 @@ Hash | HashName | QWERTY | Xbox
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0xAC4BD4F1|INPUT_OPEN_WHEEL_MENU|Tab|LB
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>OnlineLeaderboardEndScreen | 0xA89F0CAC | -1465971540</summary>
@@ -2712,6 +3111,10 @@ Hash | HashName | QWERTY | Xbox
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
 0x8CC9CD42|INPUT_GAME_MENU_TAB_RIGHT_SECONDARY|X|RT
 0x26E9DC00|INPUT_GAME_MENU_TAB_LEFT_SECONDARY|Z|LT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>OnlineLeaderboardOverride | 0x8491F8A5 | -2070808411</summary>
@@ -2798,12 +3201,14 @@ Hash | HashName | QWERTY | Xbox
 0x6BC904FC|INPUT_CINEMATIC_CAM_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0x84574AE8|INPUT_CINEMATIC_CAM_UD|Mouse_Move_Y|
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0x4E074EE6|INPUT_MULTIPLAYER_SPECTATE_PLAYER_OPTIONS|O|RS Click
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0xAC4BD4F1|INPUT_OPEN_WHEEL_MENU|Tab|LB
 0x620A6C5E|INPUT_CINEMATIC_CAM|V|Select
 0x7F8D09B8|INPUT_NEXT_CAMERA|V|Select
+0x9C68CE34|INPUT_MULTIPLAYER_INFO_PLAYERS| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>PhotoCameraInUse | 0x5964EFB4 | 1499787188</summary>
@@ -2832,6 +3237,9 @@ Hash | HashName | QWERTY | Xbox
 0x08F8BC6D|INPUT_LOOK_LEFT_ONLY|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X
+0x8ED92E16|INPUT_LOOK_DOWN_ONLY|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
+0xC0651D40|INPUT_LOOK_UP_ONLY|Mouse_Move_Y|RS Y
 0x776F65E9|INPUT_CAMERA_HANDHELD_USE|Mouse_Right_Click|LT
 0xAC5922EA|INPUT_CAMERA_SELFIE|Mouse_Scroll_Click|RS Click
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
@@ -2918,6 +3326,11 @@ Hash | HashName | QWERTY | Xbox
 0x171910DC|INPUT_FRONTEND_SELECT|Tab|Select
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
+0x9EDC8D65|INPUT_FRONTEND_LEADERBOARD||RB
+0xBDB8D6F3|INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY||RB
+0x6B359A27|INPUT_FRONTEND_MAP_ZOOM||RS Y
+0x3E32FCEE|INPUT_FRONTEND_ENDSCREEN_ACCEPT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xC79BDE9F|INPUT_FRONTEND_ENDSCREEN_EXPAND| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>PhotoFeedFullscreen | 0x0E8C0B4A | 244058954</summary>
@@ -3021,6 +3434,7 @@ Hash | HashName | QWERTY | Xbox
 0x9DE08D71|INPUT_PHOTO_MODE_EXPOSURE_LOCK|L|Dpad_Right
 0xA190AAC7|INPUT_PHOTO_MODE_TAKE_PHOTO|Mouse_Left_Click|A
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x8F32E2EB|INPUT_PHOTO_MODE_SWITCH_MODE|Mouse_Scroll_Click<br> Tab|RB
 0x8BDE7443|INPUT_CURSOR_SCROLL_DOWN|Mouse_Scroll_Down|
 0x62800C92|INPUT_CURSOR_SCROLL_UP|Mouse_Scroll_Up|
@@ -3035,6 +3449,7 @@ Hash | HashName | QWERTY | Xbox
 0x315D57E6|INPUT_PHOTO_MODE_MOVE_UP_ONLY|W|
 0xB138D899|INPUT_PHOTO_MODE_LENSE_NEXT|X|Dpad_Down
 0x06A057F8|INPUT_PHOTO_MODE_LENSE_PREV|Z|Dpad_Up
+0xFE6DD360|INPUT_PHOTO_MODE_FILTER_INTENSITY| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>PlayerJournal | 0x26E0BB81 | 652262273</summary>
@@ -3052,6 +3467,8 @@ Hash | HashName | QWERTY | Xbox
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
 0x3D99EEC6|INPUT_HORSE_GUN_LR|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xBFF476F9|INPUT_HORSE_GUN_UD|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x53296B75|INPUT_INSPECT_ZOOM|Mouse_Right_Click|RT
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
@@ -3242,6 +3659,7 @@ Hash | HashName | QWERTY | Xbox
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0xD596CFB0|INPUT_GAME_MENU_EXTRA_OPTION|F|Y
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x53296B75|INPUT_INSPECT_ZOOM|Mouse_Right_Click|RT
 0x9DA42644|INPUT_GAME_MENU_SCROLL_BACKWARD|Mouse_Scroll_Down|
 0x81457A1A|INPUT_GAME_MENU_SCROLL_FORWARD|Mouse_Scroll_Up|
@@ -3299,6 +3717,11 @@ Hash | HashName | QWERTY | Xbox
 0x171910DC|INPUT_FRONTEND_SELECT|Tab|Select
 0x7DA48D2A|INPUT_FRONTEND_RS|X|RS Click
 0x43CDA5B0|INPUT_FRONTEND_LS|Z|LS Click
+0x9EDC8D65|INPUT_FRONTEND_LEADERBOARD||RB
+0xBDB8D6F3|INPUT_FRONTEND_SOCIAL_CLUB_SECONDARY||RB
+0x6B359A27|INPUT_FRONTEND_MAP_ZOOM||RS Y
+0x3E32FCEE|INPUT_FRONTEND_ENDSCREEN_ACCEPT| :no_entry: UNUSED INPUT, NO_MAPPING|
+0xC79BDE9F|INPUT_FRONTEND_ENDSCREEN_EXPAND| :no_entry: UNUSED INPUT, NO_MAPPING|
 </details>
 <details>
   <summary>SocialClubFeedFilter | 0xC09D15BE | -1063447106</summary>
@@ -3385,9 +3808,19 @@ Hash | HashName | QWERTY | Xbox
 0x08F8BC6D|INPUT_LOOK_LEFT_ONLY|Mouse_Move_X|RS X
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
 0xA1EB1353|INPUT_LOOK_RIGHT_ONLY|Mouse_Move_X|RS X
+0x8ED92E16|INPUT_LOOK_DOWN_ONLY|Mouse_Move_Y|RS Y
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
+0xC0651D40|INPUT_LOOK_UP_ONLY|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xE3BF959B|INPUT_CONTEXT_X|R|X
 0x5181713D|INPUT_CONTEXT_A|Space|A
+0x82A9B758|INPUT_SCRIPT_PAD_RIGHT||Dpad_Right
+0x0DC15ADD|INPUT_SCRIPT_PAD_UP||Dpad_Up
+0xE624C062|INPUT_SCRIPT_LB||LB
+0x2B314A1E|INPUT_SCRIPT_LT||LT
+0x91E9231C|INPUT_SCRIPT_RB||RB
+0x26E9CD17|INPUT_SCRIPT_RT||RT
+0xC8722109|INPUT_SCRIPT_SELECT||Select
 </details>
 <details>
   <summary>StickyFeed | 0xB1A44613 | -1314634221</summary>
@@ -3419,6 +3852,7 @@ Hash | HashName | QWERTY | Xbox
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0xE31C6A41|INPUT_MAP|M|Start
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0xFBD7B3E6|INPUT_GAME_MENU_OPTION|Space|X
@@ -3471,6 +3905,8 @@ Hash | HashName | QWERTY | Xbox
 0x9CC7A1A4|INPUT_QUICK_SHORTCUT_ABILITIES_MENU|Space|Y
 0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad_Right
 0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad_Left
+0x7DBCD016|INPUT_DROP_WEAPON||Dpad_Down
+0xFA0B29CD|INPUT_QUICK_SELECT_TOGGLE_SHORTCUT_ITEM||Dpad_Right
 </details>
 <details>
   <summary>UI_QUICK_SELECT_RADIAL_MENU | 0xB7A28A1A | -1214084582</summary>
@@ -3494,6 +3930,8 @@ Hash | HashName | QWERTY | Xbox
 0x9CC7A1A4|INPUT_QUICK_SHORTCUT_ABILITIES_MENU|Space|Y
 0xF1421CF5|INPUT_QUICK_SELECT_SECONDARY_NAV_NEXT|X|Dpad_Right
 0xD9F9F017|INPUT_QUICK_SELECT_SECONDARY_NAV_PREV|Z|Dpad_Left
+0x7DBCD016|INPUT_DROP_WEAPON||Dpad_Down
+0xFA0B29CD|INPUT_QUICK_SELECT_TOGGLE_SHORTCUT_ITEM||Dpad_Right
 </details>
 <details>
   <summary>UI_RADAR_EDIT_MODE | 0xEC2684E8 | -333019928</summary>
@@ -3537,6 +3975,10 @@ Hash | HashName | QWERTY | Xbox
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xFBD7B3E6|INPUT_GAME_MENU_OPTION|Space|X
 0x89EA3FA5|INPUT_GAME_MENU_RS|Tab|RS Click
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>WeaponEmotes_Simple | 0xE1133146 | -518835898</summary>
@@ -3576,10 +4018,15 @@ Hash | HashName | QWERTY | Xbox
 0x43DBF61F|INPUT_GAME_MENU_ACCEPT|Enter<br> Numpad Enter|A
 0x4A903C11|INPUT_FRONTEND_PAUSE_ALTERNATE|Esc|
 0xA987235F|INPUT_LOOK_LR|Mouse_Move_X|RS X
+0xD2047988|INPUT_LOOK_UD|Mouse_Move_Y|RS Y
 0x4BC9DABB|INPUT_PUSH_TO_TALK|N|
 0xD82E0BD2|INPUT_FRONTEND_PAUSE|P|Start
 0xCBD5B26E|INPUT_GAME_MENU_TAB_LEFT|Page Up<br> Q|LB
 0x90FA19AB|INPUT_SHOP_CHANGE_CURRENCY|Shift|LT
+0x06C089D4|INPUT_GAME_MENU_STICK_LEFT||LS X
+0x5BDBE841|INPUT_GAME_MENU_STICK_RIGHT||LS X
+0x63898D36|INPUT_GAME_MENU_STICK_DOWN||LS Y
+0x9CA97399|INPUT_GAME_MENU_STICK_UP||LS Y
 </details>
 <details>
   <summary>Winter4TakingDynamite | 0x0427F072 | 69726322</summary>
@@ -3589,4 +4036,136 @@ Hash | HashName | QWERTY | Xbox
 Hash | HashName | QWERTY | Xbox
 ---- | -------- | ------ | ----
 0xF5A13A0D|INPUT_MINIGAME_ACTION_UP|E|LS Y
+</details>
+<details>
+  <summary>MinigameOverlay | 0xF5893D32 | -175555278 :no_entry: <b>[UNUSED CONTEXT, EMPTY]</b> </summary>
+
+***UNUSED CONTEXT, EMPTY***
+</details>
+<details>
+  <summary>InteractiveItemConsumption | 0x7BB3124B | 2075333195 :no_entry: <b>[UNUSED CONTEXT, EMPTY]</b> </summary>
+
+***UNUSED CONTEXT, EMPTY***
+</details>
+<details>
+  <summary>SocialClubFeedControllerDisconnect | 0x641313CF | 1678971855 :no_entry: <b>[UNUSED CONTEXT, EMPTY]</b> </summary>
+
+***UNUSED CONTEXT, EMPTY***
+</details>
+<details>
+  <summary> :no_entry: <b>[UNUSED INPUTS, WITHOUT CONTEXT AND MAPPING]</b></summary>
+
+### UNUSED INPUTS, WITHOUT CONTEXT AND MAPPING
+
+Hash | HashName
+---- | --------
+0xC1D24F92|INPUT_DEPRECATED_ABOVE
+0x1661FAB0|INPUT_FRONTEND_TOUCH_DOUBLE_TAP_X
+0x96E87BBF|INPUT_FRONTEND_TOUCH_DOUBLE_TAP_Y
+0xEC93548E|INPUT_FRONTEND_TOUCH_DRAG_X
+0x9AC130EB|INPUT_FRONTEND_TOUCH_DRAG_Y
+0x0FF17F1D|INPUT_FRONTEND_TOUCH_HOLD_X
+0x398ED257|INPUT_FRONTEND_TOUCH_HOLD_Y
+0xE3B30955|INPUT_FRONTEND_TOUCH_SWIPE_DOWN_X
+0xBDFF3DEA|INPUT_FRONTEND_TOUCH_SWIPE_DOWN_Y
+0x2545B0DE|INPUT_FRONTEND_TOUCH_SWIPE_LEFT_X
+0xD43D0ECE|INPUT_FRONTEND_TOUCH_SWIPE_LEFT_Y
+0xEAB68397|INPUT_FRONTEND_TOUCH_SWIPE_RIGHT_X
+0x675B7CE3|INPUT_FRONTEND_TOUCH_SWIPE_RIGHT_Y
+0x0B71D439|INPUT_FRONTEND_TOUCH_SWIPE_UP_X
+0x19CA70EA|INPUT_FRONTEND_TOUCH_SWIPE_UP_Y
+0xC10E180A|INPUT_FRONTEND_TOUCH_TAP_X
+0xCF4B3484|INPUT_FRONTEND_TOUCH_TAP_Y
+0xE7F89C38|INPUT_FRONTEND_TOUCH_ZOOM_FACTOR
+0x16661AD0|INPUT_FRONTEND_TOUCH_ZOOM_X
+0x253DB87F|INPUT_FRONTEND_TOUCH_ZOOM_Y
+0xA61DC630|INPUT_INSPECT
+0x9720FCEE|INPUT_MP_TEXT_CHAT_ALL
+0x8142FA92|INPUT_MP_TEXT_CHAT_CREW
+0x7098AC73|INPUT_MP_TEXT_CHAT_FRIENDS
+0x9098AD9D|INPUT_MP_TEXT_CHAT_TEAM
+0x734C6E39|INPUT_OPEN_CRAFTING_MENU
+0x272BD8BA|INPUT_PARACHUTE_BRAKE_LEFT
+0x948B3EA7|INPUT_PARACHUTE_BRAKE_RIGHT
+0xEBF53058|INPUT_PARACHUTE_DEPLOY
+0xFFBFF139|INPUT_PARACHUTE_DETACH
+0x7C3A4352|INPUT_PARACHUTE_PITCH_DOWN_ONLY
+0xF0526228|INPUT_PARACHUTE_PITCH_UD
+0x08BFEA69|INPUT_PARACHUTE_PITCH_UP_ONLY
+0xC675B8BD|INPUT_PARACHUTE_PRECISION_LANDING
+0x2574FAB0|INPUT_PARACHUTE_SMOKE
+0xC4CF3322|INPUT_PARACHUTE_TURN_LEFT_ONLY
+0x8EC920BF|INPUT_PARACHUTE_TURN_LR
+0x2BDBA378|INPUT_PARACHUTE_TURN_RIGHT_ONLY
+0xF9FA6BC8|INPUT_RADIO_WHEEL_LR
+0x14C7291D|INPUT_RADIO_WHEEL_UD
+0x93776CAE|INPUT_REPLAY_ACTION_REPLAY_CANCEL
+0xD9961107|INPUT_REPLAY_ACTION_REPLAY_START
+0xA1FE9E2A|INPUT_REPLAY_CAMERADOWN
+0x749EFF0C|INPUT_REPLAY_CAMERAUP
+0xF6734E42|INPUT_REPLAY_CLIP_DELETE
+0xD88B47E7|INPUT_REPLAY_CTRL
+0x5C220959|INPUT_REPLAY_CYCLEMARKERLEFT
+0xC69AE799|INPUT_REPLAY_CYCLEMARKERRIGHT
+0x4EF75BBD|INPUT_REPLAY_ENDPOINT
+0x609A27E8|INPUT_REPLAY_FFWD
+0x2B88D701|INPUT_REPLAY_FOVDECREASE
+0x5925A10D|INPUT_REPLAY_FOVINCREASE
+0x7E479C7B|INPUT_REPLAY_HIDEHUD
+0xC7D2C51B|INPUT_REPLAY_MARKER_DELETE
+0xF7C6DA28|INPUT_REPLAY_NEWMARKER
+0x083137B2|INPUT_REPLAY_PAUSE
+0x58AC1355|INPUT_REPLAY_PREVIEW
+0x79022218|INPUT_REPLAY_PREVIEW_AUDIO
+0xAD9A9C7C|INPUT_REPLAY_RECORD
+0xFD28D0F4|INPUT_REPLAY_RECORDING_START
+0xDB16E702|INPUT_REPLAY_RECORDING_STOP
+0x81B8BC9D|INPUT_REPLAY_RESTART
+0xC1339A31|INPUT_REPLAY_REWIND
+0xEBC60685|INPUT_REPLAY_SAVE
+0xEFEC8FDE|INPUT_REPLAY_SAVE_SNAPSHOT
+0x567FAF34|INPUT_REPLAY_SCREENSHOT
+0xEBA2A41E|INPUT_REPLAY_SHOWHOTKEY
+0xDCA6978E|INPUT_REPLAY_START_STOP_RECORDING
+0x8991A70B|INPUT_REPLAY_START_STOP_RECORDING_SECONDARY
+0x5DAFACCF|INPUT_REPLAY_STARTPOINT
+0x4146A033|INPUT_REPLAY_TIMELINE_DUPLICATE_CLIP
+0xD2454F90|INPUT_REPLAY_TIMELINE_PICKUP_CLIP
+0x60726F50|INPUT_REPLAY_TIMELINE_PLACE_CLIP
+0x65D70E9D|INPUT_REPLAY_TIMELINE_SAVE
+0xF8629909|INPUT_REPLAY_TOGGLE_TIMELINE
+0xE3FB91B3|INPUT_REPLAY_TOGGLETIME
+0xC8A1DE20|INPUT_REPLAY_TOGGLETIPS
+0x561A3387|INPUT_REPLAY_TOOLS
+0x5B3AF9E3|INPUT_SAVE_REPLAY_CLIP
+0x8E8B08CB|INPUT_SELECT_CHARACTER_FRANKLIN
+0xEA9256B8|INPUT_SELECT_CHARACTER_MICHAEL
+0xDFB2B3B8|INPUT_SELECT_CHARACTER_MULTIPLAYER
+0xB00CC093|INPUT_SELECT_CHARACTER_TREVOR
+0x05EEA9D0|INPUT_SELECT_WEAPON_AUTO_RIFLE
+0x184960E3|INPUT_SELECT_WEAPON_HANDGUN
+0x3D1675C3|INPUT_SELECT_WEAPON_HEAVY
+0x109E6852|INPUT_SELECT_WEAPON_MELEE
+0x76D3EA05|INPUT_SELECT_WEAPON_SHOTGUN
+0xCEF1BB48|INPUT_SELECT_WEAPON_SMG
+0x96C61FDF|INPUT_SELECT_WEAPON_SNIPER
+0xC41ECEF8|INPUT_SELECT_WEAPON_SPECIAL
+0x1F6EEB0F|INPUT_SELECT_WEAPON_UNARMED
+0xE4568AA1|INPUT_SNIPER_ZOOM_IN
+0x3A9897C1|INPUT_SNIPER_ZOOM_IN_ALTERNATE
+0xE40CE39E|INPUT_SNIPER_ZOOM_OUT
+0xBC820489|INPUT_SNIPER_ZOOM_OUT_ALTERNATE
+0x52E60A8B|INPUT_SPECIAL_ABILITY_PC
+0x4915AC0A|INPUT_VEH_RADIO_WHEEL
+0xD7991F74|INPUT_VEH_SUB_ASCEND
+0x7D51DE24|INPUT_VEH_SUB_DESCEND
+0x2CAF327E|INPUT_VEH_SUB_MOUSE_CONTROL_OVERRIDE
+0xBA2D22AA|INPUT_VEH_SUB_PITCH_DOWN_ONLY
+0xF9EF072A|INPUT_VEH_SUB_PITCH_UP_ONLY
+0xF5B2CEFB|INPUT_VEH_SUB_THROTTLE_DOWN
+0xD28C446F|INPUT_VEH_SUB_THROTTLE_UP
+0x64214D49|INPUT_VEH_SUB_TURN_HARD_LEFT
+0xA44C0F83|INPUT_VEH_SUB_TURN_HARD_RIGHT
+0x44E7E093|INPUT_VEH_SUB_TURN_LEFT_ONLY
+0xE78A5A3C|INPUT_VEH_SUB_TURN_RIGHT_ONLY
 </details>
