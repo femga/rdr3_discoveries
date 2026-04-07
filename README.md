@@ -8,368 +8,290 @@ Some interesting things from Red Dead Redemption 2 (RDR2).
 <br />
 
 &#x1F5C0; **rdr3_discoveries**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **AI**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **ANIMAL_TUNING_BOOL_PARAMS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_BOOL_PARAMS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **ANIMAL_TUNING_FLOAT_PARAMS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/ANIMAL_TUNING_FLOAT_PARAMS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **BLACKBOARDS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/BLACKBOARDS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **CARRYING_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/CARRYING_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **COMBAT_ACTION_DISABLE_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_ACTION_DISABLE_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **COMBAT_ATTRIBUTES**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_ATTRIBUTES/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **COMBAT_FLOATS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_FLOATS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **COMBAT_STYLES**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/COMBAT_STYLES/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **CPED_CONFIG_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_CONFIG_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **CPED_RESET_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/CPED_RESET_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **ENTITY_PROOFS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/ENTITY_PROOFS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **EVENTS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [aud_ped_whistle_types.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/aud_ped_whistle_types.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [awards.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/awards.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [cashinventory_transition_actions.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/cashinventory_transition_actions.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [challenge_goals.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/challenge_goals.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [crime_types.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/crime_types.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [dataview_by_Gottfriedleibniz.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/dataview_by_Gottfriedleibniz.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [events.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/events.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [loot_rewards.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/loot_rewards.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [minigame_error_codes.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/minigame_error_codes.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [shocking_events.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/shocking_events.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [stat_values.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/stat_values.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [tutorial_flags.lua](https://github.com/femga/rdr3_discoveries/tree/master/AI/EVENTS/tutorial_flags.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **FLEE_ATTRIBUTES**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/FLEE_ATTRIBUTES/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **LASSO_HOGTIE_FLAG**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/LASSO_HOGTIE_FLAG/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **LOOTING_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/LOOTING_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **PLAYER_RESET_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/PLAYER_RESET_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **RAGDOLL_BLOCKING_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/RAGDOLL_BLOCKING_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **RELATIONSHIP**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/RELATIONSHIP/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **TRANSPORT_CONFIG_FLAGS**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/AI/TRANSPORT_CONFIG_FLAGS/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **animations**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **anim_events**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/animations/anim_events/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **ingameanims**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [ingameanims_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/animations/ingameanims/ingameanims_list.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **kit_emotes_list**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [kit_emotes_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/animations/kit_emotes_list/kit_emotes_list.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **megadictanims**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [megadictanims.lua](https://github.com/femga/rdr3_discoveries/tree/master/animations/megadictanims/megadictanims.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **scenarios**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/animations/scenarios/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [ped_commands_for_selecting_anim_variations.lua](https://github.com/femga/rdr3_discoveries/tree/master/animations/scenarios/ped_commands_for_selecting_anim_variations.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [ped_commands_for_transitions_between_anims.lua](https://github.com/femga/rdr3_discoveries/tree/master/animations/scenarios/ped_commands_for_transitions_between_anims.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [scenario_attached_props.lua](https://github.com/femga/rdr3_discoveries/tree/master/animations/scenarios/scenario_attached_props.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [scenario_types_with_conditional_anims.lua](https://github.com/femga/rdr3_discoveries/tree/master/animations/scenarios/scenario_types_with_conditional_anims.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **audio**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **audio_banks**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/audio/audio_banks/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [audio_banks.lua](https://github.com/femga/rdr3_discoveries/tree/master/audio/audio_banks/audio_banks.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **audio_flags**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/audio/audio_flags/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **create_stream**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [readme.md](https://github.com/femga/rdr3_discoveries/tree/master/audio/create_stream/readme.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **frontend_soundsets**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/audio/frontend_soundsets/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [frontend_soundsets.lua](https://github.com/femga/rdr3_discoveries/tree/master/audio/frontend_soundsets/frontend_soundsets.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **music_events**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [music_events.lua](https://github.com/femga/rdr3_discoveries/tree/master/audio/music_events/music_events.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **soundsets**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/audio/soundsets/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [soundsets.lua](https://github.com/femga/rdr3_discoveries/tree/master/audio/soundsets/soundsets.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **boneNames**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [mp_female__boneNames.lua](https://github.com/femga/rdr3_discoveries/tree/master/boneNames/mp_female__boneNames.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [mp_male__boneNames.lua](https://github.com/femga/rdr3_discoveries/tree/master/boneNames/mp_male__boneNames.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [p_c_horse_01__boneNames.lua](https://github.com/femga/rdr3_discoveries/tree/master/boneNames/p_c_horse_01__boneNames.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [player_zero__boneNames.lua](https://github.com/femga/rdr3_discoveries/tree/master/boneNames/player_zero__boneNames.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **Controls**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [README.md](https://github.com/femga/rdr3_discoveries/tree/master/Controls/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **clothes**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [README.md](https://github.com/femga/rdr3_discoveries/tree/master/clothes/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [change_overlays_script.lua](https://github.com/femga/rdr3_discoveries/tree/master/clothes/change_overlays_script.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [cloth_color_palletes.lua](https://github.com/femga/rdr3_discoveries/tree/master/clothes/cloth_color_palletes.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [cloth_drawable_albedo_normal_material_TEMPORARY.lua](https://github.com/femga/rdr3_discoveries/tree/master/clothes/cloth_drawable_albedo_normal_material_TEMPORARY.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [cloth_hash_names.lua](https://github.com/femga/rdr3_discoveries/tree/master/clothes/cloth_hash_names.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [metaped_outfits.lua](https://github.com/femga/rdr3_discoveries/tree/master/clothes/metaped_outfits.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [overlay_cloth_items.lua](https://github.com/femga/rdr3_discoveries/tree/master/clothes/overlay_cloth_items.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **databindings**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **hudcontexts**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/hudcontexts/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **helpertextfields**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/hudcontexts/helpertextfields/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [helpertextfields.lua](https://github.com/femga/rdr3_discoveries/tree/master/databindings/hudcontexts/helpertextfields/helpertextfields.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **tithing**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/hudcontexts/tithing/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [tithing.lua](https://github.com/femga/rdr3_discoveries/tree/master/databindings/hudcontexts/tithing/tithing.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **other**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/other/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **bountycash**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/other/bountycash/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [bountycash.lua](https://github.com/femga/rdr3_discoveries/tree/master/databindings/other/bountycash/bountycash.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **passiveicon**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/other/passiveicon/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [passiveicon.lua](https://github.com/femga/rdr3_discoveries/tree/master/databindings/other/passiveicon/passiveicon.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **rankbar**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/other/rankbar/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [rankbar.lua](https://github.com/femga/rdr3_discoveries/tree/master/databindings/other/rankbar/rankbar.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **uiapps**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/uiapps/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **leaderboard**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/uiapps/leaderboard/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [leaderboard.lua](https://github.com/femga/rdr3_discoveries/tree/master/databindings/uiapps/leaderboard/leaderboard.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **translation**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/databindings/uiapps/translation/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [translation.lua](https://github.com/femga/rdr3_discoveries/tree/master/databindings/uiapps/translation/translation.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **discoveredNatives**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [discovered_natives_by_community](https://github.com/femga/rdr3_discoveries/tree/master/discoveredNatives/discovered_natives_by_community)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **doorHashes**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [doorhashes.lua](https://github.com/femga/rdr3_discoveries/tree/master/doorHashes/doorhashes.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **graphics**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **HUD**<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **cursor_sprites**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/cursor_sprites/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **hud_presets**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [hud_presets.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/hud_presets/hud_presets.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **prompts**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  **prompt_types**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/graphics/HUD/prompts/prompt_types/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **animpostfx**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [animpostfx.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/animpostfx/animpostfx.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **explosions**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/graphics/explosions/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [explosion_vfxTags.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/explosions/explosion_vfxTags.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **markers**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [marker_types.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/markers/marker_types.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **minimap**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **discoveries**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/graphics/minimap/discoveries/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **minimapObjects**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/graphics/minimap/minimapObjects/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **radar**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [radar_configs.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/minimap/radar/radar_configs.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **wanted_regions**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/graphics/minimap/wanted_regions/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **ptfx**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [ptfx_assets_looped.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/ptfx/ptfx_assets_looped.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [ptfx_assets_non_looped.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/ptfx/ptfx_assets_non_looped.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **timecycles**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [timecycles.lua](https://github.com/femga/rdr3_discoveries/tree/master/graphics/timecycles/timecycles.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **veg_modifier**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/graphics/veg_modifier/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **imaps**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [imaps_with_coords_and_heading.lua](https://github.com/femga/rdr3_discoveries/tree/master/imaps/imaps_with_coords_and_heading.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **interiors**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [interiors_coords_and_hashes.lua](https://github.com/femga/rdr3_discoveries/tree/master/interiors/interiors_coords_and_hashes.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **interior_sets**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/interiors/interior_sets/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **objects**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [metaped_asset_bundles_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/metaped_asset_bundles_list.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [object_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/object_list.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [pickup_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/pickup_list.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [propsets_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/propsets_list.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **composites**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/objects/composites/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [composites_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/composites/composites_list.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **entity_extensions**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___audioEmitter.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___audioEmitter.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___buoyancy.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___buoyancy.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___explosionEffect.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___explosionEffect.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___expressions.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___expressions.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___expressions___entity_DOF_names.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___expressions___entity_DOF_names.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___ladder.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___ladder.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___lightEffect.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___lightEffect.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___particleEffect.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___particleEffect.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [entity_extensions___swayableEffect.lua](https://github.com/femga/rdr3_discoveries/tree/master/objects/entity_extensions/entity_extensions___swayableEffect.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **peds**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [peds_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/peds/peds_list.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **peds_customization**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [ped_decals.lua](https://github.com/femga/rdr3_discoveries/tree/master/peds_customization/ped_decals.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [ped_outfits.lua](https://github.com/femga/rdr3_discoveries/tree/master/peds_customization/ped_outfits.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **Stats**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **Challenges**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/Stats/Challenges/README.md)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [challenges.lua](https://github.com/femga/rdr3_discoveries/tree/master/Stats/Challenges/challenges.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **tasks**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **TASK_ANIMAL_INTERACTION**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ANIMAL_INTERACTION/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **TASK_HORSE_ACTION**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_HORSE_ACTION/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **TASK_ITEM_INTERACTION**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [readme.md](https://github.com/femga/rdr3_discoveries/tree/master/tasks/TASK_ITEM_INTERACTION/readme.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **useful_info_from_rpfs**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **blip_modifiers**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/blip_modifiers/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **blip_styles**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/blip_styles/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **colours**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/colours/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **textures**<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **blips**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/blips/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **blips_mp**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/blips_mp/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **inventory_items**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/inventory_items/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **menu_items**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/menu_items/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **menu_textures**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/menu_textures/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **multiwheel_emotes**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [readme.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/multiwheel_emotes/readme.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **overhead**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [readme.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/overhead/readme.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **pm_awards_mp**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/pm_awards_mp/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **pm_collectors_bag_mp**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.MD](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/pm_collectors_bag_mp/README.MD)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **ui_hud____part_1**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_hud____part_1/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **ui_hud____part_2**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.MD](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_hud____part_2/README.MD)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **ui_minigames**<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **cards**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_minigames/cards/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **domino**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_minigames/domino/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **ui_startup_textures**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [readme.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_startup_textures/readme.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **ui_swatches**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_swatches/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **ui_textures_mp____part1**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_textures_mp____part1/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0;  **ui_textures_mp____part2**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [README.md](https://github.com/femga/rdr3_discoveries/tree/master/useful_info_from_rpfs/textures/ui_textures_mp____part2/README.md)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **vehicles**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [vehicle_bones.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/vehicle_bones.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [vehicles_list.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/vehicles_list.lua)<br />
+## Table of Contents
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **trains**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [mission_trains.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/trains/mission_trains.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **vehicle_modding**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [vehicle_extras.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/vehicle_modding/vehicle_extras.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [vehicle_lantern_propsets.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/vehicle_modding/vehicle_lantern_propsets.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [vehicle_liveries.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/vehicle_modding/vehicle_liveries.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [vehicle_propsets.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/vehicle_modding/vehicle_propsets.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\-  [vehicle_tints.lua](https://github.com/femga/rdr3_discoveries/tree/master/vehicles/vehicle_modding/vehicle_tints.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **weapons**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [ammo_types.lua](https://github.com/femga/rdr3_discoveries/tree/master/weapons/ammo_types.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [weapon_components.lua](https://github.com/femga/rdr3_discoveries/tree/master/weapons/weapon_components.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [weapons.lua](https://github.com/femga/rdr3_discoveries/tree/master/weapons/weapons.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **weather**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [weather_types.lua](https://github.com/femga/rdr3_discoveries/tree/master/weather/weather_types.lua)<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [weather_variations.lua](https://github.com/femga/rdr3_discoveries/tree/master/weather/weather_variations.lua)<br />
-<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x1F5C0; **zones**<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\- [README.md](https://github.com/femga/rdr3_discoveries/tree/master/zones/README.md)<br />
+- **rdr3_discoveries/**
+  - [README.md](rdr3_discoveries/README.md)
+- **AI/**
+  - **AI/ANIMAL_TUNING_BOOL_PARAMS/**
+    - [README.md](AI/ANIMAL_TUNING_BOOL_PARAMS/README.md)
+  - **AI/ANIMAL_TUNING_FLOAT_PARAMS/**
+    - [README.md](AI/ANIMAL_TUNING_FLOAT_PARAMS/README.md)
+  - **AI/BLACKBOARDS/**
+    - [README.md](AI/BLACKBOARDS/README.md)
+  - **AI/CARRYING_FLAGS/**
+    - [README.md](AI/CARRYING_FLAGS/README.md)
+  - **AI/COMBAT_ACTION_DISABLE_FLAGS/**
+    - [README.md](AI/COMBAT_ACTION_DISABLE_FLAGS/README.md)
+  - **AI/COMBAT_ATTRIBUTES/**
+    - [README.md](AI/COMBAT_ATTRIBUTES/README.md)
+  - **AI/COMBAT_FLOATS/**
+    - [README.md](AI/COMBAT_FLOATS/README.md)
+  - **AI/COMBAT_STYLES/**
+    - [README.md](AI/COMBAT_STYLES/README.md)
+  - **AI/CPED_CONFIG_FLAGS/**
+    - [README.md](AI/CPED_CONFIG_FLAGS/README.md)
+  - **AI/CPED_RESET_FLAGS/**
+    - [README.md](AI/CPED_RESET_FLAGS/README.md)
+  - **AI/ENTITY_PROOFS/**
+    - [README.md](AI/ENTITY_PROOFS/README.md)
+  - **AI/EVENTS/**
+    - [README.md](AI/EVENTS/README.md)
+    - [aud_ped_whistle_types.lua](AI/EVENTS/aud_ped_whistle_types.lua)
+    - [awards.lua](AI/EVENTS/awards.lua)
+    - [cashinventory_transition_actions.lua](AI/EVENTS/cashinventory_transition_actions.lua)
+    - [challenge_goals.lua](AI/EVENTS/challenge_goals.lua)
+    - [crime_types.lua](AI/EVENTS/crime_types.lua)
+    - [dataview_by_Gottfriedleibniz.lua](AI/EVENTS/dataview_by_Gottfriedleibniz.lua)
+    - [events.lua](AI/EVENTS/events.lua)
+    - [loot_rewards.lua](AI/EVENTS/loot_rewards.lua)
+    - [minigame_error_codes.lua](AI/EVENTS/minigame_error_codes.lua)
+    - [shocking_events.lua](AI/EVENTS/shocking_events.lua)
+    - [stat_values.lua](AI/EVENTS/stat_values.lua)
+    - [tutorial_flags.lua](AI/EVENTS/tutorial_flags.lua)
+  - **AI/FLEE_ATTRIBUTES/**
+    - [README.md](AI/FLEE_ATTRIBUTES/README.md)
+  - **AI/LASSO_HOGTIE_FLAG/**
+    - [README.md](AI/LASSO_HOGTIE_FLAG/README.md)
+  - **AI/LOOTING_FLAGS/**
+    - [README.md](AI/LOOTING_FLAGS/README.md)
+  - **AI/PLAYER_RESET_FLAGS/**
+    - [README.md](AI/PLAYER_RESET_FLAGS/README.md)
+  - **AI/RAGDOLL_BLOCKING_FLAGS/**
+    - [README.md](AI/RAGDOLL_BLOCKING_FLAGS/README.md)
+  - **AI/RELATIONSHIP/**
+    - [README.md](AI/RELATIONSHIP/README.md)
+  - **AI/TRANSPORT_CONFIG_FLAGS/**
+    - [README.md](AI/TRANSPORT_CONFIG_FLAGS/README.md)
+- **Controls/**
+  - [README.md](Controls/README.md)
+- **Stats/**
+  - **Stats/Challenges/**
+    - [README.md](Stats/Challenges/README.md)
+    - [challenges.lua](Stats/Challenges/challenges.lua)
+- **animations/**
+  - **animations/anim_events/**
+    - [README.md](animations/anim_events/README.md)
+  - **animations/ingameanims/**
+    - [ingameanims_list.lua](animations/ingameanims/ingameanims_list.lua)
+  - **animations/kit_emotes_list/**
+    - [kit_emotes_list.lua](animations/kit_emotes_list/kit_emotes_list.lua)
+  - **animations/megadictanims/**
+    - [megadictanims.lua](animations/megadictanims/megadictanims.lua)
+  - **animations/scenarios/**
+    - [README.md](animations/scenarios/README.md)
+    - [ped_commands_for_selecting_anim_variations.lua](animations/scenarios/ped_commands_for_selecting_anim_variations.lua)
+    - [ped_commands_for_transitions_between_anims.lua](animations/scenarios/ped_commands_for_transitions_between_anims.lua)
+    - [scenario_attached_props.lua](animations/scenarios/scenario_attached_props.lua)
+    - [scenario_types_with_conditional_anims.lua](animations/scenarios/scenario_types_with_conditional_anims.lua)
+- **audio/**
+  - **audio/audio_banks/**
+    - [README.md](audio/audio_banks/README.md)
+    - [audio_banks.lua](audio/audio_banks/audio_banks.lua)
+  - **audio/audio_flags/**
+    - [README.md](audio/audio_flags/README.md)
+  - **audio/create_stream/**
+    - [readme.md](audio/create_stream/readme.md)
+  - **audio/frontend_soundsets/**
+    - [README.md](audio/frontend_soundsets/README.md)
+    - [frontend_soundsets.lua](audio/frontend_soundsets/frontend_soundsets.lua)
+  - **audio/music_events/**
+    - [music_events.lua](audio/music_events/music_events.lua)
+  - **audio/soundsets/**
+    - [README.md](audio/soundsets/README.md)
+    - [soundsets.lua](audio/soundsets/soundsets.lua)
+- **boneNames/**
+  - [mp_female__boneNames.lua](boneNames/mp_female__boneNames.lua)
+  - [mp_male__boneNames.lua](boneNames/mp_male__boneNames.lua)
+  - [p_c_horse_01__boneNames.lua](boneNames/p_c_horse_01__boneNames.lua)
+  - [player_zero__boneNames.lua](boneNames/player_zero__boneNames.lua)
+- **clothes/**
+  - [README.md](clothes/README.md)
+  - [change_overlays_script.lua](clothes/change_overlays_script.lua)
+  - [cloth_color_palletes.lua](clothes/cloth_color_palletes.lua)
+  - [cloth_drawable_albedo_normal_material_TEMPORARY.lua](clothes/cloth_drawable_albedo_normal_material_TEMPORARY.lua)
+  - [cloth_hash_names.lua](clothes/cloth_hash_names.lua)
+  - [metaped_outfits.lua](clothes/metaped_outfits.lua)
+  - [overlay_cloth_items.lua](clothes/overlay_cloth_items.lua)
+- **databindings/**
+  - [README.md](databindings/README.md)
+  - **databindings/hudcontexts/**
+    - [README.md](databindings/hudcontexts/README.md)
+    - **databindings/hudcontexts/helpertextfields/**
+      - [README.md](databindings/hudcontexts/helpertextfields/README.md)
+      - [helpertextfields.lua](databindings/hudcontexts/helpertextfields/helpertextfields.lua)
+    - **databindings/hudcontexts/honor/**
+      - [README.md](databindings/hudcontexts/honor/README.md)
+      - [honor.lua](databindings/hudcontexts/honor/honor.lua)
+    - **databindings/hudcontexts/moonshine/**
+      - [README.md](databindings/hudcontexts/moonshine/README.md)
+      - [moonshine.lua](databindings/hudcontexts/moonshine/moonshine.lua)
+    - **databindings/hudcontexts/tithing/**
+      - [README.md](databindings/hudcontexts/tithing/README.md)
+      - [tithing.lua](databindings/hudcontexts/tithing/tithing.lua)
+    - **databindings/hudcontexts/trader/**
+      - [README.md](databindings/hudcontexts/trader/README.md)
+      - [trader.lua](databindings/hudcontexts/trader/trader.lua)
+  - **databindings/other/**
+    - [README.md](databindings/other/README.md)
+    - **databindings/other/bountycash/**
+      - [README.md](databindings/other/bountycash/README.md)
+      - [bountycash.lua](databindings/other/bountycash/bountycash.lua)
+    - **databindings/other/passiveicon/**
+      - [README.md](databindings/other/passiveicon/README.md)
+      - [passiveicon.lua](databindings/other/passiveicon/passiveicon.lua)
+    - **databindings/other/rankbar/**
+      - [README.md](databindings/other/rankbar/README.md)
+      - [rankbar.lua](databindings/other/rankbar/rankbar.lua)
+  - **databindings/uiapps/**
+    - [README.md](databindings/uiapps/README.md)
+    - **databindings/uiapps/leaderboard/**
+      - [README.md](databindings/uiapps/leaderboard/README.md)
+      - [leaderboard.lua](databindings/uiapps/leaderboard/leaderboard.lua)
+    - **databindings/uiapps/map/**
+      - [README.md](databindings/uiapps/map/README.md)
+      - [map.lua](databindings/uiapps/map/map.lua)
+    - **databindings/uiapps/translation/**
+      - [README.md](databindings/uiapps/translation/README.md)
+      - [translation.lua](databindings/uiapps/translation/translation.lua)
+- **discoveredNatives/**
+  - [discovered_natives_by_community](discoveredNatives/discovered_natives_by_community)
+- **doorHashes/**
+  - [doorhashes.lua](doorHashes/doorhashes.lua)
+- **graphics/**
+  - **graphics/HUD/**
+    - **graphics/HUD/cursor_sprites/**
+      - [README.md](graphics/HUD/cursor_sprites/README.md)
+    - **graphics/HUD/hud_presets/**
+      - [hud_presets.lua](graphics/HUD/hud_presets/hud_presets.lua)
+    - **graphics/HUD/prompts/**
+      - **graphics/HUD/prompts/prompt_types/**
+        - [README.md](graphics/HUD/prompts/prompt_types/README.md)
+  - **graphics/animpostfx/**
+    - [animpostfx.lua](graphics/animpostfx/animpostfx.lua)
+  - **graphics/explosions/**
+    - [README.md](graphics/explosions/README.md)
+    - [explosion_vfxTags.lua](graphics/explosions/explosion_vfxTags.lua)
+  - **graphics/markers/**
+    - [marker_types.lua](graphics/markers/marker_types.lua)
+  - **graphics/minimap/**
+    - **graphics/minimap/discoveries/**
+      - [README.md](graphics/minimap/discoveries/README.md)
+    - **graphics/minimap/minimapObjects/**
+      - [README.md](graphics/minimap/minimapObjects/README.md)
+    - **graphics/minimap/radar/**
+      - [radar_configs.lua](graphics/minimap/radar/radar_configs.lua)
+    - **graphics/minimap/wanted_regions/**
+      - [README.md](graphics/minimap/wanted_regions/README.md)
+  - **graphics/ptfx/**
+    - [ptfx_assets_looped.lua](graphics/ptfx/ptfx_assets_looped.lua)
+    - [ptfx_assets_non_looped.lua](graphics/ptfx/ptfx_assets_non_looped.lua)
+  - **graphics/timecycles/**
+    - [timecycles.lua](graphics/timecycles/timecycles.lua)
+  - **graphics/veg_modifier/**
+    - [README.md](graphics/veg_modifier/README.md)
+- **imaps/**
+  - [imaps_with_coords_and_heading.lua](imaps/imaps_with_coords_and_heading.lua)
+- **interiors/**
+  - [interiors_coords_and_hashes.lua](interiors/interiors_coords_and_hashes.lua)
+  - **interiors/interior_sets/**
+    - [README.md](interiors/interior_sets/README.md)
+- **objects/**
+  - [metaped_asset_bundles_list.lua](objects/metaped_asset_bundles_list.lua)
+  - [object_list.lua](objects/object_list.lua)
+  - [pickup_list.lua](objects/pickup_list.lua)
+  - [propsets_list.lua](objects/propsets_list.lua)
+  - **objects/composites/**
+    - [README.md](objects/composites/README.md)
+    - [composites_list.lua](objects/composites/composites_list.lua)
+  - **objects/entity_extensions/**
+    - [README.md](objects/entity_extensions/README.md)
+    - [entity_extensions___audioEmitter.lua](objects/entity_extensions/entity_extensions___audioEmitter.lua)
+    - [entity_extensions___buoyancy.lua](objects/entity_extensions/entity_extensions___buoyancy.lua)
+    - [entity_extensions___explosionEffect.lua](objects/entity_extensions/entity_extensions___explosionEffect.lua)
+    - [entity_extensions___expressions.lua](objects/entity_extensions/entity_extensions___expressions.lua)
+    - [entity_extensions___expressions___entity_DOF_names.lua](objects/entity_extensions/entity_extensions___expressions___entity_DOF_names.lua)
+    - [entity_extensions___ladder.lua](objects/entity_extensions/entity_extensions___ladder.lua)
+    - [entity_extensions___lightEffect.lua](objects/entity_extensions/entity_extensions___lightEffect.lua)
+    - [entity_extensions___particleEffect.lua](objects/entity_extensions/entity_extensions___particleEffect.lua)
+    - [entity_extensions___swayableEffect.lua](objects/entity_extensions/entity_extensions___swayableEffect.lua)
+- **peds/**
+  - [peds_list.lua](peds/peds_list.lua)
+- **peds_customization/**
+  - [ped_decals.lua](peds_customization/ped_decals.lua)
+  - [ped_outfits.lua](peds_customization/ped_outfits.lua)
+- **tasks/**
+  - **tasks/TASK_ANIMAL_INTERACTION/**
+    - [README.md](tasks/TASK_ANIMAL_INTERACTION/README.md)
+  - **tasks/TASK_HORSE_ACTION/**
+    - [README.md](tasks/TASK_HORSE_ACTION/README.md)
+  - **tasks/TASK_ITEM_INTERACTION/**
+    - [readme.md](tasks/TASK_ITEM_INTERACTION/readme.md)
+- **useful_info_from_rpfs/**
+  - [README.md](useful_info_from_rpfs/README.md)
+  - **useful_info_from_rpfs/blip_modifiers/**
+    - [README.md](useful_info_from_rpfs/blip_modifiers/README.md)
+  - **useful_info_from_rpfs/blip_styles/**
+    - [README.md](useful_info_from_rpfs/blip_styles/README.md)
+  - **useful_info_from_rpfs/colours/**
+    - [README.md](useful_info_from_rpfs/colours/README.md)
+  - **useful_info_from_rpfs/textures/**
+    - **useful_info_from_rpfs/textures/blips/**
+      - [README.md](useful_info_from_rpfs/textures/blips/README.md)
+    - **useful_info_from_rpfs/textures/blips_mp/**
+      - [README.md](useful_info_from_rpfs/textures/blips_mp/README.md)
+    - **useful_info_from_rpfs/textures/inventory_items/**
+      - [README.md](useful_info_from_rpfs/textures/inventory_items/README.md)
+    - **useful_info_from_rpfs/textures/menu_items/**
+      - [README.md](useful_info_from_rpfs/textures/menu_items/README.md)
+    - **useful_info_from_rpfs/textures/menu_textures/**
+      - [README.md](useful_info_from_rpfs/textures/menu_textures/README.md)
+    - **useful_info_from_rpfs/textures/multiwheel_emotes/**
+      - [readme.md](useful_info_from_rpfs/textures/multiwheel_emotes/readme.md)
+    - **useful_info_from_rpfs/textures/overhead/**
+      - [readme.md](useful_info_from_rpfs/textures/overhead/readme.md)
+    - **useful_info_from_rpfs/textures/pm_awards_mp/**
+      - [README.md](useful_info_from_rpfs/textures/pm_awards_mp/README.md)
+    - **useful_info_from_rpfs/textures/pm_collectors_bag_mp/**
+      - [README.MD](useful_info_from_rpfs/textures/pm_collectors_bag_mp/README.MD)
+    - **useful_info_from_rpfs/textures/ui_hud____part_1/**
+      - [README.md](useful_info_from_rpfs/textures/ui_hud____part_1/README.md)
+    - **useful_info_from_rpfs/textures/ui_hud____part_2/**
+      - [README.MD](useful_info_from_rpfs/textures/ui_hud____part_2/README.MD)
+    - **useful_info_from_rpfs/textures/ui_minigames/**
+      - **useful_info_from_rpfs/textures/ui_minigames/cards/**
+        - [README.md](useful_info_from_rpfs/textures/ui_minigames/cards/README.md)
+      - **useful_info_from_rpfs/textures/ui_minigames/domino/**
+        - [README.md](useful_info_from_rpfs/textures/ui_minigames/domino/README.md)
+    - **useful_info_from_rpfs/textures/ui_startup_textures/**
+      - [readme.md](useful_info_from_rpfs/textures/ui_startup_textures/readme.md)
+    - **useful_info_from_rpfs/textures/ui_swatches/**
+      - [README.md](useful_info_from_rpfs/textures/ui_swatches/README.md)
+    - **useful_info_from_rpfs/textures/ui_textures_mp____part1/**
+      - [README.md](useful_info_from_rpfs/textures/ui_textures_mp____part1/README.md)
+    - **useful_info_from_rpfs/textures/ui_textures_mp____part2/**
+      - [README.md](useful_info_from_rpfs/textures/ui_textures_mp____part2/README.md)
+- **vehicles/**
+  - [vehicle_bones.lua](vehicles/vehicle_bones.lua)
+  - [vehicles_list.lua](vehicles/vehicles_list.lua)
+  - **vehicles/trains/**
+    - [mission_trains.lua](vehicles/trains/mission_trains.lua)
+  - **vehicles/vehicle_modding/**
+    - [vehicle_extras.lua](vehicles/vehicle_modding/vehicle_extras.lua)
+    - [vehicle_lantern_propsets.lua](vehicles/vehicle_modding/vehicle_lantern_propsets.lua)
+    - [vehicle_liveries.lua](vehicles/vehicle_modding/vehicle_liveries.lua)
+    - [vehicle_propsets.lua](vehicles/vehicle_modding/vehicle_propsets.lua)
+    - [vehicle_tints.lua](vehicles/vehicle_modding/vehicle_tints.lua)
+- **weapons/**
+  - [ammo_types.lua](weapons/ammo_types.lua)
+  - [weapon_components.lua](weapons/weapon_components.lua)
+  - [weapons.lua](weapons/weapons.lua)
+- **weather/**
+  - [weather_types.lua](weather/weather_types.lua)
+  - [weather_variations.lua](weather/weather_variations.lua)
+- **zones/**
+  - [README.md](zones/README.md)
+
 <br />
 <br />
 <br />
@@ -414,8 +336,12 @@ https://rdr3natives.com<br />
 https://natives.avarian.dev<br />
 https://www.rdr2mods.com/nativedb/index/builtin<br />
 https://redlookup.com/natives/<br />
+https://rdr3.nativedb.dotindustries.dev<br />
 
 </details>
+
+
+
 
 
 
